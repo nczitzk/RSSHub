@@ -943,7 +943,17 @@ category 对应的关键词有
 
 ### 观点
 
-<Route author="LogicJake"  example="/people/opinion/223228" path="/people/opinion/:id" :paramsDesc="['板块 id，可在 URL 中找到']"/>
+<Route author="LogicJake nczitzk"  example="/people/opinion" path="/people/opinion/:id?" :paramsDesc="['板块 id，可在对应板块页 URL 中找到，默认为 `159301` 即 每日最新评论']">
+
+::: tip 提示
+
+对于 [人民网评](http://opinion.people.com.cn/GB/223228/index.html) 其 id 为 URL <http://opinion.people.com.cn/GB/223228/index.html> 中的 `223228`，于是对应路由地址为 [`/people/opinion/223228`](https://rsshub.app/people/opinion/223228)。
+
+若 id 被 `/` 分割，如 [人民论坛](http://opinion.people.com.cn/GB/8213/49160/49220/index.html) 其 id 为 URL <http://opinion.people.com.cn/GB/8213/49160/49220/index.html> 的 `8213-49160-49220`，也就是将原 `8213/49160/49220` 中的 `/` 替换为 `-`，于是对应路由地址为 [`/people/opinion/8213-49160-49220`](https://rsshub.app/people/opinion/8213-49160-49220)。
+
+:::
+
+</Route>
 
 ### 环保频道
 
