@@ -1,9 +1,30 @@
 {
+    "/2047/:category?/:sort?": [
+        "nczitzk"
+    ],
+    "/8world/:category?": [
+        "nczitzk"
+    ],
+    "/aamacau/aamacau/:category?/:id?": [
+        "nczitzk"
+    ],
+    "/biodiscover/:channel?": [
+        "aidistan"
+    ],
     "/epicgames/epicgames/:collection": [
         "DIYgod",
         "NeverBehave",
         "Zyx-A",
         "junfengP"
+    ],
+    "/eprice/:region?": [
+        "TonyRL"
+    ],
+    "/fisher-spb/news": [
+        "denis-ya"
+    ],
+    "/focustaiwan/:category?": [
+        "nczitzk"
     ],
     "/furstar/characters/:lang?": [
         "NeverBehave"
@@ -14,9 +35,39 @@
     "/furstar/archive/:lang?": [
         "NeverBehave"
     ],
+    "/hotukdeals/:type": [
+        "DIYgod"
+    ],
+    "/icac/news/:lang?": [
+        "linbuxiao, TonyRL"
+    ],
+    "/independent/ps5-stock-uk": [
+        "DIYgod"
+    ],
+    "/jump/discount/:platform/:filter?/:countries?": [
+        "zytomorrow"
+    ],
+    "/qq/live/:id": [
+        "nczitzk"
+    ],
+    "/ruancan/ruancan": [
+        "nczitzk"
+    ],
+    "/ruancan/ruancan/sort/:sort?": [
+        "nczitzk"
+    ],
+    "/ruancan/ruancan/tag/:tag": [
+        "nczitzk"
+    ],
+    "/ruancan/ruancan/search/:keyword?": [
+        "nczitzk"
+    ],
     "/test/:id": [
         "DIYgod",
         "NeverBehave"
+    ],
+    "/trow/portal": [
+        "shiningdracon"
     ],
     "/rsshub/rss": [],
     "/rsshub/routes": [],
@@ -172,8 +223,9 @@
     "/twitter/list/:id/:name/:routeParams?": [],
     "/twitter/likes/:id/:routeParams?": [],
     "/twitter/followings/:id/:routeParams?": [],
-    "/twitter/keyword/:keyword/:routeParams?": [],
+    "/twitter/keyword/:keyword/:routeParams?/:limit?": [],
     "/twitter/trends/:woeid?": [],
+    "/twitter/media/:id/:routeParams?": [],
     "/youtube/user/:username/:embed?": [],
     "/youtube/channel/:id/:embed?": [],
     "/youtube/playlist/:id/:embed?": [],
@@ -1652,7 +1704,7 @@
     "/gamer/hot/:bsn": [],
     "/icity/:id": [],
     "/anki/changes": [],
-    "/abc/:site?": [],
+    "/abc/:id?": [],
     "/cna/:id?": [],
     "/huawei/xinsheng/:caty?/:order?/:keyword?": [],
     "/ow/patch": [],
@@ -1969,7 +2021,6 @@
     "/fnal/news/:category?": [],
     "/x410/news": [],
     "/right/forum/:id?": [],
-    "/biodiscover/:channel?": [],
     "/hket/:category?": [],
     "/s-hentai/:id?": []
 }
