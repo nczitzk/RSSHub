@@ -191,6 +191,12 @@
     "/bit/rszhaopin": [
         "nczitzk"
     ],
+    "/bitbucket/commits/:workspace/:repo_slug": [
+        "AuroraDysis"
+    ],
+    "/bitbucket/tags/:workspace/:repo_slug": [
+        "AuroraDysis"
+    ],
     "/bitmovin/blog": [
         "elxy"
     ],
@@ -255,6 +261,15 @@
     ],
     "/chaoxing/qk/:id/:needContent?": [
         "nczitzk"
+    ],
+    "/chaping/banner": [
+        "nczitzk"
+    ],
+    "/chaping/news/:caty?": [
+        "nczitzk"
+    ],
+    "/chaping/newsflash": [
+        "Fatpandac"
     ],
     "/ciidbnu/:id?": [
         "nczitzk"
@@ -791,6 +806,10 @@
         "luyuhuang"
     ],
     "/iwara/users/:username?/:type?": [
+        "Fatpandac"
+    ],
+    "/ixigua/ixigua/user/video/:uid/:disableEmbed?": [
+        "FlashWingShadow",
         "Fatpandac"
     ],
     "/jandan/:category?": [
@@ -3076,8 +3095,6 @@
     "/chuhaibiji": [],
     "/blogs/jianning": [],
     "/hudongba/:city/:id": [],
-    "/chaping/banner": [],
-    "/chaping/news/:caty?": [],
     "/feixuew/:id?": [],
     "/1x/:category?": [],
     "/jx3/:caty?": [],
@@ -3197,7 +3214,6 @@
     "/yinxiang/card/:id": [],
     "/yinxiang/personal/:id": [],
     "/yinxiang/category/:id": [],
-    "/ixigua/user/video/:uid/:disableEmbed?": [],
     "/gvm/index/:category?": [],
     "/chuapp/index/:category?": [],
     "/deloitte/industries/:category?": [],
