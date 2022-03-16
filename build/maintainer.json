@@ -673,6 +673,18 @@
     "/gov/mee/ywdt?": [
         "liuxsdev"
     ],
+    "/gov/pbc/goutongjiaoliu": [
+        "nczitzk"
+    ],
+    "/gov/pbc/tradeAnnouncement": [
+        "nczitzk"
+    ],
+    "/gov/pbc/zcyj": [
+        "Fatpandac"
+    ],
+    "/gov/pbc/gzlw": [
+        "Fatpandac"
+    ],
     "/guduodata/daily": [
         "Gem1ni"
     ],
@@ -1268,6 +1280,9 @@
     "/radio-canada/latest/:language?": [
         "nczitzk"
     ],
+    "/rfa/:language?/:channel?/:subChannel?": [
+        "zphw"
+    ],
     "/rfi/news": [
         "nczitzk"
     ],
@@ -1595,6 +1610,9 @@
     ],
     "/wikinews/latest": [
         "KotoriK"
+    ],
+    "/wp-china/news/:category?": [
+        "nczitzk"
     ],
     "/wsj/:lang/:category?": [
         "oppilate"
@@ -2951,8 +2969,6 @@
     "/fzdm/manhua/:id": [],
     "/aljazeera/news": [],
     "/cfd/gbp_div": [],
-    "/pbc/goutongjiaoliu": [],
-    "/pbc/tradeAnnouncement": [],
     "/monotype/article": [],
     "/stork/keyword/:trackID/:displayKey": [],
     "/zhutix/latest": [],
@@ -3278,7 +3294,6 @@
     "/ngd/:slug?": [],
     "/simpread/notice": [],
     "/simpread/changelog": [],
-    "/rfa/:language?/:channel?/:subChannel?": [],
     "/booth.pm/shop/:subdomain": [],
     "/feed-the-beast/modpack/:modpackEntry": [],
     "/gab/user/:username": [],
