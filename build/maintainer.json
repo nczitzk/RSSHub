@@ -577,8 +577,9 @@
         "HenryQW",
         "AndreyMZ"
     ],
-    "/github/pull/:user/:repo": [
-        "hashman"
+    "/github/pull/:user/:repo/:state?": [
+        "hashman",
+        "TonyRL"
     ],
     "/github/repos/:user": [
         "DIYgod"
@@ -643,6 +644,10 @@
     "/gov/shanghai/rsj/ksxm": [
         "Fatpandac"
     ],
+    "/gov/fmprc/:category?": [
+        "nicolaszf",
+        "nczitzk"
+    ],
     "/gov/guangdong/tqyb/tfxtq": [
         "Fatpandac"
     ],
@@ -654,6 +659,9 @@
     ],
     "/gov/sichuan/deyang/govpulicinfo/:countyName/:institutionName?": [
         "zytomorrow"
+    ],
+    "/gov/mfa/wjdt/:category?": [
+        "nczitzk"
     ],
     "/gov/miit/wjfb/:ministry": [
         "Fatpandac"
@@ -684,6 +692,23 @@
     ],
     "/gov/pbc/gzlw": [
         "Fatpandac"
+    ],
+    "/guancha/:category?": [
+        "nczitzk",
+        "Jeason0228"
+    ],
+    "/guancha/headline": [
+        "nczitzk"
+    ],
+    "/guancha/member/:category?": [
+        "nczitzk"
+    ],
+    "/guancha/personalpage/:uid": [
+        "Jeason0228"
+    ],
+    "/guancha/topic/:id/:order?": [
+        "occupy5",
+        "nczitzk"
     ],
     "/guduodata/daily": [
         "Gem1ni"
@@ -837,6 +862,11 @@
     "/jasa/section/:id": [
         "Derekmini"
     ],
+    "/javbus/": [
+        "MegrezZhu",
+        "CoderTonyChan",
+        "nczitzk"
+    ],
     "/javbus/genre/:gid": [
         "MegrezZhu",
         "CoderTonyChan"
@@ -880,6 +910,11 @@
     "/javbus/uncensored/star/:sid": [
         "MegrezZhu",
         "CoderTonyChan"
+    ],
+    "/javbus/western": [
+        "MegrezZhu",
+        "CoderTonyChan",
+        "nczitzk"
     ],
     "/javbus/western/home": [
         "MegrezZhu",
@@ -2288,7 +2323,6 @@
     "/gov/ndrc/xwdt/:caty?": [],
     "/gov/customs/list/:gchannel": [],
     "/gov/moe/:type": [],
-    "/gov/fmprc/fyrbt": [],
     "/gov/mohurd/policy": [],
     "/gov/sapprft/approval/:channel/:detail?": [],
     "/gov/nppa/:channel": [],
@@ -2462,14 +2496,6 @@
     "/manhuadb/comics/:id": [],
     "/zfrontier/postlist/:type": [],
     "/zfrontier/board/:boardId": [],
-    "/guancha/headline": [],
-    "/guancha/topic/:id/:order?": [],
-    "/guancha/member/:caty?": [],
-    "/guancha/personalpage/:uid": [],
-    "/guancha/:caty?": [],
-    "/guanchazhe/topic/:id/:order?": [],
-    "/guanchazhe/personalpage/:uid": [],
-    "/guanchazhe/index/:caty?": [],
     "/hpoi/info/:type?": [],
     "/hpoi/:category/:words": [],
     "/hpoi/user/:user_id/:caty": [],
