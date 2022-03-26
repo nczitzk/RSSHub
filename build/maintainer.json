@@ -317,6 +317,9 @@
     "/dayanzai/dayanzai/:category/:fulltext?": [
         "nitezs"
     ],
+    "/dbmv/:category?": [
+        "kba977"
+    ],
     "/ddosi/": [
         "XinRoom"
     ],
@@ -819,6 +822,9 @@
     "/ielts/": [
         "zenxds"
     ],
+    "/ifeng/feng/:id/:type": [
+        "Jamch"
+    ],
     "/independent/ps5-stock-uk": [
         "DIYgod"
     ],
@@ -989,6 +995,9 @@
     ],
     "/jump/discount/:platform/:filter?/:countries?": [
         "zytomorrow"
+    ],
+    "/kakuyomu/episode/:id": [
+        "huangliangshusheng"
     ],
     "/kbs/news/:category?/:language?": [
         "nczitzk"
@@ -1225,6 +1234,32 @@
     ],
     "/ntdtv/:language/:id": [
         "Fatpandac"
+    ],
+    "/nuaa/cs/:type/:getDescription?": [
+        "LogicJake",
+        "Seiry",
+        "qrzbing"
+    ],
+    "/nuaa/jwc/:type/:getDescription?": [
+        "arcosx",
+        "Seiry",
+        "qrzbing"
+    ],
+    "/nuaa/yjsy/:type?": [
+        "junfengP",
+        "Seiry"
+    ],
+    "/nytimes/author/:byline": [
+        "kevinschaul"
+    ],
+    "/nytimes/book/:category?": [
+        "melvinto"
+    ],
+    "/nytimes/daily_briefing_chinese": [
+        "yueyericardo"
+    ],
+    "/nytimes/:lang?": [
+        "HenryQW"
     ],
     "/odaily/activity": [
         "nczitzk"
@@ -1474,6 +1509,26 @@
         "DIYgod",
         "NeverBehave"
     ],
+    "/thepaper/839studio/:id": [
+        "umm233"
+    ],
+    "/thepaper/839studio": [
+        "umm233"
+    ],
+    "/thepaper/channel/:id": [
+        "xyqfer",
+        "nczitzk"
+    ],
+    "/thepaper/featured": [
+        "HenryQW",
+        "nczitzk"
+    ],
+    "/thepaper/factpaper/:status?": [
+        "nczitzk"
+    ],
+    "/thepaper/list/:id": [
+        "nczitzk"
+    ],
     "/timednews/news/:type?": [
         "linbuxiao"
     ],
@@ -1598,6 +1653,9 @@
     ],
     "/watchout/": [
         "nczitzk"
+    ],
+    "/weather/weather/:location": [
+        "Rein-Ou"
     ],
     "/wechat/feeddd/:id": [
         "TonyRL",
@@ -1727,6 +1785,12 @@
     "/zjgtjy/:type?": [
         "Fatpandac"
     ],
+    "/zooTeam/zooTeam/blog": [
+        "Pulset"
+    ],
+    "/zooTeam/zooTeam/weekly": [
+        "Pulset"
+    ],
     "/1draw": [],
     "/quicker/qa": [],
     "/quicker/update": [],
@@ -1854,9 +1918,6 @@
     "/prestige-av/series/:mid/:sort?": [],
     "/yande.re/post/popular_recent": [],
     "/yande.re/post/popular_recent/:period": [],
-    "/nytimes/daily_briefing_chinese": [],
-    "/nytimes/book/:category?": [],
-    "/nytimes/:lang?": [],
     "/3dm/:name/:type": [],
     "/3dm/news": [],
     "/ximalaya/:type/:id/:all?": [],
@@ -2005,9 +2066,6 @@
     "/seu/yzb/:type": [],
     "/seu/cse/:type?": [],
     "/njtech/jwc": [],
-    "/nuaa/jwc/:type?": [],
-    "/nuaa/cs/:type?": [],
-    "/nuaa/yjsy/:type?": [],
     "/hhu/libNews": [],
     "/hhu/libNewsc": [],
     "/hit/jwc": [],
@@ -2175,11 +2233,6 @@
     "/iplay/home": [],
     "/xclient/app/:name": [],
     "/embassy/:country/:city?": [],
-    "/thepaper/featured": [],
-    "/thepaper/channel/:id": [],
-    "/thepaper/list/:id": [],
-    "/thepaper/839studio": [],
-    "/thepaper/839studio/:id": [],
     "/dysfz": [],
     "/dysfz/index": [],
     "/kirara/news": [],
@@ -2276,7 +2329,6 @@
     "/anigamer/new_anime": [],
     "/anigamer/anime/:sn": [],
     "/apkpure/versions/:region/:pkg": [],
-    "/dbmv/:category?": [],
     "/cpu/home": [],
     "/cpu/jwc": [],
     "/cpu/yjsy": [],
@@ -2842,7 +2894,6 @@
     "/lastfm/top/:country?": [],
     "/piapro/user/:pid": [],
     "/piapro/public/:type/:tag?/:category?": [],
-    "/ifeng/feng/:id/:type": [],
     "/novel/d1bz/:category/:id": [],
     "/axdzs/:novel": [],
     "/axdzs/:id1/:id2": [],
