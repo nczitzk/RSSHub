@@ -146,6 +146,9 @@
     "/ash-maurya/ash-maurya": [
         "james-tindal"
     ],
+    "/asus/bios/:model": [
+        "Fatpandac"
+    ],
     "/atcoder/post/:language?/:keyword?": [
         "nczitzk"
     ],
@@ -1123,6 +1126,13 @@
     "/mox/:category?": [
         "nczitzk"
     ],
+    "/mpaypass/main/:type?": [
+        "zhuan-zhu"
+    ],
+    "/mpaypass/news": [
+        "LogicJake",
+        "genghis-yang"
+    ],
     "/mvm/:category?": [
         "nczitzk"
     ],
@@ -1338,6 +1348,9 @@
         "Fatpandac"
     ],
     "/pts/dailynews": [
+        "nczitzk"
+    ],
+    "/pubmed/trending/:filters?": [
         "nczitzk"
     ],
     "/qidiantu/:category?/:type?/:is_history?": [
@@ -2401,8 +2414,6 @@
     "/xiaoheihe/news": [],
     "/xiaoheihe/discount/:platform?": [],
     "/fitchratings/site/:type": [],
-    "/mpaypass/news": [],
-    "/mpaypass/main/:type?": [],
     "/sina/discovery/:type": [],
     "/sina/rollnews": [],
     "/sina/sports/:type": [],
@@ -2779,7 +2790,6 @@
     "/kaggle/discussion/:forumId/:sort?": [],
     "/kaggle/competitions/:category?": [],
     "/kaggle/user/:user": [],
-    "/pubmed/trending": [],
     "/linkresearcher/:params": [],
     "/elife/:tid": [],
     "/ieee/author/:aid/:sortType/:count?": [],
