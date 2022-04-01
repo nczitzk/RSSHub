@@ -726,6 +726,9 @@
         "nczitzk",
         "xie-dongping"
     ],
+    "/hameln/chapter/:id": [
+        "huangliangshusheng"
+    ],
     "/hbr/topic/:topic?/:type?": [
         "nczitzk"
     ],
@@ -1042,6 +1045,9 @@
     ],
     "/knowmedia/:category?": [
         "Fatpandac"
+    ],
+    "/kyodonews/:language?/:keyword?": [
+        "Rongronggg9"
     ],
     "/lanqiao/author/:uid": [
         "huhuhang"
