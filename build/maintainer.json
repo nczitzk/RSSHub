@@ -459,7 +459,16 @@
     "/dut/eda/:category?": [
         "nczitzk"
     ],
+    "/dut/panjin/:category?": [
+        "nczitzk"
+    ],
+    "/dut/xsgzb/:category?": [
+        "nczitzk"
+    ],
     "/dut/pjteach/:category?": [
+        "nczitzk"
+    ],
+    "/dut/pjxqzwb/:category?": [
         "nczitzk"
     ],
     "/dut/dutdice/:category?": [
@@ -1468,6 +1477,9 @@
     ],
     "/pubmed/trending/:filters?": [
         "nczitzk"
+    ],
+    "/qbittorrent/news": [
+        "TonyRL"
     ],
     "/qidiantu/:category?/:type?/:is_history?": [
         "nczitzk"
