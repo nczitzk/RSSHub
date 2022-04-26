@@ -323,6 +323,9 @@
     "/chinacef/portal/hot": [
         "kdanfly"
     ],
+    "/chinafactcheck/": [
+        "kdanfly"
+    ],
     "/chinanews/": [
         "yuxinliu-alex"
     ],
@@ -360,6 +363,12 @@
     "/cool18/:id?/:type?/:keyword?": [
         "nczitzk"
     ],
+    "/coomer/artist/:id": [
+        "nczitzk"
+    ],
+    "/coomer/posts": [
+        "nczitzk"
+    ],
     "/cpcey/:type?": [
         "Fatpandac"
     ],
@@ -368,6 +377,9 @@
     ],
     "/csc/notice/:type?": [
         "Derekmini"
+    ],
+    "/csu/cse/:type?": [
+        "j1g5awi"
     ],
     "/dahecube/:type?": [
         "linbuxiao"
@@ -504,8 +516,9 @@
     "/douban/topic/:id/:sort?": [
         "LogicJake"
     ],
-    "/douyin/user/:uid": [
-        "Max-Tortoise"
+    "/douyin/user/:uid/:routeParams?": [
+        "Max-Tortoise",
+        "Rongronggg9"
     ],
     "/dtcj/datahero/:category?": [
         "nczitzk"
@@ -1211,6 +1224,9 @@
     "/javlibrary/:type/:id/:language?": [
         "nczitzk"
     ],
+    "/jd/price/:id": [
+        "nczitzk"
+    ],
     "/jewishmuseum/exhibitions": [
         "chazeon"
     ],
@@ -1825,6 +1841,9 @@
     "/swpu/scs/:code": [
         "CYTMWIA"
     ],
+    "/syosetu/chapter/:id": [
+        "huangliangshusheng"
+    ],
     "/sysu/sysu/cse": [
         "Neutrino3316",
         "MegrezZhu",
@@ -2243,6 +2262,9 @@
     "/zooTeam/zooTeam/weekly": [
         "Pulset"
     ],
+    "/zuel/notice": [
+        "nczitzk"
+    ],
     "/1draw": [],
     "/benedictevans": [],
     "/bangumi/calendar/today": [],
@@ -2579,7 +2601,6 @@
     "/hust/aia/news": [],
     "/hust/aia/notice/:type?": [],
     "/jgsu/jwc": [],
-    "/csu/job/:type?": [],
     "/ouc/it/:type?": [],
     "/dlu/jiaowu/news": [],
     "/dgut/jwc/:type?": [],
