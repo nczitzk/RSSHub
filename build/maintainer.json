@@ -254,6 +254,9 @@
     "/bupt/rczp": [
         "nczitzk"
     ],
+    "/c114/roll": [
+        "nczitzk"
+    ],
     "/cahkms/:category?": [
         "nczitzk"
     ],
@@ -2198,6 +2201,12 @@
         "LogicJake",
         "nczitzk"
     ],
+    "/yyets/article/:type?": [
+        "wb121017405"
+    ],
+    "/yyets/today": [
+        "bao1991213"
+    ],
     "/yystv/category/:category": [
         "LightStrawberry"
     ],
@@ -2261,6 +2270,9 @@
     ],
     "/zooTeam/zooTeam/weekly": [
         "Pulset"
+    ],
+    "/zotero/versions": [
+        "jasongzy"
     ],
     "/zuel/notice": [
         "nczitzk"
@@ -2658,8 +2670,6 @@
     "/dytt": [],
     "/dytt/index": [],
     "/rs05/rs05": [],
-    "/rrys/review": [],
-    "/yyets/todayfilelist": [],
     "/qutoutiao/category/:cid": [],
     "/nhk/news_web_easy": [],
     "/bbc/:site?/:channel?": [],
