@@ -335,6 +335,9 @@
     "/chinanews/": [
         "yuxinliu-alex"
     ],
+    "/chinathinktanks/:id": [
+        "Aeliu"
+    ],
     "/chinaventure/news/:id?": [
         "yuxinliu-alex"
     ],
@@ -809,6 +812,9 @@
     "/gov/fmprc/:category?": [
         "nicolaszf",
         "nczitzk"
+    ],
+    "/gov/immiau/news": [
+        "liu233w"
     ],
     "/gov/mee/ywdt?": [
         "liuxsdev"
@@ -1641,6 +1647,13 @@
     ],
     "/people/:site?/:category?": [
         "nczitzk"
+    ],
+    "/pianyuan/index/:media?": [
+        "greatcodeeer",
+        "jerry1119"
+    ],
+    "/pianyuan/indexers/pianyuan/results/search/api": [
+        "jerry1119"
     ],
     "/picuki/profile/:id/:displayVideo?": [
         "hoilc",
@@ -3322,7 +3335,6 @@
     "/transferwise/pair/:source/:target": [],
     "/chocolatey/software/:name?": [],
     "/nyaa/search/:query?": [],
-    "/pianyuan/:media?": [],
     "/bahamut/creation/:author/:category?": [],
     "/bahamut/creation_index/:category?/:subcategory?/:type?": [],
     "/centbrowser/history": [],
