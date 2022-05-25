@@ -993,6 +993,11 @@
         docs:"https://docs.rsshub.app/journal.html#zhong-guo-zhi-wang-wang-luo-shou-fa",
         source:[ "/knavi/journals/:name/detail" ],
         target:"/cnki/journals/debut/:name" } ] },
+  "cntheory.com":{ _name:"理论网",
+    paper:[ { title:"学习时报",
+        docs:"https://docs.rsshub.app/traditional-media.html#li-lun-wang-xue-xi-shi-bao",
+        source:[ "/" ],
+        target:(params, url) => `/cntheory/paper/${new URL(url).toString().match(/-(\w+)\.htm/)[1]}` } ] },
   "codeforces.com":{ _name:"Codeforces",
     www:[ { title:"最新比赛",
         docs:"https://docs.rsshub.app/programming.html#codeforces-zui-xin-bi-sai",
@@ -3807,7 +3812,8 @@
           "/:game/home/6",
           "/:game/home/31",
           "/:game/home/33",
-          "/:game/home/53" ],
+          "/:game/home/53",
+          "/:game/home/58" ],
         target:(params, url) => {
                     const GITS_MAP = {
                         bh3: 1, // '崩坏三',
@@ -3815,6 +3821,7 @@
                         bh2: 3, // '崩坏二',
                         wd: 4, // '未定事件簿',
                         sr: 6, // '崩坏：星穹铁道',
+                        zzz: 8, // '绝区零'
                     };
                     const { game } = params;
                     const gids = GITS_MAP[game];
