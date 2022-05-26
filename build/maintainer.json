@@ -200,6 +200,9 @@
     "/bbcnewslabs/news": [
         "elxy"
     ],
+    "/behance/:user/:type?": [
+        "MisteryMonster"
+    ],
     "/bendibao/news/:city": [
         "nczitzk"
     ],
@@ -1085,6 +1088,23 @@
     ],
     "/hupu/:category?": [
         "nczitzk"
+    ],
+    "/huxiu/article": [
+        "HenryQW"
+    ],
+    "/huxiu/author/:id": [
+        "HenryQW"
+    ],
+    "/huxiu/collection/:id": [
+        "AlexdanerZe"
+    ],
+    "/huxiu/tag/:id": [
+        "xyqfer",
+        "HenryQW"
+    ],
+    "/huxiu/search/:keyword": [
+        "xyqfer",
+        "HenryQW"
     ],
     "/hyqss/hyrb/:id?": [
         "nczitzk"
@@ -2459,6 +2479,18 @@
         "xyqfer",
         "Fatpandac"
     ],
+    "/youtube/channel/:id/:embed?": [
+        "DIYgod"
+    ],
+    "/youtube/playlist/:id/:embed?": [
+        "HenryQW"
+    ],
+    "/youtube/subscriptions/:embed?": [
+        "TonyRL"
+    ],
+    "/youtube/user/:username/:embed?": [
+        "DIYgod"
+    ],
     "/youzhiyouxing/materials/:id?": [
         "broven",
         "Fatpandac",
@@ -2657,9 +2689,6 @@
     "/twitter/keyword/:keyword/:routeParams?/:limit?": [],
     "/twitter/trends/:woeid?": [],
     "/twitter/media/:id/:routeParams?": [],
-    "/youtube/user/:username/:embed?": [],
-    "/youtube/channel/:id/:embed?": [],
-    "/youtube/playlist/:id/:embed?": [],
     "/geektime/column/:cid": [],
     "/geektime/news": [],
     "/jiemian/list/:cid": [],
@@ -3032,11 +3061,6 @@
     "/zimuzu/resource/:id?": [],
     "/zimuzu/top/:range/:type": [],
     "/zimuku/:type?": [],
-    "/huxiu/tag/:id": [],
-    "/huxiu/search/:keyword": [],
-    "/huxiu/author/:id": [],
-    "/huxiu/article": [],
-    "/huxiu/collection/:id": [],
     "/steam/search/:params": [],
     "/steamgifts/discussions/:category?": [],
     "/shanbay/checkin/:id": [],
@@ -3783,7 +3807,6 @@
     "/socialbeta/hunt": [],
     "/touhougarakuta/:language/:type": [],
     "/liequtv/room/:id": [],
-    "/behance/:user/:type?": [],
     "/bwu/news": [],
     "/newrank/wechat/:wxid": [],
     "/newrank/douyin/:dyid": [],

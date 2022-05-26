@@ -920,6 +920,20 @@
       }
     ]
   },
+  "behance.net": {
+    "_name": "Behance",
+    "www": [
+      {
+        "title": "User",
+        "docs": "https://docs.rsshub.app/design.html#behance-yong-hu-zuo-pin",
+        "source": [
+          "/:user",
+          "/:user/:types",
+          "/gallery/:galleryid/:galleryname"
+        ]
+      }
+    ]
+  },
   "bendibao.com": {
     "_name": "本地宝",
     ".": [
@@ -4723,6 +4737,48 @@
           "/"
         ],
         "target": "/hupu/bbs/:id/:order"
+      }
+    ]
+  },
+  "huxiu.com": {
+    "_name": "虎嗅",
+    ".": [
+      {
+        "title": "首页资讯",
+        "docs": "https://docs.rsshub.app/new-media.html#hu-xiu",
+        "source": [
+          "/article",
+          "/"
+        ],
+        "target": "/huxiu/article"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/new-media.html#hu-xiu",
+        "source": [
+          "/tags/:id"
+        ]
+      },
+      {
+        "title": "搜索",
+        "docs": "https://docs.rsshub.app/new-media.html#hu-xiu"
+      },
+      {
+        "title": "作者",
+        "docs": "https://docs.rsshub.app/new-media.html#hu-xiu",
+        "source": [
+          "/member/:id/*",
+          "/"
+        ],
+        "target": "/huxiu/author/:id"
+      },
+      {
+        "title": "文集",
+        "docs": "https://docs.rsshub.app/new-media.html#hu-xiu",
+        "source": [
+          "/collection/:id",
+          "/"
+        ]
       }
     ]
   },
@@ -10554,6 +10610,37 @@
       }
     ]
   },
+  "youtube.com": {
+    "_name": "YouTube",
+    "www": [
+      {
+        "title": "用户",
+        "docs": "https://docs.rsshub.app/social-media.html#youtube",
+        "source": "/user/:username",
+        "target": "/youtube/user/:username"
+      },
+      {
+        "title": "频道",
+        "docs": "https://docs.rsshub.app/social-media.html#youtube",
+        "source": "/channel/:id",
+        "target": "/youtube/channel/:id"
+      },
+      {
+        "title": "播放列表",
+        "docs": "https://docs.rsshub.app/social-media.html#youtube",
+        "source": "/playlist"
+      },
+      {
+        "title": "订阅列表",
+        "docs": "https://docs.rsshub.app/social-media.html#youtube",
+        "source": [
+          "/feed/subscriptions",
+          "/feed/channels"
+        ],
+        "target": "/youtube/subscriptions"
+      }
+    ]
+  },
   "youzhiyouxing.cn": {
     "_name": "有知有行",
     ".": [
@@ -11227,28 +11314,6 @@
         "title": "关键词",
         "docs": "https://docs.rsshub.app/social-media.html#twitter",
         "source": "/search"
-      }
-    ]
-  },
-  "youtube.com": {
-    "_name": "YouTube",
-    "www": [
-      {
-        "title": "用户",
-        "docs": "https://docs.rsshub.app/social-media.html#youtube",
-        "source": "/user/:username",
-        "target": "/youtube/user/:username"
-      },
-      {
-        "title": "频道",
-        "docs": "https://docs.rsshub.app/social-media.html#youtube",
-        "source": "/channel/:id",
-        "target": "/youtube/channel/:id"
-      },
-      {
-        "title": "播放列表",
-        "docs": "https://docs.rsshub.app/social-media.html#youtube",
-        "source": "/playlist"
       }
     ]
   },
@@ -12441,18 +12506,6 @@
         "docs": "https://docs.rsshub.app/anime.html#acfun-yong-hu-tou-gao",
         "source": "/u/:id",
         "target": "/acfun/user/video/:id"
-      }
-    ]
-  },
-  "behance.net": {
-    "_name": "Behance",
-    "www": [
-      {
-        "title": "User",
-        "docs": "https://docs.rsshub.app/design.html#behance-user-works",
-        "source": [
-          "/:user"
-        ]
       }
     ]
   },
