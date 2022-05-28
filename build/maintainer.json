@@ -1387,6 +1387,9 @@
     "/lanqiao/questions/:id": [
         "huhuhang"
     ],
+    "/laohu8/personal/:id": [
+        "Fatpandac"
+    ],
     "/latepost/:proma?": [
         "nczitzk"
     ],
@@ -1746,10 +1749,16 @@
     "/oup/:name": [
         "Fatpandac"
     ],
+    "/panewslab/author/:id": [
+        "nczitzk"
+    ],
     "/panewslab/column/:id": [
         "nczitzk"
     ],
-    "/panewslab/newsflash/:language?": [
+    "/panewslab/news": [
+        "nczitzk"
+    ],
+    "/panewslab/newsflash": [
         "nczitzk"
     ],
     "/panewslab/topic/:id": [
@@ -1795,6 +1804,9 @@
     ],
     "/pku/hr/:category?": [
         "nczitzk"
+    ],
+    "/pku/nsd/gd": [
+        "MisLink"
     ],
     "/pku/rccp/mzyt": [
         "vhxubo"
@@ -1870,6 +1882,21 @@
     ],
     "/radio-canada/latest/:language?": [
         "nczitzk"
+    ],
+    "/reuters/investigates": [
+        "LyleLee"
+    ],
+    "/reuters/reuters/channel/:site/:channel": [
+        "LyleLee"
+    ],
+    "/reuters/reuters/theWire": [
+        "LyleLee"
+    ],
+    "/reuters/:category/:topic?": [
+        "LyleLee",
+        "HenryQW",
+        "proletarius101",
+        "black-desk"
     ],
     "/rfa/:language?/:channel?/:subChannel?": [
         "zphw"
@@ -1955,6 +1982,15 @@
         "nczitzk"
     ],
     "/sicau/zsjy/:category?": [
+        "nczitzk"
+    ],
+    "/sobooks/tag/:id?": [
+        "nczitzk"
+    ],
+    "/sobooks/date/:date?": [
+        "nczitzk"
+    ],
+    "/sobooks/:category?": [
         "nczitzk"
     ],
     "/sohu/mp/:id": [
@@ -2314,6 +2350,9 @@
     "/wallhaven/:filter?/:needDetails?": [
         "nczitzk",
         "Fatpandac"
+    ],
+    "/wallpaperhub/": [
+        "nczitzk"
     ],
     "/wallstreetcn/live/:category?": [
         "nczitzk"
@@ -3431,7 +3470,6 @@
     "/cug/news": [],
     "/cug/gcxy/:type?": [],
     "/haimaoba/:id?": [],
-    "/reuters/channel/:site/:channel": [],
     "/pgyer/:app?": [],
     "/weibo/timeline/:uid/:feature?/:routeParams?": [],
     "/watchface/:watch_type?/:list_type?": [],
@@ -3787,7 +3825,6 @@
     "/erbingapp/news": [],
     "/dsb/area/:area": [],
     "/kaopunews/:language?": [],
-    "/reuters/theWire": [],
     "/gelonghui/user/:id": [],
     "/gelonghui/subject/:id": [],
     "/gelonghui/keyword/:keyword": [],
@@ -3827,7 +3864,6 @@
     "/newsmth/section/:section": [],
     "/kotaku/story/:type": [],
     "/medsci/recommend": [],
-    "/wallpaperhub": [],
     "/wukong/user/:id/:type?": [],
     "/tencent/bigdata": [],
     "/souyun/today": [],
@@ -3959,9 +3995,6 @@
     "/matataki/tokens/:id/posts/:filterCode/:ipfsFlag?": [],
     "/matataki/tags/:tagId/:tagName/posts/:ipfsFlag?": [],
     "/matataki/users/:userId/favorites/:favoriteListId/posts/:ipfsFlag?": [],
-    "/sobooks/tag/:id?": [],
-    "/sobooks/date/:date?": [],
-    "/sobooks/:category?": [],
     "/zhimap/:categoryUuid?/:recommend?": [],
     "/fantia/search/:type?/:caty?/:peroid?/:order?/:rating?/:keyword?": [],
     "/fantia/user/:id": [],

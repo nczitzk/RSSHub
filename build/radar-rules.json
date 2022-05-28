@@ -6590,6 +6590,17 @@
       }
     ]
   },
+  "laohu8.com": {
+    "_name": "老虎社区",
+    ".": [
+      {
+        "title": "个人主页",
+        "docs": "https://docs.rsshub.app/finance.html#lao-hu-she-qu",
+        "source": "/personal/:id",
+        "target": "/laohu8/personal/:id"
+      }
+    ]
+  },
   "latepost.com": {
     "_name": "晚点 Latepost",
     ".": [
@@ -8012,13 +8023,13 @@
         "title": "快讯",
         "docs": "https://docs.rsshub.app/new-media.html#panews-kuai-xun",
         "source": "/",
-        "target": "/panewslab/newsflash/:language?"
+        "target": "/panewslab/news"
       },
       {
         "title": "专栏",
         "docs": "https://docs.rsshub.app/new-media.html#panews-zhuan-lan",
         "source": "/",
-        "target": "/panewslab/column/:id"
+        "target": "/panewslab/author/:id"
       },
       {
         "title": "专题",
@@ -8123,6 +8134,16 @@
           "/"
         ],
         "target": "/pku/hr/:category?"
+      }
+    ],
+    "nsd": [
+      {
+        "title": "观点 - 北京大学国家发展研究院",
+        "docs": "https://docs.rsshub.app/university.html#bei-jing-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/pku/nsd/gd"
       }
     ],
     "www.rccp": [
@@ -8376,6 +8397,28 @@
           "/",
           "/:category"
         ]
+      }
+    ]
+  },
+  "reuters.com": {
+    "_name": "路透社",
+    ".": [
+      {
+        "title": "分类/话题/作者",
+        "docs": "https://docs.rsshub.app/traditional-media.html#lu-tou-she",
+        "source": [
+          "/:category/:topic?",
+          "/"
+        ],
+        "target": "/reuters/:category/:topic?"
+      },
+      {
+        "title": "深度调查栏目",
+        "docs": "https://docs.rsshub.app/traditional-media.html#lu-tou-she",
+        "source": [
+          "/investigates"
+        ],
+        "target": "/reuters/inverstigates"
       }
     ]
   },
@@ -8814,6 +8857,34 @@
           "/"
         ],
         "target": "/sicau/yan/:category?"
+      }
+    ]
+  },
+  "sobooks.net": {
+    "_name": "SoBooks",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/reading.html#sobooks",
+        "source": [
+          "/:category"
+        ],
+        "target": "/sobooks/:category"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/reading.html#sobooks",
+        "source": [
+          "/books/tag/:tag"
+        ],
+        "target": "/sobooks/tag/:tag"
+      },
+      {
+        "title": "归档",
+        "docs": "https://docs.rsshub.app/reading.html#sobooks",
+        "source": [
+          "/books/date/*date"
+        ]
       }
     ]
   },
@@ -10042,6 +10113,20 @@
           "/"
         ],
         "target": "/wallhaven/search/:filter?/:needDetails?"
+      }
+    ]
+  },
+  "wallpaperhub.app": {
+    "_name": "WallpaperHub",
+    ".": [
+      {
+        "title": "壁纸",
+        "docs": "https://docs.rsshub.app/picture.html#wallpaperhub",
+        "source": [
+          "/wallpaperhub",
+          "/"
+        ],
+        "target": "/wallpaperhub"
       }
     ]
   },
