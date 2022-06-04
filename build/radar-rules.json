@@ -296,6 +296,25 @@
       }
     ]
   },
+  "7mmtv.tv": {
+    "_name": "7mmtv.tv",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/multimedia.html#7mmtv-fen-lei",
+        "source": [
+          "/"
+        ]
+      },
+      {
+        "title": "制作商",
+        "docs": "https://docs.rsshub.app/multimedia.html#7mmtv-zhi-zuo-shang",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
   "8kcosplay.com": {
     "_name": "8KCosplay",
     ".": [
@@ -1309,6 +1328,35 @@
           "/"
         ],
         "target": "/c114/roll"
+      }
+    ]
+  },
+  "caareviews.org": {
+    "_name": "caa.reviews",
+    ".": [
+      {
+        "title": "Book Reviews",
+        "docs": "https://docs.rsshub.app/journal.html#caa-reviews",
+        "source": [
+          "/reviews/book"
+        ],
+        "target": "/caareviews/book"
+      },
+      {
+        "title": "Exhibition Reviews",
+        "docs": "https://docs.rsshub.app/journal.html#caa-reviews",
+        "source": [
+          "/reviews/exhibition"
+        ],
+        "target": "/caareviews/exhibition"
+      },
+      {
+        "title": "Essays",
+        "docs": "https://docs.rsshub.app/journal.html#caa-reviews",
+        "source": [
+          "/reviews/essay"
+        ],
+        "target": "/caareviews/essay"
       }
     ]
   },
@@ -2610,6 +2658,39 @@
       }
     ]
   },
+  "economist.com": {
+    "_name": "The Economist",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/traditional-media.html#the-economist",
+        "source": [
+          "/:endpoint"
+        ],
+        "target": "/economist/:endpoint"
+      },
+      {
+        "title": "Espresso",
+        "docs": "https://docs.rsshub.app/traditional-media.html#the-economist",
+        "source": [
+          "/the-world-in-brief",
+          "/espresso"
+        ],
+        "target": "/economist/espresso"
+      }
+    ],
+    "gre": [
+      {
+        "title": "GRE Vocabulary",
+        "docs": "https://docs.rsshub.app/traditional-media.html#the-economist",
+        "source": [
+          "/",
+          "/gre-advice/gre-vocabulary/which-words-study/most-common-gre-vocabulary-list-organized-difficulty"
+        ],
+        "target": "/economist/gre-vocabulary"
+      }
+    ]
+  },
   "jxjy.ecust.edu.cn": {
     "_name": "华东理工继续教育学院",
     ".": [
@@ -3045,6 +3126,20 @@
       }
     ]
   },
+  "feng.com": {
+    "_name": "威锋",
+    ".": [
+      {
+        "title": "社区",
+        "docs": "https://docs.rsshub.app/bbs.html#wei-feng",
+        "source": [
+          "/forum/photo/:id",
+          "/forum/:id"
+        ],
+        "target": "/feng/forum/:id"
+      }
+    ]
+  },
   "filmdeepfocus.com": {
     "_name": "深焦",
     ".": [
@@ -3391,6 +3486,43 @@
           "/"
         ],
         "target": "/gf-cn/news/:category?"
+      }
+    ]
+  },
+  "gitee.com": {
+    "_name": "Gitee",
+    ".": [
+      {
+        "title": "仓库 Releases",
+        "link": "https://docs.rsshub.app",
+        "source": [
+          "/:owner/:repo/releases"
+        ],
+        "target": "/gitee/releases/:owner/:repo"
+      },
+      {
+        "title": "仓库提交",
+        "link": "https://docs.rsshub.app",
+        "source": [
+          "/:owner/:repo/commits"
+        ],
+        "target": "/gitee/commits/:owner/:repo"
+      },
+      {
+        "title": "用户公开动态",
+        "link": "https://docs.rsshub.app",
+        "source": [
+          "/:username"
+        ],
+        "target": "/gitee/events/:username"
+      },
+      {
+        "title": "仓库动态",
+        "link": "https://docs.rsshub.app",
+        "source": [
+          "/:owner/:repo"
+        ],
+        "target": "/gitee/events/:owner/:repo"
       }
     ]
   },
@@ -3766,6 +3898,19 @@
         "docs": "https://docs.rsshub.app/government.html#bei-jing-shi-wei-sheng-jian-kang-wei-yuan-hui",
         "source": "/xwzx_20031/:caty",
         "target": "/gov/beijing/mhc/:caty"
+      }
+    ]
+  },
+  "customs.gov.cn": {
+    "_name": "中华人民共和国海关总署",
+    "www": [
+      {
+        "title": "拍卖信息 / 海关法规",
+        "docs": "https://docs.rsshub.app/government.html#zhong-hua-ren-min-gong-he-guo-hai-guan-zong-shu",
+        "source": [
+          "/"
+        ],
+        "target": "/gov/customs/list"
       }
     ]
   },
@@ -8080,6 +8225,29 @@
       }
     ]
   },
+  "pincong.rocks": {
+    "_name": "品葱",
+    ".": [
+      {
+        "title": "发现",
+        "docs": "https://docs.rsshub.app/bbs.html#pin-cong",
+        "source": "/"
+      },
+      {
+        "title": "精选",
+        "docs": "https://docs.rsshub.app/bbs.html#pin-cong",
+        "source": [
+          "/hot/:category"
+        ]
+      },
+      {
+        "title": "话题",
+        "docs": "https://docs.rsshub.app/bbs.html#pin-cong",
+        "source": "/topic/:topic",
+        "target": "/pincong/topic/:topic"
+      }
+    ]
+  },
   "pku.edu.cn": {
     "_name": "北京大学",
     "admission": [
@@ -8162,6 +8330,28 @@
         "docs": "https://docs.rsshub.app/university.html#bei-jing-da-xue-ren-shi-chu",
         "source": [
           "/*path"
+        ]
+      }
+    ]
+  },
+  "playno1.com": {
+    "_name": "PLAYNO.1玩樂達人",
+    "stno1": [
+      {
+        "title": "情趣",
+        "docs": "https://docs.rsshub.app/bbs.html#playno-1-wan-le-da-ren",
+        "source": [
+          "/stno1/:catid/"
+        ],
+        "target": "/playno1/st/:catid"
+      }
+    ],
+    "www": [
+      {
+        "title": "AV",
+        "docs": "https://docs.rsshub.app/bbs.html#playno-1-wan-le-da-ren",
+        "source": [
+          "/portal.php"
         ]
       }
     ]
@@ -8253,6 +8443,20 @@
           "/"
         ],
         "target": "/qidiantu/:category?/:type?/:is_history?"
+      }
+    ]
+  },
+  "qipamaijia.com": {
+    "_name": "奇葩买家秀",
+    ".": [
+      {
+        "title": "频道",
+        "docs": "https://docs.rsshub.app/reading.html#qi-dian-tu-shou-ding",
+        "source": [
+          "/",
+          "/:cate"
+        ],
+        "target": "/qipamaijia/:cate"
       }
     ]
   },
@@ -9623,6 +9827,19 @@
       }
     ]
   },
+  "tiktok.com": {
+    "_name": "TikTok",
+    ".": [
+      {
+        "title": "User",
+        "docs": "https://docs.rsshub.app/en/social-media.html#tiktok",
+        "source": [
+          "/:user"
+        ],
+        "target": "/tiktok/user/:user"
+      }
+    ]
+  },
   "timednews.com": {
     "_name": "时刻新闻",
     ".": [
@@ -10548,6 +10765,29 @@
       }
     ]
   },
+  "xiaohongshu.com": {
+    "_name": "小红书",
+    ".": [
+      {
+        "title": "用户笔记",
+        "docs": "https://docs.rsshub.app/social-media.html#xiao-hong-shu",
+        "source": "/user/profile/:user_id",
+        "target": "/xiaohongshu/user/:user_id/notes"
+      },
+      {
+        "title": "用户专辑",
+        "docs": "https://docs.rsshub.app/social-media.html#xiao-hong-shu",
+        "source": "/user/profile/:user_id",
+        "target": "/xiaohongshu/user/:user_id/album"
+      },
+      {
+        "title": "专辑",
+        "docs": "https://docs.rsshub.app/social-media.html#xiao-hong-shu",
+        "source": "/board/:board_id",
+        "target": "/xiaohongshu/board/:board_id"
+      }
+    ]
+  },
   "xiaoyuzhoufm.com": {
     "_name": "小宇宙",
     ".": [
@@ -10566,6 +10806,29 @@
           "/podcast/:id"
         ],
         "target": "/xiaoyuzhou/podcast/:id"
+      }
+    ]
+  },
+  "xiaozhuanlan.com": {
+    "_name": "小专栏",
+    ".": [
+      {
+        "title": "专栏",
+        "docs": "https://docs.rsshub.app/new-media.html#xiao-zhuan-lan",
+        "source": "/:id",
+        "target": "/xiaozhuanlan/column/:id"
+      }
+    ]
+  },
+  "xidian.edu.cn": {
+    "_name": "西安电子科技大学",
+    "jwc": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/university.html#xi-an-dian-zi-ke-ji-da-xue",
+        "source": [
+          "/:category"
+        ]
       }
     ]
   },
