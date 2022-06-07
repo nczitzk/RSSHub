@@ -2087,6 +2087,27 @@
       }
     ]
   },
+  "diandong.com": {
+    "_name": "电动邦",
+    ".": [
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/new-media.html#dong-qiu-di",
+        "source": [
+          "/news"
+        ],
+        "target": "/diandong/news/:cate"
+      },
+      {
+        "title": "电动号",
+        "docs": "https://docs.rsshub.app/new-media.html#dong-qiu-di",
+        "source": [
+          "/news/ddh"
+        ],
+        "target": "/diandong/ddh/:cate"
+      }
+    ]
+  },
   "disinfo.eu": {
     "_name": "EU Disinfo Lab",
     ".": [
@@ -2239,6 +2260,12 @@
   "douyin.com": {
     "_name": "抖音",
     ".": [
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/social-media.html#dou-yin",
+        "source": "/hashtag/:cid",
+        "target": "/douyin/hashtag/:cid"
+      },
       {
         "title": "博主",
         "docs": "https://docs.rsshub.app/social-media.html#dou-yin",
@@ -9114,6 +9141,18 @@
       }
     ]
   },
+  "sis001.com": {
+    "_name": "第一会所",
+    ".": [
+      {
+        "title": "子版块",
+        "docs": "https://docs.rsshub.app/bbs.html#di-yi-hui-suo",
+        "source": [
+          "/forum/:id"
+        ]
+      }
+    ]
+  },
   "sobooks.net": {
     "_name": "SoBooks",
     ".": [
@@ -9397,6 +9436,16 @@
         "docs": "https://docs.rsshub.app/new-media.html#shao-shu-pai-sspai",
         "source": "/series",
         "target": "/sspai/series"
+      },
+      {
+        "title": "付费专栏文章更新",
+        "docs": "https://docs.rsshub.app/new-media.html#shao-shu-pai-sspai",
+        "source": [
+          "/series/:id",
+          "/series/:id/list",
+          "/series/:id/metadata"
+        ],
+        "target": "/sspai/series/:id"
       },
       {
         "title": "Matrix",
@@ -11604,6 +11653,20 @@
       }
     ]
   },
+  "zyshow.net": {
+    "_name": "综艺秀",
+    ".": [
+      {
+        "title": "综艺",
+        "docs": "https://docs.rsshub.app/multimedia.html#zong-yi-xiu-zong-yi",
+        "source": [
+          "/:region/:id",
+          "/:id",
+          "/"
+        ]
+      }
+    ]
+  },
   "weibo.com": {
     "_name": "微博",
     ".": [
@@ -13281,16 +13344,6 @@
         "docs": "https://docs.rsshub.app/program-update.html#macwk",
         "source": "/soft/:name",
         "target": "/macwk/soft/:name"
-      }
-    ]
-  },
-  "zyshow.net": {
-    "www": [
-      {
-        "title": "",
-        "docs": "https://docs.rsshub.app/game.html#lv-fa-shi-ying-di",
-        "source": "/:name/",
-        "target": "/zyshow/:name"
       }
     ]
   }

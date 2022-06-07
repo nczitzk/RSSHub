@@ -465,6 +465,12 @@
     "/dhu/xxgk/news": [
         "KiraKiseki"
     ],
+    "/diandong/news/:cate?": [
+        "Fatpandac"
+    ],
+    "/diandong/ddh/:cate?": [
+        "Fatpandac"
+    ],
     "/disinfo/publications": [
         "nczitzk"
     ],
@@ -2060,6 +2066,9 @@
     "/sicau/zsjy/:category?": [
         "nczitzk"
     ],
+    "/sis001/forum/:id": [
+        "TonyRL"
+    ],
     "/sobooks/tag/:id?": [
         "nczitzk"
     ],
@@ -2119,6 +2128,9 @@
     ],
     "/sspai/series": [
         "HenryQW"
+    ],
+    "/sspai/series/:id": [
+        "TonyRL"
     ],
     "/sspai/shortcuts": [
         "Andiedie"
@@ -2763,6 +2775,9 @@
         "jasongzy"
     ],
     "/zuel/notice": [
+        "nczitzk"
+    ],
+    "/zyshow/:region?/:id": [
         "nczitzk"
     ],
     "/1draw": [],
@@ -4245,7 +4260,6 @@
     "/bibgame/:category?/:type?": [],
     "/macau-bolsas/:lang?": [],
     "/potplayer/update/:language?": [],
-    "/zyshow/:name": [],
     "/caus/:category?": [],
     "/modian/zhongchou/:category?/:sort?/:status?": [],
     "/macwk/soft/:name": [],
