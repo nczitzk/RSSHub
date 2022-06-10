@@ -87,6 +87,9 @@
     "/8world/:category?": [
         "nczitzk"
     ],
+    "/91porn/:lang?": [
+        "TonyRL"
+    ],
     "/95mm/tab/:tab?": [
         "nczitzk"
     ],
@@ -385,6 +388,9 @@
     ],
     "/ciidbnu/:id?": [
         "nczitzk"
+    ],
+    "/cn-healthcare/index": [
+        "qnloft"
     ],
     "/cnbeta/": [
         "nczitzk"
@@ -690,6 +696,9 @@
     ],
     "/ehentai/tag/:tag/:page?/:routeParams?": [
         "yindaheng98"
+    ],
+    "/elasticsearch-cn/:params?": [
+        "nczitzk"
     ],
     "/elsevier/:journal/latest": [
         "Derekmini",
@@ -1206,6 +1215,15 @@
         "brilon",
         "Fatpandac"
     ],
+    "/itch/devlog/:user/:id": [
+        "nczitzk"
+    ],
+    "/itch/posts/:topic/:id": [
+        "nczitzk"
+    ],
+    "/itch/:sort?/:tag?": [
+        "nczitzk"
+    ],
     "/ithome/ranking/:type": [
         "immmortal",
         "luyuhuang"
@@ -1572,6 +1590,9 @@
     "/mox/:category?": [
         "nczitzk"
     ],
+    "/mp4er/:type?/:caty?/:area?/:year?/:order?": [
+        "nczitzk"
+    ],
     "/mpaypass/main/:type?": [
         "zhuan-zhu"
     ],
@@ -1892,6 +1913,9 @@
     ],
     "/playno1/st/:catid?": [
         "TonyRL"
+    ],
+    "/pmthinking/": [
+        "nczitzk"
     ],
     "/polkaworld/polkaworld/newest": [
         "iceqing"
@@ -3116,7 +3140,6 @@
     "/dytt/index": [],
     "/rs05/rs05": [],
     "/qutoutiao/category/:cid": [],
-    "/nhk/news_web_easy": [],
     "/bbc/:site?/:channel?": [],
     "/verge": [],
     "/pediy/topic/:category?/:type?": [],
@@ -4158,8 +4181,6 @@
     "/voa/day-photos": [],
     "/voa/:language/:channel?": [],
     "/6park/:id?/:type?/:keyword?": [],
-    "/mp4er/:type?/:caty?/:area?/:year?/:order?": [],
-    "/bde4/:type?/:caty?/:area?/:year?/:order?": [],
     "/sse/sserules/:slug?": [],
     "/gamegrape/:id?": [],
     "/chsi/zszcgd/:category?": [],
