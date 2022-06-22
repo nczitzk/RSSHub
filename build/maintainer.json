@@ -23,6 +23,9 @@
     "/18comic/:category?/:time?/:order?/:keyword?": [
         "nczitzk"
     ],
+    "/19lou/:city?": [
+        "nczitzk"
+    ],
     "/35photo/actual": [
         "nczitzk"
     ],
@@ -140,6 +143,11 @@
     ],
     "/ally/rail/:category?/:topic?": [
         "Rongronggg9"
+    ],
+    "/apnews/topics/:topic?": [
+        "zoenglinghou",
+        "mjysci",
+        "TonyRL"
     ],
     "/app-center/release/:user/:app/:distribution_group": [
         "Rongronggg9"
@@ -404,6 +412,12 @@
     "/cncf/:cate?": [
         "Fatpandac"
     ],
+    "/cnjxol/jxrb/:id?": [
+        "nczitzk"
+    ],
+    "/cnjxol/nhwb/:id?": [
+        "nczitzk"
+    ],
     "/cnki/journals/:name": [
         "Fatpandac"
     ],
@@ -488,6 +502,12 @@
     ],
     "/dockerhub/tag/:owner/:image": [
         "outloudvi"
+    ],
+    "/domp4/detail/:id": [
+        "savokiss"
+    ],
+    "/domp4/latest/:type?": [
+        "savokiss"
     ],
     "/dongqiudi/daily": [
         "HenryQW"
@@ -700,11 +720,11 @@
     "/elasticsearch-cn/:params?": [
         "nczitzk"
     ],
-    "/elsevier/:journal/latest": [
+    "/elsevier/:journal": [
         "Derekmini",
         "sunwolf-swb"
     ],
-    "/elsevier/:journal/vol/:id": [
+    "/elsevier/:journal/:issue": [
         "Derekmini",
         "sunwolf-swb"
     ],
@@ -962,6 +982,9 @@
     "/gov/anhui/kjt/:path?": [
         "nczitzk"
     ],
+    "/gov/beijing/jw/tzgg": [
+        "nczitzk"
+    ],
     "/gov/beijing/kw/:channel": [
         "Fatpandac"
     ],
@@ -1045,8 +1068,14 @@
         "nczitzk",
         "xie-dongping"
     ],
+    "/hackertalk/": [
+        "hyoban"
+    ],
     "/hameln/chapter/:id": [
         "huangliangshusheng"
+    ],
+    "/hashnode/blog/:username": [
+        "hnrainll"
     ],
     "/hbr/topic/:topic?/:type?": [
         "nczitzk"
@@ -1208,11 +1237,11 @@
     "/icac/news/:lang?": [
         "linbuxiao, TonyRL"
     ],
-    "/ieee/:journal/latest/date/:sortType?": [
+    "/ieee/journal/:journal/:sortType?": [
         "Derekmini",
         "auto-bot-ty"
     ],
-    "/ieee/:journal/latest/vol/:sortType?": [
+    "/ieee/journal/:journal/recent/:sortType?": [
         "Derekmini",
         "auto-bot-ty"
     ],
@@ -1269,13 +1298,6 @@
     ],
     "/jandan/": [
         "nczitzk"
-    ],
-    "/jasa/latest": [
-        "Derekmini",
-        "auto-bot-ty"
-    ],
-    "/jasa/section/:id": [
-        "Derekmini"
     ],
     "/javbus/": [
         "MegrezZhu",
@@ -1838,6 +1860,9 @@
     "/nytimes/:lang?": [
         "HenryQW"
     ],
+    "/oceanengine/index/:keyword/:channel?": [
+        "Jkker"
+    ],
     "/odaily/activity": [
         "nczitzk"
     ],
@@ -1855,6 +1880,9 @@
     ],
     "/oncc/:language/:channel?": [
         "Fatpandac"
+    ],
+    "/openwrt/releases/:model?": [
+        "DIYgod"
     ],
     "/orcid/:id": [
         "OrangeEd1t"
@@ -2068,6 +2096,14 @@
     "/sciencenet/user/:id": [
         "nczitzk"
     ],
+    "/scitation/:pub/:jrn": [
+        "Derekmini",
+        "auto-bot-ty"
+    ],
+    "/scitation/:pub/:jrn/:sec": [
+        "Derekmini",
+        "auto-bot-ty"
+    ],
     "/sdu/cmse/:type?": [
         "Ji4n1ng"
     ],
@@ -2278,6 +2314,12 @@
     "/taptap/topic/:id/:type?/:sort?/:lang?": [
         "hoilc",
         "TonyRL"
+    ],
+    "/techflow520/newsflash": [
+        "nczitzk"
+    ],
+    "/techflow520/:category?": [
+        "nczitzk"
     ],
     "/telegram/telegram/channel/:username/:routeParams?": [
         "DIYgod",
@@ -3731,7 +3773,6 @@
     "/xinquji/today": [],
     "/xinquji/today/internal": [],
     "/gbcc/trust": [],
-    "/apnews/topics/:topic": [],
     "/cbc/topics/:topic?": [],
     "/discuz/:ver([7|x])/:cid([0-9]{2})/:link(.*)": [],
     "/discuz/:ver([7|x])/:link(.*)": [],
