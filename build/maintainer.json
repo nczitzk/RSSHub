@@ -455,6 +455,9 @@
     "/csc/notice/:type?": [
         "Derekmini"
     ],
+    "/cscse/tzgg": [
+        "nczitzk"
+    ],
     "/csu/cse/:type?": [
         "j1g5awi"
     ],
@@ -1490,6 +1493,10 @@
     "/kcna/:lang/:category?": [
         "Rongronggg9"
     ],
+    "/keep/user/:id": [
+        "Dectinc",
+        "DIYgod"
+    ],
     "/kemono/:source?/:id?": [
         "nczitzk"
     ],
@@ -1701,6 +1708,9 @@
     "/nbd/:id?": [
         "nczitzk"
     ],
+    "/ncwu/note": [
+        "vuhe"
+    ],
     "/neea/jlpt": [
         "nczitzk"
     ],
@@ -1855,7 +1865,8 @@
         "melvinto"
     ],
     "/nytimes/daily_briefing_chinese": [
-        "yueyericardo"
+        "yueyericardo",
+        "nczitzk"
     ],
     "/nytimes/:lang?": [
         "HenryQW"
@@ -1975,6 +1986,9 @@
     ],
     "/polkaworld/polkaworld/newest": [
         "iceqing"
+    ],
+    "/prestige-av/series/:mid/:sort?": [
+        "minimalistrojan"
     ],
     "/producthunt/today": [
         "miaoyafeng",
@@ -2263,6 +2277,12 @@
     "/subhd/zu/:category?": [
         "nczitzk"
     ],
+    "/supchina/podcasts": [
+        "nczitzk"
+    ],
+    "/supchina/": [
+        "nczitzk"
+    ],
     "/swissinfo/:language?/:category?": [
         "nczitzk"
     ],
@@ -2411,6 +2431,9 @@
     ],
     "/topys/:keyword?": [
         "nczitzk"
+    ],
+    "/trending/:keywords/:numberOfDays?": [
+        "Jkker"
     ],
     "/trow/portal": [
         "shiningdracon"
@@ -2966,7 +2989,6 @@
     "/pornhub/:language?/users/:username": [],
     "/pornhub/:language?/model/:username/:sort?": [],
     "/pornhub/:language?/pornstar/:username/:sort?": [],
-    "/prestige-av/series/:mid/:sort?": [],
     "/yande.re/post/popular_recent": [],
     "/yande.re/post/popular_recent/:period": [],
     "/3dm/:name/:type": [],
@@ -3007,7 +3029,6 @@
     "/mi/youpin/new/:sort?": [],
     "/miui/:device/:type?/:region?": [],
     "/mi/bbs/board/:boardId": [],
-    "/keep/user/:id": [],
     "/qidian/chapter/:id": [],
     "/qidian/forum/:id": [],
     "/qidian/free/:type?": [],
@@ -3190,7 +3211,6 @@
     "/szu/yz/:type?": [],
     "/upc/main/:type?": [],
     "/upc/jsj/:type?": [],
-    "/ncwu/notice": [],
     "/tynu": [],
     "/nuc/:type": [],
     "/ahau/cs_news/:type": [],
