@@ -565,6 +565,20 @@
       }
     ]
   },
+  "gitlab.io": {
+    "_name": "GitLab",
+    "agora0": [
+      {
+        "title": "零博客",
+        "docs": "https://docs.rsshub.app/blog.html#ling-bo-ke-fen-lei",
+        "source": [
+          "/blog/:category",
+          "/"
+        ],
+        "target": "/agora0/:category"
+      }
+    ]
+  },
   "ahjzu.edu.cn": {
     "_name": "安徽建筑大学",
     "news": [
@@ -792,6 +806,20 @@
         "source": [
           "/realtime/:channel"
         ]
+      }
+    ]
+  },
+  "appleinsider.com": {
+    "_name": "AppleInsider",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/new-media.html#appleinsider-fen-lei",
+        "source": [
+          "/:category",
+          "/"
+        ],
+        "target": "/appleinsider/:category"
       }
     ]
   },
@@ -1547,6 +1575,19 @@
           "/"
         ],
         "target": "/cbirc/:category?"
+      }
+    ]
+  },
+  "cbnweek.com": {
+    "_name": "第一财经杂志",
+    ".": [
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/finance.html#di-yi-cai-jing-za-zhi-shou-ye",
+        "source": [
+          "/"
+        ],
+        "target": "/cbnweek"
       }
     ]
   },
@@ -2401,6 +2442,14 @@
         "docs": "https://docs.rsshub.app/social-media.html#dou-yin",
         "source": "/user/:uid",
         "target": "/douyin/user/:uid"
+      }
+    ],
+    "live": [
+      {
+        "title": "直播间开播",
+        "docs": "https://docs.rsshub.app/live.html#dou-yin-zhi-bo",
+        "source": "/:rid",
+        "target": "/douyin/live/:rid"
       }
     ]
   },
@@ -4385,6 +4434,18 @@
           "/gz/weatherAlarm/otherCity/"
         ],
         "target": "/gov/guangdong/tqyb/sncsyjxh"
+      }
+    ]
+  },
+  "xz.gov.cn": {
+    "_name": "徐州市人民政府",
+    "hrss": [
+      {
+        "title": "徐州市人力资源和社会保障局",
+        "docs": "https://docs.rsshub.app/government.html#xu-zhou-shi-ren-min-zheng-fu-xu-zhou-shi-ren-li-zi-yuan-he-she-hui-bao-zhang-ju",
+        "source": [
+          "/*"
+        ]
       }
     ]
   },
@@ -9489,6 +9550,19 @@
       }
     ]
   },
+  "shuiguopai.com": {
+    "_name": "水果派",
+    ".": [
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/new-media.html#shui-guo-pai-shou-ye",
+        "source": [
+          "/"
+        ],
+        "target": "/shuiguopai"
+      }
+    ]
+  },
   "sicau.edu.cn": {
     "_name": "",
     "dky": [
@@ -11522,6 +11596,59 @@
         "docs": "https://docs.rsshub.app/university.html#xi-an-dian-zi-ke-ji-da-xue",
         "source": [
           "/:category"
+        ]
+      }
+    ]
+  },
+  "xjtu.edu.cn": {
+    "_name": "西安交通大学",
+    "dean": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/university.html#xi-an-jiao-tong-da-xue-jiao-wu-chu",
+        "source": [
+          "/"
+        ],
+        "target": "/xjtu/dean/:subpath+"
+      }
+    ],
+    "ee": [
+      {
+        "title": "电气学院",
+        "docs": "https://docs.rsshub.app/university.html#xi-an-jiao-tong-da-xue-dian-qi-xue-yuan",
+        "source": [
+          "/"
+        ],
+        "target": "/xjtu/ee/:id?"
+      }
+    ],
+    "gs": [
+      {
+        "title": "研究生院通知公告",
+        "docs": "https://docs.rsshub.app/university.html#xi-an-jiao-tong-da-xue-yan-jiu-sheng-xue-yuan-tong-zhi-gong-gao",
+        "source": [
+          "/"
+        ],
+        "target": "/xjtu/gs/tzgg"
+      }
+    ],
+    "international": [
+      {
+        "title": "国际处通知",
+        "docs": "https://docs.rsshub.app/university.html#xi-an-jiao-tong-da-xue-guo-ji-chu-tong-zhi",
+        "source": [
+          "/"
+        ],
+        "target": "/xjtu/international/:subpath+"
+      }
+    ],
+    "std": [
+      {
+        "title": "科技在线",
+        "docs": "https://docs.rsshub.app/university.html#xi-an-jiao-tong-da-xue-ke-ji-zai-xian",
+        "source": [
+          "/tzgg/:category",
+          "/"
         ]
       }
     ]

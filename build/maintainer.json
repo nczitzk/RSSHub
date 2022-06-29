@@ -126,6 +126,9 @@
     "/agirls/:category?": [
         "TonyRL"
     ],
+    "/agora0/:category?": [
+        "nczitzk"
+    ],
     "/ahjzu/news": [
         "Yuk-0v0"
     ],
@@ -159,6 +162,9 @@
     ],
     "/appledaily/:channel?": [
         "Fatpandac"
+    ],
+    "/appleinsider/:category?": [
+        "nczitzk"
     ],
     "/appstore/update/:country/:id": [
         "HenryQW"
@@ -321,6 +327,9 @@
     ],
     "/cbirc/:category?": [
         "JkCheung"
+    ],
+    "/cbnweek/": [
+        "nczitzk"
     ],
     "/ccac/news/:type/:lang?": [
         "linbuxiao"
@@ -1017,6 +1026,9 @@
     ],
     "/gov/sichuan/deyang/govpulicinfo/:countyName": [
         "zytomorrow"
+    ],
+    "/gov/xuzhou/hrss/:category?": [
+        "nczitzk"
     ],
     "/guancha/:category?": [
         "nczitzk",
@@ -2162,6 +2174,9 @@
     "/shopback/:store": [
         "nczitzk"
     ],
+    "/shuiguopai/": [
+        "nczitzk"
+    ],
     "/sicau/dky/:category?": [
         "nczitzk"
     ],
@@ -2712,6 +2727,24 @@
     ],
     "/xidian/jwc/:category?": [
         "ShadowySpirits"
+    ],
+    "/xjtu/dean/:subpath+": [
+        "hoilc"
+    ],
+    "/xjtu/ee/:id?": [
+        "DylanXie123"
+    ],
+    "/xjtu/gs/tzgg": [
+        "nczitzk"
+    ],
+    "/xjtu/international/:subpath+": [
+        "guitaoliu"
+    ],
+    "/xjtu/job/:subpath?": [
+        "DylanXie123"
+    ],
+    "/xjtu/std/:category?": [
+        "nczitzk"
     ],
     "/xueqiu/favorite/:id": [
         "imlonghao"
@@ -3853,11 +3886,6 @@
     "/wolley": [],
     "/wolley/user/:id": [],
     "/wolley/host/:host": [],
-    "/xjtu/gs/tzgg": [],
-    "/xjtu/dean/:subpath+": [],
-    "/xjtu/international/:subpath+": [],
-    "/xjtu/job/:subpath?": [],
-    "/xjtu/ee/:id?": [],
     "/booksource": [],
     "/ku/:name?": [],
     "/blogs/hedwig/:type": [],
