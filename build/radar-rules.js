@@ -4687,6 +4687,26 @@
         docs:"https://docs.rsshub.app/university.html#nan-jing-hang-kong-hang-tian-da-xue" } ],
     "www.graduate":[ { title:"研究生院",
         docs:"https://docs.rsshub.app/university.html#nan-jing-hang-kong-hang-tian-da-xue" } ] },
+  "nyaa.si":{ _name:"nyaa",
+    ".":[ { title:"搜索结果",
+        docs:"https://docs.rsshub.app/multimedia.html#nyaa-sou-suo-jie-guo",
+        source:"/",
+        target:(params, url) => {
+                    url = new URL(url);
+                    if (url.hostname.split('.')[0] === 'nyaa') {
+                        const searchParams = url.searchParams;
+                        const query = searchParams.has('q') ? searchParams.get('q') : '';
+                        return `/nyaa/search/${query}`;
+                    }
+                } } ],
+    sukebei:[ { title:"sukebei 搜索结果",
+        docs:"https://docs.rsshub.app/multimedia.html#nyaa-sukebei-sou-suo-jie-guo",
+        source:"/",
+        target:(params, url) => {
+                    const searchParams = new URL(url).searchParams;
+                    const query = searchParams.has('q') ? searchParams.get('q') : '';
+                    return `/nyaa/sukebei/search/${query}`;
+                } } ] },
   "nytimes.com":{ _name:"纽约时报",
     ".":[ { title:"新闻简报",
         docs:"https://docs.rsshub.app/traditional-media.html#niu-yue-shi-bao",
@@ -6136,6 +6156,25 @@
 
                     return `/txrjy/fornumtopic/${channel ? channel : ''}`;
                 } } ] },
+  "u3c3.com":{ _name:"u3c3",
+    ".":[ { title:"分类",
+        docs:"https://docs.rsshub.app/multimedia.html#u3c3-fen-lei",
+        source:"/",
+        target:(params, url) => {
+                    const searchParams = new URL(url).searchParams;
+                    const type = searchParams.has('type') ? searchParams.get('type') : '';
+                    return `/u3c3/${type}`;
+                } },
+      { title:"关键词搜索",
+        docs:"https://docs.rsshub.app/multimedia.html#u3c3-guan-jian-ci-sou-suo",
+        source:"/",
+        target:(params, url) => {
+                    const searchParams = new URL(url).searchParams;
+                    if (searchParams.has('search')) {
+                        const keyword = searchParams.get('search');
+                        return `/u3c3/search/${keyword}`;
+                    }
+                } } ] },
   "uibe.edu.cn":{ _name:"对外经济贸易大学",
     hr:[ { title:"人力资源处",
         docs:"https://docs.rsshub.app/university.html#dui-wai-jing-ji-mao-yi-da-xue-ren-li-zi-yuan-chu",
@@ -6256,6 +6295,11 @@
           "/categories/:category/:subcategory",
           "/categories/:category/:subcategory/videos" ],
         target:(params) => `/vimeo/category/:category${params.subcategory ? `/` + params.subcategory : ''}` } ] },
+  "vlive.tv":{ _name:"V LIVE",
+    ".":[ { title:"Board",
+        docs:"https://docs.rsshub.app/en/live.html#v-live",
+        source:"/channel/:board/board/:board",
+        target:"/vlive/channel/:board/board/:board" } ] },
   "wallhaven.cc":{ _name:"wallhaven",
     ".":[ { title:"Latest",
         docs:"https://docs.rsshub.app/picture.html#wallhaven-zhu-zhu-ti",
