@@ -617,6 +617,12 @@
     "/douban/topic/:id/:sort?": [
         "LogicJake"
     ],
+    "/douyin/hashtag/:cid/:routeParams?": [
+        "TonyRL"
+    ],
+    "/douyin/live/:rid": [
+        "TonyRL"
+    ],
     "/douyin/user/:uid/:routeParams?": [
         "Max-Tortoise",
         "Rongronggg9"
@@ -2124,6 +2130,9 @@
     "/ruc/hr/:category?": [
         "nczitzk"
     ],
+    "/samsung/research/blog": [
+        "nczitzk"
+    ],
     "/sciencedirect/journal/:id": [
         "nczitzk"
     ],
@@ -2587,6 +2596,9 @@
     "/verfghbw/press/:keyword?": [
         "quinn-dev"
     ],
+    "/vlive/channel/:channel/board/:board": [
+        "TonyRL"
+    ],
     "/wallhaven/search/:filter?/:needDetails?": [
         "nczitzk",
         "Fatpandac"
@@ -2739,6 +2751,9 @@
     "/xidian/jwc/:category?": [
         "ShadowySpirits"
     ],
+    "/xjtu/2yuan/news/:id?": [
+        "nczitzk"
+    ],
     "/xjtu/dean/:subpath+": [
         "hoilc"
     ],
@@ -2756,6 +2771,9 @@
     ],
     "/xjtu/std/:category?": [
         "nczitzk"
+    ],
+    "/xueqiu/column/:id": [
+        "TonyRL"
     ],
     "/xueqiu/favorite/:id": [
         "imlonghao"
@@ -2845,6 +2863,9 @@
     ],
     "/zaobao/:type/:section": [
         "shunf4"
+    ],
+    "/zhangyoubao/:category": [
+        "ztmzzz"
     ],
     "/zhibo8/forum/:id": [
         "LogicJake"

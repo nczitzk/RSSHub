@@ -9235,6 +9235,20 @@
       }
     ]
   },
+  "samsung.com": {
+    "_name": "Samsung",
+    "research": [
+      {
+        "title": "Research Blog",
+        "docs": "https://docs.rsshub.app/new-media.html#samsung-research-blog",
+        "source": [
+          "/blog",
+          "/"
+        ],
+        "target": "/samsung/research/blog"
+      }
+    ]
+  },
   "sciencenet.cn": {
     "_name": "科学网",
     "blog": [
@@ -11645,6 +11659,15 @@
   },
   "xjtu.edu.cn": {
     "_name": "西安交通大学",
+    "2yuan": [
+      {
+        "title": "第二附属医院新闻",
+        "docs": "https://docs.rsshub.app/university.html#xi-an-jiao-tong-da-xue-di-er-fu-shu-yi-yuan-xin-wen",
+        "source": [
+          "/"
+        ]
+      }
+    ],
     "dean": [
       {
         "title": "教务处",
@@ -11748,6 +11771,14 @@
           "/u/:id"
         ],
         "target": "/xueqiu/user_stock/:id"
+      },
+      {
+        "title": "用户专栏",
+        "docs": "https://docs.rsshub.app/finance.html#xue-qiu",
+        "source": [
+          "/:id/column"
+        ],
+        "target": "/xueqiu/column/:id"
       },
       {
         "title": "组合最新调仓信息",
@@ -12088,6 +12119,19 @@
           "/news/world"
         ],
         "target": "/zaobao/znews/world"
+      }
+    ]
+  },
+  "zhangyoubao.com": {
+    "_name": "掌游宝",
+    "mobile": [
+      {
+        "title": "推荐",
+        "docs": "https://docs.rsshub.app/game.html#zhang-you-bao-tui-jian",
+        "source": [
+          "/:category/"
+        ],
+        "target": "/zhangyoubao/:category"
       }
     ]
   },
