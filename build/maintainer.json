@@ -354,6 +354,9 @@
         "idealclover",
         "xyqfer"
     ],
+    "/cde/xxgk/:category": [
+        "TonyRL"
+    ],
     "/cde/:channel/:category": [
         "Fatpandac"
     ],
@@ -1642,6 +1645,9 @@
     "/mihoyo/bbs/official/:gids/:type?/:page_size?/:last_id?": [
         "CaoMeiYouRen"
     ],
+    "/mindmeister/:category?/:language?": [
+        "TonyRL"
+    ],
     "/mingpao/:type?/:category?": [
         "TonyRL"
     ],
@@ -2049,6 +2055,12 @@
     ],
     "/qq/ac/rank/:type?/:time?": [
         "nczitzk"
+    ],
+    "/qq/kg/:userId": [
+        "zhangxiang012"
+    ],
+    "/qq/kg/reply/:playId": [
+        "zhangxiang012"
     ],
     "/qq/live/:id": [
         "nczitzk"
