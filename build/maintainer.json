@@ -394,6 +394,9 @@
     "/chinacef/portal/hot": [
         "kdanfly"
     ],
+    "/chinadegrees/:province?": [
+        "TonyRL"
+    ],
     "/chinafactcheck/": [
         "kdanfly"
     ],
@@ -493,6 +496,9 @@
     ],
     "/ddosi/category/:category": [
         "XinRoom"
+    ],
+    "/dgjyw/:category?": [
+        "nczitzk"
     ],
     "/dhu/jiaowu/news/:type?": [
         "KiraKiseki"
@@ -985,6 +991,9 @@
     "/gov/moe/:type": [
         "Crawler995"
     ],
+    "/gov/nmpa/:path+": [
+        "TonyRL"
+    ],
     "/gov/nrta/news/:category?": [
         "yuxinliu-alex"
     ],
@@ -1105,6 +1114,9 @@
         "nczitzk"
     ],
     "/hdu/cs": [
+        "legr4ndk"
+    ],
+    "/hdu/cs/pg": [
         "legr4ndk"
     ],
     "/hellobtc/information/:channel?": [
@@ -1744,6 +1756,9 @@
     "/neea/:type?": [
         "SunShinenny"
     ],
+    "/netease/exclusive/:id?": [
+        "nczitzk"
+    ],
     "/netease/renjian/:category?": [
         "nczitzk"
     ],
@@ -2009,6 +2024,15 @@
     ],
     "/pku/scc/recruit/:type?": [
         "DylanXie123"
+    ],
+    "/pku/ss/notice": [
+        "legr4ndk"
+    ],
+    "/pku/ss/admission": [
+        "legr4ndk"
+    ],
+    "/pku/ss/pgadmin": [
+        "legr4ndk"
     ],
     "/playno1/av/:catid?": [
         "TonyRL"
@@ -4069,7 +4093,6 @@
     "/law/dh": [],
     "/law/jctd": [],
     "/samsungmembers/latest": [],
-    "/dgjyw/:type": [],
     "/gov/caict/bps": [],
     "/gov/caict/qwsj": [],
     "/gov/caict/caictgd": [],
