@@ -55,7 +55,8 @@
     ],
     "/36kr/search/article/:keyword": [
         "xyqfer",
-        "kt286"
+        "kt286",
+        "nczitzk"
     ],
     "/36kr/user/:uid": [
         "nczitzk"
@@ -114,6 +115,15 @@
     "/abskoop/": [
         "zhenhappy"
     ],
+    "/acfun/article/:categoryId/:sortType?/:timeRange?": [
+        "TonyRL"
+    ],
+    "/acfun/bangumi/:id": [
+        "xyqfer"
+    ],
+    "/acfun/user/video/:uid": [
+        "wdssmq"
+    ],
     "/acm-ecnu/contest/:category?": [
         "a180285"
     ],
@@ -143,6 +153,15 @@
     ],
     "/aliyun/notice/:type?": [
         "muzea"
+    ],
+    "/allrecode/news": [
+        "nczitzk"
+    ],
+    "/allrecode/recommends": [
+        "nczitzk"
+    ],
+    "/allrecode/:category?": [
+        "nczitzk"
     ],
     "/ally/rail/:category?/:topic?": [
         "Rongronggg9"
@@ -251,6 +270,9 @@
         "nczitzk"
     ],
     "/bioone/journals/:journal?": [
+        "nczitzk"
+    ],
+    "/biquge/:url": [
         "nczitzk"
     ],
     "/bit/rszhaopin": [
@@ -484,6 +506,13 @@
     ],
     "/dapenti/subject/:id": [
         "xyqfer"
+    ],
+    "/darwinawards/all": [
+        "zoenglinghou",
+        "nczitzk"
+    ],
+    "/darwinawards/": [
+        "nczitzk"
     ],
     "/dayanzai/dayanzai/:category/:fulltext?": [
         "nitezs"
@@ -781,6 +810,9 @@
     "/ezone/:category?": [
         "nczitzk"
     ],
+    "/fda/cdrh": [
+        "nczitzk"
+    ],
     "/ff14/global/:lang/:type?": [
         "chengyuhui"
     ],
@@ -997,6 +1029,10 @@
     "/gov/nrta/news/:category?": [
         "yuxinliu-alex"
     ],
+    "/gov/nsfc/news/:type?": [
+        "Derekmini",
+        "nczitzk"
+    ],
     "/gov/pbc/goutongjiaoliu": [
         "nczitzk"
     ],
@@ -1021,6 +1057,9 @@
     "/gov/hebei/czt/xwdt/:category?": [
         "nczitzk"
     ],
+    "/gov/shaanxi/kjt/:id?": [
+        "nczitzk"
+    ],
     "/gov/shenzhen/hrss/szksy/:caty/:page?": [
         "zlasd"
     ],
@@ -1029,6 +1068,9 @@
     ],
     "/gov/shanghai/rsj/ksxm": [
         "Fatpandac"
+    ],
+    "/gov/shanghai/yjj/:path+": [
+        "nczitzk"
     ],
     "/gov/shanghai/wsjkw/yqtb": [
         "zcf0508"
@@ -1880,9 +1922,6 @@
     "/npm/package/:name": [
         "Fatpandac"
     ],
-    "/nsfc/news/:type?": [
-        "Derekmini"
-    ],
     "/ntdtv/:language/:id": [
         "Fatpandac"
     ],
@@ -2166,6 +2205,13 @@
     "/ruc/hr/:category?": [
         "nczitzk"
     ],
+    "/sakurazaka46/blog/:id?": [
+        "victor21813",
+        "nczitzk"
+    ],
+    "/sakurazaka46/news": [
+        "nczitzk"
+    ],
     "/samsung/research/blog": [
         "nczitzk"
     ],
@@ -2185,6 +2231,9 @@
     "/scitation/:pub/:jrn/:sec": [
         "Derekmini",
         "auto-bot-ty"
+    ],
+    "/scvtc/xygg": [
+        "nczitzk"
     ],
     "/sdu/cmse/:type?": [
         "Ji4n1ng"
@@ -3171,8 +3220,6 @@
     "/hopper/:lowestOnly/:from/:to?": [],
     "/mafengwo/note/:type": [],
     "/mafengwo/ziyouxing/:code": [],
-    "/novel/biquge/:id": [],
-    "/novel/biqugeinfo/:id/:limit?": [],
     "/novel/uukanshu/:uid": [],
     "/novel/wenxuemi/:id1/:id2": [],
     "/novel/booksky/:id": [],
@@ -3365,8 +3412,6 @@
     "/nhentai/search/:keyword/:mode?": [],
     "/nhentai/:key/:keyword/:mode?": [],
     "/ltaaa/:category?": [],
-    "/acfun/bangumi/:id": [],
-    "/acfun/user/video/:uid": [],
     "/autotrader/:query": [],
     "/geekpark/breakingnews": [],
     "/baidu/doodles": [],
@@ -3718,7 +3763,6 @@
     "/hinatazaka46/news": [],
     "/keyakizaka46/blog": [],
     "/hinatazaka46/blog": [],
-    "/sakurazaka46/blog": [],
     "/coolapk/tuwen/:type?": [],
     "/coolapk/tuwen-xinxian": [],
     "/coolapk/toutiao/:type?": [],
@@ -4159,8 +4203,6 @@
     "/manxiaosi/book/:id": [],
     "/jlu/oa": [],
     "/hfut/tzgg": [],
-    "/darwinawards/all": [],
-    "/scvtc/xygg": [],
     "/scut/scet/notice": [],
     "/scut/seie/news_center": [],
     "/onejav/:type/:key?": [],

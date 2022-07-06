@@ -514,6 +514,27 @@
       }
     ]
   },
+  "acfun.cn": {
+    "_name": "AcFun",
+    "www": [
+      {
+        "tilte": "番剧",
+        "docs": "https://docs.rsshub.app/anime.html#acfun-fan-ju",
+        "source": "/bangumi/:id"
+      },
+      {
+        "title": "用户投稿",
+        "docs": "https://docs.rsshub.app/anime.html#acfun-yong-hu-tou-gao",
+        "source": "/u/:id",
+        "target": "/acfun/user/video/:id"
+      },
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/anime.html#acfun",
+        "source": "/v/:categoryId/index.htm"
+      }
+    ]
+  },
   "ecnu.edu.cn": {
     "_name": "ACM-ECNU",
     "acm": [
@@ -636,6 +657,38 @@
           "/"
         ],
         "target": "/aliyun/database_month"
+      }
+    ]
+  },
+  "allrecode.com": {
+    "_name": "重构",
+    ".": [
+      {
+        "title": "推荐",
+        "docs": "https://docs.rsshub.app/news-media.html#chong-gou-tui-jian",
+        "source": [
+          "/recommends",
+          "/"
+        ],
+        "target": "/allrecode/recommends"
+      },
+      {
+        "title": "快讯",
+        "docs": "https://docs.rsshub.app/news-media.html#chong-gou-kuai-xun",
+        "source": [
+          "/news",
+          "/"
+        ],
+        "target": "/allrecode/news"
+      },
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/news-media.html#chong-gou-zi-xun",
+        "source": [
+          "/:category",
+          "/"
+        ],
+        "target": "/allrecode/:category"
       }
     ]
   },
@@ -1227,6 +1280,186 @@
           "/"
         ],
         "target": "/bioone/journals/:journal"
+      }
+    ]
+  },
+  "xbiquwx.la": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "biqu5200.net": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "xbiquge.so": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "biqugeu.net": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "b520.cc": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "biquge.biz": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "xbiquge.la": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "qbiqu.com": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "bswtan.com": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "biquge.co": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "zhhbqg.com": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "biqugse.com": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "ibiquge.net": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "shuquge.com": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "mayiwxw.com": {
+    "_name": "笔趣阁",
+    ".": [
+      {
+        "title": "",
+        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-xiao-shuo",
+        "source": [
+          "/"
+        ]
       }
     ]
   },
@@ -2205,6 +2438,20 @@
         "source": [
           "/blog/blog.asp"
         ]
+      }
+    ]
+  },
+  "darwinawards.com": {
+    "_name": "Darwin Awards",
+    ".": [
+      {
+        "title": "Award Winners",
+        "docs": "https://docs.rsshub.app/other.html#darwin-awards-award-winners",
+        "source": [
+          "/darwin",
+          "/"
+        ],
+        "target": "/darwinawards"
       }
     ]
   },
@@ -3430,6 +3677,20 @@
       }
     ]
   },
+  "fda.gov": {
+    "_name": "U.S. Food and Drug Administration",
+    ".": [
+      {
+        "title": "CDRHNew",
+        "docs": "https://docs.rsshub.app/government.html#mei-guo-shi-pin-yao-pin-jian-du-guan-li-ju-cdrhnew",
+        "source": [
+          "/medical-devices/news-events-medical-devices/cdrhnew-news-and-updates",
+          "/"
+        ],
+        "target": "/fda/cdrh"
+      }
+    ]
+  },
   "feng.com": {
     "_name": "威锋",
     ".": [
@@ -4369,6 +4630,18 @@
       }
     ]
   },
+  "nmpa.gov.cn": {
+    "_name": "国家药品监督管理局",
+    ".": [
+      {
+        "title": "通用",
+        "docs": "https://docs.rsshub.app/government.html#guo-jia-yao-pin-jian-du-guan-li-ju",
+        "source": [
+          "/*path"
+        ]
+      }
+    ]
+  },
   "nrta.gov.cn": {
     "_name": "国家广播电视总局",
     ".": [
@@ -4381,15 +4654,40 @@
       }
     ]
   },
-  "nmpa.gov.cn": {
-    "_name": "国家药品监督管理局",
+  "nsfc.gov.cn": {
+    "_name": "国家自然科学基金委员会",
     ".": [
       {
-        "title": "通用",
-        "docs": "https://docs.rsshub.app/government.html#guo-jia-yao-pin-jian-du-guan-li-ju",
+        "title": "基金要闻",
+        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui-ji-jin-yao-wen",
         "source": [
-          "/*path"
-        ]
+          "/*"
+        ],
+        "target": "/nsfc/news/jjyw"
+      },
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui-ji-jin-yao-wen",
+        "source": [
+          "/*"
+        ],
+        "target": "/nsfc/news/tzgg"
+      },
+      {
+        "title": "资助成果",
+        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui-ji-jin-yao-wen",
+        "source": [
+          "/*"
+        ],
+        "target": "/nsfc/news/zzcg"
+      },
+      {
+        "title": "科普快讯",
+        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui-ji-jin-yao-wen",
+        "source": [
+          "/*"
+        ],
+        "target": "/nsfc/news/kpkx"
       }
     ]
   },
@@ -4445,11 +4743,33 @@
     "rsj": [
       {
         "title": "上海市职业能力考试院 考试项目",
-        "docs": "https://docs.rsshub.app/government.html#shang-hai-shi-zhi-ye-neng-li-kao-shi-yuan-kao-shi-xiang-mu",
+        "docs": "https://docs.rsshub.app/government.html#shang-hai-shi-ren-min-zheng-fu-shang-hai-shi-zhi-ye-neng-li-kao-shi-yuan-kao-shi-xiang-mu",
         "source": [
           "/"
         ],
         "target": "/gov/shanghai/rsj/ksxm"
+      }
+    ],
+    "yjj": [
+      {
+        "title": "上海市药品监督管理局",
+        "docs": "https://docs.rsshub.app/government.html#shang-hai-shi-ren-min-zheng-fu-shang-hai-shi-yao-pin-jian-du-guan-li-ju",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "shaanxi.gov.cn": {
+    "_name": "陕西省人民政府",
+    "kjt": [
+      {
+        "title": "陕西省科学技术厅",
+        "docs": "https://docs.rsshub.app/government.html#shan-xi-ren-min-zheng-fu-shan-xi-sheng-ke-xue-ji-shu-ting",
+        "source": [
+          "/view/iList.jsp",
+          "/"
+        ]
       }
     ]
   },
@@ -8428,35 +8748,6 @@
       }
     ]
   },
-  "nsfc.gov.cn": {
-    "_name": "国家自然科学基金委员会",
-    "www": [
-      {
-        "title": "基金要闻",
-        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui",
-        "source": "/*",
-        "target": "/nsfc/news/jjyw"
-      },
-      {
-        "title": "通知公告",
-        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui",
-        "source": "/*",
-        "target": "/nsfc/news/tzgg"
-      },
-      {
-        "title": "资助成果",
-        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui",
-        "source": "/*",
-        "target": "/nsfc/news/zzcg"
-      },
-      {
-        "title": "科普快讯",
-        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui",
-        "source": "/*",
-        "target": "/nsfc/news/kpkx"
-      }
-    ]
-  },
   "ntdtv.com": {
     "_name": "新唐人电视台",
     "www": [
@@ -8911,7 +9202,7 @@
         "title": "软微-通知公告",
         "docs": "https://docs.rsshub.app/university.html#bei-jing-da-xue",
         "source": [
-          "index.php/newscenter/notice",
+          "/index.php/newscenter/notice",
           "/"
         ],
         "target": "/pku/ss/notice"
@@ -8920,7 +9211,7 @@
         "title": "软微-招生通知",
         "docs": "https://docs.rsshub.app/university.html#bei-jing-da-xue",
         "source": [
-          "admission/admnotice",
+          "/admission/admnotice",
           "/"
         ],
         "target": "/pku/ss/admission"
@@ -8929,7 +9220,7 @@
         "title": "软微-硕士统考招生",
         "docs": "https://docs.rsshub.app/university.html#bei-jing-da-xue",
         "source": [
-          "admission/admbrochure/admission01",
+          "/admission/admbrochure/admission01",
           "/"
         ],
         "target": "/pku/ss/pgadmin"
@@ -9344,6 +9635,28 @@
       }
     ]
   },
+  "sakurazaka46.com": {
+    "_name": "櫻坂46",
+    ".": [
+      {
+        "title": "公式ブログ",
+        "docs": "https://docs.rsshub.app/new-media.html#ban-dao-xi-lie-guan-wang-zi-xun-ying-ban-46-bo-ke",
+        "source": [
+          "/s/s46/diary/blog/list",
+          "/"
+        ]
+      },
+      {
+        "title": "ニュース",
+        "docs": "https://docs.rsshub.app/new-media.html#ban-dao-xi-lie-guan-wang-zi-xun-ying-ban-46-xin-wen",
+        "source": [
+          "/s/s46/news/list",
+          "/"
+        ],
+        "target": "/sakurazaka46/news"
+      }
+    ]
+  },
   "samsung.com": {
     "_name": "Samsung",
     "research": [
@@ -9393,6 +9706,20 @@
         "title": "section",
         "docs": "https://docs.rsshub.app/journal.html#scitation",
         "source": ":pub.scitation.org/toc/:jrn"
+      }
+    ]
+  },
+  "scvtc.edu.cn": {
+    "_name": "四川职业技术学院",
+    ".": [
+      {
+        "title": "学院公告",
+        "docs": "https://docs.rsshub.app/university.html#si-chuan-zhi-ye-ji-shu-xue-yuan",
+        "source": [
+          "/ggfw1/xygg.htm",
+          "/"
+        ],
+        "target": "/scvtc/xygg"
       }
     ]
   },
@@ -9743,6 +10070,19 @@
         "source": [
           "/forum/:id"
         ]
+      }
+    ]
+  },
+  "slowmist.com": {
+    "_name": "慢雾科技 SLOWMIST",
+    ".": [
+      {
+        "title": "动态",
+        "docs": "https://docs.rsshub.app/new-media.html#man-wu-ke-ji",
+        "source": [
+          "/zh/news.html"
+        ],
+        "target": "/slowmist/:type?"
       }
     ]
   },
@@ -13309,26 +13649,6 @@
       }
     ]
   },
-  "biquge5200.com": {
-    "www": [
-      {
-        "title": "biquge5200.com",
-        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-biquge5200-com",
-        "source": "/:id",
-        "target": "/novel/biquge/:id"
-      }
-    ]
-  },
-  "biquge.info": {
-    "www": [
-      {
-        "title": "biquge.info",
-        "docs": "https://docs.rsshub.app/reading.html#bi-qu-ge-biquge-info",
-        "source": "/:id",
-        "target": "/novel/biqugeinfo/:id"
-      }
-    ]
-  },
   "matters.news": {
     "_name": "Matters",
     ".": [
@@ -13685,22 +14005,6 @@
         "title": "内容",
         "docs": "https://docs.rsshub.app/government.html#guo-jia-xin-wen-chu-ban-shu",
         "source": "/nppa/contents/:channel/:content"
-      }
-    ]
-  },
-  "acfun.cn": {
-    "_name": "AcFun",
-    "www": [
-      {
-        "tilte": "番剧",
-        "docs": "https://docs.rsshub.app/anime.html#acfun-fan-ju",
-        "source": "/bangumi/:id"
-      },
-      {
-        "title": "用户投稿",
-        "docs": "https://docs.rsshub.app/anime.html#acfun-yong-hu-tou-gao",
-        "source": "/u/:id",
-        "target": "/acfun/user/video/:id"
       }
     ]
   },
