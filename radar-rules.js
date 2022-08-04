@@ -49,62 +49,6 @@
             { title: '关注的新作品', docs: 'https://docs.rsshub.app/social-media.html#pixiv', source: '/bookmark_new_illust.php', target: '/pixiv/user/illustfollows' },
         ],
     },
-    'twitter.com': {
-        _name: 'Twitter',
-        '.': [
-            {
-                title: '用户时间线',
-                docs: 'https://docs.rsshub.app/social-media.html#twitter',
-                source: '/:id',
-                target: (params) => {
-                    if (!['home', 'explore', 'notifications', 'messages', 'explore', 'search'].includes(params.id)) {
-                        return '/twitter/user/:id';
-                    }
-                },
-            },
-            {
-                title: '用户媒体时间线',
-                docs: 'https://docs.rsshub.app/social-media.html#twitter',
-                source: '/:id/media',
-                target: (params) => {
-                    if (!['home', 'explore', 'notifications', 'messages', 'explore', 'search'].includes(params.id)) {
-                        return '/twitter/media/:id';
-                    }
-                },
-            },
-            {
-                title: '用户关注时间线',
-                docs: 'https://docs.rsshub.app/social-media.html#twitter',
-                source: '/:id',
-                target: (params) => {
-                    if (!['home', 'explore', 'notifications', 'messages', 'explore', 'search'].includes(params.id)) {
-                        return '/twitter/followings/:id';
-                    }
-                },
-            },
-            {
-                title: '用户喜欢列表',
-                docs: 'https://docs.rsshub.app/social-media.html#twitter',
-                source: '/:id',
-                target: (params) => {
-                    if (!['home', 'explore', 'notifications', 'messages', 'explore', 'search'].includes(params.id)) {
-                        return '/twitter/likes/:id';
-                    }
-                },
-            },
-            {
-                title: '列表时间线',
-                docs: 'https://docs.rsshub.app/social-media.html#twitter',
-                source: '/:id/lists/:name',
-                target: (params) => {
-                    if (!['home', 'explore', 'notifications', 'messages', 'explore', 'search'].includes(params.id)) {
-                        return '/twitter/list/:id/:name';
-                    }
-                },
-            },
-            { title: '关键词', docs: 'https://docs.rsshub.app/social-media.html#twitter', source: '/search', target: (params, url) => `/twitter/keyword/${new URL(url).searchParams.get('q')}` },
-        ],
-    },
     'github.com': {
         _name: 'GitHub',
         '.': [
@@ -215,13 +159,6 @@
     },
     'wineyun.com': { _name: '酒云网', www: [{ title: '最新商品', docs: 'https://docs.rsshub.app/other.html#jiu-yun-wang', source: ['/:category'], target: '/wineyun/:category' }] },
     'epicgames.com': { _name: 'Epic Games', www: [{ title: '每周免费游戏', docs: 'https://docs.rsshub.app/game.html#epicgames-freegame', source: '/store/zh-CN/free-games', target: '/epicgames/freegames' }] },
-    'nga.cn': {
-        _name: 'NGA',
-        bbs: [
-            { title: '分区帖子', docs: 'https://docs.rsshub.app/bbs.html#nga', source: '/thread.php', target: (params, url) => new URL(url).searchParams.get('fid') && `/nga/forum/${new URL(url).searchParams.get('fid')}` },
-            { title: '帖子', docs: 'https://docs.rsshub.app/bbs.html#nga', source: '/read.php', target: (params, url) => new URL(url).searchParams.get('tid') && `/nga/post/${new URL(url).searchParams.get('tid')}` },
-        ],
-    },
     'playstation.com': {
         _name: 'PlayStation',
         store: [
@@ -319,7 +256,7 @@
     },
     'govopendata.com': { _name: '新闻联播文字版', cn: [{ title: '新闻联播文字版', docs: 'https://docs.rsshub.app/traditional-media.html#xin-wen-lian-bo-wen-zi-ban', source: '/xinwenlianbo', target: '/xinwenlianbo/index' }] },
     'steampowered.com': { _name: 'Steam', store: [{ title: 'search', docs: 'https://docs.rsshub.app/game.html#steam', source: '/search/', target: (params, url) => `/steam/search/${new URL(url).searchParams}` }] },
-    'baijingapp.com': { _name: '白鲸出海', www: [{ title: '文章', docs: 'https://docs.rsshub.app/new-media.html#bai-jing-chu-hai', source: '', target: '/baijing' }] },
+    // 'baijingapp.com': { _name: '白鲸出海', www: [{ title: '文章', docs: 'https://docs.rsshub.app/new-media.html#bai-jing-chu-hai', source: '', target: '/baijing' }] },
     'xiaomi.cn': { _name: '小米社区', www: [{ title: '圈子', docs: 'https://docs.rsshub.app/bbs.html#xiao-mi-she-qu', source: '/board/:boardId', target: '/mi/bbs/board/:boardId' }] },
     '163.com': {
         _name: '网易',
