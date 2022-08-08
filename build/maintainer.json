@@ -26,6 +26,9 @@
     "/19lou/:city?": [
         "nczitzk"
     ],
+    "/2cycd/:fid/:sort?": [
+        "shelken"
+    ],
     "/35photo/actual": [
         "nczitzk"
     ],
@@ -147,6 +150,12 @@
         "a180285"
     ],
     "/acs/journal/:id": [
+        "nczitzk"
+    ],
+    "/agefans/detail/:id": [
+        "s2marine"
+    ],
+    "/agefans/update": [
         "nczitzk"
     ],
     "/agirls/topic/:topic": [
@@ -1289,8 +1298,17 @@
     "/gov/beijing/kw/:channel": [
         "Fatpandac"
     ],
+    "/gov/guangdong/tqyb/tfxtq": [
+        "Fatpandac"
+    ],
+    "/gov/guangdong/tqyb/sncsyjxh": [
+        "Fatpandac"
+    ],
     "/gov/hebei/czt/xwdt/:category?": [
         "nczitzk"
+    ],
+    "/gov/huizhou/zwgk/:category?": [
+        "Fatpandac"
     ],
     "/gov/shaanxi/kjt/:id?": [
         "nczitzk"
@@ -1310,17 +1328,11 @@
     "/gov/shanghai/wsjkw/yqtb": [
         "zcf0508"
     ],
-    "/gov/guangdong/tqyb/tfxtq": [
-        "Fatpandac"
-    ],
-    "/gov/guangdong/tqyb/sncsyjxh": [
-        "Fatpandac"
-    ],
-    "/gov/huizhou/zwgk/:category?": [
-        "Fatpandac"
-    ],
     "/gov/sichuan/deyang/govpulicinfo/:countyName": [
         "zytomorrow"
+    ],
+    "/gov/taiyuan/rsj/:caty/:page?": [
+        "2PoL"
     ],
     "/gov/xuzhou/hrss/:category?": [
         "nczitzk"
@@ -1446,6 +1458,30 @@
         "TonyRL"
     ],
     "/hizu/:column?": [
+        "nczitzk"
+    ],
+    "/hjedd/event": [
+        "nczitzk"
+    ],
+    "/hjedd/hot": [
+        "nczitzk"
+    ],
+    "/hjedd/latest": [
+        "nczitzk"
+    ],
+    "/hjedd/news": [
+        "nczitzk"
+    ],
+    "/hjedd/notice": [
+        "nczitzk"
+    ],
+    "/hjedd/original": [
+        "nczitzk"
+    ],
+    "/hjedd/top": [
+        "nczitzk"
+    ],
+    "/hjedd/:node?/:type?": [
         "nczitzk"
     ],
     "/hk01/channel/:id": [
@@ -1869,8 +1905,14 @@
     "/learnku/:community/:category?": [
         "kayw-geek"
     ],
-    "/leetcode/dailyquestion/en": [
+    "/leetcode/articles": [
+        "LogicJake"
+    ],
+    "/leetcode/dailyquestion/:lang": [
         "NavePnow"
+    ],
+    "/leetcode/submission/:country/:user": [
+        "NathanDai"
     ],
     "/leiphone/leiphone": [
         "vlcheng"
@@ -2141,6 +2183,9 @@
     "/nju/admission": [
         "ret-1"
     ],
+    "/nju/dafls": [
+        "ret-1"
+    ],
     "/nju/gra": [
         "ret-1"
     ],
@@ -2352,7 +2397,7 @@
     "/pianyuan/indexers/pianyuan/results/search/api": [
         "jerry1119"
     ],
-    "/picuki/profile/:id/:displayVideo?": [
+    "/picuki/profile/:id/:functionalFlag?": [
         "hoilc",
         "Rongronggg9"
     ],
@@ -2427,6 +2472,9 @@
         "nczitzk"
     ],
     "/pts/dailynews": [
+        "nczitzk"
+    ],
+    "/pts/live/:id?": [
         "nczitzk"
     ],
     "/pts/opinion": [
@@ -2607,6 +2655,9 @@
     ],
     "/secnews/index": [
         "kaiili"
+    ],
+    "/seekingalpha/:symbol/:category?": [
+        "TonyRL"
     ],
     "/segmentfault/channel/:name": [
         "LogicJake",
@@ -2982,6 +3033,9 @@
     ],
     "/txrjy/fornumtopic/:channel?": [
         "Fatpandac"
+    ],
+    "/tynu/": [
+        "2PoL"
     ],
     "/u3c3/:type?/:keyword?": [
         "noname1897"
@@ -3800,7 +3854,6 @@
     "/szu/yz/:type?": [],
     "/upc/main/:type?": [],
     "/upc/jsj/:type?": [],
-    "/tynu": [],
     "/nuc/:type": [],
     "/ahau/cs_news/:type": [],
     "/ahau/jwc/:type": [],
@@ -3980,7 +4033,6 @@
     "/aisixiang/column/:id": [],
     "/aisixiang/ranking/:type?/:range?": [],
     "/aisixiang/thinktank/:name/:type?": [],
-    "/leetcode/articles": [],
     "/leetcode/submission/us/:user": [],
     "/leetcode/submission/cn/:user": [],
     "/xiaomieu/releases": [],
@@ -4471,8 +4523,6 @@
     "/hnust/chem": [],
     "/hnust/graduate/:type?": [],
     "/swjtu/tl/news": [],
-    "/agefans/detail/:id": [],
-    "/agefans/update": [],
     "/checkra1n/releases": [],
     "/sckjt/news/:type?": [],
     "/jdlingyu/:type": [],

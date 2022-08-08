@@ -105,6 +105,16 @@
       }
     ]
   },
+  "2cycd.com": {
+    "_name": "二次元虫洞",
+    ".": [
+      {
+        "title": "板块",
+        "docs": "https://docs.rsshub.app/bbs.html#er-ci-yuan-chong-dong",
+        "source": "/:path"
+      }
+    ]
+  },
   "35photo.pro": {
     "_name": "35PHOTO",
     ".": [
@@ -636,6 +646,28 @@
           "/"
         ],
         "target": "/acs/journal/:id"
+      }
+    ]
+  },
+  "agemys.cc": {
+    "_name": "AGE动漫",
+    ".": [
+      {
+        "title": "最近更新",
+        "docs": "https://docs.rsshub.app/anime.html#age-dong-man",
+        "source": [
+          "/update",
+          "/"
+        ],
+        "target": "/agefans/update"
+      },
+      {
+        "title": "番剧详情",
+        "docs": "https://docs.rsshub.app/anime.html#age-dong-man",
+        "source": [
+          "/detail/:id"
+        ],
+        "target": "/agefans/detail/:id"
       }
     ]
   },
@@ -4054,7 +4086,7 @@
           "/medical-devices/news-events-medical-devices/cdrhnew-news-and-updates",
           "/"
         ],
-        "target": "/fda/cdrh"
+        "target": "/fda/cdrh/:titleOnly"
       }
     ]
   },
@@ -5199,6 +5231,19 @@
       }
     ]
   },
+  "taiyuan.gov.cn": {
+    "_name": "太原市人民政府",
+    "rsj": [
+      {
+        "title": "太原市人力资源和社会保障局政府公开信息",
+        "docs": "https://docs.rsshub.app/government.html#tai-yuan-shi-ren-min-zheng-fu-tai-yuan-shi-ren-li-zi-yuan-he-she-hui-bao-zhang-ju-zheng-fu-gong-kai-xin-xi",
+        "source": [
+          "/*"
+        ],
+        "target": "/taiyuan/rsj/:caty/:page?"
+      }
+    ]
+  },
   "tqyb.com.cn": {
     "_name": "广州天气",
     "www": [
@@ -5709,6 +5754,76 @@
         "docs": "https://docs.rsshub.app/new-media.html#zhu-hai-wang-lan-mu",
         "source": "/",
         "target": "/hizu/:column?"
+      }
+    ]
+  },
+  "hjedd.com": {
+    "_name": "海角社区",
+    ".": [
+      {
+        "title": "热门",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-re-men",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/hot"
+      },
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-xin-wen",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/news"
+      },
+      {
+        "title": "大事记",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-shi-ji",
+        "source": [
+          "/article",
+          "/"
+        ],
+        "target": "/hjedd/event"
+      },
+      {
+        "title": "原创",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-yuan-chuang",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/original"
+      },
+      {
+        "title": "精华",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-jing-hua",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/top"
+      },
+      {
+        "title": "公告",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-gong-gao",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/notice"
+      },
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-zui-xin",
+        "source": [
+          "/"
+        ],
+        "target": "/hjedd/latest"
+      },
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/bbs.html#hai-jiao-she-qu-da-wen-zhang",
+        "source": [
+          "/article",
+          "/"
+        ]
       }
     ]
   },
@@ -8025,6 +8140,54 @@
       }
     ]
   },
+  "leetcode.com": {
+    "_name": "LeetCode",
+    ".": [
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/programming.html#leetcode",
+        "source": [
+          "/articles"
+        ],
+        "target": "/leetcode/articles"
+      },
+      {
+        "title": "打卡",
+        "docs": "https://docs.rsshub.app/programming.html#leetcode",
+        "source": [
+          "/:user"
+        ]
+      },
+      {
+        "title": "每日一题",
+        "docs": "https://docs.rsshub.app/programming.html#leetcode",
+        "source": [
+          "/"
+        ],
+        "target": "/leetcode/dailyquestion/en"
+      }
+    ]
+  },
+  "leetcode.cn": {
+    "_name": "LeetCode",
+    ".": [
+      {
+        "title": "打卡",
+        "docs": "https://docs.rsshub.app/programming.html#leetcode",
+        "source": [
+          "/:user"
+        ]
+      },
+      {
+        "title": "每日一题",
+        "docs": "https://docs.rsshub.app/programming.html#leetcode",
+        "source": [
+          "/"
+        ],
+        "target": "/leetcode/dailyquestion/cn"
+      }
+    ]
+  },
   "leiphone.com": {
     "_name": "雷峰网",
     ".": [
@@ -9507,6 +9670,17 @@
         "target": "/nju/admission"
       }
     ],
+    "dafls": [
+      {
+        "title": "大学外语部",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-da-xue-wai-yu-bu",
+        "source": [
+          "/13167/list.html",
+          "/"
+        ],
+        "target": "/nju/dafls"
+      }
+    ],
     "grawww": [
       {
         "title": "研究生院",
@@ -10428,6 +10602,15 @@
         "target": "/pts/curations"
       },
       {
+        "title": "整理報導",
+        "docs": "https://docs.rsshub.app/traditional-media.html#gong-shi-xin-wen-wang-zheng-li-bao-dao",
+        "source": [
+          "/live/:id",
+          "/"
+        ],
+        "target": "/pts/live/:id"
+      },
+      {
         "title": "觀點",
         "docs": "https://docs.rsshub.app/traditional-media.html#gong-shi-xin-wen-wang-guan-dian",
         "source": [
@@ -11142,6 +11325,20 @@
           "/*path",
           "/"
         ]
+      }
+    ]
+  },
+  "seekingalpha.com": {
+    "_name": "Seeking Alpha",
+    ".": [
+      {
+        "title": "Summary",
+        "docs": "https://docs.rsshub.app/en/finance.html#seeking-alpha",
+        "source": [
+          "/symbol/:symbol/:category",
+          "/symbol/:symbol/earnings/:category"
+        ],
+        "target": "/seekingalpha/:symbol/:category"
       }
     ]
   },
@@ -12720,6 +12917,21 @@
         "source": [
           "/c114-listnewtopic.php"
         ]
+      }
+    ]
+  },
+  "tynu.edu.cn": {
+    "_name": "太原师范学院",
+    ".": [
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/university.html#tai-yuan-shi-fan-xue-yuan",
+        "source": [
+          "/index/tzgg.htm",
+          "/index.htm",
+          "/"
+        ],
+        "target": "/tynu"
       }
     ]
   },
