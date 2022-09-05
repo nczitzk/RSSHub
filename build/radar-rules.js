@@ -1135,9 +1135,13 @@
         target:"/blockbeats/news" } ] },
   "bnu.edu.cn":{ _name:"北京师范大学",
     ".":[ { title:"经济与工商管理学院",
-        docs:"https://docs.rsshub.app/universities.html#bei-jing-shi-fan-da-xue-jing-ji-yu-gong-shang-guan-li-xue-yuan",
+        docs:"https://docs.rsshub.app/university.html#bei-jing-shi-fan-da-xue",
         source:[ "/" ],
-        target:"/bs/:category?" } ] },
+        target:"/bs/:category?" },
+      { title:"经济与工商管理学院",
+        docs:"https://docs.rsshub.app/university.html#bei-jing-shi-fan-da-xue",
+        source:[ "/" ],
+        target:"/bnu/dwxgb/:category/:type" } ] },
   "bookfere.com":{ _name:"书伴",
     ".":[ { title:"分类",
         docs:"https://docs.rsshub.app/reading.html#shu-ban" } ] },
@@ -4933,6 +4937,12 @@
         docs:"https://docs.rsshub.app/design.html#logonews-biao-zhi-qing-bao-ju-zuo-pin-biao-qian",
         source:[ "/work/tags/:tag" ],
         target:"/logonews/work/tags/:tag" } ] },
+  "garena.tw":{ _name:"Garena",
+    lol:[ { title:"英雄联盟台服新闻",
+        docs:"https://docs.rsshub.app/game.html#ying-xiong-lian-meng-tai-fu-xin-wen",
+        source:[ "/news/:category",
+          "/news" ],
+        target:(params) => '/loltw/news/' + (params.category || '') } ] },
   "lovelive-anime.jp":{ _name:"Love Live 官网",
     www:[ { title:"最新 NEWS",
         docs:"https://docs.rsshub.app/anime.html#lovelive-anime-love-live-guan-wang-zui-xin-news",
@@ -5597,6 +5607,12 @@
         source:[ "/blog/category/:category",
           "/" ],
         target:"/newsmarket/:category?" } ] },
+  "nextapple.com":{ _name:"壹蘋新聞網",
+    tw:[ { title:"最新新聞",
+        docs:"https://docs.rsshub.app/new-media.html#yi-ping-xin-wen-wang",
+        source:[ "/",
+          "/realtime/:category" ],
+        target:"/nextapple/realtime/:category?" } ] },
   "nga.cn":{ _name:"NGA",
     bbs:[ { title:"分区帖子",
         docs:"https://docs.rsshub.app/bbs.html#nga-fen-qu-tie-zi",
@@ -5610,10 +5626,10 @@
         docs:"https://docs.rsshub.app/bbs.html#nga-tie-zi",
         source:"/read.php",
         target:(params, url, document) => {
-                    const tid = new URL(url).searchParams.get('tid');
-                    const authorId = document.documentElement.innerHTML.match(/commonui\.userInfo\.setAll\(\s{3}{"(\d+)"/)[1];
-                    return `/nga/post/${tid}/${authorId}`;
-                } } ] },
+            const tid = new URL(url).searchParams.get('tid');
+            const authorId = document.documentElement.innerHTML.match(/commonui\.userInfo\.setAll\(\s{3}{"(\d+)"/)[1];
+            return `/nga/post/${tid}/${authorId}`;
+        } } ] },
   "178.com":{ _name:"NGA",
     nga:[ { title:"分区帖子",
         docs:"https://docs.rsshub.app/bbs.html#nga-fen-qu-tie-zi",
@@ -5627,10 +5643,27 @@
         docs:"https://docs.rsshub.app/bbs.html#nga-tie-zi",
         source:"/read.php",
         target:(params, url, document) => {
-                    const tid = new URL(url).searchParams.get('tid');
-                    const authorId = document.documentElement.innerHTML.match(/commonui\.userInfo\.setAll\(\s{3}{"(\d+)"/)[1];
-                    return `/nga/post/${tid}/${authorId}`;
-                } } ] },
+            const tid = new URL(url).searchParams.get('tid');
+            const authorId = document.documentElement.innerHTML.match(/commonui\.userInfo\.setAll\(\s{3}{"(\d+)"/)[1];
+            return `/nga/post/${tid}/${authorId}`;
+        } } ] },
+  "ngabbs.com":{ _name:"NGA",
+    ".":[ { title:"分区帖子",
+        docs:"https://docs.rsshub.app/bbs.html#nga-fen-qu-tie-zi",
+        source:"/thread.php",
+        target:(params, url) => new URL(url).searchParams.get('fid') && `/nga/forum/${new URL(url).searchParams.get('fid')}` },
+      { title:"帖子",
+        docs:"https://docs.rsshub.app/bbs.html#nga-tie-zi",
+        source:"/read.php",
+        target:(params, url) => new URL(url).searchParams.get('tid') && `/nga/post/${new URL(url).searchParams.get('tid')}` },
+      { title:"帖子 - 只看作者",
+        docs:"https://docs.rsshub.app/bbs.html#nga-tie-zi",
+        source:"/read.php",
+        target:(params, url, document) => {
+            const tid = new URL(url).searchParams.get('tid');
+            const authorId = document.documentElement.innerHTML.match(/commonui\.userInfo\.setAll\(\s{3}{"(\d+)"/)[1];
+            return `/nga/post/${tid}/${authorId}`;
+        } } ] },
   "ngocn2.org":{ _name:"NGOCN",
     ".":[ { title:"分类",
         docs:"https://docs.rsshub.app/new-media.html#ngocn2-fen-lei",
@@ -5919,6 +5952,12 @@
         docs:"https://docs.rsshub.app/new-media.html#nl-times",
         source:"/top-stories",
         target:"/nltimes/news/top-stories" } ] },
+  "nmbxd1.com":{ _name:"X岛匿名版",
+    www:[ { title:"串",
+        docs:"https://docs.rsshub.app/bbs.html#x-dao-ni-ming-ban",
+        source:[ "/Forum/timeline/id/:id",
+          "/f/:id" ],
+        target:"/nmbxd1/:id" } ] },
   "nodejs.org":{ _name:"Node.js",
     ".":[ { title:"News",
         docs:"https://docs.rsshub.app/programming.html#nodejs-news",

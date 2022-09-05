@@ -2199,6 +2199,9 @@
     "/logonews/": [
         "nczitzk"
     ],
+    "/loltw/news/:category?": [
+        "hoilc"
+    ],
     "/lovelive-anime/news/:option?": [
         "axojhf"
     ],
@@ -2373,6 +2376,9 @@
     "/newsmarket/:category?": [
         "nczitzk"
     ],
+    "/nextapple/realtime/:category?": [
+        "miles170"
+    ],
     "/nga/forum/:fid/:recommend?": [
         "xyqfer"
     ],
@@ -2463,6 +2469,9 @@
     ],
     "/nltimes/news/:category?": [
         "Hivol"
+    ],
+    "/nmbxd1/:id": [
+        "miles170"
     ],
     "/nodejs/blog/:language?": [
         "nczitzk"
@@ -4951,7 +4960,6 @@
     "/hbut/news/:type": [],
     "/hbut/cs/:type": [],
     "/acwifi": [],
-    "/adnmb/:pid": [],
     "/mittrchina/:type": [],
     "/iyouport/article": [],
     "/iyouport/:category?": [],
