@@ -824,6 +824,20 @@
       }
     ]
   },
+  "aliyundrive.com": {
+    "_name": "阿里云盘",
+    "www": [
+      {
+        "title": "文件列表",
+        "docs": "https://docs.rsshub.app/programming.html#a-li-yun-pan",
+        "source": [
+          "/s/:share_id",
+          "/s/:share_id/folder/:parent_file_id"
+        ],
+        "target": "/aliyundrive/files/:share_id/:parent_file_id?"
+      }
+    ]
+  },
   "allrecode.com": {
     "_name": "重构",
     ".": [
@@ -881,6 +895,19 @@
           "/"
         ],
         "target": "/android/platform-tools-releases"
+      }
+    ]
+  },
+  "anquanke.com": {
+    "_name": "安全客",
+    ".": [
+      {
+        "title": "分类订阅",
+        "docs": "https://docs.rsshub.app/programming.html#an-quan-ke",
+        "source": [
+          "/:category",
+          "/"
+        ]
       }
     ]
   },
@@ -1332,7 +1359,7 @@
         "source": [
           "/"
         ],
-        "target": "/bangumi"
+        "target": "/bangumi/moe"
       },
       {
         "title": "标签",
@@ -1340,7 +1367,7 @@
         "source": [
           "/search/index"
         ],
-        "target": "/bangumi/:tags?"
+        "target": "/bangumi/moe/:tags?"
       }
     ]
   },
@@ -1354,6 +1381,124 @@
           "/"
         ],
         "target": "/bangumi/online"
+      }
+    ]
+  },
+  "bangumi.tv": {
+    "_name": "Bangumi 番组计划",
+    ".": [
+      {
+        "title": "小组话题",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/group/:id",
+        "target": "/bangumi/tv/group/:id"
+      },
+      {
+        "title": "小组话题的新回复",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/group/topic/:id",
+        "target": "/bangumi/tv/topic/:id"
+      },
+      {
+        "title": "现实人物的新作品",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/person/:id",
+        "target": "/bangumi/tv/person/:id"
+      },
+      {
+        "title": "用户日志",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/user/:id",
+        "target": "/bangumi/tv/user/blog/:id"
+      },
+      {
+        "title": "条目的讨论",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id/topics"
+      },
+      {
+        "title": "条目的评论",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id/blogs"
+      },
+      {
+        "title": "条目的章节",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id"
+      },
+      {
+        "title": "条目的吐槽箱",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id/comments"
+      },
+      {
+        "title": "放送列表",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/calendar",
+        "target": "/bangumi/tv/calendar/today"
+      }
+    ]
+  },
+  "bgm.tv": {
+    "_name": "Bangumi 番组计划",
+    ".": [
+      {
+        "title": "小组话题",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/group/:id",
+        "target": "/bangumi/tv/group/:id"
+      },
+      {
+        "title": "小组话题的新回复",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/group/topic/:id",
+        "target": "/bangumi/tv/topic/:id"
+      },
+      {
+        "title": "现实人物的新作品",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/person/:id",
+        "target": "/bangumi/tv/person/:id"
+      },
+      {
+        "title": "用户日志",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/user/:id",
+        "target": "/bangumi/tv/user/blog/:id"
+      },
+      {
+        "title": "条目的讨论",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id/topics"
+      },
+      {
+        "title": "条目的评论",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id/blogs"
+      },
+      {
+        "title": "条目的章节",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id"
+      },
+      {
+        "title": "条目的吐槽箱",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/subject/:id",
+        "target": "/bangumi/tv/subject/:id/comments"
+      },
+      {
+        "title": "放送列表",
+        "docs": "https://docs.rsshub.app/anime.html#bangumi",
+        "source": "/calendar",
+        "target": "/bangumi/tv/calendar/today"
       }
     ]
   },
@@ -1888,6 +2033,20 @@
           "/"
         ],
         "target": "/blockbeats/news"
+      }
+    ]
+  },
+  "bluestacks.com": {
+    "_name": "BlueStacks",
+    ".": [
+      {
+        "title": "BlueStacks 5 版本日誌",
+        "docs": "https://docs.rsshub.app/program-update.html#bluestacks",
+        "source": [
+          "/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5",
+          "/"
+        ],
+        "target": "/bluestacks/release/5"
       }
     ]
   },
@@ -2941,6 +3100,45 @@
       }
     ]
   },
+  "cuc.edu.cn": {
+    "_name": "中国传媒大学",
+    "yz": [
+      {
+        "title": "研究生招生网",
+        "docs": "https://docs.rsshub.app/university.html#zhong-guo-chuan-mei-da-xue",
+        "source": "/*",
+        "target": "/"
+      }
+    ]
+  },
+  "cw.com.tw": {
+    "_name": "天下雜誌",
+    ".": [
+      {
+        "title": "最新上線",
+        "docs": "https://docs.rsshub.app/traditional-media.html#tian-xia-za-zhi",
+        "source": [
+          "/today",
+          "/"
+        ],
+        "target": "/cw/today"
+      },
+      {
+        "title": "主頻道",
+        "docs": "https://docs.rsshub.app/traditional-media.html#tian-xia-za-zhi",
+        "source": [
+          "/masterChannel.action"
+        ]
+      },
+      {
+        "title": "子頻道",
+        "docs": "https://docs.rsshub.app/traditional-media.html#tian-xia-za-zhi",
+        "source": [
+          "/subchannel.action"
+        ]
+      }
+    ]
+  },
   "dahecube.com": {
     "_name": "大河财立方",
     ".": [
@@ -3011,6 +3209,35 @@
       }
     ]
   },
+  "dcard.tw": {
+    "_name": "Dcard",
+    "www": [
+      {
+        "title": "首頁帖子-最新",
+        "docs": "https://docs.rsshub.app/bbs.html#dcard",
+        "source": "/f",
+        "target": "/dcard/posts/latest"
+      },
+      {
+        "title": "首頁帖子-熱門",
+        "docs": "https://docs.rsshub.app/bbs.html#dcard",
+        "source": "/f",
+        "target": "/dcard/posts/popular"
+      },
+      {
+        "title": "板塊帖子-最新",
+        "docs": "https://docs.rsshub.app/bbs.html#dcard",
+        "source": "/f/:section",
+        "target": "/dcard/:section/latest"
+      },
+      {
+        "title": "板塊帖子-熱門",
+        "docs": "https://docs.rsshub.app/bbs.html#dcard",
+        "source": "/f/:section",
+        "target": "/dcard/:section/popular"
+      }
+    ]
+  },
   "www.ddosi.org": {
     "_name": "🔰雨苁ℒ🔰",
     ".": [
@@ -3029,6 +3256,20 @@
           "/category/:category/"
         ],
         "target": "/ddosi/category/:category"
+      }
+    ]
+  },
+  "deepmind.com": {
+    "_name": "DeepMind",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/new-media.html#deepmind",
+        "source": [
+          "/blog",
+          "/"
+        ],
+        "target": "/blog"
       }
     ]
   },
@@ -4606,6 +4847,45 @@
       }
     ]
   },
+  "gamme.com.tw": {
+    "_name": "卡卡洛普",
+    "news": [
+      {
+        "title": "宅宅新聞 - 分類",
+        "docs": "https://docs.rsshub.app/new-media.html#ka-ka-luo-pu",
+        "source": [
+          "/category/:category",
+          "/"
+        ]
+      },
+      {
+        "title": "宅宅新聞 - 標籤",
+        "docs": "https://docs.rsshub.app/new-media.html#ka-ka-luo-pu",
+        "source": [
+          "/tag/:tag"
+        ],
+        "target": "/gamme/news/tag/:tag"
+      }
+    ],
+    "sexynews": [
+      {
+        "title": "西斯新聞 - 分類",
+        "docs": "https://docs.rsshub.app/new-media.html#ka-ka-luo-pu",
+        "source": [
+          "/category/:category",
+          "/"
+        ]
+      },
+      {
+        "title": "西斯新聞 - 標籤",
+        "docs": "https://docs.rsshub.app/new-media.html#ka-ka-luo-pu",
+        "source": [
+          "/tag/:tag"
+        ],
+        "target": "/gamme/sexynews/tag/:tag"
+      }
+    ]
+  },
   "gaze.run": {
     "_name": "注视影视",
     ".": [
@@ -5318,6 +5598,18 @@
       }
     ]
   },
+  "nopss.gov.cn": {
+    "_name": "全国哲学社会科学工作办公室",
+    ".": [
+      {
+        "title": "通用",
+        "docs": "https://docs.rsshub.app/government.html#quan-guo-zhe-xue-she-hui-ke-xue-gong-zuo-ban-gong-shi",
+        "source": [
+          "/*path"
+        ]
+      }
+    ]
+  },
   "nrta.gov.cn": {
     "_name": "国家广播电视总局",
     ".": [
@@ -6010,6 +6302,47 @@
           "/blog"
         ],
         "target": "/hex-rays/news"
+      }
+    ]
+  },
+  "hit.edu.cn": {
+    "_name": "哈尔滨工业大学",
+    "jwc": [
+      {
+        "title": "哈尔滨工业大学教务处通知公告",
+        "docs": "https://docs.rsshub.app/university.html#ha-er-bin-gong-ye-da-xue",
+        "source": "/*",
+        "target": "/hit/jwc"
+      }
+    ],
+    "today": [
+      {
+        "title": "今日哈工大",
+        "docs": "https://docs.rsshub.app/university.html#ha-er-bin-gong-ye-da-xue",
+        "source": "/category/:category",
+        "target": "/hit/today/:category"
+      }
+    ],
+    "hitgs": [
+      {
+        "title": "哈工大研究生院通知公告",
+        "docs": "https://docs.rsshub.app/university.html#ha-er-bin-gong-ye-da-xue",
+        "source": "/*",
+        "target": "/hit/hitgs"
+      }
+    ]
+  },
+  "hitwh.edu.cn": {
+    "_name": "哈尔滨工业大学（威海）",
+    ".": [
+      {
+        "title": "今日工大 - 通知公告",
+        "docs": "https://docs.rsshub.app/university.html#ha-er-bin-gong-ye-da-xue-wei-hai",
+        "source": [
+          "/1024/list.htm",
+          "/"
+        ],
+        "target": "/hitwh/today"
       }
     ]
   },
@@ -7006,6 +7339,20 @@
         "docs": "https://docs.rsshub.app/new-media.html#it-zhi-jia-fen-lei-zi-xun",
         "source": "/",
         "target": "/ithome/next"
+      }
+    ]
+  },
+  "ithome.com.tw": {
+    "_name": "iThome",
+    "www": [
+      {
+        "title": "Feeds",
+        "docs": "https://docs.rsshub.app/new-media.html#ithome-tai-wan",
+        "source": [
+          "/:category",
+          "/:category/feeds"
+        ],
+        "target": "/ithome/tw/feeds/:category"
       }
     ]
   },
@@ -8931,6 +9278,19 @@
       }
     ]
   },
+  "linovelib.com": {
+    "_name": "哩哔轻小说",
+    ".": [
+      {
+        "title": "小说详情",
+        "docs": "https://docs.rsshub.app/anime.html#linovelib",
+        "source": [
+          "/novel/:id"
+        ],
+        "target": "/linovellib/novel/:id"
+      }
+    ]
+  },
   "literotica.com": {
     "_name": "Literotica",
     ".": [
@@ -9178,6 +9538,52 @@
       }
     ]
   },
+  "sonymusic.co.jp": {
+    "_name": "Sony Music",
+    "www": [
+      {
+        "title": "LiSA News",
+        "docs": "https://docs.rsshub.app/en/live.html#lisa",
+        "source": [
+          "/artist/lisa/",
+          "/artist/lisa/info/"
+        ],
+        "target": "/lxixsxa/info"
+      },
+      {
+        "title": "LiSA Albums",
+        "docs": "https://docs.rsshub.app/en/live.html#lisa",
+        "source": [
+          "/artist/lisa/",
+          "/artist/lisa/discography/"
+        ],
+        "target": "/lxixsxa/disco"
+      }
+    ]
+  },
+  "lxixsxa.com": {
+    "_name": "LiSA Official",
+    "www": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/en/live.html#lisa",
+        "source": [
+          "/",
+          "/info"
+        ],
+        "target": "/lxixsxa/info"
+      },
+      {
+        "title": "Albums",
+        "docs": "https://docs.rsshub.app/en/live.html#lisa",
+        "source": [
+          "/",
+          "/discography"
+        ],
+        "target": "/lxixsxa/disco"
+      }
+    ]
+  },
   "macfilos.com": {
     "_name": "Macfilos",
     ".": [
@@ -9189,6 +9595,48 @@
           "/"
         ],
         "target": "/macfilos/blog"
+      }
+    ]
+  },
+  "manhuagui.com": {
+    "_name": "漫画柜",
+    "www": [
+      {
+        "title": "漫画柜个人订阅",
+        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua",
+        "source": "/user/book/shelf",
+        "target": "/manhuagui/subscribe"
+      },
+      {
+        "title": "漫画更新",
+        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua",
+        "source": "/comic/:id/",
+        "target": "/manhuagui/comic/:id"
+      }
+    ],
+    "tw": [
+      {
+        "title": "漫画更新",
+        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua",
+        "source": "/comic/:id/",
+        "target": "/manhuagui/twmanhuagui/comic/:id"
+      }
+    ]
+  },
+  "mhgui.com": {
+    "_name": "漫画柜镜像站",
+    "www": [
+      {
+        "title": "漫画柜个人订阅",
+        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua",
+        "source": "/user/book/shelf",
+        "target": "/manhuagui/subscribe"
+      },
+      {
+        "title": "漫画更新",
+        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua",
+        "source": "/comic/:id/",
+        "target": "/manhuagui/comic/:id"
       }
     ]
   },
@@ -9222,6 +9670,19 @@
           "/department/details",
           "/"
         ]
+      }
+    ]
+  },
+  "meituclub.com": {
+    "_name": "妹图社",
+    ".": [
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/picture.html#mei-tu-she-zui-xin",
+        "source": [
+          "/"
+        ],
+        "target": "/meituclub/latest"
       }
     ]
   },
@@ -10430,6 +10891,7 @@
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-ben-ke-ying-xin",
         "source": [
           "/tzgg/index.html",
+          "/tzgg",
           "/"
         ],
         "target": "/nju/admission"
@@ -10446,11 +10908,23 @@
         "target": "/nju/dafls"
       }
     ],
+    "elite": [
+      {
+        "title": "本科生交换生系统",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-ben-ke-sheng-yuan-jiao-huan-sheng-xi-tong",
+        "source": [
+          "/exchangesystem/index/more",
+          "/exchangesystem",
+          "/"
+        ]
+      }
+    ],
     "grawww": [
       {
         "title": "研究生院",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-yan-jiu-sheng-yuan",
         "source": [
+          "/main.htm",
           "/"
         ],
         "target": "/nju/gra"
@@ -10472,7 +10946,7 @@
         "title": "本科生院",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-ben-ke-sheng-yuan",
         "source": [
-          "/"
+          "/:type/list.htm"
         ],
         "target": "/nju/jw/:type"
       }
@@ -10482,7 +10956,7 @@
         "title": "人才招聘网",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-ren-cai-zhao-pin-wang",
         "source": [
-          "/"
+          "/sylm/:type/index.html"
         ],
         "target": "/nju/rczp/:type"
       }
@@ -10492,9 +10966,8 @@
         "title": "科学技术处",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-ke-xue-ji-shu-chu",
         "source": [
-          "/"
-        ],
-        "target": "/nju/scit/:type"
+          "/:type/list.htm"
+        ]
       }
     ],
     "webplus": [
@@ -10512,9 +10985,8 @@
         "title": "招标办公室",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-zhao-biao-ban-gong-shi",
         "source": [
-          "/"
-        ],
-        "target": "/nju/zbb/:type"
+          "/:type/index.chtml"
+        ]
       }
     ],
     "zcc": [
@@ -10522,6 +10994,8 @@
         "title": "资产管理处",
         "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-zi-chan-guan-li-chu",
         "source": [
+          "/tzgg/gyfytdglk/index.html",
+          "/tzgg/index.html",
           "/"
         ],
         "target": "/nju/zcc"
@@ -11803,6 +12277,28 @@
       }
     ]
   },
+  "qianzhan.com": {
+    "_name": "前瞻网",
+    ".": [
+      {
+        "title": "文章列表",
+        "docs": "https://docs.rsshub.app/finance.html#qian-zhan-wang",
+        "source": [
+          "/analyst",
+          "/analyst/list/:html"
+        ]
+      },
+      {
+        "title": "排行榜",
+        "docs": "https://docs.rsshub.app/finance.html#qian-zhan-wang",
+        "source": [
+          "/analyst",
+          "/"
+        ],
+        "target": "/qianzhan/analyst/rank"
+      }
+    ]
+  },
   "qidian.com": {
     "_name": "起点",
     "book": [
@@ -12021,6 +12517,19 @@
       }
     ]
   },
+  "rarehistoricalphotos.com": {
+    "_name": "Rare Historical Photos",
+    ".": [
+      {
+        "title": "Home",
+        "docs": "https://docs.rsshub.app/en/picture.html#rare-historical-photos",
+        "source": [
+          "/"
+        ],
+        "target": "/rarehistoricalphotos"
+      }
+    ]
+  },
   "readhub.cn": {
     "_name": "Readhub",
     ".": [
@@ -12207,6 +12716,37 @@
           "/"
         ],
         "target": "/samsung/research/blog"
+      }
+    ]
+  },
+  "science.org": {
+    "_name": "Science Magazine",
+    ".": [
+      {
+        "title": "本期刊物",
+        "docs": "https://docs.rsshub.app/journal.html#science-xi-lie",
+        "source": [
+          "/journal/:journal",
+          "/toc/:journal/current"
+        ],
+        "target": "/science/current/:journal"
+      },
+      {
+        "title": "封面故事",
+        "docs": "https://docs.rsshub.app/journal.html#science-xi-lie",
+        "source": [
+          "/"
+        ],
+        "target": "/science/cover"
+      },
+      {
+        "title": "在线发表",
+        "docs": "https://docs.rsshub.app/journal.html#science-xi-lie",
+        "source": [
+          "/journal/:journal",
+          "/toc/:journal/0/0"
+        ],
+        "target": "/science/early/:journal"
       }
     ]
   },
@@ -12494,6 +13034,27 @@
         "docs": "https://docs.rsshub.app/university.html#shan-dong-da-xue",
         "source": [
           "/*path",
+          "/"
+        ]
+      }
+    ]
+  },
+  "secrss.com": {
+    "_name": "安全内参",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/programming.html#an-quan-nei-can",
+        "source": [
+          "/articles",
+          "/"
+        ]
+      },
+      {
+        "title": "作者",
+        "docs": "https://docs.rsshub.app/programming.html#an-quan-nei-can",
+        "source": [
+          "/articles",
           "/"
         ]
       }
@@ -12957,6 +13518,57 @@
           "/"
         ],
         "target": "/sputniknews/:category/:language"
+      }
+    ]
+  },
+  "sse.com.cn": {
+    "_name": "上海证券交易所",
+    "bond": [
+      {
+        "title": "可转换公司债券公告",
+        "docs": "https://docs.rsshub.app/finance.html#shang-hai-zheng-quan-jiao-yi-suo",
+        "source": [
+          "/disclosure/announ/convertible",
+          "/"
+        ]
+      }
+    ],
+    "kcb": [
+      {
+        "title": "科创板项目动态",
+        "docs": "https://docs.rsshub.app/finance.html#shang-hai-zheng-quan-jiao-yi-suo",
+        "source": [
+          "/home",
+          "/"
+        ],
+        "target": "/sse/renewal"
+      }
+    ],
+    "www": [
+      {
+        "title": "监管问询",
+        "docs": "https://docs.rsshub.app/finance.html#shang-hai-zheng-quan-jiao-yi-suo",
+        "source": [
+          "/disclosure/credibility/supervision/inquiries",
+          "/"
+        ],
+        "target": "/sse/inquire"
+      },
+      {
+        "title": "上市公司信息最新公告披露",
+        "docs": "https://docs.rsshub.app/finance.html#shang-hai-zheng-quan-jiao-yi-suo",
+        "source": [
+          "/assortment/stock/list/info/announcement/index.shtml",
+          "/"
+        ]
+      },
+      {
+        "title": "本所业务指南与流程",
+        "docs": "https://docs.rsshub.app/finance.html#shang-hai-zheng-quan-jiao-yi-suo",
+        "source": [
+          "/lawandrules/guide/*slug",
+          "/"
+        ]
       }
     ]
   },
@@ -13494,24 +14106,24 @@
       }
     ]
   },
-  "techflow520.com": {
+  "techflowpost.com": {
     "_name": "深潮TechFlow",
     ".": [
       {
-        "title": "分类",
-        "docs": "https://docs.rsshub.app/new-media.html#shen-chao-techflow-fen-lei",
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/new-media.html#shen-chao-techflow-shou-ye",
         "source": [
           "/"
         ],
-        "target": "/techflow520/:category?"
+        "target": "/techflowpost"
       },
       {
         "title": "快讯",
         "docs": "https://docs.rsshub.app/new-media.html#shen-chao-techflow-kuai-xun",
         "source": [
-          "/newsflash"
+          "/express"
         ],
-        "target": "/techflow520/newsflash"
+        "target": "/techflowpost/express"
       }
     ]
   },
@@ -13691,6 +14303,20 @@
           "/"
         ],
         "target": "/thepaper/factpaper/:status"
+      }
+    ]
+  },
+  "thwiki.cc": {
+    "_name": "THBWiki",
+    ".": [
+      {
+        "title": "日历",
+        "docs": "https://docs.rsshub.app/#thbwiki",
+        "source": [
+          "/",
+          "/日程表"
+        ],
+        "target": "/thwiki/calendar"
       }
     ]
   },
@@ -15372,6 +15998,20 @@
       }
     ]
   },
+  "xwlb.com.cn": {
+    "_name": "新闻联播直播",
+    ".": [
+      {
+        "title": "新闻联播文字版完整版",
+        "docs": "https://docs.rsshub.app/traditional-media.html#yang-shi-xin-wen",
+        "source": [
+          "/cctv.html",
+          "/"
+        ],
+        "target": "/xwlb"
+      }
+    ]
+  },
   "xyzrank.com": {
     "_name": "中文播客榜",
     ".": [
@@ -15624,6 +16264,27 @@
           "/"
         ],
         "target": "/yunspe/newsflashes"
+      }
+    ]
+  },
+  "yxdown.com": {
+    "_name": "游讯网",
+    ".": [
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/game.html#you-xun-wang",
+        "source": [
+          "/news/:category",
+          "/news"
+        ]
+      },
+      {
+        "title": "精彩推荐",
+        "docs": "https://docs.rsshub.app/game.html#you-xun-wang",
+        "source": [
+          "/"
+        ],
+        "target": "/yxdown/recommend"
       }
     ]
   },
@@ -15984,6 +16645,16 @@
       }
     ]
   },
+  "zodgame.xyz": {
+    "_name": "zodgame",
+    ".": [
+      {
+        "title": "论坛版块",
+        "docs": "https://docs.rsshub.app/bbs.html#zodgame",
+        "source": "/forum.php"
+      }
+    ]
+  },
   "zoo.team": {
     "_name": "政采云前端技术团队",
     "weekly": [
@@ -16184,39 +16855,6 @@
       }
     ]
   },
-  "manhuagui.com": {
-    "_name": "漫画柜",
-    "www": [
-      {
-        "title": "漫画更新",
-        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua",
-        "source": "/comic/:id/",
-        "target": "/manhuagui/comic/:id"
-      }
-    ]
-  },
-  "mhgui.com": {
-    "_name": "漫画柜镜像站",
-    "www": [
-      {
-        "title": "漫画更新",
-        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua-jing-xiang-zhan",
-        "source": "/comic/:id/",
-        "target": "/mhgui/comic/:id"
-      }
-    ]
-  },
-  "tw.manhuagui.com": {
-    "_name": "漫画柜台湾",
-    "www": [
-      {
-        "title": "漫画更新",
-        "docs": "https://docs.rsshub.app/anime.html#kan-man-hua-tai-wan",
-        "source": "/comic/:id/",
-        "target": "/twmanhuagui/comic/:id"
-      }
-    ]
-  },
   "pgyer.com": {
     "_name": "蒲公英应用分发",
     "www": [
@@ -16334,35 +16972,6 @@
         "docs": "https://docs.rsshub.app/picture.html#bing-bi-zhi",
         "source": "",
         "target": "/bing"
-      }
-    ]
-  },
-  "dcard.tw": {
-    "_name": "Dcard",
-    "www": [
-      {
-        "title": "首頁帖子-最新",
-        "docs": "https://docs.rsshub.app/bbs.html#dcard",
-        "source": "/f",
-        "target": "/dcard/posts/latest"
-      },
-      {
-        "title": "首頁帖子-熱門",
-        "docs": "https://docs.rsshub.app/bbs.html#dcard",
-        "source": "/f",
-        "target": "/dcard/posts/popular"
-      },
-      {
-        "title": "板塊帖子-最新",
-        "docs": "https://docs.rsshub.app/bbs.html#dcard",
-        "source": "/f/:section",
-        "target": "/dcard/:section/latest"
-      },
-      {
-        "title": "板塊帖子-熱門",
-        "docs": "https://docs.rsshub.app/bbs.html#dcard",
-        "source": "/f/:section",
-        "target": "/dcard/:section/popular"
       }
     ]
   },
@@ -17372,65 +17981,6 @@
         "docs": "https://docs.rsshub.app/social-media.html#fur-affinity",
         "source": "/journal/:id/",
         "target": "/furaffinity/journal_comments/:id"
-      }
-    ]
-  },
-  "bgm.tv": {
-    "_name": "Bangumi",
-    ".": [
-      {
-        "title": "小组话题",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/group/:id",
-        "target": "/bangumi/group/:id"
-      },
-      {
-        "title": "小组话题的新回复",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/group/topic/:id",
-        "target": "/bangumi/topic/:id"
-      },
-      {
-        "title": "现实人物的新作品",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/person/:id",
-        "target": "/bangumi/person/:id"
-      },
-      {
-        "title": "用户日志",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/user/:id",
-        "target": "/bangumi/user/blog/:id"
-      },
-      {
-        "title": "条目的讨论",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/subject/:id",
-        "target": "/bangumi/subject/:id/topics"
-      },
-      {
-        "title": "条目的评论",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/subject/:id",
-        "target": "/bangumi/subject/:id/blogs"
-      },
-      {
-        "title": "条目的章节",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/subject/:id",
-        "target": "/bangumi/subject/:id"
-      },
-      {
-        "title": "条目的吐槽箱",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/subject/:id",
-        "target": "/bangumi/subject/:id/comments"
-      },
-      {
-        "title": "放送列表",
-        "docs": "https://docs.rsshub.app/anime.html#bangumi",
-        "source": "/calendar",
-        "target": "/bangumi/calendar/today"
       }
     ]
   },
