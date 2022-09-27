@@ -1165,6 +1165,12 @@
     "/filmdeepfocus/:category?": [
         "nczitzk"
     ],
+    "/finviz/news/:ticker": [
+        "HenryQW"
+    ],
+    "/finviz/:category?": [
+        "nczitzk"
+    ],
     "/firefox/breaches": [
         "TonyRL"
     ],
@@ -1499,20 +1505,23 @@
     "/gov/shaanxi/kjt/:id?": [
         "nczitzk"
     ],
-    "/gov/shenzhen/hrss/szksy/:caty/:page?": [
-        "zlasd"
-    ],
-    "/gov/shenzhen/zzb/:caty/:page?": [
-        "zlasd"
-    ],
     "/gov/shanghai/rsj/ksxm": [
         "Fatpandac"
+    ],
+    "/gov/shanghai/wsjkw/yqtb": [
+        "zcf0508"
     ],
     "/gov/shanghai/yjj/:path+": [
         "nczitzk"
     ],
-    "/gov/shanghai/wsjkw/yqtb": [
-        "zcf0508"
+    "/gov/shenzhen/hrss/szksy/:caty/:page?": [
+        "zlasd"
+    ],
+    "/gov/shenzhen/xxgk/zfxxgj/:caty": [
+        "laoxua"
+    ],
+    "/gov/shenzhen/zzb/:caty/:page?": [
+        "zlasd"
     ],
     "/gov/sichuan/deyang/govpulicinfo/:countyName": [
         "zytomorrow"
@@ -3142,6 +3151,9 @@
     "/samsung/research/blog": [
         "nczitzk"
     ],
+    "/saraba1st/thread/:tid": [
+        "zengxs"
+    ],
     "/science/cover": [
         "yech1990",
         "TonyRL"
@@ -3497,6 +3509,18 @@
     "/thecover/channel/:id?": [
         "yuxinliu-alex"
     ],
+    "/theinitium/author/:type/:language?": [
+        "AgFlore"
+    ],
+    "/theinitium/channel/:type?/:language?": [
+        "prnake"
+    ],
+    "/theinitium/follow/articles/:language?": [
+        "AgFlore"
+    ],
+    "/theinitium/tags/:type/:language?": [
+        "AgFlore"
+    ],
     "/thenewslens/author/:id/:sort?": [
         "nczitzk"
     ],
@@ -3681,6 +3705,9 @@
     ],
     "/ulapia/reports/:category?": [
         "Fatpandac"
+    ],
+    "/unusualwhales/news": [
+        "TonyRL"
     ],
     "/uraaka-joshi/": [
         "SettingDust",
@@ -4656,7 +4683,6 @@
     "/gov/beijing/bjeea/:type": [],
     "/gov/guangdong/edu/:caty": [],
     "/gov/guangdong/eea/:caty": [],
-    "/gov/shenzhen/xxgk/zfxxgj/:caty": [],
     "/go.jp/mofa": [],
     "/xiaoheihe/user/:id": [],
     "/xiaoheihe/news": [],
@@ -4778,7 +4804,6 @@
     "/mit/ocw-top": [],
     "/mit/csail/news": [],
     "/kpmg/insights": [],
-    "/saraba1st/thread/:tid": [],
     "/gradcafe/result/:type": [],
     "/gradcafe/result": [],
     "/shuhui/comics/:id": [],
@@ -5097,7 +5122,6 @@
     "/google/news/:category/:locale": [],
     "/p-articles/section/:section": [],
     "/p-articles/contributors/:author": [],
-    "/finviz/news/:ticker": [],
     "/haohaozhu/whole-house/:keyword?": [],
     "/haohaozhu/discover/:keyword?": [],
     "/kuaidi100/track/:number/:id/:phone?": [],
@@ -5222,8 +5246,6 @@
     "/199it/tag/:tag": [],
     "/jijitang/article/:id": [],
     "/jijitang/publication": [],
-    "/initium/:type?/:language?": [],
-    "/theinitium/:model/:type?/:language?": [],
     "/grubstreet": [],
     "/manhuadui/manhua/:name/:serial?": [],
     "/fzdm/manhua/:id": [],

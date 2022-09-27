@@ -4606,6 +4606,29 @@
       }
     ]
   },
+  "finviz.com": {
+    "_name": "finviz",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/finance.html#finviz-news",
+        "source": [
+          "/news.ashx",
+          "/"
+        ],
+        "target": "/finviz/:category?"
+      },
+      {
+        "title": "US Stock News",
+        "docs": "https://docs.rsshub.app/finance.html#finviz-mei-gu-gu-piao-xin-wen",
+        "source": [
+          "/quote.ashx",
+          "/"
+        ],
+        "target": "/finviz/news/:category?"
+      }
+    ]
+  },
   "firefox.com": {
     "_name": "Mozilla",
     "monitor": [
@@ -5858,6 +5881,16 @@
         "docs": "https://docs.rsshub.app/government.html#guang-dong-sheng-ren-min-zheng-fu-shen-zhen-shi-wei-zu-zhi-bu",
         "source": [
           "/*"
+        ],
+        "target": "/gov/shenzhen/hrss/szksy/:caty/:page?"
+      }
+    ],
+    "xxgk": [
+      {
+        "title": "深圳市人民政府",
+        "docs": "https://docs.rsshub.app/government.html#guang-dong-sheng-ren-min-zheng-fu-guang-dong-sheng-shen-zhen-shi-ren-min-zheng-fu",
+        "source": [
+          "/cn/xxgk/zfxxgj/:caty"
         ],
         "target": "/gov/shenzhen/hrss/szksy/:caty/:page?"
       }
@@ -12842,6 +12875,16 @@
       }
     ]
   },
+  "saraba1st.com": {
+    "_name": "Saraba1st",
+    "bbs": [
+      {
+        "title": "帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#saraba1st",
+        "source": "/2b/:id"
+      }
+    ]
+  },
   "science.org": {
     "_name": "Science Magazine",
     ".": [
@@ -14304,6 +14347,29 @@
       }
     ]
   },
+  "theinitium.com": {
+    "_name": "端传媒",
+    ".": [
+      {
+        "title": "专题・栏目",
+        "docs": "https://docs.rsshub.app/new-media.html#duan-chuan-mei",
+        "source": "/channel/:type",
+        "target": "/theinitium/channel/:type"
+      },
+      {
+        "title": "话题・标签",
+        "docs": "https://docs.rsshub.app/new-media.html#duan-chuan-mei",
+        "source": "/tags/:type",
+        "target": "/theinitions/tags/:type"
+      },
+      {
+        "title": "作者",
+        "docs": "https://docs.rsshub.app/new-media.html#duan-chuan-mei",
+        "source": "/author/:type",
+        "target": "/theinitium/author/:type"
+      }
+    ]
+  },
   "thenewslens.com": {
     "_name": "The News Lens 關鍵評論",
     ".": [
@@ -15148,6 +15214,20 @@
           "/reports/brokerage_news"
         ],
         "target": "/ulapia/reports/brokerage_news"
+      }
+    ]
+  },
+  "unusualwhales.com": {
+    "_name": "Unusual Whales",
+    ".": [
+      {
+        "title": "News Flow",
+        "docs": "https://docs.rsshub.app/en/finance.html#unusual-whales",
+        "source": [
+          "/news",
+          "/"
+        ],
+        "target": "/unusualwhales/news"
       }
     ]
   },
@@ -17987,16 +18067,6 @@
       {
         "title": "商品搜索列表",
         "docs": "https://docs.rsshub.app/shopping.html#craigslist"
-      }
-    ]
-  },
-  "saraba1st.com": {
-    "_name": "Saraba1st",
-    "bbs": [
-      {
-        "title": "帖子",
-        "docs": "https://docs.rsshub.app/bbs.html#saraba1st",
-        "source": "/2b/:id"
       }
     ]
   },
