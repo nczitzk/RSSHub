@@ -50,11 +50,6 @@
             { title: '仓库 Contributors', docs: 'https://docs.rsshub.app/programming.html#github', source: ['/:user/:repo/graphs/contributors', '/:user/:repo'], target: '/github/contributors/:user/:repo' },
         ],
     },
-    'smzdm.com': {
-        _name: '什么值得买',
-        www: [{ title: '排行榜', docs: 'https://docs.rsshub.app/shopping.html#shen-me-zhi-de-mai', source: '/top' }],
-        search: [{ title: '关键词', docs: 'https://docs.rsshub.app/shopping.html#shen-me-zhi-de-mai', source: '/', target: (params, url) => `/smzdm/keyword/${new URL(url).searchParams.get('s')}` }],
-    },
     'ximalaya.com': {
         _name: '喜马拉雅',
         '.': [
@@ -308,24 +303,6 @@
             { title: '教务处实践科学科通知', docs: 'https://docs.rsshub.app/university.html#yun-nan-da-xue', source: '/*', target: '/jwc/4' },
         ],
         grs: [{ title: '研究生院通知', docs: 'https://docs.rsshub.app/university.html#yun-nan-da-xue', source: '/*', target: '' }],
-    },
-    'kuaidi100.com': {
-        _name: '快递100',
-        '.': [
-            {
-                title: '快递追踪',
-                docs: 'https://docs.rsshub.app/other.html#kuai-di-100',
-                source: '/',
-                target: (params, url, document) => {
-                    const postid = document && document.querySelector('#postid').value;
-                    const com = document && document.querySelector('#selectComBtn').childNodes[1].attributes[1].value;
-                    if (com && com !== 'default' && postid) {
-                        return `/kuaidi100/track/${com}/${postid}`;
-                    }
-                },
-            },
-            { title: '支持的快递公司列表', docs: 'https://docs.rsshub.app/other.html#kuai-di-100', source: '/', target: '/kuaidi100/company' },
-        ],
     },
     'japanpost.jp': {
         _name: '日本郵便',
