@@ -560,6 +560,12 @@
     "/blockbeats/:channel?": [
         "Fatpandac"
     ],
+    "/bloomberg/:site?": [
+        "bigfei"
+    ],
+    "/bloomberg/": [
+        "bigfei"
+    ],
     "/bluestacks/release/5": [
         "TonyRL"
     ],
@@ -725,6 +731,12 @@
     "/cncf/:cate?": [
         "Fatpandac"
     ],
+    "/cngal/entry/:id": [
+        "chengyuhui"
+    ],
+    "/cngal/weekly": [
+        "chengyuhui"
+    ],
     "/cnjxol/jxrb/:id?": [
         "nczitzk"
     ],
@@ -746,6 +758,9 @@
     ],
     "/codeforces/contests": [
         "Fatpandac"
+    ],
+    "/comicskingdom/:name": [
+        "stjohnjohnson"
     ],
     "/consumer/:category?/:language?/:keyword?": [
         "nczitzk"
@@ -2456,7 +2471,10 @@
     "/lovelive-anime/news/:option?": [
         "axojhf"
     ],
-    "/lovelive-anime/topics/:abbr/:category?": [
+    "/lovelive-anime/topics/:abbr/:category?/:option?": [
+        "axojhf"
+    ],
+    "/lovelive-anime/schedules/:serie/:category?": [
         "axojhf"
     ],
     "/luogu/contest": [
@@ -2520,6 +2538,9 @@
     ],
     "/mihoyo/bbs/official/:gids/:type?/:page_size?/:last_id?": [
         "CaoMeiYouRen"
+    ],
+    "/mihoyo/ys/:location?/:category?": [
+        "nczitzk"
     ],
     "/mindmeister/:category?/:language?": [
         "TonyRL"
@@ -3334,6 +3355,9 @@
     ],
     "/scmp/:category_id": [
         "proletarius101"
+    ],
+    "/sctv/programme/:id?": [
+        "nczitzk"
     ],
     "/scvtc/xygg": [
         "nczitzk"
@@ -5590,7 +5614,6 @@
     "/npc/:caty": [],
     "/ofweek/news": [],
     "/popyard/:caty?": [],
-    "/yuanshen/:location?/:category?": [],
     "/wto/dispute-settlement/:year?": [],
     "/forum4399/:mtag": [],
     "/nudt/yjszs/:id?": [],
@@ -5719,7 +5742,6 @@
     "/mofish/:id": [],
     "/mcdonalds/:category": [],
     "/gocomics/:name": [],
-    "/comicskingdom/:name": [],
     "/mediadigest/:range/:category?": [],
     "/ngd/:slug?": [],
     "/simpread/notice": [],

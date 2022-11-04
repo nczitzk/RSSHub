@@ -2144,6 +2144,20 @@
       }
     ]
   },
+  "bloomberg.com": {
+    "_name": "bloomberg",
+    "www": [
+      {
+        "title": "Bloomberg",
+        "docs": "https://docs.rsshub.app/finance.html##bloomberg-news",
+        "source": [
+          "/:site",
+          "/"
+        ],
+        "target": "/bloomberg/:site?"
+      }
+    ]
+  },
   "bluestacks.com": {
     "_name": "BlueStacks",
     ".": [
@@ -2984,6 +2998,28 @@
       }
     ]
   },
+  "cngal.org": {
+    "_name": "CnGal",
+    "www": [
+      {
+        "title": "每周速报",
+        "docs": "https://docs.rsshub.app/anime.html#cngal-mei-zhou-su-bao",
+        "source": [
+          "/",
+          "/weeklynews"
+        ],
+        "target": "/cngal/weekly"
+      },
+      {
+        "title": "制作者/游戏新闻",
+        "docs": "https://docs.rsshub.app/anime.html#cngal-zhi-zuo-zhe-you-xi-xin-wen",
+        "source": [
+          "/entries/index/:id"
+        ],
+        "target": "/cngal/entry/:id"
+      }
+    ]
+  },
   "cnjxol.com": {
     "_name": "南湖清风",
     ".": [
@@ -3048,6 +3084,20 @@
           "/contests"
         ],
         "target": "/codeforces/contests"
+      }
+    ]
+  },
+  "comicskingdom.com": {
+    "_name": "Comics Kingdom",
+    ".": [
+      {
+        "title": "Archive",
+        "docs": "https://docs.rsshub.app/anime.html#comics-kingdom",
+        "source": [
+          "/:name/*",
+          "/:name"
+        ],
+        "target": "/comicskingdom/:name"
       }
     ]
   },
@@ -10013,6 +10063,13 @@
           "/:abbr/topics/",
           "/:abbr/topics.php"
         ]
+      },
+      {
+        "title": "Schedule",
+        "docs": "https://docs.rsshub.app/anime.html#lovelive-anime-love-live-guan-wang-schedule",
+        "source": [
+          "/schedule/"
+        ]
       }
     ]
   },
@@ -10463,8 +10520,19 @@
       }
     ]
   },
+  "hoyoverse.com": {
+    "_name": "米哈游",
+    "genshin": [
+      {
+        "title": "原神 - 新闻",
+        "docs": "https://docs.rsshub.app/game.html##mi-ha-you",
+        "source": "/:location/news",
+        "target": "/mihoyo/ys/:location"
+      }
+    ]
+  },
   "mihoyo.com": {
-    "_name": "米游社v2",
+    "_name": "米哈游",
     "bbs": [
       {
         "title": "米游社 - 官方公告",
@@ -10477,6 +10545,14 @@
           "/:game/home/53",
           "/:game/home/58"
         ]
+      }
+    ],
+    "ys": [
+      {
+        "title": "原神 - 新闻",
+        "docs": "https://docs.rsshub.app/game.html##mi-ha-you",
+        "source": "/:location/news/:category",
+        "target": "/mihoyo/ys/:location/:category"
       }
     ]
   },
@@ -13623,6 +13699,20 @@
           "/rss/:category_id/feed"
         ],
         "target": "/scmp/:category_id"
+      }
+    ]
+  },
+  "sctv.com": {
+    "_name": "四川广播电视台",
+    ".": [
+      {
+        "title": "电视回放",
+        "docs": "https://docs.rsshub.app/traditional-media.html#si-chuan-guang-bo-dian-shi-tai-dian-shi-hui-fang",
+        "source": [
+          "/column/list",
+          "/column/detail",
+          "/"
+        ]
       }
     ]
   },
