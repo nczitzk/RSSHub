@@ -3181,7 +3181,7 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bencode@^2.0.2:
+bencode@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/bencode/-/bencode-2.0.3.tgz#89b9c80ea1b8573554915a7d0c15f62b0aa7fc52"
   integrity sha512-D/vrAD4dLVX23NalHwb8dSvsUsxeRPO8Y7ToKA015JQYq69MLDOMkC0uGZYA/MPpltLO8rt8eqFC2j8DxjTZ/w==
@@ -10582,12 +10582,12 @@ parse-json@^5.0.0, parse-json@^5.2.0:
     json-parse-even-better-errors "^2.3.0"
     lines-and-columns "^1.1.6"
 
-parse-torrent@9.1.5:
-  version "9.1.5"
-  resolved "https://registry.yarnpkg.com/parse-torrent/-/parse-torrent-9.1.5.tgz#fcae5f360d9baf617d9a2de68e74d5de4c8099fd"
-  integrity sha512-K8FXRwTOaZMI0/xuv0dpng1MVHZRtMJ0jRWBJ3qZWVNTrC1MzWUxm9QwaXDz/2qPhV2XC4UIHI92IGHwseAwaA==
+parse-torrent@10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/parse-torrent/-/parse-torrent-10.0.1.tgz#d5ac16d6a06b80bcebb13b245c1884555b17c73e"
+  integrity sha512-lmEtg+uRFom5UV/eIcdefQ7FzVBwjqRfRb6K4BY0epVFk5lDWcjiJPoG9fuxhl1TSRo30lpC/zDew+oWUqz3Iw==
   dependencies:
-    bencode "^2.0.2"
+    bencode "^2.0.3"
     blob-to-buffer "^1.2.9"
     get-stdin "^8.0.0"
     magnet-uri "^6.2.0"
