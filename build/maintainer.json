@@ -675,6 +675,9 @@
     "/cankaoxiaoxi/news/:category": [
         "yuxinliu-alex"
     ],
+    "/cartoonmad/comic/:id": [
+        "KellyHwong"
+    ],
     "/cast/:column?": [
         "TonyRL"
     ],
@@ -2256,6 +2259,9 @@
     "/islander/top30event": [
         "TonyRL"
     ],
+    "/issuehunt/funded/:username/:repo": [
+        "running-grass"
+    ],
     "/itch/devlog/:user/:id": [
         "nczitzk"
     ],
@@ -2522,6 +2528,9 @@
     ],
     "/jewishmuseum/exhibitions": [
         "chazeon"
+    ],
+    "/jiaoliudao/": [
+        "TonyRL"
     ],
     "/jiemian/list/:id?": [
         "WenhuWee",
@@ -5374,7 +5383,6 @@
     "/xiachufang/popular/:timeframe?": [],
     "/eeo/:column?/:category?": [],
     "/tencentvideo/playlist/:id": [],
-    "/cartoonmad/comic/:id": [],
     "/vol/:mode?": [],
     "/dongmanmanhua/:category/:name/:id": [],
     "/webtoons/:lang/:category/:name/:id": [],

@@ -2853,6 +2853,19 @@
       }
     ]
   },
+  "cartoonmad.com": {
+    "_name": "動漫狂",
+    ".": [
+      {
+        "title": "漫画更新",
+        "docs": "https://docs.rsshub.app/anime.html#dong-man-kuang",
+        "source": [
+          "/comic/:id"
+        ],
+        "target": "/cartoonmad/comic/:id"
+      }
+    ]
+  },
   "cast.org.cn": {
     "_name": "中国科学技术协会",
     ".": [
@@ -9079,6 +9092,16 @@
       }
     ]
   },
+  "issuehunt.io": {
+    "_name": "Issue Hunt",
+    ".": [
+      {
+        "title": "项目悬赏",
+        "docs": "https://docs.rsshub.app/programming.html#issue-hunt-xiang-mu-xuan-shang",
+        "source": "/r/:username/:repo"
+      }
+    ]
+  },
   "itch.io": {
     "_name": "itch.io",
     ".": [
@@ -10579,6 +10602,19 @@
       {
         "title": "Exhibitions",
         "docs": "https://docs.rsshub.app/en/travel.html#the-jewish-museum"
+      }
+    ]
+  },
+  "jiaoliudao.com": {
+    "_name": "交流岛资源网",
+    ".": [
+      {
+        "title": "最新文章",
+        "docs": "https://docs.rsshub.app/blog.html#jiao-liu-dao-zi-yuan-wang",
+        "source": [
+          "/"
+        ],
+        "target": "/jiaoliudao"
       }
     ]
   },
