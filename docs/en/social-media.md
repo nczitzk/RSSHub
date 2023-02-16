@@ -4,6 +4,24 @@ pageClass: routes
 
 # Social Media
 
+## Crossbell
+
+### Notes
+
+<RouteEn author="DIYgod" example="/crossbell/notes" path="/crossbell/notes" radar="1" rssbud="1"/>
+
+### Notes of character
+
+<RouteEn author="DIYgod" example="/crossbell/notes/character/10" path="/crossbell/notes/character/:characterId" radar="1" rssbud="1"/>
+
+### Notes of source
+
+<RouteEn author="DIYgod" example="/crossbell/notes/source/xlog" path="/crossbell/notes/source/:source" radar="1" rssbud="1"/>
+
+### Feeds of following
+
+<RouteEn author="DIYgod" example="/crossbell/feeds/following/10" path="/crossbell/feeds/following/:characterId" radar="1" rssbud="1"/>
+
 ## CuriousCat
 
 ### User
@@ -178,6 +196,12 @@ These feed do not include boosts (a.k.a. reblogs). RSSHub provides a feed for us
 ### User timeline (backup)
 
 <RouteEn author="notofoe" example="/mastodon/account_id/mastodon.social/23634/statuses/only_media" path="/mastodon/account/:site/:account_id/statuses/:only_media?" :paramsDesc="['instance address, only domain, no `http://` or `https://` protocol header', 'account id. login your instance, then search for the user profile; the account id is in the url', 'whether only display media content, default to false, any value to true']"/>
+
+## Misskey
+
+### Featured Notes
+
+<RouteEn author="Misaka13514" example="/misskey/notes/featured/misskey.io" path="/misskey/notes/featured/:site" :paramsDesc="['instance address, domain only, without `http://` or `https://` protocol header']" radar="1" rssbud="1"/>
 
 ## piapro
 

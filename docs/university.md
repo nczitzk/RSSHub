@@ -1274,13 +1274,13 @@ category 列表：
 
 ## 哈尔滨工业大学（深圳）
 
-### 哈尔滨工业大学（深圳） - 新闻中心
+### 新闻中心
 
-<Route author="xandery-geek" example="/hitsz/article/id-74" path="/hitsz/article/:category?" :paramsDesc="['分类名，默认为通知公告']" >
+<Route author="xandery-geek" example="/hitsz/article/id-74" path="/hitsz/article/:category?" :paramsDesc="['分类名，默认为校园动态']" radar="1">
 
-| 校区要闻   | 媒体报道  | 通知公告  | 综合新闻  | 校园动态  | 讲座论坛  | 热点专题  |
-| ------ | ----- | ----- | ----- | ----- | ----- | ----- |
-| id-116 | id-80 | id-74 | id-75 | id-77 | id-78 | id-79 |
+| 校区要闻   | 媒体报道  | 综合新闻  | 校园动态  | 讲座论坛  | 热点专题  | 招标信息  | 重要关注   |
+| ------ | ----- | ----- | ----- | ----- | ----- | ----- | ------ |
+| id-116 | id-80 | id-75 | id-77 | id-78 | id-79 | id-81 | id-124 |
 
 </Route>
 
@@ -3011,7 +3011,9 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 ### 交通运输与物流学院
 
-<Route author="zoenglinghou" example="/swjtu/tl/news" path="/swjtu/tl/news"/>
+#### 研究生通知
+
+<Route author="zoenglinghou qizidog" example="/swjtu/jtys/yjs" path="/swjtu/jtys/yjs"/>
 
 ## 西南科技大学
 
@@ -3477,7 +3479,7 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 ### 成果转化
 
-<Route author="nczitzk" example="/cas/cg/cgzhld" path="/cas/cg/:caty?" :paramsDesc="['分类，见下表，默认为工作动态']">
+<Route author="nczitzk" example="/cas/cg/cgzhld" path="/cas/cg/:caty?" :paramsDesc="['分类，见下表，默认为工作动态']" radar="1">
 
 | 工作动态 | 科技成果转移转化亮点工作 |
 | ---- | ------------ |
@@ -3485,17 +3487,17 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 </Route>
 
-### 上海微系统与信息技术研究所学术活动
+### 上海微系统与信息技术研究所 科技进展
 
-<Route author="HenryQW" example="/cas/sim/academic" path="/cas/sim/academic"/>
+<Route author="HenryQW" example="/cas/sim/kyjz" path="/cas/sim/kyjz" radar="1"/>
 
-### 中国科学院信息工程研究所 第二研究室 处理架构组 知识库
+### 信息工程研究所 第二研究室 处理架构组 知识库
 
-<Route author="renzhexigua" example="/cas/mesalab/kb" path="/cas/mesalab/kb"/>
+<Route author="renzhexigua" example="/cas/mesalab/kb" path="/cas/mesalab/kb" radar="1"/>
 
-### 中国科学院电工研究所 科研动态
+### 电工研究所 科研动态
 
-<Route author="nczitzk" example="/cas/iee/kydt" path="/cas/iee/kydt"/>
+<Route author="nczitzk" example="/cas/iee/kydt" path="/cas/iee/kydt" radar="1"/>
 
 ## 中国科学院大学
 
