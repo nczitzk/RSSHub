@@ -15774,6 +15774,18 @@
       }
     ]
   },
+  "qianp.com": {
+    "_name": "千篇网",
+    ".": [
+      {
+        "title": "知识库／资讯",
+        "docs": "https://docs.rsshub.app/new-media.html#qian-pian-wang",
+        "source": [
+          "/*path"
+        ]
+      }
+    ]
+  },
   "qianzhan.com": {
     "_name": "前瞻网",
     ".": [
@@ -19604,6 +19616,27 @@
       }
     ]
   },
+  "vcb-s.com": {
+    "_name": "VCB-Studio",
+    ".": [
+      {
+        "title": "最新文章",
+        "docs": "https://docs.rsshub.app/anime.html#vcb-studio",
+        "source": [
+          "/"
+        ],
+        "target": "/vcb-s"
+      },
+      {
+        "title": "分类文章",
+        "docs": "https://docs.rsshub.app/anime.html#vcb-studio",
+        "source": [
+          "/archives/category/:cate"
+        ],
+        "target": "/vcb-s/category/:cate"
+      }
+    ]
+  },
   "baden-wuerttemberg.de": {
     "_name": "Constitutional Court of Baden-Württemberg (Germany)",
     "verfgh": [
@@ -21241,6 +21274,18 @@
       }
     ]
   },
+  "zagg.com": {
+    "_name": "New Arrivals",
+    ".": [
+      {
+        "title": "Zagg - New Arrivals",
+        "docs": "https://docs.rsshub.app/shopping.html#zagg",
+        "source": [
+          "/en_us/new-arrivals"
+        ]
+      }
+    ]
+  },
   "myzaker.com": {
     "_name": "ZAKER",
     ".": [
@@ -21859,6 +21904,19 @@
           "/student5/chickenM/articles/:board",
           "/student5/chickenM/articles"
         ]
+      }
+    ]
+  },
+  "zuzhirenshi.com": {
+    "_name": "组织人事报",
+    ".": [
+      {
+        "title": "日报",
+        "docs": "https://docs.rsshub.app/traditional-media.html#zu-zhi-ren-shi-bao",
+        "source": [
+          "/dianzibao/*"
+        ],
+        "target": "/zuzhirenshi"
       }
     ]
   },
