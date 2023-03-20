@@ -308,6 +308,9 @@
     "/ally/rail/:category?/:topic?": [
         "Rongronggg9"
     ],
+    "/amazon/awsblogs/:locale?": [
+        "HankChow"
+    ],
     "/amazon/kindle/software-updates": [
         "NavePnow"
     ],
@@ -860,6 +863,9 @@
     "/cebbank/quotation/history/:type": [
         "linbuxiao"
     ],
+    "/cgtn/podcast/:category/:id": [
+        "5upernova-heng"
+    ],
     "/chaincatcher/": [
         "TonyRL"
     ],
@@ -1293,6 +1299,9 @@
     "/douban/group/:groupid/:type?": [
         "DIYgod"
     ],
+    "/douban/list/:type?": [
+        "5upernova-heng"
+    ],
     "/douban/jobs/:type": [
         "Fatpandac"
     ],
@@ -1621,6 +1630,9 @@
     ],
     "/gameapps/": [
         "TonyRL"
+    ],
+    "/gamebase/news/:type?/:category?": [
+        "nczitzk"
     ],
     "/gamer/gnn/:category?": [
         "Arracc"
@@ -2349,6 +2361,9 @@
     "/icac/news/:lang?": [
         "linbuxiao, TonyRL"
     ],
+    "/idolypride/news": [
+        "Mingxia1"
+    ],
     "/ieee/journal/:journal/:sortType?": [
         "Derekmini",
         "auto-bot-ty"
@@ -3000,6 +3015,9 @@
     "/macfilos/blog": [
         "nczitzk"
     ],
+    "/magazinelib/latest-magazine/:query?": [
+        "NavePnow"
+    ],
     "/mangadex/:id/:lang?": [
         "vzz64"
     ],
@@ -3483,6 +3501,10 @@
     "/oo-software/changelog/:id": [
         "nczitzk"
     ],
+    "/openai/blog/:tag?": [
+        "StevenRCE0",
+        "nczitzk"
+    ],
     "/openwrt/releases/:model?": [
         "DIYgod"
     ],
@@ -3516,6 +3538,9 @@
     ],
     "/oschina/user/:id": [
         "dxmpalb"
+    ],
+    "/oshwhub/:sortType?": [
+        "tylinux"
     ],
     "/oup/:name": [
         "Fatpandac"
@@ -4297,6 +4322,12 @@
     "/swjtu/jyzpxx": [
         "qizidog"
     ],
+    "/swjtu/jwc": [
+        "mobyw"
+    ],
+    "/swjtu/xg/:code?": [
+        "mobyw"
+    ],
     "/swpu/bgw/:code": [
         "CYTMWIA"
     ],
@@ -4396,6 +4427,10 @@
     "/tencent/cloud/column/:id?/:tag?": [
         "nczitzk"
     ],
+    "/tencent/news/author/:mid": [
+        "LogicJake",
+        "miles170"
+    ],
     "/tencent/news/coronavirus/data/:province?/:city?": [
         "CaoMeiYouRen"
     ],
@@ -4415,6 +4450,9 @@
     "/test/:id": [
         "DIYgod",
         "NeverBehave"
+    ],
+    "/theatlantic/:category": [
+        "NavePnow"
     ],
     "/thecatcity/:term?": [
         "TonyRL"
@@ -4647,6 +4685,38 @@
     ],
     "/udn/news/breakingnews/:id": [
         "miles170"
+    ],
+    "/uestc/gr": [
+        "huyyi",
+        "mobyw"
+    ],
+    "/uestc/cqe/:type?": [
+        "truobel",
+        "mobyw"
+    ],
+    "/uestc/jwc/:type?": [
+        "achjqz",
+        "mobyw"
+    ],
+    "/uestc/news/:type?": [
+        "achjqz",
+        "mobyw"
+    ],
+    "/uestc/auto": [
+        "talengu",
+        "mobyw"
+    ],
+    "/uestc/scse": [
+        "talengu",
+        "mobyw"
+    ],
+    "/uestc/sice": [
+        "huyyi",
+        "mobyw"
+    ],
+    "/uestc/sise/:type?": [
+        "Yadomin",
+        "mobyw"
     ],
     "/uibe/hr/:category?/:type?": [
         "nczitzk"
@@ -5196,6 +5266,9 @@
     "/youtube/charts/:category?/:country?/:embed?": [
         "TonyRL"
     ],
+    "/youtube/community/:handle": [
+        "TonyRL"
+    ],
     "/youtube/playlist/:id/:embed?": [
         "HenryQW"
     ],
@@ -5583,14 +5656,6 @@
     "/sctu/xgxy/:id": [],
     "/sctu/jwc/:type?": [],
     "/sctu/jwc/:type/:id": [],
-    "/uestc/jwc/:type?": [],
-    "/uestc/is/:type?": [],
-    "/uestc/news/:type?": [],
-    "/uestc/auto/:type?": [],
-    "/uestc/cs/:type?": [],
-    "/uestc/cqe/:type?": [],
-    "/uestc/gr": [],
-    "/uestc/sice": [],
     "/nwafu/news": [],
     "/nwafu/jiaowu": [],
     "/nwafu/gs": [],
@@ -6016,7 +6081,6 @@
     "/nciae/tzgg": [],
     "/nciae/xsxx": [],
     "/cfan/news": [],
-    "/tencent/news/author/:mid": [],
     "/nfmovies/:id?": [],
     "/andyt/:view?": [],
     "/pintu360/:type?": [],
@@ -6466,7 +6530,6 @@
     "/totalcommander/whatsnew": [],
     "/blizzard/news/:language?/:category?": [],
     "/deepl/blog/:lang?": [],
-    "/openai/blog/:tag?": [],
     "/muchong/journal/:type?": [],
     "/muchong/:id/:type?/:sort?": [],
     "/qstheory/:category?": [],

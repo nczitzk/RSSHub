@@ -1547,6 +1547,12 @@
           "/gp/help/customer/display.html"
         ]
       }
+    ],
+    "aws": [
+      {
+        "title": "AWS blogs",
+        "docs": "https://docs.rsshub.app/blogs.html#amazon"
+      }
     ]
   },
   "android.com": {
@@ -3620,6 +3626,19 @@
       }
     ]
   },
+  "cgtn.com": {
+    "_name": "中国环球电视网 CGTN",
+    ".": [
+      {
+        "title": "播客",
+        "docs": "https://docs.rsshub.app/traditional-media.html#zhong-guo-huan-qiu-dian-shi-wang",
+        "source": [
+          "/podcast/column/:category/*/:id"
+        ],
+        "target": "/cgtn/podcast/:category/:id"
+      }
+    ]
+  },
   "chaincatcher.com": {
     "_name": "链捕手 ChainCatcher",
     ".": [
@@ -5252,6 +5271,14 @@
         "docs": "https://docs.rsshub.app/social-media.html#dou-ban",
         "source": "/group/:groupid",
         "target": "/douban/group/:groupid/elite"
+      },
+      {
+        "title": "榜单与集合",
+        "docs": "https://docs.rsshub.app/social-media.html#douban",
+        "source": [
+          "/subject_collection/:type"
+        ],
+        "target": "/douban/list/:type"
       }
     ],
     "jobs": [
@@ -6720,6 +6747,18 @@
           "/"
         ],
         "target": "/gameapps"
+      }
+    ]
+  },
+  "gamebase.com.tw": {
+    "_name": "遊戲基地 Gamebase",
+    "news": [
+      {
+        "title": "新聞",
+        "docs": "https://docs.rsshub.app/game.html#gamebase-xin-wen",
+        "source": [
+          "/news/:type"
+        ]
       }
     ]
   },
@@ -9386,6 +9425,17 @@
           "/:lang/press/index.html"
         ],
         "target": "/icac/news/:lang"
+      }
+    ]
+  },
+  "idolypride.jp": {
+    "_name": "偶像荣耀",
+    ".": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/anime.html#ou-xiang-rong-yao",
+        "source": "/news",
+        "target": "/idolypride/news"
       }
     ]
   },
@@ -12523,6 +12573,18 @@
       }
     ]
   },
+  "magazinelib.com": {
+    "_name": "magazineLib",
+    ".": [
+      {
+        "title": "Latest Magazine",
+        "docs": "https://docs.rsshub.app/reading.html#magazinelib",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
   "mangadex.org": {
     "_name": "MangaDex",
     ".": [
@@ -14964,6 +15026,16 @@
       }
     ]
   },
+  "openai.com": {
+    "_name": "OpenAI",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/en/new-media.html#openai",
+        "source": "/blog"
+      }
+    ]
+  },
   "openwrt.org": {
     "_name": "Openwrt",
     ".": [
@@ -15065,6 +15137,18 @@
           "/u/:uid"
         ],
         "target": "/oschina/u/:uid"
+      }
+    ]
+  },
+  "oshwhub.com": {
+    "_name": "立创开源硬件平台",
+    ".": [
+      {
+        "title": "开源广场",
+        "docs": "https://docs.rsshub.app/other.html#li-chuang-kai-yuan-ying-jian-ping-tai",
+        "source": [
+          "/explore"
+        ]
       }
     ]
   },
@@ -16055,7 +16139,15 @@
         "source": "/mp/appmsgalbum"
       }
     ],
-    "news": [
+    "new": [
+      {
+        "title": "腾讯企鹅号 - 更新",
+        "docs": "https://docs.rsshub.app/new-media.html#teng-xun-qi-e-hao-geng-xin",
+        "source": [
+          "/omn/author/:mid"
+        ],
+        "target": "/tencent/news/author/:mid"
+      },
       {
         "title": "腾讯新闻 - 新型冠状病毒肺炎疫情实时追踪",
         "docs": "https://docs.rsshub.app/other.html#xin-guan-fei-yan-yi-qing-xin-wen-dong-tai",
@@ -17964,6 +18056,31 @@
         ],
         "target": "/swjtu/jyzpxx"
       }
+    ],
+    "jwc": [
+      {
+        "title": "教务处通知",
+        "docs": "https://docs.rsshub.app/university.html#xi-nan-jiao-tong-da-xue",
+        "source": [
+          "/vatuu/WebAction",
+          "/"
+        ],
+        "target": "/swjtu/jwc"
+      }
+    ],
+    "xg": [
+      {
+        "title": "扬华素质网",
+        "docs": "https://docs.rsshub.app/university.html#xi-nan-jiao-tong-da-xue",
+        "source": [
+          "/web/Home/PushNewsList",
+          "/web/Home/NewsList",
+          "/web/Home/ColourfulCollegeNewsList",
+          "/web/Publicity/List",
+          "/"
+        ],
+        "target": "/swjtu/xg"
+      }
     ]
   },
   "swpu.edu.cn": {
@@ -18342,6 +18459,17 @@
           "/"
         ],
         "target": "/tesla/price"
+      }
+    ]
+  },
+  "theatlantic.com": {
+    "_name": "The Atlantic",
+    "www": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/traditional-media.html#the-atlantic",
+        "source": "/:category",
+        "target": "/theatlantic/:category"
       }
     ]
   },
@@ -19326,6 +19454,89 @@
           "/"
         ],
         "target": "/udn/global/tag/:tag?"
+      }
+    ]
+  },
+  "uestc.edu.cn": {
+    "_name": "电子科技大学",
+    "gr": [
+      {
+        "title": "研究生院",
+        "docs": "https://docs.rsshub.app/university.html#dian-zi-ke-ji-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/uestc/gr"
+      }
+    ],
+    "cqe": [
+      {
+        "title": "大学生文化素质教育中心",
+        "docs": "https://docs.rsshub.app/university.html#dian-zi-ke-ji-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/uestc/cqe"
+      }
+    ],
+    "jwc": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/university.html#dian-zi-ke-ji-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/uestc/jwc"
+      }
+    ],
+    "news": [
+      {
+        "title": "新闻网",
+        "docs": "https://docs.rsshub.app/university.html#dian-zi-ke-ji-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/uestc/news"
+      }
+    ],
+    "auto": [
+      {
+        "title": "自动化学院",
+        "docs": "https://docs.rsshub.app/university.html#dian-zi-ke-ji-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/uestc/auto"
+      }
+    ],
+    "scse": [
+      {
+        "title": "计算机学院",
+        "docs": "https://docs.rsshub.app/university.html#dian-zi-ke-ji-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/uestc/scse"
+      }
+    ],
+    "sice": [
+      {
+        "title": "信通学院",
+        "docs": "https://docs.rsshub.app/university.html#dian-zi-ke-ji-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/uestc/sice"
+      }
+    ],
+    "sise": [
+      {
+        "title": "信软学院",
+        "docs": "https://docs.rsshub.app/university.html#dian-zi-ke-ji-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/uestc/sise"
       }
     ]
   },
@@ -20335,7 +20546,7 @@
       {
         "title": "新闻",
         "docs": "https://docs.rsshub.app/traditional-media.html#hua-er-jie-ri-bao-the-wall-street-journal-wsj",
-        "souce": "/",
+        "source": "/",
         "target": "/wsj/zh-cn"
       }
     ],
@@ -20343,7 +20554,7 @@
       {
         "title": "新闻",
         "docs": "https://docs.rsshub.app/traditional-media.html#hua-er-jie-ri-bao-the-wall-street-journal-wsj",
-        "souce": "/",
+        "source": "/",
         "target": "/wsj/en-us"
       }
     ]
