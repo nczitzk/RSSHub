@@ -3714,6 +3714,18 @@
       }
     ]
   },
+  "chiculture.org.hk": {
+    "_name": "通識・現代中國",
+    ".": [
+      {
+        "title": "議題熱話",
+        "docs": "https://docs.rsshub.app/new-media.html#tong-shi-・-xian-dai-zhong-guo",
+        "source": [
+          "/tc/hot-topics"
+        ]
+      }
+    ]
+  },
   "china.com": {
     "_name": "中华网",
     "military": [
@@ -3833,6 +3845,14 @@
           "/kyzx/kydt"
         ],
         "target": "/chsi/kydt"
+      },
+      {
+        "title": "考研热点新闻",
+        "docs": "https://docs.rsshub.app/study.html#zhong-guo-yan-jiu-sheng-zhao-sheng-xin-xi-wang",
+        "source": [
+          "/"
+        ],
+        "target": "/chsi/hotnews"
       }
     ]
   },
@@ -6534,6 +6554,19 @@
       }
     ]
   },
+  "fishshell.com": {
+    "_name": "fish shell",
+    ".": [
+      {
+        "title": "Release Notes",
+        "docs": "https://docs.rsshub.app/program-update.html#fish-shell",
+        "source": [
+          "/"
+        ],
+        "target": "/fishshell"
+      }
+    ]
+  },
   "fjksbm.com": {
     "_name": "福建考试报名网",
     ".": [
@@ -6908,6 +6941,22 @@
           "/"
         ],
         "target": "/gcores/tag/:tag"
+      },
+      {
+        "title": "播客",
+        "docs": "https://docs.rsshub.app/new-media.html#ji-he-wang-bo-ke",
+        "source": [
+          "/radios"
+        ],
+        "target": "/gcores/radios"
+      },
+      {
+        "title": "播客-分类",
+        "docs": "https://docs.rsshub.app/new-media.html#ji-he-wang-bo-ke",
+        "source": [
+          "/categories/:category"
+        ],
+        "target": "/gcores/radios/:category"
       }
     ]
   },
@@ -13885,6 +13934,26 @@
       }
     ]
   },
+  "newzmz.com": {
+    "_name": "NEW 字幕组",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/multimedia.html#new-zi-mu-zu",
+        "source": [
+          "/"
+        ],
+        "target": "/newzmz"
+      },
+      {
+        "title": "指定剧集",
+        "docs": "https://docs.rsshub.app/multimedia.html#new-zi-mu-zu",
+        "source": [
+          "/view/:id"
+        ]
+      }
+    ]
+  },
   "nextapple.com": {
     "_name": "壹蘋新聞網",
     "tw": [
@@ -20070,6 +20139,19 @@
       }
     ]
   },
+  "wanqu.co": {
+    "_name": "湾区日报",
+    ".": [
+      {
+        "title": "最新推荐",
+        "docs": "https://docs.rsshub.app/new-media.html#wan-qu-ri-bao",
+        "source": [
+          "/"
+        ],
+        "target": "/wanqu/news"
+      }
+    ]
+  },
   "warthunder.com": {
     "_name": "War Thunder",
     ".": [
@@ -20814,6 +20896,18 @@
         "docs": "https://docs.rsshub.app/university.html#xi-an-jiao-tong-da-xue",
         "source": [
           "/*"
+        ]
+      }
+    ]
+  },
+  "xkb.com.cn": {
+    "_name": "新快报",
+    ".": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/traditional-media.html#xin-kuai-bao",
+        "source": [
+          "/"
         ]
       }
     ]
