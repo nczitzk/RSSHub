@@ -903,6 +903,20 @@
       }
     ]
   },
+  "5eplay.com": {
+    "_name": "5EPLAY",
+    "csgo": [
+      {
+        "title": "新闻列表",
+        "docs": "https://docs.rsshub.app/game.html#_5eplay-xin-wen-lie-biao",
+        "source": [
+          "/",
+          "/article"
+        ],
+        "target": "/5eplay/article"
+      }
+    ]
+  },
   "6parkbbs.com": {
     "_name": "留园网",
     "club": [
@@ -1532,6 +1546,35 @@
       }
     ]
   },
+  "aisixiang.com": {
+    "_name": "爱思想",
+    ".": [
+      {
+        "title": "栏目",
+        "docs": "https://docs.rsshub.app/reading.html#ai-si-xiang",
+        "source": [
+          "/data/search",
+          "/"
+        ]
+      },
+      {
+        "title": "排行",
+        "docs": "https://docs.rsshub.app/reading.html#ai-si-xiang",
+        "source": [
+          "/toplist",
+          "/"
+        ]
+      },
+      {
+        "title": "思想库（专栏）",
+        "docs": "https://docs.rsshub.app/reading.html#ai-si-xiang",
+        "source": [
+          "/thinktank",
+          "/"
+        ]
+      }
+    ]
+  },
   "ajmide.com": {
     "_name": "阿基米德FM",
     "m": [
@@ -1541,6 +1584,20 @@
         "source": [
           "/m/brand"
         ]
+      }
+    ]
+  },
+  "aliresearch.com": {
+    "_name": "阿里研究院",
+    ".": [
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/new-media.html#a-li-yan-jiu-yuan",
+        "source": [
+          "/cn/information",
+          "/"
+        ],
+        "target": "/aliresearch/information"
       }
     ]
   },
@@ -2262,6 +2319,18 @@
           "/"
         ],
         "target": "/baai/hub/comments"
+      }
+    ]
+  },
+  "bad.news": {
+    "_name": "Bad.news",
+    ".": [
+      {
+        "title": "通用",
+        "docs": "https://docs.rsshub.app/new-media.html#bad-news-tong-yong",
+        "source": [
+          "/"
+        ]
       }
     ]
   },
@@ -3263,6 +3332,29 @@
           "/"
         ],
         "target": "/bluestacks/release/5"
+      }
+    ]
+  },
+  "bmkg.go.id": {
+    "_name": "BMKG 印尼气象气候和地球物理局",
+    ".": [
+      {
+        "title": "最近的地震",
+        "docs": "https://docs.rsshub.app/new-media.html#BMKG-yin-ni-qi-xiang-qi-hou-he-di-qiu-wu-li-ju",
+        "source": [
+          "/",
+          "/gempabumi-terkini.html"
+        ],
+        "target": "/bmkg/earthquake"
+      },
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/new-media.html#BMKG-yin-ni-qi-xiang-qi-hou-he-di-qiu-wu-li-ju",
+        "source": [
+          "/",
+          "/berita"
+        ],
+        "target": "/bmkg/news"
       }
     ]
   },
@@ -4753,6 +4845,15 @@
       }
     ]
   },
+  "comicat.org": {
+    "_name": "Comicat",
+    ".": [
+      {
+        "title": "搜索关键词",
+        "docs": "https://docs.rsshub.app/anime.html#comicat"
+      }
+    ]
+  },
   "comicskingdom.com": {
     "_name": "Comics Kingdom",
     ".": [
@@ -5348,6 +5449,19 @@
       }
     ]
   },
+  "deadline.com": {
+    "_name": "Deadline",
+    ".": [
+      {
+        "title": "Latest Articles",
+        "docs": "https://docs.rsshub.app/en/new-media.html#deadline",
+        "source": [
+          "/"
+        ],
+        "target": "/deadline"
+      }
+    ]
+  },
   "dedao.cn": {
     "_name": "得到",
     ".": [
@@ -5427,6 +5541,17 @@
       }
     ]
   },
+  "devolverdigital.com": {
+    "_name": "DevolverDigital",
+    ".": [
+      {
+        "title": "官方博客",
+        "docs": "https://docs.rsshub.app/blog.html#devolverdigital",
+        "source": "/blog",
+        "target": "/devolverdigital/blog"
+      }
+    ]
+  },
   "dgjyw.com": {
     "_name": "东莞教研网",
     ".": [
@@ -5495,10 +5620,10 @@
         "title": "Channel Messages",
         "docs": "https://docs.rsshub.app/en/social-media.html#discord",
         "source": [
-          "/channels/:guildId/:channelID/:messageID",
-          "/channels/:guildId/:channelID"
+          "/channels/:guildId/:channelId/:messageID",
+          "/channels/:guildId/:channelId"
         ],
-        "target": "/discord/channel/:channelID"
+        "target": "/discord/channel/:channelId"
       }
     ]
   },
@@ -6097,6 +6222,29 @@
           "/archives/tag/:tag"
         ],
         "target": "/dx2025/tag/:tag"
+      }
+    ]
+  },
+  "dxy.cn": {
+    "_name": "丁香园",
+    ".": [
+      {
+        "title": "个人帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#ding-xiang-yuan",
+        "source": [
+          "/bbs/newweb/pc/profile/:userId/threads",
+          "/bbs/newweb/pc/profile/:userId"
+        ],
+        "target": "/dxy/bbs/profile/thread/:userId"
+      }
+    ],
+    "3g": [
+      {
+        "title": "专题",
+        "docs": "https://docs.rsshub.app/bbs.html#ding-xiang-yuan",
+        "source": [
+          "/bbs/special"
+        ]
       }
     ]
   },
@@ -7151,6 +7299,20 @@
       }
     ]
   },
+  "firecore.com": {
+    "_name": "Infuse",
+    ".": [
+      {
+        "title": "Release Notes",
+        "docs": "https://docs.rsshub.app/program-update.html#infuse",
+        "source": [
+          "/releases",
+          "/"
+        ],
+        "target": "/firecore/:os?"
+      }
+    ]
+  },
   "firefox.com": {
     "_name": "Mozilla",
     "monitor": [
@@ -7233,6 +7395,54 @@
           "/"
         ],
         "target": "/focustaiwan/category?"
+      }
+    ]
+  },
+  "followin.io": {
+    "_name": "Followin",
+    ".": [
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/finance.html#followin",
+        "source": [
+          "/:lang"
+        ]
+      },
+      {
+        "title": "快讯",
+        "docs": "https://docs.rsshub.app/finance.html#followin",
+        "source": [
+          "/:lang?/news",
+          "/news"
+        ],
+        "target": "/followin/news/:lang?"
+      },
+      {
+        "title": "KOL",
+        "docs": "https://docs.rsshub.app/finance.html#followin",
+        "source": [
+          "/:lang/kol/:kolId",
+          "/kol/:kolId"
+        ],
+        "target": "/followin/kol/:kolId/:lang?"
+      },
+      {
+        "title": "话题",
+        "docs": "https://docs.rsshub.app/finance.html#followin",
+        "source": [
+          "/:lang/topic/:topicId",
+          "/topic/:topicId"
+        ],
+        "target": "/followin/topic/:topicId/:lang?"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/finance.html#followin",
+        "source": [
+          "/:lang/tag/:tagId",
+          "/tag/:tagId"
+        ],
+        "target": "/followin/tag/:tagId/:lang?"
       }
     ]
   },
@@ -7412,6 +7622,20 @@
       }
     ]
   },
+  "futunn.com": {
+    "_name": "富途牛牛",
+    "news": [
+      {
+        "title": "要闻",
+        "docs": "https://docs.rsshub.app/finance.html#fu-tu-niu-niu",
+        "source": [
+          "/main",
+          "/"
+        ],
+        "target": "/futunn/main"
+      }
+    ]
+  },
   "fx-markets.com": {
     "_name": "FX-Markets",
     ".": [
@@ -7438,6 +7662,15 @@
         "docs": "https://docs.rsshub.app/finance.html#fx-markets",
         "source": "/regulation",
         "target": "/fx-markets/regulation"
+      }
+    ]
+  },
+  "fzmtr.com": {
+    "_name": "福州地铁",
+    "www": [
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/travel.html#fu-zhou-di-tie"
       }
     ]
   },
@@ -9231,6 +9464,15 @@
       }
     ]
   },
+  "gzmtr.com": {
+    "_name": "广州地铁",
+    "www": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/travel.html#guang-zhou-di-tie"
+      }
+    ]
+  },
   "guanhai.com.cn": {
     "_name": "观海新闻",
     ".": [
@@ -10407,6 +10649,19 @@
       }
     ]
   },
+  "i-cable.com": {
+    "_name": "有線寬頻 i-CABLE",
+    ".": [
+      {
+        "title": "有線新聞 | Cable News",
+        "docs": "https://docs.rsshub.app/traditional-media.html#you-xian-kuan-pin-i-cable",
+        "source": [
+          "/category/*path",
+          "/"
+        ]
+      }
+    ]
+  },
   "ibc.co.jp": {
     "_name": "IBC 岩手放送",
     ".": [
@@ -10418,6 +10673,15 @@
           "/"
         ],
         "target": "/ibc/maitta"
+      },
+      {
+        "title": "ラジオ",
+        "docs": "https://docs.rsshub.app/multimedia.html#ibc-yan-shou-fang-song",
+        "source": [
+          "/radio/:id/audio",
+          "/"
+        ],
+        "target": "/ibc/radio/:id?"
       }
     ]
   },
@@ -15887,6 +16151,32 @@
       }
     ]
   },
+  "notefolio.net": {
+    "_name": "Notefolio",
+    ".": [
+      {
+        "title": "Search",
+        "docs": "https://docs.rsshub.app/design.html#notefolio",
+        "source": [
+          "/search"
+        ],
+        "target": "/notefolio/search/:category?/:order?/:time?/:query?"
+      }
+    ]
+  },
+  "notion.so": {
+    "_name": "Notion",
+    ".": [
+      {
+        "title": "Database",
+        "docs": "https://docs.rsshub.app/other.html#notion",
+        "source": [
+          "/:id"
+        ],
+        "target": "/notion/database/:id"
+      }
+    ]
+  },
   "news.now.com": {
     "_name": "Now 新聞",
     ".": [
@@ -16384,6 +16674,13 @@
         "title": "ChatGPT - Release Notes",
         "docs": "https://docs.rsshub.app/en/new-media.html#openai",
         "source": "/chat"
+      }
+    ],
+    "research": [
+      {
+        "title": "Research",
+        "docs": "https://docs.rsshub.app/en/new-media.html#openai",
+        "source": "/research"
       }
     ]
   },
@@ -19073,6 +19370,68 @@
       }
     ]
   },
+  "sina.com.cn": {
+    "_name": "新浪",
+    "finance": [
+      {
+        "title": "财经 - 国內",
+        "docs": "https://docs.rsshub.app/new-media.html#xin-lang",
+        "source": [
+          "/china",
+          "/"
+        ],
+        "target": "/sina/finance/china"
+      },
+      {
+        "title": "美股",
+        "docs": "https://docs.rsshub.app/new-media.html#xin-lang",
+        "source": [
+          "/stock/usstock",
+          "/"
+        ],
+        "target": "/sina/finance/stock/usstock"
+      }
+    ],
+    "news": [
+      {
+        "title": "滚动新闻",
+        "docs": "https://docs.rsshub.app/new-media.html#xin-lang",
+        "source": [
+          "/roll"
+        ]
+      }
+    ],
+    "sports": [
+      {
+        "title": "体育 - 综合",
+        "docs": "https://docs.rsshub.app/new-media.html#xin-lang",
+        "source": [
+          "/others/:type",
+          "/:type"
+        ]
+      }
+    ],
+    "tech": [
+      {
+        "title": "专栏 - 创事记",
+        "docs": "https://docs.rsshub.app/new-media.html#xin-lang",
+        "source": [
+          "/chuangshiji",
+          "/"
+        ],
+        "target": "/sina/csj"
+      },
+      {
+        "title": "科技 - 科学探索",
+        "docs": "https://docs.rsshub.app/new-media.html#xin-lang",
+        "source": [
+          "/discovery",
+          "/"
+        ],
+        "target": "/sina/discovery/zx"
+      }
+    ]
+  },
   "sinchew.com.my": {
     "_name": "星洲网",
     ".": [
@@ -19657,6 +20016,31 @@
       }
     ]
   },
+  "stbu.edu.cn": {
+    "_name": "四川工商学院",
+    ".": [
+      {
+        "title": "学院新闻",
+        "docs": "https://docs.rsshub.app/university.html#si-chuan-gong-shang-xue-yuan",
+        "source": [
+          "/html/news/xueyuan",
+          "/"
+        ],
+        "target": "/stbu/xyxw"
+      }
+    ],
+    "jsjxy": [
+      {
+        "title": "计算机学院通知公告",
+        "docs": "https://docs.rsshub.app/university.html#si-chuan-gong-shang-xue-yuan",
+        "source": [
+          "/news",
+          "/"
+        ],
+        "target": "/stbu/jsjxy"
+      }
+    ]
+  },
   "stcn.com": {
     "_name": "证券时报网",
     ".": [
@@ -19700,6 +20084,28 @@
           "/:category/:id"
         ],
         "target": "/storm/:category?/:id?"
+      }
+    ]
+  },
+  "storyfm.cn": {
+    "_name": "故事FM",
+    ".": [
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/multimedia.html#ge-shi-fm",
+        "source": [
+          "/"
+        ],
+        "target": "/storyfm/index"
+      },
+      {
+        "title": "播客",
+        "docs": "https://docs.rsshub.app/multimedia.html#ge-shi-fm",
+        "source": [
+          "/episodes-list",
+          "/"
+        ],
+        "target": "/storyfm/episodes"
       }
     ]
   },
@@ -19963,6 +20369,16 @@
           "/"
         ],
         "target": "/sysu/cse"
+      }
+    ],
+    "ygafz": [
+      {
+        "title": "粤港澳发展研究院",
+        "docs": "https://docs.rsshub.app/universities.html#zhong-shan-da-xue",
+        "source": [
+          "/:type?"
+        ],
+        "target": "/sysu/ygafz/:type?"
       }
     ]
   },
@@ -20232,6 +20648,27 @@
           "/express"
         ],
         "target": "/techflowpost/express"
+      }
+    ]
+  },
+  "techpowerup.com": {
+    "_name": "TechPowerUp",
+    ".": [
+      {
+        "title": "Latest Content",
+        "docs": "https://docs.rsshub.app/en/new-media.html#techpowerup",
+        "source": [
+          "/"
+        ],
+        "target": "/techpowerup"
+      },
+      {
+        "title": "Reviews",
+        "docs": "https://docs.rsshub.app/en/new-media.html#techpowerup",
+        "source": [
+          "/review/search",
+          "/review"
+        ]
       }
     ]
   },
@@ -20739,6 +21176,19 @@
       }
     ]
   },
+  "sz-water.com.cn": {
+    "_name": "停水通知",
+    ".": [
+      {
+        "title": "深圳市",
+        "docs": "https://docs.rsshub.app/forecast.html#ting-shui-tong-zhi",
+        "source": [
+          "/*"
+        ],
+        "target": "/tingshuitz/shenzhen"
+      }
+    ]
+  },
   "whwater.com": {
     "_name": "停水通知",
     ".": [
@@ -20778,6 +21228,19 @@
           "/"
         ],
         "target": "/tingshuitz/yangjiang"
+      }
+    ]
+  },
+  "tingtingfm.com": {
+    "_name": "听听 FM",
+    "mobile": [
+      {
+        "title": "节目",
+        "docs": "https://docs.rsshub.app/multimedia.html#ting-ting-fm",
+        "source": [
+          "/v3/program/:programId"
+        ],
+        "target": "/tingtingfm/program/:programId"
       }
     ]
   },
@@ -21877,6 +22340,29 @@
       }
     ]
   },
+  "utgd.net": {
+    "_name": "UNTAG",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/new-media.html#untag-fen-lei",
+        "source": [
+          "/category/s/:category",
+          "/"
+        ],
+        "target": "/utgd/:category"
+      },
+      {
+        "title": "专题",
+        "docs": "https://docs.rsshub.app/new-media.html#untag-zhuan-ti",
+        "source": [
+          "/topic",
+          "/"
+        ],
+        "target": "/utgd/topic/:topic"
+      }
+    ]
+  },
   "gixnetwork.org": {
     "_name": "University of Washington",
     ".": [
@@ -22250,9 +22736,9 @@
       }
     ]
   },
-  "feeddd.org": {
+  "hamibot.com": {
     "_name": "微信",
-    ".": [
+    "feed": [
       {
         "title": "公众号（feeddd 来源）",
         "docs": "https://docs.rsshub.app/new-media.html#wei-xin",
@@ -23329,12 +23815,12 @@
     "_name": "読売新聞",
     "www": [
       {
-        "title": "読売新聞",
+        "title": "新聞",
         "docs": "https://docs.rsshub.app/traditional-media.html#du-mai-xin-wen",
         "source": [
-          "/:category"
+          "/:category?"
         ],
-        "target": "/yomiuri/:category"
+        "target": "/yomiuri/:category?"
       }
     ]
   },
@@ -24259,6 +24745,18 @@
         "source": [
           "/:region/:id",
           "/:id",
+          "/"
+        ]
+      }
+    ]
+  },
+  "zyw.asia": {
+    "_name": "zyw",
+    "hot": [
+      {
+        "title": "今日热榜",
+        "docs": "https://docs.rsshub.app/new-media.html#zyw-jin-ri-re-bang",
+        "source": [
           "/"
         ]
       }
