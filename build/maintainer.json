@@ -941,6 +941,9 @@
     "/cas/iee/kydt": [
         "nczitzk"
     ],
+    "/cas/is/:path+": [
+        "Misaka13514"
+    ],
     "/cas/mesalab/kb": [
         "renzhexigua"
     ],
@@ -1306,6 +1309,9 @@
     ],
     "/cuc/yz": [
         "niuyi1017"
+    ],
+    "/curiouscat/user/:id": [
+        "lucasew"
     ],
     "/curius/links/:name": [
         "Ovler-Young"
@@ -1934,6 +1940,10 @@
     "/fx-markets/fx-markets/:channel": [
         "mikkkee"
     ],
+    "/fx678/kx": [
+        "occupy5",
+        "dousha"
+    ],
     "/fzmtr/announcements": [
         "HankChow"
     ],
@@ -1971,6 +1981,9 @@
     "/gcores/category/:category": [
         "MoguCloud",
         "StevenRCE0"
+    ],
+    "/gcores/collections/:collection": [
+        "kudryavka1013"
     ],
     "/gcores/radios/:category?": [
         "eternasuno"
@@ -2690,6 +2703,9 @@
     ],
     "/huanqiu/news/:category?": [
         "yuxinliu-alex"
+    ],
+    "/huggingface/daily-papers": [
+        "zeyugao"
     ],
     "/hunanpea/rsks/:guid": [
         "TonyRL"
@@ -5068,6 +5084,9 @@
     "/taiwannews/hot/:lang?": [
         "TonyRL"
     ],
+    "/tangshufang/:category?": [
+        "nczitzk"
+    ],
     "/taobao/zhongchou/:type?": [
         "xyqfer",
         "Fatpandac"
@@ -5826,6 +5845,9 @@
     "/xaut/rsc/:category?": [
         "mocusez",
         "light0926"
+    ],
+    "/xboxfan/news": [
+        "XXY233"
     ],
     "/xiaohongshu/board/:board_id": [
         "lotosbin"
@@ -6661,7 +6683,6 @@
     "/shuhui/comics/:id": [],
     "/asahi/area/:id": [],
     "/asahi/:genre?/:category?": [],
-    "/fx678/kx": [],
     "/soundcloud/tracks/:user": [],
     "/dilidili/fanju/:id": [],
     "/qtfyfl/:category": [],
@@ -7095,7 +7116,6 @@
     "/jlu/oa": [],
     "/hfut/tzgg": [],
     "/onejav/:type/:key?": [],
-    "/curiouscat/user/:id": [],
     "/newsmth/account/:id": [],
     "/newsmth/section/:section": [],
     "/kotaku/story/:type": [],

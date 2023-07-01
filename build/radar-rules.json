@@ -3789,6 +3789,15 @@
         "target": "/cas/ia/yjs"
       }
     ],
+    "www.is": [
+      {
+        "title": "软件研究所",
+        "docs": "https://docs.rsshub.app/university.html#zhong-guo-ke-xue-yuan",
+        "source": [
+          "/"
+        ]
+      }
+    ],
     "www.sim": [
       {
         "title": "上海微系统与信息技术研究所 - 科技进展",
@@ -5309,6 +5318,19 @@
           "/"
         ],
         "target": "/cuc/yz"
+      }
+    ]
+  },
+  "curiouscat.live": {
+    "_name": "CuriousCat",
+    ".": [
+      {
+        "title": "User",
+        "docs": "https://docs.rsshub.app/en/social-media.html#curiouscat",
+        "source": [
+          "/:id"
+        ],
+        "target": "/curiouscat/user/:id"
       }
     ]
   },
@@ -7825,6 +7847,19 @@
       }
     ]
   },
+  "fx678.com": {
+    "_name": "汇通网",
+    ".": [
+      {
+        "title": "7x24 小时快讯",
+        "docs": "https://docs.rsshub.app/finance.html#hui-tong-wang",
+        "source": [
+          "/kx"
+        ],
+        "target": "/fx678/kx"
+      }
+    ]
+  },
   "fzmtr.com": {
     "_name": "福州地铁",
     "www": [
@@ -8021,6 +8056,14 @@
           "/categories/:category"
         ],
         "target": "/gcores/radios/:category"
+      },
+      {
+        "title": "专题",
+        "docs": "https://docs.rsshub.app/new-media.html#ji-he-wang-zhuan-ti",
+        "source": [
+          "/collections/:collection"
+        ],
+        "target": "/gcores/collections/:collection"
       }
     ]
   },
@@ -10674,6 +10717,20 @@
         "docs": "https://docs.rsshub.app/traditional-media.html#huan-qiu",
         "source": "/",
         "target": "/news/huanqiu/:category?"
+      }
+    ]
+  },
+  "huggingface.co": {
+    "_name": "Hugging Face",
+    ".": [
+      {
+        "title": "Daily Papers",
+        "docs": "https://docs.rsshub.app/programming.html#huggingface",
+        "source": [
+          "/papers",
+          "/"
+        ],
+        "target": "/huggingface/daily-papers"
       }
     ]
   },
@@ -21138,6 +21195,20 @@
       }
     ]
   },
+  "tangshufang.com": {
+    "_name": "唐书房",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/new-media.html#tang-shu-fang-fen-lei",
+        "source": [
+          "/:category",
+          "/"
+        ],
+        "target": "/tangshufang/:category?"
+      }
+    ]
+  },
   "taobao.com": {
     "_name": "淘宝",
     "izhongchou": [
@@ -23964,6 +24035,17 @@
       {
         "title": "人事处",
         "docs": "https://docs.rsshub.app/university.html#xi-an-li-gong-da-xue"
+      }
+    ]
+  },
+  "xboxfan.com": {
+    "_name": "盒心光环",
+    ".": [
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/game.html#he-xin-guang-huan",
+        "source": "/",
+        "target": "/xboxfan/news"
       }
     ]
   },
