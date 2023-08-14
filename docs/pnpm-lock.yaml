@@ -12,8 +12,8 @@ dependencies:
     specifier: 1.9.10
     version: 1.9.10
   '@vuepress/plugin-pwa':
-    specifier: 1.9.9
-    version: 1.9.9
+    specifier: 1.9.10
+    version: 1.9.10
   '@vuepress/shared-utils':
     specifier: 1.9.10
     version: 1.9.10
@@ -1934,11 +1934,11 @@ packages:
       - debug
     dev: false
 
-  /@vuepress/plugin-pwa@1.9.9:
-    resolution: {integrity: sha512-69kTlTl/mdWSD/+odz73oXvi2SuT8GO+e7YlPZFloeZR3kffC6ywYMip6m4MOalKOSUf0XzD3hCqCNVha6vo8Q==}
+  /@vuepress/plugin-pwa@1.9.10:
+    resolution: {integrity: sha512-pP3CUYKyIpnePswZGj9sBHJUzOczSmWSkmdoJftEnsBQT10YycJ81khS9WKEGPbTurbCOCCXsOzaEqCLysyYaA==}
     dependencies:
-      '@vuepress/shared-utils': 1.9.9
-      '@vuepress/types': 1.9.9
+      '@vuepress/shared-utils': 1.9.10
+      '@vuepress/types': 1.9.10
       register-service-worker: 1.7.2
       workbox-build: 4.3.1
     transitivePeerDependencies:
@@ -1980,22 +1980,6 @@ packages:
       - supports-color
     dev: false
 
-  /@vuepress/shared-utils@1.9.9:
-    resolution: {integrity: sha512-qhk/7QF5LgMEXhEB1hlqreGFgkz4p2pmaBBNFxnAnYmSwmyO+u/oFOpZLI16QRx9Wg6ekR2ENmByQLxV7y4lJg==}
-    dependencies:
-      chalk: 2.4.2
-      escape-html: 1.0.3
-      fs-extra: 7.0.1
-      globby: 9.2.0
-      gray-matter: 4.0.3
-      hash-sum: 1.0.2
-      semver: 6.3.0
-      toml: 3.0.0
-      upath: 1.2.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /@vuepress/theme-default@1.9.10:
     resolution: {integrity: sha512-XnXn9t+pYCIhWi3cZXJlighuy93FFm5yXdISAAlFlcNkshuGtqamkjacHV8q/QZMfOhSIs6wX7Hj88u2IsT5mw==}
     dependencies:
@@ -2016,16 +2000,6 @@ packages:
 
   /@vuepress/types@1.9.10:
     resolution: {integrity: sha512-TDNQn4og85onmBpLTTXXmncW3rUnYGr2MkuI8OIFJZetDNM49t1WbjNVlrT+kx7C6qXi6okDQgrHGYXajHZWfg==}
-    dependencies:
-      '@types/markdown-it': 10.0.3
-      '@types/webpack-dev-server': 3.11.6
-      webpack-chain: 6.5.1
-    transitivePeerDependencies:
-      - debug
-    dev: false
-
-  /@vuepress/types@1.9.9:
-    resolution: {integrity: sha512-ukGW49ILzLhIc7CltHMr+BeIjWKloJNN1mrvbDz3beycp9b9kgH+DXNdRIK9QCKr4fJsy7x08vNMwZr9Nq/PTQ==}
     dependencies:
       '@types/markdown-it': 10.0.3
       '@types/webpack-dev-server': 3.11.6
@@ -9510,7 +9484,7 @@ packages:
   /vuepress-plugin-container@2.1.5:
     resolution: {integrity: sha512-TQrDX/v+WHOihj3jpilVnjXu9RcTm6m8tzljNJwYhxnJUW0WWQ0hFLcDTqTBwgKIFdEiSxVOmYE+bJX/sq46MA==}
     dependencies:
-      '@vuepress/shared-utils': 1.9.9
+      '@vuepress/shared-utils': 1.9.10
       markdown-it-container: 2.0.0
     transitivePeerDependencies:
       - supports-color
