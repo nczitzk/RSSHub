@@ -614,6 +614,9 @@
     "/bangumi/tv/subject/:id/topics": [
         "ylc395"
     ],
+    "/bangumi/tv/subject/:id/:type?/:showOriginalName?": [
+        "JimenezLi"
+    ],
     "/bangumi/tv/topic/:id": [
         "ylc395"
     ],
@@ -775,6 +778,9 @@
     ],
     "/bilibili/vsearch/:kw/:order?/:disableEmbed?/:tid?": [
         "Symty"
+    ],
+    "/bilibili/watchlater/:uid/:disableEmbed?": [
+        "JimenezLi"
     ],
     "/bilibili/weekly/:disableEmbed?": [
         "ttttmr"
@@ -1000,6 +1006,9 @@
     ],
     "/cau/yjs": [
         "shengmaosu"
+    ],
+    "/caus/:category?": [
+        "nczitzk"
     ],
     "/cbaigui/:path+": [
         "nczitzk"
@@ -1373,6 +1382,21 @@
     ],
     "/cw/today": [
         "TonyRL"
+    ],
+    "/cyzone": [
+        "nczitzk"
+    ],
+    "/cyzone/:id?": [
+        "nczitzk"
+    ],
+    "/cyzone/author/:id": [
+        "nczitzk"
+    ],
+    "/cyzone/channel/:id?": [
+        "nczitzk"
+    ],
+    "/cyzone/label/:name": [
+        "nczitzk"
     ],
     "/cztv/zjxwlb": [
         "yhkang"
@@ -2453,6 +2477,9 @@
     ],
     "/gov/shenzhen/xxgk/zfxxgj/:caty": [
         "laoxua"
+    ],
+    "/gov/shenzhen/zjj/xxgk/:caty": [
+        "lonn"
     ],
     "/gov/shenzhen/zzb/:caty/:page?": [
         "zlasd"
@@ -6843,8 +6870,6 @@
     "/patchwork.kernel.org/comments/:id": [],
     "/jingdong/zhongchou/:type/:status/:sort": [],
     "/allpoetry/:order?": [],
-    "/cyzone/author/:id": [],
-    "/cyzone/label/:name": [],
     "/gov/province/:name/:category": [],
     "/gov/city/:name/:category": [],
     "/gov/statecouncil/briefing": [],
@@ -7648,7 +7673,6 @@
     "/bibgame/:category?/:type?": [],
     "/macau-bolsas/:lang?": [],
     "/potplayer/update/:language?": [],
-    "/caus/:category?": [],
     "/modian/zhongchou/:category?/:sort?/:status?": [],
     "/macwk/soft/:name": [],
     "/pjsk/news": [],
