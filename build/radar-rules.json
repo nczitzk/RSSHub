@@ -3622,6 +3622,20 @@
       }
     ]
   },
+  "boc.cn": {
+    "_name": "中国银行",
+    ".": [
+      {
+        "title": "外汇牌价",
+        "docs": "https://docs.rsshub.app/routes/others#zhong-guo-yin-hang",
+        "source": [
+          "/sourcedb/whpj",
+          "/"
+        ],
+        "target": "/boc/whpj"
+      }
+    ]
+  },
   "bookfere.com": {
     "_name": "书伴",
     ".": [
@@ -4858,6 +4872,19 @@
           "/"
         ],
         "target": "/cn-healthcare/index"
+      }
+    ]
+  },
+  "cna.com.tw": {
+    "_name": "中央通訊社",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#zhong-yang-tong-xun-she",
+        "source": [
+          "/list/:id",
+          "/topic/newstopic/:id"
+        ]
       }
     ]
   },
@@ -11461,6 +11488,19 @@
       }
     ]
   },
+  "icbc.com.cn": {
+    "_name": "中国工商银行",
+    ".": [
+      {
+        "title": "外汇牌价",
+        "docs": "https://docs.rsshub.app/other#zhong-guo-gong-shang-yin-hang",
+        "source": [
+          "/column/1438058341489590354.html"
+        ],
+        "target": "/icbc/whpj"
+      }
+    ]
+  },
   "idolypride.jp": {
     "_name": "偶像荣耀",
     ".": [
@@ -12233,6 +12273,16 @@
           "/"
         ],
         "target": "/jandan/:category?"
+      }
+    ]
+  },
+  "japanpost.jp": {
+    "_name": "日本郵便",
+    "trackings.post": [
+      {
+        "title": "郵便・荷物の追跡",
+        "docs": "https://docs.rsshub.app/routes/other#japanpost-ri-ben-you-bian",
+        "source": "/services/srv/search/direct"
       }
     ]
   },
@@ -14026,8 +14076,7 @@
         "title": "Essay",
         "docs": "https://docs.rsshub.app/routes/blog#kun-cheng-essay",
         "source": [
-          "/essay",
-          "/"
+          "/essay"
         ],
         "target": "/kunchengblog/essay"
       }
@@ -14477,25 +14526,55 @@
     "_name": "木木博客",
     ".": [
       {
-        "title": "每天六十秒（60秒）读懂世界",
-        "docs": "https://docs.rsshub.app/routes/new-media#mu-mu-bo-ke",
+        "title": "频道",
+        "docs": "https://docs.rsshub.app/new-media.html#mu-mu-bo-ke",
         "source": [
-          "/kuaixun"
+          "/:channel",
+          "/"
+        ]
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/new-media.html#mu-mu-bo-ke",
+        "source": [
+          "/tag/:id",
+          "/"
+        ],
+        "target": "/liulinblog/tag/:id"
+      },
+      {
+        "title": "专题",
+        "docs": "https://docs.rsshub.app/new-media.html#mu-mu-bo-ke",
+        "source": [
+          "/series/:id",
+          "/"
+        ],
+        "target": "/liulinblog/series/:id"
+      },
+      {
+        "title": "搜索",
+        "docs": "https://docs.rsshub.app/new-media.html#mu-mu-bo-ke",
+        "source": [
+          "/search/:keyword",
+          "/"
+        ],
+        "target": "/liulinblog/search/:keyword"
+      },
+      {
+        "title": "60秒读懂世界",
+        "docs": "https://docs.rsshub.app/new-media.html#mu-mu-bo-ke",
+        "source": [
+          "/kuaixun",
+          "/"
         ],
         "target": "/liulinblog/kuaixun"
       },
       {
-        "title": "互联网早报",
-        "docs": "https://docs.rsshub.app/routes/new-media#mu-mu-bo-ke",
+        "title": "网络营销",
+        "docs": "https://docs.rsshub.app/new-media.html#mu-mu-bo-ke",
         "source": [
-          "/itnews/:channel"
-        ]
-      },
-      {
-        "title": "站长圈",
-        "docs": "https://docs.rsshub.app/routes/new-media#mu-mu-bo-ke",
-        "source": [
-          "/itnews/:channel"
+          "/:channel",
+          "/"
         ]
       }
     ]
@@ -15247,8 +15326,14 @@
     "_name": "米哈游",
     "bbs": [
       {
+        "title": "米游社 - 同人榜",
+        "docs": "https://docs.rsshub.app/routes/game#mi-ha-you",
+        "source": "/:game/imgRanking/:forum_id/:ranking_id/:cate_id",
+        "target": "/mihoyo/bbs/img-ranking/:game"
+      },
+      {
         "title": "米游社 - 官方公告",
-        "docs": "https://docs.rsshub.app/routes/game#mi-ha-you-mi-you-she-guan-fang-gong-gao",
+        "docs": "https://docs.rsshub.app/routes/game#mi-ha-you",
         "source": [
           "/:game/home/28",
           "/:game/home/6",
@@ -18407,6 +18492,54 @@
       }
     ]
   },
+  "pornhub.com": {
+    "_name": "PornHub",
+    ".": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/multimedia#pornhub",
+        "source": [
+          "/categories/:caty",
+          "/video"
+        ]
+      },
+      {
+        "title": "Keyword Search",
+        "docs": "https://docs.rsshub.app/routes/multimedia#pornhub",
+        "source": [
+          "/video/search"
+        ]
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/multimedia#pornhub",
+        "source": [
+          "/users/:username/*"
+        ],
+        "target": "/pornhub/users/:username"
+      },
+      {
+        "title": "Verified amateur / Model",
+        "docs": "https://docs.rsshub.app/routes/multimedia#pornhub",
+        "source": [
+          "/model/:username/*"
+        ],
+        "target": "/pornhub/model/:username"
+      },
+      {
+        "title": "Verified model / Pornstar",
+        "docs": "https://docs.rsshub.app/routes/multimedia#pornhub",
+        "source": [
+          "/pornstar/:username/*"
+        ],
+        "target": "/pornhub/pornstar/:username"
+      },
+      {
+        "title": "Video List",
+        "docs": "https://docs.rsshub.app/routes/multimedia#pornhub"
+      }
+    ]
+  },
   "postman.com": {
     "_name": "Postman",
     ".": [
@@ -19238,6 +19371,20 @@
           "/ko"
         ],
         "target": "/rodong/news"
+      }
+    ]
+  },
+  "rsc.org": {
+    "_name": "The Royal Society of Chemistry",
+    "pubs": [
+      {
+        "title": "Journal",
+        "docs": "https://docs.rsshub.app/routes/journal#royal-society-of-chemistry",
+        "source": [
+          "/en/journals/journalissues/:id",
+          "/en/content/articlelanding",
+          "/en/content/articlehtml"
+        ]
       }
     ]
   },
@@ -24153,6 +24300,33 @@
       }
     ]
   },
+  "v2ex.com": {
+    "_name": "V2EX",
+    ".": [
+      {
+        "title": "最热 / 最新主题",
+        "docs": "https://docs.rsshub.app/routes/v2ex",
+        "source": [
+          "/"
+        ]
+      },
+      {
+        "title": "帖子",
+        "docs": "https://docs.rsshub.app/routes/v2ex",
+        "source": [
+          "/t/:postid"
+        ],
+        "target": "/v2ex/post/:postid"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/routes/v2ex",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
   "v2rayshare.com": {
     "_name": "V2rayShare",
     ".": [
@@ -27139,16 +27313,6 @@
         "docs": "https://docs.rsshub.app/routes/university#ha-er-bin-gong-cheng-da-xue",
         "source": "/*",
         "target": "/heu/gongxue/sx"
-      }
-    ]
-  },
-  "japanpost.jp": {
-    "_name": "日本郵便",
-    "trackings.post": [
-      {
-        "title": "郵便・荷物の追跡",
-        "docs": "https://docs.rsshub.app/routes/other#ri-ben-you-bian-you-bian-zhui-ji-サービス",
-        "source": "/services/srv/search/direct"
       }
     ]
   },
