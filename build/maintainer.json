@@ -59,6 +59,9 @@
     "/2048/:id?": [
         "nczitzk"
     ],
+    "/8264/list/:id?": [
+        "nczitzk"
+    ],
     "/12306/:date/:from/:to/:type?": [
         "Fatpandac"
     ],
@@ -565,6 +568,9 @@
     "/baidu/tieba/post/lz/:id": [
         "u3u"
     ],
+    "/baidu/tieba/search/:qw/:routeParams?": [
+        "JimenezLi"
+    ],
     "/baidu/tieba/user/:uid": [
         "igxlin",
         "nczitzk"
@@ -631,6 +637,13 @@
     ],
     "/bast/:path+": [
         "nczitzk"
+    ],
+    "/bbc/:channel": [
+        "HenryQW",
+        "DIYgod"
+    ],
+    "/bbc/:lang/:channel?": [
+        "HenryQW"
     ],
     "/bbcnewslabs/news": [
         "elxy"
@@ -1498,6 +1511,9 @@
         "nczitzk",
         "TonyRL"
     ],
+    "/deltaio/blog": [
+        "RengarLee"
+    ],
     "/devolverdigital/blog": [
         "XXY233"
     ],
@@ -1537,6 +1553,15 @@
     "/discourse/:configId/notification/:fulltext?": [
         "dzx-dzx"
     ],
+    "/discuz/:link": [
+        "junfengP"
+    ],
+    "/discuz/:ver/:link": [
+        "junfengP"
+    ],
+    "/discuz/:ver/:cid/:link": [
+        "junfengP"
+    ],
     "/disinfo/publications": [
         "nczitzk"
     ],
@@ -1569,6 +1594,9 @@
     ],
     "/dmzj/news/:category?": [
         "vzz64"
+    ],
+    "/dn/:language/news/:category?": [
+        "nczitzk"
     ],
     "/dnaindia/:category": [
         "Rjnishant530"
@@ -1711,6 +1739,18 @@
     ],
     "/douyu/room/:id": [
         "DIYgod"
+    ],
+    "/dribbble/keyword/:keyword": [
+        "DIYgod",
+        "loganrockmore"
+    ],
+    "/dribbble/popular/:timeframe?": [
+        "DIYgod",
+        "loganrockmore"
+    ],
+    "/dribbble/user/:name": [
+        "DIYgod",
+        "loganrockmore"
     ],
     "/dtcj/datahero/:category?": [
         "nczitzk"
@@ -3414,6 +3454,9 @@
     "/kakuyomu/episode/:id": [
         "huangliangshusheng"
     ],
+    "/kantarworldpanel/:region/:category?": [
+        "nczitzk"
+    ],
     "/kbs/news/:category?/:language?": [
         "nczitzk"
     ],
@@ -3638,6 +3681,9 @@
     ],
     "/luogu/user/blog/:username": [
         "ftiasch"
+    ],
+    "/luxiangdong/archive": [
+        "Levix"
     ],
     "/lvv2/news/:channel/:sort?": [
         "Fatpandac"
@@ -4795,7 +4841,7 @@
     "/rfa/:language?/:channel?/:subChannel?": [
         "zphw"
     ],
-    "/rfi/news": [
+    "/rfi/news/:lang?": [
         "nczitzk"
     ],
     "/right/forum/:id?": [
@@ -5520,6 +5566,30 @@
         "DIYgod",
         "NeverBehave"
     ],
+    "/tfc-taiwan": [
+        "TonyRL"
+    ],
+    "/tfc-taiwan/": [
+        "TonyRL"
+    ],
+    "/tfc-taiwan/:type?": [
+        "TonyRL"
+    ],
+    "/tfc-taiwan/:type/:id+": [
+        "TonyRL"
+    ],
+    "/tfc-taiwan/category/:id+": [
+        "TonyRL"
+    ],
+    "/tfc-taiwan/info": [
+        "TonyRL"
+    ],
+    "/tfc-taiwan/report": [
+        "TonyRL"
+    ],
+    "/tfc-taiwan/topic/:id": [
+        "TonyRL"
+    ],
     "/theatlantic/:category": [
         "NavePnow"
     ],
@@ -5691,6 +5761,21 @@
     ],
     "/tongji/yjs": [
         "shengmaosu"
+    ],
+    "/toodaylab/column/:id": [
+        "nczitzk"
+    ],
+    "/toodaylab/field/:id": [
+        "nczitzk"
+    ],
+    "/toodaylab/hot": [
+        "nczitzk"
+    ],
+    "/toodaylab/posts": [
+        "nczitzk"
+    ],
+    "/toodaylab/topic/:id": [
+        "nczitzk"
     ],
     "/tophub/:id": [
         "LogicJake"
@@ -6684,9 +6769,6 @@
     "/geektime/column/:cid": [],
     "/geektime/news": [],
     "/infzm/:id": [],
-    "/dribbble/popular/:timeframe?": [],
-    "/dribbble/user/:name": [],
-    "/dribbble/keyword/:keyword": [],
     "/huya/live/:id": [],
     "/showroom/room/:id": [],
     "/fdroid/apprelease/:app": [],
@@ -6844,7 +6926,6 @@
     "/dytt/index": [],
     "/rs05/rs05": [],
     "/qutoutiao/category/:cid": [],
-    "/bbc/:site?/:channel?": [],
     "/pediy/topic/:category?/:type?": [],
     "/miniapp/article/:category": [],
     "/miniapp/store/newest": [],
@@ -7263,9 +7344,6 @@
     "/xinquji/today/internal": [],
     "/gbcc/trust": [],
     "/cbc/topics/:topic?": [],
-    "/discuz/:ver([7|x])/:cid([0-9]{2})/:link(.*)": [],
-    "/discuz/:ver([7|x])/:link(.*)": [],
-    "/discuz/:link(.*)": [],
     "/chinadialogue/topics/:topic": [],
     "/chinadialogue/:column": [],
     "/ifnews/:cid": [],
