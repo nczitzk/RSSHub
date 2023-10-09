@@ -1083,6 +1083,11 @@
         docs:"https://docs.rsshub.app/routes/new-media#lun-jin-mei-ti-allaboutmacau-media-hua-ti",
         source:[ "/" ],
         target:"/:category?/:id?" } ] },
+  "abc.net.au":{ _name:"ABC News",
+    ".":[ { title:"Channel & Topic",
+        docs:"https://docs.rsshub.app/routes/traditional-media#abc-news",
+        source:[ "/:category*" ],
+        target:"/abc/:category" } ] },
   "abmedia.io":{ _name:"abmedia.io",
     www:[ { title:"首页最新新闻",
         docs:"https://docs.rsshub.app/routes/new-media#lian-xin-wen-abmedia-shou-ye-zui-xin-xin-wen",
@@ -2738,6 +2743,10 @@
                     return `/chiculture${searchParams.has('category') ? `/${searchParams.get('category')}` : ''}`;
                 } } ] },
   "china.com":{ _name:"中华网",
+    finance:[ { title:"财经新闻",
+        docs:"https://docs.rsshub.app/routes/new-media#zhong-hua-wang",
+        source:"/:category",
+        target:"/china/finance/:category?" } ],
     military:[ { title:"军事新闻",
         docs:"https://docs.rsshub.app/routes/new-media#zhong-hua-wang",
         source:"/news",
@@ -9181,6 +9190,37 @@
         docs:"https://docs.rsshub.app/routes/picture#mei-tu-she-zui-xin",
         source:[ "/" ],
         target:"/meituclub/latest" } ] },
+  "metacritic.com":{ _name:"Metacritic",
+    ".":[ { title:"Games",
+        docs:"https://docs.rsshub.app/routes/new-media#metacritic-games",
+        source:[ "/browse/game/:params*" ],
+        target:(params, url) => {
+                    url = new URL(url);
+                    const sort = params.params.split(/\//).pop();
+                    const filter = url.searchParams.toString();
+
+                    return `/metacritic/game${sort ? `/${sort}${filter ? `/${filter}` : ''}` : ''}`;
+                } },
+      { title:"Movies",
+        docs:"https://docs.rsshub.app/routes/new-media#metacritic-movies",
+        source:[ "/browse/movie/:params*" ],
+        target:(params, url) => {
+                    url = new URL(url);
+                    const sort = params.params.split(/\//).pop();
+                    const filter = url.searchParams.toString();
+
+                    return `/metacritic/movie${sort ? `/${sort}${filter ? `/${filter}` : ''}` : ''}`;
+                } },
+      { title:"TV Shows",
+        docs:"https://docs.rsshub.app/routes/new-media#metacritic-tv-shows",
+        source:[ "/browse/tv/:params*" ],
+        target:(params, url) => {
+                    url = new URL(url);
+                    const sort = params.params.split(/\//).pop();
+                    const filter = url.searchParams.toString();
+
+                    return `/metacritic/tv${sort ? `/${sort}${filter ? `/${filter}` : ''}` : ''}`;
+                } } ] },
   "meteor.today":{ _name:"Meteor",
     ".":[ { title:"看板",
         docs:"https://docs.rsshub.app/routes/bbs#meteor",
@@ -10956,6 +10996,11 @@
                         return `/patagonia/new-arrivals/${param}`;
                     }
                 } } ] },
+  "paulgraham.com":{ _name:"Paul Graham",
+    ".":[ { title:"Essays",
+        docs:"https://docs.rsshub.app/routes/blog#paulgraham-essays",
+        source:[ "/articles.html" ],
+        target:"/paulgraham/articles" } ] },
   "penguinrandomhouse.com":{ _name:"Penguin Random House",
     ".":[ { title:"Penguin Random House Book Lists",
         docs:"https://docs.rsshub.app/routes/reading#penguin-random-house",
@@ -11828,7 +11873,12 @@
         docs:"https://docs.rsshub.app/routes/university#hua-nan-nong-ye-da-xue",
         source:[ "/2136/list1.htm",
           "/" ],
-        target:"/scau/yzb" } ] },
+        target:"/scau/yzb" } ],
+    yjsy:[ { title:"研究生院通知",
+        docs:"https://docs.rsshub.app/routes/university#hua-nan-nong-ye-da-xue",
+        source:[ "/208/list.htm",
+          "/" ],
+        target:"/scau/yjsy" } ] },
   "science.org":{ _name:"Science Magazine",
     ".":[ { title:"本期刊物",
         docs:"https://docs.rsshub.app/routes/journal#science-xi-lie",

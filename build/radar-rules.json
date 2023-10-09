@@ -1819,6 +1819,19 @@
       }
     ]
   },
+  "abc.net.au": {
+    "_name": "ABC News",
+    ".": [
+      {
+        "title": "Channel & Topic",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#abc-news",
+        "source": [
+          "/:category*"
+        ],
+        "target": "/abc/:category"
+      }
+    ]
+  },
   "abmedia.io": {
     "_name": "abmedia.io",
     "www": [
@@ -5035,6 +5048,14 @@
   },
   "china.com": {
     "_name": "中华网",
+    "finance": [
+      {
+        "title": "财经新闻",
+        "docs": "https://docs.rsshub.app/routes/new-media#zhong-hua-wang",
+        "source": "/:category",
+        "target": "/china/finance/:category?"
+      }
+    ],
     "military": [
       {
         "title": "军事新闻",
@@ -17361,6 +17382,32 @@
       }
     ]
   },
+  "metacritic.com": {
+    "_name": "Metacritic",
+    ".": [
+      {
+        "title": "Games",
+        "docs": "https://docs.rsshub.app/routes/new-media#metacritic-games",
+        "source": [
+          "/browse/game/:params*"
+        ]
+      },
+      {
+        "title": "Movies",
+        "docs": "https://docs.rsshub.app/routes/new-media#metacritic-movies",
+        "source": [
+          "/browse/movie/:params*"
+        ]
+      },
+      {
+        "title": "TV Shows",
+        "docs": "https://docs.rsshub.app/routes/new-media#metacritic-tv-shows",
+        "source": [
+          "/browse/tv/:params*"
+        ]
+      }
+    ]
+  },
   "meteor.today": {
     "_name": "Meteor",
     ".": [
@@ -20402,6 +20449,19 @@
       }
     ]
   },
+  "paulgraham.com": {
+    "_name": "Paul Graham",
+    ".": [
+      {
+        "title": "Essays",
+        "docs": "https://docs.rsshub.app/routes/blog#paulgraham-essays",
+        "source": [
+          "/articles.html"
+        ],
+        "target": "/paulgraham/articles"
+      }
+    ]
+  },
   "penguinrandomhouse.com": {
     "_name": "Penguin Random House",
     ".": [
@@ -21967,6 +22027,17 @@
           "/"
         ],
         "target": "/scau/yzb"
+      }
+    ],
+    "yjsy": [
+      {
+        "title": "研究生院通知",
+        "docs": "https://docs.rsshub.app/routes/university#hua-nan-nong-ye-da-xue",
+        "source": [
+          "/208/list.htm",
+          "/"
+        ],
+        "target": "/scau/yjsy"
       }
     ]
   },
