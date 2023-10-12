@@ -5956,6 +5956,15 @@
     "/tvb/news/:category?/:language?": [
         "nczitzk"
     ],
+    "/twitch/live/:login": [
+        "hoilc"
+    ],
+    "/twitch/video/:login/:filter?": [
+        "hoilc"
+    ],
+    "/twitch/schedule/:login": [
+        "hoilc"
+    ],
     "/twitter/collection/:uid/:collectionId/:routeParams?": [
         "TonyRL"
     ],
@@ -6373,8 +6382,12 @@
     "/whu/gs/:type?": [
         "Delreyaa"
     ],
-    "/whu/news/:type*": [
-        "SChen1024"
+    "/whu/hyxt/:category?": [
+        "nczitzk"
+    ],
+    "/whu/news/:category?": [
+        "SChen1024",
+        "nczitzk"
     ],
     "/wikinews/latest": [
         "KotoriK"
