@@ -2927,35 +2927,50 @@
     "_name": "Asian to lick",
     ".": [
       {
-        "title": "首页",
-        "docs": "https://docs.rsshub.app/routes/picture#asian-to-lick-shou-ye",
+        "title": "Top rated",
+        "docs": "https://docs.rsshub.app/routes/picture#asian-to-lick-top-rated",
         "source": [
           "/"
         ],
         "target": "/asiantolick"
       },
       {
-        "title": "分类",
-        "docs": "https://docs.rsshub.app/routes/picture#asian-to-lick-fen-lei",
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/picture#asian-to-lick-news",
         "source": [
-          "/"
-        ]
-      },
-      {
-        "title": "标签",
-        "docs": "https://docs.rsshub.app/routes/picture#asian-to-lick-biao-qian",
-        "source": [
-          "/"
-        ]
-      },
-      {
-        "title": "搜索",
-        "docs": "https://docs.rsshub.app/routes/picture#asian-to-lick-sou-suo",
-        "source": [
-          "/search/:keyword",
-          "/"
+          "/page/news"
         ],
-        "target": "/asiantolick/search/:keyword?"
+        "target": "/asiantolick/page/news"
+      },
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/picture#asian-to-lick-category",
+        "source": [
+          "/"
+        ]
+      },
+      {
+        "title": "Tag",
+        "docs": "https://docs.rsshub.app/routes/picture#asian-to-lick-tag",
+        "source": [
+          "/"
+        ]
+      },
+      {
+        "title": "Search",
+        "docs": "https://docs.rsshub.app/routes/picture#asian-to-lick-search",
+        "source": [
+          "/search/:keyword"
+        ],
+        "target": "/asiantolick/search/:keyword"
+      },
+      {
+        "title": "Page",
+        "docs": "https://docs.rsshub.app/routes/picture#asian-to-lick-page",
+        "source": [
+          "/page/:id"
+        ],
+        "target": "/asiantolick/page/:id"
       }
     ]
   },
@@ -4444,6 +4459,20 @@
       }
     ]
   },
+  "caixinglobal.com": {
+    "_name": "Caixin Global",
+    ".": [
+      {
+        "title": "Latest News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#caixin-global",
+        "source": [
+          "/news",
+          "/"
+        ],
+        "target": "/caixinglobal/latest"
+      }
+    ]
+  },
   "cste.org.cn": {
     "_name": "中国技术经济学会",
     ".": [
@@ -5124,6 +5153,18 @@
           "/"
         ],
         "target": "/chinafactcheck"
+      }
+    ]
+  },
+  "chinaisa.org.cn": {
+    "_name": "中国钢铁工业协会",
+    ".": [
+      {
+        "title": "栏目",
+        "docs": "https://docs.rsshub.app/routes/new-media#zhong-guo-gang-tie-gong-ye-xie-hui-lan-mu",
+        "source": [
+          "/gxportal/xfgl/portal/list.html"
+        ]
       }
     ]
   },
@@ -9608,6 +9649,26 @@
       }
     ]
   },
+  "mozilla.org": {
+    "_name": "Mozilla",
+    "addons": [
+      {
+        "title": "Add-ons Update",
+        "docs": "https://docs.rsshub.app/routes/program-update#firefox",
+        "source": [
+          "/:lang/firefox/addon/:id/versions",
+          "/:lang/firefox/addon/:id"
+        ],
+        "target": "/firefox/addons/:id"
+      }
+    ],
+    ".": [
+      {
+        "title": "Firefox New Release",
+        "docs": "https://docs.rsshub.app/routes/program-update#firefox"
+      }
+    ]
+  },
   "fisher.spb.ru": {
     "_name": "fisher spb",
     ".": [
@@ -10398,12 +10459,20 @@
     "_name": "GoCN",
     ".": [
       {
-        "title": "文章",
+        "title": "最新动态",
         "docs": "https://docs.rsshub.app/routes/programming#GoCN",
         "source": [
           "/"
         ],
-        "target": "/gocn"
+        "target": "/gocn/news"
+      },
+      {
+        "title": "每日新闻",
+        "docs": "https://docs.rsshub.app/routes/programming#GoCN",
+        "source": [
+          "/"
+        ],
+        "target": "/gocn/topics"
       },
       {
         "title": "招聘",
@@ -10985,6 +11054,66 @@
       }
     ]
   },
+  "forestry.gov.cn": {
+    "_name": "国家林业和草原局",
+    ".": [
+      {
+        "title": "国家林草科技大讲堂",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-lin-ye-he-cao-yuan-ju-guo-jia-lin-cao-ke-ji-da-jiang-tang",
+        "source": [
+          "gjlckjdjt.jhtml"
+        ]
+      },
+      {
+        "title": "国家林草科技大讲堂 - 经济林",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-lin-ye-he-cao-yuan-ju-guo-jia-lin-cao-ke-ji-da-jiang-tang",
+        "source": [
+          "jjl.jhtml"
+        ],
+        "target": "/gov/forestry/gjlckjdjt/jjl"
+      },
+      {
+        "title": "国家林草科技大讲堂 - 林木良种",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-lin-ye-he-cao-yuan-ju-guo-jia-lin-cao-ke-ji-da-jiang-tang",
+        "source": [
+          "lmlz.jhtml"
+        ],
+        "target": "/gov/forestry/gjlckjdjt/lmlz"
+      },
+      {
+        "title": "国家林草科技大讲堂 - 林下经济",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-lin-ye-he-cao-yuan-ju-guo-jia-lin-cao-ke-ji-da-jiang-tang",
+        "source": [
+          "lxjj.jhtml"
+        ],
+        "target": "/gov/forestry/gjlckjdjt/lxjj"
+      },
+      {
+        "title": "国家林草科技大讲堂 - 生态修复",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-lin-ye-he-cao-yuan-ju-guo-jia-lin-cao-ke-ji-da-jiang-tang",
+        "source": [
+          "stxf.jhtml"
+        ],
+        "target": "/gov/forestry/gjlckjdjt/stxf"
+      },
+      {
+        "title": "国家林草科技大讲堂 - 用材林",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-lin-ye-he-cao-yuan-ju-guo-jia-lin-cao-ke-ji-da-jiang-tang",
+        "source": [
+          "ycl.jhtml"
+        ],
+        "target": "/gov/forestry/gjlckjdjt/ycl"
+      },
+      {
+        "title": "国家林草科技大讲堂 - 其他",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-lin-ye-he-cao-yuan-ju-guo-jia-lin-cao-ke-ji-da-jiang-tang",
+        "source": [
+          "qt.jhtml"
+        ],
+        "target": "/gov/forestry/gjlckjdjt/qt"
+      }
+    ]
+  },
   "gaozhou.gov.cn": {
     "_name": "高州市人民政府",
     "www": [
@@ -11179,6 +11308,19 @@
           "/ywdt/:category"
         ],
         "target": "/gov/mee/ywdt/:category"
+      }
+    ]
+  },
+  "mem.gov.cn": {
+    "_name": "应急管理部",
+    "www": [
+      {
+        "title": "事故及灾害查处",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-ying-ji-guan-li-bu",
+        "source": [
+          "/gk/sgcc/:category"
+        ],
+        "target": "/gov/mem/gk/sgcc/:category"
       }
     ]
   },
@@ -11440,6 +11582,19 @@
           "/redianzhuanti/118742/4122386/4122692/index.html"
         ],
         "target": "/gov/pbc/gzlw"
+      }
+    ]
+  },
+  "samr.gov.cn": {
+    "_name": "国家市场监督管理总局",
+    "xgzlyhd": [
+      {
+        "title": "留言咨询",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-shi-chang-jian-du-guan-li-zong-ju",
+        "source": [
+          "/gjjly/index"
+        ],
+        "target": "/gov/samr/xgzlyhd/:category?/:department?"
       }
     ]
   },
@@ -11734,6 +11889,21 @@
         "source": [
           "/*"
         ]
+      }
+    ]
+  },
+  "zjks.gov.cn": {
+    "_name": "浙江省公务员考试录用网",
+    ".": [
+      {
+        "title": "地市专栏",
+        "docs": "https://docs.rsshub.app/routes/government#zhe-jiang-sheng-gong-wu-yuan-kao-shi-lu-yong-wang",
+        "source": [
+          "/zjgwy/website/init.htm",
+          "/zjgwy/website/queryDetail.htm",
+          "/zjgwy/website/queryMore.htm"
+        ],
+        "target": "/gov/zhejiang/gwy"
       }
     ]
   },
@@ -12244,6 +12414,17 @@
         "docs": "https://docs.rsshub.app/routes/university#hang-zhou-dian-zi-ke-ji-da-xue",
         "source": "/6769/list.htm",
         "target": "/hdu/cs/pg"
+      }
+    ]
+  },
+  "hebtv.com": {
+    "_name": "河北网络广播电视台",
+    "web.cmc": [
+      {
+        "title": "农博士在行动",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#he-bei-wang-luo-guang-bo-dian-shi-tai",
+        "source": "/cms/rmt0336/19/19js/st/ds/nmpd/nbszxd/index.shtml",
+        "target": "/hebtv/nbszxd"
       }
     ]
   },
@@ -13775,6 +13956,138 @@
         "source": [
           "/:category/projects"
         ]
+      }
+    ]
+  },
+  "iqilu.com": {
+    "_name": "齐鲁网",
+    "v": [
+      {
+        "title": "电视节目",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/:category*"
+        ]
+      },
+      {
+        "title": "山东新闻联播",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/sdws/sdxwlb"
+        ],
+        "target": "/iqilu/v/sdws/sdxwlb"
+      },
+      {
+        "title": "闪电大视野",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/ggpd/sddsy"
+        ],
+        "target": "/iqilu/v/ggpd/sddsy"
+      },
+      {
+        "title": "山东三农新闻联播",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/nkpd/snxw"
+        ],
+        "target": "/iqilu/v/nkpd/snxw"
+      },
+      {
+        "title": "每日新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/qlpd/mrxw"
+        ],
+        "target": "/iqilu/v/qlpd/mrxw"
+      },
+      {
+        "title": "新闻午班车",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/ggpd/xwwbc"
+        ],
+        "target": "/iqilu/v/ggpd/xwwbc"
+      },
+      {
+        "title": "戏宇宙",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/sdws/xyz/"
+        ],
+        "target": "/iqilu/v/sdws/xyz/"
+      },
+      {
+        "title": "中国礼 中国乐",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/qlpd/zglzgy"
+        ],
+        "target": "/iqilu/v/qlpd/zglzgy"
+      },
+      {
+        "title": "超级语文课",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/sdws/cjywk"
+        ],
+        "target": "/iqilu/v/sdws/cjywk"
+      },
+      {
+        "title": "文物里的山东",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/yspd/wwldsd"
+        ],
+        "target": "/iqilu/v/yspd/wwldsd"
+      },
+      {
+        "title": "拉呱",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/qlpd/l0"
+        ],
+        "target": "/iqilu/v/qlpd/l0"
+      },
+      {
+        "title": "生活帮",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/shpd/shb"
+        ],
+        "target": "/iqilu/v/shpd/shb"
+      },
+      {
+        "title": "快乐大赢家",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/zypd/kldyj"
+        ],
+        "target": "/iqilu/v/zypd/kldyj"
+      },
+      {
+        "title": "乡村季风",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/nkpd/xcjf"
+        ],
+        "target": "/iqilu/v/nkpd/xcjf"
+      },
+      {
+        "title": "健康是1",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/ggpd/jks1"
+        ],
+        "target": "/iqilu/v/ggpd/jks1"
+      },
+      {
+        "title": "此时此刻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#qi-lu-wang-dian-shi-jie-mu",
+        "source": [
+          "/sdws/cishicike"
+        ],
+        "target": "/iqilu/v/sdws/cishicike"
       }
     ]
   },
@@ -19713,10 +20026,10 @@
     ]
   },
   "npr.org": {
-    "_name": "NPR",
+    "_name": "National Public Radio",
     ".": [
       {
-        "title": "全文 RSS",
+        "title": "News",
         "docs": "https://docs.rsshub.app/routes/traditional-media#npr"
       }
     ]
@@ -20746,6 +21059,15 @@
           "/"
         ],
         "target": "/pku/cls/lecture"
+      },
+      {
+        "title": "生命科学学院通知公告",
+        "docs": "https://docs.rsshub.app/routes/university#bei-jing-da-xue",
+        "source": [
+          "/homes/Index/news/21/21.html",
+          "/"
+        ],
+        "target": "/pku/cls/announcement"
       }
     ],
     "eecs": [
@@ -21733,7 +22055,7 @@
     ".": [
       {
         "title": "分类",
-        "docs": "https://docs.rsshub.app/routes/new-media#readhub",
+        "docs": "https://docs.rsshub.app/routes/new-media#readhub-fen-lei",
         "source": [
           "/",
           "/:category"
@@ -21802,15 +22124,15 @@
     ]
   },
   "rfi.fr": {
-    "_name": "法国国际广播电台",
+    "_name": "Radio France Internationale",
     ".": [
       {
-        "title": "滚动新闻",
-        "docs": "https://docs.rsshub.app/routes/multimedia#fa-guo-guo-ji-guang-bo-dian-tai-gun-dong-xin-wen",
+        "title": "Generic News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media##radio-france-internationale-fa-guo-guo-ji-guang-bo-dian-tai",
         "source": [
-          "/"
+          "/*path"
         ],
-        "target": "/rfi/news"
+        "target": "/rfi/:path"
       }
     ]
   },
@@ -24904,6 +25226,15 @@
       }
     ]
   },
+  "tableau.com": {
+    "_name": "Tableau",
+    "public": [
+      {
+        "title": "Viz of the day",
+        "docs": "https://docs.rsshub.app/routes/study#tableau"
+      }
+    ]
+  },
   "taiwannews.com.tw": {
     "_name": "台灣英文新聞",
     ".": [
@@ -25605,6 +25936,202 @@
           "/"
         ],
         "target": "/theverge/:hub?"
+      }
+    ]
+  },
+  "thoughtco.com": {
+    "_name": "ThoughtCo",
+    ".": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category",
+        "source": [
+          "/:category"
+        ]
+      },
+      {
+        "title": "Science, Tech, Math - Science",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-science-tech-math",
+        "source": [
+          "/science-4132464"
+        ],
+        "target": "/thoughtco/science-4132464"
+      },
+      {
+        "title": "Science, Tech, Math - Math",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-science-tech-math",
+        "source": [
+          "/math-4133545"
+        ],
+        "target": "/thoughtco/math-4133545"
+      },
+      {
+        "title": "Science, Tech, Math - Social Sciences",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-science-tech-math",
+        "source": [
+          "/social-sciences-4133522"
+        ],
+        "target": "/thoughtco/social-sciences-4133522"
+      },
+      {
+        "title": "Science, Tech, Math - Computer Science",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-science-tech-math",
+        "source": [
+          "/computer-science-4133486"
+        ],
+        "target": "/thoughtco/computer-science-4133486"
+      },
+      {
+        "title": "Science, Tech, Math - Animals & Nature",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-science-tech-math",
+        "source": [
+          "/animals-and-nature-4133421"
+        ],
+        "target": "/thoughtco/animals-and-nature-4133421"
+      },
+      {
+        "title": "Humanities - History & Culture",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-humanities",
+        "source": [
+          "/history-and-culture-4133356"
+        ],
+        "target": "/thoughtco/history-and-culture-4133356"
+      },
+      {
+        "title": "Humanities - Visual Arts",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-humanities",
+        "source": [
+          "/visual-arts-4132957"
+        ],
+        "target": "/thoughtco/visual-arts-4132957"
+      },
+      {
+        "title": "Humanities - Literature",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-humanities",
+        "source": [
+          "/literature-4133251"
+        ],
+        "target": "/thoughtco/literature-4133251"
+      },
+      {
+        "title": "Humanities - English",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-humanities",
+        "source": [
+          "/english-4688281"
+        ],
+        "target": "/thoughtco/english-4688281"
+      },
+      {
+        "title": "Humanities - Geography",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-humanities",
+        "source": [
+          "/geography-4133035"
+        ],
+        "target": "/thoughtco/geography-4133035"
+      },
+      {
+        "title": "Humanities - Philosophy",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-humanities",
+        "source": [
+          "/philosophy-4133025"
+        ],
+        "target": "/thoughtco/philosophy-4133025"
+      },
+      {
+        "title": "Humanities - Issues",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-humanities",
+        "source": [
+          "/issues-4133022"
+        ],
+        "target": "/thoughtco/issues-4133022"
+      },
+      {
+        "title": "Languages - English as a Second Language",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-languages",
+        "source": [
+          "/esl-4133095"
+        ],
+        "target": "/thoughtco/esl-4133095"
+      },
+      {
+        "title": "Languages - Spanish",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-languages",
+        "source": [
+          "/spanish-4133085"
+        ],
+        "target": "/thoughtco/spanish-4133085"
+      },
+      {
+        "title": "Languages - French",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-languages",
+        "source": [
+          "/french-4133079"
+        ],
+        "target": "/thoughtco/french-4133079"
+      },
+      {
+        "title": "Languages - German",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-languages",
+        "source": [
+          "/german-4133073"
+        ],
+        "target": "/thoughtco/german-4133073"
+      },
+      {
+        "title": "Languages - Italian",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-languages",
+        "source": [
+          "/italian-4133069"
+        ],
+        "target": "/thoughtco/italian-4133069"
+      },
+      {
+        "title": "Languages - Japanese",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-languages",
+        "source": [
+          "/japanese-4133062"
+        ],
+        "target": "/thoughtco/japanese-4133062"
+      },
+      {
+        "title": "Languages - Mandarin",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-languages",
+        "source": [
+          "/mandarin-4133057"
+        ],
+        "target": "/thoughtco/mandarin-4133057"
+      },
+      {
+        "title": "Languages - Russian",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-languages",
+        "source": [
+          "/russian-4175265"
+        ],
+        "target": "/thoughtco/russian-4175265"
+      },
+      {
+        "title": "Resources - For Students & Parents",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-resources",
+        "source": [
+          "/for-students-parents-4132588"
+        ],
+        "target": "/thoughtco/for-students-parents-4132588"
+      },
+      {
+        "title": "Resources - For Educators",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-resources",
+        "source": [
+          "/for-educators-4132509"
+        ],
+        "target": "/thoughtco/for-educators-4132509"
+      },
+      {
+        "title": "Resources - For Adult Learners",
+        "docs": "https://docs.rsshub.app/routes/new-media#thoughtco-category-resources",
+        "source": [
+          "/for-adult-learners-4132469"
+        ],
+        "target": "/thoughtco/for-adult-learners-4132469"
       }
     ]
   },
@@ -29034,6 +29561,20 @@
       }
     ]
   },
+  "yomujp.com": {
+    "_name": "日本語多読道場",
+    ".": [
+      {
+        "title": "等级",
+        "docs": "https://docs.rsshub.app/zh/routes/reading#ri-ben-yu-duo-du-dao-chang-deng-ji",
+        "source": [
+          "/",
+          "/:level"
+        ],
+        "target": "/yomujp/:level"
+      }
+    ]
+  },
   "youku.com": {
     "_name": "优酷",
     "i": [
@@ -29880,6 +30421,15 @@
           "/*path",
           "/"
         ]
+      }
+    ]
+  },
+  "zjuvag.org": {
+    "_name": "浙江大学可视分析小组",
+    ".": [
+      {
+        "title": "博客",
+        "docs": "https://docs.rsshub.app/routes/blog#zhe-jiang-da-xue-ke-shi-fen-xi-xiao-zu"
       }
     ]
   },
