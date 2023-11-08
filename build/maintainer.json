@@ -2463,6 +2463,9 @@
         "HenryQW"
     ],
     "/fudan/cce": [],
+    "/fuliba/latest": [
+        "shinemoon"
+    ],
     "/fulinian/:caty?": [],
     "/furaffinity/browse/:nsfw?": [],
     "/furaffinity/commissions/:username": [],
@@ -4335,6 +4338,27 @@
         "hondajojo",
         "nczitzk"
     ],
+    "/logclub/columnist/articleList/:id": [
+        "nczitzk"
+    ],
+    "/logclub/company/:id": [
+        "nczitzk"
+    ],
+    "/logclub/lc_report/:id?": [
+        "nczitzk"
+    ],
+    "/logclub/news/:id?": [
+        "nczitzk"
+    ],
+    "/logclub/original": [
+        "nczitzk"
+    ],
+    "/logclub/recruit": [
+        "nczitzk"
+    ],
+    "/logclub/tender": [
+        "nczitzk"
+    ],
     "/logonews": [
         "nczitzk"
     ],
@@ -4598,7 +4622,10 @@
     "/mit/ocw-top": [],
     "/mitbbs/:caty?": [],
     "/mitre/publications": [],
-    "/mittrchina/:type": [],
+    "/mittrchina/:type?": [
+        "EsuRt",
+        "queensferryme"
+    ],
     "/miui/:device/:type?/:region?": [],
     "/mixcloud/:username/:type?": [
         "Misaka13514"
@@ -5269,6 +5296,9 @@
     ],
     "/ouc/it/postgraduate": [
         "shengmaosu"
+    ],
+    "/ouc/it/tx/:id?": [
+        "3401797899"
     ],
     "/ouc/jwc": [
         "3401797899"
