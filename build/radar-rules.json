@@ -3642,6 +3642,14 @@
         ],
         "target": "/bilibili/live/room/:roomID"
       }
+    ],
+    "show": [
+      {
+        "title": "会员购票务",
+        "docs": "https://docs.rsshub.app/routes/social-media#bilibili-hui-yuan-gou-zuo-pin",
+        "source": "/platform",
+        "target": "/bilibili/platform/:area?/:p_type?/:uid?"
+      }
     ]
   },
   "biodiscover.com": {
@@ -8186,6 +8194,14 @@
         "source": "/jobs/intern",
         "target": "/jobs/intern"
       }
+    ],
+    "book": [
+      {
+        "title": "读书论坛",
+        "docs": "https://docs.rsshub.app/routes/social-media#dou-ban",
+        "source": "/:id/discussion",
+        "target": "/:id/discussion"
+      }
     ]
   },
   "douyin.com": {
@@ -10299,6 +10315,74 @@
       }
     ]
   },
+  "gdsrx.org.cn": {
+    "_name": "广东省食品药品审评认证技术协会",
+    ".": [
+      {
+        "title": "栏目",
+        "docs": "https://docs.rsshub.app/routes/other#guang-dong-sheng-shi-pin-yao-pin-shen-ping-ren-zheng-ji-shu-xie-hui-lan-mu",
+        "source": [
+          "/portal/list/index/id"
+        ]
+      },
+      {
+        "title": "法规文库",
+        "docs": "https://docs.rsshub.app/routes/other#guang-dong-sheng-shi-pin-yao-pin-shen-ping-ren-zheng-ji-shu-xie-hui-lan-mu",
+        "source": [
+          "/portal/list/index/id/10.html"
+        ],
+        "target": "/gdsrx/10"
+      },
+      {
+        "title": "法规资讯",
+        "docs": "https://docs.rsshub.app/routes/other#guang-dong-sheng-shi-pin-yao-pin-shen-ping-ren-zheng-ji-shu-xie-hui-lan-mu",
+        "source": [
+          "/portal/list/index/id/12.html"
+        ],
+        "target": "/gdsrx/12"
+      },
+      {
+        "title": "专家供稿",
+        "docs": "https://docs.rsshub.app/routes/other#guang-dong-sheng-shi-pin-yao-pin-shen-ping-ren-zheng-ji-shu-xie-hui-lan-mu",
+        "source": [
+          "/portal/list/index/id/13.html"
+        ],
+        "target": "/gdsrx/13"
+      },
+      {
+        "title": "协会动态 会员动态",
+        "docs": "https://docs.rsshub.app/routes/other#guang-dong-sheng-shi-pin-yao-pin-shen-ping-ren-zheng-ji-shu-xie-hui-lan-mu",
+        "source": [
+          "/portal/list/index/id/20.html"
+        ],
+        "target": "/gdsrx/20"
+      },
+      {
+        "title": "协会动态",
+        "docs": "https://docs.rsshub.app/routes/other#guang-dong-sheng-shi-pin-yao-pin-shen-ping-ren-zheng-ji-shu-xie-hui-lan-mu",
+        "source": [
+          "/portal/list/index/id/37.html"
+        ],
+        "target": "/gdsrx/37"
+      },
+      {
+        "title": "协会通知公告",
+        "docs": "https://docs.rsshub.app/routes/other#guang-dong-sheng-shi-pin-yao-pin-shen-ping-ren-zheng-ji-shu-xie-hui-lan-mu",
+        "source": [
+          "/portal/list/index/id/38.html"
+        ],
+        "target": "/gdsrx/38"
+      },
+      {
+        "title": "会员动态",
+        "docs": "https://docs.rsshub.app/routes/other#guang-dong-sheng-shi-pin-yao-pin-shen-ping-ren-zheng-ji-shu-xie-hui-lan-mu",
+        "source": [
+          "/portal/list/index/id/39.html"
+        ],
+        "target": "/gdsrx/39"
+      }
+    ]
+  },
   "gdut.edu.cn": {
     "_name": "广东工业大学",
     "oas": [
@@ -11456,6 +11540,28 @@
       }
     ]
   },
+  "moa.gov.cn": {
+    "_name": "中华人民共和国农业农村部",
+    ".": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-yu-bu-xin-wen",
+        "source": [
+          "/"
+        ],
+        "target": "/gov/moa/:suburl"
+      }
+    ],
+    "zdscxx": [
+      {
+        "title": "数据",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-yu-bu",
+        "source": [
+          "/nyb/pc/messageView.jsp"
+        ]
+      }
+    ]
+  },
   "moe.gov.cn": {
     "_name": "中华人民共和国教育部",
     ".": [
@@ -11499,6 +11605,202 @@
         "source": [
           "/7204/7246/"
         ]
+      }
+    ]
+  },
+  "mot.gov.cn": {
+    "_name": "中华人民共和国交通运输部",
+    ".": [
+      {
+        "title": "栏目",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/:category*"
+        ]
+      },
+      {
+        "title": "时政要闻",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/shizhengyaowen"
+        ],
+        "target": "/gov/mot/shizhengyaowen"
+      },
+      {
+        "title": "交通要闻",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/jiaotongyaowen"
+        ],
+        "target": "/gov/mot/jiaotongyaowen"
+      },
+      {
+        "title": "重要会议",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/zhongyaohuiyi"
+        ],
+        "target": "/gov/mot/zhongyaohuiyi"
+      },
+      {
+        "title": "数据开放",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/sjkf"
+        ],
+        "target": "/gov/mot/sjkf"
+      },
+      {
+        "title": "统计数据",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/tongjishuju"
+        ],
+        "target": "/gov/mot/tongjishuju"
+      },
+      {
+        "title": "分析公报",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/fenxigongbao"
+        ],
+        "target": "/gov/mot/fenxigongbao"
+      },
+      {
+        "title": "运价指数",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/yunjiazhishu"
+        ],
+        "target": "/gov/mot/yunjiazhishu"
+      },
+      {
+        "title": "公路",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/tongjishuju/gonglu"
+        ],
+        "target": "/gov/mot/tongjishuju/gonglu"
+      },
+      {
+        "title": "水运",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/tongjishuju/shuiyun"
+        ],
+        "target": "/gov/mot/tongjishuju/shuiyun"
+      },
+      {
+        "title": "铁路",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/tongjishuju/tielu"
+        ],
+        "target": "/gov/mot/tongjishuju/tielu"
+      },
+      {
+        "title": "民航",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/tongjishuju/minhang"
+        ],
+        "target": "/gov/mot/tongjishuju/minhang"
+      },
+      {
+        "title": "邮政",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/tongjishuju/youzheng"
+        ],
+        "target": "/gov/mot/tongjishuju/youzheng"
+      },
+      {
+        "title": "城市客运",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/tongjishuju/chengshikeyun"
+        ],
+        "target": "/gov/mot/tongjishuju/chengshikeyun"
+      },
+      {
+        "title": "港口货物旅客吞吐量",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/tongjishuju/gangkouhuowulvkettl"
+        ],
+        "target": "/gov/mot/tongjishuju/gangkouhuowulvkettl"
+      },
+      {
+        "title": "固定资产投资完成情况",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/tongjishuju/gudingzichantouziwcqk"
+        ],
+        "target": "/gov/mot/tongjishuju/gudingzichantouziwcqk"
+      },
+      {
+        "title": "行业公报",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/fenxigongbao/hangyegongbao"
+        ],
+        "target": "/gov/mot/fenxigongbao/hangyegongbao"
+      },
+      {
+        "title": "经济分析",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/fenxigongbao/jingjifenxi"
+        ],
+        "target": "/gov/mot/fenxigongbao/jingjifenxi"
+      },
+      {
+        "title": "科技统计",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/fenxigongbao/kejitongji"
+        ],
+        "target": "/gov/mot/fenxigongbao/kejitongji"
+      },
+      {
+        "title": "运力分析",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/fenxigongbao/yunlifenxi"
+        ],
+        "target": "/gov/mot/fenxigongbao/yunlifenxi"
+      },
+      {
+        "title": "沿海散货运价指数",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/yunjiazhishu/yanhaisanhuoyjzs"
+        ],
+        "target": "/gov/mot/yunjiazhishu/yanhaisanhuoyjzs"
+      },
+      {
+        "title": "出口集装箱运价指数",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/yunjiazhishu/chukoujizhuangxiangyjzs"
+        ],
+        "target": "/gov/mot/yunjiazhishu/chukoujizhuangxiangyjzs"
+      },
+      {
+        "title": "长江航运指数分析",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/yunjiazhishu/changjianghangyunzsfx"
+        ],
+        "target": "/gov/mot/yunjiazhishu/changjianghangyunzsfx"
+      },
+      {
+        "title": "珠江水运经济运行分析",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-jiao-tong-yun-shu-bu-lan-mu",
+        "source": [
+          "/yunjiazhishu/zhujiangshuiyunjjyxfx"
+        ],
+        "target": "/gov/mot/yunjiazhishu/zhujiangshuiyunjjyxfx"
       }
     ]
   },
@@ -11905,6 +12207,13 @@
           "/"
         ],
         "target": "/gov/news/gwy"
+      },
+      {
+        "title": "政策",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-guo-zheng-fu-wang-zheng-ce",
+        "source": [
+          "/zhengce/:category*"
+        ]
       },
       {
         "title": "最新政策",
@@ -12454,6 +12763,19 @@
           "/novel/:id"
         ],
         "target": "/hameln/chapter/:id"
+      }
+    ]
+  },
+  "harvard.edu": {
+    "_name": "Harvard University",
+    "www.health": [
+      {
+        "title": "Health Blog",
+        "docs": "https://docs.rsshub.app/routes/new-media#harvard-health-publishing",
+        "source": [
+          "/blog"
+        ],
+        "target": "/harvard/health/blog"
       }
     ]
   },
@@ -17000,6 +17322,28 @@
           "/novel/:id"
         ],
         "target": "/linovellib/novel/:id"
+      }
+    ]
+  },
+  "liquipedia.net": {
+    "_name": "Liquipedia",
+    ".": [
+      {
+        "title": "Counter Strike Match Results",
+        "docs": "https://docs.rsshub.app/routes/game#liquipedia",
+        "source": [
+          "/counterstrike/:id/Matches",
+          "/dota2/:id"
+        ],
+        "target": "/liquipedia/counterstrike/matches/:id"
+      },
+      {
+        "title": "Dota2 战队最近比赛结果",
+        "docs": "https://docs.rsshub.app/routes/game#liquipedia",
+        "source": [
+          "/dota2/:id"
+        ],
+        "target": "/liquipedia/dota2/matches/:id"
       }
     ]
   },
@@ -21814,6 +22158,27 @@
       }
     ]
   },
+  "qbitai.com": {
+    "_name": "量子位",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/new-media#liang-zi-wei",
+        "source": [
+          "/category/:category"
+        ],
+        "target": "/qbitai/category/:category"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/routes/new-media#liang-zi-wei",
+        "source": [
+          "/tag/:tag"
+        ],
+        "target": "/qbitai/tag/:tag"
+      }
+    ]
+  },
   "qbittorrent.org": {
     "_name": "qBittorrent",
     ".": [
@@ -24142,6 +24507,41 @@
         "docs": "https://docs.rsshub.app/routes/design#shopping-design",
         "source": "/post",
         "target": "/shoppingdesign/posts"
+      }
+    ]
+  },
+  "showstart.com": {
+    "_name": "秀动网",
+    "www": [
+      {
+        "title": "演出更新",
+        "docs": "https://docs.rsshub.app/routes/shopping#xiu-dong-wang-yan-chu-geng-xin",
+        "source": [
+          "/event/list"
+        ]
+      },
+      {
+        "title": "演出搜索",
+        "docs": "https://docs.rsshub.app/routes/shopping#xiu-dong-wang-yan-chu-sou-suo",
+        "source": [
+          "/event/list"
+        ]
+      },
+      {
+        "title": "音乐人 - 演出更新",
+        "docs": "https://docs.rsshub.app/routes/shopping#yin-yue-ren-yan-chu-geng-xin",
+        "source": [
+          "/artist/:id"
+        ],
+        "target": "/showstart/artist/:id"
+      },
+      {
+        "title": "厂牌 - 演出更新",
+        "docs": "https://docs.rsshub.app/routes/shopping#chang-pai-yan-chu-geng-xin",
+        "source": [
+          "/host/:id"
+        ],
+        "target": "/showstart/brand/:id"
       }
     ]
   },
@@ -27565,6 +27965,20 @@
       }
     ]
   },
+  "uniqlo.com": {
+    "_name": "Uniqlo",
+    "www": [
+      {
+        "title": "New Arrivals",
+        "docs": "https://docs.rsshub.app/routes/shopping#uniqlo",
+        "source": [
+          "/sg",
+          "/us",
+          "/jp"
+        ]
+      }
+    ]
+  },
   "unusualwhales.com": {
     "_name": "Unusual Whales",
     ".": [
@@ -29485,10 +29899,90 @@
         "title": "数字媒体",
         "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-shu-zi-mei-ti",
         "source": [
-          "/:id",
-          "/"
+          "/:id"
         ],
         "target": "/xmnn/epaper/:id"
+      }
+    ],
+    "news": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/:category*"
+        ]
+      },
+      {
+        "title": "厦门新闻发布",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/xmxwfb"
+        ],
+        "target": "/xmnn/news/xmxwfb"
+      },
+      {
+        "title": "厦门新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/xmxw"
+        ],
+        "target": "/xmnn/news/xmxw"
+      },
+      {
+        "title": "本网快报",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/bwkb"
+        ],
+        "target": "/xmnn/news/bwkb"
+      },
+      {
+        "title": "厦门网眼",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/xmwy"
+        ],
+        "target": "/xmnn/news/xmwy"
+      },
+      {
+        "title": "福建新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/fjxw"
+        ],
+        "target": "/xmnn/news/fjxw"
+      },
+      {
+        "title": "国内新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/gnxw"
+        ],
+        "target": "/xmnn/news/gnxw"
+      },
+      {
+        "title": "国际新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/gjxw"
+        ],
+        "target": "/xmnn/news/gjxw"
+      },
+      {
+        "title": "台海新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/thxw"
+        ],
+        "target": "/xmnn/news/thxw"
+      },
+      {
+        "title": "社会新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#xia-men-wang-xin-wen",
+        "source": [
+          "/shxw"
+        ],
+        "target": "/xmnn/news/shxw"
       }
     ]
   },
