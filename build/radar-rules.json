@@ -3280,6 +3280,12 @@
         "docs": "https://docs.rsshub.app/routes/anime#bangumi-fan-zu-ji-hua",
         "source": "/anime",
         "target": "/bangumi/tv/followrank"
+      },
+      {
+        "title": "用户想看",
+        "docs": "https://docs.rsshub.app/routes/anime#bangumi-fan-zu-ji-hua",
+        "source": "/anime/list/:id/wish",
+        "target": "/bangumi/tv/user/wish/:id"
       }
     ]
   },
@@ -3345,6 +3351,12 @@
         "docs": "https://docs.rsshub.app/routes/anime#bangumi-fan-zu-ji-hua",
         "source": "/anime",
         "target": "/bangumi/tv/followrank"
+      },
+      {
+        "title": "用户想看",
+        "docs": "https://docs.rsshub.app/routes/anime#bangumi-fan-zu-ji-hua",
+        "source": "/anime/list/:id/wish",
+        "target": "/bangumi/tv/user/wish/:id"
       }
     ]
   },
@@ -4299,6 +4311,27 @@
           "/"
         ],
         "target": "/btzj/:category?"
+      }
+    ]
+  },
+  "buaa.edu.cn": {
+    "_name": "北京航空航天大学",
+    "news": [
+      {
+        "title": "新闻网",
+        "docs": "https://docs.rsshub.app/routes/university#bei-jing-hang-kong-hang-tian-da-xue",
+        "source": [
+          "/*"
+        ]
+      }
+    ],
+    "www.sme": [
+      {
+        "title": "集成电路科学与工程学院",
+        "docs": "https://docs.rsshub.app/routes/university#bei-jing-hang-kong-hang-tian-da-xue-ji-cheng-dian-lu-ke-xue-yu-gong-cheng-xue-yuan",
+        "source": [
+          "/*"
+        ]
       }
     ]
   },
@@ -6554,6 +6587,13 @@
         "source": [
           "/list/:id",
           "/topic/newstopic/:id"
+        ]
+      },
+      {
+        "title": "分类(网页爬虫方法)",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#zhong-yang-tong-xun-she",
+        "source": [
+          "/list/:id"
         ]
       }
     ]
@@ -8935,6 +8975,19 @@
       }
     ]
   },
+  "egsea.com": {
+    "_name": "e 公司",
+    ".": [
+      {
+        "title": "快讯",
+        "docs": "https://docs.rsshub.app/routes/new-media#e-gong-si",
+        "source": [
+          "/news/flash"
+        ],
+        "target": "/egsea/flash"
+      }
+    ]
+  },
   "elasticsearch.cn": {
     "_name": "Elastic 中文社区",
     ".": [
@@ -10643,7 +10696,7 @@
       }
     ]
   },
-  "gogoanimehd.io": {
+  "anitaku.to": {
     "_name": "Gogoanime",
     "developer": [
       {
@@ -11824,7 +11877,7 @@
         "title": "通用",
         "docs": "https://docs.rsshub.app/routes/government#guo-jia-yao-pin-jian-du-guan-li-ju-yi-liao-qi-xie-biao-zhun-guan-li-zhong-xin",
         "source": [
-          "/*path"
+          "/*"
         ]
       }
     ]
@@ -18632,6 +18685,19 @@
         "title": "电子书",
         "docs": "https://docs.rsshub.app/routes/reading#mobilism",
         "source": "/"
+      }
+    ]
+  },
+  "modb.pro": {
+    "_name": "墨天轮",
+    ".": [
+      {
+        "title": "合辑",
+        "docs": "https://docs.rsshub.app/routes/programming#mo-tian-lun",
+        "source": [
+          "/",
+          "/topic/:id"
+        ]
       }
     ]
   },
@@ -27360,7 +27426,7 @@
         "title": "热搜榜",
         "docs": "https://docs.rsshub.app/routes/social-media#wei-bo",
         "source": "/top/summary",
-        "target": "/weibo/search/hot"
+        "target": "/weibo/search/hot/:fulltext?"
       }
     ]
   },
