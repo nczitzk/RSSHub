@@ -12042,6 +12042,25 @@
       }
     ]
   },
+  "safe.gov.cn": {
+    "_name": "国家外汇管理局",
+    ".": [
+      {
+        "title": "业务咨询",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-wai-hui-guan-li-ju-ye-wu-zi-xun",
+        "source": [
+          "/:site/ywzx/index.html"
+        ]
+      },
+      {
+        "title": "投诉建议",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-wai-hui-guan-li-ju-tou-su-jian-yi",
+        "source": [
+          "/:site/tsjy/index.html"
+        ]
+      }
+    ]
+  },
   "sasac.gov.cn": {
     "_name": "国务院国有资产监督管理委员会",
     ".": [
@@ -16883,6 +16902,19 @@
       }
     ]
   },
+  "kepu.net.cn": {
+    "_name": "中国科普博览",
+    "live": [
+      {
+        "title": "直播回看",
+        "docs": "https://docs.rsshub.app/routes/new-media#zhong-guo-ke-pu-bo-lan-zhi-bo-hui-kan",
+        "source": [
+          "/replay/index"
+        ],
+        "target": "/kepu/live"
+      }
+    ]
+  },
   "keylol.com": {
     "_name": "其乐",
     ".": [
@@ -17332,7 +17364,7 @@
   },
   "line.me": {
     "_name": "LINE",
-    ".": [
+    "today": [
       {
         "title": "Today",
         "docs": "https://docs.rsshub.app/routes/new-media#line-today",
@@ -18588,6 +18620,21 @@
       }
     ]
   },
+  "missav.com": {
+    "_name": "MissAV.com",
+    ".": [
+      {
+        "title": "最近更新",
+        "docs": "https://docs.rsshub.app/multimedia#missav-com",
+        "source": [
+          "/dm397/new",
+          "/new",
+          "/"
+        ],
+        "target": "/missav/new"
+      }
+    ]
+  },
   "misskey.io": {
     "_name": "Misskey",
     ".": [
@@ -19731,6 +19778,20 @@
           "/"
         ],
         "target": "/ncepu/master/pyxx"
+      }
+    ]
+  },
+  "ncu.edu.cn": {
+    "_name": "南昌大学",
+    "jwc": [
+      {
+        "title": "教务通知",
+        "docs": "https://docs.rsshub.app/routes/university#nan-chang-da-xue",
+        "source": [
+          "/",
+          "/jwtz/index.htm"
+        ],
+        "target": "/ncu/jwc"
       }
     ]
   },
@@ -22939,6 +23000,19 @@
           "/ko"
         ],
         "target": "/rodong/news"
+      }
+    ]
+  },
+  "routledge.com": {
+    "_name": "Routledge",
+    ".": [
+      {
+        "title": "Book Series",
+        "docs": "https://docs.rsshub.app/routes/journals#routledge",
+        "source": [
+          "/:bookName/book-series/:bookId"
+        ],
+        "target": "/routledge/:bookName/book-series/:bookId"
       }
     ]
   },
@@ -30263,10 +30337,50 @@
   },
   "yahoo.com": {
     "_name": "Yahoo",
+    "hk.news": [
+      {
+        "title": "分類新聞",
+        "docs": "https://docs.rsshub.app/routes/new-media#yahoo",
+        "source": [
+          "/:category/archive",
+          "/archive"
+        ],
+        "target": "/yahoo/news/hk/:category?"
+      },
+      {
+        "title": "新聞來源",
+        "docs": "https://docs.rsshub.app/routes/new-media#yahoo",
+        "source": [
+          "/:providerId/archive",
+          "/archive"
+        ],
+        "target": "/yahoo/news/hk/:providerId"
+      }
+    ],
+    "tw.news": [
+      {
+        "title": "分類新聞",
+        "docs": "https://docs.rsshub.app/routes/new-media#yahoo",
+        "source": [
+          "/:category/archive",
+          "/archive"
+        ],
+        "target": "/yahoo/news/tw/:category?"
+      },
+      {
+        "title": "新聞來源",
+        "docs": "https://docs.rsshub.app/routes/new-media#yahoo",
+        "source": [
+          "/:providerId/archive",
+          "/archive"
+        ],
+        "target": "/yahoo/news/tw/:providerId"
+      }
+    ],
     ".": [
       {
         "title": "新闻",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#yahoo",
+        "docs": "https://docs.rsshub.app/routes/new-media#yahoo",
         "source": [
           "/"
         ],
