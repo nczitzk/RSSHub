@@ -6326,6 +6326,11 @@
         docs:"https://docs.rsshub.app/routes/government#de-yang-shi-ren-min-zheng-fu",
         source:[ "/*" ],
         target:"/gov/sichuan/deyang/mztoday" } ] },
+  "nea.gov.cn":{ _name:"国家能源局",
+    ".":[ { title:"发展规划司",
+        docs:"https://docs.rsshub.app/routes/government#guo-jia-neng-yuan-ju-fa-zhan-gui-hua-si",
+        source:[ "/sjzz/ghs/" ],
+        target:"/gov/nea/sjzz/ghs" } ] },
   "nifdc.gov.cn":{ _name:"国家药品监督管理局医疗器械标准管理中心",
     ".":[ { title:"通用",
         docs:"https://docs.rsshub.app/routes/government#guo-jia-yao-pin-jian-du-guan-li-ju-yi-liao-qi-xie-biao-zhun-guan-li-zhong-xin",
@@ -12329,6 +12334,16 @@
         source:[ "/:category",
           "/" ],
         target:"/qqorw/:category?" } ] },
+  "questmobile.com.cn":{ _name:"QuestMobile",
+    ".":[ { title:"行业研究报告",
+        docs:"https://docs.rsshub.app/routes/new-media#questmobile-hang-ye-yan-jiu-bao-gao",
+        source:[ "/research/reports/:industry/:label" ],
+        target:(params) => {
+                    const industry = params.industry;
+                    const label = params.label;
+
+                    return `/questmobile/report/${industry}/${label}`;
+                } } ] },
   "getquicker.net":{ _name:"Quicker",
     ".":[ { title:"动作分享",
         docs:"https://docs.rsshub.app/routes/programming#quicker-dong-zuo-fen-xiang",

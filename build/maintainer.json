@@ -2980,6 +2980,9 @@
         "nczitzk"
     ],
     "/gov/ndrc/xwdt/:caty?": [],
+    "/gov/nea/sjzz/ghs": [
+        "nczitzk"
+    ],
     "/gov/news/:uid": [
         "EsuRt"
     ],
@@ -5518,7 +5521,8 @@
     "/piapro/public/:type/:tag?/:category?": [],
     "/piapro/user/:pid": [],
     "/picnob/user/:id": [
-        "TonyRL"
+        "TonyRL",
+        "micheal-death"
     ],
     "/picuki/profile/:id/:functionalFlag?": [
         "hoilc",
@@ -5878,7 +5882,9 @@
     "/quantamagazine/archive": [],
     "/queshu/book/:bookid": [],
     "/queshu/sale": [],
-    "/questmobile/report/:category?/:label?": [],
+    "/questmobile/report/:industry?/:label?": [
+        "nczitzk"
+    ],
     "/quicker/qa/:category?/:state?": [
         "Cesaryuan",
         "nczitzk"
