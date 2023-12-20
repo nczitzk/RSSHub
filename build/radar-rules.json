@@ -183,19 +183,6 @@
       }
     ]
   },
-  "2047.name": {
-    "_name": "2047",
-    ".": [
-      {
-        "title": "分类",
-        "docs": "https://docs.rsshub.app/routes/bbs#2047-fen-lei",
-        "source": [
-          "/"
-        ],
-        "target": "/2047/:category?/:sort?"
-      }
-    ]
-  },
   "hjd2048.com": {
     "_name": "2048 核基地",
     ".": [
@@ -2026,14 +2013,6 @@
           "/topic"
         ],
         "target": "/agirls/topic_list"
-      },
-      {
-        "title": "精选主题",
-        "docs": "https://docs.rsshub.app/routes/new-media##dian-ta-shao-nu",
-        "source": [
-          "/topic/:topic"
-        ],
-        "target": "/agirls/topic/:topic"
       }
     ]
   },
@@ -2320,20 +2299,6 @@
       }
     ]
   },
-  "aliyundrive.com": {
-    "_name": "阿里云盘",
-    "www": [
-      {
-        "title": "文件列表",
-        "docs": "https://docs.rsshub.app/routes/programming#a-li-yun-pan",
-        "source": [
-          "/s/:share_id",
-          "/s/:share_id/folder/:parent_file_id"
-        ],
-        "target": "/aliyundrive/files/:share_id/:parent_file_id?"
-      }
-    ]
-  },
   "aljazeera.com": {
     "_name": "Aljazeera 半岛电视台",
     ".": [
@@ -2415,38 +2380,6 @@
           "/"
         ],
         "target": "/aljazeera/chinese/tag/:id"
-      }
-    ]
-  },
-  "allrecode.com": {
-    "_name": "重构",
-    ".": [
-      {
-        "title": "推荐",
-        "docs": "https://docs.rsshub.app/routes/news-media#chong-gou-tui-jian",
-        "source": [
-          "/recommends",
-          "/"
-        ],
-        "target": "/allrecode/recommends"
-      },
-      {
-        "title": "快讯",
-        "docs": "https://docs.rsshub.app/routes/news-media#chong-gou-kuai-xun",
-        "source": [
-          "/news",
-          "/"
-        ],
-        "target": "/allrecode/news"
-      },
-      {
-        "title": "资讯",
-        "docs": "https://docs.rsshub.app/routes/news-media#chong-gou-zi-xun",
-        "source": [
-          "/:category",
-          "/"
-        ],
-        "target": "/allrecode/:category"
       }
     ]
   },
@@ -2629,116 +2562,6 @@
       }
     ]
   },
-  "appledaily.com": {
-    "_name": "苹果新闻网",
-    "tw": [
-      {
-        "title": "首頁",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/:channel"
-        ]
-      },
-      {
-        "title": "焦点",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "最新",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "热门",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "生活",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "娱乐",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "社会",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "财经地产",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "国际",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "政治",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "3C车城",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "吃喝玩乐",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "体育",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "苹评理",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      },
-      {
-        "title": "微视频",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#ping-guo-xin-wen-wang",
-        "source": [
-          "/realtime/:channel"
-        ]
-      }
-    ]
-  },
   "appleinsider.com": {
     "_name": "AppleInsider",
     ".": [
@@ -2910,16 +2733,16 @@
       }
     ]
   },
-  "blog.leanstack.com": {
-    "_name": "Ash Maurya's blog",
-    ".": [
+  "artstation.com": {
+    "_name": "ArtStation",
+    "www": [
       {
-        "title": "Ash Maurya's blog",
-        "docs": "https://docs.rsshub.app/routes/en/blog#ash-maurya",
+        "title": "Artist Profolio",
+        "docs": "https://docs.rsshub.app/picture#artstation",
         "source": [
-          "/"
+          "/:handle"
         ],
-        "target": "/ash-maurya"
+        "target": "/artstation/:handle"
       }
     ]
   },
@@ -3022,19 +2845,6 @@
       }
     ]
   },
-  "audiobar.cn": {
-    "_name": "音频应用",
-    ".": [
-      {
-        "title": "最新主题",
-        "docs": "https://docs.rsshub.app/routes/bbs#yin-pin-ying-yong",
-        "source": [
-          "/all.php"
-        ],
-        "target": "/audiobar/latest"
-      }
-    ]
-  },
   "baai.ac.cn": {
     "_name": "北京智源人工智能研究院",
     "hub": [
@@ -3129,28 +2939,6 @@
         "docs": "https://docs.rsshub.app/routes/other#bai-du-re-sou",
         "source": [
           "/board"
-        ]
-      }
-    ]
-  },
-  "baijingapp.com": {
-    "_name": "白鲸出海",
-    ".": [
-      {
-        "title": "最新",
-        "docs": "https://docs.rsshub.app/routes/new-media#bai-jing-chu-hai",
-        "source": [
-          "/article",
-          "/"
-        ],
-        "target": "/baijing"
-      },
-      {
-        "title": "资讯",
-        "docs": "https://docs.rsshub.app/routes/new-media#bai-jing-chu-hai",
-        "source": [
-          "/article",
-          "/"
         ]
       }
     ]
@@ -3575,12 +3363,6 @@
         "docs": "https://docs.rsshub.app/routes/social-media#bilibili",
         "source": "/:uid",
         "target": "/bilibili/user/video/:uid"
-      },
-      {
-        "title": "UP 主所有视频",
-        "docs": "https://docs.rsshub.app/routes/social-media#bilibili",
-        "source": "/:uid",
-        "target": "/bilibili/user/video-all/:uid"
       },
       {
         "title": "UP 主频道的合集",
@@ -6338,7 +6120,7 @@
     "_name": "GitHub",
     ".": [
       {
-        "title": "仓库 Branches",
+        "title": "Repo branches",
         "docs": "https://docs.rsshub.app/routes/programming#github",
         "source": [
           "/:user/:repo/branches",
@@ -6347,7 +6129,7 @@
         "target": "/github/branches/:user/:repo"
       },
       {
-        "title": "Issues / Pull Requests 评论",
+        "title": "Issues / Pull Requests comments",
         "docs": "https://docs.rsshub.app/routes/programming#github",
         "source": [
           "/:user/:repo/:type/:number"
@@ -6363,7 +6145,7 @@
         "target": "/github/comments/:user/:repo"
       },
       {
-        "title": "仓库 Contributors",
+        "title": "Repo contributors",
         "docs": "https://docs.rsshub.app/routes/programming#github",
         "source": [
           "/:user/:repo/graphs/contributors",
@@ -6372,13 +6154,13 @@
         "target": "/github/contributors/:user/:repo"
       },
       {
-        "title": "文件 Commits",
+        "title": "File commits",
         "docs": "https://docs.rsshub.app/routes/programming#github",
         "source": "/:user/:repo/blob/:branch/*filepath",
         "target": "/github/file/:user/:repo/:branch/:filepath"
       },
       {
-        "title": "仓库 Issue",
+        "title": "Repo issues",
         "docs": "https://docs.rsshub.app/routes/programming#github",
         "source": [
           "/:user/:repo/issues",
@@ -6388,7 +6170,7 @@
         "target": "/github/issue/:user/:repo"
       },
       {
-        "title": "仓库 Pull Requests",
+        "title": "Repo Pull Requests",
         "docs": "https://docs.rsshub.app/routes/programming#github",
         "source": [
           "/:user/:repo/pulls",
@@ -6407,13 +6189,13 @@
         "target": "/github/pulse/:user/:repo/:period?"
       },
       {
-        "title": "用户仓库",
+        "title": "User repos",
         "docs": "https://docs.rsshub.app/routes/programming#github",
         "source": "/:user",
         "target": "/github/repos/:user"
       },
       {
-        "title": "仓库 Stars",
+        "title": "Repo stars",
         "docs": "https://docs.rsshub.app/routes/programming#github",
         "source": [
           "/:user/:repo/stargazers",
@@ -6422,7 +6204,7 @@
         "target": "/github/stars/:user/:repo"
       },
       {
-        "title": "用户 Starred Repositories",
+        "title": "User starred repositories",
         "docs": "https://docs.rsshub.app/routes/programming#github",
         "source": "/:user",
         "target": "/github/starred_repos/:user"
@@ -6440,13 +6222,13 @@
         "target": "/github/trending/:since"
       },
       {
-        "title": "用户 Followers",
+        "title": "User followers",
         "docs": "https://docs.rsshub.app/routes/programming#github",
         "source": "/:user",
         "target": "/github/user/followers/:user"
       },
       {
-        "title": "Wiki 历史",
+        "title": "Wiki history",
         "docs": "https://docs.rsshub.app/routes/programming#github",
         "source": [
           "/:user/:repo/wiki/:page/_history",
@@ -6457,7 +6239,7 @@
         "target": "/github/wiki/:user/:repo/:page"
       },
       {
-        "title": "Notifications 通知",
+        "title": "Notifications",
         "docs": "https://docs.rsshub.app/routes/programming#github",
         "source": [
           "/notifications"
@@ -6844,15 +6626,219 @@
       }
     ]
   },
-  "cntheory.com": {
-    "_name": "理论网",
-    "paper": [
+  "cnljxh.com": {
+    "_name": "中国炼焦行业协会",
+    ".": [
       {
-        "title": "学习时报",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#li-lun-wang-xue-xi-shi-bao",
+        "title": "汇总",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-hui-zong",
         "source": [
-          "/"
+          "/collect"
         ]
+      },
+      {
+        "title": "价格指数",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-jia-ge-zhi-shu",
+        "source": [
+          "/date"
+        ]
+      },
+      {
+        "title": "分析数据",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-fen-xi-shu-ju",
+        "source": [
+          "/info"
+        ]
+      },
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ]
+      },
+      {
+        "title": "价格",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-jia-ge",
+        "source": [
+          "/price"
+        ]
+      },
+      {
+        "title": "价格汇总",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-hui-zong",
+        "source": [
+          "/collect"
+        ],
+        "target": "/cnljxh/collect/10039"
+      },
+      {
+        "title": "焦炭指数",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-jia-ge-zhi-shu",
+        "source": [
+          "/date"
+        ],
+        "target": "/cnljxh/date/5575"
+      },
+      {
+        "title": "炼焦煤指数",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-jia-ge-zhi-shu",
+        "source": [
+          "/date"
+        ],
+        "target": "/cnljxh/date/5907"
+      },
+      {
+        "title": "市场分析",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-fen-xi-shu-ju",
+        "source": [
+          "/info"
+        ],
+        "target": "/cnljxh/info/575"
+      },
+      {
+        "title": "一周评述",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-fen-xi-shu-ju",
+        "source": [
+          "/info"
+        ],
+        "target": "/cnljxh/info/5573"
+      },
+      {
+        "title": "核心数据",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-fen-xi-shu-ju",
+        "source": [
+          "/info"
+        ],
+        "target": "/cnljxh/info/5417"
+      },
+      {
+        "title": "协会专区 - 协会简介",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/24"
+      },
+      {
+        "title": "协会专区 - 协会章程",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/25"
+      },
+      {
+        "title": "协会专区 - 协会领导",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/26"
+      },
+      {
+        "title": "协会专区 - 入会程序",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/27"
+      },
+      {
+        "title": "协会专区 - 组织机构",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/28"
+      },
+      {
+        "title": "协会公告",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/10"
+      },
+      {
+        "title": "行业新闻 - 协会动态",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/8"
+      },
+      {
+        "title": "行业新闻 - 企业动态",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/9"
+      },
+      {
+        "title": "行业新闻 - 行业动态",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/11"
+      },
+      {
+        "title": "政策法规",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/12"
+      },
+      {
+        "title": "行业标准 - 国家标准",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/13"
+      },
+      {
+        "title": "行业标准 - 行业标准",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/14"
+      },
+      {
+        "title": "行业标准 - 团体标准",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/15"
+      },
+      {
+        "title": "技术广角",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-xin-wen",
+        "source": [
+          "/news"
+        ],
+        "target": "/cnljxh/news/16"
+      },
+      {
+        "title": "价格行情",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-jia-ge",
+        "source": [
+          "/price"
+        ],
+        "target": "/cnljxh/price/299"
+      },
+      {
+        "title": "双焦运费",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-lian-jiao-hang-ye-xie-hui-jia-ge",
+        "source": [
+          "/price"
+        ],
+        "target": "/cnljxh/price/2143"
       }
     ]
   },
@@ -7661,6 +7647,20 @@
       }
     ]
   },
+  "deeplearning.ai": {
+    "_name": "deeplearning.ai",
+    "www": [
+      {
+        "title": "TheBatch 周报",
+        "docs": "https://docs.rsshub.app/routes/deeplearning-ai#thebatch-zhou-bao",
+        "source": [
+          "/thebatch",
+          "/"
+        ],
+        "target": "/deeplearning/thebatch"
+      }
+    ]
+  },
   "deepmind.com": {
     "_name": "DeepMind",
     ".": [
@@ -7756,14 +7756,6 @@
           "/news"
         ],
         "target": "/diandong/news/:cate"
-      },
-      {
-        "title": "电动号",
-        "docs": "https://docs.rsshub.app/routes/new-media#dong-qiu-di",
-        "source": [
-          "/news/ddh"
-        ],
-        "target": "/diandong/ddh/:cate"
       }
     ]
   },
@@ -7804,27 +7796,6 @@
           "/"
         ],
         "target": "/disinfo/publications"
-      }
-    ]
-  },
-  "disinformationindex.org": {
-    "_name": "Global Disinformation Index",
-    ".": [
-      {
-        "title": "Blog",
-        "docs": "https://docs.rsshub.app/routes/new-media#global-disinformation-index",
-        "source": [
-          "/"
-        ],
-        "target": "/disinformationindex/blog"
-      },
-      {
-        "title": "Research",
-        "docs": "https://docs.rsshub.app/routes/new-media#global-disinformation-index",
-        "source": [
-          "/"
-        ],
-        "target": "/disinformationindex/research"
       }
     ]
   },
@@ -8416,46 +8387,10 @@
   },
   "dlut.edu.cn": {
     "_name": "大连理工大学",
-    "news": [
+    "dutdice": [
       {
-        "title": "新闻网",
-        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-xin-wen-wang",
-        "source": [
-          "/"
-        ]
-      }
-    ],
-    "perdep": [
-      {
-        "title": "人事处",
-        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-ren-shi-chu",
-        "source": [
-          "/"
-        ]
-      }
-    ],
-    "teach": [
-      {
-        "title": "教务处",
-        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-jiao-wu-chu",
-        "source": [
-          "/"
-        ]
-      }
-    ],
-    "gs": [
-      {
-        "title": "研究生院",
-        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-yan-jiu-sheng-yuan",
-        "source": [
-          "/"
-        ]
-      }
-    ],
-    "ssdut": [
-      {
-        "title": "软件学院",
-        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-ruan-jian-xue-yuan",
+        "title": "国际合作与交流处（港澳台办）",
+        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-guo-ji-he-zuo-yu-jiao-liu-chu-gang-ao-tai-ban",
         "source": [
           "/"
         ]
@@ -8470,6 +8405,33 @@
         ]
       }
     ],
+    "fldpj": [
+      {
+        "title": "公共基础学院",
+        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-gong-gong-ji-chu-xue-yuan",
+        "source": [
+          "/"
+        ]
+      }
+    ],
+    "gs": [
+      {
+        "title": "研究生院",
+        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-yan-jiu-sheng-yuan",
+        "source": [
+          "/"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "title": "新闻网",
+        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-xin-wen-wang",
+        "source": [
+          "/"
+        ]
+      }
+    ],
     "panjin": [
       {
         "title": "盘锦校区",
@@ -8479,10 +8441,10 @@
         ]
       }
     ],
-    "xsgzb": [
+    "perdep": [
       {
-        "title": "盘锦校区学生事务办公室",
-        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-pan-jin-xiao-qu-xue-sheng-shi-wu-ban-gong-shi",
+        "title": "人事处",
+        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-ren-shi-chu",
         "source": [
           "/"
         ]
@@ -8506,6 +8468,24 @@
         ]
       }
     ],
+    "ssdut": [
+      {
+        "title": "软件学院",
+        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-ruan-jian-xue-yuan",
+        "source": [
+          "/"
+        ]
+      }
+    ],
+    "teach": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-jiao-wu-chu",
+        "source": [
+          "/"
+        ]
+      }
+    ],
     "tjpj": [
       {
         "title": "体育与健康学院盘锦分院",
@@ -8515,19 +8495,19 @@
         ]
       }
     ],
-    "dutdice": [
+    "tycgzx": [
       {
-        "title": "国际合作与交流处（港澳台办）",
-        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-guo-ji-he-zuo-yu-jiao-liu-chu-gang-ao-tai-ban",
+        "title": "体育场馆中心",
+        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-ti-yu-chang-guan-zhong-xin",
         "source": [
           "/"
         ]
       }
     ],
-    "tycgzx": [
+    "xsgzb": [
       {
-        "title": "体育场馆中心",
-        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-ti-yu-chang-guan-zhong-xin",
+        "title": "盘锦校区学生事务办公室",
+        "docs": "https://docs.rsshub.app/routes/university#da-lian-li-gong-da-xue-pan-jin-xiao-qu-xue-sheng-shi-wu-ban-gong-shi",
         "source": [
           "/"
         ]
@@ -8544,14 +8524,6 @@
           "/archives/category/:type/:category?",
           "/archives/category/:type"
         ]
-      },
-      {
-        "title": "标签",
-        "docs": "https://docs.rsshub.app/routes/multimedia#e-hentai-biao-qian",
-        "source": [
-          "/archives/tag/:tag"
-        ],
-        "target": "/dx2025/tag/:tag"
       }
     ]
   },
@@ -8805,12 +8777,6 @@
     ],
     "www": [
       {
-        "title": "热点搜索",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#dong-fang-wang-re-dian-sou-suo",
-        "source": "/",
-        "target": "/eastday/find"
-      },
-      {
         "title": "原创",
         "docs": "https://docs.rsshub.app/routes/traditional-media#dong-fang-wang-yuan-chuang",
         "source": "/",
@@ -8906,17 +8872,6 @@
         ],
         "target": "/economist/espresso"
       }
-    ],
-    "gre": [
-      {
-        "title": "GRE Vocabulary",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#the-economist",
-        "source": [
-          "/",
-          "/gre-advice/gre-vocabulary/which-words-study/most-common-gre-vocabulary-list-organized-difficulty"
-        ],
-        "target": "/economist/gre-vocabulary"
-      }
     ]
   },
   "businessreview.global": {
@@ -8964,28 +8919,6 @@
           "/"
         ],
         "target": "/ecust/jwc/notice/:category?"
-      }
-    ]
-  },
-  "eet-china.com": {
-    "_name": "电子工程专辑",
-    ".": [
-      {
-        "title": "芯语",
-        "docs": "https://docs.rsshub.app/routes/new-media#dian-zi-gong-cheng-zhuan-ji-xin-yu",
-        "source": [
-          "/mp",
-          "/"
-        ]
-      },
-      {
-        "title": "芯语 - 标签",
-        "docs": "https://docs.rsshub.app/routes/new-media#dian-zi-gong-cheng-zhuan-ji-xin-yu-biao-qian",
-        "source": [
-          "/mp/tags/:id",
-          "/"
-        ],
-        "target": "/eet-china/mp/tags/:id"
       }
     ]
   },
@@ -9466,20 +9399,6 @@
       }
     ]
   },
-  "ezone.hk": {
-    "_name": "ezone.hk",
-    ".": [
-      {
-        "title": "分类",
-        "docs": "https://docs.rsshub.app/routes/new-media#ezone-hk-fen-lei",
-        "source": [
-          "/:category",
-          "/"
-        ],
-        "target": "/ezone/:category?"
-      }
-    ]
-  },
   "famitsu.com": {
     "_name": "ファミ通",
     ".": [
@@ -9681,20 +9600,6 @@
           "/:id"
         ],
         "target": "/fffdm/manhua/:id"
-      }
-    ]
-  },
-  "filmdeepfocus.com": {
-    "_name": "深焦",
-    ".": [
-      {
-        "title": "分类",
-        "docs": "https://docs.rsshub.app/routes/new-media#shen-jiao-fen-lei",
-        "source": [
-          "/:category",
-          "/"
-        ],
-        "target": "/filmdeepfocus/:category?"
       }
     ]
   },
@@ -10065,19 +9970,6 @@
       {
         "title": "FT 中文网",
         "docs": "https://docs.rsshub.app/routes/traditional-media#financial-times"
-      },
-      {
-        "title": "myFT 个人 RSS",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#financial-times"
-      }
-    ]
-  },
-  "ft.com": {
-    "_name": "Financial Times",
-    ".": [
-      {
-        "title": "myFT personal RSS",
-        "docs": "https://docs.rsshub.app/routes/en/traditional-media#financial-times"
       }
     ]
   },
@@ -10096,13 +9988,30 @@
     "_name": "Furstar",
     ".": [
       {
-        "title": "安全文摘首頁",
-        "docs": "https://docs.rsshub.app/routes/shopping#an-quan-wen-zhai",
+        "title": "最新售卖角色列表",
+        "docs": "https://docs.rsshub.app/routes/shopping#furstar-zui-xin-shou-mai-jiao-se-lie-biao",
         "source": [
-          "/",
+          "/:lang",
           "/"
         ],
-        "target": "/secnews/index"
+        "target": "/furstar/characters/:lang"
+      },
+      {
+        "title": "已经出售的角色列表",
+        "docs": "https://docs.rsshub.app/routes/shopping#furstar-yi-jing-chu-shou-de-jiao-se-lie-biao",
+        "source": [
+          "/:lang/archive.php",
+          "/archive.php"
+        ],
+        "target": "/furstar/archive/:lang"
+      },
+      {
+        "title": "画师列表",
+        "docs": "https://docs.rsshub.app/routes/shopping#furstar-hua-shi-lie-biao",
+        "source": [
+          "/"
+        ],
+        "target": "/furstar/artists"
       }
     ]
   },
@@ -10159,6 +10068,51 @@
           "/kx"
         ],
         "target": "/fx678/kx"
+      }
+    ]
+  },
+  "fxiaoke.com": {
+    "_name": "纷享销客 CRM",
+    ".": [
+      {
+        "title": "全部文章",
+        "docs": "https://docs.rsshub.app/routes/blog#fen-xiang-xiao-ke-crm",
+        "source": [
+          "/*"
+        ],
+        "target": "/fxiaoke/crm/news"
+      },
+      {
+        "title": "文章干货",
+        "docs": "https://docs.rsshub.app/routes/blog#fen-xiang-xiao-ke-crm",
+        "source": [
+          "/*"
+        ],
+        "target": "/fxiaoke/crm/blog"
+      },
+      {
+        "title": "CRM 知识",
+        "docs": "https://docs.rsshub.app/routes/blog#fen-xiang-xiao-ke-crm",
+        "source": [
+          "/*"
+        ],
+        "target": "/fxiaoke/crm/articles"
+      },
+      {
+        "title": "纷享动态",
+        "docs": "https://docs.rsshub.app/routes/blog#fen-xiang-xiao-ke-crm",
+        "source": [
+          "/*"
+        ],
+        "target": "/fxiaoke/crm/about-influence"
+      },
+      {
+        "title": "签约喜报",
+        "docs": "https://docs.rsshub.app/routes/blog#fen-xiang-xiao-ke-crm",
+        "source": [
+          "/*"
+        ],
+        "target": "/fxiaoke/crm/customers"
       }
     ]
   },
@@ -10321,18 +10275,6 @@
           "/tag/:tag"
         ],
         "target": "/gamme/sexynews/tag/:tag"
-      }
-    ]
-  },
-  "gaze.run": {
-    "_name": "注视影视",
-    ".": [
-      {
-        "title": "更新通知",
-        "docs": "https://docs.rsshub.app/routes//multimedia#gaze-run",
-        "source": [
-          "/play/:mid"
-        ]
       }
     ]
   },
@@ -10723,19 +10665,6 @@
       }
     ]
   },
-  "good.news": {
-    "_name": "Good.news",
-    ".": [
-      {
-        "title": "今日要闻",
-        "docs": "https://docs.rsshub.app/routes/new-media#good-news-jin-ri-yao-wen",
-        "source": [
-          "/"
-        ],
-        "target": "/good"
-      }
-    ]
-  },
   "google.com": {
     "_name": "谷歌",
     "chrome": [
@@ -10751,17 +10680,6 @@
         "title": "相册",
         "docs": "https://docs.rsshub.app/routes/picture#google-xiang-ce",
         "source": "/share/*"
-      }
-    ],
-    "sites": [
-      {
-        "title": "Sites",
-        "docs": "https://docs.rsshub.app/routes/blog#google-sites",
-        "source": [
-          "/site/:id/*",
-          "/site/:id"
-        ],
-        "target": "/google/sites/:id"
       }
     ],
     "fonts": [
@@ -11077,6 +10995,299 @@
           "/webapp/cs2020/email/*"
         ],
         "target": "/gov/hunan/changsha/major-email"
+      }
+    ]
+  },
+  "chinamine-safety.gov.cn": {
+    "_name": "国家矿山安全监察局",
+    "www": [
+      {
+        "title": "政府信息公开指南",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/zfxxgkzn"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/zfxxgkzn"
+      },
+      {
+        "title": "政府信息公开制度",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/zfxxgkzd"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/zfxxgkzd"
+      },
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/tzgg",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/tzgg"
+      },
+      {
+        "title": "征求意见",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/zqyj_01",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/zqyj_01"
+      },
+      {
+        "title": "政策法规",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/zcfg",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/zcfg"
+      },
+      {
+        "title": "规划计划",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/ghjh",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/ghjh"
+      },
+      {
+        "title": "政策解读",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/zcjd",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/zcjd"
+      },
+      {
+        "title": "安全许可",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/anqxk",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/anqxk"
+      },
+      {
+        "title": "事故查处",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/sgcc",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/sgcc"
+      },
+      {
+        "title": "人事信息",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/rsxx",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/rsxx"
+      },
+      {
+        "title": "财务信息",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/cwxx",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/cwxx"
+      },
+      {
+        "title": "建议提案办理",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/jytabl_4823",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/jytabl_4823"
+      },
+      {
+        "title": "政策法规 - 法律",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/zcfg/fl_01",
+          "/zfxxgk/fdzdgknr/zcfg",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/zcfg/fl_01"
+      },
+      {
+        "title": "政策法规 - 行政法规",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/zcfg/xzfg",
+          "/zfxxgk/fdzdgknr/zcfg",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/zcfg/xzfg"
+      },
+      {
+        "title": "政策法规 - 部门规章",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/zcfg/bmgz_01",
+          "/zfxxgk/fdzdgknr/zcfg",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/zcfg/bmgz_01"
+      },
+      {
+        "title": "政策法规 - 部门规章煤矿安监",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/zcfg/bmgz_01/mkanj",
+          "/zfxxgk/fdzdgknr/zcfg/bmgz_01",
+          "/zfxxgk/fdzdgknr/zcfg",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/zcfg/bmgz_01/mkanj"
+      },
+      {
+        "title": "政策法规 - 部门规章非煤矿山",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/zcfg/bmgz_01/fmks",
+          "/zfxxgk/fdzdgknr/zcfg/bmgz_01",
+          "/zfxxgk/fdzdgknr/zcfg",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/zcfg/bmgz_01/fmks"
+      },
+      {
+        "title": "政策法规 - 行业标准",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/zcfg/hybz_01",
+          "/zfxxgk/fdzdgknr/zcfg",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/zcfg/hybz_01"
+      },
+      {
+        "title": "政策法规 - 行业标准煤矿安监",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/zcfg/hybz_01/mkanj",
+          "/zfxxgk/fdzdgknr/zcfg/hybz_01",
+          "/zfxxgk/fdzdgknr/zcfg",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/zcfg/hybz_01/mkanj"
+      },
+      {
+        "title": "政策法规 - 行业标准非煤矿山",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/zcfg/hybz_01/fmks",
+          "/zfxxgk/fdzdgknr/zcfg/hybz_01",
+          "/zfxxgk/fdzdgknr/zcfg",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/zcfg/hybz_01/fmks"
+      },
+      {
+        "title": "事故查处 - 事故通报",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/sgcc/sgtb",
+          "/zfxxgk/fdzdgknr/sgcc",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/sgcc/sgtb"
+      },
+      {
+        "title": "事故查处 - 事故督办",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/sgcc/sgdb",
+          "/zfxxgk/fdzdgknr/sgcc",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/sgcc/sgdb"
+      },
+      {
+        "title": "事故查处 - 事故调查报告",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/sgcc/sgbg",
+          "/zfxxgk/fdzdgknr/sgcc",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/sgcc/sgbg"
+      },
+      {
+        "title": "事故查处 - 事故案例",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/sgcc/sgalks",
+          "/zfxxgk/fdzdgknr/sgcc",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/sgcc/sgalks"
+      },
+      {
+        "title": "事故查处 - 事故警示教育片",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-zheng-fu-xin-xi-gong-kai",
+        "source": [
+          "/zfxxgk/fdzdgknr/sgcc/sgjsjy",
+          "/zfxxgk/fdzdgknr/sgcc",
+          "/zfxxgk/fdzdgknr"
+        ],
+        "target": "/gov/chinamine-safety/zfxxgk/fdzdgknr/sgcc/sgjsjy"
+      },
+      {
+        "title": "应急管理部要闻",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-xin-wen",
+        "source": [
+          "/yjglbyw"
+        ],
+        "target": "/gov/chinamine-safety/xw/yjglbyw"
+      },
+      {
+        "title": "国家矿山安监局要闻",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-xin-wen",
+        "source": [
+          "/mkaqjcxw"
+        ],
+        "target": "/gov/chinamine-safety/xw/mkaqjcxw"
+      },
+      {
+        "title": "地方信息",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-xin-wen",
+        "source": [
+          "/dfdt"
+        ],
+        "target": "/gov/chinamine-safety/xw/dfdt"
+      },
+      {
+        "title": "党建专栏",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-xin-wen",
+        "source": [
+          "/djzl"
+        ],
+        "target": "/gov/chinamine-safety/xw/djzl"
+      },
+      {
+        "title": "经验交流",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-xin-wen",
+        "source": [
+          "/jyjl"
+        ],
+        "target": "/gov/chinamine-safety/xw/jyjl"
+      },
+      {
+        "title": "新闻发布会",
+        "docs": "https://docs.rsshub.app/routes/government#guo-jia-kuang-shan-an-quan-jian-cha-ju-xin-wen",
+        "source": [
+          "/xwfbh"
+        ],
+        "target": "/gov/chinamine-safety/xw/xwfbh"
       }
     ]
   },
@@ -12390,19 +12601,6 @@
       }
     ]
   },
-  "gq.com.tw": {
-    "_name": "GQ Taiwan",
-    ".": [
-      {
-        "title": "GQ Taiwan",
-        "docs": "https://docs.rsshub.app/routes/new-media#gq",
-        "source": [
-          "/*path"
-        ],
-        "target": "/gq/tw/:path"
-      }
-    ]
-  },
   "greasyfork.org": {
     "_name": "Greasy Fork",
     ".": [
@@ -12532,19 +12730,6 @@
           "/topic/post-list",
           "/"
         ]
-      }
-    ]
-  },
-  "guandian.cn": {
-    "_name": "观点网",
-    "www": [
-      {
-        "title": "资讯",
-        "docs": "https://docs.rsshub.app/routes/new-media#guan-dian-wang-zi-xun",
-        "source": [
-          "/:category"
-        ],
-        "target": "/guandian/:category"
       }
     ]
   },
@@ -12697,18 +12882,6 @@
       }
     ]
   },
-  "gz-cmc.com": {
-    "_name": "广州市融媒体中心",
-    ".": [
-      {
-        "title": "频道",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#guang-zhou-shi-rong-mei-ti-zhong-xin",
-        "source": [
-          "/"
-        ]
-      }
-    ]
-  },
   "gzdaily.cn": {
     "_name": "广州日报",
     ".": [
@@ -12716,28 +12889,6 @@
         "title": "客户端",
         "docs": "https://docs.rsshub.app/routes/traditional-media#guang-zhou-ri-bao",
         "source": [
-          "/"
-        ]
-      }
-    ]
-  },
-  "gzh360.com": {
-    "_name": "公众号360",
-    "web": [
-      {
-        "title": "公众号",
-        "docs": "https://docs.rsshub.app/routes/new-media#gong-zhong-hao-360",
-        "source": [
-          "/gzh_articles",
-          "/gzh",
-          "/"
-        ]
-      },
-      {
-        "title": "分类",
-        "docs": "https://docs.rsshub.app/routes/new-media#gong-zhong-hao-360",
-        "source": [
-          "/category",
           "/"
         ]
       }
@@ -13029,13 +13180,6 @@
           "/kepu.html"
         ],
         "target": "/hellobtc/kepu/public_blockchain"
-      },
-      {
-        "title": "专栏",
-        "docs": "https://docs.rsshub.app/routes/new-media#bai-hua-qu-kuai-lian",
-        "source": [
-          "/topic/:id"
-        ]
       }
     ]
   },
@@ -13184,76 +13328,6 @@
       }
     ]
   },
-  "hjedd.com": {
-    "_name": "海角社区",
-    ".": [
-      {
-        "title": "热门",
-        "docs": "https://docs.rsshub.app/routes/bbs#hai-jiao-she-qu-re-men",
-        "source": [
-          "/"
-        ],
-        "target": "/hjedd/hot"
-      },
-      {
-        "title": "新闻",
-        "docs": "https://docs.rsshub.app/routes/bbs#hai-jiao-she-qu-xin-wen",
-        "source": [
-          "/"
-        ],
-        "target": "/hjedd/news"
-      },
-      {
-        "title": "大事记",
-        "docs": "https://docs.rsshub.app/routes/bbs#hai-jiao-she-qu-da-shi-ji",
-        "source": [
-          "/article",
-          "/"
-        ],
-        "target": "/hjedd/event"
-      },
-      {
-        "title": "原创",
-        "docs": "https://docs.rsshub.app/routes/bbs#hai-jiao-she-qu-da-yuan-chuang",
-        "source": [
-          "/"
-        ],
-        "target": "/hjedd/original"
-      },
-      {
-        "title": "精华",
-        "docs": "https://docs.rsshub.app/routes/bbs#hai-jiao-she-qu-da-jing-hua",
-        "source": [
-          "/"
-        ],
-        "target": "/hjedd/top"
-      },
-      {
-        "title": "公告",
-        "docs": "https://docs.rsshub.app/routes/bbs#hai-jiao-she-qu-da-gong-gao",
-        "source": [
-          "/"
-        ],
-        "target": "/hjedd/notice"
-      },
-      {
-        "title": "最新",
-        "docs": "https://docs.rsshub.app/routes/bbs#hai-jiao-she-qu-da-zui-xin",
-        "source": [
-          "/"
-        ],
-        "target": "/hjedd/latest"
-      },
-      {
-        "title": "文章",
-        "docs": "https://docs.rsshub.app/routes/bbs#hai-jiao-she-qu-da-wen-zhang",
-        "source": [
-          "/article",
-          "/"
-        ]
-      }
-    ]
-  },
   "hk01.com": {
     "_name": "香港01",
     ".": [
@@ -13347,59 +13421,6 @@
       }
     ]
   },
-  "hket.com": {
-    "_name": "香港经济日报",
-    "china": [
-      {
-        "title": "新闻",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#xiang-gang-jing-ji-ri-bao",
-        "source": [
-          "/:category/*"
-        ],
-        "target": "/hket/:category"
-      }
-    ],
-    "inews": [
-      {
-        "title": "新闻",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#xiang-gang-jing-ji-ri-bao",
-        "source": [
-          "/:category/*"
-        ],
-        "target": "/hket/:category"
-      }
-    ],
-    "topick": [
-      {
-        "title": "新闻",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#xiang-gang-jing-ji-ri-bao",
-        "source": [
-          "/:category/*"
-        ],
-        "target": "/hket/:category"
-      }
-    ],
-    "wealth": [
-      {
-        "title": "新闻",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#xiang-gang-jing-ji-ri-bao",
-        "source": [
-          "/:category/*"
-        ],
-        "target": "/hket/:category"
-      }
-    ],
-    "www": [
-      {
-        "title": "新闻",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#xiang-gang-jing-ji-ri-bao",
-        "source": [
-          "/"
-        ],
-        "target": "/hket"
-      }
-    ]
-  },
   "hkjunkcall.com": {
     "_name": "HKJunkCall資訊中心",
     ".": [
@@ -13479,37 +13500,6 @@
         "source": [
           "/:type"
         ]
-      }
-    ]
-  },
-  "hotchina.news": {
-    "_name": "辛華社",
-    ".": [
-      {
-        "title": "首页",
-        "docs": "https://docs.rsshub.app/routes/new-media#xin-hua-she-shou-ye",
-        "source": [
-          "/"
-        ],
-        "target": "/hotchina"
-      },
-      {
-        "title": "分类",
-        "docs": "https://docs.rsshub.app/routes/new-media#xin-hua-she-fen-lei",
-        "source": [
-          "/archives/category/:id",
-          "/"
-        ],
-        "target": "/hotchina/category/:id?"
-      },
-      {
-        "title": "标签",
-        "docs": "https://docs.rsshub.app/routes/new-media#xin-hua-she-biao-qian",
-        "source": [
-          "/archives/tag/:id",
-          "/"
-        ],
-        "target": "/hotchina/tag/:id?"
       }
     ]
   },
@@ -13656,19 +13646,6 @@
         "title": "教务处",
         "docs": "https://docs.rsshub.app/routes/university#ha-er-bin-li-gong-da-xue",
         "source": "/homepage/*"
-      }
-    ]
-  },
-  "huangz.me": {
-    "_name": "黄健宏博客",
-    "blog": [
-      {
-        "title": "文章",
-        "docs": "https://docs.rsshub.app/routes/blog#huang-jian-hong-bo-ke",
-        "source": [
-          "/*.html"
-        ],
-        "target": "/huangz"
       }
     ]
   },
@@ -13913,58 +13890,6 @@
       }
     ]
   },
-  "hyqss.cn": {
-    "_name": "衡阳全搜索",
-    ".": [
-      {
-        "title": "衡阳日报",
-        "docs": "https://docs.rsshub.app/routes/journal#heng-yang-quan-sou-suo-heng-yang-ri-bao",
-        "source": [
-          "/"
-        ],
-        "target": "/hnrb/hyrb/:id?"
-      },
-      {
-        "title": "衡阳晚报",
-        "docs": "https://docs.rsshub.app/routes/journal#heng-yang-quan-sou-suo-heng-yang-wan-bao",
-        "source": [
-          "/"
-        ],
-        "target": "/hnrb/hywb/:id?"
-      }
-    ],
-    "epaper": [
-      {
-        "title": "衡阳日报",
-        "docs": "https://docs.rsshub.app/routes/journal#heng-yang-quan-sou-suo-heng-yang-ri-bao",
-        "source": [
-          "/"
-        ],
-        "target": "/hnrb/hyrb/:id?"
-      },
-      {
-        "title": "衡阳晚报",
-        "docs": "https://docs.rsshub.app/routes/journal#heng-yang-quan-sou-suo-heng-yang-wan-bao",
-        "source": [
-          "/"
-        ],
-        "target": "/hnrb/hywb/:id?"
-      }
-    ]
-  },
-  "i-cable.com": {
-    "_name": "有線寬頻 i-CABLE",
-    ".": [
-      {
-        "title": "有線新聞 | Cable News",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#you-xian-kuan-pin-i-cable",
-        "source": [
-          "/category/*path",
-          "/"
-        ]
-      }
-    ]
-  },
   "ianspriggs.com": {
     "_name": "Ian Spriggs",
     ".": [
@@ -13974,29 +13899,6 @@
         "source": [
           "/:category"
         ]
-      }
-    ]
-  },
-  "ibc.co.jp": {
-    "_name": "IBC 岩手放送",
-    ".": [
-      {
-        "title": "イヤーマイッタマイッタ",
-        "docs": "https://docs.rsshub.app/routes/multimedia#ibc-yan-shou-fang-song",
-        "source": [
-          "/radio/maitta/audio",
-          "/"
-        ],
-        "target": "/ibc/maitta"
-      },
-      {
-        "title": "ラジオ",
-        "docs": "https://docs.rsshub.app/routes/multimedia#ibc-yan-shou-fang-song",
-        "source": [
-          "/radio/:id/audio",
-          "/"
-        ],
-        "target": "/ibc/radio/:id?"
       }
     ]
   },
@@ -14468,7 +14370,7 @@
     "_name": "Instagram",
     "www": [
       {
-        "title": "用户",
+        "title": "User",
         "docs": "https://docs.rsshub.app/routes/social-media#instagram",
         "source": [
           "/:id"
@@ -14476,7 +14378,7 @@
         "target": "/instagram/user/:id"
       },
       {
-        "title": "标签",
+        "title": "Tags",
         "docs": "https://docs.rsshub.app/routes/social-media#instagram",
         "source": [
           "/explore/tags/:key"
@@ -14694,28 +14596,6 @@
         "source": [
           "/report.shtml"
         ]
-      }
-    ]
-  },
-  "islander.cc": {
-    "_name": "島民衛星 Islander",
-    ".": [
-      {
-        "title": "事件分析",
-        "docs": "https://docs.rsshub.app/routes/new-media#dao-min-wei-xing-islander",
-        "source": [
-          "/"
-        ],
-        "target": "/islander/search"
-      },
-      {
-        "title": "單日焦點",
-        "docs": "https://docs.rsshub.app/routes/new-media#dao-min-wei-xing-islander",
-        "source": [
-          "/top30event",
-          "/"
-        ],
-        "target": "/islander/top30event"
       }
     ]
   },
@@ -16249,16 +16129,26 @@
       }
     ]
   },
-  "jiaoliudao.com": {
-    "_name": "交流岛资源网",
-    ".": [
+  "jianshu.com": {
+    "_name": "简书",
+    "www": [
       {
-        "title": "最新文章",
-        "docs": "https://docs.rsshub.app/routes/blog#jiao-liu-dao-zi-yuan-wang",
-        "source": [
-          "/"
-        ],
-        "target": "/jiaoliudao"
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/routes/social-media#jian-shu",
+        "source": "/",
+        "target": "/jianshu/home"
+      },
+      {
+        "title": "专题",
+        "docs": "https://docs.rsshub.app/routes/social-media#jian-shu",
+        "source": "/c/:id",
+        "target": "/jianshu/collection/:id"
+      },
+      {
+        "title": "作者",
+        "docs": "https://docs.rsshub.app/routes/social-media#jian-shu",
+        "source": "/u/:id",
+        "target": "/jianshu/user/:id"
       }
     ]
   },
@@ -16486,28 +16376,10 @@
         "target": "/juejin/collection/:collectionId"
       },
       {
-        "title": "分享",
-        "docs": "https://docs.rsshub.app/routes/programming#jue-jin",
-        "source": [
-          "/user/:userId",
-          "/user/:userId/shares"
-        ],
-        "target": "/juejin/shares/:userId"
-      },
-      {
         "title": "专栏",
         "docs": "https://docs.rsshub.app/routes/programming#jue-jin",
         "source": "/column/:id",
         "target": "/juejin/column/:id"
-      },
-      {
-        "title": "资讯",
-        "docs": "https://docs.rsshub.app/routes/programming#jue-jin",
-        "source": [
-          "/user/:id",
-          "/user/:id/news"
-        ],
-        "target": "/juejin/news/:userId"
       }
     ]
   },
@@ -16968,47 +16840,6 @@
       }
     ]
   },
-  "knowmedia.tw": {
-    "_name": "识媒体",
-    ".": [
-      {
-        "title": "近期更新",
-        "docs": "https://docs.rsshub.app/routes/game#jump",
-        "source": [
-          "/",
-          "/topics/近期更新"
-        ],
-        "target": "/knowmedia/jqgx"
-      },
-      {
-        "title": "精选专栏",
-        "docs": "https://docs.rsshub.app/routes/game#jump",
-        "source": [
-          "/",
-          "/topics/精選專欄"
-        ],
-        "target": "/knowmedia/jxzl"
-      },
-      {
-        "title": "活动讯息",
-        "docs": "https://docs.rsshub.app/routes/game#jump",
-        "source": [
-          "/",
-          "/topics/活動訊息"
-        ],
-        "target": "/knowmedia/hdxx"
-      },
-      {
-        "title": "影音专区",
-        "docs": "https://docs.rsshub.app/routes/game#jump",
-        "source": [
-          "/",
-          "/topics/影音專區"
-        ],
-        "target": "/knowmedia/yyzq"
-      }
-    ]
-  },
   "kuaidi100.com": {
     "_name": "快递 100",
     ".": [
@@ -17035,29 +16866,6 @@
           "/essay"
         ],
         "target": "/kunchengblog/essay"
-      }
-    ]
-  },
-  "kuwaitlocal.com": {
-    "_name": "Kuwait Local",
-    ".": [
-      {
-        "title": "Latest News",
-        "docs": "https://docs.rsshub.app/routes/en/new-media#kuwait-local",
-        "source": [
-          "/news/latest",
-          "/news",
-          "/"
-        ],
-        "target": "/kuwaitlocal"
-      },
-      {
-        "title": "Categorised News",
-        "docs": "https://docs.rsshub.app/routes/en/new-media#kuwait-local",
-        "source": [
-          "/news/categories/:category"
-        ],
-        "target": "/kuwaitlocal/:category"
       }
     ]
   },
@@ -17167,20 +16975,6 @@
       }
     ]
   },
-  "layer3.xyz": {
-    "_name": "Layer3",
-    ".": [
-      {
-        "title": "Quests",
-        "docs": "https://docs.rsshub.app/routes/programming#layer3-quests",
-        "source": [
-          "/quests/new",
-          "/"
-        ],
-        "target": "/layer3/quests"
-      }
-    ]
-  },
   "layoffs.fyi": {
     "_name": "Layoffs",
     ".": [
@@ -17232,13 +17026,6 @@
         "target": "/leetcode/articles"
       },
       {
-        "title": "打卡",
-        "docs": "https://docs.rsshub.app/routes/programming#leetcode",
-        "source": [
-          "/:user"
-        ]
-      },
-      {
         "title": "每日一题",
         "docs": "https://docs.rsshub.app/routes/programming#leetcode",
         "source": [
@@ -17259,13 +17046,6 @@
   "leetcode.cn": {
     "_name": "LeetCode",
     ".": [
-      {
-        "title": "打卡",
-        "docs": "https://docs.rsshub.app/routes/programming#leetcode",
-        "source": [
-          "/:user"
-        ]
-      },
       {
         "title": "每日一题",
         "docs": "https://docs.rsshub.app/routes/programming#leetcode",
@@ -17371,20 +17151,6 @@
           "/fine/:tagId"
         ],
         "target": "/lfsyd/tag/:tagId"
-      }
-    ]
-  },
-  "lianxh.cn": {
-    "_name": "连享会",
-    ".": [
-      {
-        "title": "精彩资讯",
-        "docs": "https://docs.rsshub.app/routes/programming#lian-xiang-hui-jing-cai-zi-xun",
-        "source": [
-          "/blogs.html",
-          "/"
-        ],
-        "target": "/lianxh/:category?"
       }
     ]
   },
@@ -18366,33 +18132,6 @@
       }
     ]
   },
-  "mclaren.com": {
-    "_name": "Mclaren Racing",
-    "www": [
-      {
-        "title": "Mclaren Racing",
-        "docs": "https://docs.rsshub.app/routes/new-media#mai-kai-lun-sai-che",
-        "source": "/racing/articles/",
-        "target": "/mclaren/en/all"
-      }
-    ],
-    "cn": [
-      {
-        "title": "迈凯伦赛车",
-        "docs": "https://docs.rsshub.app/routes/new-media#mai-kai-lun-sai-che",
-        "source": "/racing/articles/",
-        "target": "/mclaren/zh/all"
-      }
-    ],
-    "es": [
-      {
-        "title": "Mclaren Racing",
-        "docs": "https://docs.rsshub.app/routes/new-media#mai-kai-lun-sai-che",
-        "source": "/racing/articles/",
-        "target": "/mclaren/es/all"
-      }
-    ]
-  },
   "mdpi.com": {
     "_name": "MDPI",
     "www": [
@@ -18635,15 +18374,6 @@
       }
     ]
   },
-  "miris.design": {
-    "_name": "Stratechery by Ben Thompson",
-    "blog": [
-      {
-        "title": "Articles",
-        "docs": "https://docs.rsshub.app/routes/en/blog#stratechery-by-ben-thompson"
-      }
-    ]
-  },
   "mirror.xyz": {
     "_name": "Mirror",
     ".": [
@@ -18772,26 +18502,6 @@
       }
     ]
   },
-  "mobilism.org": {
-    "_name": "Mobilism",
-    ".": [
-      {
-        "title": "论坛",
-        "docs": "https://docs.rsshub.app/routes/bbs#mobilism",
-        "source": "/"
-      },
-      {
-        "title": "门户",
-        "docs": "https://docs.rsshub.app/routes/bbs#mobilism",
-        "source": "/portal.php"
-      },
-      {
-        "title": "电子书",
-        "docs": "https://docs.rsshub.app/routes/reading#mobilism",
-        "source": "/"
-      }
-    ]
-  },
   "modb.pro": {
     "_name": "墨天轮",
     ".": [
@@ -18900,17 +18610,6 @@
           "*"
         ],
         "target": "/mrdx/today"
-      }
-    ]
-  },
-  "mtime.com": {
-    "_name": "时光网",
-    "news": [
-      {
-        "title": "时光新闻",
-        "docs": "https://docs.rsshub.app/routes/multimedia#shi-guang-wang",
-        "source": "/",
-        "target": "/mtime/news"
       }
     ]
   },
@@ -20695,20 +20394,6 @@
       }
     ]
   },
-  "nmbxd1.com": {
-    "_name": "X岛匿名版",
-    "www": [
-      {
-        "title": "串",
-        "docs": "https://docs.rsshub.app/routes/bbs#x-dao-ni-ming-ban",
-        "source": [
-          "/Forum/timeline/id/:id",
-          "/f/:id"
-        ],
-        "target": "/nmbxd1/:id"
-      }
-    ]
-  },
   "nmtv.cn": {
     "_name": "内蒙古广播电视台",
     ".": [
@@ -21106,12 +20791,6 @@
           "/books/best-sellers/"
         ],
         "target": "/nytimes/book/:category"
-      },
-      {
-        "title": "作者新闻",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#niu-yue-shi-bao",
-        "source": "/by/:byline",
-        "target": "/nytimes/author/:byline"
       },
       {
         "title": "新闻",
@@ -22082,19 +21761,6 @@
       }
     ]
   },
-  "pmthinking.com": {
-    "_name": "产品沉思录",
-    ".": [
-      {
-        "title": "首页",
-        "docs": "https://docs.rsshub.app/routes/new-media#chan-pin-chen-si-lu-shou-ye",
-        "source": [
-          "/"
-        ],
-        "target": "/pmthinking"
-      }
-    ]
-  },
   "pnas.org": {
     "_name": "Proceedings of the National Academy of Sciences",
     ".": [
@@ -22105,35 +21771,6 @@
           "/*topicPath"
         ],
         "target": "/pnas/:topicPath"
-      }
-    ]
-  },
-  "polkadot.network": {
-    "_name": "Polkadot",
-    ".": [
-      {
-        "title": "Blog",
-        "docs": "https://docs.rsshub.app/routes/blog#polkadot",
-        "source": [
-          "/",
-          "/blog/",
-          "/blog/*"
-        ],
-        "target": "/polkadot/blog"
-      }
-    ]
-  },
-  "polkaworld.org": {
-    "_name": "PolkaWorld",
-    "www": [
-      {
-        "title": "最新资讯",
-        "docs": "https://docs.rsshub.app/routes/blog#polkaworld",
-        "source": [
-          "/",
-          "/articles/:name"
-        ],
-        "target": "/polkaworld/newest"
       }
     ]
   },
@@ -22196,18 +21833,6 @@
           "/"
         ],
         "target": "/postman/release-notes"
-      }
-    ]
-  },
-  "prestige-av.com": {
-    "_name": "Prestige 蚊香社",
-    ".": [
-      {
-        "title": "系列作品",
-        "docs": "https://docs.rsshub.app/routes/multimedia#prestige-wen-xiang-she",
-        "source": [
-          "/goods/goods_list.php"
-        ]
       }
     ]
   },
@@ -22377,32 +22002,6 @@
       }
     ]
   },
-  "qdaily.com": {
-    "_name": "好奇心日报",
-    ".": [
-      {
-        "title": "标签",
-        "docs": "https://docs.rsshub.app/routes/new-media#hao-qi-xin-ri-bao",
-        "source": [
-          "/tags/:id"
-        ]
-      },
-      {
-        "title": "栏目",
-        "docs": "https://docs.rsshub.app/routes/new-media#hao-qi-xin-ri-bao",
-        "source": [
-          "/special_columns/:id"
-        ]
-      },
-      {
-        "title": "分类",
-        "docs": "https://docs.rsshub.app/routes/new-media#hao-qi-xin-ri-bao",
-        "source": [
-          "/categories/:id"
-        ]
-      }
-    ]
-  },
   "qdu.edu.cn": {
     "_name": "青岛大学",
     "jwc": [
@@ -22414,18 +22013,6 @@
           "/"
         ],
         "target": "/qdu/jwc"
-      }
-    ]
-  },
-  "qianp.com": {
-    "_name": "千篇网",
-    ".": [
-      {
-        "title": "知识库／资讯",
-        "docs": "https://docs.rsshub.app/routes/new-media#qian-pian-wang",
-        "source": [
-          "/*path"
-        ]
       }
     ]
   },
@@ -22679,13 +22266,6 @@
   },
   "qq.com": {
     "_name": "腾讯",
-    "egame": [
-      {
-        "title": "企鹅电竞直播间",
-        "docs": "https://docs.rsshub.app/routes/live#qi-e-dian-jing-zhi-bo-jian-kai-bo",
-        "source": "/:id"
-      }
-    ],
     "mp.weixin": [
       {
         "title": "微信公众号栏目",
@@ -22725,19 +22305,6 @@
           "/"
         ],
         "target": "/tencent/pvp/newsindex/all"
-      }
-    ],
-    "v": [
-      {
-        "title": "视频 - 播放列表",
-        "docs": "https://docs.rsshub.app/routes/multimedia#teng-xun-shi-pin",
-        "source": "/x/cover/:id"
-      },
-      {
-        "title": "视频 - 播放列表",
-        "docs": "https://docs.rsshub.app/routes/multimedia#teng-xun-shi-pin",
-        "source": "/x/cover/:id/:detail",
-        "target": "/tencentvideo/playlist/:id"
       }
     ],
     "wiki.connect": [
@@ -22878,20 +22445,6 @@
           "/"
         ],
         "target": "/radio-canada/latest/:language?"
-      }
-    ]
-  },
-  "radiofrance.fr": {
-    "_name": "Radio France",
-    "www": [
-      {
-        "title": "Géopolitique",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#fa-guo-guang-bo-dian-tai",
-        "source": [
-          "/franceinter/podcasts/geopolitique",
-          "/"
-        ],
-        "target": "/radiofrance/geopolitique"
       }
     ]
   },
@@ -24785,19 +24338,6 @@
       }
     ]
   },
-  "shuiguopai.com": {
-    "_name": "水果派",
-    ".": [
-      {
-        "title": "首页",
-        "docs": "https://docs.rsshub.app/routes/new-media#shui-guo-pai-shou-ye",
-        "source": [
-          "/"
-        ],
-        "target": "/shuiguopai"
-      }
-    ]
-  },
   "sicau.edu.cn": {
     "_name": "",
     "dky": [
@@ -25591,6 +25131,19 @@
       }
     ]
   },
+  "sspu.edu.cn": {
+    "_name": "上海第二工业大学",
+    "jwc": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/university#shang-hai-di-er-gong-ye-da-xue",
+        "source": [
+          "/jwc/:listId/list.htm"
+        ],
+        "target": "/sspu/jwc/:listId"
+      }
+    ]
+  },
   "startuplatte.com": {
     "_name": "創新拿鐵",
     ".": [
@@ -25708,6 +25261,15 @@
           "/"
         ],
         "target": "/storyfm/episodes"
+      }
+    ]
+  },
+  "stratechery.com": {
+    "_name": "Stratechery by Ben Thompson",
+    "blog": [
+      {
+        "title": "Articles",
+        "docs": "https://docs.rsshub.app/routes/en/blog#stratechery-by-ben-thompson"
       }
     ]
   },
@@ -26176,17 +25738,6 @@
       }
     ]
   },
-  "taiwannews.com.tw": {
-    "_name": "台灣英文新聞",
-    ".": [
-      {
-        "title": "最新熱門消息",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#tai-wan-ying-wen-xin-wen",
-        "source": "/:lang/index",
-        "target": "/taiwannews/hot/:lang"
-      }
-    ]
-  },
   "tangshufang.com": {
     "_name": "唐书房",
     ".": [
@@ -26449,20 +26000,6 @@
         "docs": "https://docs.rsshub.app/routes/social-media#telegram-telegram-blog",
         "source": "/blog",
         "target": "/telegram/blog"
-      }
-    ]
-  },
-  "tencent.com": {
-    "_name": "腾讯云",
-    ".": [
-      {
-        "title": "云+社区专栏",
-        "docs": "https://docs.rsshub.app/routes/programming#teng-xun-yun-yun-she-qu-zhuan-lan",
-        "source": [
-          "/developer/column/:id",
-          "/developer/column/:id/:tag",
-          "/"
-        ]
       }
     ]
   },
@@ -26798,15 +26335,6 @@
           "/"
         ],
         "target": "/thenewslens/review/:sort?"
-      },
-      {
-        "title": "影音",
-        "docs": "https://docs.rsshub.app/routes/new-media#the-news-lens-guan-jian-ping-lun",
-        "source": [
-          "/videos/Projects/:sort?",
-          "/"
-        ],
-        "target": "/thenewslens/videos/Projects/:sort?"
       }
     ]
   },
@@ -27507,6 +27035,14 @@
           "/n/:id"
         ],
         "target": "/tophub/:id"
+      },
+      {
+        "title": "榜单列表",
+        "docs": "https://docs.rsshub.app/routes/new-media#jin-ri-re-bang-bang-dan-lie-biao",
+        "source": [
+          "/n/:id"
+        ],
+        "target": "/tophub/list/:id"
       }
     ]
   },
@@ -27660,6 +27196,16 @@
         "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
         "source": "/column/:id",
         "target": "/zhihu/zhuanlan/:id"
+      },
+      {
+        "title": "xhu - 用户动态",
+        "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
+        "source": "/people/:id"
+      },
+      {
+        "title": "xhu - 用户回答",
+        "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
+        "source": "/people/:id/answers"
       },
       {
         "title": "xhu - 收藏夹",
@@ -27826,22 +27372,6 @@
           "/"
         ],
         "target": "/twreporter/newest"
-      },
-      {
-        "title": "摄影",
-        "docs": "https://docs.rsshub.app/routes/new-media#bao-dao-zhe",
-        "source": [
-          "/photography"
-        ],
-        "target": "/twreporter"
-      },
-      {
-        "title": "分类",
-        "docs": "https://docs.rsshub.app/routes/new-media#bao-dao-zhe",
-        "source": [
-          "/categories/:tid"
-        ],
-        "target": "/twreporter/category/:tid"
       }
     ]
   },
@@ -28594,17 +28124,6 @@
       }
     ]
   },
-  "verse.com.tw": {
-    "_name": "VERSE",
-    "www": [
-      {
-        "title": "專文",
-        "docs": "https://docs.rsshub.app/routes/new-media#verse",
-        "source": "/articles/:category?",
-        "target": "/verse/articles/:category?"
-      }
-    ]
-  },
   "vimeo.com": {
     "_name": "Vimeo",
     ".": [
@@ -28636,17 +28155,6 @@
           "/categories/:category/:subcategory",
           "/categories/:category/:subcategory/videos"
         ]
-      }
-    ]
-  },
-  "vlive.tv": {
-    "_name": "V LIVE",
-    ".": [
-      {
-        "title": "Board",
-        "docs": "https://docs.rsshub.app/routes/en/live#v-live",
-        "source": "/channel/:board/board/:board",
-        "target": "/vlive/channel/:board/board/:board"
       }
     ]
   },
@@ -28789,20 +28297,6 @@
       }
     ]
   },
-  "wangqiutiyu.com": {
-    "_name": "旺球体育",
-    ".": [
-      {
-        "title": "直播间开播",
-        "docs": "https://docs.rsshub.app/routes/live#wang-qiu-ti-yu-zhi-bo-jian-kai-bo",
-        "source": [
-          "/anchor/:id",
-          "/"
-        ],
-        "target": "/wangqiutiyu/anchor/:id"
-      }
-    ]
-  },
   "wanqu.co": {
     "_name": "湾区日报",
     ".": [
@@ -28827,19 +28321,6 @@
           "/"
         ],
         "target": "/warthunder/news"
-      }
-    ]
-  },
-  "watchout.tw": {
-    "_name": "沃草",
-    ".": [
-      {
-        "title": "文件列表",
-        "docs": "https://docs.rsshub.app/routes/new-media#wo-cao-wen-jian-lie-biao",
-        "source": [
-          "/"
-        ],
-        "target": "/watchout"
       }
     ]
   },
@@ -29141,38 +28622,6 @@
         "docs": "https://docs.rsshub.app/routes/government#shi-jie-wei-sheng-zu-zhi-who",
         "source": "/director-general/speeches",
         "target": "/who/speeches"
-      }
-    ]
-  },
-  "whoscall.com": {
-    "_name": "Whoscall",
-    ".": [
-      {
-        "title": "最新文章",
-        "docs": "https://docs.rsshub.app/routes/blog#whoscall-zui-xin-wen-zhang",
-        "source": [
-          "/zh-hant/blog/articles",
-          "/"
-        ],
-        "target": "/whoscall"
-      },
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/blog#whoscall-fen-lei",
-        "source": [
-          "/zh-hant/blog/categories/:category",
-          "/"
-        ],
-        "target": "/whoscall/categories/:category?"
-      },
-      {
-        "title": "標籤",
-        "docs": "https://docs.rsshub.app/routes/blog#whoscall-biao-qian",
-        "source": [
-          "/zh-hant/blog/tags/:tag",
-          "/"
-        ],
-        "target": "/whoscall/tags/:tag?"
       }
     ]
   },
@@ -29667,28 +29116,12 @@
         "target": "/woshipm/popular"
       },
       {
-        "title": "用户收藏",
-        "docs": "https://docs.rsshub.app/routes/new-media#ren-ren-dui-shi-chan-pin-jing-li",
-        "source": [
-          "/u/:id"
-        ],
-        "target": "/woshipm/bookmarks/:id"
-      },
-      {
         "title": "用户文章",
         "docs": "https://docs.rsshub.app/routes/new-media#ren-ren-dui-shi-chan-pin-jing-li",
         "source": [
           "/u/:id"
         ],
         "target": "/woshipm/user_article/:id"
-      },
-      {
-        "title": "最新文章",
-        "docs": "https://docs.rsshub.app/routes/new-media#ren-ren-dui-shi-chan-pin-jing-li",
-        "source": [
-          "/"
-        ],
-        "target": "/woshipm/latest"
       }
     ],
     "wen": [
@@ -29699,19 +29132,6 @@
           "/"
         ],
         "target": "/woshipm/wen"
-      }
-    ]
-  },
-  "wp-china.com": {
-    "_name": "中国工人出版社",
-    ".": [
-      {
-        "title": "新闻中心",
-        "docs": "https://docs.rsshub.app/routes/new-media#zhong-guo-gong-ren-chu-ban-she",
-        "source": [
-          "/"
-        ],
-        "target": "/wp-china/news"
       }
     ]
   },
@@ -29763,18 +29183,6 @@
       {
         "title": "信息门户公告",
         "docs": "https://docs.rsshub.app/routes/university#wu-han-fang-zhi-da-xue"
-      }
-    ]
-  },
-  "wxkol.com": {
-    "_name": "微小领",
-    ".": [
-      {
-        "title": "微信公众号",
-        "docs": "https://docs.rsshub.app/routes/new-media#wei-xiao-ling",
-        "source": [
-          "/show/:id"
-        ]
       }
     ]
   },
@@ -30348,18 +29756,6 @@
       }
     ]
   },
-  "xwlb.com.cn": {
-    "_name": "羊城晚报金羊网",
-    ".": [
-      {
-        "title": "新闻",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#yang-cheng-wan-bao-jin-yang-wang",
-        "source": [
-          "/"
-        ]
-      }
-    ]
-  },
   "xys.org": {
     "_name": "新语丝",
     ".": [
@@ -30474,16 +29870,15 @@
       }
     ]
   },
-  "yaohuo.me": {
-    "_name": "妖火",
+  "xwlb.com.cn": {
+    "_name": "羊城晚报金羊网",
     ".": [
       {
-        "title": "首页",
-        "docs": "https://docs.rsshub.app/routes/new-media#yao-huo-shou-ye",
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#yang-cheng-wan-bao-jin-yang-wang",
         "source": [
           "/"
-        ],
-        "target": "/yaohuo"
+        ]
       }
     ]
   },
@@ -30800,21 +30195,6 @@
         "source": [
           "/materials"
         ]
-      }
-    ]
-  },
-  "yunspe.com": {
-    "_name": "云奇网",
-    ".": [
-      {
-        "title": "微语简报",
-        "docs": "https://docs.rsshub.app/routes/new-media#wei-yu-jian-bao",
-        "source": [
-          "/newsflashes/微语简报",
-          "/newsflashes",
-          "/"
-        ],
-        "target": "/yunspe/newsflashes"
       }
     ]
   },
@@ -31554,25 +30934,6 @@
       }
     ]
   },
-  "zoo.team": {
-    "_name": "政采云前端技术团队",
-    "weekly": [
-      {
-        "title": "小报",
-        "docs": "https://docs.rsshub.app/routes/blog#zheng-cai-yun-qian-duan-ji-shu-tuan-dui",
-        "source": "/",
-        "target": "/zooTeam/weekly"
-      }
-    ],
-    "www": [
-      {
-        "title": "博客",
-        "docs": "https://docs.rsshub.app/routes/blog#zheng-cai-yun-qian-duan-ji-shu-tuan-dui",
-        "source": "/",
-        "target": "/zooTeam/blog"
-      }
-    ]
-  },
   "zotero.org": {
     "_name": "Zotero",
     ".": [
@@ -31611,19 +30972,6 @@
           "/student5/chickenM/articles/:board",
           "/student5/chickenM/articles"
         ]
-      }
-    ]
-  },
-  "zuzhirenshi.com": {
-    "_name": "组织人事报",
-    ".": [
-      {
-        "title": "日报",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#zu-zhi-ren-shi-bao",
-        "source": [
-          "/dianzibao/*"
-        ],
-        "target": "/zuzhirenshi"
       }
     ]
   },
@@ -31903,17 +31251,6 @@
       }
     ]
   },
-  "itslide.com": {
-    "_name": "ITSlide",
-    "www": [
-      {
-        "title": "最新",
-        "docs": "https://docs.rsshub.app/routes/programming#itslide",
-        "source": "/*",
-        "target": "/itslide/new"
-      }
-    ]
-  },
   "leboncoin.fr": {
     "_name": "leboncoin",
     "www": [
@@ -31930,16 +31267,6 @@
       {
         "title": "招聘信息",
         "docs": "https://docs.rsshub.app/routes/other#yuan-cheng-work",
-        "source": "/:caty"
-      }
-    ]
-  },
-  "chinatimes.com": {
-    "_name": "中時電子報",
-    "www": [
-      {
-        "title": "新聞",
-        "docs": "https://docs.rsshub.app/routes/traditional-media#zhong-shi-dian-zi-bao",
         "source": "/:caty"
       }
     ]
@@ -31965,17 +31292,6 @@
       }
     ]
   },
-  "xiaomi.cn": {
-    "_name": "小米社区",
-    "www": [
-      {
-        "title": "圈子",
-        "docs": "https://docs.rsshub.app/routes/bbs#xiao-mi-she-qu",
-        "source": "/board/:boardId",
-        "target": "/mi/bbs/board/:boardId"
-      }
-    ]
-  },
   "suzhou.gov.cn": {
     "_name": "苏州市政府",
     "www": [
@@ -31984,35 +31300,6 @@
         "docs": "https://docs.rsshub.app/routes/government#su-zhou-shi-ren-min-zheng-fu",
         "source": "/szsrmzf/:uid/nav_list.shtml",
         "target": "/gov/suzhou/news/:uid"
-      }
-    ]
-  },
-  "mqube.net": {
-    "_name": "MQube",
-    "www": [
-      {
-        "title": "全站最近更新",
-        "docs": "https://docs.rsshub.app/routes/multimedia#mqube",
-        "source": "/",
-        "target": "/mqube/latest"
-      },
-      {
-        "title": "全站每日排行",
-        "docs": "https://docs.rsshub.app/routes/multimedia#mqube",
-        "source": "/",
-        "target": "/mqube/top"
-      },
-      {
-        "title": "个人最近更新",
-        "docs": "https://docs.rsshub.app/routes/multimedia#mqube",
-        "source": "/user/:user",
-        "target": "/mqube/user/:user"
-      },
-      {
-        "title": "标签最近更新",
-        "docs": "https://docs.rsshub.app/routes/multimedia#mqube",
-        "source": "/search/tag/:tag",
-        "target": "/mqube/tag/:tag"
       }
     ]
   },
@@ -32042,40 +31329,6 @@
         "docs": "https://docs.rsshub.app/routes/multimedia#last-fm",
         "source": "/charts",
         "target": "/lastfm/top"
-      }
-    ]
-  },
-  "ddrk.me": {
-    "_name": "低端影视",
-    "www": [
-      {
-        "title": "首页",
-        "docs": "https://docs.rsshub.app/routes/multimedia#di-duan-ying-shi",
-        "source": "/",
-        "target": "/ddrk/index"
-      },
-      {
-        "title": "标签",
-        "docs": "https://docs.rsshub.app/routes/multimedia#di-duan-ying-shi",
-        "source": "/tag/:tag",
-        "target": "/ddrk/tag/:tag"
-      },
-      {
-        "title": "分类",
-        "docs": "https://docs.rsshub.app/routes/multimedia#di-duan-ying-shi",
-        "source": [
-          "/category/:category",
-          "/category/:uplevel/:category"
-        ],
-        "target": "/ddrk/category/:category"
-      },
-      {
-        "title": "影视剧集更新",
-        "docs": "https://docs.rsshub.app/routes/multimedia#di-duan-ying-shi",
-        "source": [
-          "/:name",
-          "/:name/:season"
-        ]
       }
     ]
   },
@@ -32385,16 +31638,6 @@
       }
     ]
   },
-  "popiapp.cn": {
-    "_name": "Popi 提问箱",
-    "www": [
-      {
-        "title": "提问箱新回答",
-        "docs": "https://docs.rsshub.app/routes/social-media#popi-ti-wen-xiang",
-        "source": "/:id"
-      }
-    ]
-  },
   "nppa.gov.cn": {
     "_name": "国家新闻出版署",
     "www": [
@@ -32454,70 +31697,6 @@
         "title": "最热主题",
         "docs": "https://docs.rsshub.app/routes/bbs#wen-xue-cheng-zui-re-zhu-ti",
         "source": "/?cid=*"
-      }
-    ]
-  },
-  "buaq.net": {
-    "_name": "不安全资讯",
-    ".": [
-      {
-        "title": "不安全资讯",
-        "docs": "http://docs.rsshub.app/routes/new-media#bu-an-quan",
-        "source": "/",
-        "target": "/buaq"
-      }
-    ]
-  },
-  "jian-ning.com": {
-    "_name": "建宁闲谈",
-    ".": [
-      {
-        "title": "文章",
-        "docs": "https://docs.rsshub.app/routes/blog#jian-ning-xian-tan",
-        "source": "/*",
-        "target": "/blogs/jianning"
-      }
-    ]
-  },
-  "matataki.io": {
-    "_name": "matataki",
-    "www": [
-      {
-        "title": "最热作品",
-        "docs": "https://docs.rsshub.app/routes/new-media#matataki",
-        "source": "/article/",
-        "target": "/matataki/posts/hot"
-      },
-      {
-        "title": "最新作品",
-        "docs": "https://docs.rsshub.app/routes/new-media#matataki",
-        "source": "/article/latest",
-        "target": "/matataki/posts/latest"
-      },
-      {
-        "title": "作者创作",
-        "docs": "https://docs.rsshub.app/routes/new-media#matataki",
-        "source": "/user/:uid"
-      },
-      {
-        "title": "Fan票关联作品",
-        "docs": "https://docs.rsshub.app/routes/new-media#matataki",
-        "source": [
-          "/token/:tokenId",
-          "/token/:tokenId/circle"
-        ]
-      },
-      {
-        "title": "标签关联作品",
-        "docs": "https://docs.rsshub.app/routes/new-media#matataki",
-        "source": [
-          "/tag/:tagId"
-        ]
-      },
-      {
-        "title": "收藏夹",
-        "docs": "https://docs.rsshub.app/routes/new-media#matataki",
-        "source": "/user/:uid/favlist/:fid"
       }
     ]
   },
