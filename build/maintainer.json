@@ -976,6 +976,9 @@
     "/bsky/keyword/:keyword": [
         "untitaker"
     ],
+    "/bsky/profile/:handle": [
+        "TonyRL"
+    ],
     "/btzj/:category?": [
         "nczitzk"
     ],
@@ -2770,6 +2773,9 @@
     "/gov/mohurd/policy": [],
     "/gov/moj/aac/news/:type?": [
         "TonyRL"
+    ],
+    "/gov/moj/lfyjzj": [
+        "la3rence"
     ],
     "/gov/mot/:category?": [
         "nczitzk"
@@ -5048,6 +5054,9 @@
     "/panewslab/topic/:id": [
         "nczitzk"
     ],
+    "/papers/:category?": [
+        "nczitzk"
+    ],
     "/paradigm/writing": [
         "Fatpandac"
     ],
@@ -5446,7 +5455,8 @@
     ],
     "/qutoutiao/category/:cid": [],
     "/qweather/3days/:location": [
-        "Rein-Ou"
+        "Rein-Ou",
+        "la3rence"
     ],
     "/qweather/now/:location": [
         "Rein-Ou"

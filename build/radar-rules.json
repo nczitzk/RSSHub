@@ -4009,6 +4009,12 @@
         "title": "关键词",
         "docs": "https://docs.rsshub.app/routes/social-media#bluesky-bsky",
         "source": "/search"
+      },
+      {
+        "title": "Post",
+        "docs": "https://docs.rsshub.app/routes/social-media#bluesky-bsky",
+        "source": "/profile/:handle",
+        "target": "/bsky/profile/:handle"
       }
     ]
   },
@@ -12046,6 +12052,20 @@
         "source": [
           "/article/*"
         ]
+      }
+    ]
+  },
+  "moj.gov.cn": {
+    "_name": "中华人民共和国司法部",
+    "www": [
+      {
+        "title": "立法意见征集",
+        "docs": "https://docs.rsshub.app/routes/government#zhong-hua-ren-min-gong-he-guo-si-fa-bu",
+        "source": [
+          "/lfyjzj/lflfyjzj/*",
+          "/pub/sfbgw/lfyjzj/lflfyjzj/*"
+        ],
+        "target": "/gov/moj/lfyjzj"
       }
     ]
   },
@@ -22953,6 +22973,18 @@
         "docs": "https://docs.rsshub.app/routes/new-media#panews-zhuan-ti",
         "source": "/",
         "target": "/panewslab/topic/:id"
+      }
+    ]
+  },
+  "papers.cool": {
+    "_name": "Cool Papers",
+    ".": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/journal#cool-papers-category",
+        "source": [
+          "/:category*"
+        ]
       }
     ]
   },
