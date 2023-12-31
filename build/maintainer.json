@@ -4052,6 +4052,12 @@
         "auto-bot-ty"
     ],
     "/lifetimes/:category?": [],
+    "/lifeweek/channel/:channel": [
+        "changren-wcr"
+    ],
+    "/lifeweek/tag/:tag": [
+        "changren-wcr"
+    ],
     "/lightnovel/:keywords/:security_key?": [
         "nightmare-mio"
     ],
@@ -4289,6 +4295,9 @@
         "Derekmini"
     ],
     "/mediadigest/:range/:category?": [],
+    "/medieval-china": [
+        "artefaritaKuniklo"
+    ],
     "/medium/following/:user": [
         "ImSingee"
     ],
@@ -4523,6 +4532,9 @@
     ],
     "/nber/news": [
         "5upernova-heng"
+    ],
+    "/ncc-cma/cmdp/image/:id?": [
+        "nczitzk"
     ],
     "/ncepu/master/:type": [
         "nilleo"
@@ -5797,8 +5809,9 @@
         "gumibea",
         "TeamSUEP"
     ],
-    "/shmeea": [
-        "jialinghui"
+    "/shmeea/:id?": [
+        "jialinghui",
+        "Misaka13514"
     ],
     "/shmeea/self-study": [
         "h2ws"
