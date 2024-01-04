@@ -582,6 +582,9 @@
         "TonyRL"
     ],
     "/babykingdom/:id/:order?": [],
+    "/backlinko/blog": [
+        "TonyRL"
+    ],
     "/bad/:path+": [
         "nczitzk"
     ],
@@ -5016,6 +5019,15 @@
     "/osu/packs/:type?": [
         "JimenezLi"
     ],
+    "/otobanana/user/:id": [
+        "TonyRL"
+    ],
+    "/otobanana/user/:id/cast": [
+        "TonyRL"
+    ],
+    "/otobanana/user/:id/livestream": [
+        "TonyRL"
+    ],
     "/ouc/it/:type?": [
         "GeoffreyChen777",
         "3401797899"
@@ -7313,6 +7325,9 @@
     ],
     "/yicai/brief": [
         "sanmmm",
+        "nczitzk"
+    ],
+    "/yicai/dt/:column?/:category?": [
         "nczitzk"
     ],
     "/yicai/feed/:id?": [
