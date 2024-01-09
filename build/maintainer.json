@@ -288,6 +288,9 @@
         "SunBK201"
     ],
     "/acm/amturingaward": [],
+    "/acpaa/:id?/:name?": [
+        "nczitzk"
+    ],
     "/acs/journal/:id": [
         "nczitzk"
     ],
@@ -1587,7 +1590,9 @@
         "Rjnishant530"
     ],
     "/dailyart/:language?": [],
-    "/damai/activity/:city/:category/:subcategory/:keyword?": [],
+    "/damai/activity/:city/:category/:subcategory/:keyword?": [
+        "hoilc"
+    ],
     "/daodu/:caty?": [],
     "/dapenti/subject/:id": [
         "xyqfer"

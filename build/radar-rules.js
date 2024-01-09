@@ -1091,6 +1091,17 @@
         docs:"https://docs.rsshub.app/routes/anime#acg17",
         source:[ "/post" ],
         target:"/acg17/post/all" } ] },
+  "acpaa.cn":{ _name:"中华全国专利代理师协会",
+    ".":[ { title:"文章",
+        docs:"https://docs.rsshub.app/routes/other#zhong-hua-quan-guo-zhuan-li-dai-li-shi-xie-hui",
+        source:[ "/article/taglist.jhtml" ],
+        target:(url) => {
+                    url = new URL(url);
+                    const id = url.searchParams.get('id');
+                    const name = url.searchParams.get('name');
+
+                    return `/acpaa${id ? `/${id}${name ? `/${name}` : ''}` : ''}`;
+                } } ] },
   "acs.org":{ _name:"American Chemistry Society",
     pubs:[ { title:"Journal",
         docs:"https://docs.rsshub.app/routes/journal#american-chemistry-society",
@@ -3856,6 +3867,11 @@
         docs:"https://docs.rsshub.app/routes/en/social-media#daily.dev",
         source:[ "/popular" ],
         target:"/daily" } ] },
+  "damai.cn":{ _name:"大麦网",
+    search:[ { title:"票务更新",
+        docs:"https://docs.rsshub.app/routes/shopping#da-mai-wang",
+        source:[ "/search.html" ],
+        target:(_params, url) => `/damai/activity/全部/全部/全部/${new URL(url).searchParams.get('keyword') || ''}` } ] },
   "dapenti.com":{ _name:"喷嚏",
     ".":[ { title:"图卦",
         docs:"https://docs.rsshub.app/routes/picture#pen-ti",

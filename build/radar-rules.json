@@ -1844,6 +1844,18 @@
       }
     ]
   },
+  "acpaa.cn": {
+    "_name": "中华全国专利代理师协会",
+    ".": [
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-hua-quan-guo-zhuan-li-dai-li-shi-xie-hui",
+        "source": [
+          "/article/taglist.jhtml"
+        ]
+      }
+    ]
+  },
   "acs.org": {
     "_name": "American Chemistry Society",
     "pubs": [
@@ -7151,6 +7163,18 @@
           "/popular"
         ],
         "target": "/daily"
+      }
+    ]
+  },
+  "damai.cn": {
+    "_name": "大麦网",
+    "search": [
+      {
+        "title": "票务更新",
+        "docs": "https://docs.rsshub.app/routes/shopping#da-mai-wang",
+        "source": [
+          "/search.html"
+        ]
       }
     ]
   },
