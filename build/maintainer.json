@@ -85,6 +85,9 @@
     "/19lou/:city?": [
         "nczitzk"
     ],
+    "/1lou/:path?": [
+        "falling"
+    ],
     "/1point3acres/blog/:category?": [
         "nczitzk"
     ],
@@ -2088,6 +2091,9 @@
         "yindaheng98",
         "syrinka"
     ],
+    "/ekantipur/:channel?": [
+        "maniche04"
+    ],
     "/elasticsearch-cn/:params?": [
         "nczitzk"
     ],
@@ -2843,7 +2849,7 @@
         "Fatpandac"
     ],
     "/gov/province/:name/:category": [],
-    "/gov/safe/bussiness/:site?": [
+    "/gov/safe/business/:site?": [
         "nczitzk"
     ],
     "/gov/safe/complaint/:site?": [
@@ -3250,6 +3256,9 @@
     "/houxu/memory": [
         "nczitzk"
     ],
+    "/hoyolab/news/:language/:gids/:type": [
+        "ZenoTian"
+    ],
     "/hpoi/bannerItem": [
         "DIYgod"
     ],
@@ -3298,6 +3307,9 @@
     ],
     "/hubu/news/:type": [],
     "/hudongba/:city/:id": [],
+    "/huggingface/blog-zh": [
+        "zcf0508"
+    ],
     "/huggingface/daily-papers": [
         "zeyugao"
     ],
@@ -4982,6 +4994,9 @@
     "/one": [],
     "/onejav/:type/:key?": [],
     "/onenotegem/release": [],
+    "/onet/news": [
+        "Vegann"
+    ],
     "/oo-software/changelog/:id": [
         "nczitzk"
     ],
@@ -6500,7 +6515,7 @@
         "aether17"
     ],
     "/tianyancha/hot": [],
-    "/tiktok/user/:user": [
+    "/tiktok/user/:user/:iframe?": [
         "TonyRL"
     ],
     "/timednews/news/:type?": [
@@ -6619,6 +6634,9 @@
     "/treasury/press-releases/:category?/:title?": [],
     "/trending/:keywords/:numberOfDays?": [
         "Jkker"
+    ],
+    "/trendingpapers/papers/:category?/:time?/:cited?": [
+        "CookiePieWw"
     ],
     "/tribalfootball": [
         "Rongronggg9"

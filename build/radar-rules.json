@@ -1040,6 +1040,19 @@
       }
     ]
   },
+  "1lou.me": {
+    "_name": "BT之家 1LOU站",
+    ".": [
+      {
+        "title": "搜索",
+        "docs": "https://docs.rsshub.app/routes/multimedia#bt-zhi-jia-1lou-zhan",
+        "source": [
+          "/:path"
+        ],
+        "target": "/1lou/:path"
+      }
+    ]
+  },
   "1point3acres.com": {
     "_name": "一亩三分地",
     "blog": [
@@ -8689,6 +8702,19 @@
       }
     ]
   },
+  "ekantipur.com": {
+    "_name": "Ekantipur",
+    ".": [
+      {
+        "title": "Full Article RSS",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#ekantipur-%E0%A4%95%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%AA%E0%A5%81%E0%A4%B0-nepal",
+        "source": [
+          "/:channel"
+        ],
+        "target": "/ekantipur/:channel"
+      }
+    ]
+  },
   "elasticsearch.cn": {
     "_name": "Elastic 中文社区",
     ".": [
@@ -14577,6 +14603,19 @@
       }
     ]
   },
+  "hoyolab.com": {
+    "_name": "HoYoLAB",
+    ".": [
+      {
+        "title": "活动公告资讯",
+        "docs": "https://docs.rsshub.app/routes/game#hoyolab-news",
+        "source": [
+          "/",
+          "/circles/:gid/:unknow/official"
+        ]
+      }
+    ]
+  },
   "hpoi.net": {
     "_name": "Hpoi手办维基",
     "www": [
@@ -14701,6 +14740,15 @@
           "/"
         ],
         "target": "/huggingface/daily-papers"
+      },
+      {
+        "title": "中文博客",
+        "docs": "https://docs.rsshub.app/routes/programming#huggingface",
+        "source": [
+          "/blog/zh",
+          "/"
+        ],
+        "target": "/huggingface/blog-zh"
       }
     ]
   },
@@ -23106,6 +23154,17 @@
       }
     ]
   },
+  "onet.pl": {
+    "_name": "Onet",
+    "wiadomosci": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/new-media#onet",
+        "source": "/",
+        "target": "/onet/news"
+      }
+    ]
+  },
   "oo-software.com": {
     "_name": "O&O Software",
     ".": [
@@ -29548,6 +29607,15 @@
         "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
         "source": "/*",
         "target": "/zhihu/daily"
+      }
+    ]
+  },
+  "trendingpapers.com": {
+    "_name": "trendingpapers",
+    ".": [
+      {
+        "title": "Trending Papers on arXiv",
+        "docs": "https://docs.rsshub.app/routes/journal#trending-papers-trending-papers-on-arxiv"
       }
     ]
   },
