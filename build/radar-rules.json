@@ -13414,6 +13414,17 @@
       }
     ]
   },
+  "suzhou.gov.cn": {
+    "_name": "苏州市政府",
+    "www": [
+      {
+        "title": "政府新闻",
+        "docs": "https://docs.rsshub.app/routes/government#su-zhou-shi-ren-min-zheng-fu",
+        "source": "/szsrmzf/:uid/nav_list.shtml",
+        "target": "/gov/suzhou/news/:uid"
+      }
+    ]
+  },
   "sz.gov.cn": {
     "_name": "深圳政府在线移动门户",
     "hrss": [
@@ -14608,7 +14619,7 @@
     ".": [
       {
         "title": "活动公告资讯",
-        "docs": "https://docs.rsshub.app/routes/game#hoyolab-news",
+        "docs": "https://docs.rsshub.app/routes/game#hoyolab",
         "source": [
           "/",
           "/circles/:gid/:unknow/official"
@@ -24082,6 +24093,23 @@
       }
     ]
   },
+  "playstation.com": {
+    "_name": "PlayStation Store",
+    "www": [
+      {
+        "title": "Monthly Games",
+        "docs": "https://docs.rsshub.app/routes/game#playstation-store",
+        "source": [
+          "/en-sg/ps-plus/whats-new"
+        ],
+        "target": "/ps/monthly-games"
+      },
+      {
+        "title": "User trophy",
+        "docs": "https://docs.rsshub.app/routes/game#playstation-store"
+      }
+    ]
+  },
   "pts.org.tw": {
     "_name": "公視新聞網 PNN",
     "news": [
@@ -29426,6 +29454,14 @@
           "/blog/:language/category/widgets/"
         ],
         "target": "/tradingview/blog/:language/category/widgets"
+      },
+      {
+        "title": "Desktop releases and release notes",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-desktop-releases-and-release-notes",
+        "source": [
+          "/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/"
+        ],
+        "target": "/tradingview/desktop"
       }
     ]
   },
@@ -33620,35 +33656,6 @@
       }
     ]
   },
-  "playstation.com": {
-    "_name": "PlayStation",
-    "store": [
-      {
-        "title": "游戏列表",
-        "docs": "https://docs.rsshub.app/routes/game#playstation",
-        "source": "/zh-hans-hk/grid/:id/:page",
-        "target": "/ps/list/:id"
-      },
-      {
-        "title": "折扣|价格",
-        "docs": "https://docs.rsshub.app/routes/game#playstation",
-        "source": [
-          "/:lang/product/:gridName"
-        ],
-        "target": "/ps/:lang/product/:gridName"
-      }
-    ],
-    "www": [
-      {
-        "title": "用户奖杯",
-        "docs": "https://docs.rsshub.app/routes/game#playstation"
-      },
-      {
-        "title": "系统更新纪录",
-        "docs": "https://docs.rsshub.app/routes/game#playstation"
-      }
-    ]
-  },
   "monsterhunter.com": {
     "_name": "怪物猎人世界",
     "www": [
@@ -33734,17 +33741,6 @@
         "title": "search",
         "docs": "https://docs.rsshub.app/routes/game#steam",
         "source": "/search/"
-      }
-    ]
-  },
-  "suzhou.gov.cn": {
-    "_name": "苏州市政府",
-    "www": [
-      {
-        "title": "政府新闻",
-        "docs": "https://docs.rsshub.app/routes/government#su-zhou-shi-ren-min-zheng-fu",
-        "source": "/szsrmzf/:uid/nav_list.shtml",
-        "target": "/gov/suzhou/news/:uid"
       }
     ]
   },

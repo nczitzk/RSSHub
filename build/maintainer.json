@@ -2906,8 +2906,16 @@
         "bigfei",
         "nczitzk"
     ],
-    "/gov/suzhou/doc": [],
-    "/gov/suzhou/news/:uid": [],
+    "/gov/suzhou/doc": [
+        "EsuRt"
+    ],
+    "/gov/suzhou/fg/:category?": [
+        "nczitzk"
+    ],
+    "/gov/suzhou/news/:uid": [
+        "EsuRt",
+        "luyuhuang"
+    ],
     "/gov/taiwan/mnd": [],
     "/gov/taiyuan/rsj/:caty/:page?": [
         "2PoL"
@@ -5329,10 +5337,12 @@
     ],
     "/project-zero-issues": [],
     "/proletar/:type?/:id?": [],
-    "/ps/:lang?/product/:gridName": [],
-    "/ps/list/:gridName": [],
-    "/ps/ps4updates": [],
-    "/ps/trophy/:id": [],
+    "/ps/monthly-games": [
+        "justjustCC"
+    ],
+    "/ps/trophy/:id": [
+        "DIYgod"
+    ],
     "/psnine/game": [],
     "/psnine/index": [],
     "/psnine/news/:order?": [],
@@ -6628,6 +6638,9 @@
     "/tprtc/news": [],
     "/tprtc/qyzc": [],
     "/tradingview/blog/:language?/category/:category?": [
+        "nczitzk"
+    ],
+    "/tradingview/desktop": [
         "nczitzk"
     ],
     "/trakt/collection/:username/:type?": [],
