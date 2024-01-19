@@ -4199,6 +4199,31 @@
           "/weekly/js",
           "/" ],
         target:"/docschina/jsweekly" } ] },
+  "dol.go.th":{ _name:"กรมที่ดิน (Thaland Department of Lands)",
+    announce:[ { title:"ประกาศกรมที่ดิน",
+        docs:"https://docs.rsshub.app/routes/government#thailand-department-of-lands-e-landsannouncement",
+        source:"/index.php",
+        target:(params, url, document) => {
+                    const queryParams = new URL(url).searchParams;
+                    let rssPath = '/dol/announce';
+                    if (!queryParams.has('searchconcerned')) {
+                        return rssPath;
+                    }
+
+                    rssPath += `/${encodeURIComponent(queryParams.get('searchconcerned'))}`;
+
+                    const province = document && document.querySelector('#searchprovince').value !== '' ? document.querySelector(`#searchprovince option[value="${document.querySelector('#searchprovince').value}"]`).text() : '';
+
+                    const office = document && document.querySelector('#searchoffice').value !== '' ? document.querySelector(`#searchoffice option[value="${document.querySelector('#searchoffice').value}"]`).text() : '';
+
+                    if (!province || !office) {
+                        return rssPath;
+                    }
+
+                    rssPath += `/${encodeURIComponent(province)}/${encodeURIComponent(office)}`;
+
+                    return rssPath;
+                } } ] },
   "domp4.cc":{ _name:"domp4电影",
     ".":[ { title:"最近更新",
         docs:"https://docs.rsshub.app/routes/multimedia#domp4-ying-shi",
@@ -10751,7 +10776,14 @@
         source:"/:location/news",
         target:"/mihoyo/sr/:location" } ] },
   "mihoyo.com":{ _name:"米哈游",
-    bbs:[ { title:"米游社 - 同人榜",
+    bbs:[ { title:"米游社 - 用户关注",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:"/:game/accountCenter/postList",
+        target:(params, url) => {
+            const uid = new URL(url).searchParams.get('id');
+            return `/mihoyo/bbs/follow-list/${uid}`;
+        } },
+      { title:"米游社 - 同人榜",
         docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
         source:"/:game/imgRanking/:forum_id/:ranking_id/:cate_id",
         target:"/mihoyo/bbs/img-ranking/:game" },
@@ -10764,24 +10796,31 @@
           "/:game/home/53",
           "/:game/home/58" ],
         target:(params, url) => {
-                    const GITS_MAP = {
-                        bh3: 1, // '崩坏三',
-                        ys: 2, // '原神',
-                        bh2: 3, // '崩坏二',
-                        wd: 4, // '未定事件簿',
-                        sr: 6, // '崩坏：星穹铁道',
-                        zzz: 8, // '绝区零'
-                    };
-                    const { game } = params;
-                    const gids = GITS_MAP[game];
-                    if (!gids) {
-                        return '';
-                    }
-                    const type = new URL(url).searchParams.get('type') || '1';
-                    const page_size = '20';
-                    const last_id = '';
-                    return `/mihoyo/bbs/official/${gids}/${type}/${page_size}/${last_id}`;
-                } } ],
+            const GITS_MAP = {
+                bh3: 1, // '崩坏三',
+                ys: 2, // '原神',
+                bh2: 3, // '崩坏二',
+                wd: 4, // '未定事件簿',
+                sr: 6, // '崩坏：星穹铁道',
+                zzz: 8, // '绝区零'
+            };
+            const { game } = params;
+            const gids = GITS_MAP[game];
+            if (!gids) {
+                return '';
+            }
+            const type = new URL(url).searchParams.get('type') || '1';
+            const page_size = '20';
+            const last_id = '';
+            return `/mihoyo/bbs/official/${gids}/${type}/${page_size}/${last_id}`;
+        } },
+      { title:"米游社 - 用户帖子",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:"/:game/accountCenter/postList",
+        target:(params, url) => {
+            const uid = new URL(url).searchParams.get('id');
+            return `/mihoyo/bbs/user-post/${uid}`;
+        } } ],
     sr:[ { title:"崩坏：星穹铁道 - 新闻",
         docs:"https://docs.rsshub.app/routes/game##mi-ha-you",
         source:"/news",
@@ -10790,6 +10829,52 @@
         docs:"https://docs.rsshub.app/routes/game##mi-ha-you",
         source:"/:location/news/:category",
         target:"/mihoyo/ys/:location/:category" } ] },
+  "miyoushe.com":{ _name:"米游社",
+    ".":[ { title:"米游社 - 用户关注",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:"/:game/accountCenter/postList",
+        target:(params, url) => {
+            const uid = new URL(url).searchParams.get('id');
+            return `/mihoyo/bbs/follow-list/${uid}`;
+        } },
+      { title:"米游社 - 同人榜",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:"/:game/imgRanking/:forum_id/:ranking_id/:cate_id",
+        target:"/mihoyo/bbs/img-ranking/:game" },
+      { title:"米游社 - 官方公告",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:[ "/:game/home/28",
+          "/:game/home/6",
+          "/:game/home/31",
+          "/:game/home/33",
+          "/:game/home/53",
+          "/:game/home/58" ],
+        target:(params, url) => {
+            const GITS_MAP = {
+                bh3: 1, // '崩坏三',
+                ys: 2, // '原神',
+                bh2: 3, // '崩坏二',
+                wd: 4, // '未定事件簿',
+                sr: 6, // '崩坏：星穹铁道',
+                zzz: 8, // '绝区零'
+            };
+            const { game } = params;
+            const gids = GITS_MAP[game];
+            if (!gids) {
+                return '';
+            }
+            const type = new URL(url).searchParams.get('type') || '1';
+            const page_size = '20';
+            const last_id = '';
+            return `/mihoyo/bbs/official/${gids}/${type}/${page_size}/${last_id}`;
+        } },
+      { title:"米游社 - 用户帖子",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:"/:game/accountCenter/postList",
+        target:(params, url) => {
+            const uid = new URL(url).searchParams.get('id');
+            return `/mihoyo/bbs/user-post/${uid}`;
+        } } ] },
   "mindmeister.com":{ _name:"MindMeister",
     ".":[ { title:"分类",
         docs:"https://docs.rsshub.app/routes/study#mindmeister",
@@ -12054,15 +12139,15 @@
         target:(params) => {
                     let type;
                     switch (params.type) {
-                        case 'cgxxhw':
-                        default:
-                            type = 'cgxx';
-                            break;
                         case 'cjgshw':
                             type = 'cjgs';
                             break;
                         case 'zfcgyxgk':
                             type = params.type;
+                            break;
+                        case 'cgxxhw':
+                        default:
+                            type = 'cgxx';
                             break;
                     }
                     return `/nju/zbb/${type}`;
@@ -15937,7 +16022,11 @@
       { title:"Desktop releases and release notes",
         docs:"https://docs.rsshub.app/routes/program-update#tradingview-desktop-releases-and-release-notes",
         source:[ "/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/" ],
-        target:"/tradingview/desktop" } ] },
+        target:"/tradingview/desktop" },
+      { title:"Pine Script™ Release notes",
+        docs:"https://docs.rsshub.app/routes/program-update#tradingview-pine-script%E2%84%A2-release-notes",
+        source:[ "/pine-script-docs/en/:version/Release_notes.html" ],
+        target:"/tradingview/pine/:version" } ] },
   "toutiao.com":{ _name:"今日头条",
     so:[ { title:"热搜关键词聚合追踪",
         docs:"https://docs.rsshub.app/routes/social-media#re-sou-ju-he",

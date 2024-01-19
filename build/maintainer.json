@@ -1794,6 +1794,9 @@
     "/docschina/jsweekly": [
         "daijinru"
     ],
+    "/dol/announce/:owner?/:province?/:office?": [
+        "itpcc"
+    ],
     "/domp4/detail/:id": [
         "savokiss"
     ],
@@ -2567,7 +2570,8 @@
         "TonyRL"
     ],
     "/google/citations/:id": [
-        "KellyHwong"
+        "KellyHwong",
+        "const7"
     ],
     "/google/doodles/:language?": [
         "xyqfer"
@@ -4398,10 +4402,16 @@
     "/micmicidol": [],
     "/micmicidol/search/:label": [],
     "/microsoft-store/updates/:productid/:market?": [],
+    "/mihoyo/bbs/follow-list/:uid": [
+        "CaoMeiYouRen"
+    ],
     "/mihoyo/bbs/img-ranking/:game/:routeParams?": [
         "CaoMeiYouRen"
     ],
     "/mihoyo/bbs/official/:gids/:type?/:page_size?/:last_id?": [
+        "CaoMeiYouRen"
+    ],
+    "/mihoyo/bbs/user-post/:uid": [
         "CaoMeiYouRen"
     ],
     "/mihoyo/bh2/:type": [],
@@ -5797,10 +5807,12 @@
         "p7e4"
     ],
     "/secrss/author/:author": [
-        "XinRoom"
+        "XinRoom",
+        "SunBK201"
     ],
     "/secrss/category/:category?": [
-        "XinRoom"
+        "XinRoom",
+        "SunBK201"
     ],
     "/secshi": [],
     "/security/pulses": [],
