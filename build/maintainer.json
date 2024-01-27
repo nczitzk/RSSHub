@@ -1279,6 +1279,9 @@
         "yanbot-team"
     ],
     "/chsi/zszcgd/:category?": [],
+    "/chuanliu/nice": [
+        "nczitzk"
+    ],
     "/chuapp/index/:category?": [],
     "/chuhaibiji": [],
     "/cia/foia-annual-report": [],
@@ -1401,6 +1404,9 @@
         "nczitzk"
     ],
     "/cnljxh/price/:id?": [
+        "nczitzk"
+    ],
+    "/cntheory/paper/:id?": [
         "nczitzk"
     ],
     "/cntv/:column": [
@@ -3980,6 +3986,9 @@
         "Dectinc",
         "DIYgod"
     ],
+    "/keepass": [
+        "TonyRL"
+    ],
     "/kemono/:source?/:id?": [
         "nczitzk"
     ],
@@ -4507,6 +4516,9 @@
     ],
     "/mrdx/today": [
         "Dustin-Jiang"
+    ],
+    "/mrm/:category?": [
+        "TonyRL"
     ],
     "/mubu/explore/:category?/:title?": [],
     "/muchong/:id/:type?/:sort?": [],

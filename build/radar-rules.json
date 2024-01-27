@@ -6051,6 +6051,19 @@
       }
     ]
   },
+  "chuanliu.org": {
+    "_name": "川流",
+    ".": [
+      {
+        "title": "严选",
+        "docs": "https://docs.rsshub.app/routes/blog#chuan-liu-yan-xuan",
+        "source": [
+          "/nice"
+        ],
+        "target": "/chuanliu/nice"
+      }
+    ]
+  },
   "ciidbnu.org": {
     "_name": "中国收入分配研究院",
     ".": [
@@ -6659,6 +6672,18 @@
           "/price"
         ],
         "target": "/cnljxh/price/2143"
+      }
+    ]
+  },
+  "cntheory.com": {
+    "_name": "理论网",
+    "paper": [
+      {
+        "title": "学习时报",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#li-lun-wang-xue-xi-shi-bao",
+        "source": [
+          "/"
+        ]
       }
     ]
   },
@@ -19018,6 +19043,20 @@
       }
     ]
   },
+  "keepass.info": {
+    "_name": "KeePass",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/program-update.html#keepass",
+        "source": [
+          "/news/news_all.html",
+          "/"
+        ],
+        "target": "/keepass/news"
+      }
+    ]
+  },
   "kemono.su": {
     "_name": "Kemono",
     ".": [
@@ -20918,6 +20957,18 @@
           "*"
         ],
         "target": "/mrdx/today"
+      }
+    ]
+  },
+  "mrm.com.cn": {
+    "_name": "华储网",
+    ".": [
+      {
+        "title": "通知",
+        "docs": "https://docs.rsshub.app/finance#hua-chu-wang",
+        "source": [
+          "/:category"
+        ]
       }
     ]
   },
