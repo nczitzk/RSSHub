@@ -575,6 +575,9 @@
     "/atcoder/post/:language?/:keyword?": [
         "nczitzk"
     ],
+    "/auto-stats/:category?": [
+        "nczitzk"
+    ],
     "/autotrader/:query": [],
     "/av01/actor/:name/:type?": [],
     "/av01/tag/:name/:type?": [],
@@ -1023,6 +1026,9 @@
     ],
     "/caai/:caty": [
         "tudou027"
+    ],
+    "/caam/:category?": [
+        "nczitzk"
     ],
     "/caareviews/book": [
         "Fatpandac"
@@ -4497,6 +4503,9 @@
         "TonyRL"
     ],
     "/modian/zhongchou/:category?/:sort?/:status?": [],
+    "/modrinth/project/:id/versions": [
+        "SettingDust"
+    ],
     "/mofish/:id": [],
     "/mohw/clarification": [
         "nczitzk"
@@ -5174,6 +5183,9 @@
         "Fatpandac"
     ],
     "/parcel/hermesuk/:tracking": [],
+    "/parliament/section77/:type?": [
+        "itpcc"
+    ],
     "/patagonia/patagonia/new-arrivals/:category": [
         "EthanWng97"
     ],
