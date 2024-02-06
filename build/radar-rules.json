@@ -25934,9 +25934,9 @@
         "title": "新华社新闻",
         "docs": "https://docs.rsshub.app/routes/new-media#xin-hua-wang-xin-hua-she-xin-wen",
         "source": [
-          "/"
+          "/xhsxw.htm"
         ],
-        "target": "/news/whxw"
+        "target": "/news/xhsxw"
       }
     ]
   },
@@ -27261,6 +27261,15 @@
         "source": [
           "/finnews/news_breaking.html"
         ]
+      }
+    ]
+  },
+  "onehu.xyz": {
+    "_name": "我不是盐神",
+    ".": [
+      {
+        "title": "我不是盐神",
+        "docs": "https://docs.rsshub.app/routes/new-media#wo-bu-shi-yan-shen"
       }
     ]
   },
@@ -33662,6 +33671,12 @@
         "docs": "https://docs.rsshub.app/routes/social-media#wei-bo",
         "source": "/p/:id/super_index",
         "target": "/weibo/super_index/:id"
+      },
+      {
+        "title": "最新关注时间线",
+        "docs": "https://docs.rsshub.app/routes/social-media#wei-bo",
+        "source": "/",
+        "target": "/weibo/friends"
       }
     ],
     "s": [

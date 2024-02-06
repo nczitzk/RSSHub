@@ -13744,8 +13744,8 @@
   "news.cn":{ _name:"新华网",
     ".":[ { title:"新华社新闻",
         docs:"https://docs.rsshub.app/routes/new-media#xin-hua-wang-xin-hua-she-xin-wen",
-        source:[ "/" ],
-        target:"/news/whxw" } ] },
+        source:[ "/xhsxw.htm" ],
+        target:"/news/xhsxw" } ] },
   "newsmarket.com.tw":{ _name:"上下游News&amp;Market",
     ".":[ { title:"分類",
         docs:"https://docs.rsshub.app/routes/new-media#shang-xia-you-news-market",
@@ -14557,6 +14557,9 @@
         docs:"https://docs.rsshub.app/routes/traditional-media#dong-wang",
         source:[ "/finnews/news_breaking.html" ],
         target:(params, url) => `/oncc/money18/${new URL(url).searchParams.get('section')}` } ] },
+  "onehu.xyz":{ _name:"我不是盐神",
+    ".":[ { title:"我不是盐神",
+        docs:"https://docs.rsshub.app/routes/new-media#wo-bu-shi-yan-shen" } ] },
   "onet.pl":{ _name:"Onet",
     wiadomosci:[ { title:"News",
         docs:"https://docs.rsshub.app/routes/new-media#onet",
@@ -18041,7 +18044,7 @@
           "/:id" ],
         target:(params, url, document) => {
                     let uid = document?.documentElement.innerHTML.match(/\$CONFIG\['oid']='(\d+)'/)?.[1];
-                    if (!uid && !isNaN(params.id)) {
+                    if (!uid && !Number.isNaN(params.id)) {
                         uid = params.id;
                     }
                     return uid ? `/weibo/user/${uid}` : '';
@@ -18051,7 +18054,11 @@
       { title:"超话",
         docs:"https://docs.rsshub.app/routes/social-media#wei-bo",
         source:"/p/:id/super_index",
-        target:"/weibo/super_index/:id" } ],
+        target:"/weibo/super_index/:id" },
+      { title:"最新关注时间线",
+        docs:"https://docs.rsshub.app/routes/social-media#wei-bo",
+        source:"/",
+        target:"/weibo/friends" } ],
     s:[ { title:"热搜榜",
         docs:"https://docs.rsshub.app/routes/social-media#wei-bo",
         source:"/top/summary",

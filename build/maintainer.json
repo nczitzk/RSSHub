@@ -4503,7 +4503,7 @@
         "TonyRL"
     ],
     "/modian/zhongchou/:category?/:sort?/:status?": [],
-    "/modrinth/project/:id/versions": [
+    "/modrinth/project/:id/versions/:routeParams?": [
         "SettingDust"
     ],
     "/mofish/:id": [],
@@ -4684,7 +4684,7 @@
     "/newrank/wechat/:wxid": [
         "lessmoe"
     ],
-    "/news/whxw": [
+    "/news/xhsxw": [
         "nczitzk"
     ],
     "/newsmarket/:category?": [
@@ -5061,6 +5061,9 @@
         "nczitzk"
     ],
     "/one": [],
+    "/onehu": [
+        "ruoshui9527"
+    ],
     "/onejav/:type/:key?": [],
     "/onenotegem/release": [],
     "/onet/news": [
@@ -7099,6 +7102,9 @@
     "/weexcn/news/:typeid": [],
     "/wegene/column/:type/:category": [],
     "/wegene/newest": [],
+    "/weibo/friends/:routeParams?": [
+        "CaoMeiYouRen"
+    ],
     "/weibo/group/:gid/:gname?/:routeParams?": [
         "monologconnor",
         "Rongronggg9"
