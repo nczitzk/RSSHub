@@ -1258,6 +1258,9 @@
     "/chinaisa/:id?": [
         "nczitzk"
     ],
+    "/chinamoney/:channelId?": [
+        "TonyRL"
+    ],
     "/chinanews": [
         "yuxinliu-alex"
     ],
@@ -1525,7 +1528,9 @@
     "/crossbell/notes/source/:source": [
         "DIYgod"
     ],
-    "/cs/news/:caty": [],
+    "/cs/zzkx": [
+        "nczitzk"
+    ],
     "/csdn/blog": [
         "Jkker"
     ],
@@ -4025,6 +4030,9 @@
     "/konachan/post/popular_recent/:period": [],
     "/kongfz/people/:id": [],
     "/kongfz/shop/:id/:cat?": [],
+    "/konghq/blog-posts": [
+        "piglei"
+    ],
     "/kotaku/story/:type": [],
     "/kpmg/insights": [],
     "/kuai": [],
@@ -4439,6 +4447,9 @@
         "CaoMeiYouRen"
     ],
     "/mihoyo/bbs/official/:gids/:type?/:page_size?/:last_id?": [
+        "CaoMeiYouRen"
+    ],
+    "/mihoyo/bbs/timeline": [
         "CaoMeiYouRen"
     ],
     "/mihoyo/bbs/user-post/:uid": [
@@ -6415,6 +6426,9 @@
         "hoilc",
         "TonyRL"
     ],
+    "/tass/:category?": [
+        "TonyRL"
+    ],
     "/techcrunch/news": [
         "EthanWng97"
     ],
@@ -7691,7 +7705,7 @@
     "/zhihu/timeline": [
         "SeanChao"
     ],
-    "/zhihu/topic/:topicId": [
+    "/zhihu/topic/:topicId/:isTop?": [
         "xyqfer"
     ],
     "/zhihu/weekly": [
