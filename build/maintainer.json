@@ -1528,6 +1528,9 @@
     "/crossbell/notes/source/:source": [
         "DIYgod"
     ],
+    "/cs/:category?": [
+        "nczitzk"
+    ],
     "/cs/zzkx": [
         "nczitzk"
     ],
@@ -7217,6 +7220,9 @@
     ],
     "/wizfile/updates": [
         "Fatpandac"
+    ],
+    "/wmc-bj/publish/:category?": [
+        "nczitzk"
     ],
     "/wnacg": [
         "KenMizz"
