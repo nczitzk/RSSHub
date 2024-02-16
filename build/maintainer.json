@@ -157,9 +157,18 @@
     "/423down/:category/:type": [
         "Fatpandac"
     ],
-    "/4gamers/category/:category": [],
-    "/4gamers/tag/:tag": [],
-    "/4gamers/topic/:topic": [],
+    "/4gamers": [
+        "TonyRL"
+    ],
+    "/4gamers/category/:category": [
+        "hoilc"
+    ],
+    "/4gamers/tag/:tag": [
+        "hoilc"
+    ],
+    "/4gamers/topic/:topic": [
+        "bestpika"
+    ],
     "/4ksj/forum/:id?": [
         "nczitzk"
     ],
@@ -1531,6 +1540,9 @@
     "/cs/:category?": [
         "nczitzk"
     ],
+    "/cs/video/:category?": [
+        "nczitzk"
+    ],
     "/cs/zzkx": [
         "nczitzk"
     ],
@@ -2177,6 +2189,12 @@
     "/fanfou/public_timeline/:keyword": [],
     "/fanfou/trends": [],
     "/fanfou/user_timeline/:uid": [],
+    "/fansly/tag/:tag": [
+        "TonyRL"
+    ],
+    "/fansly/user/:username": [
+        "TonyRL"
+    ],
     "/fantia/search/:type?/:caty?/:peroid?/:order?/:rating?/:keyword?": [
         "nczitzk"
     ],
