@@ -1012,6 +1012,9 @@
     "/buaa/sme/:path*": [
         "MeanZhang"
     ],
+    "/bulianglin": [
+        "cnkmmk"
+    ],
     "/bupt/funbox": [],
     "/bupt/grs": [],
     "/bupt/news": [],
@@ -3540,7 +3543,19 @@
     "/indiansinkuwait/latest": [
         "TonyRL"
     ],
-    "/indienova/:type": [],
+    "/indienova/:type": [
+        "GensouSakuya",
+        "kt286"
+    ],
+    "/indienova/column/:columnId": [
+        "TonyRL"
+    ],
+    "/indienova/gamedb/recent": [
+        "TonyRL"
+    ],
+    "/indienova/usergames": [
+        "TonyRL"
+    ],
     "/inewsweek/:channel": [
         "changren-wcr"
     ],
@@ -5374,6 +5389,9 @@
     "/playno1/st/:catid?": [
         "TonyRL"
     ],
+    "/playpcesor": [
+        "cnkmmk"
+    ],
     "/plurk/anonymous": [
         "TonyRL"
     ],
@@ -5481,6 +5499,9 @@
     ],
     "/putty/changes": [
         "nczitzk"
+    ],
+    "/pwc/strategyand/sustainability": [
+        "mintyfrankie"
     ],
     "/qbitai/category/:category": [
         "FuryMartin"
@@ -5987,6 +6008,9 @@
     "/shmtu/www/:type": [
         "imbytecat",
         "simonsmh"
+    ],
+    "/shoac/recent-show": [
+        "TonyRL"
     ],
     "/shopback/:store": [
         "nczitzk"
@@ -6763,6 +6787,9 @@
         "nczitzk"
     ],
     "/trakt/collection/:username/:type?": [],
+    "/transcriptforest/:channel?": [
+        "nczitzk"
+    ],
     "/treasury/press-releases/:category?/:title?": [],
     "/trending/:keywords/:numberOfDays?": [
         "Jkker"
