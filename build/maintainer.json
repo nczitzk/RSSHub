@@ -2340,6 +2340,9 @@
     "/fosshub/:id": [
         "nczitzk"
     ],
+    "/free": [
+        "cnkmmk"
+    ],
     "/freebuf/articles/:type": [
         "trganda"
     ],
@@ -3953,6 +3956,12 @@
         "nczitzk"
     ],
     "/jisilu/:category?/:sort?/:day?": [
+        "nczitzk"
+    ],
+    "/jjwxc/author/:id?": [
+        "nczitzk"
+    ],
+    "/jjwxc/book/:id?": [
         "nczitzk"
     ],
     "/jlbtc/:category?": [],

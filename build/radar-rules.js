@@ -7091,6 +7091,11 @@
         docs:"https://docs.rsshub.app/routes/program-update#fosshub-software-update",
         source:[ "/" ],
         target:(params, url) => `/fosshub/${url.match(/\/(.*?)\.html$/)[1]}` } ] },
+  "free.com.tw":{ _name:"免費資源網路社群",
+    ".":[ { title:"博客",
+        docs:"https://docs.rsshub.app/routes/blog#mian-fei-zi-yuan-wang-lu-she-qun",
+        source:[ "/" ],
+        target:"/free" } ] },
   "freebuf.com":{ _name:"Freebuf",
     ".":[ { title:"文章",
         docs:"https://docs.rsshub.app/routes/blog#freebuf",
@@ -11867,6 +11872,25 @@
         docs:"https://docs.rsshub.app/routes/bbs#ji-si-lu-yong-hu-zhu-ti",
         source:[ "/people/:user" ],
         target:"/jisilu/topic/:user" } ] },
+  "jjwxc.net":{ _name:"晋江文学城",
+    ".":[ { title:"作者最新作品",
+        docs:"https://docs.rsshub.app/routes/reading#jin-jiang-wen-xue-cheng-zuo-zhe-zui-xin-zuo-pin",
+        source:[ "oneauthor.php" ],
+        target:(_, url) => {
+                    url = new URL(url);
+                    const id = url.searchParams.get('authorid');
+
+                    return `/jjwxc/author/${id}`;
+                } },
+      { title:"作品",
+        docs:"https://docs.rsshub.app/routes/reading#jin-jiang-wen-xue-cheng-zuo-pin",
+        source:[ "onebook.php" ],
+        target:(_, url) => {
+                    url = new URL(url);
+                    const id = url.searchParams.get('novelid');
+
+                    return `/jjwxc/book/${id}`;
+                } } ] },
   "jornada.com.mx":{ _name:"La Jornada",
     ".":[ { title:"News",
         docs:"https://docs.rsshub.app/routes/traditional-media#jornada",
