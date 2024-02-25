@@ -1435,6 +1435,115 @@
       }
     ]
   },
+  "56kog.com": {
+    "_name": "明月中文网",
+    ".": [
+      {
+        "title": "玄幻魔法",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/1_1.html"
+        ],
+        "target": "/56kog/class/1_1"
+      },
+      {
+        "title": "武侠修真",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/2_1.html"
+        ],
+        "target": "/56kog/class/2_1"
+      },
+      {
+        "title": "历史军事",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/4_1.html"
+        ],
+        "target": "/56kog/class/4_1"
+      },
+      {
+        "title": "侦探推理",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/5_1.html"
+        ],
+        "target": "/56kog/class/5_1"
+      },
+      {
+        "title": "网游动漫",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/6_1.html"
+        ],
+        "target": "/56kog/class/6_1"
+      },
+      {
+        "title": "恐怖灵异",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/8_1.html"
+        ],
+        "target": "/56kog/class/8_1"
+      },
+      {
+        "title": "都市言情",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/3_1.html"
+        ],
+        "target": "/56kog/class/3_1"
+      },
+      {
+        "title": "科幻",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/7_1.html"
+        ],
+        "target": "/56kog/class/7_1"
+      },
+      {
+        "title": "女生小说",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/9_1.html"
+        ],
+        "target": "/56kog/class/9_1"
+      },
+      {
+        "title": "其他",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-fen-lei",
+        "source": [
+          "/class/10_1.html"
+        ],
+        "target": "/56kog/class/10_1"
+      },
+      {
+        "title": "周点击榜",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-bang-dan",
+        "source": [
+          "/top/weekvisit_1.html"
+        ],
+        "target": "/56kog/top/weekvisit"
+      },
+      {
+        "title": "总收藏榜",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-bang-dan",
+        "source": [
+          "/top/goodnum_1.html"
+        ],
+        "target": "/56kog/top/goodnum"
+      },
+      {
+        "title": "最新入库",
+        "docs": "https://docs.rsshub.app/routes/reading#ming-yue-zhong-wen-wang-bang-dan",
+        "source": [
+          "/top/postdate_1.html"
+        ],
+        "target": "/56kog/top/postdate"
+      }
+    ]
+  },
   "5eplay.com": {
     "_name": "5EPLAY",
     "csgo": [
@@ -4046,7 +4155,7 @@
     ".": [
       {
         "title": "外汇牌价",
-        "docs": "https://docs.rsshub.app/routes/others#zhong-guo-yin-hang",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-yin-hang",
         "source": [
           "/sourcedb/whpj",
           "/"
@@ -9712,6 +9821,19 @@
           "/nice"
         ],
         "target": "/chuanliu/nice"
+      }
+    ]
+  },
+  "cib.com.cn": {
+    "_name": "中国兴业银行",
+    ".": [
+      {
+        "title": "外汇牌价",
+        "docs": "https://docs.rsshub.app/routes/other#zhong-guo-xing-ye-yin-hang",
+        "source": [
+          "/"
+        ],
+        "target": "/cib/whpj"
       }
     ]
   },
@@ -18316,6 +18438,19 @@
       }
     ]
   },
+  "hicairo.com": {
+    "_name": "HiFeng'Blog",
+    ".": [
+      {
+        "title": "博客",
+        "docs": "https://docs.rsshub.app/routes/blog#hifeng-blog",
+        "source": [
+          "/"
+        ],
+        "target": "/hicairo"
+      }
+    ]
+  },
   "hinatazaka46.com": {
     "_name": "日向坂46",
     ".": [
@@ -18713,6 +18848,19 @@
           "/"
         ],
         "target": "/houxu/lives/:id"
+      }
+    ]
+  },
+  "howtoforge.com": {
+    "_name": "Howtoforge Linux Tutorials",
+    ".": [
+      {
+        "title": "学习",
+        "docs": "https://docs.rsshub.app/routes/study#howtoforge-linux-tutorials",
+        "source": [
+          "/"
+        ],
+        "target": "/howtoforge"
       }
     ]
   },
@@ -19796,7 +19944,7 @@
     ".": [
       {
         "title": "最近更新",
-        "docs": "https://docs.rsshub.app/routes/others#ai-q-sheng-huo-wang",
+        "docs": "https://docs.rsshub.app/routes/other#ai-q-sheng-huo-wang",
         "source": [
           "/post/new_100/",
           "/"
@@ -22642,6 +22790,39 @@
           "/webfile/news/:type"
         ],
         "target": "/jseea/news/:type"
+      }
+    ]
+  },
+  "jsu.edu.cn": {
+    "_name": "吉首大学",
+    ".": [
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/routes/university#ji-shou-da-xue-tong-zhi-gong-gao"
+      }
+    ],
+    "cxzx": [
+      {
+        "title": "创新中心",
+        "docs": "https://docs.rsshub.app/routes/university#ji-shou-da-xue-chuang-xin-zhong-xin"
+      }
+    ],
+    "jwc": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/routes/university#ji-shou-da-xue-jiao-wu-chu"
+      }
+    ],
+    "rjxy": [
+      {
+        "title": "计算机科学与工程学院",
+        "docs": "https://docs.rsshub.app/routes/university##ji-shou-da-xue-ji-suan-ji-ke-xue-yu-gong-cheng-xue-yuan"
+      }
+    ],
+    "stxy": [
+      {
+        "title": "数学与统计学院",
+        "docs": "https://docs.rsshub.app/routes/university#ji-shou-da-xue-shu-xue-yu-tong-ji-xue-yuan"
       }
     ]
   },
@@ -28904,6 +29085,17 @@
         ],
         "target": "/qdu/jwc"
       }
+    ],
+    "houqin": [
+      {
+        "title": "后勤管理处通知",
+        "docs": "https://docs.rsshub.app/routes/university#qing-dao-da-xue",
+        "source": [
+          "/tzgg.htm",
+          "/"
+        ],
+        "target": "/qdu/houqin"
+      }
     ]
   },
   "qianp.com": {
@@ -31076,6 +31268,19 @@
           "/:id/list.htm"
         ],
         "target": "/shiep/zzb/:id"
+      }
+    ]
+  },
+  "shisu.edu.cn": {
+    "_name": "上海外国语大学",
+    "news": [
+      {
+        "title": "上外新闻",
+        "docs": "https://docs.rsshub.app/routes/university#shang-hai-wai-guo-yu-da-xue",
+        "source": [
+          "/:category/index.html"
+        ],
+        "target": "/shisu/news/:category"
       }
     ]
   },
