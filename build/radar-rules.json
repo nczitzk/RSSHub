@@ -9867,6 +9867,19 @@
       }
     ]
   },
+  "ciweimao.com": {
+    "_name": "刺猬猫",
+    "wap": [
+      {
+        "title": "章节",
+        "docs": "https://docs.rsshub.app/routes/reading#ci-wei-mao",
+        "source": [
+          "/book/:id"
+        ],
+        "target": "/ciweimao/chapter/:id"
+      }
+    ]
+  },
   "clickme.net": {
     "_name": "ClickMe",
     ".": [
@@ -18237,6 +18250,17 @@
       }
     ]
   },
+  "hbooker.com": {
+    "_name": "欢乐书客",
+    ".": [
+      {
+        "title": "章节",
+        "docs": "https://docs.rsshub.app/routes/reading#huan-le-shu-ke",
+        "source": "/book/:id",
+        "target": "/hbooker/chapter/:id"
+      }
+    ]
+  },
   "hbr.org": {
     "_name": "Harvard Business Review",
     ".": [
@@ -23446,6 +23470,19 @@
       }
     ]
   },
+  "lala.im": {
+    "_name": "荒岛",
+    ".": [
+      {
+        "title": "博客",
+        "docs": "https://docs.rsshub.app/routes/blog#huang-dao",
+        "source": [
+          "/"
+        ],
+        "target": "/lala"
+      }
+    ]
+  },
   "lang.live": {
     "_name": "浪 Play 直播",
     ".": [
@@ -24367,6 +24404,117 @@
           "/discography"
         ],
         "target": "/lxixsxa/disco"
+      }
+    ]
+  },
+  "m4.cn": {
+    "_name": "四月网",
+    "news": [
+      {
+        "title": "要闻 - 国内新闻",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-yao-wen",
+        "source": [
+          "/china/"
+        ],
+        "target": "/m4/news/china"
+      },
+      {
+        "title": "要闻 - 国际新闻",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-yao-wen",
+        "source": [
+          "/world/"
+        ],
+        "target": "/m4/news/world"
+      },
+      {
+        "title": "要闻 - 民生",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-yao-wen",
+        "source": [
+          "/livelihood/"
+        ],
+        "target": "/m4/news/livelihood"
+      },
+      {
+        "title": "要闻 - 社会",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-yao-wen",
+        "source": [
+          "/society/"
+        ],
+        "target": "/m4/news/society"
+      },
+      {
+        "title": "要闻 - 财经",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-yao-wen",
+        "source": [
+          "/finance/"
+        ],
+        "target": "/m4/news/finance"
+      },
+      {
+        "title": "要闻 - 科技",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-yao-wen",
+        "source": [
+          "/tech/"
+        ],
+        "target": "/m4/news/tech"
+      }
+    ],
+    "mil": [
+      {
+        "title": "军事 - 中国军情",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-jun-shi",
+        "source": [
+          "/china/"
+        ],
+        "target": "/m4/mil/china"
+      },
+      {
+        "title": "军事 - 国际军情",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-jun-shi",
+        "source": [
+          "/world/"
+        ],
+        "target": "/m4/mil/world"
+      },
+      {
+        "title": "军事 - 军事评论",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-jun-shi",
+        "source": [
+          "/views/"
+        ],
+        "target": "/m4/mil/views"
+      },
+      {
+        "title": "军事 - 军事历史",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-jun-shi",
+        "source": [
+          "/history/"
+        ],
+        "target": "/m4/mil/history"
+      },
+      {
+        "title": "军事 - 军迷说",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-jun-shi",
+        "source": [
+          "/talk/"
+        ],
+        "target": "/m4/mil/talk"
+      },
+      {
+        "title": "军事 - 图说军事",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-jun-shi",
+        "source": [
+          "/photo/"
+        ],
+        "target": "/m4/mil/photo"
+      },
+      {
+        "title": "军事 - 武器库",
+        "docs": "https://docs.rsshub.app/routes/new-media#si-yue-wang-jun-shi",
+        "source": [
+          "/arms/"
+        ],
+        "target": "/m4/mil/arms"
       }
     ]
   },
@@ -28876,6 +29024,19 @@
       }
     ]
   },
+  "priconne-redive.jp": {
+    "_name": "プリンセスコネクト！Re:Dive",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/game#princess-connect-re-dive-%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BB%E3%82%B9%E3%82%B3%E3%83%8D%E3%82%AF%E3%83%88%EF%BC%81re-dive",
+        "source": [
+          "/news"
+        ],
+        "target": "/priconne-redive/news"
+      }
+    ]
+  },
   "producthunt.com": {
     "_name": "Product Hunt",
     "www": [
@@ -30622,6 +30783,19 @@
           "/:type/list.htm"
         ],
         "target": "/seu/yzb/:type"
+      }
+    ]
+  },
+  "sfacg.com": {
+    "_name": "SF 轻小说",
+    "book": [
+      {
+        "title": "章节",
+        "docs": "https://docs.rsshub.app/routes/reading#sf-qing-xiao-shuo",
+        "source": [
+          "/Novel/:id/*"
+        ],
+        "target": "/sfacg/novel/chapter/:id"
       }
     ]
   },
@@ -34133,6 +34307,16 @@
   },
   "tongji.edu.cn": {
     "_name": "同济大学",
+    "bksy": [
+      {
+        "title": "本科生院通知公告",
+        "docs": "https://docs.rsshub.app/routes/university#tong-ji-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/tongji/bks"
+      }
+    ],
     "sse": [
       {
         "title": "软件学院通知",
@@ -35032,6 +35216,27 @@
       }
     ]
   },
+  "tvtropes.org": {
+    "_name": "TV Tropes",
+    ".": [
+      {
+        "title": "Featured - Today's Featured Trope",
+        "docs": "https://docs.rsshub.app/routes/other#tvtropes-featured",
+        "source": [
+          "/"
+        ],
+        "target": "/tvtropes/featured/today"
+      },
+      {
+        "title": "Featured - Newest Trope",
+        "docs": "https://docs.rsshub.app/routes/other#tvtropes-featured",
+        "source": [
+          "/"
+        ],
+        "target": "/tvtropes/featured/newest"
+      }
+    ]
+  },
   "twitch.tv": {
     "_name": "Twitch",
     "www": [
@@ -35460,6 +35665,19 @@
           "/us",
           "/jp"
         ]
+      }
+    ]
+  },
+  "unraid.net": {
+    "_name": "Unraid",
+    ".": [
+      {
+        "title": "Community Apps",
+        "docs": "https://docs.rsshub.app/routes/program-update#unraid",
+        "source": [
+          "/community/apps"
+        ],
+        "target": "/unraid/community-apps"
       }
     ]
   },
@@ -36783,6 +37001,15 @@
         "source": [
           "/publish/:category*"
         ]
+      }
+    ]
+  },
+  "wmpvp.com": {
+    "_name": "完美世界电竞",
+    ".": [
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/routes/game#wan-mei-shi-jie-dian-jing-zi-xun"
       }
     ]
   },
@@ -38886,6 +39113,19 @@
           "/support/changelog"
         ],
         "target": "/zotero/versions"
+      }
+    ]
+  },
+  "zrblog.net": {
+    "_name": "赵容部落",
+    ".": [
+      {
+        "title": "博客",
+        "docs": "https://docs.rsshub.app/routes/blog#zhao-rong-bu-luo",
+        "source": [
+          "/"
+        ],
+        "target": "/zrblog"
       }
     ]
   },
