@@ -1,5 +1,5 @@
-{{ if description }}
-  {{@ description }}
+{{ if newsId }}
+  <a href="/Detail/report?id={{ newsId }}&amp;isfree=0" target="_blank">查看报告</a>
 {{ /if }}
 
 {{ if images }}

@@ -600,17 +600,35 @@ Specify options (in the format of query string) in parameter `routeParams` param
   :::
 </Route>
 
-## 艾瑞 {#ai-rui}
+## 艾瑞咨询 {#ai-rui-zi-xun}
 
-### 产业研究报告 {#ai-rui-chan-ye-yan-jiu-bao-gao}
+### 最新报告 {#ai-rui-zi-xun-zui-xin-bao-gao}
 
-<Route author="brilon Fatpandac" example="/iresearch/report" path="/iresearch/report" />
+<Route author="brilon Fatpandac nczitzk" example="/iresearch/report" path="/iresearch/report/:category?" paramsDesc={['分类，见下表，默认为全部']} radar="1">
+  | 媒体文娱 | 广告营销   | 游戏行业 | 视频媒体  | 消费电商 |
+  | -------- | ---------- | -------- | --------- | -------- |
+  | 电子商务 | 消费者洞察 | 旅游行业 | 汽车行业  | 教育行业 |
+  | 企业服务 | 网络服务   | 应用服务 | AI 大数据 | 人工智能 |
+  | 物流行业 | 金融行业   | 支付行业 | 房产行业  | 医疗健康 |
+  | 先进制造 | 新能源     | 区块链   | 其他      |          |
+</Route>
 
-### 周度市场观察 {#ai-rui-zhou-du-shi-chang-guan-cha}
+### 研究图表 {#ai-rui-zi-xun-yan-jiu-tu-biao}
 
-<Route author="nczitzk" example="/iresearch/weekly" path="/iresearch/weekly/:category?" paramsDesc={['分类，见下表，默认为全部']}>
-  | 家电行业 | 服装行业 | 美妆行业 | 食品饮料行业 |
-  | -------- | -------- | -------- | ------------ |
+<Route author="nczitzk" example="/iresearch/chart" path="/iresearch/chart/:category?" paramsDesc={['分类，见下表，默认为全部']} radar="1">
+  | 媒体文娱 | 广告营销   | 游戏行业 | 视频媒体  | 消费电商 |
+  | -------- | ---------- | -------- | --------- | -------- |
+  | 电子商务 | 消费者洞察 | 旅游行业 | 汽车行业  | 教育行业 |
+  | 企业服务 | 网络服务   | 应用服务 | AI 大数据 | 人工智能 |
+  | 物流行业 | 金融行业   | 支付行业 | 房产行业  | 医疗健康 |
+  | 先进制造 | 新能源     | 区块链   | 其他      |          |
+</Route>
+
+### 周度市场观察 {#ai-rui-zi-xun-zhou-du-shi-chang-guan-cha}
+
+<Route author="nczitzk" example="/iresearch/weekly" path="/iresearch/weekly/:category?" paramsDesc={['分类，见下表，默认为全部']} radar="1">
+  | 家电行业 | 服装行业 | 美妆行业 | 食品饮料行业 | 酒行业 |
+  | -------- | -------- | -------- | ------------ | ------ |
 </Route>
 
 ## 爱 Q 生活网 {#ai-q-sheng-huo-wang}
