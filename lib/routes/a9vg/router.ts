@@ -1,3 +1,3 @@
 export default (router) => {
-    router.get('/', './a9vg');
+    router.get('/:category{.+}?', './');
 };

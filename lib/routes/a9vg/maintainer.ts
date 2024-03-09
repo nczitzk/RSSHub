@@ -1,3 +1,4 @@
 export default {
-    '/': ['monnerHenster'],
+    '/news/:category?': ['monnerHenster', 'nczitzk'],
+    '/reviews': ['nczitzk'],
 };
