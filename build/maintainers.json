@@ -4279,8 +4279,9 @@
   "/postman/release-notes": [
     "nczitzk"
   ],
-  "/priconne-redive/news": [
-    "SayaSS"
+  "/priconne-redive/news/:location?": [
+    "SayaSS",
+    "frankcwl"
   ],
   "/producthunt/today": [
     "miaoyafeng",
@@ -5605,6 +5606,9 @@
   ],
   "/urbandictionary/random": [
     "TonyRL"
+  ],
+  "/usenix/loginonline": [
+    "wu-yufei"
   ],
   "/usenix/usenix-security-sympoium": [
     "ZeddYu"

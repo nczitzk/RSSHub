@@ -7976,20 +7976,23 @@
     "routes": {
       "/": {
         "path": "/",
+        "categories": [
+          "blog"
+        ],
+        "example": "/bulianglin",
         "radar": [
           {
             "source": [
               "bulianglin.com/"
-            ],
-            "target": ""
+            ]
           }
         ],
-        "name": "Unknown",
+        "name": "全部文章",
         "maintainers": [
           "cnkmmk"
         ],
         "url": "bulianglin.com/",
-        "location": "bulianglin.ts"
+        "location": "rss.ts"
       }
     },
     "name": "不良林",
@@ -42351,13 +42354,15 @@
   },
   "priconne-redive": {
     "routes": {
-      "/news": {
-        "path": "/news",
+      "/news/:location?": {
+        "path": "/news/:location?",
         "categories": [
           "game"
         ],
         "example": "/priconne-redive/news",
-        "parameters": {},
+        "parameters": {
+          "location": "区域，默认日服"
+        },
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
@@ -42373,11 +42378,13 @@
             ]
           }
         ],
-        "name": "日服公告",
+        "name": "最新公告",
         "maintainers": [
-          "SayaSS"
+          "SayaSS",
+          "frankcwl"
         ],
         "url": "priconne-redive.jp/news",
+        "description": "location\n\n    | 国服  | 台服  | 日服  |\n    | ----- | ----- | ---- |\n    | zh-cn | zh-tw | jp   |",
         "location": "news.ts"
       }
     },
@@ -55636,6 +55643,36 @@
   },
   "usenix": {
     "routes": {
+      "/loginonline": {
+        "path": "/loginonline",
+        "categories": [
+          "journal"
+        ],
+        "example": "/usenix/loginonline",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "usenix.org/publications/loginonline",
+              "usenix.org/publications",
+              "usenix.org/"
+            ]
+          }
+        ],
+        "name": ";login:",
+        "maintainers": [
+          "wu-yufei"
+        ],
+        "location": "loginonline.ts"
+      },
       "/usenix-security-sympoium": {
         "path": "/usenix-security-sympoium",
         "categories": [
