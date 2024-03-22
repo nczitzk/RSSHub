@@ -202,7 +202,7 @@
         "source": [
           "/games/:name/:type"
         ],
-        "target": "/3dmgame/:name/:type?"
+        "target": "/3dmgame/games/:name/:type?"
       },
       {
         "title": "新闻中心",
@@ -1442,6 +1442,16 @@
           "/platform"
         ],
         "target": "/bilibili/platform/:area?/:p_type?/:uid?"
+      }
+    ],
+    "game": [
+      {
+        "title": "最新公告",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/pcr/news.html"
+        ],
+        "target": "/priconne-redive/news/zh-cn"
       }
     ]
   },
@@ -6903,6 +6913,19 @@
       }
     ]
   },
+  "infzm.com": {
+    "_name": "infzm",
+    ".": [
+      {
+        "title": "频道",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/contents"
+        ],
+        "target": "/infzm(_,url)=>url?`/infzm/${url.match(/contents\\?term_id=(\\d*)/)?.[1]}`:\"\""
+      }
+    ]
+  },
   "instructables.com": {
     "_name": "Instructables",
     ".": [
@@ -6913,6 +6936,19 @@
           "/projects"
         ],
         "target": "/instructables/projects"
+      }
+    ]
+  },
+  "ippa.top": {
+    "_name": "子方有料",
+    ".": [
+      {
+        "title": "最新文章",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/ippa/"
       }
     ]
   },
@@ -7777,6 +7813,19 @@
       }
     ]
   },
+  "linovelib.com": {
+    "_name": "哔哩轻小说",
+    "www": [
+      {
+        "title": "卷",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/novel/:id/catalog"
+        ],
+        "target": "/linovelib/volume/:id"
+      }
+    ]
+  },
   "liquipedia.net": {
     "_name": "Liquipedia",
     ".": [
@@ -7883,6 +7932,19 @@
           "/work/tags/:tag"
         ],
         "target": "/logonews*"
+      }
+    ]
+  },
+  "loongarch.org": {
+    "_name": "LA UOSC社区",
+    "bbs": [
+      {
+        "title": "最热 / 最新帖子",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/"
+        ],
+        "target": "/loongarch/post/:type?"
       }
     ]
   },
@@ -10202,7 +10264,20 @@
         "source": [
           "/news"
         ],
-        "target": "/priconne-redive/news/:location?"
+        "target": "/priconne-redive/news/jp"
+      }
+    ]
+  },
+  "so-net.tw": {
+    "_name": "PRINCESS CONNECT! Re Dive プリンセスコネクト！Re Dive",
+    "princessconnect": [
+      {
+        "title": "最新公告",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news"
+        ],
+        "target": "/priconne-redive/news/zh-tw"
       }
     ]
   },
@@ -14949,6 +15024,19 @@
           "/"
         ],
         "target": "/yahoo/news/:region/:category?"
+      }
+    ]
+  },
+  "blogspot.com": {
+    "_name": "甬哥侃侃侃YouTube教程摘要随笔",
+    "ygkkk": [
+      {
+        "title": "最新发表",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/ygkkk/"
       }
     ]
   },

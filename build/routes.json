@@ -1095,6 +1095,38 @@
     "name": "一亩三分地",
     "url": "blog.1point3acres.com"
   },
+  "2023game": {
+    "routes": {
+      "/:category?/:tab?": {
+        "path": "/:category?/:tab?",
+        "categories": [
+          "game"
+        ],
+        "example": "/2023game/sgame/topicList",
+        "parameters": {
+          "category": "分类，见下表",
+          "tab": "标签, 所有:all;最新:topicList;热门:jhcpb"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "游戏星辰",
+        "maintainers": [
+          "xzzpig"
+        ],
+        "url": "www.2023game.com/",
+        "description": "分类\n\n  | PS4游戏 | switch游戏 | 3DS游戏 | PSV游戏 | Xbox360 | PS3游戏 | 世嘉MD/SS | PSP游戏 | PC周边 | 怀旧掌机 | 怀旧主机 | PS4教程 | PS4金手指 | switch金手指 | switch教程 | switch补丁 | switch主题 | switch存档 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | ps4 | sgame | 3ds | psv | jiaocheng | ps3yx | zhuji.md | zhangji.psp | pcgame | zhangji | zhuji | ps4.psjc | ps41.ps4pkg | nsaita.cundang | nsaita.pojie | nsaita.buding | nsaita.zhutie | nsaita.zhuti |",
+        "location": "index.ts"
+      }
+    },
+    "name": "游戏星辰",
+    "url": "www.2023game.com"
+  },
   "2cycd": {
     "routes": {
       "/:fid/:sort?": {
@@ -1144,15 +1176,23 @@
         "description": "| 24 小时热榜 | 资讯人气榜 | 资讯综合榜 | 资讯收藏榜 |\n  | ----------- | ---------- | ---------- | ---------- |\n  | 24          | renqi      | zonghe     | shoucang   |",
         "location": "hot-list.ts"
       },
-      "/{.*}?": {
-        "path": "/{.*}?",
+      "/:category/:subCategory?/:keyword?": {
+        "path": "/:category/:subCategory?/:keyword?",
         "categories": [
           "new-media"
         ],
+        "example": "/36kr/newsflashes",
+        "parameters": {
+          "category": "分类，必填项",
+          "subCategory": "子分类，选填项，目的是为了兼容老逻辑",
+          "keyword": "关键词，选填项，仅搜索文章/快讯时有效"
+        },
         "name": "资讯, 快讯, 用户文章, 主题文章, 专题文章, 搜索文章, 搜索快讯",
         "maintainers": [
-          "nczitzk"
+          "nczitzk",
+          "fashioncj"
         ],
+        "description": "| 最新资讯频道    | 快讯     | 推荐资讯｜生活｜房产｜职场｜搜索文章｜搜索快讯｜\n    | ------- | -------- ｜ -------- ｜ -------- ｜ -------- ｜ --------｜ -------- ｜ -------- ｜\n    | news | newsflashes ｜ recommend ｜ life ｜ estate ｜ workplace ｜ search/articles/关键词 ｜ search/articles/关键词 ｜",
         "location": "index.ts"
       }
     },
@@ -1161,8 +1201,8 @@
   },
   "3dmgame": {
     "routes": {
-      "/:name/:type?": {
-        "path": "/:name/:type?",
+      "/games/:name/:type?": {
+        "path": "/games/:name/:type?",
         "radar": [
           {
             "source": [
@@ -1177,7 +1217,8 @@
         "maintainers": [
           "sinchang",
           "jacky2001114",
-          "HenryQW"
+          "HenryQW",
+          "lyqluis"
         ],
         "location": "game.ts"
       },
@@ -1208,7 +1249,8 @@
         ],
         "name": "新闻中心",
         "maintainers": [
-          "zhboner"
+          "zhboner",
+          "lyqluis"
         ],
         "description": "| 新闻推荐 | 游戏新闻 | 动漫影视 | 智能数码 | 时事焦点    |\n  | -------- | -------- | -------- | -------- | ----------- |\n  |          | game     | acg      | next     | news_36_1 |",
         "location": "news-center.ts"
@@ -2490,6 +2532,44 @@
     },
     "name": "AEON",
     "url": "aeon.aeon.co"
+  },
+  "afdian": {
+    "routes": {
+      "/dynamic/:uid?": {
+        "path": "/dynamic/:uid?",
+        "categories": [
+          "other"
+        ],
+        "example": "/afdian/dynamic/@afdian",
+        "parameters": {
+          "uid": "用户id，用户动态页面url里可找到"
+        },
+        "name": "用户动态",
+        "maintainers": [
+          "sanmmm"
+        ],
+        "location": "dynamic.ts"
+      },
+      "/explore/:type/:category?": {
+        "path": "/explore/:type/:category?",
+        "categories": [
+          "other"
+        ],
+        "example": "/afdian/explore/hot/所有",
+        "parameters": {
+          "type": "分类",
+          "category": "目录类型，默认为 `所有`"
+        },
+        "name": "发现用户",
+        "maintainers": [
+          "sanmmm"
+        ],
+        "description": "分类\n\n    | 推荐 | 最热 |\n    | ---- | ---- |\n    | rec  | hot  |\n  \n    目录类型\n  \n    | 所有 | 绘画 | 视频 | 写作 | 游戏 | 音乐 | 播客 | 摄影 | 技术 | Vtuber | 舞蹈 | 体育 | 旅游 | 美食 | 时尚 | 数码 | 动画 | 其他 |\n    | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n    | 所有 | 绘画 | 视频 | 写作 | 游戏 | 音乐 | 播客 | 摄影 | 技术 | Vtuber | 舞蹈 | 体育 | 旅游 | 美食 | 时尚 | 数码 | 动画 | 其他 |",
+        "location": "explore.ts"
+      }
+    },
+    "name": "爱发电",
+    "url": "afdian.net"
   },
   "agefans": {
     "routes": {
@@ -15033,6 +15113,31 @@
   },
   "douban": {
     "routes": {
+      "/book/latest/:type?": {
+        "path": "/book/latest/:type?",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/douban/book/latest/fiction",
+        "parameters": {
+          "type": "专题分类，可选，默认为 `all`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "新书速递",
+        "maintainers": [
+          "fengkx",
+          "lyqluis"
+        ],
+        "description": "| 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |\n    | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |\n    | prose_poetry | fiction | history  | biography | science  | art      | business | comics   |",
+        "location": "book/latest.ts"
+      },
       "/book/rank/:type?": {
         "path": "/book/rank/:type?",
         "categories": [
@@ -15380,27 +15485,6 @@
           "DIYgod"
         ],
         "location": "other/later.ts"
-      },
-      "/book/latest": {
-        "path": "/book/latest",
-        "categories": [
-          "social-media"
-        ],
-        "example": "/douban/book/latest",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "新书速递",
-        "maintainers": [
-          "fengkx"
-        ],
-        "location": "other/latest-book.ts"
       },
       "/music/latest/:area?": {
         "path": "/music/latest/:area?",
@@ -28197,6 +28281,36 @@
     "name": "INFORMS",
     "url": "pubsonline.informs.org"
   },
+  "infzm": {
+    "name": "infzm",
+    "routes": {
+      "/:id": {
+        "path": "/:id",
+        "parameters": {
+          "id": "南方周末频道 id, 可在该频道的 URL 中找到（即 https://www.infzm.com/contents?term_id=:id)"
+        },
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/infzm/1",
+        "radar": [
+          {
+            "source": [
+              "infzm.com/contents"
+            ]
+          }
+        ],
+        "name": "频道",
+        "maintainers": [
+          "KarasuShin",
+          "ranpox",
+          "xyqfer"
+        ],
+        "description": "下面给出部分参考：\n\n    | 推荐 | 新闻 | 观点 | 文化 | 人物 | 影像 | 专题 | 生活 | 视频 |\n    | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n    | 1    | 2    | 3    | 4    | 7    | 8    | 6    | 5    | 131  |",
+        "location": "index.ts"
+      }
+    }
+  },
   "inoreader": {
     "routes": {
       "/html_clip/:user/:tag": {
@@ -28335,6 +28449,32 @@
     },
     "name": "Instructables",
     "url": "instructables.com"
+  },
+  "ippa": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "blog"
+        ],
+        "example": "/ippa",
+        "radar": [
+          {
+            "source": [
+              "ippa.top/"
+            ]
+          }
+        ],
+        "name": "最新文章",
+        "maintainers": [
+          "cnkmmk"
+        ],
+        "url": "ippa.top/",
+        "location": "rss.ts"
+      }
+    },
+    "name": "子方有料",
+    "url": "ippa.top"
   },
   "ipsw": {
     "routes": {
@@ -30593,7 +30733,7 @@
         "categories": [
           "new-media"
         ],
-        "example": "/news/zh-hans, /news/zh-hant",
+        "example": "/news/zh-hans",
         "parameters": {
           "language": "语言"
         },
@@ -31976,9 +32116,31 @@
           "misakicoca"
         ],
         "location": "novel.ts"
+      },
+      "/volume/:id": {
+        "path": "/volume/:id",
+        "categories": [
+          "reading"
+        ],
+        "example": "/linovelib/volume/8",
+        "parameters": {
+          "id": "小说 ID，可在小说页 URL 中找到"
+        },
+        "radar": [
+          {
+            "source": [
+              "www.linovelib.com/novel/:id/catalog"
+            ]
+          }
+        ],
+        "name": "卷",
+        "maintainers": [
+          "rkscv"
+        ],
+        "location": "volume.ts"
       }
     },
-    "name": "哩哔轻小说",
+    "name": "哔哩轻小说",
     "url": "linovelib.com"
   },
   "liquipedia": {
@@ -32400,6 +32562,36 @@
     },
     "name": "英雄联盟",
     "url": "lol.garena.tw"
+  },
+  "loongarch": {
+    "routes": {
+      "/post/:type?": {
+        "path": "/post/:type?",
+        "categories": [
+          "bbs"
+        ],
+        "example": "/loongarch/post/newest",
+        "parameters": {
+          "type": "top 或 newest"
+        },
+        "radar": [
+          {
+            "source": [
+              "bbs.loongarch.org"
+            ]
+          }
+        ],
+        "name": "最热 / 最新帖子",
+        "maintainers": [
+          "ladeng07",
+          "3401797899"
+        ],
+        "url": "bbs.loongarch.org/",
+        "location": "post.ts"
+      }
+    },
+    "name": "LA UOSC社区",
+    "url": "loongarch.org"
   },
   "lovelive-anime": {
     "routes": {
@@ -42354,14 +42546,14 @@
   },
   "priconne-redive": {
     "routes": {
-      "/news/:location?": {
-        "path": "/news/:location?",
+      "/news/:server?": {
+        "path": "/news/:server?",
         "categories": [
           "game"
         ],
         "example": "/priconne-redive/news",
         "parameters": {
-          "location": "区域，默认日服"
+          "server": "服务器，默认日服"
         },
         "features": {
           "requireConfig": false,
@@ -42375,7 +42567,20 @@
           {
             "source": [
               "priconne-redive.jp/news"
-            ]
+            ],
+            "target": "/news/jp"
+          },
+          {
+            "source": [
+              "princessconnect.so-net.tw/news"
+            ],
+            "target": "/news/zh-tw"
+          },
+          {
+            "source": [
+              "game.bilibili.com/pcr/news.html"
+            ],
+            "target": "/news/zh-cn"
           }
         ],
         "name": "最新公告",
@@ -42384,7 +42589,7 @@
           "frankcwl"
         ],
         "url": "priconne-redive.jp/news",
-        "description": "location\n\n    | 国服  | 台服  | 日服  |\n    | ----- | ----- | ---- |\n    | zh-cn | zh-tw | jp   |",
+        "description": "服务器\n\n  | 国服  | 台服  | 日服  |\n  | ----- | ----- | ---- |\n  | zh-cn | zh-tw | jp   |",
         "location": "news.ts"
       }
     },
@@ -58580,13 +58785,19 @@
     "routes": {
       "/:id?": {
         "path": "/:id?",
-        "categories": [
-          "new-media"
+        "name": "分类",
+        "url": "xd.x6d.com",
+        "maintainers": [
+          "nczitzk"
         ],
         "example": "/x6d/34",
         "parameters": {
           "id": "分类 id，可在对应分类页面的 URL 中找到，默认为首页最近更新"
         },
+        "description": "| 技巧分享 | QQ 技巧 | 微信技巧 | 其他教程 | 其他分享 |\n  | -------- | ------- | -------- | -------- | -------- |\n  | 31       | 55      | 112      | 33       | 88       |\n\n  | 宅家自学 | 健身养生 | 摄影剪辑 | 长点知识 | 自我提升 | 两性相关 | 编程办公 | 职场关系 | 新媒体运营 | 其他教程 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ---------- | -------- |\n  | 18       | 98       | 94       | 93       | 99       | 100      | 21       | 22       | 19         | 44       |\n\n  | 活动线报 | 流量话费 | 免费会员 | 实物活动 | 游戏活动 | 红包活动 | 空间域名 | 其他活动 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 34       | 35       | 91       | 92       | 39       | 38       | 37       | 36       |\n\n  | 值得一看 | 找点乐子 | 热门事件 | 节目推荐 |\n  | -------- | -------- | -------- | -------- |\n  | 65       | 50       | 77       | 101      |\n\n  | 值得一听 | 每日一听 | 歌单推荐 |\n  | -------- | -------- | -------- |\n  | 71       | 87       | 79       |\n\n  | 资源宝库 | 书籍资料 | 设计资源 | 剪辑资源 | 办公资源 | 壁纸资源 | 编程资源 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 106      | 107      | 108      | 109      | 110      | 111      | 113      |",
+        "categories": [
+          "new-media"
+        ],
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
@@ -58595,11 +58806,6 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "分类",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "description": "| 技巧分享 | QQ 技巧 | 微信技巧 | 其他教程 | 其他分享 |\n  | -------- | ------- | -------- | -------- | -------- |\n  | 31       | 55      | 112      | 33       | 88       |\n\n  | 宅家自学 | 健身养生 | 摄影剪辑 | 长点知识 | 自我提升 | 两性相关 | 编程办公 | 职场关系 | 新媒体运营 | 其他教程 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ---------- | -------- |\n  | 18       | 98       | 94       | 93       | 99       | 100      | 21       | 22       | 19         | 44       |\n\n  | 活动线报 | 流量话费 | 免费会员 | 实物活动 | 游戏活动 | 红包活动 | 空间域名 | 其他活动 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 34       | 35       | 91       | 92       | 39       | 38       | 37       | 36       |\n\n  | 值得一看 | 找点乐子 | 热门事件 | 节目推荐 |\n  | -------- | -------- | -------- | -------- |\n  | 65       | 50       | 77       | 101      |\n\n  | 值得一听 | 每日一听 | 歌单推荐 |\n  | -------- | -------- | -------- |\n  | 71       | 87       | 79       |\n\n  | 资源宝库 | 书籍资料 | 设计资源 | 剪辑资源 | 办公资源 | 壁纸资源 | 编程资源 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 106      | 107      | 108      | 109      | 110      | 111      | 113      |",
         "location": "index.ts"
       }
     },
@@ -60132,6 +60338,32 @@
     },
     "name": "羊城晚报金羊网",
     "url": "xwlb.com.cn"
+  },
+  "ygkkk": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "blog"
+        ],
+        "example": "/ygkkk",
+        "radar": [
+          {
+            "source": [
+              "ygkkk.blogspot.com/"
+            ]
+          }
+        ],
+        "name": "最新发表",
+        "maintainers": [
+          "cnkmmk"
+        ],
+        "url": "ygkkk.blogspot.com/",
+        "location": "rss.ts"
+      }
+    },
+    "name": "甬哥侃侃侃YouTube教程摘要随笔",
+    "url": "ygkkk.blogspot.com"
   },
   "yicai": {
     "routes": {
