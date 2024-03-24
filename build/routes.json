@@ -2149,7 +2149,7 @@
         "categories": [
           "traditional-media"
         ],
-        "description": ":::tip\n    All Topics in [Topic Library](https://abc.net.au/news/topics) are supported, you can fill in the field after `topic` in its URL, or fill in the `documentId`.\n\n    For example, the URL for [Computer Science](https://www.abc.net.au/news/topic/computer-science) is `https://www.abc.net.au/news/topic/computer-science`, the `category` is `news/topic/computer-science`, and the `documentId` of the Topic is `2302`, so the route is [/abc/news/topic/computer-science](https://rsshub.app/abc/news/topic/computer-science) and [/abc/2302](https://rsshub.app/abc/2302).\n\n    The supported channels are all listed in the table below. For other channels, please find the `documentId` in the source code of the channel page and fill it in as above.\n    :::",
+        "description": "\n  :::tip\n  All Topics in [Topic Library](https://abc.net.au/news/topics) are supported, you can fill in the field after `topic` in its URL, or fill in the `documentId`.\n\n  For example, the URL for [Computer Science](https://www.abc.net.au/news/topic/computer-science) is `https://www.abc.net.au/news/topic/computer-science`, the `category` is `news/topic/computer-science`, and the `documentId` of the Topic is `2302`, so the route is [/abc/news/topic/computer-science](https://rsshub.app/abc/news/topic/computer-science) and [/abc/2302](https://rsshub.app/abc/2302).\n\n  The supported channels are all listed in the table below. For other channels, please find the `documentId` in the source code of the channel page and fill it in as above.\n  :::",
         "maintainers": [
           "nczitzk"
         ],
@@ -4000,6 +4000,25 @@
     },
     "name": "App Store/Mac App Store",
     "url": "apps.apple.com"
+  },
+  "appstorrent": {
+    "routes": {
+      "/programs": {
+        "path": "/programs",
+        "categories": [
+          "program-update"
+        ],
+        "example": "/appstorrent/programs",
+        "name": "Programs",
+        "maintainers": [
+          "xzzpig"
+        ],
+        "url": "appstorrent.ru/programs/",
+        "location": "programs.ts"
+      }
+    },
+    "name": "AppsTorrent",
+    "url": "appstorrent.ru"
   },
   "aqara": {
     "routes": {
@@ -6493,7 +6512,7 @@
         "parameters": {
           "uid": "用户 id, 可在 UP 主主页中找到",
           "sid": "合集 id, 可在合集页面的 URL 中找到",
-          "disableEmbed": "默认为开启内嵌视频, 任意值为关闭",
+          "disableEmbed": "空,0与false为开启内嵌视频, 其他任意值为关闭",
           "sortReverse": "默认:默认排序 1:升序排序",
           "page": "页码, 默认1"
         },
@@ -7771,11 +7790,13 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "radar": {
-          "source": [
-            "mmda.booru.org/index.php"
-          ]
-        },
+        "radar": [
+          {
+            "source": [
+              "mmda.booru.org/index.php"
+            ]
+          }
+        ],
         "name": "MMDArchive 标签查询",
         "maintainers": [
           "N78Wy"
@@ -13532,6 +13553,32 @@
     },
     "name": "大眼仔旭",
     "url": "dayanzai.me"
+  },
+  "dbaplus": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "programming"
+        ],
+        "example": "/dbaplus",
+        "radar": [
+          {
+            "source": [
+              "dbaplus.cn/"
+            ]
+          }
+        ],
+        "name": "最新文章",
+        "maintainers": [
+          "cnkmmk"
+        ],
+        "url": "dbaplus.cn/",
+        "location": "rss.ts"
+      }
+    },
+    "name": "dbaplus社群",
+    "url": "dbaplus.cn"
   },
   "dblp": {
     "routes": {
@@ -34509,23 +34556,25 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "radar": {
-          "source": [
-            "modrinth.com/mod/:id/*",
-            "modrinth.com/plugin/:id/*",
-            "modrinth.com/datapack/:id/*",
-            "modrinth.com/shader/:id/*",
-            "modrinth.com/resourcepack/:id/*",
-            "modrinth.com/modpack/:id/*",
-            "modrinth.com/mod/:id",
-            "modrinth.com/plugin/:id",
-            "modrinth.com/datapack/:id",
-            "modrinth.com/shader/:id",
-            "modrinth.com/resourcepack/:id",
-            "modrinth.com/modpack/:id"
-          ],
-          "target": "/project/:id/versions"
-        },
+        "radar": [
+          {
+            "source": [
+              "modrinth.com/mod/:id/*",
+              "modrinth.com/plugin/:id/*",
+              "modrinth.com/datapack/:id/*",
+              "modrinth.com/shader/:id/*",
+              "modrinth.com/resourcepack/:id/*",
+              "modrinth.com/modpack/:id/*",
+              "modrinth.com/mod/:id",
+              "modrinth.com/plugin/:id",
+              "modrinth.com/datapack/:id",
+              "modrinth.com/shader/:id",
+              "modrinth.com/resourcepack/:id",
+              "modrinth.com/modpack/:id"
+            ],
+            "target": "/project/:id/versions"
+          }
+        ],
         "name": "Project versions",
         "maintainers": [
           "SettingDust"
@@ -60931,7 +60980,12 @@
           "embed": "Default to embed the video, set to any value to disable embedding"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "YOUTUBE_KEY",
+              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,

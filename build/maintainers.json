@@ -410,6 +410,9 @@
   "/appstore/xianmian": [
     "Andiedie"
   ],
+  "/appstorrent/programs": [
+    "xzzpig"
+  ],
   "/aqara/community/:id?/:keyword?": [
     "nczitzk"
   ],
@@ -1347,6 +1350,9 @@
     "nczitzk"
   ],
   "/dayanzai/:category/:fulltext?": [],
+  "/dbaplus/": [
+    "cnkmmk"
+  ],
   "/dblp/:field": [
     "ytno1"
   ],
