@@ -74,7 +74,7 @@
         ],
         "example": "/163/dy2/T1555591616739",
         "parameters": {
-          "id": "id，该网易号主页网址最后一项html的文件名"
+          "id": "id，该网易号主页网址最后一项 html 的文件名"
         },
         "features": {
           "requireConfig": false,
@@ -86,7 +86,8 @@
         },
         "name": "网易号（通用）",
         "maintainers": [
-          "mjysci"
+          "mjysci",
+          "lyqluis"
         ],
         "description": "优先使用方法一，若是网易号搜索页面搜不到的小众网易号（文章页面不含`data-wemediaid`）则可使用此法。\n触发反爬会只抓取到标题，建议自建。",
         "location": "dy2.ts"
@@ -1095,6 +1096,53 @@
     "name": "一亩三分地",
     "url": "blog.1point3acres.com"
   },
+  "1x": {
+    "routes": {
+      "/:category{.+}?": {
+        "path": "/:category{.+}?",
+        "name": "Gallery",
+        "url": "1x.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/1x/latest/awarded",
+        "parameters": {
+          "category": "Category, Latest Awarded by default"
+        },
+        "description": "::: tip\nFill in the field in the path with the part of the corresponding page URL after `https://1x.com/gallery/` or `https://1x.com/photo/`. Here are the examples:\n\nIf you subscribe to [Abstract Awarded](https://1x.com/gallery/abstract/awarded), you should fill in the path with the part `abstract/awarded` from the page URL `https://1x.com/gallery/abstract/awarded`. In this case, the route will be [`/1x/abstract/awarded`](https://rsshub.app/1x/abstract/awarded).\n    \nIf you subscribe to [Wildlife Published](https://1x.com/gallery/wildlife/published), you should fill in the path with the part `wildlife/published` from the page URL `https://1x.com/gallery/wildlife/published`. In this case, the route will be [`/1x/wildlife/published`](https://rsshub.app/1x/wildlife/published).\n:::",
+        "categories": [
+          "design",
+          "picture"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "/gallery/:category*",
+              "/photos/:category*"
+            ],
+            "target": "/1x/:category"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "1x.com",
+    "url": "1x.com",
+    "categories": [
+      "design",
+      "picture"
+    ],
+    "description": "1x.com • In Pursuit of the Sublime. Browse 200,000 curated photos from photographers all over the world."
+  },
   "2023game": {
     "routes": {
       "/:category?/:tab?": {
@@ -1258,6 +1306,38 @@
     },
     "name": "3DMGame",
     "url": "3dmgame.com"
+  },
+  "3kns": {
+    "routes": {
+      "/:filters?/:order?": {
+        "path": "/:filters?/:order?",
+        "categories": [
+          "game"
+        ],
+        "example": "/3kns/category=all&lang=all",
+        "parameters": {
+          "filters": "过滤器，可用参数见下表",
+          "order": "排序，按高分排序:desc;按低分排序:asc"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "3k-Switch游戏库",
+        "maintainers": [
+          "xzzpig"
+        ],
+        "url": "www.3kns.com/",
+        "description": "游戏类型(category)\n\n  | 不限 | 角色扮演 | 动作冒险 | 策略游戏 | 模拟经营 | 即时战略 | 格斗类 | 射击游戏 | 休闲益智 | 体育运动 | 街机格斗 | 无双类 | 其他游戏 | 赛车竞速 |\n  | ---- | -------- | -------- | -------- | -------- | -------- | ------ | -------- | -------- | -------- | -------- | ------ | -------- | -------- |\n  | all  | 1        | 2        | 3        | 4        | 5        | 6      | 7        | 8        | 9        | 10       | 11     | 12       | 13       |\n\n  游戏语言(language)\n\n  | 不限 | 中文 | 英语 | 日语 | 其他 | 中文汉化 | 德语 |\n  | ---- | ---- | ---- | ---- | ---- | -------- | ---- |\n  | all  | 1    | 2    | 3    | 4    | 5        | 6    |\n\n  游戏标签(tag)\n\n  | 不限 | 热门 | 多人聚会 | 僵尸 | 体感 | 大作 | 音乐 | 三国 | RPG | 格斗 | 闯关 | 横版 | 科幻 | 棋牌 | 运输 | 无双 | 卡通动漫 | 日系 | 养成 | 恐怖 | 运动 | 乙女 | 街机 | 飞行模拟 | 解谜 | 海战 | 战争 | 跑酷 | 即时策略 | 射击 | 经营 | 益智 | 沙盒 | 模拟 | 冒险 | 竞速 | 休闲 | 动作 | 生存 | 独立 | 拼图 | 魔改 xci | 卡牌 | 塔防 |\n  | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | --- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- |\n  | all  | 1    | 2        | 3    | 4    | 5    | 6    | 7    | 8   | 9    | 10   | 11   | 12   | 13   | 14   | 15   | 16       | 17   | 18   | 19   | 20   | 21   | 22   | 23       | 24   | 25   | 26   | 27   | 28       | 29   | 30   | 31   | 32   | 33   | 34   | 35   | 36   | 37   | 38   | 39   | 40   | 41       | 42   | 43   |\n\n  发售时间(pubDate)\n\n  | 不限 | 2017 年 | 2018 年 | 2019 年 | 2020 年 | 2021 年 | 2022 年 | 2023 年 | 2024 年 |\n  | ---- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |\n  | all  | 1       | 2       | 3       | 4       | 5       | 6       | 7       | 8       |\n\n  游戏集合(collection)\n\n  | 不限 | 舞力全开 | 马里奥 | 生化危机 | 炼金工房 | 最终幻想 | 塞尔达 | 宝可梦 | 勇者斗恶龙 | 模拟器 | 秋之回忆 | 第一方 | 体感健身 | 开放世界 | 儿童乐园 |\n  | ---- | -------- | ------ | -------- | -------- | -------- | ------ | ------ | ---------- | ------ | -------- | ------ | -------- | -------- | -------- |\n  | all  | 1        | 2      | 3        | 4        | 5        | 6      | 7      | 8          | 9      | 10       | 11     | 12       | 13       | 14       |",
+        "location": "index.ts"
+      }
+    },
+    "name": "3k-Switch游戏库",
+    "url": "www.3kns.com"
   },
   "423down": {
     "routes": {
@@ -7447,6 +7527,31 @@
     "name": "Blizzard",
     "url": "news.blizzard.com"
   },
+  "blogread": {
+    "routes": {
+      "/newest": {
+        "path": "/newest",
+        "categories": [
+          "programming"
+        ],
+        "example": "/blogread/newest",
+        "radar": [
+          {
+            "source": [
+              "blogread.cn/news/newest.php"
+            ]
+          }
+        ],
+        "name": "最新文章",
+        "maintainers": [
+          "fashioncj"
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "技术头条",
+    "url": "blogread.cn"
+  },
   "bloomberg": {
     "routes": {
       "/authors/:id/:slug/:source?": {
@@ -7678,6 +7783,27 @@
         "name": "Unknown",
         "maintainers": [],
         "location": "fdy.ts"
+      },
+      "/jwb": {
+        "path": "/jwb",
+        "categories": [
+          "university"
+        ],
+        "example": "/bnu/jwb",
+        "parameters": {},
+        "radar": [
+          {
+            "source": [
+              "jwb.bnu.edu.cn"
+            ]
+          }
+        ],
+        "name": "教务部（研究生院）",
+        "maintainers": [
+          "ladeng07"
+        ],
+        "url": "jwb.bnu.edu.cn/tzgg/index.htm",
+        "location": "jwb.ts"
       },
       "/lib/:category?": {
         "path": "/lib/:category?",
@@ -19706,6 +19832,33 @@
     "name": "巴哈姆特電玩資訊站",
     "url": "acg.gamer.com.tw"
   },
+  "gamer520": {
+    "routes": {
+      "/:category?/:order?": {
+        "path": "/:category?/:order?",
+        "categories": [
+          "game"
+        ],
+        "example": "/gamer520/switchyouxi",
+        "parameters": {
+          "category": "分类，见下表",
+          "order": "排序，发布日期: date; 修改日期: modified"
+        },
+        "features": {
+          "antiCrawler": true
+        },
+        "name": "文章",
+        "maintainers": [
+          "xzzpig"
+        ],
+        "url": "www.gamer520.com/",
+        "description": "分类\n\n  | 所有 | Switch 游戏下载 | 金手指     | 3A 巨作 | switch 主题 | PC 游戏 |\n  | ---- | --------------- | ---------- | ------- | ----------- | ------- |\n  | all  | switchyouxi     | jinshouzhi | 3ajuzuo | zhuti       | pcgame  |",
+        "location": "index.ts"
+      }
+    },
+    "name": "全球游戏交流中心",
+    "url": "www.gamer520.com"
+  },
   "gamersecret": {
     "routes": {
       "/:type?/:category?": {
@@ -20800,12 +20953,12 @@
           "repo": "GitHub repo name"
         },
         "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
+          "requireConfig": [
+            {
+              "name": "GITHUB_ACCESS_TOKEN",
+              "description": "GitHub Access Token"
+            }
+          ]
         },
         "radar": [
           {
@@ -20831,12 +20984,13 @@
           "user": "User name"
         },
         "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
+          "requireConfig": [
+            {
+              "name": "GITHUB_ACCESS_TOKEN",
+              "optional": true,
+              "description": "To get more requests"
+            }
+          ]
         },
         "radar": [
           {
@@ -24149,27 +24303,19 @@
   },
   "guokr": {
     "routes": {
-      "/:channel": {
-        "path": "/:channel",
+      "/column/:channel": {
+        "path": "/column/:channel",
         "categories": [
           "new-media"
         ],
-        "example": "/guokr/calendar",
+        "example": "/guokr/column/calendar",
         "parameters": {
           "channel": "专栏类别"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
         },
         "radar": [
           {
             "source": [
-              "guokr.com/"
+              "guokr.com/:channel"
             ]
           }
         ],
@@ -24188,15 +24334,6 @@
           "new-media"
         ],
         "example": "/guokr/scientific",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -48662,7 +48799,7 @@
         ],
         "example": "/smzdm/article/6902738986",
         "parameters": {
-          "uid": "用户id，网址上直接可以看到"
+          "uid": "用户 id，网址上直接可以看到"
         },
         "features": {
           "requireConfig": false,
@@ -63167,6 +63304,39 @@
   },
   "zjut": {
     "routes": {
+      "/news/:type": {
+        "path": "/news/:type",
+        "categories": [
+          "university"
+        ],
+        "example": "/zjut/news/5414",
+        "parameters": {
+          "type": "分类，见下表"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "浙工大新闻",
+        "maintainers": [
+          "junbaor",
+          "yikZero"
+        ],
+        "url": "www.news.zjut.edu.cn",
+        "radar": [
+          {
+            "source": [
+              "www.news.zjut.edu.cn/:type/list.htm"
+            ]
+          }
+        ],
+        "description": "| 图片新闻 | 工大要闻 | 综合新闻 | 学术・探索 | 三创・人物 | 智库工大 | 美誉工大 | 葵园融媒 |\n| -------- | -------- | -------- | ---------- | ---------- | -------- | -------- | -------- |\n| 5414     | 5415     | 5416     | 5422       | 5423       | 5424     | 5425     | 5419     |",
+        "location": "news.ts"
+      },
       "/da/:type": {
         "path": "/da/:type",
         "categories": [
@@ -63188,12 +63358,13 @@
         "maintainers": [
           "yikZero"
         ],
+        "url": "www.design.zjut.edu.cn",
         "description": "| 学院新闻 | 公告通知 | 科研申报 | 科研成果 | 文件与资源 | 学术交流 |\n| -------- | -------- | -------- | -------- | -------- | -------- |\n| 1        | 2        | 3        | 4        | 5        | 6        |",
         "location": "da/index.ts"
       }
     },
     "name": "浙江工业大学",
-    "url": "zjut.edu.cn"
+    "url": "www.zjut.edu.cn"
   },
   "zjuvag": {
     "routes": {

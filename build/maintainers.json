@@ -7,7 +7,8 @@
     "HendricksZheng"
   ],
   "/163/dy2/:id": [
-    "mjysci"
+    "mjysci",
+    "lyqluis"
   ],
   "/163/exclusive/:id?": [
     "nczitzk"
@@ -118,6 +119,9 @@
   "/1point3acres/user/:id/threads": [
     "Maecenas"
   ],
+  "/1x/:category{.+}?": [
+    "nczitzk"
+  ],
   "/2023game/:category?/:tab?": [
     "xzzpig"
   ],
@@ -140,6 +144,9 @@
   "/3dmgame/news/:category?": [
     "zhboner",
     "lyqluis"
+  ],
+  "/3kns/:filters?/:order?": [
+    "xzzpig"
   ],
   "/423down/:category/:type?": [],
   "/4gamers/": [
@@ -762,6 +769,9 @@
   "/blizzard/news/:language?/:category?": [
     "nczitzk"
   ],
+  "/blogread/newest": [
+    "fashioncj"
+  ],
   "/bloomberg/authors/:id/:slug/:source?": [
     "josh"
   ],
@@ -783,6 +793,9 @@
     "Fatpandac"
   ],
   "/bnu/fdy/:path{.+}?": [],
+  "/bnu/jwb": [
+    "ladeng07"
+  ],
   "/bnu/lib/:category?": [
     "TonyRL"
   ],
@@ -1961,6 +1974,9 @@
   ],
   "/gamer/ani/anime/:sn": [],
   "/gamer/ani/new_anime": [],
+  "/gamer520/:category?/:order?": [
+    "xzzpig"
+  ],
   "/gamersecret/:type?/:category?": [
     "nczitzk"
   ],
@@ -2452,7 +2468,7 @@
   "/gumroad/:username/:products": [
     "Fatpandac"
   ],
-  "/guokr/:channel": [
+  "/guokr/column/:channel": [
     "DHPO",
     "hoilc"
   ],
@@ -6387,6 +6403,10 @@
   ],
   "/zju/physics/:type": [
     "Caicailiushui"
+  ],
+  "/zjut/news/:type": [
+    "junbaor",
+    "yikZero"
   ],
   "/zjut/da/:type": [
     "yikZero"
