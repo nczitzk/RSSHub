@@ -1585,7 +1585,7 @@
     ]
   },
   "bjfu.edu.cn": {
-    "_name": "北京师范大学",
+    "_name": "北京林业大学",
     "graduate": [
       {
         "title": "研究生院培养动态",
@@ -9384,6 +9384,19 @@
       }
     ]
   },
+  "ntdm9.com": {
+    "_name": "NT动漫",
+    ".": [
+      {
+        "title": "番剧详情",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/video/:id"
+        ],
+        "target": "/ntdm/video/:id"
+      }
+    ]
+  },
   "ntdtv.com": {
     "_name": "新唐人电视台",
     "www": [
@@ -13734,6 +13747,14 @@
   "twreporter.org": {
     "_name": "報導者",
     ".": [
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:category"
+        ],
+        "target": "/twreporter/category/:category"
+      },
       {
         "title": "最新",
         "docs": "https://docs.rsshub.app/routes/new-media",
