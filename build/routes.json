@@ -14981,7 +14981,7 @@
           "daijinru",
           "hestudy"
         ],
-        "description": "| javascript | node | react |\n    | ---------- | ---- | ----- |\n    | js         | node | react |",
+        "description": "| javascript | node | react |\n  | ---------- | ---- | ----- |\n  | js         | node | react |",
         "radar": [
           {
             "source": [
@@ -20681,6 +20681,13 @@
       },
       "/file/:user/:repo/:branch/:filepath{.+}": {
         "path": "/file/:user/:repo/:branch/:filepath{.+}",
+        "example": "/github/file/DIYgod/RSSHub/master/README.md",
+        "parameters": {
+          "user": "GitHub user or org name",
+          "repo": "repository name",
+          "branch": "branch name",
+          "filepath": "path of target file"
+        },
         "radar": [
           {
             "source": [
@@ -20689,8 +20696,10 @@
             "target": "/file/:user/:repo/:branch/:filepath"
           }
         ],
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "File Commits",
+        "maintainers": [
+          "zengxs"
+        ],
         "location": "file.ts"
       },
       "/user/followers/:user": {
@@ -22620,8 +22629,10 @@
       },
       "/mot/:category{.+}?": {
         "path": "/mot/:category{.+}?",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "中华人民共和国交通运输部",
+        "maintainers": [
+          "ladeng07"
+        ],
         "location": "mot/index.ts"
       },
       "/ndrc/fggz/:category{.+}?": {
@@ -30868,6 +30879,47 @@
     "name": "JUMP",
     "url": "switch.jumpvg.com"
   },
+  "junhe": {
+    "routes": {
+      "/legal-updates": {
+        "path": "/legal-updates",
+        "name": "君合法评",
+        "url": "junhe.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/junhe/legal-updates",
+        "description": "",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "/legal-updates"
+            ],
+            "target": "/legal-updates"
+          }
+        ],
+        "location": "legal-updates.ts"
+      }
+    },
+    "name": "君合律师事务所",
+    "url": "junhe.com",
+    "categories": [
+      "new-media"
+    ],
+    "description": ""
+  },
   "kamen-rider-official": {
     "routes": {
       "/news/:category?": {
@@ -34438,12 +34490,42 @@
   },
   "miui": {
     "routes": {
-      "/:device/:type?/:region?": {
-        "path": "/:device/:type?/:region?",
+      "/community/user/:uid": {
+        "path": "/community/user/:uid",
+        "categories": [
+          "bbs"
+        ],
+        "example": "/miui/community/user/1200057564",
+        "parameters": {
+          "uid": "小米用户 UID，可于网页版用户主页链接中 `uid` 项获取"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "web.vip.miui.com/page/info/mio/mio/homePage"
+            ]
+          }
+        ],
+        "name": "小米社区用户发帖",
+        "maintainers": [
+          "abc1763613206"
+        ],
+        "location": "community/user.ts"
+      },
+      "/firmware/:device/:type?/:region?": {
+        "path": "/firmware/:device/:type?/:region?",
         "categories": [
           "program-update"
         ],
-        "example": "/miui/aries",
+        "example": "/miui/firmware/aries",
         "parameters": {
           "device": "the device `codename` eg. `aries` for Mi 2S",
           "type": "type",
@@ -34454,7 +34536,7 @@
           "Indexyz"
         ],
         "description": "  | stable  | development |\n    | ------- | ----------- |\n    | release | dev         |\n  \n    | region | region |\n    | ------ | ------ |\n    | China  | cn     |\n    | Global | global |",
-        "location": "index.ts"
+        "location": "firmware/index.ts"
       }
     },
     "name": "MIUI",
@@ -38518,7 +38600,7 @@
         "categories": [
           "anime"
         ],
-        "example": "/ntdm/video/20200035",
+        "example": "/ntdm/video/4309",
         "parameters": {
           "id": "番剧 id，对应详情 URL 中找到"
         },
@@ -38539,7 +38621,7 @@
         ],
         "name": "番剧详情",
         "maintainers": [
-          "alexhere"
+          "Yamico"
         ],
         "location": "video.ts"
       }

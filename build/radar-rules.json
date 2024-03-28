@@ -4962,7 +4962,7 @@
         "target": "/github/contributors/:user/:repo"
       },
       {
-        "title": "Unknown",
+        "title": "File Commits",
         "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
           "/:user/:repo/blob/:branch/*filepath"
@@ -8293,6 +8293,19 @@
           "/"
         ],
         "target": "/missav/new"
+      }
+    ]
+  },
+  "miui.com": {
+    "_name": "MIUI",
+    "web.vip": [
+      {
+        "title": "小米社区用户发帖",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/page/info/mio/mio/homePage"
+        ],
+        "target": "/miui(_,url)=>`/miui/community/user/${new URL(url).searchParams.get(\"uid\")}`"
       }
     ]
   },

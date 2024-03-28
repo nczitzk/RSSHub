@@ -2051,7 +2051,9 @@
   "/github/contributors/:user/:repo/:order?/:anon?": [
     "zoenglinghou"
   ],
-  "/github/file/:user/:repo/:branch/:filepath{.+}": [],
+  "/github/file/:user/:repo/:branch/:filepath{.+}": [
+    "zengxs"
+  ],
   "/github/user/followers/:user": [
     "HenryQW"
   ],
@@ -2280,7 +2282,9 @@
   "/gov/moj/aac/news/:type?": [
     "TonyRL"
   ],
-  "/gov/mot/:category{.+}?": [],
+  "/gov/mot/:category{.+}?": [
+    "ladeng07"
+  ],
   "/gov/ndrc/fggz/:category{.+}?": [],
   "/gov/ndrc/xwdt/:category{.+}?": [],
   "/gov/nea/sjzz/ghs": [
@@ -3147,6 +3151,9 @@
   "/jump/discount/:platform/:filter?/:countries?": [
     "zytomorrow"
   ],
+  "/junhe/legal-updates": [
+    "nczitzk"
+  ],
   "/kamen-rider-official/news/:category?": [
     "nczitzk"
   ],
@@ -3508,7 +3515,10 @@
     "EsuRt",
     "queensferryme"
   ],
-  "/miui/:device/:type?/:region?": [
+  "/miui/community/user/:uid": [
+    "abc1763613206"
+  ],
+  "/miui/firmware/:device/:type?/:region?": [
     "Indexyz"
   ],
   "/mixcloud/:username/:type?": [
@@ -3896,7 +3906,7 @@
     "bennyyip"
   ],
   "/ntdm/video/:id": [
-    "alexhere"
+    "Yamico"
   ],
   "/ntdtv/:language/:id": [
     "Fatpandac"
