@@ -64,6 +64,9 @@
   "/12306/zxdt/:id?": [
     "LogicJake"
   ],
+  "/005/:category?": [
+    "nczitzk"
+  ],
   "/0818tuan/:listId?": [
     "TonyRL"
   ],
@@ -88,8 +91,9 @@
   "/19lou/:city?": [
     "nczitzk"
   ],
-  "/1lou/:path?": [
-    "falling"
+  "/1lou/:params{.+}?": [
+    "falling",
+    "nczitzk"
   ],
   "/1point3acres/blog/:category?": [
     "nczitzk"
@@ -1966,7 +1970,8 @@
     "lone1y-51"
   ],
   "/gamer/gnn/:category?": [
-    "Arracc"
+    "Arracc",
+    "ladeng07"
   ],
   "/gamer/hot/:bsn": [
     "nczitzk",
@@ -3486,8 +3491,9 @@
   "/mindmeister/:category?/:language?": [
     "TonyRL"
   ],
-  "/minecraft/version": [
-    "TheresaQWQ"
+  "/minecraft/version/:versionType?/:linkType?": [
+    "TheresaQWQ",
+    "xtexChooser"
   ],
   "/mingpao/:type?/:category?": [
     "TonyRL"

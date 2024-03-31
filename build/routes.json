@@ -579,6 +579,77 @@
     "name": "12306",
     "url": "kyfw.12306.cn"
   },
+  "005": {
+    "routes": {
+      "/:category?": {
+        "path": "/:category?",
+        "name": "资讯",
+        "url": "005.tv",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/005/zx",
+        "parameters": {
+          "category": "分类，可在对应分类页 URL 中找到，默认为二次元资讯"
+        },
+        "description": "\n  | 二次元资讯 | 慢慢说 | 道听途说 | 展会资讯 |\n  | ---------- | ------ | -------- | -------- |\n  | zx         | zwh    | dtts     | zh       |\n    ",
+        "categories": [
+          "anime"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "005.tv/:category"
+            ]
+          },
+          {
+            "title": "二次元资讯",
+            "source": [
+              "005.tv/zx/"
+            ],
+            "target": "/005/zx"
+          },
+          {
+            "title": "慢慢说",
+            "source": [
+              "005.tv/zwh/"
+            ],
+            "target": "/005/zwh"
+          },
+          {
+            "title": "道听途说",
+            "source": [
+              "005.tv/dtts/"
+            ],
+            "target": "/005/dtts"
+          },
+          {
+            "title": "展会资讯",
+            "source": [
+              "005.tv/zh/"
+            ],
+            "target": "/005/zh"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "幻之羁绊动漫网",
+    "url": "005.tv",
+    "categories": [
+      "anime"
+    ],
+    "description": ""
+  },
   "0818tuan": {
     "routes": {
       "/:listId?": {
@@ -822,19 +893,27 @@
   },
   "1lou": {
     "routes": {
-      "/:path?": {
-        "path": "/:path?",
+      "/:params{.+}?": {
+        "path": "/:params{.+}?",
+        "name": "通用",
+        "url": "1lou.me",
+        "maintainers": [
+          "falling",
+          "nczitzk"
+        ],
+        "example": "/1lou/forum-2-1",
+        "parameters": {
+          "params": "路径参数，可以在对应页面的 URL 中找到"
+        },
+        "description": ":::tip\n  `1lou.me/` 后的内容填入 params 参数，以下是几个例子：\n\n  若订阅 [大陆电视剧](https://www.1lou.me/forum-2-1.htm?tagids=0_97_0_0)，网址为 `https://www.1lou.me/forum-2-1.htm?tagids=0_97_0_0`。截取 `https://www.1lou.me/` 到末尾 `.htm` 的部分 `forum-2-1` 作为参数，并补充 `tagids`，此时路由为 [`/1lou/forum-2-1?tagids=0_97_0_0`](https://rsshub.app/1lou/forum-2-1?tagids=0_97_0_0)。\n  \n  若订阅 [最新发帖电视剧](https://www.1lou.me/forum-2-1.htm?orderby=tid&digest=0)，网址为 `https://www.1lou.me/forum-2-1.htm?orderby=tid&digest=0`。截取 `https://www.1lou.me/` 到末尾 `.htm` 的部分 `forum-2-1` 作为参数，并补充 `orderby`，此时路由为 [`/1lou/forum-2-1?orderby=tid`](https://rsshub.app/1lou/forum-2-1?orderby=tid)。\n  \n  若订阅 [搜素繁花主题贴](https://www.1lou.me/search-_E7_B9_81_E8_8A_B1-1.htm)，网址为 `https://www.1lou.me/search-_E7_B9_81_E8_8A_B1-1.htm`。截取 `https://www.1lou.me/` 到末尾 `.htm` 的部分 `search-_E7_B9_81_E8_8A_B1-1` 作为参数，此时路由为 [`/1lou/search-_E7_B9_81_E8_8A_B1-1`](https://rsshub.app/1lou/search-_E7_B9_81_E8_8A_B1-1)。\n  :::",
         "categories": [
           "multimedia"
         ],
-        "example": "/1lou/search-繁花.htm",
-        "parameters": {
-          "path": "路径信息在URL里找到,主页为 index"
-        },
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
           "antiCrawler": false,
+          "supportRadar": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
@@ -842,21 +921,19 @@
         "radar": [
           {
             "source": [
-              "1lou.me/:path"
-            ],
-            "target": "/:path"
+              "1lou.me/:params"
+            ]
           }
         ],
-        "name": "搜索",
-        "maintainers": [
-          "falling"
-        ],
-        "description": ":::tip\n  将 1lou.me/ 后的内容作为参数传入到 path 即可\n\n  [www.1lou.me/search - 繁花.htm](http://www.1lou.me/search-繁花.htm) --> /1lou/search - 繁花.htm\n\n  [www.1lou.me/forum-1.htm](http://www.1lou.me/forum-1.htm) --> /1lou/forum-1.htm\n\n  [www.1lou.me/](http://www.1lou.me/) --> /1lou/\n  :::",
         "location": "index.ts"
       }
     },
     "name": "BT 之家 1LOU 站",
-    "url": "1lou.me"
+    "url": "1lou.me",
+    "categories": [
+      "multimedia"
+    ],
+    "description": ""
   },
   "1point3acres": {
     "routes": {
@@ -19743,14 +19820,15 @@
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
-          "antiCrawler": false,
+          "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
         },
         "name": "GNN 新聞",
         "maintainers": [
-          "Arracc"
+          "Arracc",
+          "ladeng07"
         ],
         "description": "| 首頁 | PC | TV 掌機 | 手機遊戲 | 動漫畫 | 主題報導 | 活動展覽 | 電競 |\n  | ---- | -- | ------- | -------- | ------ | -------- | -------- | ---- |\n  | 缺省 | 1  | 3       | 4        | 5      | 9        | 11       | 13   |\n\n  | Switch | PS5 | PS4 | XboxOne | XboxSX | PC 單機 | PC 線上 | iOS | Android | Web | 漫畫  | 動畫  |\n  | ------ | --- | --- | ------- | ------ | ------- | ------- | --- | ------- | --- | ----- | ----- |\n  | ns     | ps5 | ps4 | xbone   | xbsx   | pc      | olg     | ios | android | web | comic | anime |",
         "location": "gnn-index.ts"
@@ -21526,7 +21604,7 @@
         "maintainers": [
           "Fatpandac"
         ],
-        "description": "| Newest | Trending | Most popular |  Name | Number of styles |\n  | :----: | :------: | :----------: | :---: | :--------------: |\n  |  date  | trending |  popularity  | alpha |       style      |\n\n  :::warning\n  This route requires API key, therefore it's only available when self-hosting, refer to the [Deploy Guide](https://docs.rsshub.app/install/#configuration-route-specific-configurations) for route-specific configurations.\n  :::",
+        "description": "| Newest | Trending | Most popular |  Name | Number of styles |\n  | :----: | :------: | :----------: | :---: | :--------------: |\n  |  date  | trending |  popularity  | alpha |       style      |\n\n  :::warning\n  This route requires API key, therefore it's only available when self-hosting, refer to the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.\n  :::",
         "location": "fonts.ts"
       },
       "/news/:category/:locale": {
@@ -25479,7 +25557,7 @@
     },
     "name": "哈尔滨工业大学",
     "url": "jwc.hit.edu.cn",
-    "description": ":::warning\n哈工大网站疑似禁止了`rsshub.app`的访问，使用路由需要自行 [部署](https://docs.rsshub.app/install)。\n:::"
+    "description": ":::warning\n哈工大网站疑似禁止了`rsshub.app`的访问，使用路由需要自行 [部署](https://docs.rsshub.app/deploy/)。\n:::"
   },
   "hitsz": {
     "routes": {
@@ -28573,7 +28651,7 @@
           "oppilate",
           "DIYgod"
         ],
-        "description": ":::warning\nDue to [Instagram Private API](https://github.com/dilame/instagram-private-api) restrictions, you have to setup your credentials on the server. 2FA is not supported. See [deployment guide](https://docs.rsshub.app/install/) for more.\n:::",
+        "description": ":::warning\nDue to [Instagram Private API](https://github.com/dilame/instagram-private-api) restrictions, you have to setup your credentials on the server. 2FA is not supported. See [deployment guide](https://docs.rsshub.app/deploy/) for more.\n:::",
         "location": "private-api/index.ts"
       },
       "/2/:category/:key": {
@@ -29154,7 +29232,7 @@
           "FeCCC"
         ],
         "url": "ecchi.iwara.tv/",
-        "description": ":::warning\n  This route requires username and password, therefore it's only available when self-hosting, refer to the [Deploy Guide](/install/#route-specific-configurations) for route-specific configurations.\n  :::",
+        "description": ":::warning\n  This route requires username and password, therefore it's only available when self-hosting, refer to the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.\n  :::",
         "location": "subscriptions.ts"
       }
     },
@@ -33602,7 +33680,7 @@
     },
     "name": "Mastodon",
     "url": "mastodon.social",
-    "description": ":::tip\nOfficial user RSS:\n\n-   RSS: `https://**:instance**/users/**:username**.rss` ([Example](https://pawoo.net/users/pawoo_support.rss))\n-   Atom: ~~`https://**:instance**/users/**:username**.atom`~~ (Only for pawoo.net, [example](https://pawoo.net/users/pawoo_support.atom))\n\nThese feed do not include boosts (a.k.a. reblogs). RSSHub provides a feed for user timeline based on the Mastodon API, but to use that, you may need to create application on a Mastodon instance, and configure your RSSHub instance. Check the [Deploy Guide](/install/#route-specific-configurations) for route-specific configurations.\n:::"
+    "description": ":::tip\nOfficial user RSS:\n\n-   RSS: `https://**:instance**/users/**:username**.rss` ([Example](https://pawoo.net/users/pawoo_support.rss))\n-   Atom: ~~`https://**:instance**/users/**:username**.atom`~~ (Only for pawoo.net, [example](https://pawoo.net/users/pawoo_support.atom))\n\nThese feed do not include boosts (a.k.a. reblogs). RSSHub provides a feed for user timeline based on the Mastodon API, but to use that, you may need to create application on a Mastodon instance, and configure your RSSHub instance. Check the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.\n:::"
   },
   "mckinsey": {
     "routes": {
@@ -34238,13 +34316,16 @@
   },
   "minecraft": {
     "routes": {
-      "/version": {
-        "path": "/version",
+      "/version/:versionType?/:linkType?": {
+        "path": "/version/:versionType?/:linkType?",
         "categories": [
           "game"
         ],
         "example": "/minecraft/version",
-        "parameters": {},
+        "parameters": {
+          "versionType": "Game version type, `all` by default",
+          "linkType": "Link added to feed, `official` by default"
+        },
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
@@ -34262,9 +34343,14 @@
         ],
         "name": "Java Game Update",
         "maintainers": [
-          "TheresaQWQ"
+          "TheresaQWQ",
+          "xtexChooser"
         ],
         "url": "minecraft.net/",
+        "description": "\n| Version                    | versionType |\n| -------------------------- | ----------- |\n| 正式版                     | release     |\n| 快照                       | snapshot    |\n| Alpha 及更早的版本         | old_alpha  |\n| Beta 版                    | old_beta   |\n| Target                     | linkType    |\n| -------------------------- | --------    |\n| minecraft.net              | official    |\n| 英文 Minecraft Wiki 版本页 | enwiki      |\n| 中文 Minecraft Wiki 版本页 | zhwiki      |\n",
+        "zh": {
+          "name": "Java版游戏更新"
+        },
         "location": "version.ts"
       }
     },
@@ -36567,7 +36653,7 @@
         "parameters": {
           "key": "Filter term, can be: `parody`, `character`, `tag`, `artist`, `group`, `language` or `category`",
           "keyword": "Filter value",
-          "mode": "mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](/install/#configuration-route-specific-configurations), default to `simple`"
+          "mode": "mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations), default to `simple`"
         },
         "features": {
           "requireConfig": false,
@@ -36600,7 +36686,7 @@
         "example": "/nhentai/search/language%3Ajapanese+-scat+-yaoi+-guro+-\"mosaic+censorship\"",
         "parameters": {
           "keyword": "Keywords for search. You can copy the content after `q=` after searching on the original website, or you can enter it directly. See the [official website](https://nhentai.net/info/) for details",
-          "mode": "mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](/install/#configuration-route-specific-configurations), default to `simple`"
+          "mode": "mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations), default to `simple`"
         },
         "features": {
           "requireConfig": false,
@@ -38347,7 +38433,7 @@
     },
     "name": "Notion",
     "url": "notion.so",
-    "description": ":::warning\nNeed to set up Notion integration, please refer to [Route-specific Configurations](https://docs.rsshub.app/install/#Deployment) for details.\n:::\n\n:::tip Recommendation\nIt is recommended to use with clipping tools such as Notion Web Clipper.\n:::"
+    "description": ":::warning\nNeed to set up Notion integration, please refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations) for details.\n:::\n\n:::tip Recommendation\nIt is recommended to use with clipping tools such as Notion Web Clipper.\n:::"
   },
   "now": {
     "routes": {
@@ -50492,7 +50578,7 @@
           "HyperCherry"
         ],
         "url": "jsjxy.stbu.edu.cn/news",
-        "description": ":::warning\n计算机学院通知公告疑似禁止了非大陆 IP 访问，使用路由需要自行 [部署](https://docs.rsshub.app/install)。\n:::",
+        "description": ":::warning\n计算机学院通知公告疑似禁止了非大陆 IP 访问，使用路由需要自行 [部署](https://docs.rsshub.app/deploy/)。\n:::",
         "location": "jsjxy.ts"
       },
       "/xyxw": {
