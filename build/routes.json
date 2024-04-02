@@ -5923,9 +5923,15 @@
           "routeParams": "额外参数；请参阅以下说明和表格"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "BILIBILI_COOKIE_*",
+              "optional": true,
+              "description": "如果没有此配置，那么必须开启 puppeteer 支持；BILIBILI_COOKIE_{uid}: 用于用户关注动态系列路由，对应 uid 的 b 站用户登录后的 Cookie 值，`{uid}` 替换为 uid，如 `BILIBILI_COOKIE_2267573`，获取方式：\n1.  打开 [https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8](https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8)\n2.  打开控制台，切换到 Network 面板，刷新\n3.  点击 dynamic_new 请求，找到 Cookie\n4.  视频和专栏，UP 主粉丝及关注只要求 `SESSDATA` 字段，动态需复制整段 Cookie"
+            }
+          ],
           "requirePuppeteer": false,
-          "antiCrawler": false,
+          "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
@@ -60717,6 +60723,36 @@
     },
     "name": "Yahoo",
     "url": "hk.news.yahoo.com"
+  },
+  "yande": {
+    "routes": {
+      "/post/popular_recent/:period?": {
+        "path": "/post/popular_recent/:period?",
+        "categories": [
+          "anime"
+        ],
+        "example": "/yande/post/popular_recent/1d",
+        "parameters": {
+          "period": "展示时间"
+        },
+        "radar": [
+          {
+            "source": [
+              "yande.re/post/"
+            ]
+          }
+        ],
+        "name": "posts",
+        "maintainers": [
+          "fashioncj"
+        ],
+        "description": "| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     | \n  | ------- | -------- | ------- | -------- | \n  | 1d | 1w | 1m ｜1y｜",
+        "location": "post.ts"
+      }
+    },
+    "name": "yande",
+    "url": "yande.re",
+    "description": "yande post"
   },
   "yangtzeu": {
     "routes": {
