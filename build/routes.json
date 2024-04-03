@@ -268,7 +268,13 @@
           "id": "歌单 id, 可在歌单页 URL 中找到"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "NCM_COOKIES",
+              "optional": true,
+              "description": "网易云音乐登陆后的 cookie 值，可在浏览器控制台通过`document.cookie`获取。"
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -326,7 +332,13 @@
           "type": "排行榜类型，0所有时间(默认)，1最近一周"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "NCM_COOKIES",
+              "optional": true,
+              "description": "网易云音乐登陆后的 cookie 值，可在浏览器控制台通过`document.cookie`获取。"
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
@@ -4224,6 +4236,37 @@
     },
     "name": "Aqara",
     "url": "aqara.com"
+  },
+  "aqicn": {
+    "routes": {
+      "/:city/:pollution?": {
+        "path": "/:city/:pollution?",
+        "categories": [
+          "other"
+        ],
+        "example": "/aqicn/beijing/pm25",
+        "parameters": {
+          "city": "城市拼音或地区 ID，详见[aqicn.org](http://aqicn.org/city/)",
+          "pollution": "可选择显示更详细的空气污染成分"
+        },
+        "radar": [
+          {
+            "source": [
+              "aqicn.org"
+            ]
+          }
+        ],
+        "name": "实时 AQI",
+        "maintainers": [
+          "ladeng07"
+        ],
+        "url": "aqicn.org",
+        "descriptions": "\n|   参数   | 污染成分 |\n| -------- | -------- |\n|   pm25   |  PM2.5   |\n|   pm10   |  PM10    |\n|   o3     |  O3      |\n|   no2    |  NO2     |\n|   so2    |  SO2     |\n|   co     |  CO      |\n\n举例: [https://rsshub.app/aqicn/beijing/pm25,pm10](https://rsshub.app/aqicn/beijing/pm25,pm10)\n\n1. 显示单个污染成分，例如「pm25」, [https://rsshub.app/aqicn/beijing/pm25](https://rsshub.app/aqicn/beijing/pm25)\n2. 逗号分隔显示多个污染成分，例如「pm25,pm10」，[https://rsshub.app/aqicn/beijing/pm25,pm10](https://rsshub.app/aqicn/beijing/pm25,pm10)\n3. 城市子站 ID 获取方法：右键显示网页源代码，搜索 \"idx\" （带双冒号），后面的 ID 就是子站的 ID，如你给的链接 ID 是 4258，RSS 地址就是 [https://rsshub.app/aqicn/4258](https://rsshub.app/aqicn/4258)\n",
+        "location": "aqi.ts"
+      }
+    },
+    "name": "空气质量",
+    "url": "aqicn.org"
   },
   "arcteryx": {
     "routes": {
@@ -15330,6 +15373,43 @@
     "name": "懂球帝",
     "url": "m.dongqiudi.com",
     "description": ":::tip\n-   可以通过头条新闻 + 参数过滤的形式获得早报、专题等内容。\n:::"
+  },
+  "dora-world": {
+    "routes": {
+      "/article/:topic/:topicId?": {
+        "path": "/article/:topic/:topicId?",
+        "categories": [
+          "anime"
+        ],
+        "example": "/dora-world/article/contents",
+        "parameters": {
+          "topic": "Topic name, can be found in URL. For example: the topic name of [https://www.dora-world.com/movie](https://www.dora-world.com/movie) is `movie`",
+          "topicId": "Topic id, can be found in URL. For example: the topic id of [https://www.dora-world.com/contents?t=197](https://www.dora-world.com/contents?t=197) is `197`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.dora-world.com/:topic"
+            ]
+          }
+        ],
+        "name": "Article",
+        "maintainers": [
+          "AChangAZha"
+        ],
+        "location": "article.ts"
+      }
+    },
+    "name": "Doraemon Channel",
+    "url": "www.dora-world.com"
   },
   "dorohedoro": {
     "routes": {
@@ -26828,6 +26908,212 @@
     "name": "环球网",
     "url": "huanqiu.com"
   },
+  "hubu": {
+    "routes": {
+      "/www/:category{.+}?": {
+        "path": "/www/:category{.+}?",
+        "name": "主页",
+        "url": "hubu.edu.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/hubu/www/index/tzgg",
+        "parameters": {
+          "category": "分类，可在对应分类页 URL 中找到，默认为[通知公告](https://www.hubu.edu.cn/index/tzgg.htm)"
+        },
+        "description": ":::tip\n  若订阅 [通知公告](https://www.hubu.edu.cn/index/tzgg.htm)，网址为 `https://www.hubu.edu.cn/index/tzgg.htm`。截取 `https://www.hubu.edu.cn/` 到末尾 `.htm` 的部分 `index/tzgg` 作为参数填入，此时路由为 [`/hubu/www/index/tzgg`](https://rsshub.app/hubu/www/index/tzgg)。\n  :::\n\n  | 通知公告   | 学术预告   |\n  | ---------- | ---------- |\n  | index/tzgg | index/xsyg |\n  ",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "title": "通知公告",
+            "source": [
+              "hubu.edu.cn/index/tzgg.htm"
+            ],
+            "target": "/www/index/tzgg"
+          },
+          {
+            "title": "学术预告",
+            "source": [
+              "hubu.edu.cn/index/xsyg.htm"
+            ],
+            "target": "/www/index/xsyg"
+          }
+        ],
+        "location": "index.ts"
+      },
+      "/zhxy/:category{.+}?": {
+        "path": "/zhxy/:category{.+}?",
+        "name": "资源环境学院",
+        "url": "zhxy.hubu.edu.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/hubu/zhxy/index/tzgg",
+        "parameters": {
+          "category": "分类，可在对应分类页 URL 中找到，默认为[通知公告](https://zhxy.hubu.edu.cn/index/tzgg.htm)"
+        },
+        "description": ":::tip\n  若订阅 [通知公告](https://zhxy.hubu.edu.cn/index/tzgg.htm)，网址为 `https://zhxy.hubu.edu.cn/index/tzgg.htm`。截取 `https://zhxy.hubu.edu.cn/` 到末尾 `.htm` 的部分 `index/tzgg` 作为参数填入，此时路由为 [`/hubu/zhxy/index/tzgg`](https://rsshub.app/hubu/zhxy/index/tzgg)。\n  :::\n\n  | [通知公告](https://zhxy.hubu.edu.cn/index/tzgg.htm) | [新闻动态](https://zhxy.hubu.edu.cn/index/xwdt.htm) |\n  | --------------------------------------------------- | --------------------------------------------------- |\n  | index/tzgg                                          | index/xwdt                                          |  \n\n  #### [人才培养](https://zhxy.hubu.edu.cn/rcpy.htm)\n  \n  | [人才培养](https://zhxy.hubu.edu.cn/rcpy.htm) | [本科生教育](https://zhxy.hubu.edu.cn/rcpy/bksjy.htm) | [研究生教育](https://zhxy.hubu.edu.cn/rcpy/yjsjy.htm) | [招生与就业](https://zhxy.hubu.edu.cn/rcpy/zsyjy/zsxx.htm) |\n  | --------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------- |\n  | rcpy                                          | rcpy/bksjy                                            | rcpy/yjsjy                                            | rcpy/zsyjy/zsxx                                            |\n  \n  #### [学科建设](https://zhxy.hubu.edu.cn/xkjianshe/zdxk.htm)\n  \n  | [学科建设](https://zhxy.hubu.edu.cn/xkjianshe/zdxk.htm) | [重点学科](https://zhxy.hubu.edu.cn/xkjianshe/zdxk.htm) | [硕士点](https://zhxy.hubu.edu.cn/xkjianshe/ssd.htm) | [博士点](https://zhxy.hubu.edu.cn/xkjianshe/bsd.htm) |\n  | ------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |\n  | xkjianshe/zdxk                                          | xkjianshe/zdxk                                          | xkjianshe/ssd                                        | xkjianshe/bsd                                        |\n  \n  #### [科研服务](https://zhxy.hubu.edu.cn/kyfw.htm)\n  \n  | [科研服务](https://zhxy.hubu.edu.cn/kyfw.htm) | [科研动态](https://zhxy.hubu.edu.cn/kyfw/kydongt.htm) | [学术交流](https://zhxy.hubu.edu.cn/kyfw/xsjl.htm) | [科研平台](https://zhxy.hubu.edu.cn/kyfw/keyapt.htm) | [社会服务](https://zhxy.hubu.edu.cn/kyfw/shfuw.htm) |\n  | --------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------- |\n  | kyfw                                          | kyfw/kydongt                                          | kyfw/xsjl                                          | kyfw/keyapt                                          | kyfw/shfuw                                          |\n  \n  #### [党群工作](https://zhxy.hubu.edu.cn/dqgz.htm)\n  \n  | [党群工作](https://zhxy.hubu.edu.cn/dqgz.htm) | [党建工作](https://zhxy.hubu.edu.cn/dqgz/djgz/jgdj.htm) | [工会工作](https://zhxy.hubu.edu.cn/dqgz/ghgon.htm) |\n  | --------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------- |\n  | dqgz                                          | dqgz/djgz/jgdj                                          | dqgz/ghgon                                          |\n  ",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "title": "通知公告",
+            "source": [
+              "zhxy.hubu.edu.cn/index/tzgg.htm"
+            ],
+            "target": "/zhxy/index/tzgg"
+          },
+          {
+            "title": "新闻动态",
+            "source": [
+              "zhxy.hubu.edu.cn/index/xwdt.htm"
+            ],
+            "target": "/zhxy/index/xwdt"
+          },
+          {
+            "title": "人才培养",
+            "source": [
+              "zhxy.hubu.edu.cn/rcpy.htm"
+            ],
+            "target": "/zhxy/rcpy"
+          },
+          {
+            "title": "人才培养 - 本科生教育",
+            "source": [
+              "zhxy.hubu.edu.cn/rcpy/bksjy.htm"
+            ],
+            "target": "/zhxy/rcpy/bksjy"
+          },
+          {
+            "title": "人才培养 - 研究生教育",
+            "source": [
+              "zhxy.hubu.edu.cn/rcpy/yjsjy.htm"
+            ],
+            "target": "/zhxy/rcpy/yjsjy"
+          },
+          {
+            "title": "人才培养 - 招生与就业",
+            "source": [
+              "zhxy.hubu.edu.cn/rcpy/zsyjy/zsxx.htm"
+            ],
+            "target": "/zhxy/rcpy/zsyjy/zsxx"
+          },
+          {
+            "title": "学科建设",
+            "source": [
+              "zhxy.hubu.edu.cn/xkjianshe/zdxk.htm"
+            ],
+            "target": "/zhxy/xkjianshe/zdxk"
+          },
+          {
+            "title": "学科建设 - 重点学科",
+            "source": [
+              "zhxy.hubu.edu.cn/xkjianshe/zdxk.htm"
+            ],
+            "target": "/zhxy/xkjianshe/zdxk"
+          },
+          {
+            "title": "学科建设 - 硕士点",
+            "source": [
+              "zhxy.hubu.edu.cn/xkjianshe/ssd.htm"
+            ],
+            "target": "/zhxy/xkjianshe/ssd"
+          },
+          {
+            "title": "学科建设 - 博士点",
+            "source": [
+              "zhxy.hubu.edu.cn/xkjianshe/bsd.htm"
+            ],
+            "target": "/zhxy/xkjianshe/bsd"
+          },
+          {
+            "title": "科研服务",
+            "source": [
+              "zhxy.hubu.edu.cn/kyfw.htm"
+            ],
+            "target": "/zhxy/kyfw"
+          },
+          {
+            "title": "科研服务 - 科研动态",
+            "source": [
+              "zhxy.hubu.edu.cn/kyfw/kydongt.htm"
+            ],
+            "target": "/zhxy/kyfw/kydongt"
+          },
+          {
+            "title": "科研服务 - 学术交流",
+            "source": [
+              "zhxy.hubu.edu.cn/kyfw/xsjl.htm"
+            ],
+            "target": "/zhxy/kyfw/xsjl"
+          },
+          {
+            "title": "科研服务 - 科研平台",
+            "source": [
+              "zhxy.hubu.edu.cn/kyfw/keyapt.htm"
+            ],
+            "target": "/zhxy/kyfw/keyapt"
+          },
+          {
+            "title": "科研服务 - 社会服务",
+            "source": [
+              "zhxy.hubu.edu.cn/kyfw/shfuw.htm"
+            ],
+            "target": "/zhxy/kyfw/shfuw"
+          },
+          {
+            "title": "党群工作",
+            "source": [
+              "zhxy.hubu.edu.cn/dqgz.htm"
+            ],
+            "target": "/zhxy/dqgz"
+          },
+          {
+            "title": "党群工作 - 党建工作",
+            "source": [
+              "zhxy.hubu.edu.cn/dqgz/djgz/jgdj.htm"
+            ],
+            "target": "/zhxy/dqgz/djgz/jgdj"
+          },
+          {
+            "title": "党群工作 - 工会工作",
+            "source": [
+              "zhxy.hubu.edu.cn/dqgz/ghgon.htm"
+            ],
+            "target": "/zhxy/dqgz/ghgon"
+          }
+        ],
+        "location": "zhxy.ts"
+      }
+    },
+    "name": "湖北大学",
+    "url": "hubu.edu.cn",
+    "categories": [
+      "university"
+    ],
+    "description": ""
+  },
   "huggingface": {
     "routes": {
       "/blog-zh": {
@@ -34944,12 +35230,14 @@
           "category": "分类，可在对应分类页 URL 中找到"
         },
         "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
+          "requireConfig": [
+            {
+              "name": "MOX_COOKIE",
+              "optional": true,
+              "description": "注册用户登录后的 Cookie, 可以从浏览器开发者工具Network面板中的mox页面请求获取，Cookie内容形如VOLSKEY=xxxxxx; VLIBSID=xxxxxx; VOLSESS=xxxxxx"
+            }
+          ],
+          "antiCrawler": true
         },
         "radar": [
           {
@@ -34963,7 +35251,7 @@
         "maintainers": [
           "nczitzk"
         ],
-        "description": ":::tip\n  在首页将分类参数选择确定后跳转到的分类页面 URL 中，`/l/` 后的字段即为分类参数。\n\n  如 [科幻 + 日語 + 日本 + 長篇 + 完結 + 最近更新](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL) 的 URL 为 [https://mox.moe/l/CAT%2A 科幻，日本，完結，lastupdate,jpn,l,BL](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)，此时 `/l/` 后的字段为 `CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`。最终获得路由为 [`/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`](https://rsshub.app/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)\n  :::",
+        "description": ":::tip\n  在首页将分类参数选择确定后跳转到的分类页面 URL 中，`/l/` 后的字段即为分类参数。\n\n  如 [科幻 + 日語 + 日本 + 長篇 + 完結 + 最近更新](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL) 的 URL 为 [https://mox.moe/l/CAT%2A 科幻，日本，完結，lastupdate,jpn,l,BL](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)，此时 `/l/` 后的字段为 `CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`。最终获得路由为 [`/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`](https://rsshub.app/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)\n  :::\n\n  :::warning\n  由于 mox.moe 对非登录用户屏蔽了部分漫画详情内容的获取，且极易触发反爬机制，导致访问ip被重定向至google.com，因此在未配置`MOX_COOKIE`参数的情况下路由只会返回漫画标题和封面，不会对详情内容进行抓取。\n  :::",
         "location": "index.ts"
       }
     },

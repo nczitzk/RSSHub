@@ -430,6 +430,9 @@
   "/aqara/cn/news": [],
   "/aqara*": [],
   "/aqara/:region/:type?": [],
+  "/aqicn/:city/:pollution?": [
+    "ladeng07"
+  ],
   "/arcteryx/new-arrivals/:country/:gender": [
     "EthanWng97"
   ],
@@ -1519,6 +1522,9 @@
   ],
   "/dongqiudi/top_news/:id?": [
     "HendricksZheng"
+  ],
+  "/dora-world/article/:topic/:topicId?": [
+    "AChangAZha"
   ],
   "/dorohedoro/news": [
     "nczitzk"
@@ -2721,6 +2727,12 @@
   ],
   "/huanqiu/news/:category?": [
     "yuxinliu-alex"
+  ],
+  "/hubu/www/:category{.+}?": [
+    "nczitzk"
+  ],
+  "/hubu/zhxy/:category{.+}?": [
+    "nczitzk"
   ],
   "/huggingface/blog-zh": [
     "zcf0508"
