@@ -5035,7 +5035,7 @@
         "maintainers": [
           "JimenezLi"
         ],
-        "description": "| 键           | 含义                                                       | 接受的值      | 默认值 |\n  | ------------ | ---------------------------------------------------------- | ------------- | ------ |\n  | kw           | 在名为 kw 的贴吧中搜索                                     | 任意名称 / 无 | 无     |\n  | only_thread | 只看主题帖，默认为 0 关闭                                  | 0/1           | 0      |\n  | rn           | 返回条目的数量                                             | 1-20          | 20     |\n  | sm           | 排序方式，0 为按时间顺序，1 为按时间倒序，2 为按相关性顺序 | 0/1/2         | 1      |\n\n  用例：`/baidu/tieba/search/neuro/kw=neurosama&only_thread=1&sm=2`",
+        "description": "| 键           | 含义                                                       | 接受的值      | 默认值 |\n  | ------------ | ---------------------------------------------------------- | ------------- | ------ |\n  | kw           | 在名为 kw 的贴吧中搜索                                     | 任意名称 / 无 | 无     |\n  | only_thread  | 只看主题帖，默认为 0 关闭                                  | 0/1           | 0      |\n  | rn           | 返回条目的数量                                             | 1-20          | 20     |\n  | sm           | 排序方式，0 为按时间顺序，1 为按时间倒序，2 为按相关性顺序 | 0/1/2         | 1      |\n\n  用例：`/baidu/tieba/search/neuro/kw=neurosama&only_thread=1&sm=2`",
         "location": "tieba/search.ts"
       },
       "/tieba/user/:uid": {
@@ -28048,23 +28048,26 @@
   },
   "idaily": {
     "routes": {
-      "/today/:language?": {
-        "path": [
-          "/today/:language?",
-          "/:language?"
-        ],
-        "name": "Unknown",
-        "maintainers": [],
-        "description": "| 简体中文 | 繁体中文 |\n  | -------- | -------- |\n  | zh-hans  | zh-hant  |",
-        "location": "index.ts"
-      },
       "/:language?": {
         "path": [
-          "/today/:language?",
           "/:language?"
         ],
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "每日环球视野",
+        "example": "/idaily",
+        "maintainers": [
+          "zphw",
+          "nczitzk"
+        ],
+        "parameters": {
+          "language": "语言，见下表，默认为简体中文"
+        },
+        "radar": [
+          {
+            "source": [
+              "idai.ly/"
+            ]
+          }
+        ],
         "description": "| 简体中文 | 繁体中文 |\n  | -------- | -------- |\n  | zh-hans  | zh-hant  |",
         "location": "index.ts"
       }
@@ -39722,6 +39725,32 @@
     },
     "name": "Nyaa",
     "url": "nyaa.si"
+  },
+  "nymity": {
+    "routes": {
+      "/censorbib": {
+        "path": "/censorbib",
+        "categories": [
+          "journal"
+        ],
+        "example": "/nymity/censorbib",
+        "radar": [
+          {
+            "source": [
+              "censorbib.nymity.ch/"
+            ]
+          }
+        ],
+        "name": "CensorBib Updates",
+        "maintainers": [
+          "xtexChooser"
+        ],
+        "url": "censorbib.nymity.ch/",
+        "location": "censorbib.ts"
+      }
+    },
+    "name": "nymity",
+    "url": "censorbib.nymity.ch"
   },
   "nytimes": {
     "routes": {
@@ -56917,6 +56946,39 @@
         "description": "| 信息 | 教学     | 考试 | 交流     |\n  | ---- | -------- | ---- | -------- |\n  | info | teaching | exam | exchange |",
         "location": "jwc.ts"
       },
+      "/math/:type?": {
+        "path": "/math/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/ustc/math/tzgg",
+        "parameters": {
+          "type": "分类，见下表，默认为通知公告"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "math.ustc.edu.cn/"
+            ],
+            "target": "/math"
+          }
+        ],
+        "name": "数学科学学院",
+        "maintainers": [
+          "ne0-wu"
+        ],
+        "url": "math.ustc.edu.cn/",
+        "description": "| 学院新闻 | 通知公告 | 学术交流 | 学术报告 |\n  | -------- | -------- | -------- | -------- |\n  | xyxw     | tzgg     | xsjl     | xsbg     |",
+        "location": "math.ts"
+      },
       "/sist/:type?": {
         "path": "/sist/:type?",
         "categories": [
@@ -59673,6 +59735,21 @@
   },
   "xiaoheihe": {
     "routes": {
+      "/add2cart/:platform": {
+        "path": "/add2cart/:platform",
+        "categories": [
+          "game"
+        ],
+        "example": "/xiaoheihe/add2cart/epic",
+        "parameters": {
+          "platform": "平台名：epic、steam或gog"
+        },
+        "name": "喜加一",
+        "maintainers": [
+          "ladeng07"
+        ],
+        "location": "add2cart.ts"
+      },
       "/discount/:platform": {
         "path": "/discount/:platform",
         "categories": [
@@ -60729,6 +60806,35 @@
         ],
         "description": "| 公告         | 新闻 | 研报     |\n  | ------------ | ---- | -------- |\n  | announcement | news | research |",
         "location": "stock-info.ts"
+      },
+      "/timeline/:usergroup_id?": {
+        "path": "/timeline/:usergroup_id?",
+        "categories": [
+          "finance"
+        ],
+        "example": "/xueqiu/timeline/",
+        "parameters": {
+          "usergroup_id": "用户组 ID，-1 为全部关注用户"
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "XUEQIU_COOKIES",
+              "description": ""
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "用户关注时间线",
+        "maintainers": [
+          "ErnestDong"
+        ],
+        "description": ":::warning\n  用户关注动态需要登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。\n  :::\n\n  | -1   | -2       | 1             |\n  | ---- | -------- | ------------- |\n  | 全部 | 关注精选 | 自定义第 1 组 |",
+        "location": "timeline.ts"
       },
       "/today": {
         "path": "/today",
