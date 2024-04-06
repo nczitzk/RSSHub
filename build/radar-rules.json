@@ -68,6 +68,19 @@
       }
     ]
   },
+  "12371.cn": {
+    "_name": "共产党员网",
+    "www": [
+      {
+        "title": "最新发布",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/:category"
+        ],
+        "target": "/12371/:category?"
+      }
+    ]
+  },
   "005.tv": {
     "_name": "幻之羁绊动漫网",
     ".": [
@@ -325,6 +338,19 @@
           "/"
         ],
         "target": "/50forum/"
+      }
+    ]
+  },
+  "51cto.com": {
+    "_name": "51CTO",
+    ".": [
+      {
+        "title": "推荐",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/51cto/index/recommend"
       }
     ]
   },
@@ -1510,6 +1536,19 @@
           "/pcr/news.html"
         ],
         "target": "/priconne-redive/news/zh-cn"
+      }
+    ]
+  },
+  "binance.com": {
+    "_name": "Binance",
+    ".": [
+      {
+        "title": "Binance数字货币及交易对上新",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/:lang/support/announcement"
+        ],
+        "target": "/binance/launchpool"
       }
     ]
   },
@@ -8559,6 +8598,22 @@
     "_name": "Minecraft",
     ".": [
       {
+        "title": "Java Blocked Servers",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/"
+        ],
+        "target": "/minecraft/blockedservers"
+      },
+      {
+        "title": "Java Runtimes",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/"
+        ],
+        "target": "/minecraft/java-runtime/:arch?/:javaType?"
+      },
+      {
         "title": "Java Game Update",
         "docs": "https://docs.rsshub.app/routes/game",
         "source": [
@@ -8964,6 +9019,20 @@
           "/papers"
         ],
         "target": "/nber/news"
+      }
+    ]
+  },
+  "ncpssd.cn": {
+    "_name": "国家哲学社会科学文献中心",
+    ".": [
+      {
+        "title": "最新文献",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/newlist"
+        ],
+        "target": "/ncpssd/newlist"
       }
     ]
   },
@@ -12446,6 +12515,27 @@
       }
     ]
   },
+  "shopify.com": {
+    "_name": "Shopify",
+    "apps": [
+      {
+        "title": "App reviews",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/:handle"
+        ],
+        "target": "/shopify/apps/:handle/reviews/:page?"
+      },
+      {
+        "title": "App store search",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/search"
+        ],
+        "target": "/shopify(_params,url)=>{const{searchParams}=new URL(url).searchParams;return searchParams.has(\"q\")?`/shopify/apps/search/${searchParams.get(\"q\")}`:null}"
+      }
+    ]
+  },
   "shoppingdesign.com.tw": {
     "_name": "Shopping Design",
     "www": [
@@ -14793,6 +14883,20 @@
       }
     ]
   },
+  "watasuke.net": {
+    "_name": "Watasuke",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/blog/",
+          "/"
+        ],
+        "target": "/watasuke/blog"
+      }
+    ]
+  },
   "web.dev": {
     "_name": "web.dev",
     ".": [
@@ -15628,7 +15732,7 @@
         "target": "/youtube/channel/:id"
       },
       {
-        "title": "Unknown",
+        "title": "Custom URL",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/c/:id"

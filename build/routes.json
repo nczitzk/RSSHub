@@ -591,6 +591,36 @@
     "name": "12306",
     "url": "kyfw.12306.cn"
   },
+  "12371": {
+    "routes": {
+      "/:category?": {
+        "path": "/:category?",
+        "example": "/12371/zxfb",
+        "parameters": {
+          "category": "新闻分类名，预设 `zxfb`"
+        },
+        "radar": [
+          {
+            "source": [
+              "www.12371.cn/:category"
+            ]
+          }
+        ],
+        "name": "最新发布",
+        "maintainers": [
+          "zvrr"
+        ],
+        "url": "www.12371.cn",
+        "description": "| 最新发布 |\n    | :------: |\n    |   zxfb   |",
+        "location": "zxfb.ts"
+      }
+    },
+    "name": "共产党员网",
+    "url": "www.12371.cn",
+    "categories": [
+      "government"
+    ]
+  },
   "005": {
     "routes": {
       "/:category?": {
@@ -1657,6 +1687,32 @@
     },
     "name": "经济 50 人论坛",
     "url": "50forum.org.cn"
+  },
+  "51cto": {
+    "routes": {
+      "/index/recommend": {
+        "path": "/index/recommend",
+        "categories": [
+          "programming"
+        ],
+        "example": "/51cto/index/recommend",
+        "radar": [
+          {
+            "source": [
+              "51cto.com/"
+            ]
+          }
+        ],
+        "name": "推荐",
+        "maintainers": [
+          "cnkmmk"
+        ],
+        "url": "51cto.com/",
+        "location": "recommend.ts"
+      }
+    },
+    "name": "51CTO",
+    "url": "51cto.com"
   },
   "52hrtt": {
     "routes": {
@@ -6894,6 +6950,31 @@
     },
     "name": "Bilibili",
     "url": "www.bilibili.com"
+  },
+  "binance": {
+    "routes": {
+      "/launchpool": {
+        "path": "/launchpool",
+        "categories": [
+          "finance"
+        ],
+        "example": "/binance/launchpool",
+        "radar": [
+          {
+            "source": [
+              "binance.com/:lang/support/announcement"
+            ]
+          }
+        ],
+        "name": "Binance数字货币及交易对上新",
+        "maintainers": [
+          "zhenlohuang"
+        ],
+        "location": "launchpool.ts"
+      }
+    },
+    "name": "Binance",
+    "url": "binance.com"
   },
   "bing": {
     "routes": {
@@ -31370,6 +31451,29 @@
     "name": "Kantar Worldpanel",
     "url": "kantarworldpanel.com"
   },
+  "kanxue": {
+    "routes": {
+      "/topic/:category?/:type?": {
+        "path": "/topic/:category?/:type?",
+        "categories": [
+          "bbs"
+        ],
+        "example": "/kanxue/topic/android/digest",
+        "parameters": {
+          "category": "版块, 缺省为`all`",
+          "type": "类型, 缺省为`latest`"
+        },
+        "name": "论坛",
+        "maintainers": [
+          "renzhexigua"
+        ],
+        "description": "| 版块           | category  |\n    | -------------- | --------- |\n    | 智能设备       | iot       |\n    | Android 安全   | android   |\n    | iOS 安全       | ios       |\n    | HarmonyOS 安全 | harmonyos |\n    | 软件逆向       | re        |\n    | 编程技术       | coding    |\n    | 加壳脱壳       | unpack    |\n    | 密码应用       | crypto    |\n    | 二进制漏洞     | vuln      |\n    | CTF 对抗       | ctf       |\n    | Pwn            | pwn       |\n    | WEB 安全       | web       |\n    | 茶余饭后       | chat      |\n    | 极客空间       | geekzone  |\n    | 外文翻译       | translate |\n    | 全站           | all       |\n    \n    | 类型     | type   |\n    | -------- | ------ |\n    | 最新主题 | latest |\n    | 精华主题 | digest |",
+        "location": "topic.ts"
+      }
+    },
+    "name": "看雪",
+    "url": "kanxue.com"
+  },
   "kaopu": {
     "routes": {
       "/news/:language?": {
@@ -31631,7 +31735,7 @@
         "maintainers": [
           "nczitzk"
         ],
-        "description": "Sources\n\n  | Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |\n  | ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |\n  | posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |\n\n  :::tip\n  When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.\n  :::",
+        "description": "Sources\n\n  | Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |\n  | ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |\n  | posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |\n\n  :::tip\n  When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.\n  There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.\n  :::",
         "location": "index.ts"
       }
     },
@@ -32610,14 +32714,6 @@
           "edition": "Edition, see table above",
           "id": "Channel ID, can be found in URL"
         },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -32640,14 +32736,6 @@
         "parameters": {
           "edition": "Edition, see below, Taiwan by default",
           "tab": "Tag, can be found in URL, `top` by default"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
         },
         "radar": [
           {
@@ -34687,6 +34775,75 @@
   },
   "minecraft": {
     "routes": {
+      "/blockedservers": {
+        "path": "/blockedservers",
+        "categories": [
+          "game"
+        ],
+        "example": "/minecraft/blockedservers",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "minecraft.net/"
+            ]
+          }
+        ],
+        "name": "Java Blocked Servers",
+        "maintainers": [
+          "xtexChooser"
+        ],
+        "url": "minecraft.net/",
+        "description": "Java 版中被 Mojang 通过 sessionserver 阻止的服务器域名的 SHA-1 散列",
+        "zh": {
+          "name": "Java版被阻止的服务器域名散列"
+        },
+        "location": "blockedservers.ts"
+      },
+      "/java-runtime/:arch?/:javaType?": {
+        "path": "/java-runtime/:arch?/:javaType?",
+        "categories": [
+          "game"
+        ],
+        "example": "/minecraft/java-runtime",
+        "parameters": {
+          "arch": "Arch, `all` by default",
+          "javaType": "Java runtime type, `all` by default"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "minecraft.net/"
+            ]
+          }
+        ],
+        "name": "Java Runtimes",
+        "maintainers": [
+          "xtexChooser"
+        ],
+        "url": "minecraft.net/",
+        "description": "\narch:\n\n- gamecore (Currently not used by Mojang)\n- linux\n- linux-i386\n- mac-os\n- mac-os-arm64\n- windows-arm64\n- windows-x64\n- windows-x86\n\njavaType:\n\n- java-runtime-alpha\n- java-runtime-beta\n- java-runtime-delta\n- java-runtime-gamma\n- java-runtime-gamma-snapshot\n- jre-legacy\n- minecraft-java-exe (Only on Windows)\n",
+        "zh": {
+          "name": "Java运行时"
+        },
+        "location": "java-runtime.ts"
+      },
       "/version/:versionType?/:linkType?": {
         "path": "/version/:versionType?/:linkType?",
         "categories": [
@@ -36355,6 +36512,33 @@
     },
     "name": "华北电力大学",
     "url": "yjsy.ncepu.edu.cn"
+  },
+  "ncpssd": {
+    "routes": {
+      "/newlist": {
+        "path": "/newlist",
+        "categories": [
+          "study"
+        ],
+        "example": "/ncpssd/newlist",
+        "radar": [
+          {
+            "source": [
+              "ncpssd.cn/",
+              "ncpssd.cn/newlist"
+            ]
+          }
+        ],
+        "name": "最新文献",
+        "maintainers": [
+          "LyleLee"
+        ],
+        "url": "ncpssd.cn/",
+        "location": "newlist.ts"
+      }
+    },
+    "name": "国家哲学社会科学文献中心",
+    "url": "ncpssd.cn"
   },
   "ncu": {
     "routes": {
@@ -45587,14 +45771,6 @@
         "parameters": {
           "lang": "Language, `zh` means Chinese docs, other values or null means English docs, `en` by default"
         },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -48543,6 +48719,50 @@
     },
     "name": "ShopBack",
     "url": "shopback.com.tw"
+  },
+  "shopify": {
+    "routes": {
+      "/apps/:handle/reviews/:page?": {
+        "path": "/apps/:handle/reviews/:page?",
+        "example": "/shopify/apps/flow/reviews",
+        "parameters": {
+          "handle": "例如一个 App 的链接 https://apps.shopify.com/flow，其中 flow 就是指的是 handle"
+        },
+        "name": "App reviews",
+        "maintainers": [
+          "PrintNow"
+        ],
+        "radar": [
+          {
+            "source": [
+              "apps.shopify.com/:handle"
+            ]
+          }
+        ],
+        "location": "apps/[handle].reviews.ts"
+      },
+      "/apps/search/:q": {
+        "path": "/apps/search/:q",
+        "example": "/shopify/apps/search/flow",
+        "parameters": {
+          "q": "需要搜索的 App"
+        },
+        "name": "App store search",
+        "maintainers": [
+          "PrintNow"
+        ],
+        "radar": [
+          {
+            "source": [
+              "apps.shopify.com/search"
+            ]
+          }
+        ],
+        "location": "apps/search.ts"
+      }
+    },
+    "name": "Shopify",
+    "url": "shopify.com"
   },
   "shoppingdesign": {
     "routes": {
@@ -57954,6 +58174,33 @@
     "name": "War Thunder",
     "url": "warthunder.com"
   },
+  "watasuke": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "example": "/watasuke/blog",
+        "radar": [
+          {
+            "source": [
+              "watasuke.net/blog/",
+              "watasuke.net/"
+            ]
+          }
+        ],
+        "name": "Blog",
+        "maintainers": [
+          "honahuku"
+        ],
+        "url": "watasuke.net/blog/",
+        "location": "blog.ts"
+      }
+    },
+    "name": "Watasuke",
+    "url": "watasuke.net",
+    "categories": [
+      "blog"
+    ]
+  },
   "wdc": {
     "routes": {
       "/download/:id?": {
@@ -61896,14 +62143,6 @@
           "country": "Country Code, see table below, default to global",
           "embed": "Default to embed the video, set to any value to disable embedding"
         },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "name": "Music Charts",
         "maintainers": [
           "TonyRL"
@@ -61920,14 +62159,6 @@
         "parameters": {
           "handle": "YouTube handles or channel id"
         },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "name": "Community",
         "maintainers": [
           "TonyRL"
@@ -61936,6 +62167,14 @@
       },
       "/c/:username/:embed?": {
         "path": "/c/:username/:embed?",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/youtube/c/YouTubeCreators",
+        "parameters": {
+          "username": "YouTube custom URL",
+          "embed": "Default to embed the video, set to any value to disable embedding"
+        },
         "radar": [
           {
             "source": [
@@ -61944,8 +62183,10 @@
             "target": "/c/:id"
           }
         ],
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "Custom URL",
+        "maintainers": [
+          "TonyRL"
+        ],
         "location": "custom.ts"
       },
       "/live/:username/:embed?": {
@@ -62023,12 +62264,7 @@
               "name": "YOUTUBE_REFRESH_TOKEN",
               "description": ""
             }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
+          ]
         },
         "radar": [
           {
