@@ -1140,6 +1140,19 @@
       }
     ]
   },
+  "atptour.com": {
+    "_name": "ATP Tour",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/"
+        ],
+        "target": "/atptour/news/:lang?"
+      }
+    ]
+  },
   "baai.ac.cn": {
     "_name": "北京智源人工智能研究院",
     "hub": [
@@ -5496,7 +5509,7 @@
     "_name": "中国人民银行",
     ".": [
       {
-        "title": "Unknown",
+        "title": "中华人民共和国农业农村部 - 新闻",
         "docs": "https://docs.rsshub.app/routes/government",
         "source": [
           "/"
@@ -6295,6 +6308,19 @@
           "/category/:category"
         ],
         "target": "/hit/today/:category"
+      }
+    ]
+  },
+  "hitcon.org": {
+    "_name": "HITCON",
+    "zeroday": [
+      {
+        "title": "漏洞",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/vulnerability/:status"
+        ],
+        "target": "/hitcon/zeroday/vulnerability/:status?"
       }
     ]
   },
@@ -15278,6 +15304,19 @@
       }
     ]
   },
+  "xianbao.fun": {
+    "_name": "线报酷",
+    "new": [
+      {
+        "title": "线板酷",
+        "docs": "https://docs.rsshub.app/routes/shopping",
+        "source": [
+          "/"
+        ],
+        "target": "/xianbao/"
+      }
+    ]
+  },
   "xiaohongshu.com": {
     "_name": "小红书",
     ".": [
@@ -16100,6 +16139,49 @@
           "/:author"
         ],
         "target": "/zhiy/posts/:author"
+      }
+    ]
+  },
+  "zhonglun.com": {
+    "_name": "中伦律师事务所",
+    ".": [
+      {
+        "title": "专业文章",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/research/articles"
+        ],
+        "target": "/zhonglun/research/article/zh"
+      }
+    ],
+    "en": [
+      {
+        "title": " Articles",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/research/articles"
+        ],
+        "target": "/zhonglun/research/article/en"
+      }
+    ],
+    "ja": [
+      {
+        "title": "論評",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/research/articles"
+        ],
+        "target": "/zhonglun/research/article/ja"
+      }
+    ],
+    "kr": [
+      {
+        "title": "전문기사",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/research/articles"
+        ],
+        "target": "/zhonglun/research/article/kr"
       }
     ]
   },

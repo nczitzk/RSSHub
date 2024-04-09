@@ -4695,6 +4695,35 @@
     "name": "AtCoder",
     "url": "atcoder.jp"
   },
+  "atptour": {
+    "routes": {
+      "/news/:lang?": {
+        "path": "/news/:lang?",
+        "categories": [
+          "other"
+        ],
+        "example": "/atptour/news/en",
+        "parameters": {
+          "lang": "en or es."
+        },
+        "radar": [
+          {
+            "source": [
+              "atptour.com"
+            ]
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "LM1207"
+        ],
+        "location": "news.ts"
+      }
+    },
+    "name": "ATP Tour",
+    "url": "www.atptour.com",
+    "description": "News from the official site of men's professional tennis."
+  },
   "auto-stats": {
     "routes": {
       "/:category?": {
@@ -6880,7 +6909,13 @@
           "tid": "分区 id"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "BILIBILI_COOKIE_*",
+              "optional": true,
+              "description": "如果没有此配置，那么必须开启 puppeteer 支持；BILIBILI_COOKIE_{uid}: 用于用户关注动态系列路由，对应 uid 的 b 站用户登录后的 Cookie 值，`{uid}` 替换为 uid，如 `BILIBILI_COOKIE_2267573`，获取方式：\n1.  打开 [https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8](https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8)\n2.  打开控制台，切换到 Network 面板，刷新\n3.  点击 dynamic_new 请求，找到 Cookie\n4.  视频和专栏，UP 主粉丝及关注只要求 `SESSDATA` 字段，动态需复制整段 Cookie"
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
@@ -6889,7 +6924,8 @@
         },
         "name": "视频搜索",
         "maintainers": [
-          "Symty"
+          "pcrtool",
+          "DIYgod"
         ],
         "description": "分区 id 的取值请参考下表：\n\n  | 全部分区 | 动画 | 番剧 | 国创 | 音乐 | 舞蹈 | 游戏 | 知识 | 科技 | 运动 | 汽车 | 生活 | 美食 | 动物圈 | 鬼畜 | 时尚 | 资讯 | 娱乐 | 影视 | 纪录片 | 电影 | 电视剧 |\n  | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ------ |\n  | 0        | 1    | 13   | 167  | 3    | 129  | 4    | 36   | 188  | 234  | 223  | 160  | 211  | 217    | 119  | 155  | 202  | 5    | 181  | 177    | 23   | 11     |",
         "location": "vsearch.ts"
@@ -7795,22 +7831,28 @@
         ],
         "location": "authors.ts"
       },
-      "/:site": {
-        "path": [
-          "/:site",
-          "/"
+      "/:site?": {
+        "path": "/:site?",
+        "categories": [
+          "finance"
         ],
-        "name": "Unknown",
-        "maintainers": [],
-        "location": "index.ts"
-      },
-      "/": {
-        "path": [
-          "/:site",
-          "/"
+        "example": "/bloomberg/bbiz",
+        "parameters": {
+          "site": "Site ID, can be found below"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Bloomberg Site",
+        "maintainers": [
+          "bigfei"
         ],
-        "name": "Unknown",
-        "maintainers": [],
+        "description": "\n    | Site ID      | Title        |\n    | ------------ | ------------ |\n    | /            | News         |\n    | bpol         | Politics     |\n    | bbiz         | Business     |\n    | markets      | Markets      |\n    | technology   | Technology   |\n    | green        | Green        |\n    | wealth       | Wealth       |\n    | pursuits     | Pursuits     |\n    | bview        | Opinion      |\n    | equality     | Equality     |\n    | businessweek | Businessweek |\n    | citylab      | CityLab      |\n    ",
         "location": "index.ts"
       }
     },
@@ -8374,8 +8416,28 @@
     "routes": {
       "/sme/:path{.+}?": {
         "path": "/sme/:path{.+}?",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "集成电路科学与工程学院",
+        "url": "www.sme.buaa.edu.cn",
+        "maintainers": [
+          "MeanZhang"
+        ],
+        "example": "/buaa/sme/tzgg",
+        "parameters": {
+          "path": "版块路径，默认为 `tzgg`（通知公告）"
+        },
+        "description": ":::tip\n\n版块路径（`path`）应填写板块 URL 中 `http://www.sme.buaa.edu.cn/` 和 `.htm` 之间的字段。\n\n示例：\n\n1. [通知公告](http://www.sme.buaa.edu.cn/tzgg.htm) 页面的 URL 为 `http://www.sme.buaa.edu.cn/tzgg.htm`，对应的路径参数为 `tzgg`，完整路由为 `/buaa/sme/tzgg`；\n2. [就业信息](http://www.sme.buaa.edu.cn/zsjy/jyxx.htm) 页面的 URL 为 `http://www.sme.buaa.edu.cn/zsjy/jyxx.htm`，对应的路径参数为 `zsjy/jyxx`，完整路由为 `/buaa/sme/zsjy/jyxx`。\n\n:::\n\n:::warning\n\n部分页面（如[学院介绍](http://www.sme.buaa.edu.cn/xygk/xyjs.htm)、[微纳中心](http://www.sme.buaa.edu.cn/wnzx.htm)、[院学生会](http://www.sme.buaa.edu.cn/xsgz/yxsh.htm)）存在无内容、内容跳转至外站等情况，因此可能出现解析失败的现象。\n\n:::",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
         "location": "sme.ts"
       },
       "/news/:type": {
@@ -22737,6 +22799,10 @@
       },
       "/moa/:suburl{.+}": {
         "path": "/moa/:suburl{.+}",
+        "categories": [
+          "government"
+        ],
+        "example": "/gov/moa/gk/zcjd/",
         "radar": [
           {
             "source": [
@@ -22745,9 +22811,16 @@
             "target": "/moa/:suburl"
           }
         ],
-        "name": "Unknown",
-        "maintainers": [],
+        "parameters": {
+          "suburl": "下级目录，请使用最下级的目录"
+        },
+        "name": "中华人民共和国农业农村部 - 新闻",
+        "maintainers": [
+          "Origami404",
+          "lyqluis"
+        ],
         "url": "moa.gov.cn/",
+        "description": "更多例子：\n  -   `农业农村部动态`的网页链接是`http://www.moa.gov.cn/xw/zwdt/`, 对应的`suburl`是`xw/zwdt`\n  -   `财务公开`的网页链接是`http://www.moa.gov.cn/gk/cwgk_1/`, 对应的`suburl`是`gk/cwgk_1`\n  -   像[政策法规](http://www.moa.gov.cn/gk/zcfg/)这种页面(`http://www.moa.gov.cn/gk/zcfg/`), 它**不是**一个合法的分类目录，它是`法律`, `行政法规`, `部门规章`等一堆栏目的集合，这时候请点开对应栏目的`更多 >>`进入栏目的最下级目录，再根据上面的规则提取`suburl`\n  -   特别地，`图片新闻`对应的`suburl`为`xw/tpxw/`, `最新公开`对应的`suburl`为`govpublic`, `数据>最新发布`对应的`suburl`为`sj/zxfb`",
         "location": "moa/moa.ts"
       },
       "/moa/sjzxfb/:category{.+}?": {
@@ -25760,6 +25833,38 @@
     "name": "哈尔滨工业大学",
     "url": "jwc.hit.edu.cn",
     "description": ":::warning\n哈工大网站疑似禁止了`rsshub.app`的访问，使用路由需要自行 [部署](https://docs.rsshub.app/deploy/)。\n:::"
+  },
+  "hitcon": {
+    "routes": {
+      "/zeroday/vulnerability/:status?": {
+        "name": "漏洞",
+        "categories": [
+          "programming"
+        ],
+        "path": "/zeroday/vulnerability/:status?",
+        "example": "/hitcon/zeroday/vulnerability",
+        "parameters": {
+          "status": "漏洞状态，见下表"
+        },
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "radar": [
+          {
+            "source": [
+              "zeroday.hitcon.org/vulnerability/:status?"
+            ]
+          }
+        ],
+        "features": {
+          "requirePuppeteer": true
+        },
+        "description": "| 缺省   | all  | closed | disclosed | patching |\n  | ------ | ---- | ------ | --------- | -------- |\n  | 活動中 | 全部 | 關閉   | 公開      | 修補中   |",
+        "location": "zeroday.ts"
+      }
+    },
+    "name": "HITCON",
+    "url": "hitcon.org"
   },
   "hitsz": {
     "routes": {
@@ -37489,14 +37594,6 @@
           "category": "Category, see table below",
           "article_type": "Only includes free articles, set `free` to enable, disabled by default"
         },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -37508,7 +37605,8 @@
         ],
         "name": "News",
         "maintainers": [
-          "Arracc"
+          "Arracc",
+          "ladeng07"
         ],
         "description": "| 総合 | オピニオン | 経済    | 政治     | 金融      | マーケット | ビジネス | マネーのまなび | テック     | 国際          | スポーツ | 社会・調査 | 地域  | 文化    | ライフスタイル |\n  | ---- | ---------- | ------- | -------- | --------- | ---------- | -------- | -------------- | ---------- | ------------- | -------- | ---------- | ----- | ------- | -------------- |\n  | news | opinion    | economy | politics | financial | business   | 不支持   | 不支持         | technology | international | sports   | society    | local | culture | lifestyle      |",
         "location": "news.ts"
@@ -60056,6 +60154,46 @@
     "name": "盒心光环",
     "url": "xboxfan.com"
   },
+  "xianbao": {
+    "routes": {
+      "/:category?": {
+        "path": "/:category?",
+        "name": "线板酷",
+        "url": "new.xianbao.fun",
+        "maintainers": [
+          "nashi23"
+        ],
+        "example": "/xianbao",
+        "parameters": {
+          "category": "类别id，默认为：latest"
+        },
+        "description": "\n| 分类         | id             |\n| ------------ | -------------- |\n| 最新         | latest         |\n| 赚客吧       | zuankeba       |\n| 赚客吧热帖   | zuankeba-hot   |\n| 新赚吧       | xinzuanba      |\n| 新赚吧热帖   | xinzuanba-hot  |\n| 微博         | weibo          |\n| 微博热帖     | weibo-hot      |\n| 豆瓣线报     | douban         |\n| 豆瓣热帖     | douban-hot     |\n| 酷安         | kuan           |\n| 小嘀咕       | xiaodigu       |\n| 葫芦侠       | huluxia        |\n| 小刀娱乐网   | xiadao         |\n| 技术QQ网     | qqjishu        |\n| YYOK大全     | yyok           |\n| 活动资讯网   | huodong        |\n| 免费赚钱中心 | mianfei        |\n| 一小时       | yixiaoshi      |\n| 三小时       | sanxiaoshi     |\n| 六小时       | liuxiaoshi     |\n| 十二小时     | shierxiaoshi   |\n| 二十四小时   | ershisixiaoshi |\n| 四十八小时   | sishibaxiaoshi |\n| 今天         | jintian        |\n| 昨天         | zuotian        |\n| 前天         | qiantian       |\n| 三天         | santian        |\n| 五天         | wutian         |\n| 七天         | qitian         |\n| 十五天       | shiwutian      |",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "new.xianbao.fun"
+            ],
+            "target": "/"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "线报酷",
+    "url": "new.xianbao.fun"
+  },
   "xiaoheihe": {
     "routes": {
       "/add2cart/:platform": {
@@ -63905,6 +64043,72 @@
     },
     "name": "知园",
     "url": "zhiy.cc"
+  },
+  "zhonglun": {
+    "routes": {
+      "/research/article/:language{[a-zA-Z0-9-]+}?": {
+        "path": "/research/article/:language{[a-zA-Z0-9-]+}?",
+        "name": "中伦研究专业文章",
+        "url": "zhonglun.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/zhonglun/research/article/zh",
+        "parameters": {
+          "category": "语言，默认为 zh，即简体中文，可在对应分类页 URL 中找到"
+        },
+        "description": "\n  | ENG | 简体中文 | 日本語 | 한국어 |\n  | --- | -------- | ------ | ------ |\n  | en  | zh       | ja     | kr     |\n    ",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "title": "专业文章",
+            "source": [
+              "zhonglun.com/research/articles"
+            ],
+            "target": "/research/article/zh"
+          },
+          {
+            "title": " Articles",
+            "source": [
+              "en.zhonglun.com/research/articles"
+            ],
+            "target": "/research/article/en"
+          },
+          {
+            "title": "論評",
+            "source": [
+              "ja.zhonglun.com/research/articles"
+            ],
+            "target": "/research/article/ja"
+          },
+          {
+            "title": "전문기사",
+            "source": [
+              "kr.zhonglun.com/research/articles"
+            ],
+            "target": "/research/article/kr"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "中伦律师事务所",
+    "url": "zhonglun.com",
+    "categories": [
+      "new-media"
+    ],
+    "description": ""
   },
   "zhubai": {
     "routes": {
