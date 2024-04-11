@@ -3386,6 +3386,14 @@
     "_name": "DCFever",
     ".": [
       {
+        "title": "新聞中心",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news/index.php"
+        ],
+        "target": "/dcfever/news"
+      },
+      {
         "title": "測試報告",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
@@ -4225,6 +4233,20 @@
           "/:locale/free-games"
         ],
         "target": "/epicgames/freegames/:locale"
+      }
+    ]
+  },
+  "esquirehk.com": {
+    "_name": "Esquire Hong Kong",
+    "www": [
+      {
+        "title": "Tag",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/tag/:id",
+          "/:id"
+        ],
+        "target": "/esquirehk/tag/:id?"
       }
     ]
   },
