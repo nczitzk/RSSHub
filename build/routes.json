@@ -14265,6 +14265,36 @@
     "name": "得到",
     "url": "dedao.cn"
   },
+  "deepin": {
+    "routes": {
+      "/homepage/:user_id": {
+        "path": "/homepage/:user_id",
+        "categories": [
+          "bbs"
+        ],
+        "example": "/deepin/homepage/78326",
+        "parameters": {
+          "user_id": "user id"
+        },
+        "name": "BBS Home Page",
+        "maintainers": [
+          "tensor-tech"
+        ],
+        "radar": {
+          "source": [
+            "bbs.deepin.org/user/:user_id"
+          ],
+          "target": "/homepage/:user_id"
+        },
+        "location": "homepage.ts"
+      }
+    },
+    "name": "Deepin",
+    "url": "bbs.deepin.org",
+    "zh": {
+      "name": "深度Linux"
+    }
+  },
   "deeplearning": {
     "routes": {
       "/thebatch": {
@@ -29451,6 +29481,31 @@
     "name": "Issue Hunt",
     "url": "issuehunt.io"
   },
+  "itc": {
+    "routes": {
+      "/collection/:colType": {
+        "path": "/collection/:colType",
+        "categories": [
+          "blog"
+        ],
+        "example": "/itc/collection/1",
+        "radar": [
+          {
+            "source": [
+              "open.itc.cn/"
+            ]
+          }
+        ],
+        "name": "合集",
+        "maintainers": [
+          "cnkmmk"
+        ],
+        "location": "collection.ts"
+      }
+    },
+    "name": "Open Github社区",
+    "url": "open.itc.cn"
+  },
   "itch": {
     "routes": {
       "/devlog/:user/:id": {
@@ -29843,7 +29898,13 @@
           "filter": "过滤，见下表，默认为 `全部`"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "JAVDB_SESSION",
+              "description": "JavDB登陆后的session值，可在控制台的cookie下查找 `_jdb_session` 的值，即可获取",
+              "optional": true
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -29936,7 +29997,13 @@
           "filter": "过滤，见下表，默认为 `全部`"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "JAVDB_SESSION",
+              "description": "JavDB登陆后的session值，可在控制台的cookie下查找 `_jdb_session` 的值，即可获取",
+              "optional": true
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -29970,7 +30037,13 @@
           "time": "时间，见下表，默认为 `日榜`"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "JAVDB_SESSION",
+              "description": "JavDB登陆后的session值，可在控制台的cookie下查找 `_jdb_session` 的值，即可获取",
+              "optional": true
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -30005,7 +30078,13 @@
           "sort": "排序，见下表，默认为 `按相关度排序`"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "JAVDB_SESSION",
+              "description": "JavDB登陆后的session值，可在控制台的cookie下查找 `_jdb_session` 的值，即可获取",
+              "optional": true
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -30039,7 +30118,13 @@
           "filter": "过滤，见下表，默认为 `全部`"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "JAVDB_SESSION",
+              "description": "JavDB登陆后的session值，可在控制台的cookie下查找 `_jdb_session` 的值，即可获取",
+              "optional": true
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -30073,7 +30158,13 @@
           "category": "分类，见下表，默认为 `有碼`"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "JAVDB_SESSION",
+              "description": "JavDB登陆后的session值，可在控制台的cookie下查找 `_jdb_session` 的值，即可获取",
+              "optional": true
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -60747,8 +60838,12 @@
     "routes": {
       "/dean/:subpath{.+}": {
         "path": "/dean/:subpath{.+}",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "教务处",
+        "maintainers": [
+          "hoilc"
+        ],
+        "example": "/xjtu/dean/jxxx/jxtz2",
+        "description": "打开一个类似 <https://dean.xjtu.edu.cn/jxxx/jxtz2.htm> 的网址，在 `.cn` 后的内容就是 subpath，此例中是 `jxxx/jxtz2`",
         "location": "dean.ts"
       },
       "/ee/:id?": {
