@@ -2447,6 +2447,120 @@
     "name": "A 姐分享",
     "url": "nsfw.abskoop.com"
   },
+  "accessbriefing": {
+    "routes": {
+      "/:category{.+}?": {
+        "path": "/:category{.+}?",
+        "name": "Articles",
+        "url": "accessbriefing.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/accessbriefing/latest/news",
+        "parameters": {
+          "category": "Category, Latest News by default"
+        },
+        "description": ":::tip\n  If you subscribe to [Latest News](https://www.accessbriefing.com/latest/news)，where the URL is `https://www.accessbriefing.com/latest/news`, extract the part `https://www.accessbriefing.com/` to the end, and use it as the parameter to fill in. Therefore, the route will be [`/accessbriefing/latest/news`](https://rsshub.app/accessbriefing/latest/news).\n  :::\n\n  #### Latest\n\n  | Category                                                                               | ID                                                                                              |\n  | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |\n  | [News](https://www.accessbriefing.com/latest/news)                                     | [latest/news](https://rsshub.app/target/site/latest/news)                                       |\n  | [Products & Technology](https://www.accessbriefing.com/latest/products-and-technology) | [latest/products-and-technology](https://rsshub.app/target/site/latest/products-and-technology) |\n  | [Rental News](https://www.accessbriefing.com/latest/rental-news)                       | [latest/rental-news](https://rsshub.app/target/site/latest/rental-news)                         |\n  | [People](https://www.accessbriefing.com/latest/people)                                 | [latest/people](https://rsshub.app/target/site/latest/people)                                   |\n  | [Regualtions & Safety](https://www.accessbriefing.com/latest/regualtions-safety)       | [latest/regualtions-safety](https://rsshub.app/target/site/latest/regualtions-safety)           |\n  | [Finance](https://www.accessbriefing.com/latest/finance)                               | [latest/finance](https://rsshub.app/target/site/latest/finance)                                 |\n  | [Sustainability](https://www.accessbriefing.com/latest/sustainability)                 | [latest/sustainability](https://rsshub.app/target/site/latest/sustainability)                   |\n\n  #### Insight\n\n  | Category                                                                          | ID                                                                                        |\n  | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |\n  | [Interviews](https://www.accessbriefing.com/insight/interviews)                   | [insight/interviews](https://rsshub.app/target/site/insight/interviews)                   |\n  | [Longer reads](https://www.accessbriefing.com/insight/longer-reads)               | [insight/longer-reads](https://rsshub.app/target/site/insight/longer-reads)               |\n  | [Videos and podcasts](https://www.accessbriefing.com/insight/videos-and-podcasts) | [insight/videos-and-podcasts](https://rsshub.app/target/site/insight/videos-and-podcasts) |\n  ",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "accessbriefing.com/:category*"
+            ],
+            "target": "/:category"
+          },
+          {
+            "title": "Latest - News",
+            "source": [
+              "accessbriefing.com/latest/news"
+            ],
+            "target": "/latest/news"
+          },
+          {
+            "title": "Latest - Products & Technology",
+            "source": [
+              "accessbriefing.com/latest/products-and-technology"
+            ],
+            "target": "/latest/products-and-technology"
+          },
+          {
+            "title": "Latest - Rental News",
+            "source": [
+              "accessbriefing.com/latest/rental-news"
+            ],
+            "target": "/latest/rental-news"
+          },
+          {
+            "title": "Latest - People",
+            "source": [
+              "accessbriefing.com/latest/people"
+            ],
+            "target": "/latest/people"
+          },
+          {
+            "title": "Latest - Regualtions & Safety",
+            "source": [
+              "accessbriefing.com/latest/regualtions-safety"
+            ],
+            "target": "/latest/regualtions-safety"
+          },
+          {
+            "title": "Latest - Finance",
+            "source": [
+              "accessbriefing.com/latest/finance"
+            ],
+            "target": "/latest/finance"
+          },
+          {
+            "title": "Latest - Sustainability",
+            "source": [
+              "accessbriefing.com/latest/sustainability"
+            ],
+            "target": "/latest/sustainability"
+          },
+          {
+            "title": "Insight - Interviews",
+            "source": [
+              "accessbriefing.com/insight/interviews"
+            ],
+            "target": "/insight/interviews"
+          },
+          {
+            "title": "Insight - Longer reads",
+            "source": [
+              "accessbriefing.com/insight/longer-reads"
+            ],
+            "target": "/insight/longer-reads"
+          },
+          {
+            "title": "Insight - Videos and podcasts",
+            "source": [
+              "accessbriefing.com/insight/videos-and-podcasts"
+            ],
+            "target": "/insight/videos-and-podcasts"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "Access Briefing",
+    "url": "accessbriefing.com",
+    "categories": [
+      "new-media"
+    ],
+    "description": ""
+  },
   "acfun": {
     "routes": {
       "/article/:categoryId/:sortType?/:timeRange?": {
@@ -6984,7 +7098,7 @@
             "target": ""
           }
         ],
-        "name": "Unknown",
+        "name": "每日壁纸",
         "maintainers": [
           "FHYunCai"
         ],
@@ -19623,6 +19737,35 @@
     "name": "自由微信",
     "url": "freewechat.com"
   },
+  "freexcomic": {
+    "routes": {
+      "/book/:id": {
+        "path": "/book/:id",
+        "example": "/freexcomic/book/90",
+        "parameters": {
+          "id": "漫画id，漫画主页的地址栏中"
+        },
+        "radar": [
+          {
+            "source": [
+              "www.jjmhw.cc/book/:id"
+            ]
+          }
+        ],
+        "name": "漫画更新",
+        "maintainers": [
+          "junfengP"
+        ],
+        "url": "www.jjmhw.cc",
+        "location": "book.ts"
+      }
+    },
+    "name": "漫小肆韓漫",
+    "url": "freexcomic.com",
+    "categories": [
+      "anime"
+    ]
+  },
   "ft": {
     "routes": {
       "/:language/:channel?": {
@@ -22508,6 +22651,38 @@
         ],
         "description": "| 通知公告 | 中心工作动态 | 地方工作动态 | 监测信息 | 分析预测 | 调查报告 |\n  | -------- | ------------ | ------------ | -------- | -------- | -------- |\n  | 692      | 693          | 694          | 695      | 696      | 697      |\n\n  | 价格指数 | 地方价格监测 | 价格监测报告制度 | 监测法规 | 媒体聚焦 |\n  | -------- | ------------ | ---------------- | -------- | -------- |\n  | 698      | 699          | 700              | 701      | 753      |\n\n  #### 监测信息\n\n  | 国内外市场价格监测情况周报 | 主要粮油副食品日报 | 生猪出厂价与玉米价格周报 | 国际市场石油价格每日 动态 |\n  | -------------------------- | ------------------ | ------------------------ | ------------------------- |\n  | 749                        | 703                | 704                      | 705                       |\n\n  | 非学科类培训服务价格 | 监测周期价格动态 | 月度监测行情表 | 猪料、鸡料、蛋料比价 |\n  | -------------------- | ---------------- | -------------- | -------------------- |\n  | 821                  | 706              | 707            | 708                  |",
         "location": "jgjcndrc/index.ts"
+      },
+      "/jiangsu/wlt/:page?": {
+        "path": "/jiangsu/wlt/:page?",
+        "categories": [
+          "government"
+        ],
+        "example": "/gov/jiangsu/wlt",
+        "parameters": {
+          "page": "页数，默认第 1 页"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "wlt.jiangsu.gov.cn/"
+            ],
+            "target": "/jiangsu/wlt"
+          }
+        ],
+        "name": "江苏文旅局审批公告",
+        "maintainers": [
+          "GideonSenku"
+        ],
+        "url": "wlt.jiangsu.gov.cn/",
+        "location": "jiangsu/wlt/index.ts"
       },
       "/jinan/healthcommission/medical_exam_notice": {
         "path": "/jinan/healthcommission/medical_exam_notice",
@@ -54336,14 +54511,6 @@
         "parameters": {
           "user": "Username",
           "routeParams": "Extra parameters, see the table below"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
         },
         "name": "User timeline",
         "maintainers": [

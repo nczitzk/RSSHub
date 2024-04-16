@@ -246,6 +246,9 @@
   "/abskoop/nsfw": [
     "zhenhappy"
   ],
+  "/accessbriefing/:category{.+}?": [
+    "nczitzk"
+  ],
   "/acfun/article/:categoryId/:sortType?/:timeRange?": [
     "TonyRL"
   ],
@@ -1955,6 +1958,9 @@
   "/freewechat/profile/:id": [
     "TonyRL"
   ],
+  "/freexcomic/book/:id": [
+    "junfengP"
+  ],
   "/ft/:language/:channel?": [
     "HenryQW",
     "xyqfer"
@@ -2257,6 +2263,9 @@
   ],
   "/gov/jgjcndrc/:id?": [
     "nczitzk"
+  ],
+  "/gov/jiangsu/wlt/:page?": [
+    "GideonSenku"
   ],
   "/gov/jinan/healthcommission/medical_exam_notice": [
     "tzjyxb"
