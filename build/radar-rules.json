@@ -1072,6 +1072,16 @@
         ],
         "target": "/apple/exchange_repair/:country"
       }
+    ],
+    "podcasts": [
+      {
+        "title": "播客",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/cn/podcast/:id"
+        ],
+        "target": "/apple/podcast/:id"
+      }
     ]
   },
   "appleinsider.com": {
@@ -3593,6 +3603,35 @@
           "/"
         ],
         "target": "/deepmind/blog"
+      }
+    ]
+  },
+  "dehenglaw.com": {
+    "_name": "德恒律师事务所",
+    ".": [
+      {
+        "title": "专业文章",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:language/paper/0008/000902.aspx"
+        ],
+        "target": "/dehenglaw/:language/paper"
+      },
+      {
+        "title": "出版物",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:language/publish/0008/000903.aspx"
+        ],
+        "target": "/dehenglaw/:language/publish"
+      },
+      {
+        "title": "德恒论坛",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:language/luntan/0008/000901.aspx"
+        ],
+        "target": "/dehenglaw/:language/luntan"
       }
     ]
   },
