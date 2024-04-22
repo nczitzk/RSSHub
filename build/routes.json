@@ -8654,6 +8654,37 @@
     "name": "北京邮电大学",
     "url": "bupt.edu.cn"
   },
+  "byau": {
+    "routes": {
+      "/news/:type_id": {
+        "path": "/news/:type_id",
+        "categories": [
+          "university"
+        ],
+        "example": "/byau/news/3674",
+        "parameters": {
+          "type_id": "栏目类型(从菜单栏获取对应 ID)"
+        },
+        "radar": [
+          {
+            "source": [
+              "xinwen.byau.edu.cn/:type_id/list.htm"
+            ],
+            "target": "/news/:type_id"
+          }
+        ],
+        "name": "新闻网",
+        "maintainers": [
+          "ueiu"
+        ],
+        "url": "xinwen.byau.edu.cn",
+        "description": "| 学校要闻 | 校园动态 |\n  | ---- | ----------- |\n  | 3674 | 3676 |",
+        "location": "xinwen/index.ts"
+      }
+    },
+    "name": "黑龙江八一农垦大学",
+    "url": "byau.edu.cn"
+  },
   "byteclicks": {
     "routes": {
       "/": {
@@ -24141,7 +24172,7 @@
             "target": "/gov/stats/*path"
           }
         ],
-        "description": "::: tip\n    路径处填写对应页面 URL 中 `http://www.stats.gov.cn/` 后的字段。下面是一个例子。\n\n    若订阅 [数据 > 数据解读](http://www.stats.gov.cn/sj/sjjd/) 则将对应页面 URL `http://www.stats.gov.cn/sj/sjjd/` 中 `http://www.stats.gov.cn/` 后的字段 `sj/sjjd` 作为路径填入。此时路由为 [`/gov/stats/sj/sjjd`](https://rsshub.app/gov/stats/sj/sjjd)\n\n    若订阅 [新闻 > 时政要闻 > 中央精神](http://www.stats.gov.cn/xw/szyw/zyjs/) 则将对应页面 URL `http://www.stats.gov.cn/xw/szyw/zyjs/` 中 `http://www.stats.gov.cn/` 后的字段 `xw/szyw/zyjs` 作为路径填入。此时路由为 [`/gov/stats/xw/szyw/zyjs`](https://rsshub.app/gov/stats/xw/szyw/zyjs)\n    :::",
+        "description": "::: tip\n    路径处填写对应页面 URL 中 `http://www.stats.gov.cn/` 后的字段。下面是一个例子。\n\n    若订阅 [数据 > 数据解读](http://www.stats.gov.cn/sj/sjjd/)\n    则将对应页面 URL `http://www.stats.gov.cn/sj/sjjd/` 中 `http://www.stats.gov.cn/` 后的字段 `sj/sjjd` 作为路径填入。\n    此时路由为 [`/gov/stats/sj/sjjd`](https://rsshub.app/gov/stats/sj/sjjd)\n\n    若订阅 [新闻 > 时政要闻 > 中央精神](http://www.stats.gov.cn/xw/szyw/zyjs/)\n    则将对应页面 URL `http://www.stats.gov.cn/xw/szyw/zyjs/` 中 `http://www.stats.gov.cn/`\n    后的字段 `xw/szyw/zyjs` 作为路径填入。此时路由为 [`/gov/stats/xw/szyw/zyjs`](https://rsshub.app/gov/stats/xw/szyw/zyjs)\n    :::",
         "location": "stats/index.ts"
       },
       "/suzhou/doc": {
@@ -56652,7 +56683,7 @@
         "categories": [
           "multimedia"
         ],
-        "example": "/u9a9/search/新片速递",
+        "example": "/u3c3/search/新片速递",
         "parameters": {
           "keyword": "Search keyword",
           "preview": "Show image preview, off by default, non empty value means on"
@@ -56679,7 +56710,7 @@
         "categories": [
           "multimedia"
         ],
-        "example": "/u9a9/search/新片速递",
+        "example": "/u3c3/search/新片速递",
         "parameters": {
           "keyword": "Search keyword",
           "preview": "Show image preview, off by default, non empty value means on"
@@ -56699,7 +56730,7 @@
         "location": "index.ts"
       }
     },
-    "name": "U9A9",
+    "name": "U3C3",
     "url": "u3c3.com"
   },
   "u9a9": {
@@ -56709,6 +56740,7 @@
           "/:preview?",
           "/search/:keyword/:preview?"
         ],
+        "example": "/u9a9/search/新片速递",
         "radar": [
           {
             "source": [
@@ -56717,7 +56749,7 @@
             "target": ""
           }
         ],
-        "name": "Unknown",
+        "name": "Search",
         "maintainers": [
           "TonyRL"
         ],
@@ -56729,6 +56761,7 @@
           "/:preview?",
           "/search/:keyword/:preview?"
         ],
+        "example": "/u9a9/search/新片速递",
         "radar": [
           {
             "source": [
@@ -56737,7 +56770,7 @@
             "target": ""
           }
         ],
-        "name": "Unknown",
+        "name": "Search",
         "maintainers": [
           "TonyRL"
         ],
@@ -56745,7 +56778,7 @@
         "location": "index.ts"
       }
     },
-    "name": "Unknown",
+    "name": "U9A9",
     "url": "u9a9.com"
   },
   "uber": {
@@ -65394,6 +65427,74 @@
     },
     "name": "赵容部落",
     "url": "zrblog.net"
+  },
+  "zsxq": {
+    "routes": {
+      "/group/:id/:scope?": {
+        "name": "星球",
+        "categories": [
+          "social-media"
+        ],
+        "path": "/group/:id/:scope?",
+        "example": "/zsxq/group/88855458825252",
+        "parameters": {
+          "id": "星球id，从网页端url中获取",
+          "scope": "栏目分类，默认为\"all\"，见下表"
+        },
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "radar": [
+          {
+            "source": [
+              "wx.zsxq.com/dweb2/index/group/:id"
+            ]
+          }
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "ZSXQ_ACCESS_TOKEN",
+              "description": "知识星球访问令牌,获取方式：\n1. 登录知识星球网页版\n2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://wx.zsxq.com\n4. 复制 Cookie 中的 zsxq_access_token 值"
+            }
+          ]
+        },
+        "description": "| all  | digests | by_owner | questions | tasks |\n    | ---- | ------ | --------- | -------- | ------ |\n    | 最新 | 精华    | 只看星主    | 问答      | 作业   |",
+        "location": "group.ts"
+      },
+      "/user/:id": {
+        "name": "用户足迹",
+        "categories": [
+          "social-media"
+        ],
+        "path": "/user/:id",
+        "example": "/zsxq/user/2414218251",
+        "parameters": {
+          "id": "用户id，从网页端url中获取"
+        },
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "radar": [
+          {
+            "source": [
+              "wx.zsxq.com/dweb2/index/footprint/:id"
+            ]
+          }
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "ZSXQ_ACCESS_TOKEN",
+              "description": "知识星球访问令牌,获取方式：\n1. 登录知识星球网页版\n2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://wx.zsxq.com\n4. 复制 Cookie 中的 zsxq_access_token 值"
+            }
+          ]
+        },
+        "location": "user.ts"
+      }
+    },
+    "name": "知识星球",
+    "url": "zsxq.com"
   },
   "zuel": {
     "routes": {

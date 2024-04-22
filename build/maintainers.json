@@ -867,6 +867,9 @@
   "/bupt/rczp": [
     "nczitzk"
   ],
+  "/byau/news/:type_id": [
+    "ueiu"
+  ],
   "/byteclicks/": [
     "TonyRL"
   ],
@@ -6573,6 +6576,12 @@
   ],
   "/zrblog/": [
     "cnkmmk"
+  ],
+  "/zsxq/group/:id/:scope?": [
+    "KarasuShin"
+  ],
+  "/zsxq/user/:id": [
+    "KarasuShin"
   ],
   "/zuel/notice": [
     "nczitzk"

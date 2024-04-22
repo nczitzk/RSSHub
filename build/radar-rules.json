@@ -2101,6 +2101,19 @@
       }
     ]
   },
+  "byau.edu.cn": {
+    "_name": "黑龙江八一农垦大学",
+    "xinwen": [
+      {
+        "title": "新闻网",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:type_id/list.htm"
+        ],
+        "target": "/byau/news/:type_id"
+      }
+    ]
+  },
   "byteclicks.com": {
     "_name": "字节点击",
     ".": [
@@ -14668,10 +14681,10 @@
     ]
   },
   "u9a9.com": {
-    "_name": "Unknown",
+    "_name": "U9A9",
     ".": [
       {
-        "title": "Unknown",
+        "title": "Search",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
           "/"
@@ -14679,7 +14692,7 @@
         "target": "/u9a9/:preview?"
       },
       {
-        "title": "Unknown",
+        "title": "Search",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
           "/"
@@ -16711,6 +16724,27 @@
           "/"
         ],
         "target": "/zrblog/"
+      }
+    ]
+  },
+  "zsxq.com": {
+    "_name": "知识星球",
+    "wx": [
+      {
+        "title": "星球",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/dweb2/index/group/:id"
+        ],
+        "target": "/zsxq/group/:id/:scope?"
+      },
+      {
+        "title": "用户足迹",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/dweb2/index/footprint/:id"
+        ],
+        "target": "/zsxq/user/:id"
       }
     ]
   },
