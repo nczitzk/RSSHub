@@ -12527,6 +12527,46 @@
     "name": "CoinDesk Consensus Magazine",
     "url": "coindesk.com"
   },
+  "colamanga": {
+    "routes": {
+      "/:id": {
+        "path": "/:id",
+        "parameters": {
+          "id": "漫画id"
+        },
+        "name": "Manga",
+        "maintainers": [
+          "machsix"
+        ],
+        "example": "/colamanga/manga-qq978758",
+        "categories": [
+          "anime"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.colamanga.com/:id/"
+            ],
+            "target": "/:id"
+          }
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "manga.ts"
+      }
+    },
+    "name": "COLAMANGA",
+    "url": "www.colamanga.com",
+    "zh": {
+      "name": "可乐漫画"
+    }
+  },
   "comicat": {
     "routes": {
       "/search/:keyword": {
@@ -17698,6 +17738,27 @@
         "url": "acm.ecnu.edu.cn/contest/",
         "location": "contest.ts"
       },
+      "/jwc": {
+        "path": "/jwc",
+        "categories": [
+          "university"
+        ],
+        "example": "/ecnu/jwc",
+        "radar": [
+          {
+            "source": [
+              "www.jwc.ecnu.edu.cn",
+              "www.ecnu.edu.cn"
+            ],
+            "target": "/tzgg"
+          }
+        ],
+        "name": "教务处通知",
+        "maintainers": [
+          "markbang"
+        ],
+        "location": "jwc.ts"
+      },
       "/yjs": {
         "path": "/yjs",
         "categories": [
@@ -17730,7 +17791,7 @@
       }
     },
     "name": "East China Normal University 华东师范大学",
-    "url": "acm.ecnu.edu.cn"
+    "url": "ecnu.edu.cn"
   },
   "economist": {
     "routes": {
@@ -24648,7 +24709,7 @@
       }
     },
     "name": "中国人民银行",
-    "url": "kjt.ah.gov.cn",
+    "url": "pbc.gov.cn",
     "description": "<details>\n  <summary>*业务咨询* 和 *投诉建议* 可用的站点参数</summary>\n\n  | 上海市   | 北京市  | 天津市  | 河北省 |\n  | -------- | ------- | ------- | ------ |\n  | shanghai | beijing | tianjin | hebei  |\n\n  | 山西省 | 内蒙古自治区 | 辽宁省   | 吉林省 |\n  | ------ | ------------ | -------- | ------ |\n  | shanxi | neimenggu    | liaoning | jilin  |\n\n  | 黑龙江省     | 江苏省  | 浙江省   | 安徽省 |\n  | ------------ | ------- | -------- | ------ |\n  | heilongjiang | jiangsu | zhejiang | anhui  |\n\n  | 福建省 | 江西省  | 山东省   | 河南省 |\n  | ------ | ------- | -------- | ------ |\n  | fujian | jiangxi | shandong | henan  |\n\n  | 湖北省 | 湖南省 | 广东省    | 广西壮族自治区 |\n  | ------ | ------ | --------- | -------------- |\n  | hubei  | hunan  | guangdong | guangxi        |\n\n  | 海南省 | 重庆市    | 四川省  | 贵州省  |\n  | ------ | --------- | ------- | ------- |\n  | hainan | chongqing | sichuan | guizhou |\n\n  | 云南省 | 西藏自治区 | 陕西省  | 甘肃省 |\n  | ------ | ---------- | ------- | ------ |\n  | yunnan | xizang     | shaanxi | gansu  |\n\n  | 青海省  | 宁夏回族自治区 | 新疆维吾尔自治区 | 大连市 |\n  | ------- | -------------- | ---------------- | ------ |\n  | qinghai | ningxia        | xinjiang         | dalian |\n\n  | 宁波市 | 厦门市 | 青岛市  | 深圳市   |\n  | ------ | ------ | ------- | -------- |\n  | ningbo | xiamen | qingdao | shenzhen |\n</details>"
   },
   "greasyfork": {
@@ -52206,6 +52267,39 @@
   },
   "steam": {
     "routes": {
+      "/appcommunityfeed/:appid/:routeParams?": {
+        "path": "/appcommunityfeed/:appid/:routeParams?",
+        "categories": [
+          "game"
+        ],
+        "example": "/steam/appcommunityfeed/730",
+        "parameters": {
+          "appid": "Steam appid, can be found on the community hub page or store page URL.",
+          "routeParams": "Query parameters."
+        },
+        "radar": [
+          {
+            "title": "Community Hub",
+            "source": [
+              "steamcommunity.com/app/:appid"
+            ],
+            "target": "/appcommunityfeed/:appid"
+          },
+          {
+            "title": "Community Hub",
+            "source": [
+              "store.steampowered.com/app/:appid/*/"
+            ],
+            "target": "/appcommunityfeed/:appid"
+          }
+        ],
+        "description": "Query Parameters:\n\n| Name                   | Type   | Description             |\n| ---------------------- | ------ | ----------------------- |\n| p                      | string | p                       |\n| rgSections[]           | string | rgSections              |\n| filterLanguage         | string | Filter Language         |\n| languageTag            | string | Language Tag            |\n| nMaxInappropriateScore | string | Max Inappropriate Score |\n\nExample:\n- `/appcommunityfeed/730/p=1&rgSections[]=2&rgSections[]=4&filterLanguage=english&languageTag=english&nMaxInappropriateScore=1` for CS2 Screenshot and Artwork contents.\n- `/appcommunityfeed/730/rgSections[]=6` for CS2 Workshop contents only.\n- `/appcommunityfeed/570/rgSections[]=3&rgSections[]=9` for Dota2 Video and Guides contents.\n\n:::tip\nIt can also access community hub contents that require a logged-in account.\n:::\n",
+        "name": "Steam Community Hub Feeds",
+        "maintainers": [
+          "NyaaaDoge"
+        ],
+        "location": "appcommunityfeed.ts"
+      },
       "/search/:params": {
         "path": "/search/:params",
         "categories": [

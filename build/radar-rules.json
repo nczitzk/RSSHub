@@ -3223,6 +3223,19 @@
       }
     ]
   },
+  "colamanga.com": {
+    "_name": "COLAMANGA",
+    "www": [
+      {
+        "title": "Manga",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/:id/"
+        ],
+        "target": "/colamanga/:id"
+      }
+    ]
+  },
   "comicskingdom.com": {
     "_name": "Comics Kingdom",
     ".": [
@@ -4494,6 +4507,17 @@
           "/"
         ],
         "target": "/ecnu/acm/contest/"
+      }
+    ],
+    "www.jwc": [
+      {
+        "title": "教务处通知",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/ecnu/tzgg"
       }
     ]
   },
@@ -13723,9 +13747,30 @@
       }
     ]
   },
+  "steamcommunity.com": {
+    "_name": "Steam",
+    ".": [
+      {
+        "title": "Community Hub",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/app/:appid"
+        ],
+        "target": "/steam/appcommunityfeed/:appid"
+      }
+    ]
+  },
   "steampowered.com": {
     "_name": "Steam",
     "store": [
+      {
+        "title": "Community Hub",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/app/:appid/*/"
+        ],
+        "target": "/steam/appcommunityfeed/:appid"
+      },
       {
         "title": "Store Search",
         "docs": "https://docs.rsshub.app/routes/game",

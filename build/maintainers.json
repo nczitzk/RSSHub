@@ -1227,6 +1227,9 @@
   "/coindesk/consensus-magazine": [
     "jameshih"
   ],
+  "/colamanga/:id": [
+    "machsix"
+  ],
   "/comicat/search/:keyword": [
     "Cyang39"
   ],
@@ -1739,6 +1742,9 @@
   ],
   "/ecnu/acm/contest/:category?": [
     "a180285"
+  ],
+  "/ecnu/jwc": [
+    "markbang"
   ],
   "/ecnu/yjs": [
     "shengmaosu"
@@ -5204,6 +5210,9 @@
   ],
   "/stdaily/digitalpaper": [
     "lyqluis"
+  ],
+  "/steam/appcommunityfeed/:appid/:routeParams?": [
+    "NyaaaDoge"
   ],
   "/steam/search/:params": [
     "moppman"
