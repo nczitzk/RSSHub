@@ -4881,51 +4881,12 @@
   },
   "baai": {
     "routes": {
-      "/hub/comments": {
-        "path": "/hub/comments",
-        "categories": [
-          "programming"
-        ],
-        "example": "/baai/hub/comments",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "hub.baai.ac.cn/comments",
-              "hub.baai.ac.cn/"
-            ]
-          }
-        ],
-        "name": "智源社区 - 评论",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "url": "hub.baai.ac.cn/comments",
-        "location": "comments.ts"
-      },
       "/hub/events": {
         "path": "/hub/events",
         "categories": [
           "programming"
         ],
         "example": "/baai/hub/events",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -4941,34 +4902,31 @@
         "url": "hub.baai.ac.cn/events",
         "location": "events.ts"
       },
-      "/hub/:tagId/:sort?/:range?": {
+      "/hub/:tagId?/:sort?/:range?": {
         "path": [
-          "/hub/:tagId/:sort?/:range?",
-          "/hub/:tagId/:sort?",
-          "/hub/:sort?"
+          "/hub/:tagId?/:sort?/:range?"
         ],
-        "name": "Unknown",
-        "maintainers": [],
-        "location": "hub.ts"
-      },
-      "/hub/:tagId/:sort?": {
-        "path": [
-          "/hub/:tagId/:sort?/:range?",
-          "/hub/:tagId/:sort?",
-          "/hub/:sort?"
+        "categories": [
+          "programming"
         ],
-        "name": "Unknown",
-        "maintainers": [],
-        "location": "hub.ts"
-      },
-      "/hub/:sort?": {
-        "path": [
-          "/hub/:tagId/:sort?/:range?",
-          "/hub/:tagId/:sort?",
-          "/hub/:sort?"
+        "example": "/baai/hub",
+        "parameters": {
+          "tagId": "社群 ID，可在 [社群页](https://hub.baai.ac.cn/taglist) 或 URL 中找到",
+          "sort": "排序，见下表，默认为 `new`",
+          "range": "时间跨度，仅在排序 `readCnt` 时有效"
+        },
+        "description": "排序\n\n| 最新 | 最热    |\n| ---- | ------- |\n| new  | readCnt |\n\n时间跨度\n\n| 3 天 | 本周 | 本月 |\n| ---- | ---- | ---- |\n| 3    | 7    | 30   |",
+        "radar": [
+          {
+            "source": [
+              "baai.ac.cn/"
+            ]
+          }
         ],
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "智源社区",
+        "maintainers": [
+          "TonyRL"
+        ],
         "location": "hub.ts"
       }
     },
@@ -9291,15 +9249,6 @@
           "traditional-media"
         ],
         "example": "/caixin/weekly",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -24706,6 +24655,34 @@
           "zxx-457"
         ],
         "location": "zhengce/zhengceku.ts"
+      },
+      "/zj/search/:websiteid?/:word/:cateid?": {
+        "path": "/zj/search/:websiteid?/:word/:cateid?",
+        "categories": [
+          "government"
+        ],
+        "example": "/gov/zj/search",
+        "parameters": {
+          "websiteid": "搜索范围-全省、各市各区、详细信息点击源网站https://www.zj.gov.cn/请求中寻找",
+          "word": "搜索关键词-默认：人才",
+          "cateid": "信息分类-默认：658（全部）",
+          "sortType": "排序类型-默认：2（按时间）"
+        },
+        "radar": [
+          {
+            "source": [
+              "search.zj.gov.cn/jsearchfront/search.do"
+            ],
+            "target": "/zj/search/:websiteid?/:word/:cateid?"
+          }
+        ],
+        "name": "浙江省人民政府-全省政府网站统一搜索",
+        "url": "search.zj.gov.cn/jsearchfront/search.do",
+        "maintainers": [
+          "HaoyuLee"
+        ],
+        "description": "\n        | 行政区域         | websiteid |\n        | ------------ | -- |\n        | 宁波市本级     | 330201000000000  |\n\n        | 搜索关键词         | word    |\n\n        | 信息分类         | cateid    |\n\n        | 排序类型         | sortType    |\n        | ------------ | -- |\n        | 按相关度     | 1  |\n        | 按时间     | 2  |\n    ",
+        "location": "zj/search.ts"
       }
     },
     "name": "中国人民银行",
@@ -29093,15 +29070,6 @@
           "journal"
         ],
         "example": "/ieee-security/security-privacy",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -33498,6 +33466,37 @@
     },
     "name": "旅法师营地",
     "url": "www.iyingdi.com"
+  },
+  "lianxh": {
+    "routes": {
+      "/:category?": {
+        "path": "/:category?",
+        "example": "/lianxh",
+        "parameters": {
+          "category": "分类 id，可在对应分类页 URL 中找到，默认为 `all`，即全部"
+        },
+        "radar": [
+          {
+            "source": [
+              "www.lianxh.cn/blogs/all.html",
+              "www.lianxh.cn/"
+            ]
+          }
+        ],
+        "name": "精彩资讯",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "url": "www.lianxh.cn/",
+        "description": "| 分类                 | id  |\n -------------------- | --- |\n 全部                 | all |\n Stata 入门           | 16  |\n Stata 教程           | 17  |\n 计量专题             | 18  |\n 内生性 - 因果推断    | 19  |\n 面板数据             | 20  |\n 交乘项 - 调节 - 中介 | 21  |\n 结果输出             | 22  |\n 工具软件             | 23  |\n Stata 绘图           | 24  |\n 数据处理             | 25  |\n Stata 程序           | 26  |\n Probit-Logit         | 27  |\n 时间序列             | 28  |\n 空间计量 - 网络分析  | 29  |\n Markdown-LaTeX       | 30  |\n 论文写作             | 31  |\n 回归分析             | 32  |\n 其它                 | 33  |\n 数据分享             | 34  |\n Stata 资源           | 35  |\n 文本分析 - 爬虫      | 36  |\n Python-R-Matlab      | 37  |\n IV-GMM               | 38  |\n 倍分法 DID           | 39  |\n 断点回归 RDD         | 40  |\n PSM-Matching         | 41  |\n 合成控制法           | 42  |\n Stata 命令           | 43  |\n 专题课程             | 44  |\n 风险管理             | 45  |\n 生存分析             | 46  |\n 机器学习             | 47  |\n 分位数回归           | 48  |\n SFA-DEA - 效率分析   | 49  |\n 答疑 - 板书          | 50  |\n 论文重现             | 51  |\n 最新课程             | 52  |\n 公开课               | 53  |",
+        "location": "index.ts"
+      }
+    },
+    "name": "连享会",
+    "url": "www.lianxh.cn",
+    "categories": [
+      "programming"
+    ]
   },
   "lifeweek": {
     "routes": {
@@ -50110,15 +50109,6 @@
           "journal"
         ],
         "example": "/sigsac/ccs",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -50128,7 +50118,9 @@
           }
         ],
         "name": "The ACM Conference on Computer and Communications Security",
-        "maintainers": [],
+        "maintainers": [
+          "ZeddYu"
+        ],
         "url": "sigsac.org/ccs.html",
         "description": "Return results from 2020",
         "location": "ccs.ts"
@@ -57943,15 +57935,6 @@
           "journal"
         ],
         "example": "/usenix/usenix-security-sympoium",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
