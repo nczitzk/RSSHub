@@ -2626,10 +2626,6 @@
     "moke8",
     "nczitzk"
   ],
-  "/hellogithub/:sort?/:id?": [
-    "moke8",
-    "nczitzk"
-  ],
   "/hellogithub/ranking/:type?": [
     "moke8",
     "nczitzk"
@@ -2640,11 +2636,13 @@
   ],
   "/hellogithub/month": [
     "moke8",
-    "nczitzk"
+    "nczitzk",
+    "CaoMeiYouRen"
   ],
   "/hellogithub/volume": [
     "moke8",
-    "nczitzk"
+    "nczitzk",
+    "CaoMeiYouRen"
   ],
   "/hex-rays/news": [
     "hellodword ",
@@ -2904,6 +2902,9 @@
   "/ieee/journal/:journal/recent/:sortType?": [],
   "/ieee-security/security-privacy": [
     "ZeddYu"
+  ],
+  "/iehou/:category?": [
+    "nczitzk"
   ],
   "/ielts/": [
     "zenxds"
@@ -3278,6 +3279,9 @@
   ],
   "/konghq/blog-posts": [
     "piglei"
+  ],
+  "/kpmg/insights/:lang?": [
+    "LogicJake"
   ],
   "/kuaidi100/track/:number/:id/:phone?": [
     "NeverBehave"
@@ -4145,6 +4149,9 @@
   ],
   "/oilchem/:type?/:category?/:subCategory?": [
     "nczitzk"
+  ],
+  "/ollama/library": [
+    "Nick22nd"
   ],
   "/oncc/:language/:channel?": [
     "Fatpandac"
@@ -5089,7 +5096,7 @@
   "/sogou/search/:keyword": [
     "CaoMeiYouRen"
   ],
-  "/sohu/mp/:id": [
+  "/sohu/mp/:xpt": [
     "HenryQW"
   ],
   "/solidot/:type?": [

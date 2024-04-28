@@ -26170,37 +26170,7 @@
     "routes": {
       "/article/:sort?/:id?": {
         "path": [
-          "/article/:sort?/:id?",
-          "/:sort?/:id?"
-        ],
-        "categories": [
-          "programming"
-        ],
-        "example": "/hellogithub/article",
-        "parameters": {
-          "sort": "排序方式，见下表，默认为 `hot`，即热门",
-          "id": "标签 id，可在对应标签页 URL 中找到，默认为全部标签"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "文章",
-        "maintainers": [
-          "moke8",
-          "nczitzk"
-        ],
-        "description": "| 热门 | 最近 |\n  | ---- | ---- |\n  | hot  | last |",
-        "location": "index.ts"
-      },
-      "/:sort?/:id?": {
-        "path": [
-          "/article/:sort?/:id?",
-          "/:sort?/:id?"
+          "/article/:sort?/:id?"
         ],
         "categories": [
           "programming"
@@ -26231,7 +26201,8 @@
           "/ranking/:type?",
           "/report/:type?"
         ],
-        "name": "Unknown",
+        "example": "/hellogithub/ranking",
+        "name": "榜单报告",
         "maintainers": [
           "moke8",
           "nczitzk"
@@ -26244,7 +26215,8 @@
           "/ranking/:type?",
           "/report/:type?"
         ],
-        "name": "Unknown",
+        "example": "/hellogithub/ranking",
+        "name": "榜单报告",
         "maintainers": [
           "moke8",
           "nczitzk"
@@ -26257,10 +26229,12 @@
           "/month",
           "/volume"
         ],
-        "name": "Unknown",
+        "example": "/hellogithub/volume",
+        "name": "月刊",
         "maintainers": [
           "moke8",
-          "nczitzk"
+          "nczitzk",
+          "CaoMeiYouRen"
         ],
         "location": "volume.ts"
       },
@@ -26269,10 +26243,12 @@
           "/month",
           "/volume"
         ],
-        "name": "Unknown",
+        "example": "/hellogithub/volume",
+        "name": "月刊",
         "maintainers": [
           "moke8",
-          "nczitzk"
+          "nczitzk",
+          "CaoMeiYouRen"
         ],
         "location": "volume.ts"
       }
@@ -29089,6 +29065,65 @@
     },
     "name": "IEEE Computer Society",
     "url": "ieee-security.org"
+  },
+  "iehou": {
+    "routes": {
+      "/:category?": {
+        "path": "/:category?",
+        "name": "线报",
+        "url": "iehou.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/iehou",
+        "parameters": {
+          "category": "分类，默认为空，即最新线报，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [24小时热门线报](https://iehou.com/page-dayhot.htm)，网址为 `https://iehou.com/page-dayhot.htm`。截取 `https://iehou.com/page-` 到末尾 `.htm` 的部分 `dayhot` 作为参数填入，此时路由为 [`/iehou/dayhot`](https://rsshub.app/iehou/dayhot)。\n  :::\n  \n  | [最新线报](https://iehou.com/) | [24 小时热门](https://iehou.com/page-dayhot.htm) | [一周热门](https://iehou.com/page-weekhot.htm) |\n  | ------------------------------ | ------------------------------------------------ | ---------------------------------------------- |\n  | [](https://rsshub.app/iehou)   | [dayhot](https://rsshub.app/iehou/dayhot)        | [weekhot](https://rsshub.app/iehou/weekhot)    |\n  ",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "title": "最新线报",
+            "source": [
+              "iehou.com"
+            ],
+            "target": "/"
+          },
+          {
+            "title": "24小时热门",
+            "source": [
+              "iehou.com/page-dayhot.htm"
+            ],
+            "target": "/dayhot"
+          },
+          {
+            "title": "一周热门",
+            "source": [
+              "iehou.com/page-weekhot.htm"
+            ],
+            "target": "/weekhot"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "网猴线报",
+    "url": "iehou.com",
+    "categories": [
+      "new-media"
+    ],
+    "description": ""
   },
   "ielts": {
     "routes": {
@@ -32682,6 +32717,48 @@
     "name": "Kong API 网关平台",
     "url": "konghq.com",
     "description": "[Kong](https://konghq.com/) 是一家开源的 API 网关服务商，此处收集其官网的最新博客文章。"
+  },
+  "kpmg": {
+    "routes": {
+      "/insights/:lang?": {
+        "path": "/insights/:lang?",
+        "example": "/kpmg/insights",
+        "parameters": {
+          "lang": "Language, either `en` or `zh`"
+        },
+        "radar": [
+          {
+            "source": [
+              "kpmg.com/xx/en/home/insights.html"
+            ],
+            "target": "/insights/en"
+          },
+          {
+            "source": [
+              "kpmg.com/cn/zh/home/insights.html"
+            ],
+            "target": "/insights/zh"
+          }
+        ],
+        "name": "Insights",
+        "maintainers": [
+          "LogicJake"
+        ],
+        "url": "kpmg.com/xx/en/home/insights.html",
+        "zh": {
+          "name": "洞察"
+        },
+        "location": "insights.ts"
+      }
+    },
+    "name": "KPMG",
+    "url": "kpmg.com",
+    "categories": [
+      "other"
+    ],
+    "zh": {
+      "name": "毕马威"
+    }
   },
   "kuaidi100": {
     "routes": {
@@ -41271,6 +41348,31 @@
     },
     "name": "隆众资讯",
     "url": "oilchem.net"
+  },
+  "ollama": {
+    "routes": {
+      "/library": {
+        "path": "/library",
+        "categories": [
+          "programming"
+        ],
+        "example": "/ollama/library",
+        "radar": [
+          {
+            "source": [
+              "ollama.com/library"
+            ]
+          }
+        ],
+        "name": "Models",
+        "maintainers": [
+          "Nick22nd"
+        ],
+        "location": "models.ts"
+      }
+    },
+    "name": "Ollama",
+    "url": "ollama.com"
   },
   "oncc": {
     "routes": {
@@ -50954,28 +51056,27 @@
   },
   "sohu": {
     "routes": {
-      "/mp/:id": {
-        "path": "/mp/:id",
+      "/mp/:xpt": {
+        "path": "/mp/:xpt",
         "categories": [
           "new-media"
         ],
-        "example": "/sohu/mp/119097",
+        "example": "/sohu/mp/c29odXptdGhnbjZ3NEBzb2h1LmNvbQ==",
         "parameters": {
-          "id": "搜狐号 ID"
+          "xpt": "搜狐号 xpt ，可在URL中找到或搜狐号 ID"
         },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "更新",
+        "radar": [
+          {
+            "source": [
+              "mp.sohu.com/profile"
+            ]
+          }
+        ],
+        "name": "最新",
         "maintainers": [
           "HenryQW"
         ],
-        "description": "1.  通过浏览器搜索相关搜狐号 `果壳 site: mp.sohu.com`。\n  2.  通过浏览器控制台执行 `contentData.mkey`，返回的即为搜狐号 ID。",
+        "description": "搜狐号 ID 可以通过以下方式获取：\n  1.  通过浏览器搜索相关搜狐号 `果壳 site: mp.sohu.com`。\n  2.  通过浏览器控制台执行 `window.globalConst.mkeyConst_mkey`，返回的即为搜狐号 ID。",
         "location": "mp.ts"
       }
     },
@@ -52158,7 +52259,7 @@
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
-          "antiCrawler": false,
+          "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
@@ -52167,11 +52268,12 @@
           {
             "source": [
               "jsjxy.stbu.edu.cn/news",
-              "jsjxy.stbu.edu.cn/"
+              "jsjxy.stbu.edu.cn",
+              "stbu.edu.cn"
             ]
           }
         ],
-        "name": "计算机学院通知公告",
+        "name": "计算机学院 - 通知公告",
         "maintainers": [
           "HyperCherry"
         ],
@@ -52181,15 +52283,28 @@
       },
       "/xyxw": {
         "path": "/xyxw",
+        "categories": [
+          "university"
+        ],
+        "example": "/stbu/xyxw",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
         "radar": [
           {
             "source": [
               "stbu.edu.cn/html/news/xueyuan",
-              "stbu.edu.cn/"
+              "stbu.edu.cn"
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "学院新闻",
         "maintainers": [
           "HyperCherry"
         ],

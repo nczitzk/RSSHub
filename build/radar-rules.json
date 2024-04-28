@@ -7632,6 +7632,35 @@
       }
     ]
   },
+  "iehou.com": {
+    "_name": "网猴线报",
+    ".": [
+      {
+        "title": "最新线报",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/iehou/"
+      },
+      {
+        "title": "24小时热门",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/page-dayhot.htm"
+        ],
+        "target": "/iehou/dayhot"
+      },
+      {
+        "title": "一周热门",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/page-weekhot.htm"
+        ],
+        "target": "/iehou/weekhot"
+      }
+    ]
+  },
   "neea.cn": {
     "_name": "IELTS 雅思",
     "ielts": [
@@ -8427,6 +8456,27 @@
           "/blog/*"
         ],
         "target": "/konghq/blog-posts"
+      }
+    ]
+  },
+  "kpmg.com": {
+    "_name": "KPMG",
+    ".": [
+      {
+        "title": "Insights",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/xx/en/home/insights.html"
+        ],
+        "target": "/kpmg/insights/en"
+      },
+      {
+        "title": "Insights",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/cn/zh/home/insights.html"
+        ],
+        "target": "/kpmg/insights/zh"
       }
     ]
   },
@@ -10561,6 +10611,19 @@
           "/"
         ],
         "target": "/odaily/user/:id"
+      }
+    ]
+  },
+  "ollama.com": {
+    "_name": "Ollama",
+    ".": [
+      {
+        "title": "Models",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/library"
+        ],
+        "target": "/ollama/library"
       }
     ]
   },
@@ -13464,6 +13527,19 @@
       }
     ]
   },
+  "sohu.com": {
+    "_name": "搜狐号",
+    "mp": [
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/profile"
+        ],
+        "target": "/sohu(_params,url)=>`/sohu/mp/${new URL(url).searchParams.get(\"xpt\")}`"
+      }
+    ]
+  },
   "sony.com": {
     "_name": "Sony",
     ".": [
@@ -13754,10 +13830,11 @@
     "_name": "四川工商学院",
     "jsjxy": [
       {
-        "title": "计算机学院通知公告",
+        "title": "计算机学院 - 通知公告",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
           "/news",
+          "/",
           "/"
         ],
         "target": "/stbu/jsjxy"
@@ -13765,7 +13842,7 @@
     ],
     ".": [
       {
-        "title": "Unknown",
+        "title": "学院新闻",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
           "/html/news/xueyuan",
