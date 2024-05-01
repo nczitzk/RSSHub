@@ -1272,6 +1272,9 @@
   "/coomer/posts": [
     "nczitzk"
   ],
+  "/copernicium/:category": [
+    "dzx-dzx"
+  ],
   "/copymanga/comic/:id/:chapterCnt?": [
     "btdwv",
     "marvolo666",
@@ -5652,6 +5655,9 @@
   "/trow/portal": [
     "shiningdracon"
   ],
+  "/ttv/:category?": [
+    "dzx-dzx"
+  ],
   "/tvb/news/:category?/:language?": [
     "nczitzk"
   ],
@@ -6306,6 +6312,9 @@
   "/yangtzeu/dongke/*": [],
   "/ycwb/:node": [
     "TimWu007"
+  ],
+  "/yenpress/series/:name": [
+    "TonyRL"
   ],
   "/ygkkk/": [
     "cnkmmk"

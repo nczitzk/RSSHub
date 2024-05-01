@@ -3300,6 +3300,19 @@
       }
     ]
   },
+  "copernicium.tw": {
+    "_name": "日新说",
+    "www": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/copernicium/:category"
+      }
+    ]
+  },
   "cpcaauto.com": {
     "_name": "cpcaauto.com",
     ".": [
@@ -14970,6 +14983,19 @@
       }
     ]
   },
+  "ttv.com.tw": {
+    "_name": "台視新聞網",
+    "news": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:category"
+        ],
+        "target": "/ttv/:category?"
+      }
+    ]
+  },
   "tvb.com": {
     "_name": "无线新闻",
     ".": [
@@ -16474,6 +16500,19 @@
           "/post/"
         ],
         "target": "/yande/post/popular_recent/:period?"
+      }
+    ]
+  },
+  "yenpress.com": {
+    "_name": "Yen Press",
+    ".": [
+      {
+        "title": "Series",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/series/:name"
+        ],
+        "target": "/yenpress/series/:name"
       }
     ]
   },
