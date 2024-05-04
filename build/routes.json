@@ -1848,6 +1848,44 @@
     "name": "5EPLAY",
     "url": "csgo.5eplay.com"
   },
+  "69shu": {
+    "routes": {
+      "/article/:id": {
+        "path": "/article/:id",
+        "name": "章节",
+        "url": "www.69shu.top",
+        "maintainers": [
+          "eternasuno"
+        ],
+        "example": "/article/47117",
+        "parameters": {
+          "id": "小说 id, 可在对应小说页 URL 中找到"
+        },
+        "categories": [
+          "reading"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.69shu.top/book/:id.htm"
+            ],
+            "target": "/article/:id"
+          }
+        ],
+        "location": "article.ts"
+      }
+    },
+    "name": "69书吧",
+    "url": "69shu.top"
+  },
   "6park": {
     "routes": {
       "/:id?/:type?/:keyword?": {
@@ -4037,6 +4075,39 @@
   },
   "apnews": {
     "routes": {
+      "/rss/:rss?": {
+        "path": "/rss/:rss?",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/apnews/rss/business",
+        "parameters": {
+          "rss": "Route name from the first segment of the corresponding site, or `index` for the front page(default)."
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "apnews.com/:rss"
+            ],
+            "target": "/rss/:rss"
+          }
+        ],
+        "name": "RSS",
+        "maintainers": [
+          "zoenglinghou",
+          "mjysci",
+          "TonyRL"
+        ],
+        "location": "rss.ts"
+      },
       "/topics/:topic?": {
         "path": "/topics/:topic?",
         "categories": [
@@ -15254,6 +15325,40 @@
     "name": "二柄 APP",
     "url": "diershoubing.com"
   },
+  "digitalcameraworld": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/digitalcameraworld/news",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "digitalcameraworld.com/"
+            ]
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "EthanWng97"
+        ],
+        "location": "news.ts"
+      }
+    },
+    "name": "Digital Camera World",
+    "url": "digitalcameraworld.com"
+  },
   "discord": {
     "routes": {
       "/channel/:channelId": {
@@ -21878,7 +21983,10 @@
           }
         ],
         "name": "Repo Pull Requests",
-        "maintainers": [],
+        "maintainers": [
+          "hashman",
+          "TonyRL"
+        ],
         "location": "pulls.ts"
       },
       "/pulse/:user/:repo/:period?": {
@@ -24902,6 +25010,40 @@
       "government"
     ],
     "description": "<details>\n  <summary>*业务咨询* 和 *投诉建议* 可用的站点参数</summary>\n\n  | 上海市   | 北京市  | 天津市  | 河北省 |\n  | -------- | ------- | ------- | ------ |\n  | shanghai | beijing | tianjin | hebei  |\n\n  | 山西省 | 内蒙古自治区 | 辽宁省   | 吉林省 |\n  | ------ | ------------ | -------- | ------ |\n  | shanxi | neimenggu    | liaoning | jilin  |\n\n  | 黑龙江省     | 江苏省  | 浙江省   | 安徽省 |\n  | ------------ | ------- | -------- | ------ |\n  | heilongjiang | jiangsu | zhejiang | anhui  |\n\n  | 福建省 | 江西省  | 山东省   | 河南省 |\n  | ------ | ------- | -------- | ------ |\n  | fujian | jiangxi | shandong | henan  |\n\n  | 湖北省 | 湖南省 | 广东省    | 广西壮族自治区 |\n  | ------ | ------ | --------- | -------------- |\n  | hubei  | hunan  | guangdong | guangxi        |\n\n  | 海南省 | 重庆市    | 四川省  | 贵州省  |\n  | ------ | --------- | ------- | ------- |\n  | hainan | chongqing | sichuan | guizhou |\n\n  | 云南省 | 西藏自治区 | 陕西省  | 甘肃省 |\n  | ------ | ---------- | ------- | ------ |\n  | yunnan | xizang     | shaanxi | gansu  |\n\n  | 青海省  | 宁夏回族自治区 | 新疆维吾尔自治区 | 大连市 |\n  | ------- | -------------- | ---------------- | ------ |\n  | qinghai | ningxia        | xinjiang         | dalian |\n\n  | 宁波市 | 厦门市 | 青岛市  | 深圳市   |\n  | ------ | ------ | ------- | -------- |\n  | ningbo | xiamen | qingdao | shenzhen |\n</details>"
+  },
+  "gq": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/gq/news",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "gq.com/"
+            ]
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "EthanWng97"
+        ],
+        "location": "news.ts"
+      }
+    },
+    "name": "GQ",
+    "url": "gq.com"
   },
   "greasyfork": {
     "routes": {
@@ -32853,10 +32995,28 @@
   },
   "keylol": {
     "routes": {
-      "*": {
-        "path": "*",
-        "name": "Unknown",
-        "maintainers": [],
+      "/:path": {
+        "path": "/:path",
+        "name": "论坛",
+        "parameters": {
+          "path": "路径，默认为热点聚焦"
+        },
+        "categories": [
+          "game"
+        ],
+        "example": "/keylol/f161-1",
+        "radar": [
+          {
+            "source": [
+              "keylol.com/:path"
+            ]
+          }
+        ],
+        "maintainers": [
+          "nczitzk",
+          "kennyfong19931"
+        ],
+        "description": ":::tip\n  若订阅 [热点聚焦](https://keylol.com/f161-1)，网址为 `https://keylol.com/f161-1`。截取 `https://keylol.com/` 到末尾的部分 `f161-1` 作为参数，此时路由为 [`/keylol/f161-1`](https://rsshub.app/keylol/f161-1)。\n  若订阅子分类 [试玩免费 - 热点聚焦](https://keylol.com/forum.php?mod=forumdisplay&fid=161&filter=typeid&typeid=459)，网址为 `https://keylol.com/forum.php?mod=forumdisplay&fid=161&filter=typeid&typeid=459`。提取`fid`及`typeid` 作为参数，此时路由为 [`/keylol/fid=161&typeid=459`](https://rsshub.app/keylol/fid=161&typeid=459)。注意不要包括`filter`，会调用[全局的内容过滤](https://docs.rsshub.app/guide/parameters#filtering)。\n  :::",
         "location": "index.ts"
       }
     },
@@ -38233,6 +38393,42 @@
     },
     "name": "上下游 News&Market",
     "url": "newsmarket.com.tw"
+  },
+  "newyorker": {
+    "routes": {
+      "/:category/:subCategory?": {
+        "path": "/:category/:subCategory?",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/newyorker/everything",
+        "parameters": {
+          "category": "rss category. can be found at `https://www.newyorker.com/about/feeds`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "newyorker.com/feed/:category/:subCategory?"
+            ]
+          }
+        ],
+        "name": "The New Yorker",
+        "maintainers": [
+          "EthanWng97"
+        ],
+        "location": "news.ts"
+      }
+    },
+    "name": "New Yorker",
+    "url": "newyorker.com"
   },
   "newzmz": {
     "routes": {

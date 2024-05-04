@@ -366,6 +366,19 @@
       }
     ]
   },
+  "69shu.top": {
+    "_name": "69书吧",
+    "www": [
+      {
+        "title": "章节",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/book/:id.htm"
+        ],
+        "target": "/69shu/article/:id"
+      }
+    ]
+  },
   "6parkbbs.com": {
     "_name": "留园网",
     "club": [
@@ -1018,6 +1031,14 @@
   "apnews.com": {
     "_name": "AP News",
     ".": [
+      {
+        "title": "RSS",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:rss"
+        ],
+        "target": "/apnews/rss/:rss"
+      },
       {
         "title": "Topics",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
@@ -4044,6 +4065,19 @@
       }
     ]
   },
+  "digitalcameraworld.com": {
+    "_name": "Digital Camera World",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/digitalcameraworld/news"
+      }
+    ]
+  },
   "discord.com": {
     "_name": "Discord",
     ".": [
@@ -6494,6 +6528,19 @@
       }
     ]
   },
+  "gq.com": {
+    "_name": "GQ",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/"
+        ],
+        "target": "/gq/news"
+      }
+    ]
+  },
   "greasyfork.org": {
     "_name": "Greasy Fork",
     ".": [
@@ -8595,6 +8642,19 @@
       }
     ]
   },
+  "keylol.com": {
+    "_name": "其乐",
+    ".": [
+      {
+        "title": "论坛",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/:path"
+        ],
+        "target": "/keylol(params,url)=>url.replaceAll(\"forum.php?\",\"\")"
+      }
+    ]
+  },
   "kimlaw.or.kr": {
     "_name": "The Korea Institute of Marine Law",
     ".": [
@@ -9984,6 +10044,19 @@
           "/"
         ],
         "target": "/newsmarket/:category?"
+      }
+    ]
+  },
+  "newyorker.com": {
+    "_name": "New Yorker",
+    ".": [
+      {
+        "title": "The New Yorker",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/feed/:category/:subCategory"
+        ],
+        "target": "/newyorker/:category/:subCategory?"
       }
     ]
   },
