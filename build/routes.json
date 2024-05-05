@@ -14892,12 +14892,14 @@
         "maintainers": [
           "tensor-tech"
         ],
-        "radar": {
-          "source": [
-            "bbs.deepin.org/user/:user_id"
-          ],
-          "target": "/homepage/:user_id"
-        },
+        "radar": [
+          {
+            "source": [
+              "bbs.deepin.org/user/:user_id"
+            ],
+            "target": "/homepage/:user_id"
+          }
+        ],
         "location": "homepage.ts"
       }
     },
@@ -57269,7 +57271,12 @@
           "routeParams": "extra parameters, see the table above"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "TWITTER_COOKIE",
+              "description": "Please see above for details."
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
