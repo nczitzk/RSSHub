@@ -1424,12 +1424,12 @@
         "target": "/bangumi/tv/group/:id"
       },
       {
-        "title": "成员关注动画榜",
+        "title": "成员关注榜",
         "docs": "https://docs.rsshub.app/routes/anime",
         "source": [
-          "/anime"
+          "/:type"
         ],
-        "target": "/bangumi/tv/followrank"
+        "target": "/bangumi/:type/followrank"
       },
       {
         "title": "现实人物的新作品",
@@ -3068,20 +3068,28 @@
     "_name": "cnBeta.COM",
     ".": [
       {
-        "title": "Unknown",
-        "docs": "https://docs.rsshub.app/routes/other",
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
-          "/"
+          "/category/:id"
         ],
-        "target": "/cnbeta/:type/:id"
+        "target": "/cnbetaparams=>`/cnbeta/category/${params.id.replace(\".htm\",\"\")}`"
       },
       {
-        "title": "Unknown",
-        "docs": "https://docs.rsshub.app/routes/other",
+        "title": "头条资讯",
+        "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
           "/"
         ],
         "target": "/cnbeta/"
+      },
+      {
+        "title": "主题",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/topics/:id"
+        ],
+        "target": "/cnbetaparams=>`/cnbeta/topics/${params.id.replace(\".htm\",\"\")}`"
       }
     ]
   },
@@ -3801,16 +3809,7 @@
     "_name": "Darwin Awards",
     ".": [
       {
-        "title": "Unknown",
-        "docs": "https://docs.rsshub.app/routes/other",
-        "source": [
-          "/darwin",
-          "/"
-        ],
-        "target": "/darwinawards/all"
-      },
-      {
-        "title": "Unknown",
+        "title": "Award Winners",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
           "/darwin",
@@ -4187,7 +4186,7 @@
   },
   "dnaindia.com": {
     "_name": "DNA India",
-    ".": [
+    "www": [
       {
         "title": "News",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
@@ -4197,10 +4196,10 @@
         "target": "/dnaindia/:category"
       },
       {
-        "title": "News",
+        "title": "Topic",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
-          "/:category"
+          "/topic/:topic"
         ],
         "target": "/dnaindia/topic/:topic"
       }
@@ -7279,23 +7278,7 @@
         "target": "/houxu/events"
       },
       {
-        "title": "Unknown",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/"
-        ],
-        "target": "/houxu/featured"
-      },
-      {
-        "title": "Unknown",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/"
-        ],
-        "target": "/houxu/index"
-      },
-      {
-        "title": "Unknown",
+        "title": "热点",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
           "/"
@@ -10007,12 +9990,313 @@
         "target": "/nber/papers"
       },
       {
-        "title": "All Papers",
+        "title": "New Papers",
         "docs": "https://docs.rsshub.app/routes/journal",
         "source": [
           "/papers"
         ],
-        "target": "/nber/news"
+        "target": "/nber/new"
+      }
+    ]
+  },
+  "ncc-cma.net": {
+    "_name": "国家气候中心",
+    "cmdp": [
+      {
+        "title": "日平均气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/RPJQWQYZ"
+      },
+      {
+        "title": "近5天平均气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ5TPJQWJP"
+      },
+      {
+        "title": "近10天平均气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ10TQWJP"
+      },
+      {
+        "title": "近20天平均气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ20TQWJP"
+      },
+      {
+        "title": "近30天平均气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ30TQWJP"
+      },
+      {
+        "title": "本月以来气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BYYLQWJP"
+      },
+      {
+        "title": "本季以来气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BJYLQWJP"
+      },
+      {
+        "title": "本年以来气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BNYLQWJP"
+      },
+      {
+        "title": "日降水量分布",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/QGRJSLFBT0808S"
+      },
+      {
+        "title": "近5天降水量",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ5TJSLFBT"
+      },
+      {
+        "title": "近10天降水量",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ10TJSL"
+      },
+      {
+        "title": "近20天降水量",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ20TJSL"
+      },
+      {
+        "title": "近30天降水量",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ30TJSL"
+      },
+      {
+        "title": "本月以来降水量",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/ncc-cma/cmdp/image/BYYLJSL"
+      },
+      {
+        "title": "本季以来降水量",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BJYLJSL"
+      },
+      {
+        "title": "近10天降水量距平百分率",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ10TJSLJP"
+      },
+      {
+        "title": "近20天降水量距平百分率",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ20TJSLJP"
+      },
+      {
+        "title": "近30天降水量距平百分率",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ30TJSLJP"
+      },
+      {
+        "title": "本月以来降水量距平百分率",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BYYLJSLJPZYQHZ"
+      },
+      {
+        "title": "本季以来降水量距平百分率",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BJYLJSLJPZJQHZ"
+      },
+      {
+        "title": "本年以来降水量距平百分率",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BNYLJSLJP"
+      },
+      {
+        "title": "气温距平（最近10天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmeana10_"
+      },
+      {
+        "title": "气温距平（最近20天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmeana20_"
+      },
+      {
+        "title": "气温距平（最近30天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmeana30_"
+      },
+      {
+        "title": "气温距平（最近90天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmeana90_"
+      },
+      {
+        "title": "最低气温距平（最近30天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmina30_"
+      },
+      {
+        "title": "最低气温距平（最近90天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmina90_"
+      },
+      {
+        "title": "最高气温距平（最近30天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmaxa30_"
+      },
+      {
+        "title": "最高气温距平（最近90天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmaxa90_"
+      },
+      {
+        "title": "降水量（最近10天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbrain10_"
+      },
+      {
+        "title": "降水量（最近20天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbrain20_"
+      },
+      {
+        "title": "降水量（最近30天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbrain30_"
+      },
+      {
+        "title": "降水量（最近90天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbrain90_"
+      },
+      {
+        "title": "降水距平百分率（最近10天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbraina10_"
+      },
+      {
+        "title": "降水距平百分率（最近20天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbraina20_"
+      },
+      {
+        "title": "降水距平百分率（最近30天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbraina30_"
+      },
+      {
+        "title": "降水距平百分率（最近90天）",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbraina90_"
       }
     ]
   },
@@ -11191,6 +11475,27 @@
       }
     ]
   },
+  "p-articles.com": {
+    "_name": "虚词",
+    ".": [
+      {
+        "title": "虛詞作者",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/contributors/:author"
+        ],
+        "target": "/p-articles/contributors/:author"
+      },
+      {
+        "title": "版块",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/:section/"
+        ],
+        "target": "/p-articles/section/:section"
+      }
+    ]
+  },
   "panewslab.com": {
     "_name": "PANews",
     ".": [
@@ -11211,14 +11516,6 @@
         "target": "/panewslab/column/:id"
       },
       {
-        "title": "深度",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/"
-        ],
-        "target": "/panewslab/:category?"
-      },
-      {
         "title": "快讯",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
@@ -11227,12 +11524,13 @@
         "target": "/panewslab/news"
       },
       {
-        "title": "快讯",
+        "title": "深度",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
-          "/"
+          "/",
+          "/zh/profundity/index.html"
         ],
-        "target": "/panewslab/newsflash"
+        "target": "/panewslab/profundity/:category?"
       },
       {
         "title": "专题",
@@ -14709,15 +15007,7 @@
         "target": "/techflowpost/express"
       },
       {
-        "title": "快讯",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/newsletter/index.html"
-        ],
-        "target": "/techflowpost/newsflash"
-      },
-      {
-        "title": "Unknown",
+        "title": "首页",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
           "/"
@@ -16394,11 +16684,19 @@
       }
     ]
   },
-  "wnacg.org": {
+  "wnacg.com": {
     "_name": "紳士漫畫",
     ".": [
       {
-        "title": "Unknown",
+        "title": "分类更新",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/*"
+        ],
+        "target": "/wnacg(_,url)=>`/wnacg/category/${new URL(url).pathname.match(/albums-index-cate-(\\d+)\\.html$/)[1]}`"
+      },
+      {
+        "title": "最新",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
           "/albums.html",
@@ -16407,22 +16705,12 @@
         "target": "/wnacg/"
       },
       {
-        "title": "Unknown",
+        "title": "標籤更新",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
-          "/albums.html",
-          "/"
+          "/*"
         ],
-        "target": "/wnacg/category/:cid"
-      },
-      {
-        "title": "Unknown",
-        "docs": "https://docs.rsshub.app/routes/other",
-        "source": [
-          "/albums.html",
-          "/"
-        ],
-        "target": "/wnacg/tag/:tag"
+        "target": "/wnacg(_,url)=>`/wnacg/tag/${new URL(url).pathname.match(/albums-index-tag-(.+?)\\.html$/)[1]}`"
       }
     ]
   },
@@ -16979,10 +17267,10 @@
     ]
   },
   "youtube.com": {
-    "_name": "YouTube Live",
+    "_name": "YouTube",
     "www": [
       {
-        "title": "Channel",
+        "title": "Channel with id",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/channel/:id"
@@ -17007,7 +17295,7 @@
         "target": "/youtube/subscriptions"
       },
       {
-        "title": "User",
+        "title": "Channel with username",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/user/:username"
