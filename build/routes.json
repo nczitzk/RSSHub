@@ -51413,6 +51413,59 @@
     "name": "上海交通大学",
     "url": "bjwb.seiee.sjtu.edu.cn"
   },
+  "sketis": {
+    "routes": {
+      "/isabelle-dev/blog/:blog": {
+        "path": "/isabelle-dev/blog/:blog",
+        "categories": [
+          "programming"
+        ],
+        "example": "/sketis/isabelle-dev/blog/1",
+        "parameters": {
+          "blog": "name of blog (1 for NEWS; 2 for Release)"
+        },
+        "description": "\n- Isabelle News: `https://isabelle-dev.sketis.net/phame/blog/view/1/`\n- Isabelle Release: `https://isabelle-dev.sketis.net/phame/blog/view/2/`\n",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "isabelle-dev.sketis.net/phame/",
+              "isabelle-dev.sketis.net/phame/blog/",
+              "isabelle-dev.sketis.net/phame/blog/view/:blog/",
+              "isabelle-dev.sketis.net/phame/post/",
+              "isabelle-dev.sketis.net/phame/post/view/:post_id/:post_title/"
+            ],
+            "target": "/isabelle-dev/blog/1"
+          },
+          {
+            "source": [
+              "isabelle-dev.sketis.net/phame/",
+              "isabelle-dev.sketis.net/phame/blog/",
+              "isabelle-dev.sketis.net/phame/blog/view/:blog/",
+              "isabelle-dev.sketis.net/phame/post/",
+              "isabelle-dev.sketis.net/phame/post/view/:post_id/:post_title/"
+            ],
+            "target": "/isabelle-dev/blog/2"
+          }
+        ],
+        "name": "Isabelle Development Blogs",
+        "url": "isabelle-dev.sketis.net",
+        "maintainers": [
+          "Ritsuka314"
+        ],
+        "location": "isabelle-dev/blog/index.ts"
+      }
+    },
+    "name": "Sketis | Website of Dr. Makarius Wenzel",
+    "url": "sketis.net"
+  },
   "skysports": {
     "routes": {
       "/news/:team": {
@@ -55087,7 +55140,7 @@
           "DIYgod",
           "Rongronggg9"
         ],
-        "description": "| Key                   | Description                                                           | Accepts                                              | Defaults to       |\n  | --------------------- | --------------------------------------------------------------------- | ---------------------------------------------------- | ----------------- |\n  | showLinkPreview       | Show the link preview from Telegram                                   | 0/1/true/false                                       | true              |\n  | showViaBot            | For messages sent via bot, show the bot                               | 0/1/true/false                                       | true              |\n  | showReplyTo           | For reply messages, show the target of the reply                      | 0/1/true/false                                       | true              |\n  | showFwdFrom           | For forwarded messages, show the forwarding source                    | 0/1/true/false                                       | true              |\n  | showFwdFromAuthor     | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                       | true              |\n  | showInlineButtons     | Show inline buttons                                                   | 0/1/true/false                                       | false             |\n  | showMediaTagInTitle   | Show media tags in the title                                          | 0/1/true/false                                       | true              |\n  | showMediaTagAsEmoji   | Show media tags as emoji                                              | 0/1/true/false                                       | true              |\n  | includeFwd            | Include forwarded messages                                            | 0/1/true/false                                       | true              |\n  | includeReply          | Include reply messages                                                | 0/1/true/false                                       | true              |\n  | includeServiceMsg     | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                       | true              |\n  | includeUnsupportedMsg | Include messages unsupported by t.me                                  | 0/1/true/false                                       | false             |\n  | searchQuery           | search query                                                          | keywords; replace `#` by `%23` for hashtag searching | (search disabled) |\n\n  Specify different option values than default values can meet different needs, URL\n\n  ```\n  https://rsshub.app/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0\n  ```\n\n  generates an RSS without any link previews and annoying metadata, with emoji media tags in the title, without forwarded messages (but with reply messages), and without messages you don't care about (service messages and unsupported messages), for people who prefer pure subscriptions.\n\n  :::tip\n  For backward compatibility reasons, invalid `routeParams` will be treated as `searchQuery` .\n\n  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`.\n  :::",
+        "description": "\n  | Key                    | Description                                                           | Accepts                                            | Defaults to  |\n  | ---------------------- | --------------------------------------------------------------------- | -------------------------------------------------- | ------------ |\n  | showLinkPreview        | Show the link preview from Telegram                                   | 0/1/true/false                                     | true         |\n  | showViaBot             | For messages sent via bot, show the bot                               | 0/1/true/false                                     | true         |\n  | showReplyTo            | For reply messages, show the target of the reply                      | 0/1/true/false                                     | true         |\n  | showFwdFrom            | For forwarded messages, show the forwarding source                    | 0/1/true/false                                     | true         |\n  | showFwdFromAuthor      | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                     | true         |\n  | showInlineButtons      | Show inline buttons                                                   | 0/1/true/false                                     | false        |\n  | showMediaTagInTitle    | Show media tags in the title                                          | 0/1/true/false                                     | true         |\n  | showMediaTagAsEmoji    | Show media tags as emoji                                              | 0/1/true/false                                     | true         |\n  | showHashtagAsHyperlink | Show hashtags as hyperlinks (`https://t.me/s/channel?q=%23hashtag`) | 0/1/true/false                                     | true         |\n  | includeFwd             | Include forwarded messages                                            | 0/1/true/false                                     | true         |\n  | includeReply           | Include reply messages                                                | 0/1/true/false                                     | true         |\n  | includeServiceMsg      | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                     | true         |\n  | includeUnsupportedMsg  | Include messages unsupported by t.me                                  | 0/1/true/false                                     | false        |\n  | searchQuery            | search query                                                          | keywords; replace `#hashtag` with `%23hashtag` | (no keyword) |\n\n  Specify different option values than default values can meet different needs, URL\n\n  ```\n  https://rsshub.app/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0\n  ```\n\n  generates an RSS without any link previews and annoying metadata, with emoji media tags in the title, without forwarded messages (but with reply messages), and without messages you don't care about (service messages and unsupported messages), for people who prefer pure subscriptions.\n\n  :::tip\n  For backward compatibility reasons, invalid `routeParams` will be treated as `searchQuery` .\n\n  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`.\n  :::",
         "location": "channel.ts"
       },
       "/stickerpack/:name": {
@@ -57205,6 +57258,70 @@
     },
     "name": "The Ring of Wonder",
     "url": "trow.cc"
+  },
+  "tsinghua": {
+    "routes": {
+      "/lib/zydt/:category?": {
+        "path": "/lib/zydt/:category?",
+        "name": "图书馆资源动态",
+        "url": "lib.tsinghua.edu.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/tsinghua/lib/zydt",
+        "parameters": {
+          "category": "分类，默认为空，即全部，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [清华大学图书馆已购资源动态](https://lib.tsinghua.edu.cn/zydt/yg.htm)，网址为 `https://lib.tsinghua.edu.cn/zydt/yg.htm`。截取 `https://lib.tsinghua.edu.cn/zydt` 到末尾 `.htm` 的部分 `yg` 作为参数填入，此时路由为 [`/tsinghua/lib/zydt/yg`](https://rsshub.app/tsinghua/lib/zydt/yg)。\n  :::\n\n  | 已购 | 试用 |\n  | ---- | ---- |\n  | yg   | sy   |\n  ",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "lib.tsinghua.edu.cn/zydt/:category?"
+            ]
+          },
+          {
+            "title": "图书馆资源动态",
+            "source": [
+              "lib.tsinghua.edu.cn/zydt"
+            ],
+            "target": "/lib/zydt"
+          },
+          {
+            "title": "图书馆已购资源动态",
+            "source": [
+              "lib.tsinghua.edu.cn/zydt/yg"
+            ],
+            "target": "/lib/zydt/yg"
+          },
+          {
+            "title": "图书馆试用资源动态",
+            "source": [
+              "lib.tsinghua.edu.cn/zydt/sy"
+            ],
+            "target": "/lib/zydt/sy"
+          }
+        ],
+        "location": "lib/zydt.ts"
+      }
+    },
+    "name": "清华大学",
+    "url": "tsinghua.edu.cn",
+    "categories": [
+      "university"
+    ],
+    "description": ""
   },
   "ttv": {
     "routes": {

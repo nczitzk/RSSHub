@@ -5119,6 +5119,9 @@
   "/sjtu/yzb/zkxx/:type": [
     "stdrc"
   ],
+  "/sketis/isabelle-dev/blog/:blog": [
+    "Ritsuka314"
+  ],
   "/skysports/news/:team": [
     "nczitzk"
   ],
@@ -5705,6 +5708,9 @@
   ],
   "/trow/portal": [
     "shiningdracon"
+  ],
+  "/tsinghua/lib/zydt/:category?": [
+    "nczitzk"
   ],
   "/ttv/:category?": [
     "dzx-dzx"
