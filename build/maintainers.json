@@ -4123,6 +4123,9 @@
     "Seiry",
     "Xm798"
   ],
+  "/nudt/yjszs/:type?": [
+    "Blank0120"
+  ],
   "/nuist/bulletin/:category?": [
     "gylidian"
   ],
@@ -5785,6 +5788,9 @@
   "/typora/changelog": [
     "cnzgray"
   ],
+  "/typst/universe": [
+    "HPDell"
+  ],
   "/u3c3/search/:keyword/:preview?": [
     "storytellerF"
   ],
@@ -6142,6 +6148,9 @@
   ],
   "/whu/hyxt/:category{.+}?": [],
   "/whu/news/:category{.+}?": [],
+  "/whu/rsgis/:type/:sub?": [
+    "HPDell"
+  ],
   "/whu/gs/:type?": [
     "Delreyaa"
   ],
