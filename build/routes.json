@@ -15478,7 +15478,7 @@
         "maintainers": [
           "KiraKiseki"
         ],
-        "description": "| 学生专栏 | 教师专栏 |\n  | -------- | -------- |\n  | student  | teacher  |",
+        "description": "| 学生专栏 | 教师专栏 | 选课专栏（仅选课期间开放） | 辅修专业 |\n  | -------- | -------- | -------- | -------- |\n  | student  | teacher  | class    | fxzy     |",
         "location": "jiaowu/news.ts"
       },
       "/news/xsxx": {
@@ -15581,7 +15581,7 @@
       }
     },
     "name": "东华大学",
-    "url": "gs.dhu.edu.cn"
+    "url": "www.dhu.edu.cn"
   },
   "diandong": {
     "routes": {
@@ -20784,7 +20784,7 @@
         "categories": [
           "traditional-media"
         ],
-        "example": "/ft/simplified/hotstoryby7day",
+        "example": "/ftchinese/simplified/hotstoryby7day",
         "parameters": {
           "language": "语言，简体 `simplified`，繁体 `traditional`",
           "channel": "频道，缺省为每日更新"
@@ -20802,7 +20802,7 @@
           "HenryQW",
           "xyqfer"
         ],
-        "description": ":::tip\n  -   不支持付费文章。\n  :::\n\n  通过提取文章全文，以提供比官方源更佳的阅读体验。\n\n  支持所有频道，频道名称见 [官方频道 RSS](http://www.ftchinese.com/channel/rss.html).\n\n  -   频道为单一路径，如 `http://www.ftchinese.com/rss/news` 则为 `/ft/simplified/news`.\n  -   频道包含多重路径，如 `http://www.ftchinese.com/rss/column/007000002` 则替换 `/` 为 `-` `/ft/simplified/column-007000002`.",
+        "description": ":::tip\n  -   不支持付费文章。\n  :::\n\n  通过提取文章全文，以提供比官方源更佳的阅读体验。\n\n  支持所有频道，频道名称见 [官方频道 RSS](http://www.ftchinese.com/channel/rss.html).\n\n  -   频道为单一路径，如 `http://www.ftchinese.com/rss/news` 则为 `/ftchinese/simplified/news`.\n  -   频道包含多重路径，如 `http://www.ftchinese.com/rss/column/007000002` 则替换 `/` 为 `-` `/ftchinese/simplified/column-007000002`.",
         "location": "channel.ts"
       }
     },
@@ -33049,6 +33049,47 @@
       "new-media"
     ],
     "description": ""
+  },
+  "kadokawa": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "name": "角編新聞台",
+        "url": "kadokawa.com.tw",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/kadokawa/blog",
+        "description": "",
+        "categories": [
+          "blog"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "kadokawa.com.tw/blog/posts"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "location": "blog.ts"
+      }
+    },
+    "name": "台灣角川",
+    "url": "kadokawa.com.tw",
+    "categories": [
+      "shopping"
+    ],
+    "description": "TAIWAN KADOKAWA"
   },
   "kamen-rider-official": {
     "routes": {
@@ -54190,6 +54231,31 @@
     "name": "Stratechery by Ben Thompson",
     "url": "blog.stratechery.com"
   },
+  "stream-capital": {
+    "routes": {
+      "/search": {
+        "path": "/search",
+        "name": "最新",
+        "categories": [
+          "finance"
+        ],
+        "example": "/stream-capital/search",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.stream-capital.com/search"
+            ]
+          }
+        ],
+        "location": "search.ts"
+      }
+    },
+    "name": "远川研究所",
+    "url": "www.stream-capital.com"
+  },
   "studygolang": {
     "routes": {
       "/go/:id?": {
@@ -60669,6 +60735,38 @@
     },
     "name": "Constitutional Court of Baden-Württemberg (Germany)",
     "url": "verfgh.baden-wuerttemberg.de"
+  },
+  "vice": {
+    "routes": {
+      "/topic/:topic/:language?": {
+        "path": "/topic/:topic/:language?",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/vice/topic/politics/en",
+        "parameters": {
+          "topic": "Can be found in the URL",
+          "content": "Set to true to retrieve the full article (images are blurry), anything else will pull the short text",
+          "language": "defaults to `en`, use the website to discover other codes"
+        },
+        "radar": [
+          {
+            "source": [
+              "www.vice.com/:language/topic/:topic"
+            ],
+            "target": "/topic/:topic/:language"
+          }
+        ],
+        "name": "Topic",
+        "maintainers": [
+          "K33k0"
+        ],
+        "url": "vice.com/",
+        "location": "topic.ts"
+      }
+    },
+    "name": "VICE",
+    "url": "vice.com"
   },
   "vimeo": {
     "routes": {

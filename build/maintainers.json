@@ -3310,6 +3310,9 @@
   "/junhe/legal-updates": [
     "nczitzk"
   ],
+  "/kadokawa/blog": [
+    "nczitzk"
+  ],
   "/kamen-rider-official/news/:category?": [
     "nczitzk"
   ],
@@ -5380,6 +5383,9 @@
   "/stratechery/": [
     "chazeon"
   ],
+  "/stream-capital/search": [
+    "TonyRL"
+  ],
   "/studygolang/go/:id?": [
     "nczitzk"
   ],
@@ -6033,6 +6039,9 @@
   ],
   "/verfghbw/press/:keyword?": [
     "quinn-dev"
+  ],
+  "/vice/topic/:topic/:language?": [
+    "K33k0"
   ],
   "/vimeo/category/:category/:staffpicks?": [
     "MisteryMonster"
