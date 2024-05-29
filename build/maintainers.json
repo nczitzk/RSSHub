@@ -3240,6 +3240,9 @@
   "/jjwxc/book/:id?": [
     "nczitzk"
   ],
+  "/jlu/jwc": [
+    "mayouxi"
+  ],
   "/jornada/:date?/:category?": [
     "Thealf154"
   ],
@@ -5556,6 +5559,9 @@
   ],
   "/telegram/stickerpack/:name": [
     "DIYgod"
+  ],
+  "/tencent/cloud/developer/column/:categoryId?": [
+    "lyling"
   ],
   "/tencent/news/author/:mid": [
     "LogicJake",

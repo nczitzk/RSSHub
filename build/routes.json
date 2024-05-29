@@ -32430,6 +32430,33 @@
     "name": "晋江文学城",
     "url": "jjwxc.net"
   },
+  "jlu": {
+    "routes": {
+      "/jwc": {
+        "path": "/jwc",
+        "categories": [
+          "university"
+        ],
+        "example": "/jlu/jwc",
+        "radar": [
+          {
+            "source": [
+              "jwc.jlu.edu.cn",
+              "jwc.jlu.edu.cn/index.htm"
+            ]
+          }
+        ],
+        "name": "教务通知",
+        "maintainers": [
+          "mayouxi"
+        ],
+        "url": "jwc.jlu.edu.cn",
+        "location": "jwc.ts"
+      }
+    },
+    "name": "吉林大学",
+    "url": "jlu.edu.cn"
+  },
   "jornada": {
     "routes": {
       "/:date?/:category?": {
@@ -55982,6 +56009,28 @@
   },
   "tencent": {
     "routes": {
+      "/cloud/developer/column/:categoryId?": {
+        "path": "/cloud/developer/column/:categoryId?",
+        "categories": [
+          "programming"
+        ],
+        "example": "/tencent/cloud/developer/column/1",
+        "parameters": {
+          "categoryId": "categoryId from page url"
+        },
+        "radar": [
+          {
+            "source": [
+              "cloud.tencent.com/developer/column"
+            ]
+          }
+        ],
+        "name": "腾讯云开发者社区专栏",
+        "maintainers": [
+          "lyling"
+        ],
+        "location": "cloud/developer/column.ts"
+      },
       "/news/author/:mid": {
         "path": "/news/author/:mid",
         "categories": [
@@ -56086,8 +56135,8 @@
         "location": "qq/sdk/changelog.ts"
       }
     },
-    "name": "王者荣耀",
-    "url": "mp.weixin.qq.com"
+    "name": "腾讯",
+    "url": "tencent.com"
   },
   "tesla": {
     "routes": {
@@ -60746,7 +60795,6 @@
         "example": "/vice/topic/politics/en",
         "parameters": {
           "topic": "Can be found in the URL",
-          "content": "Set to true to retrieve the full article (images are blurry), anything else will pull the short text",
           "language": "defaults to `en`, use the website to discover other codes"
         },
         "radar": [

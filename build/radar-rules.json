@@ -8774,6 +8774,20 @@
       }
     ]
   },
+  "jlu.edu.cn": {
+    "_name": "吉林大学",
+    "jwc": [
+      {
+        "title": "教务通知",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/",
+          "/index.htm"
+        ],
+        "target": "/jlu/jwc"
+      }
+    ]
+  },
   "jou.edu.cn": {
     "_name": "江苏海洋大学",
     "www": [
@@ -12927,7 +12941,7 @@
       },
       {
         "title": "Unknown",
-        "docs": "https://docs.rsshub.app/routes/new-media",
+        "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
           "/zt2020/page/feiyan.htm"
         ],
@@ -15604,6 +15618,19 @@
           "/s/:username"
         ],
         "target": "/telegram/channel/:username"
+      }
+    ]
+  },
+  "tencent.com": {
+    "_name": "腾讯",
+    "cloud": [
+      {
+        "title": "腾讯云开发者社区专栏",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/developer/column"
+        ],
+        "target": "/tencent/cloud/developer/column/:categoryId?"
       }
     ]
   },
