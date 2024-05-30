@@ -5123,6 +5123,19 @@
       }
     ]
   },
+  "famitsu.com": {
+    "_name": "ファミ通",
+    "www": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/category/:category/page/1"
+        ],
+        "target": "/famitsu/category/:category?"
+      }
+    ]
+  },
   "fanqienovel.com": {
     "_name": "番茄小说",
     ".": [
@@ -6169,7 +6182,7 @@
     ]
   },
   "ah.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "kjt": [
       {
         "title": "安徽省科学技术厅",
@@ -6310,7 +6323,7 @@
     ]
   },
   "bjedu.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "gh": [
       {
         "title": "通用",
@@ -6324,7 +6337,7 @@
     ]
   },
   "beijing.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "jw": [
       {
         "title": "通知公告",
@@ -6337,7 +6350,7 @@
     ]
   },
   "caac.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "公众留言",
@@ -6350,7 +6363,7 @@
     ]
   },
   "chinatax.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "最新文件",
@@ -6363,7 +6376,7 @@
     ]
   },
   "cq.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "rlsbj": [
       {
         "title": "重庆市人民政府 人力社保局 - 人事考试通知",
@@ -6384,7 +6397,7 @@
     ]
   },
   "cmse.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "飞行任务",
@@ -6397,7 +6410,7 @@
     ]
   },
   "customs.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "拍卖信息 / 海关法规",
@@ -6410,7 +6423,7 @@
     ]
   },
   "tqyb.com.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "广东省内城市预警信号",
@@ -6431,7 +6444,7 @@
     ]
   },
   "changsha.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "wlwz": [
       {
         "title": "长沙市人民政府",
@@ -6444,7 +6457,7 @@
     ]
   },
   "jiangsu.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "wlt": [
       {
         "title": "江苏文旅局审批公告",
@@ -6457,7 +6470,7 @@
     ]
   },
   "jinan.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "jnmhc": [
       {
         "title": "获取国家医师资格考试通知",
@@ -6470,7 +6483,7 @@
     ]
   },
   "mee.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "要闻动态",
@@ -6483,7 +6496,7 @@
     ]
   },
   "mem.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "事故及灾害查处",
@@ -6496,7 +6509,7 @@
     ]
   },
   "miit.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "文件发布",
@@ -6517,7 +6530,7 @@
     ]
   },
   "moa.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "中华人民共和国农业农村部 - 新闻",
@@ -6530,7 +6543,7 @@
     ]
   },
   "moe.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "司局通知",
@@ -6544,7 +6557,7 @@
     ]
   },
   "moj.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "立法意见征集",
@@ -6558,7 +6571,7 @@
     ]
   },
   "nea.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "发展规划司",
@@ -6571,7 +6584,7 @@
     ]
   },
   "npc.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "通用",
@@ -6584,7 +6597,7 @@
     ]
   },
   "pbc.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "沟通交流",
@@ -6613,7 +6626,7 @@
     ]
   },
   "samr.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "xgzlyhd": [
       {
         "title": "留言咨询",
@@ -6626,7 +6639,33 @@
     ]
   },
   "sh.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
+    "fgw": [
+      {
+        "title": "上海市发展和改革委员会",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/:category"
+        ],
+        "target": "/govparams=>{const category=params.category.replace(/\\/index\\.html/,\"\");return`/gov/sh/fgw${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "最新信息公开",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/fgw_zxxxgk/index.html"
+        ],
+        "target": "/gov/sh/fgw/fgw_zxxxgk"
+      },
+      {
+        "title": "要闻动态",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/fgw_fzggdt/index.html"
+        ],
+        "target": "/gov/sh/fgw/fgw_fzggdt"
+      }
+    ],
     "rsj": [
       {
         "title": "上海市职业能力考试院 考试项目",
@@ -6634,7 +6673,7 @@
         "source": [
           "/"
         ],
-        "target": "/gov/shanghai/rsj/ksxm"
+        "target": "/gov/sh/rsj/ksxm"
       }
     ],
     "wsbs.wgj": [
@@ -6644,7 +6683,7 @@
         "source": [
           "/"
         ],
-        "target": "/gov/shanghai/wgj"
+        "target": "/gov/sh/wgj"
       }
     ],
     "wsjkw": [
@@ -6654,12 +6693,12 @@
         "source": [
           "/"
         ],
-        "target": "/gov/shanghai/wsjkw/yqtb"
+        "target": "/gov/sh/wsjkw/yqtb"
       }
     ]
   },
   "sz.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "xxgk": [
       {
         "title": "深圳市考试院",
@@ -6692,7 +6731,7 @@
     ]
   },
   "mztoday.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "今日绵竹",
@@ -6705,7 +6744,7 @@
     ]
   },
   "stats.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "国家统计局 通用",
@@ -6718,7 +6757,7 @@
     ]
   },
   "suzhou.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "www": [
       {
         "title": "政府信息公开文件",
@@ -6740,7 +6779,7 @@
     ]
   },
   "taiyuan.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "rsj": [
       {
         "title": "太原市人力资源和社会保障局政府公开信息",
@@ -6753,7 +6792,7 @@
     ]
   },
   "wuhan.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "武汉要闻",
@@ -6768,7 +6807,7 @@
     ]
   },
   "zjks.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "通知",
@@ -6783,7 +6822,7 @@
     ]
   },
   "www.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     ".": [
       {
         "title": "信息稿件",
@@ -6822,7 +6861,7 @@
     ]
   },
   "zj.gov.cn": {
-    "_name": "中国人民银行",
+    "_name": "上海市人民政府",
     "search": [
       {
         "title": "浙江省人民政府-全省政府网站统一搜索",
@@ -8785,6 +8824,20 @@
           "/index.htm"
         ],
         "target": "/jlu/jwc"
+      }
+    ],
+    "ccst": [
+      {
+        "title": "吉林大学计算机科学与技术学院 - 新闻中心",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/xwzx/gsl.htm",
+          "/xwzx/xstd.htm",
+          "/xwzx/xytz.htm",
+          "/xwzx/xyxw.htm",
+          "/xwzx/zsjy.htm"
+        ],
+        "target": "/jlu/ccst/xwzx/:category"
       }
     ]
   },
@@ -17148,6 +17201,14 @@
           "/p/:id/super_index"
         ],
         "target": "/weibo/super_index/:id"
+      },
+      {
+        "title": "用户收藏动态",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/"
+        ],
+        "target": "/weibo/user_bookmarks/:uid"
       }
     ],
     "s": [
