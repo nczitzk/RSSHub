@@ -51,7 +51,7 @@ async function handler(ctx) {
 
     let items = response.data.slice(0, limit).map((item) => ({
         title: item.pn,
-        link: item.pq ?? item.pu ?? item.fp,
+        link: item.pu ?? item.pq ?? item.fp,
         description: item.pa,
         author: item.zn,
         pubDate: parseRelativeDate(item.lu.replace(/\.\d+/, '')),
