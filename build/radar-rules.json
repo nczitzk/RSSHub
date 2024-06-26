@@ -1248,7 +1248,7 @@
     "_name": "AP News",
     ".": [
       {
-        "title": "RSS",
+        "title": "News",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
           "/:rss"
@@ -10233,7 +10233,7 @@
     ]
   },
   "microsoft.com": {
-    "_name": "Microsoft Edge",
+    "_name": "Microsoft",
     "microsoftedge": [
       {
         "title": "Addons Update",
@@ -10445,6 +10445,31 @@
           "/modpack/:id"
         ],
         "target": "/modrinth/project/:id/versions"
+      }
+    ]
+  },
+  "moduzy.cc": {
+    "_name": "魔都资源网",
+    ".": [
+      {
+        "title": "最新资源",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/",
+          "/",
+          "/",
+          "/",
+          "/",
+          "/",
+          "/",
+          "/",
+          "/",
+          "/",
+          "/",
+          "/",
+          "/"
+        ],
+        "target": "/moduzy/:type/:hours?"
       }
     ]
   },
@@ -13506,7 +13531,7 @@
     ]
   },
   "reuters.com": {
-    "_name": "Reuters 路透社",
+    "_name": "Reuters",
     ".": [
       {
         "title": "Category/Topic/Author",
