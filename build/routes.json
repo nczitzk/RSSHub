@@ -4988,47 +4988,6 @@
     "name": "Asian to lick",
     "url": "asiantolick.com"
   },
-  "asmr-200": {
-    "routes": {
-      "/works/:order?/:subtitle?/:sort?": {
-        "path": "/works/:order?/:subtitle?/:sort?",
-        "categories": [
-          "multimedia"
-        ],
-        "example": "/works",
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "parameters": {
-          "order": "排序字段，默认按照资源的收录日期来排序，详见下表",
-          "sort": "排序方式，可选 `asc` 和 `desc` ，默认倒序",
-          "subtitle": "筛选带字幕音频，可选 `0` 和 `1` ，默认关闭"
-        },
-        "radar": [
-          {
-            "source": [
-              "asmr-200.com"
-            ],
-            "target": "asmr-200/works"
-          }
-        ],
-        "name": "最新资源",
-        "maintainers": [
-          "hualiong"
-        ],
-        "url": "asmr-200.com",
-        "description": "| 发售日期 | 收录日期 | 销量 | 价格 | 评价 | 随机 | RJ号 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| release | create_date | dl_count | price | rate_average_2dp | random | id |",
-        "location": "index.ts"
-      }
-    },
-    "name": "ASMR Online",
-    "url": "asmr-200.com"
-  },
   "asus": {
     "routes": {
       "/bios/:model": {
@@ -6598,7 +6557,7 @@
         "example": "/bilibili/user/dynamic/2267573",
         "parameters": {
           "uid": "用户 id, 可在 UP 主主页中找到",
-          "routeParams": "\n| 键           | 含义                              | 接受的值       | 默认值 |\n| ------------ | --------------------------------- | -------------- | ------ |\n| showEmoji    | 显示或隐藏表情图片                | 0/1/true/false | false  |\n| disableEmbed | 关闭内嵌视频                      | 0/1/true/false | false  |\n| useAvid      | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n| directLink   | 使用内容直链                      | 0/1/true/false | false  |\n\n用例：`/bilibili/user/dynamic/2267573/showEmoji=1&disableEmbed=1&useAvid=1`"
+          "routeParams": "额外参数；请参阅以下说明和表格"
         },
         "features": {
           "requireConfig": [
@@ -6629,6 +6588,7 @@
           "CaoMeiYouRen",
           "JimenezLi"
         ],
+        "description": "| 键           | 含义                              | 接受的值       | 默认值 |\n  | ------------ | --------------------------------- | -------------- | ------ |\n  | showEmoji    | 显示或隐藏表情图片                | 0/1/true/false | false  |\n  | disableEmbed | 关闭内嵌视频                      | 0/1/true/false | false  |\n  | useAvid      | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n  | directLink   | 使用内容直链                      | 0/1/true/false | false  |\n\n  用例：`/bilibili/user/dynamic/2267573/showEmoji=1&disableEmbed=1&useAvid=1`\n\n  :::tip 动态的专栏显示全文\n  动态的专栏显示全文请使用通用参数里的 `mode=fulltext`\n\n  举例: bilibili 专栏全文输出 /bilibili/user/dynamic/2267573/?mode=fulltext\n  :::",
         "location": "dynamic.ts"
       },
       "/fav/:uid/:fid/:disableEmbed?": {
@@ -7293,7 +7253,6 @@
           },
           "day": {
             "description": "时间跨度",
-            "default": "3",
             "options": [
               {
                 "value": "1",
@@ -7536,6 +7495,7 @@
         "maintainers": [
           "DIYgod"
         ],
+        "description": ":::tip 动态的专栏显示全文\n  可以使用 [UP 主动态](#bilibili-up-zhu-dong-tai)路由作为代替绕过反爬限制\n  :::",
         "location": "video.ts"
       },
       "/vsearch/:kw/:order?/:disableEmbed?/:tid?": {
@@ -7626,7 +7586,7 @@
         "location": "weekly-recommend.ts"
       }
     },
-    "name": "哔哩哔哩 bilibili",
+    "name": "Bilibili",
     "url": "www.bilibili.com"
   },
   "binance": {
@@ -8571,40 +8531,6 @@
     },
     "name": "Bloomberg",
     "url": "www.bloomberg.com"
-  },
-  "bluearchive": {
-    "routes": {
-      "/news/:server/:type?": {
-        "path": "/news/:server/:type?",
-        "name": "News",
-        "categories": [
-          "game"
-        ],
-        "maintainers": [
-          "equt"
-        ],
-        "example": "/bluearchive/news/jp",
-        "parameters": {
-          "server": "game server (ISO 3166 two-letter country code, case-insensitive), only `JP` is supported for now",
-          "type": "news type, checkout the table below for details"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "description": "| 全て | イベント | お知らせ | メンテナンス |\n| :--: | :--: | :--: | :--: |\n| 0 | 1 | 2 | 3 |",
-        "location": "news.ts"
-      }
-    },
-    "name": "Blue Archive",
-    "url": "bluearchive.jp",
-    "categories": [
-      "game"
-    ]
   },
   "bluestacks": {
     "routes": {
@@ -16876,7 +16802,7 @@
         ],
         "example": "/dockerhub/build/wangqiru/ttrss",
         "parameters": {
-          "owner": "Image owner, the owner of the official image fills in the library, for example: /dockerhub/build/library/mysql",
+          "owner": "Image owner",
           "image": "Image name",
           "tag": {
             "description": "Image tag",
@@ -16895,6 +16821,7 @@
         "maintainers": [
           "HenryQW"
         ],
+        "description": ":::warning\n  The owner of the official image fills in the library, for example: [https://rsshub.app/dockerhub/build/library/mysql](https://rsshub.app/dockerhub/build/library/mysql)\n  :::",
         "location": "build.ts"
       },
       "/tag/:owner/:image/:limits?": {
@@ -17620,11 +17547,10 @@
           "groupid": "豆瓣小组的 id",
           "type": {
             "description": "类型",
-            "default": "latest",
             "options": [
               {
                 "label": "最新",
-                "value": "latest"
+                "value": ""
               },
               {
                 "label": "最热",
@@ -20224,36 +20150,6 @@
     },
     "name": "U.S. Food and Drug Administration",
     "url": "fda.gov"
-  },
-  "fediverse": {
-    "routes": {
-      "/timeline/:account": {
-        "path": "/timeline/:account",
-        "categories": [
-          "social-media",
-          "popular"
-        ],
-        "example": "/fediverse/timeline/Mastodon@mastodon.social",
-        "parameters": {
-          "account": "username@domain"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "Timeline",
-        "maintainers": [
-          "DIYgod"
-        ],
-        "location": "timeline.ts"
-      }
-    },
-    "name": "Fediverse",
-    "url": "fediverse.observer"
   },
   "feng": {
     "routes": {
@@ -30443,37 +30339,7 @@
           "swwind"
         ],
         "description": "平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |",
-        "location": "arknights/announce.ts"
-      },
-      "/arknights/arktca": {
-        "path": "/arknights/arktca",
-        "categories": [
-          "game"
-        ],
-        "example": "/hypergryph/arknights/arktca",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "期刊",
-        "url": "aneot.arktca.com",
-        "maintainers": [
-          "Bendancom"
-        ],
-        "radar": [
-          {
-            "source": [
-              "aneot.arktca.com"
-            ]
-          }
-        ],
-        "description": "期刊《回归线》 | 泰拉创作者联合会",
-        "location": "arknights/arktca.ts"
+        "location": "announce.ts"
       },
       "/arknights/japan": {
         "path": "/arknights/japan",
@@ -30494,7 +30360,7 @@
           "ofyark"
         ],
         "url": "ak.arknights.jp/news",
-        "location": "arknights/japan.ts"
+        "location": "japan.ts"
       },
       "/arknights/news/:group?": {
         "path": "/arknights/news/:group?",
@@ -30518,7 +30384,7 @@
         ],
         "url": "ak-conf.hypergryph.com/news",
         "description": "\n  | 全部 | 最新   | 公告         | 活动     | 新闻 |\n  | ---- | ------ | ------------ | -------- | ---- |\n  | ALL  | LATEST | ANNOUNCEMENT | ACTIVITY | NEWS |",
-        "location": "arknights/news.ts"
+        "location": "news.ts"
       }
     },
     "name": "鹰角网络",
@@ -31600,14 +31466,6 @@
               "name": "IG_PROXY",
               "optional": true,
               "description": ""
-            },
-            {
-              "name": "IG_USERNAME",
-              "description": "Instagram username"
-            },
-            {
-              "name": "IG_PASSWORD",
-              "description": "Instagram password, due to [Instagram Private API](https://github.com/dilame/instagram-private-api) restrictions, you have to setup your credentials on the server. 2FA is not supported."
             }
           ],
           "requirePuppeteer": false,
@@ -31621,6 +31479,7 @@
           "oppilate",
           "DIYgod"
         ],
+        "description": ":::warning\nDue to [Instagram Private API](https://github.com/dilame/instagram-private-api) restrictions, you have to setup your credentials on the server. 2FA is not supported. See [deployment guide](https://docs.rsshub.app/deploy/) for more.\n:::",
         "location": "private-api/index.ts"
       },
       "/2/:category/:key": {
@@ -31691,105 +31550,6 @@
     },
     "name": "Instructables",
     "url": "instructables.com"
-  },
-  "investor": {
-    "routes": {
-      "/:category{.+}?": {
-        "path": "/:category{.+}?",
-        "name": "分类",
-        "url": "investor.org.cn",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/investor/information_release/news_release_from_authorities/zjhfb",
-        "parameters": {
-          "category": "分类，默认为证监会发布 `information_release/news_release_from_authorities/zjhfb`，可在对应分类页 URL 中找到"
-        },
-        "description": ":::tip\n  若订阅 [证监会发布](https://www.investor.org.cn/information_release/news_release_from_authorities/zjhfb/)，网址为 `https://www.investor.org.cn/information_release/news_release_from_authorities/zjhfb/`。截取 `https://www.investor.org.cn/` 到末尾 `/` 的部分 `information_release/news_release_from_authorities/zjhfb` 作为参数填入，此时路由为 [`/investor/information_release/news_release_from_authorities/zjhfb`](https://rsshub.app/investor/information_release/news_release_from_authorities/zjhfb)。\n  :::\n\n  #### [权威发布](https://www.investor.org.cn/information_release/news_release_from_authorities/)\n\n  | [证监会发布](https://www.investor.org.cn/information_release/news_release_from_authorities/zjhfb/)                                                                  | [证券交易所发布](https://www.investor.org.cn/information_release/news_release_from_authorities/hsjysfb/)                                                                | [期货交易所发布](https://www.investor.org.cn/information_release/news_release_from_authorities/qhjysfb/)                                                                | [行业协会发布](https://www.investor.org.cn/information_release/news_release_from_authorities/hyxhfb/)                                                                 | [其他](https://www.investor.org.cn/information_release/news_release_from_authorities/otner/)                                                                        |\n  | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n  | [/investor/information_release/news_release_from_authorities/zjhfb/](https://rsshub.app/investor/investor/information_release/news_release_from_authorities/zjhfb/) | [/investor/information_release/news_release_from_authorities/hsjysfb/](https://rsshub.app/investor/investor/information_release/news_release_from_authorities/hsjysfb/) | [/investor/information_release/news_release_from_authorities/qhjysfb/](https://rsshub.app/investor/investor/information_release/news_release_from_authorities/qhjysfb/) | [/investor/information_release/news_release_from_authorities/hyxhfb/](https://rsshub.app/investor/investor/information_release/news_release_from_authorities/hyxhfb/) | [/investor/information_release/news_release_from_authorities/otner/](https://rsshub.app/investor/investor/information_release/news_release_from_authorities/otner/) |\n\n  #### [市场资讯](https://www.investor.org.cn/information_release/market_news/)\n\n  | [市场资讯](https://www.investor.org.cn/information_release/market_news/)                                   |\n  | ---------------------------------------------------------------------------------------------------------- |\n  | [/investor/information_release/market_news/](https://rsshub.app/investor/information_release/market_news/) |\n\n  #### [政策解读](https://www.investor.org.cn/information_release/policy_interpretation/)\n\n  | [政策解读](https://www.investor.org.cn/information_release/policy_interpretation/)                                  |\n  | ------------------------------------------------------------------------------------------------------------------- |\n  | [/investorinformation_release/policy_interpretation/](https://rsshub.appinformation_release/policy_interpretation/) |\n\n  #### [国际交流](https://www.investor.org.cn/information_release/international_communication/)\n\n  | [国际交流](https://www.investor.org.cn/information_release/international_communication/)                                          |\n  | --------------------------------------------------------------------------------------------------------------------------------- |\n  | [/investor/information_release/international_communication/](https://rsshub.app/information_release/international_communication/) |\n  ",
-        "categories": [
-          "finance"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "investor.org.cn/:category"
-            ]
-          },
-          {
-            "title": "权威发布 - 证监会发布",
-            "source": [
-              "www.investor.org.cn/information_release/news_release_from_authorities/zjhfb/"
-            ],
-            "target": "/information_release/news_release_from_authorities/zjhfb/"
-          },
-          {
-            "title": "权威发布 - 证券交易所发布",
-            "source": [
-              "www.investor.org.cn/information_release/news_release_from_authorities/hsjysfb/"
-            ],
-            "target": "/information_release/news_release_from_authorities/hsjysfb/"
-          },
-          {
-            "title": "权威发布 - 期货交易所发布",
-            "source": [
-              "www.investor.org.cn/information_release/news_release_from_authorities/qhjysfb/"
-            ],
-            "target": "/information_release/news_release_from_authorities/qhjysfb/"
-          },
-          {
-            "title": "权威发布 - 行业协会发布",
-            "source": [
-              "www.investor.org.cn/information_release/news_release_from_authorities/hyxhfb/"
-            ],
-            "target": "/information_release/news_release_from_authorities/hyxhfb/"
-          },
-          {
-            "title": "权威发布 - 其他",
-            "source": [
-              "www.investor.org.cn/information_release/news_release_from_authorities/otner/"
-            ],
-            "target": "/information_release/news_release_from_authorities/otner/"
-          },
-          {
-            "title": "市场资讯",
-            "source": [
-              "www.investor.org.cn/information_release/market_news/"
-            ],
-            "target": "/information_release/market_news/"
-          },
-          {
-            "title": "政策解读",
-            "source": [
-              "www.investor.org.cn/information_release/policy_interpretation/"
-            ],
-            "target": "/information_release/policy_interpretation/"
-          },
-          {
-            "title": "国际交流",
-            "source": [
-              "www.investor.org.cn/information_release/international_communication/"
-            ],
-            "target": "/information_release/international_communication/"
-          }
-        ],
-        "location": "index.ts"
-      }
-    },
-    "name": "中国投资者网",
-    "url": "investor.org.cn",
-    "categories": [
-      "finance"
-    ],
-    "description": ""
   },
   "ippa": {
     "routes": {
@@ -37693,41 +37453,6 @@
     },
     "name": "梅斯医学 MedSci",
     "url": "medsci.cn"
-  },
-  "meituan": {
-    "routes": {
-      "/tech": {
-        "path": "/tech",
-        "categories": [
-          "programming"
-        ],
-        "example": "/meituan/tech",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "tech.meituan.com"
-            ]
-          }
-        ],
-        "name": "技术团队博客",
-        "url": "tech.meituan.com",
-        "maintainers": [
-          "ktKongTong"
-        ],
-        "location": "tech.ts"
-      }
-    },
-    "name": "美团",
-    "url": "meituan.com"
   },
   "metacritic": {
     "routes": {
@@ -44310,25 +44035,6 @@
   },
   "ollama": {
     "routes": {
-      "/blog": {
-        "path": "/blog",
-        "categories": [
-          "programming"
-        ],
-        "example": "/ollama/blog",
-        "radar": [
-          {
-            "source": [
-              "ollama.com/blog"
-            ]
-          }
-        ],
-        "name": "Blog",
-        "maintainers": [
-          "gavrilov"
-        ],
-        "location": "blog.ts"
-      },
       "/library": {
         "path": "/library",
         "categories": [
@@ -44344,8 +44050,7 @@
         ],
         "name": "Models",
         "maintainers": [
-          "Nick22nd",
-          "gavrilov"
+          "Nick22nd"
         ],
         "location": "models.ts"
       }
@@ -46562,67 +46267,7 @@
         ],
         "example": "/pixiv/ranking/week",
         "parameters": {
-          "mode": {
-            "description": "rank type",
-            "options": [
-              {
-                "value": "day",
-                "label": "daily rank"
-              },
-              {
-                "value": "week",
-                "label": "weekly rank"
-              },
-              {
-                "value": "month",
-                "label": "monthly rank"
-              },
-              {
-                "value": "day_male",
-                "label": "male rank"
-              },
-              {
-                "value": "day_felame",
-                "label": "female rank"
-              },
-              {
-                "value": "day_ai",
-                "label": "AI-generated work Rankings"
-              },
-              {
-                "value": "week_original",
-                "label": "original rank"
-              },
-              {
-                "value": "week_rookie",
-                "label": "rookie user rank"
-              },
-              {
-                "value": "day_r18",
-                "label": "R-18 daily rank"
-              },
-              {
-                "value": "day_r18_ai",
-                "label": "R-18 AI-generated work"
-              },
-              {
-                "value": "day_male_r18",
-                "label": "R-18 male rank"
-              },
-              {
-                "value": "day_female_r18",
-                "label": "R-18 female rank"
-              },
-              {
-                "value": "week_r18",
-                "label": "R-18 weekly rank"
-              },
-              {
-                "value": "week_r18g",
-                "label": "R-18G rank"
-              }
-            ]
-          },
+          "mode": "rank type",
           "date": "format: `2018-4-25`"
         },
         "features": {
@@ -46637,6 +46282,7 @@
         "maintainers": [
           "EYHN"
         ],
+        "description": "| daily rank | weekly rank | monthly rank | male rank | female rank | AI-generated work Rankings | original rank  | rookie user rank |\n  | ---------- | ----------- | ------------ | --------- | ----------- | -------------------------- | -------------- | ---------------- |\n  | day        | week        | month        | day_male | day_female | day_ai                    | week_original | week_rookie     |\n\n  | R-18 daily rank | R-18 AI-generated work | R-18 male rank | R-18 female rank | R-18 weekly rank | R-18G rank |\n  | --------------- | ---------------------- | -------------- | ---------------- | ---------------- | ---------- |\n  | day_r18        | day_r18_ai           | day_male_r18 | day_female_r18 | week_r18        | week_r18g |",
         "location": "ranking.ts"
       },
       "/search/:keyword/:order?/:mode?": {
@@ -49668,35 +49314,6 @@
     },
     "name": "Rawkuma",
     "url": "rawkuma.com"
-  },
-  "raycast": {
-    "routes": {
-      "/changelog": {
-        "path": "/changelog",
-        "name": "Changelog",
-        "categories": [
-          "program-update"
-        ],
-        "example": "/raycast/changelog",
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "maintainers": [
-          "equt"
-        ],
-        "location": "changelog.ts"
-      }
-    },
-    "name": "Raycast",
-    "url": "raycast.com",
-    "categories": [
-      "program-update"
-    ]
   },
   "reactiflux": {
     "routes": {
@@ -57935,7 +57552,7 @@
         "example": "/telegram/channel/awesomeDIYgod/searchQuery=twitter",
         "parameters": {
           "username": "channel username",
-          "routeParams": "extra parameters, see the table below\n| Key                    | Description                                                           | Accepts                                            | Defaults to  |\n| ---------------------- | --------------------------------------------------------------------- | -------------------------------------------------- | ------------ |\n| showLinkPreview        | Show the link preview from Telegram                                   | 0/1/true/false                                     | true         |\n| showViaBot             | For messages sent via bot, show the bot                               | 0/1/true/false                                     | true         |\n| showReplyTo            | For reply messages, show the target of the reply                      | 0/1/true/false                                     | true         |\n| showFwdFrom            | For forwarded messages, show the forwarding source                    | 0/1/true/false                                     | true         |\n| showFwdFromAuthor      | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                     | true         |\n| showInlineButtons      | Show inline buttons                                                   | 0/1/true/false                                     | false        |\n| showMediaTagInTitle    | Show media tags in the title                                          | 0/1/true/false                                     | true         |\n| showMediaTagAsEmoji    | Show media tags as emoji                                              | 0/1/true/false                                     | true         |\n| showHashtagAsHyperlink | Show hashtags as hyperlinks (`https://t.me/s/channel?q=%23hashtag`) | 0/1/true/false                                     | true         |\n| includeFwd             | Include forwarded messages                                            | 0/1/true/false                                     | true         |\n| includeReply           | Include reply messages                                                | 0/1/true/false                                     | true         |\n| includeServiceMsg      | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                     | true         |\n| includeUnsupportedMsg  | Include messages unsupported by t.me                                  | 0/1/true/false                                     | false        |\n| searchQuery            | search query                                                          | keywords; replace `#hashtag` with `%23hashtag` | (no keyword) |\n\nSpecify different option values than default values can meet different needs, URL\n\n```\nhttps://rsshub.app/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0\n```\n\ngenerates an RSS without any link previews and annoying metadata, with emoji media tags in the title, without forwarded messages (but with reply messages), and without messages you don't care about (service messages and unsupported messages), for people who prefer pure subscriptions.\n\nFor backward compatibility reasons, invalid `routeParams` will be treated as `searchQuery` .\n"
+          "routeParams": "extra parameters, see the table below"
         },
         "features": {
           "requireConfig": false,
@@ -57958,7 +57575,7 @@
           "DIYgod",
           "Rongronggg9"
         ],
-        "description": "\n  :::tip\n  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`.\n  :::",
+        "description": "\n  | Key                    | Description                                                           | Accepts                                            | Defaults to  |\n  | ---------------------- | --------------------------------------------------------------------- | -------------------------------------------------- | ------------ |\n  | showLinkPreview        | Show the link preview from Telegram                                   | 0/1/true/false                                     | true         |\n  | showViaBot             | For messages sent via bot, show the bot                               | 0/1/true/false                                     | true         |\n  | showReplyTo            | For reply messages, show the target of the reply                      | 0/1/true/false                                     | true         |\n  | showFwdFrom            | For forwarded messages, show the forwarding source                    | 0/1/true/false                                     | true         |\n  | showFwdFromAuthor      | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                     | true         |\n  | showInlineButtons      | Show inline buttons                                                   | 0/1/true/false                                     | false        |\n  | showMediaTagInTitle    | Show media tags in the title                                          | 0/1/true/false                                     | true         |\n  | showMediaTagAsEmoji    | Show media tags as emoji                                              | 0/1/true/false                                     | true         |\n  | showHashtagAsHyperlink | Show hashtags as hyperlinks (`https://t.me/s/channel?q=%23hashtag`) | 0/1/true/false                                     | true         |\n  | includeFwd             | Include forwarded messages                                            | 0/1/true/false                                     | true         |\n  | includeReply           | Include reply messages                                                | 0/1/true/false                                     | true         |\n  | includeServiceMsg      | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                     | true         |\n  | includeUnsupportedMsg  | Include messages unsupported by t.me                                  | 0/1/true/false                                     | false        |\n  | searchQuery            | search query                                                          | keywords; replace `#hashtag` with `%23hashtag` | (no keyword) |\n\n  Specify different option values than default values can meet different needs, URL\n\n  ```\n  https://rsshub.app/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0\n  ```\n\n  generates an RSS without any link previews and annoying metadata, with emoji media tags in the title, without forwarded messages (but with reply messages), and without messages you don't care about (service messages and unsupported messages), for people who prefer pure subscriptions.\n\n  :::tip\n  For backward compatibility reasons, invalid `routeParams` will be treated as `searchQuery` .\n\n  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`.\n  :::",
         "location": "channel.ts"
       },
       "/stickerpack/:name": {
@@ -62404,12 +62021,12 @@
   },
   "utgd": {
     "routes": {
-      "/category/:category?": {
-        "path": "/category/:category?",
+      "/:category?": {
+        "path": "/:category?",
         "categories": [
           "new-media"
         ],
-        "example": "/utgd/category/method",
+        "example": "/utgd/method",
         "parameters": {
           "category": "分类，可在对应分类页的 URL 中找到，默认为方法"
         },
@@ -62427,7 +62044,7 @@
               "utgd.net/category/s/:category",
               "utgd.net/"
             ],
-            "target": "/category/:category"
+            "target": "/:category"
           }
         ],
         "name": "分类",
@@ -63692,7 +63309,6 @@
           "requireConfig": [
             {
               "name": "WEIBO_COOKIES",
-              "optional": true,
               "description": ""
             }
           ],
@@ -63733,7 +63349,6 @@
           "requireConfig": [
             {
               "name": "WEIBO_COOKIES",
-              "optional": true,
               "description": ""
             }
           ],
@@ -63863,7 +63478,6 @@
           "requireConfig": [
             {
               "name": "WEIBO_COOKIES",
-              "optional": true,
               "description": ""
             }
           ],
@@ -63901,13 +63515,7 @@
           "routeParams": "额外参数；请参阅上面的说明和表格；特别地，当 `routeParams=1` 时开启微博视频显示"
         },
         "features": {
-          "requireConfig": [
-            {
-              "name": "WEIBO_COOKIES",
-              "optional": true,
-              "description": ""
-            }
-          ],
+          "requireConfig": false,
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -63930,7 +63538,7 @@
           "iplusx",
           "Rongronggg9"
         ],
-        "description": ":::warning\n  部分博主仅登录可见，未提供 Cookie 的情况下不支持订阅，可以通过打开 `https://m.weibo.cn/u/:uid` 验证\n  :::",
+        "description": ":::warning\n  部分博主仅登录可见，未提供 Cookie 的情况下不支持订阅，可以通过打开 `https://m.weibo.cn/u/:uid` 验证。如需要订阅该部分博主，可配置 Cookie 后订阅。\n\n  未提供 Cookie 的情况下偶尔会触发反爬限制，提供 Cookie 可缓解该情况。\n\n  微博用户 Cookie 的配置可参照部署文档\n  :::",
         "location": "user.ts"
       },
       "/oasis/user/:userid": {
