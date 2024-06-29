@@ -1421,6 +1421,19 @@
       }
     ]
   },
+  "asmr-200.com": {
+    "_name": "ASMR Online",
+    ".": [
+      {
+        "title": "最新资源",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/"
+        ],
+        "target": "/asmr-200asmr-200/works"
+      }
+    ]
+  },
   "asus.com.cn": {
     "_name": "ASUS",
     ".": [
@@ -1824,7 +1837,7 @@
     ]
   },
   "bilibili.com": {
-    "_name": "Bilibili",
+    "_name": "哔哩哔哩 bilibili",
     "space": [
       {
         "title": "UP 主专栏",
@@ -8338,6 +8351,19 @@
       }
     ]
   },
+  "arktca.com": {
+    "_name": "鹰角网络",
+    "aneot": [
+      {
+        "title": "期刊",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/"
+        ],
+        "target": "/hypergryph/arknights/arktca"
+      }
+    ]
+  },
   "arknights.jp": {
     "_name": "鹰角网络",
     "ak": [
@@ -8701,6 +8727,85 @@
           "/projects"
         ],
         "target": "/instructables/projects"
+      }
+    ]
+  },
+  "investor.org.cn": {
+    "_name": "中国投资者网",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/:category"
+        ],
+        "target": "/investorparams=>{const category=params.category;return`/investor${category?`/${category}`:\"\"}`}"
+      }
+    ],
+    "www": [
+      {
+        "title": "权威发布 - 证监会发布",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/information_release/news_release_from_authorities/zjhfb/"
+        ],
+        "target": "/investor/information_release/news_release_from_authorities/zjhfb/"
+      },
+      {
+        "title": "权威发布 - 证券交易所发布",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/information_release/news_release_from_authorities/hsjysfb/"
+        ],
+        "target": "/investor/information_release/news_release_from_authorities/hsjysfb/"
+      },
+      {
+        "title": "权威发布 - 期货交易所发布",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/information_release/news_release_from_authorities/qhjysfb/"
+        ],
+        "target": "/investor/information_release/news_release_from_authorities/qhjysfb/"
+      },
+      {
+        "title": "权威发布 - 行业协会发布",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/information_release/news_release_from_authorities/hyxhfb/"
+        ],
+        "target": "/investor/information_release/news_release_from_authorities/hyxhfb/"
+      },
+      {
+        "title": "权威发布 - 其他",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/information_release/news_release_from_authorities/otner/"
+        ],
+        "target": "/investor/information_release/news_release_from_authorities/otner/"
+      },
+      {
+        "title": "市场资讯",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/information_release/market_news/"
+        ],
+        "target": "/investor/information_release/market_news/"
+      },
+      {
+        "title": "政策解读",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/information_release/policy_interpretation/"
+        ],
+        "target": "/investor/information_release/policy_interpretation/"
+      },
+      {
+        "title": "国际交流",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/information_release/international_communication/"
+        ],
+        "target": "/investor/information_release/international_communication/"
       }
     ]
   },
@@ -10216,6 +10321,19 @@
           "/"
         ],
         "target": "/medieval-china/"
+      }
+    ]
+  },
+  "meituan.com": {
+    "_name": "美团",
+    "tech": [
+      {
+        "title": "技术团队博客",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/meituan/tech"
       }
     ]
   },
@@ -12115,6 +12233,14 @@
   "ollama.com": {
     "_name": "Ollama",
     ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog"
+        ],
+        "target": "/ollama/blog"
+      },
       {
         "title": "Models",
         "docs": "https://docs.rsshub.app/routes/programming",
@@ -17248,7 +17374,7 @@
           "/category/s/:category",
           "/"
         ],
-        "target": "/utgd/:category"
+        "target": "/utgd/category/:category"
       },
       {
         "title": "时间线",
