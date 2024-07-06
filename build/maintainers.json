@@ -893,6 +893,9 @@
   "/btzj/:category?": [
     "nczitzk"
   ],
+  "/buaa/jiaowu/:cddm?": [
+    "OverflowCat"
+  ],
   "/buaa/sme/:path{.+}?": [
     "MeanZhang"
   ],
@@ -3812,6 +3815,9 @@
     "rde9",
     "nczitzk"
   ],
+  "/mirrormedia/": [
+    "dzx-dzx"
+  ],
   "/missav/new": [
     "TonyRL"
   ],
@@ -4027,6 +4033,9 @@
   "/nextapple/realtime/:category?": [
     "miles170"
   ],
+  "/nextjs/blog": [
+    "equt"
+  ],
   "/nga/forum/:fid/:recommend?": [
     "xyqfer"
   ],
@@ -4217,6 +4226,9 @@
   ],
   "/notion/database/:databaseId": [
     "curly210102"
+  ],
+  "/notion/release": [
+    "equt"
   ],
   "/now/news/:category?/:id?": [
     "nczitzk"
@@ -4911,6 +4923,9 @@
     "nczitzk"
   ],
   "/raycast/changelog": [
+    "equt"
+  ],
+  "/react/blog": [
     "equt"
   ],
   "/reactiflux/transcripts": [
