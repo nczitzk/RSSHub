@@ -2162,6 +2162,29 @@
       }
     ]
   },
+  "bjnews.com.cn": {
+    "_name": "新京报",
+    "www": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:cat"
+        ],
+        "target": "/bjnews/cat/:cat"
+      }
+    ],
+    "m": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/column/:column.htm"
+        ],
+        "target": "/bjnews/column/:column"
+      }
+    ]
+  },
   "bjp.org.cn": {
     "_name": "北京天文馆",
     ".": [
@@ -3147,6 +3170,19 @@
       }
     ]
   },
+  "cffex.com.cn": {
+    "_name": "中国金融期货交易所",
+    ".": [
+      {
+        "title": "交易所公告",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/"
+        ],
+        "target": "/cffex/announcement"
+      }
+    ]
+  },
   "cfr.org": {
     "_name": "Council on Foreign Relations",
     "www": [
@@ -3299,6 +3335,19 @@
           "/"
         ],
         "target": "/chinaventure/news/:id?"
+      }
+    ]
+  },
+  "chlinlearn.top": {
+    "_name": "chlinlearn的技术博客",
+    "daily-blog": [
+      {
+        "title": "值得一读技术博客",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blogs/*"
+        ],
+        "target": "/chlinlearn/chlinlearn/daily-blog"
       }
     ]
   },
@@ -5445,6 +5494,83 @@
       }
     ]
   },
+  "fashionnetwork.cn": {
+    "_name": "FashionNetwork",
+    ".": [
+      {
+        "title": "FashionNetwork 中国",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/lists/:id"
+        ],
+        "target": "/fashionnetworkparams=>{const id=params.id;return`/fashionnetwork/cn/lists${id?`/${id}`:\"\"}`}"
+      },
+      {
+        "title": "独家",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/lists/13"
+        ],
+        "target": "/fashionnetwork/cn/lists/13"
+      },
+      {
+        "title": "商业",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/lists/1"
+        ],
+        "target": "/fashionnetwork/cn/lists/1"
+      },
+      {
+        "title": "人物",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/lists/8"
+        ],
+        "target": "/fashionnetwork/cn/lists/8"
+      },
+      {
+        "title": "设计",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/lists/3"
+        ],
+        "target": "/fashionnetwork/cn/lists/3"
+      },
+      {
+        "title": "产业",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/lists/5"
+        ],
+        "target": "/fashionnetwork/cn/lists/5"
+      },
+      {
+        "title": "创新研究",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/lists/6"
+        ],
+        "target": "/fashionnetwork/cn/lists/6"
+      },
+      {
+        "title": "人事变动",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/lists/12"
+        ],
+        "target": "/fashionnetwork/cn/lists/12"
+      },
+      {
+        "title": "新闻资讯",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/lists/11"
+        ],
+        "target": "/fashionnetwork/cn/lists/11"
+      }
+    ]
+  },
   "fastbull.cn": {
     "_name": "法布财经",
     ".": [
@@ -6161,6 +6287,14 @@
   "github.com": {
     "_name": "GitHub",
     ".": [
+      {
+        "title": "User Activities",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/:user"
+        ],
+        "target": "/github/activity/:user"
+      },
       {
         "title": "Repo Branches",
         "docs": "https://docs.rsshub.app/routes/programming",
@@ -8510,16 +8644,6 @@
         ],
         "target": "/ielts/"
       }
-    ],
-    "jlpt": [
-      {
-        "title": "教育部考试中心日本语能力测试重要通知",
-        "docs": "https://docs.rsshub.app/routes/study",
-        "source": [
-          "/"
-        ],
-        "target": "/neea/jlpt"
-      }
     ]
   },
   "iiilab.com": {
@@ -8730,6 +8854,27 @@
       }
     ]
   },
+  "inspirehep.net": {
+    "_name": "INSPIRE",
+    ".": [
+      {
+        "title": "Author Search",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/authors/:id"
+        ],
+        "target": "/inspirehep/authors/:id"
+      },
+      {
+        "title": "Literature Search",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/literature"
+        ],
+        "target": "/inspirehep(_params,url)=>`/inspirehep/literature/${new URL(url).searchParams.get(\"q\")}`"
+      }
+    ]
+  },
   "instructables.com": {
     "_name": "Instructables",
     ".": [
@@ -8819,6 +8964,19 @@
           "/information_release/international_communication/"
         ],
         "target": "/investor/information_release/international_communication/"
+      }
+    ]
+  },
+  "iplaysoft.com": {
+    "_name": "异次元软件世界",
+    "www": [
+      {
+        "title": "全部文章",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/"
+        ],
+        "target": "/iplaysoft/"
       }
     ]
   },
@@ -8959,6 +9117,19 @@
           "/home/:uid"
         ],
         "target": "/ixigua/user/video/:uid"
+      }
+    ]
+  },
+  "j-test.com": {
+    "_name": "实用日本语鉴定考试（J.TEST）",
+    "www": [
+      {
+        "title": "公告",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/"
+        ],
+        "target": "/j-test/news"
       }
     ]
   },
@@ -10456,6 +10627,24 @@
     "_name": "鏡週刊 Mirror Media",
     ".": [
       {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/category/:category",
+          "/section/:section"
+        ],
+        "target": "/mirrormedia/category/:category"
+      },
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/category/:category",
+          "/section/:section"
+        ],
+        "target": "/mirrormedia/section/:section"
+      },
+      {
         "title": "首页",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
@@ -10589,31 +10778,6 @@
           "/modpack/:id"
         ],
         "target": "/modrinth/project/:id/versions"
-      }
-    ]
-  },
-  "moduzy.cc": {
-    "_name": "魔都资源网",
-    ".": [
-      {
-        "title": "最新资源",
-        "docs": "https://docs.rsshub.app/routes/multimedia",
-        "source": [
-          "/",
-          "/",
-          "/",
-          "/",
-          "/",
-          "/",
-          "/",
-          "/",
-          "/",
-          "/",
-          "/",
-          "/",
-          "/"
-        ],
-        "target": "/moduzy/:type/:hours?"
       }
     ]
   },
@@ -10763,7 +10927,7 @@
     ]
   },
   "nasa.govundefined": {
-    "_name": "NASA Astronomy Picture of the Day",
+    "_name": "NASA",
     "apod": [
       {
         "title": "NASA 中文",
@@ -10782,7 +10946,7 @@
         "target": "/nasa/apod-ncku"
       },
       {
-        "title": "NASA",
+        "title": "Astronomy Picture of the Day",
         "docs": "https://docs.rsshub.app/routes/picture",
         "source": [
           "/"
@@ -11305,6 +11469,152 @@
           "/"
         ],
         "target": "/neatdownloadmanager/download/:os?"
+      }
+    ]
+  },
+  "neea.edu.cn": {
+    "_name": "中国教育考试网",
+    "gaokao": [
+      {
+        "title": "普通高考动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/local/gaokao"
+      }
+    ],
+    "chengkao": [
+      {
+        "title": "成人高考动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/local/chengkao"
+      }
+    ],
+    "yankao": [
+      {
+        "title": "研究生考试动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/local/yankao"
+      }
+    ],
+    "zikao": [
+      {
+        "title": "自学考试动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/local/zikao"
+      }
+    ],
+    "ntce": [
+      {
+        "title": "中小学教师资格考试动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/local/ntce"
+      }
+    ],
+    "tdxl": [
+      {
+        "title": "同等学力申请硕士学位考试动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/local/tdxl"
+      }
+    ],
+    "cet": [
+      {
+        "title": "全国四六级考试（CET）动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/local/cet"
+      }
+    ],
+    "ncre": [
+      {
+        "title": "全国计算机等级考试（NCRE）动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/local/ncre"
+      }
+    ],
+    "nit": [
+      {
+        "title": "全国计算机应用水平考试（NIT）动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/local/nit"
+      }
+    ],
+    "pets": [
+      {
+        "title": "全国英语等级考试（PETS）动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/local/pets"
+      }
+    ],
+    "wsk": [
+      {
+        "title": "全国外语水平考试（WSK）动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/local/wsk"
+      }
+    ],
+    "ccpt": [
+      {
+        "title": "书画等级考试（CCPT）动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/local/ccpt"
+      }
+    ],
+    "jlpt": [
+      {
+        "title": "日本语能力测试(JLPT)通知",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/neea/global/jlpt"
       }
     ]
   },
@@ -13341,7 +13651,7 @@
     ],
     "book": [
       {
-        "title": "章节",
+        "title": "作品章节",
         "docs": "https://docs.rsshub.app/routes/reading",
         "source": [
           "/info/:id"
@@ -13652,6 +13962,19 @@
           "/daily"
         ],
         "target": "/readhub/daily"
+      }
+    ]
+  },
+  "readwise.io": {
+    "_name": "Readwise",
+    "read": [
+      {
+        "title": "Reader Document List",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/"
+        ],
+        "target": "/readwise/list"
       }
     ]
   },
@@ -16477,6 +16800,19 @@
       }
     ]
   },
+  "thoughtworks.com": {
+    "_name": "ThoughtWorks",
+    "www": [
+      {
+        "title": "Inside Blog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/zh-cn/insights/blog"
+        ],
+        "target": "/thoughtworks/blog"
+      }
+    ]
+  },
   "thwiki.cc": {
     "_name": "THBWiki",
     ".": [
@@ -17749,7 +18085,7 @@
     ]
   },
   "weibo.com": {
-    "_name": "微博绿洲",
+    "_name": "微博",
     ".": [
       {
         "title": "最新关注时间线",
@@ -17788,7 +18124,7 @@
     ]
   },
   "weibo.cn": {
-    "_name": "微博绿洲",
+    "_name": "微博",
     "m": [
       {
         "title": "博主",
@@ -18218,6 +18554,19 @@
       }
     ]
   },
+  "xinhuanet.com": {
+    "_name": "新华网",
+    "app": [
+      {
+        "title": "客户端",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/"
+        ],
+        "target": "/xinhuanet/app"
+      }
+    ]
+  },
   "xjtu.edu.cn": {
     "_name": "西安交通大学",
     "ee": [
@@ -18388,7 +18737,7 @@
   },
   "yahoo.com": {
     "_name": "Yahoo",
-    ".": [
+    "news": [
       {
         "title": "News",
         "docs": "https://docs.rsshub.app/routes/new-media",
@@ -18396,6 +18745,35 @@
           "/"
         ],
         "target": "/yahoo/news/:region/:category?"
+      }
+    ],
+    "hk.news": [
+      {
+        "title": "合作媒體",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/yahoo/news/list/:region/:listId"
+      },
+      {
+        "title": "新聞來源列表",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/yahoo/news/providers/:region/list"
+      },
+      {
+        "title": "新聞來源",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/yahoo/news/provider/:region/:providerId"
       }
     ]
   },
@@ -18803,14 +19181,6 @@
           "/collection/:id"
         ],
         "target": "/zhihu/collection/:id"
-      },
-      {
-        "title": "知乎热榜",
-        "docs": "https://docs.rsshub.app/routes/social-media",
-        "source": [
-          "/hot"
-        ],
-        "target": "/zhihu/hotlist"
       },
       {
         "title": "用户文章",
