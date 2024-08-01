@@ -3993,7 +3993,9 @@
       "*": {
         "path": "*",
         "name": "Unknown",
-        "maintainers": [],
+        "maintainers": [
+          "nczitzk"
+        ],
         "location": "index.ts"
       }
     },
@@ -10899,7 +10901,7 @@
             ]
           }
         ],
-        "description": "\n:::tip\n存在**二级分类**的**一级分类**不能单独当作参数，如：`/cccfna/hangyezixun`\n:::\n    \n文章的目录分级如下:\n\n- shanghuidongtai（商会通知）\n- meirigengxin（每日更新）\n- tongzhigonggao（通知公告）\n- hangyezixun（行业资讯）\n  - zhengcedaohang（政策导航）\n  - yujinxinxi（预警信息）\n  - shichangdongtai（市场动态）\n  - gongxuxinxi（供需信息）\n- maoyitongji（贸易统计）\n  - tongjikuaibao（统计快报）\n  - hangyetongji（行业统计）\n  - guobiemaoyi（国别贸易）\n  - maoyizhinan（贸易指南）\n- nongchanpinbaogao（农产品报告）\n  - nongchanpinyuebao（农产品月报）\n  - zhongdianchanpinyuebao（重点产品月报）\n  - zhongdianchanpinzoushi（重点产品走势）",
+        "description": "\n:::tip\n存在**二级分类**的**一级分类**不能单独当作参数，如：`/cccfna/hangyezixun`\n:::\n\n文章的目录分级如下:\n\n- shanghuidongtai（商会通知）\n- meirigengxin（每日更新）\n- tongzhigonggao（通知公告）\n- hangyezixun（行业资讯）\n  - zhengcedaohang（政策导航）\n  - yujinxinxi（预警信息）\n  - shichangdongtai（市场动态）\n  - gongxuxinxi（供需信息）\n- maoyitongji（贸易统计）\n  - tongjikuaibao（统计快报）\n  - hangyetongji（行业统计）\n  - guobiemaoyi（国别贸易）\n  - maoyizhinan（贸易指南）\n- nongchanpinbaogao（农产品报告）\n  - nongchanpinyuebao（农产品月报）\n  - zhongdianchanpinyuebao（重点产品月报）\n  - zhongdianchanpinzoushi（重点产品走势）",
         "name": "资讯信息",
         "maintainers": [
           "hualiong"
@@ -16645,7 +16647,7 @@
           "requireConfig": [
             {
               "name": "DISCORD_AUTHORIZATION",
-              "description": ""
+              "description": "Discord authorization header from the browser"
             }
           ],
           "requirePuppeteer": false,
@@ -34658,6 +34660,36 @@
         ],
         "location": "column.ts"
       },
+      "/dynamic/:id": {
+        "path": "/dynamic/:id",
+        "categories": [
+          "programming"
+        ],
+        "example": "/juejin/dynamic/3051900006845944",
+        "parameters": {
+          "id": "用户 id, 可在用户页 URL 中找到"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "juejin.cn/user/:id"
+            ]
+          }
+        ],
+        "name": "用户动态",
+        "maintainers": [
+          "CaoMeiYouRen"
+        ],
+        "location": "dynamic.ts"
+      },
       "/collections/:userId": {
         "path": "/collections/:userId",
         "categories": [
@@ -35338,6 +35370,20 @@
           "game"
         ],
         "example": "/keylol/f161-1",
+        "features": {
+          "requireConfig": [
+            {
+              "name": "KEYLOL_COOKIE",
+              "optional": true,
+              "description": "配置后可抓取具有阅读权限的帖子內容"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
         "radar": [
           {
             "source": [
@@ -35565,6 +35611,36 @@
     },
     "name": "Kun Cheng",
     "url": "kunchengblog.com"
+  },
+  "kurogames": {
+    "routes": {
+      "/wutheringwaves/news": {
+        "path": "/wutheringwaves/news",
+        "categories": [
+          "game"
+        ],
+        "example": "/kurogames/wutheringwaves/news",
+        "name": "鸣潮 — 游戏公告、新闻与活动",
+        "radar": [
+          {
+            "source": [
+              "mc.kurogames.com/m/main/news",
+              "mc.kurogames.com/main"
+            ]
+          }
+        ],
+        "maintainers": [
+          "enpitsulin"
+        ],
+        "description": "",
+        "location": "wutheringwaves/news.ts"
+      }
+    },
+    "name": "库洛游戏",
+    "url": "www.kurogames.com",
+    "categories": [
+      "game"
+    ]
   },
   "kuwaitlocal": {
     "routes": {
@@ -38097,6 +38173,36 @@
     },
     "name": "麦肯锡",
     "url": "mckinsey.com.cn"
+  },
+  "mcmod": {
+    "routes": {
+      "/:type": {
+        "path": "/:type",
+        "categories": [
+          "game"
+        ],
+        "example": "/mcmod/new",
+        "parameters": {
+          "type": "查询类型，详见下表"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "最新MOD",
+        "maintainers": [
+          "hualiong"
+        ],
+        "description": "`:type` 类型可选如下\n\n| 随机显示MOD | 最新收录MOD | 最近编辑MOD |\n| ------ | --- | ---- |\n| random | new | edit |",
+        "location": "index.ts"
+      }
+    },
+    "name": "MC百科",
+    "url": "www.mcmod.cn"
   },
   "mdpi": {
     "routes": {
@@ -47446,8 +47552,8 @@
         ],
         "location": "ranking.ts"
       },
-      "/search/:keyword/:order?/:mode?": {
-        "path": "/search/:keyword/:order?/:mode?",
+      "/search/:keyword/:order?/:mode?/:include_ai?": {
+        "path": "/search/:keyword/:order?/:mode?/:include_ai?",
         "categories": [
           "social-media",
           "popular"
@@ -47485,6 +47591,20 @@
               {
                 "label": "no filter",
                 "value": "no"
+              }
+            ]
+          },
+          "include_ai": {
+            "description": "whether AI-generated content is included",
+            "default": "yes",
+            "options": [
+              {
+                "label": "does not include AI-generated content",
+                "value": "no"
+              },
+              {
+                "label": "include AI-generated content",
+                "value": "yes"
               }
             ]
           }
@@ -56267,7 +56387,8 @@
         "name": "Journal",
         "maintainers": [
           "Derekmini",
-          "TonyRL"
+          "TonyRL",
+          "xiahaoyun"
         ],
         "location": "journal.ts"
       }
@@ -61644,7 +61765,8 @@
         },
         "name": "Home timeline",
         "maintainers": [
-          "DIYgod"
+          "DIYgod",
+          "CaoMeiYouRen"
         ],
         "radar": [
           {
@@ -61929,7 +62051,8 @@
         "maintainers": [
           "DIYgod",
           "yindaheng98",
-          "Rongronggg9"
+          "Rongronggg9",
+          "CaoMeiYouRen"
         ],
         "radar": [
           {
@@ -70673,7 +70796,8 @@
       }
     },
     "name": "知乎",
-    "url": "www.zhihu.com"
+    "url": "www.zhihu.com",
+    "description": ":::tip\n自2024年7月，未登录状态下大部分路由[无法获取全文](https://github.com/DIYgod/RSSHub/issues/16260)。若有需要请在登陆知乎后寻找并添加包含`z_c0`的Cookies至环境变量`ZHIHU_COOKIES`。\n:::"
   },
   "zhitongcaijing": {
     "routes": {

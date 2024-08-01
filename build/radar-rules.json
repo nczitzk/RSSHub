@@ -9473,6 +9473,14 @@
         "target": "/juejin/column/:id"
       },
       {
+        "title": "用户动态",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/user/:id"
+        ],
+        "target": "/juejin/dynamic/:id"
+      },
+      {
         "title": "收藏集",
         "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
@@ -9712,6 +9720,20 @@
           "/essay"
         ],
         "target": "/kunchengblog/essay"
+      }
+    ]
+  },
+  "kurogames.com": {
+    "_name": "库洛游戏",
+    "mc": [
+      {
+        "title": "鸣潮 — 游戏公告、新闻与活动",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/m/main/news",
+          "/main"
+        ],
+        "target": "/kurogames/wutheringwaves/news"
       }
     ]
   },

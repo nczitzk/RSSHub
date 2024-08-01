@@ -380,7 +380,9 @@
   "/aliyun/developer/group/:type": [
     "umm233"
   ],
-  "/aljazeera*": [],
+  "/aljazeera*": [
+    "nczitzk"
+  ],
   "/ally/rail/:category?/:topic?": [
     "Rongronggg9"
   ],
@@ -3418,6 +3420,9 @@
   "/juejin/column/:id": [
     "xiangzy1"
   ],
+  "/juejin/dynamic/:id": [
+    "CaoMeiYouRen"
+  ],
   "/juejin/collections/:userId": [
     "isQ"
   ],
@@ -3502,6 +3507,9 @@
   ],
   "/kunchengblog/essay": [
     "nczitzk"
+  ],
+  "/kurogames/wutheringwaves/news": [
+    "enpitsulin"
   ],
   "/kuwaitlocal/:category?": [
     "TonyRL"
@@ -3758,6 +3766,9 @@
   ],
   "/mckinsey/cn/:category?": [
     "laampui"
+  ],
+  "/mcmod/:type": [
+    "hualiong"
   ],
   "/mdpi/:journal": [
     "Derekmini"
@@ -4659,7 +4670,7 @@
   "/pixiv/ranking/:mode/:date?": [
     "EYHN"
   ],
-  "/pixiv/search/:keyword/:order?/:mode?": [
+  "/pixiv/search/:keyword/:order?/:mode?/:include_ai?": [
     "DIYgod"
   ],
   "/pixiv/user/:id": [
@@ -5488,7 +5499,8 @@
   ],
   "/springer/journal/:journal": [
     "Derekmini",
-    "TonyRL"
+    "TonyRL",
+    "xiahaoyun"
   ],
   "/sputniknews/:category?/:language?": [
     "nczitzk"
@@ -6036,7 +6048,8 @@
     "hoilc"
   ],
   "/twitter/home/:routeParams?": [
-    "DIYgod"
+    "DIYgod",
+    "CaoMeiYouRen"
   ],
   "/twitter/keyword/:keyword/:routeParams?": [
     "DIYgod",
@@ -6065,7 +6078,8 @@
   "/twitter/user/:id/:routeParams?": [
     "DIYgod",
     "yindaheng98",
-    "Rongronggg9"
+    "Rongronggg9",
+    "CaoMeiYouRen"
   ],
   "/twreporter/category/:category": [
     "emdoe"
