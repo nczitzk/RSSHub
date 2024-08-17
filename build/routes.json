@@ -775,8 +775,8 @@
   },
   "141jav": {
     "routes": {
-      "/{.*}?": {
-        "path": "/{.*}?",
+      "/:type/:keyword{.*}?": {
+        "path": "/:type/:keyword{.*}?",
         "categories": [
           "multimedia"
         ],
@@ -785,7 +785,11 @@
           "cgkings",
           "nczitzk"
         ],
-        "description": "**类型**\n\n    | 最新 | 热门    | 随机   | 指定演员 | 指定标签 |\n    | ---- | ------- | ------ | -------- | -------- |\n    | new  | popular | random | actress  | tag      |\n\n    **关键词**\n\n    | 空 | 日期范围    | 演员名       | 标签名         |\n    | -- | ----------- | ------------ | -------------- |\n    |    | 7 / 30 / 60 | Yua%20Mikami | Adult%20Awards |\n\n    **示例说明**\n\n    -   `/141jav/new`\n\n        仅当类型为 `new` `popular` 或 `random` 时关键词为 **空**\n\n    -   `/141jav/popular/30`\n\n        `popular` `random` 类型的关键词可填写 `7` `30` 或 `60` 三个 **日期范围** 之一，分别对应 **7 天**、**30 天** 或 **60 天内**\n\n    -   `/141jav/actress/Yua%20Mikami`\n\n        `actress` 类型的关键词必须填写 **演员名** ，可在 [此处](https://141jav.com/actress) 演员单页链接中获取\n\n    -   `/141jav/tag/Adult%20Awards`\n\n        `tag` 类型的关键词必须填写 **标签名** 且标签中的 `/` 必须替换为 `%2F` ，可在 [此处](https://141jav.com/tag) 标签单页链接中获取\n\n    -   `/141jav/date/2020/07/30`\n\n        `date` 类型的关键词必须填写 **日期**",
+        "parameters": {
+          "type": "类型，可查看下表的类型说明",
+          "keyword": "关键词，可查看下表的关键词说明"
+        },
+        "description": "**类型**\n\n| 最新 | 热门    | 随机   | 指定演员 | 指定标签 | 日期 |\n| ---- | ------- | ------ | -------- | -------- | ---- |\n| new  | popular | random | actress  | tag      | date |\n\n**关键词**\n\n| 空 | 日期范围    | 演员名       | 标签名         | 年月日     |\n| -- | ----------- | ------------ | -------------- | ---------- |\n|    | 7 / 30 / 60 | Yua%20Mikami | Adult%20Awards | 2020/07/30 |\n\n**示例说明**\n\n-  `/141jav/new`\n\n      仅当类型为 `new` `popular` 或 `random` 时关键词为 **空**\n\n-  `/141jav/popular/30`\n\n      `popular` `random` 类型的关键词可填写 `7` `30` 或 `60` 三个 **日期范围** 之一，分别对应 **7 天**、**30 天** 或 **60 天内**\n\n-  `/141jav/actress/Yua%20Mikami`\n\n      `actress` 类型的关键词必须填写 **演员名** ，可在 [此处](https://141jav.com/actress/) 演员单页链接中获取\n\n-  `/141jav/tag/Adult%20Awards`\n\n      `tag` 类型的关键词必须填写 **标签名** 且标签中的 `/` 必须替换为 `%2F` ，可在 [此处](https://141jav.com/tag/) 标签单页链接中获取\n\n-  `/141jav/date/2020/07/30`\n\n      `date` 类型的关键词必须填写 **日期(年/月/日)**",
         "location": "index.ts"
       }
     },
@@ -795,8 +799,8 @@
   },
   "141ppv": {
     "routes": {
-      "/{.*}?": {
-        "path": "/{.*}?",
+      "/:type/:keyword{.*}?": {
+        "path": "/:type/:keyword{.*}?",
         "categories": [
           "multimedia"
         ],
@@ -805,7 +809,11 @@
           "cgkings",
           "nczitzk"
         ],
-        "description": "**类型**\n\n    | 最新 | 热门    | 随机   | 指定演员 | 指定标签 |\n    | ---- | ------- | ------ | -------- | -------- |\n    | new  | popular | random | actress  | tag      |\n\n    **关键词**\n\n    | 空 | 日期范围    | 演员名       | 标签名         |\n    | -- | ----------- | ------------ | -------------- |\n    |    | 7 / 30 / 60 | Yua%20Mikami | Adult%20Awards |\n\n    **示例说明**\n\n    -   `/141ppv/new`\n\n        仅当类型为 `new` `popular` 或 `random` 时关键词为 **空**\n\n    -   `/141ppv/popular/30`\n\n        `popular` `random` 类型的关键词可填写 `7` `30` 或 `60` 三个 **日期范围** 之一，分别对应 **7 天**、**30 天** 或 **60 天内**\n\n    -   `/141ppv/actress/Yua%20Mikami`\n\n        `actress` 类型的关键词必须填写 **演员名** ，可在 [此处](https://141ppv.com/actress) 演员单页链接中获取\n\n    -   `/141ppv/tag/Adult%20Awards`\n\n        `tag` 类型的关键词必须填写 **标签名** 且标签中的 `/` 必须替换为 `%2F` ，可在 [此处](https://141ppv.com/tag) 标签单页链接中获取\n\n    -   `/141ppv/date/2020/07/30`\n\n        `date` 类型的关键词必须填写 **日期**",
+        "parameters": {
+          "type": "类型，可查看下表的类型说明",
+          "keyword": "关键词，可查看下表的关键词说明"
+        },
+        "description": "**类型**\n\n| 最新 | 热门    | 随机   | 指定演员 | 指定标签 | 日期 |\n| ---- | ------- | ------ | -------- | -------- | ---- |\n| new  | popular | random | actress  | tag      | date |\n\n**关键词**\n\n| 空 | 日期范围    | 演员名       | 标签名         | 年月日     |\n| -- | ----------- | ------------ | -------------- | ---------- |\n|    | 7 / 30 / 60 | Yua%20Mikami | Adult%20Awards | 2020/07/30 |\n\n**示例说明**\n\n-  `/141ppv/new`\n\n      仅当类型为 `new` `popular` 或 `random` 时关键词为 **空**\n\n-  `/141ppv/popular/30`\n\n      `popular` `random` 类型的关键词可填写 `7` `30` 或 `60` 三个 **日期范围** 之一，分别对应 **7 天**、**30 天** 或 **60 天内**\n\n-  `/141ppv/actress/Yua%20Mikami`\n\n      `actress` 类型的关键词必须填写 **演员名** ，可在 [此处](https://141ppv.com/actress/) 演员单页链接中获取\n\n-  `/141ppv/tag/Adult%20Awards`\n\n      `tag` 类型的关键词必须填写 **标签名** 且标签中的 `/` 必须替换为 `%2F` ，可在 [此处](https://141ppv.com/tag/) 标签单页链接中获取\n\n-  `/141ppv/date/2020/07/30`\n\n      `date` 类型的关键词必须填写 **日期(年/月/日)**",
         "location": "index.ts"
       }
     },
@@ -1896,6 +1904,50 @@
     },
     "name": "51CTO",
     "url": "51cto.com"
+  },
+  "51read": {
+    "routes": {
+      "/article/:id": {
+        "path": "/article/:id",
+        "name": "章节",
+        "url": "m.51read.org",
+        "maintainers": [
+          "lazwa34"
+        ],
+        "example": "/51read/article/152685",
+        "parameters": {
+          "id": "小说 id, 可在对应小说页 URL 中找到"
+        },
+        "categories": [
+          "reading"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "m.51read.org/xiaoshuo/:id"
+            ],
+            "target": "/article/:id"
+          },
+          {
+            "source": [
+              "51read.org/xiaoshuo/:id"
+            ],
+            "target": "/article/:id"
+          }
+        ],
+        "location": "article.ts"
+      }
+    },
+    "name": "51Read",
+    "url": "m.51read.org"
   },
   "52hrtt": {
     "routes": {
@@ -9501,6 +9553,29 @@
         },
         "location": "sme.ts"
       },
+      "/lib/space/:path{newbook.*}": {
+        "path": "/lib/space/:path{newbook.*}",
+        "name": "图书馆 - 新书速递",
+        "url": "space.lib.buaa.edu.cn/mspace/newBook",
+        "maintainers": [
+          "OverflowCat"
+        ],
+        "example": "/buaa/lib/space/newbook/",
+        "description": "可通过参数进行筛选：`/buaa/lib/space/newbook/key1=value1&key2=value2...`\n- `dcpCode`：学科分类代码\n  - 例：\n    - 工学：`08`\n    - 工学 > 计算机 > 计算机科学与技术：`080901`\n  - 默认值：`nolimit`\n  - 注意事项：不可与 `clsNo` 同时使用。\n- `clsNo`：中图分类号\n  - 例：\n    - 计算机科学：`TP3`\n  - 默认值：无\n  - 注意事项\n    - 不可与 `dcpCode` 同时使用。\n    - 此模式下获取不到上架日期。\n- `libCode`：图书馆代码\n  - 例：\n    - 本馆：`00000`\n  - 默认值：无\n  - 注意事项：只有本馆一个可选值。\n- `locaCode`：馆藏地代码\n  - 例：\n    - 五层西-中文新书借阅室(A-Z类)：`02503`\n  - 默认值：无\n  - 注意事项：必须与 `libCode` 同时使用。\n\n示例：\n- `buaa/lib/space/newbook` 为所有新书\n- `buaa/lib/space/newbook/clsNo=U&libCode=00000&locaCode=60001` 为沙河教2图书馆所有中图分类号为 U（交通运输）的书籍\n",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "lib/space/newbook.ts"
+      },
       "/news/:type": {
         "path": "/news/:type",
         "categories": [
@@ -16324,7 +16399,7 @@
       "/blog": {
         "path": "/blog",
         "categories": [
-          "blog"
+          "game"
         ],
         "example": "/devolverdigital/blog",
         "parameters": {},
@@ -22686,7 +22761,7 @@
         ],
         "name": "Unknown",
         "maintainers": [
-          "Jim Kirisame"
+          "jim-kirisame"
         ],
         "url": "oas.gdut.edu.cn/seeyon",
         "location": "oa-news.ts"
@@ -24221,6 +24296,25 @@
           "zoenglinghou"
         ],
         "location": "news.ts"
+      },
+      "/research": {
+        "path": "/research",
+        "categories": [
+          "blog"
+        ],
+        "example": "/google/research",
+        "name": "Research Blog",
+        "maintainers": [
+          "Levix"
+        ],
+        "radar": [
+          {
+            "source": [
+              "research.google"
+            ]
+          }
+        ],
+        "location": "research.ts"
       },
       "/scholar/:query": {
         "path": "/scholar/:query",
@@ -26738,6 +26832,56 @@
         ],
         "location": "zhengce/zhengceku.ts"
       },
+      "/zj/ningbogzw-notice/:colId?": {
+        "path": "/zj/ningbogzw-notice/:colId?",
+        "categories": [
+          "government"
+        ],
+        "example": "/gov/zj/ningbogzw-notice/1229116730",
+        "parameters": {
+          "colId": "公告分类id、详细信息点击源网站http://gzw.ningbo.gov.cn/请求中寻找"
+        },
+        "radar": [
+          {
+            "source": [
+              "gzw.ningbo.gov.cn/col/col1229116730/index.html"
+            ],
+            "target": "/zj/ningbogzw-notice/:colId?"
+          }
+        ],
+        "name": "宁波市国资委-公告",
+        "url": "gzw.ningbo.gov.cn",
+        "maintainers": [
+          "HaoyuLee"
+        ],
+        "description": "\n| 公告类别         | colId |\n| ------------ | -- |\n| 首页-市属国企招聘信息-招聘公告     | 1229116730  |\n    ",
+        "location": "zj/ningbogzw-notice.ts"
+      },
+      "/zj/ningborsjnotice/:colId?": {
+        "path": "/zj/ningborsjnotice/:colId?",
+        "categories": [
+          "government"
+        ],
+        "example": "/gov/zj/ningborsjnotice/1229676740",
+        "parameters": {
+          "colId": "公告分类id、详细信息点击源网站http://rsj.ningbo.gov.cn/请求中寻找"
+        },
+        "radar": [
+          {
+            "source": [
+              "rsj.ningbo.gov.cn/col/col1229676740/index.html"
+            ],
+            "target": "/zj/ningborsjnotice/:colId?"
+          }
+        ],
+        "name": "宁波市人力资源和社会保障局-公告",
+        "url": "rsj.ningbo.gov.cn",
+        "maintainers": [
+          "HaoyuLee"
+        ],
+        "description": "\n| 公告类别         | colId |\n| ------------ | -- |\n| 事业单位进人公告     | 1229676740  |\n    ",
+        "location": "zj/ningborsjnotice.ts"
+      },
       "/zj/search/:websiteid?/:word/:cateid?": {
         "path": "/zj/search/:websiteid?/:word/:cateid?",
         "categories": [
@@ -28953,9 +29097,18 @@
         "radar": [
           {
             "source": [
+              "china.hket.com/:category/*",
+              "inews.hket.com/:category/*",
+              "topick.hket.com/:category/*",
+              "wealth.hket.com/:category/*"
+            ],
+            "target": "/:category"
+          },
+          {
+            "source": [
               "www.hket.com/"
             ],
-            "target": ""
+            "target": "/"
           }
         ],
         "name": "新闻",
@@ -28963,7 +29116,7 @@
           "TonyRL"
         ],
         "url": "www.hket.com/",
-        "description": "香港经济日报已有提供简单 RSS，详细可前往官方网站： [https://www.hket.com/rss](https://www.hket.com/rss)\n\n此路由主要补全官方 RSS 全文输出及完善分类输出。\n\n  <details>\n    <summary>分类</summary>\n\n    | sran001  | sran008  | sran010  | sran011  | sran012  | srat006  |\n    | -------- | -------- | -------- | -------- | -------- | -------- |\n    | 全部新闻 | 财经地产 | 科技信息 | 国际新闻 | 商业新闻 | 香港新闻 |\n\n    | sran009  | sran009-1 | sran009-2 | sran009-3  | sran009-4 | sran009-5 | sran009-6 |\n    | -------- | --------- | --------- | ---------- | --------- | --------- | --------- |\n    | 即时财经 | 股市      | 新股 IPO  | 新经济追踪 | 当炒股    | 宏观解读  | Hot Talk  |\n\n    | sran011-1 | sran011-2    | sran011-3    |\n    | --------- | ------------ | ------------ |\n    | 环球政治  | 环球经济金融 | 环球社会热点 |\n\n    | sran016    | sran016-1  | sran016-2  | sran016-3  | sran016-4  | sran016-5      |\n    | ---------- | ---------- | ---------- | ---------- | ---------- | -------------- |\n    | 大湾区主页 | 大湾区发展 | 大湾区工作 | 大湾区买楼 | 大湾区消费 | 大湾区投资理财 |\n\n    | srac002  | srac003  | srac004  | srac005  |\n    | -------- | -------- | -------- | -------- |\n    | 即时中国 | 经济脉搏 | 国情动向 | 社会热点 |\n\n    | srat001 | srat008 | srat055  | srat069  | srat070   |\n    | ------- | ------- | -------- | -------- | --------- |\n    | 话题    | 观点    | 休闲消费 | 娱乐新闻 | TOPick TV |\n\n    | srat052  | srat052-1 | srat052-2  | srat052-3 |\n    | -------- | --------- | ---------- | --------- |\n    | 健康主页 | 食用安全  | 医生诊症室 | 保健美颜  |\n\n    | srat053  | srat053-1 | srat053-2 | srat053-3 | srat053-4  |\n    | -------- | --------- | --------- | --------- | ---------- |\n    | 亲子主页 | 儿童健康  | 育儿经    | 教育      | 亲子好去处 |\n\n    | srat053-6   | srat053-61 | srat053-62 | srat053-63 | srat053-64 |\n    | ----------- | ---------- | ---------- | ---------- | ---------- |\n    | Band 1 学堂 | 幼稚园     | 中小学     | 尖子教室   | 海外升学   |\n\n    | srat072-1  | srat072-2  | srat072-3        | srat072-4         |\n    | ---------- | ---------- | ---------------- | ----------------- |\n    | 健康身心活 | 抗癌新方向 | 「糖」「心」解密 | 风湿不再 你我自在 |\n\n    | sraw007  | sraw009  | sraw010  | sraw011  | sraw012  | sraw014  | sraw018  | sraw019  |\n    | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n    | 全部博客 | Bloggers | 收息攻略 | 精明消费 | 退休规划 | 个人增值 | 财富管理 | 绿色金融 |\n\n    | sraw015  | sraw015-07 | sraw015-08 | sraw015-09 | sraw015-10 |\n    | -------- | ---------- | ---------- | ---------- | ---------- |\n    | 移民百科 | 海外置业   | 移民攻略   | 移民点滴   | 海外理财   |\n\n    | sraw020  | sraw020-1    | sraw020-2 | sraw020-3 | sraw020-4 |\n    | -------- | ------------ | --------- | --------- | --------- |\n    | ESG 主页 | ESG 趋势政策 | ESG 投资  | ESG 企业  | ESG 社会  |\n  </details>",
+        "description": "香港经济日报已有提供简单 RSS，详细可前往官方网站： [https://www.hket.com/rss](https://www.hket.com/rss)\n\n此路由主要补全官方 RSS 全文输出及完善分类输出。\n\n  <details>\n    <summary>分类</summary>\n\n| sran001  | sran008  | sran010  | sran011  | sran012  | srat006  |\n| -------- | -------- | -------- | -------- | -------- | -------- |\n| 全部新闻 | 财经地产 | 科技信息 | 国际新闻 | 商业新闻 | 香港新闻 |\n\n| sran009  | sran009-1 | sran009-2 | sran009-3  | sran009-4 | sran009-5 | sran009-6 |\n| -------- | --------- | --------- | ---------- | --------- | --------- | --------- |\n| 即时财经 | 股市      | 新股 IPO  | 新经济追踪 | 当炒股    | 宏观解读  | Hot Talk  |\n\n| sran011-1 | sran011-2    | sran011-3    |\n| --------- | ------------ | ------------ |\n| 环球政治  | 环球经济金融 | 环球社会热点 |\n\n| sran016    | sran016-1  | sran016-2  | sran016-3  | sran016-4  | sran016-5      |\n| ---------- | ---------- | ---------- | ---------- | ---------- | -------------- |\n| 大湾区主页 | 大湾区发展 | 大湾区工作 | 大湾区买楼 | 大湾区消费 | 大湾区投资理财 |\n\n| srac002  | srac003  | srac004  | srac005  |\n| -------- | -------- | -------- | -------- |\n| 即时中国 | 经济脉搏 | 国情动向 | 社会热点 |\n\n| srat001 | srat008 | srat055  | srat069  | srat070   |\n| ------- | ------- | -------- | -------- | --------- |\n| 话题    | 观点    | 休闲消费 | 娱乐新闻 | TOPick TV |\n\n| srat052  | srat052-1 | srat052-2  | srat052-3 |\n| -------- | --------- | ---------- | --------- |\n| 健康主页 | 食用安全  | 医生诊症室 | 保健美颜  |\n\n| srat053  | srat053-1 | srat053-2 | srat053-3 | srat053-4  |\n| -------- | --------- | --------- | --------- | ---------- |\n| 亲子主页 | 儿童健康  | 育儿经    | 教育      | 亲子好去处 |\n\n| srat053-6   | srat053-61 | srat053-62 | srat053-63 | srat053-64 |\n| ----------- | ---------- | ---------- | ---------- | ---------- |\n| Band 1 学堂 | 幼稚园     | 中小学     | 尖子教室   | 海外升学   |\n\n| srat072-1  | srat072-2  | srat072-3        | srat072-4         |\n| ---------- | ---------- | ---------------- | ----------------- |\n| 健康身心活 | 抗癌新方向 | 「糖」「心」解密 | 风湿不再 你我自在 |\n\n| sraw007  | sraw009  | sraw010  | sraw011  | sraw012  | sraw014  | sraw018  | sraw019  |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n| 全部博客 | Bloggers | 收息攻略 | 精明消费 | 退休规划 | 个人增值 | 财富管理 | 绿色金融 |\n\n| sraw015  | sraw015-07 | sraw015-08 | sraw015-09 | sraw015-10 |\n| -------- | ---------- | ---------- | ---------- | ---------- |\n| 移民百科 | 海外置业   | 移民攻略   | 移民点滴   | 海外理财   |\n\n| sraw020  | sraw020-1    | sraw020-2 | sraw020-3 | sraw020-4 |\n| -------- | ------------ | --------- | --------- | --------- |\n| ESG 主页 | ESG 趋势政策 | ESG 投资  | ESG 企业  | ESG 社会  |\n  </details>",
         "location": "index.ts"
       }
     },
@@ -31641,6 +31794,35 @@
     },
     "name": "米课",
     "url": "imiker.com"
+  },
+  "imop": {
+    "routes": {
+      "/tianshu": {
+        "path": "/tianshu",
+        "categories": [
+          "game"
+        ],
+        "example": "/imop/tianshu",
+        "radar": [
+          {
+            "source": [
+              "t.imop.com"
+            ],
+            "target": "/tianshu"
+          }
+        ],
+        "name": "全部消息",
+        "maintainers": [
+          "zhkgo"
+        ],
+        "location": "tianshu.ts"
+      }
+    },
+    "name": "imop",
+    "url": "imop.com",
+    "zh": {
+      "name": "千橡游戏"
+    }
   },
   "indiansinkuwait": {
     "routes": {
@@ -35023,7 +35205,7 @@
         "categories": [
           "new-media"
         ],
-        "example": "/news/zh-hans",
+        "example": "/kaopu/news/zh-hans",
         "parameters": {
           "language": "语言"
         },
@@ -35038,7 +35220,7 @@
         "maintainers": [
           "fashioncj"
         ],
-        "description": "| 简体中文    | 繁体中文     | \n  | ------- | -------- | \n  | zh-hans | zh-hant | ",
+        "description": "| 简体中文    | 繁体中文     |\n  | ------- | -------- |\n  | zh-hans | zh-hant | ",
         "location": "news.ts"
       }
     },
@@ -36800,6 +36982,39 @@
     },
     "name": "龙空",
     "url": "lkong.com"
+  },
+  "lmu": {
+    "routes": {
+      "/jobs": {
+        "path": "/jobs",
+        "name": "Job Openings",
+        "url": "lmu.de",
+        "example": "/lmu/jobs",
+        "maintainers": [
+          "StarDxxx"
+        ],
+        "categories": [
+          "university",
+          "study"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.lmu.de/en/about-lmu/working-at-lmu/job-portal/academic-staff/"
+            ],
+            "target": "/lmu/jobs"
+          }
+        ],
+        "description": "RSS feed for LMU academic staff job openings.",
+        "location": "jobs.ts"
+      }
+    },
+    "name": "Ludwig Maximilian University of Munich",
+    "url": "www.lmu.de",
+    "description": "\nThis namespace provides RSS feeds for various sections of the Ludwig Maximilian University of Munich (LMU) website, particularly for job openings in the academic staff section.\n\n:::tip\nFor more information about LMU and their job offerings, visit their official website.\n:::\n",
+    "zh": {
+      "name": "慕尼黑大学"
+    }
   },
   "lofter": {
     "routes": {
@@ -39244,6 +39459,29 @@
           "Misaka13514"
         ],
         "location": "featured-notes.ts"
+      },
+      "/users/notes/:username": {
+        "path": "/users/notes/:username",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/misskey/users/notes/support@misskey.io",
+        "parameters": {
+          "username": "misskey username format, like support@misskey.io"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "User timeline",
+        "maintainers": [
+          "siygle"
+        ],
+        "location": "user-timeline.ts"
       }
     },
     "name": "Misskey",
@@ -54455,11 +54693,11 @@
             ]
           }
         ],
-        "name": "音乐人 - 演出更新",
+        "name": "按音乐人 - 演出更新",
         "maintainers": [
           "lchtao26"
         ],
-        "description": ":::tip\n音乐人 ID 查询: `/showstart/search/artist/:keyword`，如: [https://rsshub.app/showstart/search/artist/ 周杰伦](https://rsshub.app/showstart/search/artist/周杰伦)\n:::",
+        "description": ":::tip\n音乐人 ID 查询: `/showstart/search/artist/:keyword`，如: [https://rsshub.app/showstart/search/artist/周杰伦](https://rsshub.app/showstart/search/artist/周杰伦)\n:::",
         "location": "artist.ts"
       },
       "/brand/:id": {
@@ -54486,11 +54724,11 @@
             ]
           }
         ],
-        "name": "厂牌 - 演出更新",
+        "name": "按厂牌 - 演出更新",
         "maintainers": [
           "lchtao26"
         ],
-        "description": ":::tip\n厂牌 ID 查询: `/showstart/search/brand/:keyword`，如: [https://rsshub.app/showstart/search/brand/ 声场](https://rsshub.app/showstart/search/brand/声场)\n:::",
+        "description": ":::tip\n厂牌 ID 查询: `/showstart/search/brand/:keyword`，如: [https://rsshub.app/showstart/search/brand/声场](https://rsshub.app/showstart/search/brand/声场)\n:::",
         "location": "brand.ts"
       },
       "/event/:cityCode/:showStyle?": {
@@ -54511,11 +54749,11 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "演出更新",
+        "name": "按城市 - 演出更新",
         "maintainers": [
           "lchtao26"
         ],
-        "description": ":::tip\n-   演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.app/showstart/search/city/ 杭州](https://rsshub.app/showstart/search/city/杭州)\n\n-   演出风格 `showStyle` 查询: `/showstart/search/style/:keyword`，如: [https://rsshub.app/showstart/search/style/ 摇滚](https://rsshub.app/showstart/search/style/摇滚)\n:::",
+        "description": ":::tip\n-   演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.app/showstart/search/city/杭州](https://rsshub.app/showstart/search/city/杭州)\n\n-   演出风格 `showStyle` 查询: `/showstart/search/style/:keyword`，如: [https://rsshub.app/showstart/search/style/摇滚](https://rsshub.app/showstart/search/style/摇滚)\n:::",
         "location": "event.ts"
       },
       "/search/:type/:keyword?": {
@@ -54541,6 +54779,37 @@
           "lchtao26"
         ],
         "location": "search.ts"
+      },
+      "/site/:siteId": {
+        "path": "/site/:siteId",
+        "categories": [
+          "shopping"
+        ],
+        "example": "/showstart/site/3583",
+        "parameters": {
+          "siteId": "演出场地 (编号)"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.showstart.com/venue/:id"
+            ]
+          }
+        ],
+        "name": "按场地 - 演出更新",
+        "maintainers": [
+          "lchtao26"
+        ],
+        "description": ":::tip\n-   演出场地 ID 查询: `/showstart/search/site/:keyword`, 如: [https://rsshub.app/showstart/search/site/酒球会](https://rsshub.app/showstart/search/site/酒球会)\n:::",
+        "location": "site.ts"
       }
     },
     "name": "秀动网",
@@ -58499,15 +58768,16 @@
   },
   "t66y": {
     "routes": {
-      "/:id/:type?": {
-        "path": "/:id/:type?",
+      "/:id/:type?/:search?": {
+        "path": "/:id/:type?/:search?",
         "categories": [
           "multimedia"
         ],
         "example": "/t66y/20/2",
         "parameters": {
           "id": "分区 id, 可在分区页 URL 中找到",
-          "type": "类型 id, 可在分区类型过滤后的 URL 中找到"
+          "type": "类型 id, 可在分区类型过滤后的 URL 中找到",
+          "search": "主题类型筛选，可在分区主题类型筛选后的 URL 中找到，默认为 `today`"
         },
         "features": {
           "requireConfig": false,
@@ -58521,7 +58791,7 @@
         "maintainers": [
           "zhboner"
         ],
-        "description": "> 注意：并非所有的分区都有子类型，可以参考成人文学交流区的 `古典武侠` 这一子类型。\n\n  | 亚洲无码原创区 | 亚洲有码原创区 | 欧美原创区 | 动漫原创区 | 国产原创区 |\n  | -------------- | -------------- | ---------- | ---------- | ---------- |\n  | 2              | 15             | 4          | 5          | 25         |\n\n  | 中字原创区 | 转帖交流区 | HTTP 下载区 | 在线成人区 |\n  | ---------- | ---------- | ----------- | ---------- |\n  | 26         | 27         | 21          | 22         |\n\n  | 技术讨论区 | 新时代的我们 | 达盖尔的旗帜 | 成人文学交流 |\n  | ---------- | ------------ | ------------ | ------------ |\n  | 7          | 8            | 16           | 20           |",
+        "description": "> 注意：并非所有的分区都有子类型，可以参考成人文学交流区的 `古典武侠` 这一子类型。\n\n  | 亚洲无码原创区 | 亚洲有码原创区 | 欧美原创区 | 动漫原创区 | 国产原创区 |\n  | -------------- | -------------- | ---------- | ---------- | ---------- |\n  | 2              | 15             | 4          | 5          | 25         |\n\n  | 中字原创区 | 转帖交流区 | HTTP 下载区 | 在线成人区 |\n  | ---------- | ---------- | ----------- | ---------- |\n  | 26         | 27         | 21          | 22         |\n\n  | 技术讨论区 | 新时代的我们 | 达盖尔的旗帜 | 成人文学交流 |\n  | ---------- | ------------ | ------------ | ------------ |\n  | 7          | 8            | 16           | 20           |\n\n  **主题过滤**\n\n  > 因为该类型无法搭配子类型使用，所以使用时 `type` 子类型需使用 `-999` 占位\n\n  | 今日主题 | 热门主题 | 精华主题 | 原创主题 | 今日新作  |\n  | ------- | ------- | ------- | ------- | ------ |\n  | today   | hot     | digest  | 1       | 2      |",
         "location": "index.ts"
       },
       "/post/:tid": {
@@ -59572,6 +59842,126 @@
     },
     "name": "电玩巴士 TGBUS",
     "url": "tgbus.com"
+  },
+  "the": {
+    "routes": {
+      "/:filter{.+}?": {
+        "path": "/:filter{.+}?",
+        "name": "分类",
+        "url": "the.bi",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/the",
+        "parameters": {
+          "filter": "过滤器，见下方描述"
+        },
+        "description": ":::tip\n  如果你想订阅特定类别或标签，可以在路由中填写 filter 参数。`/category/rawmw7dsta2jew` 可以实现订阅 [剩余价值](https://the.bi/s/rawmw7dsta2jew) 类别。此时，路由是 [`/the/category/rawmw7dsta2jew/`](https://rsshub.app/the/category/rawmw7dsta2jew).\n\n  你还可以订阅多个类别。`/category/rawmw7dsta2jew,rawbcvxkktdkq8/` 可以实现同时订阅 [剩余价值](https://the.bi/s/rawmw7dsta2jew) 和 [打江山](https://the.bi/s/rawbcvxkktdkq8) 两个类别。此时，路由是 [`/the/category/rawmw7dsta2jew,rawbcvxkktdkq8`](https://rsshub.app/the/category/rawmw7dsta2jew,rawbcvxkktdkq8).\n\n  类别和标签也可以合并订阅。`/category/rawmw7dsta2jew/tag/raweekl3na8trq` 订阅 [剩余价值](https://the.bi/s/rawmw7dsta2jew) 类别和 [动物](https://the.bi/s/raweekl3na8trq) 标签。此时，路由是 [`/the/category/rawmw7dsta2jew/tag/raweekl3na8trq`](https://rsshub.app/the/category/rawmw7dsta2jew/tag/raweekl3na8trq).\n\n  你还可以搜索关键字。`/search/中国` 搜索关键字 [中国](https://the.bi/s/?s=中国)。在这种情况下，路径是 [`/the/search/中国`](https://rsshub.app/the/search/中国).\n  :::\n\n  | 分类                                           | ID                                                               |\n  | ---------------------------------------------- | ---------------------------------------------------------------- |\n  | [时局图](https://the.bi/s/rawj7o4ypewv94)      | [rawj7o4ypewv94](https://rsshub.app/the/category/rawj7o4ypewv94) |\n  | [剩余价值](https://the.bi/s/rawmw7dsta2jew)    | [rawmw7dsta2jew](https://rsshub.app/the/category/rawmw7dsta2jew) |\n  | [打江山](https://the.bi/s/rawbcvxkktdkq8)      | [rawbcvxkktdkq8](https://rsshub.app/the/category/rawbcvxkktdkq8) |\n  | [中国经济](https://the.bi/s/raw4krvx85dh27)    | [raw4krvx85dh27](https://rsshub.app/the/category/raw4krvx85dh27) |\n  | [水深火热](https://the.bi/s/rawtn8jpsc6uvv)    | [rawtn8jpsc6uvv](https://rsshub.app/the/category/rawtn8jpsc6uvv) |\n  | [东升西降](https://the.bi/s/rawai5kd4z15il)    | [rawai5kd4z15il](https://rsshub.app/the/category/rawai5kd4z15il) |\n  | [大局 & 大棋](https://the.bi/s/raw2efkzejrsx8) | [raw2efkzejrsx8](https://rsshub.app/the/category/raw2efkzejrsx8) |\n  | [境外势力](https://the.bi/s/rawmpalhnlphuc)    | [rawmpalhnlphuc](https://rsshub.app/the/category/rawmpalhnlphuc) |\n  | [副刊](https://the.bi/s/rawxght2jr2u5z)        | [rawxght2jr2u5z](https://rsshub.app/the/category/rawxght2jr2u5z) |\n  | [天高地厚](https://the.bi/s/rawrsnh9zakqdx)    | [rawrsnh9zakqdx](https://rsshub.app/the/category/rawrsnh9zakqdx) |\n  | [Oyster](https://the.bi/s/rawdhl9hugdfn9)      | [rawdhl9hugdfn9](https://rsshub.app/the/category/rawdhl9hugdfn9) |\n  ",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "the.bi/s/:category?"
+            ]
+          },
+          {
+            "title": "时局图",
+            "source": [
+              "the.bi/s/rawj7o4ypewv94"
+            ],
+            "target": "/category/rawj7o4ypewv94"
+          },
+          {
+            "title": "剩余价值",
+            "source": [
+              "the.bi/s/rawmw7dsta2jew"
+            ],
+            "target": "/category/rawmw7dsta2jew"
+          },
+          {
+            "title": "打江山",
+            "source": [
+              "the.bi/s/rawbcvxkktdkq8"
+            ],
+            "target": "/category/rawbcvxkktdkq8"
+          },
+          {
+            "title": "中国经济",
+            "source": [
+              "the.bi/s/raw4krvx85dh27"
+            ],
+            "target": "/category/raw4krvx85dh27"
+          },
+          {
+            "title": "水深火热",
+            "source": [
+              "the.bi/s/rawtn8jpsc6uvv"
+            ],
+            "target": "/category/rawtn8jpsc6uvv"
+          },
+          {
+            "title": "东升西降",
+            "source": [
+              "the.bi/s/rawai5kd4z15il"
+            ],
+            "target": "/category/rawai5kd4z15il"
+          },
+          {
+            "title": "大局 & 大棋",
+            "source": [
+              "the.bi/s/raw2efkzejrsx8"
+            ],
+            "target": "/category/raw2efkzejrsx8"
+          },
+          {
+            "title": "境外势力",
+            "source": [
+              "the.bi/s/rawmpalhnlphuc"
+            ],
+            "target": "/category/rawmpalhnlphuc"
+          },
+          {
+            "title": "副刊",
+            "source": [
+              "the.bi/s/rawxght2jr2u5z"
+            ],
+            "target": "/category/rawxght2jr2u5z"
+          },
+          {
+            "title": "天高地厚",
+            "source": [
+              "the.bi/s/rawrsnh9zakqdx"
+            ],
+            "target": "/category/rawrsnh9zakqdx"
+          },
+          {
+            "title": "Oyster",
+            "source": [
+              "the.bi/s/rawdhl9hugdfn9"
+            ],
+            "target": "/category/rawdhl9hugdfn9"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "The.bi",
+    "url": "the.bi",
+    "categories": [
+      "new-media"
+    ],
+    "description": ""
   },
   "theatlantic": {
     "routes": {
@@ -68562,6 +68952,35 @@
         ],
         "url": "yicai.com/brief",
         "location": "brief.ts"
+      },
+      "/carousel": {
+        "path": "/carousel",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/yicai/carousel",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "yicai.com/"
+            ]
+          }
+        ],
+        "name": "轮播",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "url": "yicai.com/",
+        "location": "carousel.ts"
       },
       "/dt/:column?/:category?": {
         "path": "/dt/:column?/:category?",

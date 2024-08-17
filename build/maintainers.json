@@ -78,11 +78,11 @@
   "/0x80/blog": [
     "xnum"
   ],
-  "/141jav/{.*}?": [
+  "/141jav/:type/:keyword{.*}?": [
     "cgkings",
     "nczitzk"
   ],
-  "/141ppv/{.*}?": [
+  "/141ppv/:type/:keyword{.*}?": [
     "cgkings",
     "nczitzk"
   ],
@@ -186,6 +186,9 @@
   ],
   "/51cto/index/recommend": [
     "cnkmmk"
+  ],
+  "/51read/article/:id": [
+    "lazwa34"
   ],
   "/52hrtt/:area?/:type?": [
     "nczitzk"
@@ -909,6 +912,9 @@
   ],
   "/buaa/sme/:path{.+}?": [
     "MeanZhang"
+  ],
+  "/buaa/lib/space/:path{newbook.*}": [
+    "OverflowCat"
   ],
   "/buaa/news/:type": [
     "AlanDecode"
@@ -2185,7 +2191,7 @@
   ],
   "/gdsrx/:id?": [],
   "/gdut/oa_news/:type?": [
-    "Jim Kirisame"
+    "jim-kirisame"
   ],
   "/gelonghui/home/:tag?": [
     "TonyRL"
@@ -2339,6 +2345,9 @@
   ],
   "/google/news/:category/:locale": [
     "zoenglinghou"
+  ],
+  "/google/research": [
+    "Levix"
   ],
   "/google/scholar/:query": [
     "HenryQW"
@@ -2619,6 +2628,12 @@
   ],
   "/gov/zhengce/zhengceku/:department": [
     "zxx-457"
+  ],
+  "/gov/zj/ningbogzw-notice/:colId?": [
+    "HaoyuLee"
+  ],
+  "/gov/zj/ningborsjnotice/:colId?": [
+    "HaoyuLee"
   ],
   "/gov/zj/search/:websiteid?/:word/:cateid?": [
     "HaoyuLee"
@@ -3108,6 +3123,9 @@
   ],
   "/imiker/ask/jinghua": [
     "nczitzk"
+  ],
+  "/imop/tianshu": [
+    "zhkgo"
   ],
   "/indiansinkuwait/latest": [
     "TonyRL"
@@ -3629,6 +3647,9 @@
     "nczitzk",
     "ma6254"
   ],
+  "/lmu/jobs": [
+    "StarDxxx"
+  ],
   "/lofter/tag/:name?/:type?": [
     "hoilc",
     "nczitzk",
@@ -3879,6 +3900,9 @@
   ],
   "/misskey/notes/featured/:site": [
     "Misaka13514"
+  ],
+  "/misskey/users/notes/:username": [
+    "siygle"
   ],
   "/mittrchina/:type?": [
     "EsuRt",
@@ -5346,6 +5370,9 @@
   "/showstart/search/:type/:keyword?": [
     "lchtao26"
   ],
+  "/showstart/site/:siteId": [
+    "lchtao26"
+  ],
   "/shu/:type?": [
     "lonelyion"
   ],
@@ -5709,7 +5736,7 @@
   "/szu/yz/:type?": [
     "NagaruZ"
   ],
-  "/t66y/:id/:type?": [
+  "/t66y/:id/:type?/:search?": [
     "zhboner"
   ],
   "/t66y/post/:tid": [
@@ -5831,6 +5858,9 @@
   ],
   "/tgbus/list/:category": [
     "Xzonn"
+  ],
+  "/the/:filter{.+}?": [
+    "nczitzk"
   ],
   "/theatlantic/:category": [
     "EthanWng97"
@@ -6741,6 +6771,9 @@
   ],
   "/yicai/brief": [
     "sanmmm",
+    "nczitzk"
+  ],
+  "/yicai/carousel": [
     "nczitzk"
   ],
   "/yicai/dt/:column?/:category?": [

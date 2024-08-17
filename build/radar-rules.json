@@ -528,6 +528,29 @@
       }
     ]
   },
+  "51read.org": {
+    "_name": "51Read",
+    "m": [
+      {
+        "title": "章节",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/xiaoshuo/:id"
+        ],
+        "target": "/51read/article/:id"
+      }
+    ],
+    ".": [
+      {
+        "title": "章节",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/xiaoshuo/:id"
+        ],
+        "target": "/51read/article/:id"
+      }
+    ]
+  },
   "52hrtt.com": {
     "_name": "52hrtt 华人头条",
     ".": [
@@ -4562,7 +4585,7 @@
     ".": [
       {
         "title": "Official Blogs",
-        "docs": "https://docs.rsshub.app/routes/blog",
+        "docs": "https://docs.rsshub.app/routes/game",
         "source": [
           "/blog"
         ],
@@ -6526,6 +6549,19 @@
       }
     ]
   },
+  "research.google": {
+    "_name": "Google",
+    ".": [
+      {
+        "title": "Research Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/google/research"
+      }
+    ]
+  },
   "ah.gov.cn": {
     "_name": "上海市人民政府",
     "kjt": [
@@ -7253,6 +7289,29 @@
       }
     ]
   },
+  "ningbo.gov.cn": {
+    "_name": "上海市人民政府",
+    "gzw": [
+      {
+        "title": "宁波市国资委-公告",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/col/col1229116730/index.html"
+        ],
+        "target": "/gov/zj/ningbogzw-notice/:colId?"
+      }
+    ],
+    "rsj": [
+      {
+        "title": "宁波市人力资源和社会保障局-公告",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/col/col1229676740/index.html"
+        ],
+        "target": "/gov/zj/ningborsjnotice/:colId?"
+      }
+    ]
+  },
   "zj.gov.cn": {
     "_name": "上海市人民政府",
     "search": [
@@ -7907,6 +7966,19 @@
   },
   "hket.com": {
     "_name": "香港经济日报",
+    "china": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:category/*",
+          "/:category/*",
+          "/:category/*",
+          "/:category/*"
+        ],
+        "target": "/hket/:category"
+      }
+    ],
     "www": [
       {
         "title": "新闻",
@@ -7914,7 +7986,7 @@
         "source": [
           "/"
         ],
-        "target": "/hket/:category?"
+        "target": "/hket/"
       }
     ]
   },
@@ -8752,6 +8824,19 @@
           "/explore/find"
         ],
         "target": "/imiker/ask/jinghua"
+      }
+    ]
+  },
+  "imop.com": {
+    "_name": "imop",
+    "t": [
+      {
+        "title": "全部消息",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/"
+        ],
+        "target": "/imop/tianshu"
       }
     ]
   },
@@ -10133,6 +10218,19 @@
           "/"
         ],
         "target": "/lkong/thread/:id"
+      }
+    ]
+  },
+  "lmu.de": {
+    "_name": "Ludwig Maximilian University of Munich",
+    "www": [
+      {
+        "title": "Job Openings",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/en/about-lmu/working-at-lmu/job-portal/academic-staff/"
+        ],
+        "target": "/lmu/lmu/jobs"
       }
     ]
   },
@@ -15364,7 +15462,7 @@
     "_name": "秀动网",
     "www": [
       {
-        "title": "音乐人 - 演出更新",
+        "title": "按音乐人 - 演出更新",
         "docs": "https://docs.rsshub.app/routes/shopping",
         "source": [
           "/artist/:id"
@@ -15372,12 +15470,20 @@
         "target": "/showstart/artist/:id"
       },
       {
-        "title": "厂牌 - 演出更新",
+        "title": "按厂牌 - 演出更新",
         "docs": "https://docs.rsshub.app/routes/shopping",
         "source": [
           "/host/:id"
         ],
         "target": "/showstart/brand/:id"
+      },
+      {
+        "title": "按场地 - 演出更新",
+        "docs": "https://docs.rsshub.app/routes/shopping",
+        "source": [
+          "/venue/:id"
+        ],
+        "target": "/showstart/site/:siteId"
       }
     ]
   },
@@ -16621,6 +16727,107 @@
           "/list/:category/"
         ],
         "target": "/tgbus/list/:category"
+      }
+    ]
+  },
+  "the.bi": {
+    "_name": "The.bi",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/s/:category"
+        ],
+        "target": "/theparams=>{const category=params.category;return`/the${category?`/category/${category}`:\"\"}`}"
+      },
+      {
+        "title": "时局图",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/s/rawj7o4ypewv94"
+        ],
+        "target": "/the/category/rawj7o4ypewv94"
+      },
+      {
+        "title": "剩余价值",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/s/rawmw7dsta2jew"
+        ],
+        "target": "/the/category/rawmw7dsta2jew"
+      },
+      {
+        "title": "打江山",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/s/rawbcvxkktdkq8"
+        ],
+        "target": "/the/category/rawbcvxkktdkq8"
+      },
+      {
+        "title": "中国经济",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/s/raw4krvx85dh27"
+        ],
+        "target": "/the/category/raw4krvx85dh27"
+      },
+      {
+        "title": "水深火热",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/s/rawtn8jpsc6uvv"
+        ],
+        "target": "/the/category/rawtn8jpsc6uvv"
+      },
+      {
+        "title": "东升西降",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/s/rawai5kd4z15il"
+        ],
+        "target": "/the/category/rawai5kd4z15il"
+      },
+      {
+        "title": "大局 & 大棋",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/s/raw2efkzejrsx8"
+        ],
+        "target": "/the/category/raw2efkzejrsx8"
+      },
+      {
+        "title": "境外势力",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/s/rawmpalhnlphuc"
+        ],
+        "target": "/the/category/rawmpalhnlphuc"
+      },
+      {
+        "title": "副刊",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/s/rawxght2jr2u5z"
+        ],
+        "target": "/the/category/rawxght2jr2u5z"
+      },
+      {
+        "title": "天高地厚",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/s/rawrsnh9zakqdx"
+        ],
+        "target": "/the/category/rawrsnh9zakqdx"
+      },
+      {
+        "title": "Oyster",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/s/rawdhl9hugdfn9"
+        ],
+        "target": "/the/category/rawdhl9hugdfn9"
       }
     ]
   },
@@ -18844,6 +19051,14 @@
           "/brief"
         ],
         "target": "/yicai/brief"
+      },
+      {
+        "title": "轮播",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/"
+        ],
+        "target": "/yicai/carousel"
       },
       {
         "title": "关注",
