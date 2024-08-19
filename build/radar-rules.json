@@ -1279,14 +1279,6 @@
         "target": "/apnews/rss/:rss"
       },
       {
-        "title": "Sitemap",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/"
-        ],
-        "target": "/apnews/sitemap/:route"
-      },
-      {
         "title": "Topics",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
@@ -3144,7 +3136,7 @@
           "/lm/xwlb",
           "/"
         ],
-        "target": "/cctv/:site/:category/:name"
+        "target": "/cctv/xwlb"
       }
     ],
     "navi": [
@@ -8058,19 +8050,6 @@
       }
     ]
   },
-  "hottoys.com.hk": {
-    "_name": "Hot Toys",
-    ".": [
-      {
-        "title": "Toys List",
-        "docs": "https://docs.rsshub.app/routes/shopping",
-        "source": [
-          "/"
-        ],
-        "target": "/hottoys/"
-      }
-    ]
-  },
   "hotukdeals.com": {
     "_name": "hotukdeals",
     "www": [
@@ -8951,14 +8930,6 @@
     "_name": "infzm",
     ".": [
       {
-        "title": "热门文章",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/"
-        ],
-        "target": "/infzm/hot"
-      },
-      {
         "title": "频道",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
@@ -9497,123 +9468,6 @@
           "/xwzx/zsjy.htm"
         ],
         "target": "/jlu/ccst/xwzx/:category"
-      }
-    ]
-  },
-  "joins.com": {
-    "_name": "中央日报",
-    "chinese": [
-      {
-        "title": "中央日报中文版",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html"
-        ],
-        "target": "/joinsurl=>{const category=url.searchParams.get(\"sc_section_code\");return`/joins/chinese${category?`/${category}`:\"\"}`}"
-      },
-      {
-        "title": "财经",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N1"
-        ],
-        "target": "/joins/chinese/S1N1"
-      },
-      {
-        "title": "国际",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N2"
-        ],
-        "target": "/joins/chinese/S1N2"
-      },
-      {
-        "title": "北韩",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N3"
-        ],
-        "target": "/joins/chinese/S1N3"
-      },
-      {
-        "title": "政治·社会",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N4"
-        ],
-        "target": "/joins/chinese/S1N4"
-      },
-      {
-        "title": "中国观察",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N5"
-        ],
-        "target": "/joins/chinese/S1N5"
-      },
-      {
-        "title": "社论",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N26"
-        ],
-        "target": "/joins/chinese/S1N26"
-      },
-      {
-        "title": "专栏·观点",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N11"
-        ],
-        "target": "/joins/chinese/S1N11"
-      },
-      {
-        "title": "军事·科技",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N6"
-        ],
-        "target": "/joins/chinese/S1N6"
-      },
-      {
-        "title": "娱乐体育",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N7"
-        ],
-        "target": "/joins/chinese/S1N7"
-      },
-      {
-        "title": "教育",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N8"
-        ],
-        "target": "/joins/chinese/S1N8"
-      },
-      {
-        "title": "旅游美食",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N9"
-        ],
-        "target": "/joins/chinese/S1N9"
-      },
-      {
-        "title": "时尚",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N10"
-        ],
-        "target": "/joins/chinese/S1N10"
-      },
-      {
-        "title": "图集",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/articleList.html?sc_section_code=S1N12"
-        ],
-        "target": "/joins/chinese/S1N12"
       }
     ]
   },
@@ -18852,7 +18706,7 @@
         "target": "/xiaohongshu/board/:board_id"
       },
       {
-        "title": "用户笔记 全文",
+        "title": "Unknown",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/user/profile/:user_id"

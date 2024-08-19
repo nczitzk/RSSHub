@@ -427,12 +427,6 @@
     "mjysci",
     "TonyRL"
   ],
-  "/apnews/sitemap/:route": [
-    "zoenglinghou",
-    "mjysci",
-    "TonyRL",
-    "dzx-dzx"
-  ],
   "/apnews/topics/:topic?": [
     "zoenglinghou",
     "mjysci",
@@ -1099,7 +1093,7 @@
   "/cctv/lm/:id?": [
     "nczitzk"
   ],
-  "/cctv/:site/:category/:name": [
+  "/cctv/xwlb": [
     "zengxs"
   ],
   "/cde/:channel/:category": [
@@ -2896,9 +2890,6 @@
     "nczitzk"
   ],
   "/hostmonit/cloudflareyesv6": [],
-  "/hottoys/": [
-    "jw0903"
-  ],
   "/hotukdeals/hottest": [
     "DIYgod"
   ],
@@ -3167,11 +3158,6 @@
   "/informs/:category?": [
     "Fatpandac"
   ],
-  "/infzm/hot": [
-    "KarasuShin",
-    "ranpox",
-    "xyqfer"
-  ],
   "/infzm/:id": [
     "KarasuShin",
     "ranpox",
@@ -3403,9 +3389,6 @@
   ],
   "/jlu/ccst/xwzx/:category": [
     "mayouxi"
-  ],
-  "/joins/chinese/:category?": [
-    "nczitzk"
   ],
   "/jornada/:date?/:category?": [
     "Thealf154"
@@ -6626,12 +6609,8 @@
   "/xiaohongshu/board/:board_id": [
     "lotosbin"
   ],
-  "/xiaohongshu/user/:user_id/notes/fulltext": [
-    "howerhe"
-  ],
-  "/xiaohongshu/user/:user_id/:category": [
-    "lotosbin"
-  ],
+  "/xiaohongshu/user/:user_id/notes/fulltext": [],
+  "/xiaohongshu/user/:user_id/:category": [],
   "/xiaomiyoupin/crowdfunding": [
     "bigfei"
   ],
