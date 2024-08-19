@@ -4470,6 +4470,42 @@
         ],
         "location": "rss.ts"
       },
+      "/sitemap/:route": {
+        "path": "/sitemap/:route",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/apnews/sitemap/ap-sitemap-latest",
+        "view": 0,
+        "parameters": {
+          "route": {
+            "description": "Route for sitemap, excluding the `.xml` extension"
+          }
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "apnews.com/"
+            ]
+          }
+        ],
+        "name": "Sitemap",
+        "maintainers": [
+          "zoenglinghou",
+          "mjysci",
+          "TonyRL",
+          "dzx-dzx"
+        ],
+        "location": "sitemap.ts"
+      },
       "/topics/:topic?": {
         "path": "/topics/:topic?",
         "categories": [
@@ -11341,13 +11377,25 @@
         "description": "| 焦点访谈 | 等着我 | 今日说法 | 开讲啦 |\n  | -------- | ------ | -------- | ------ |\n  | jdft     | dzw    | jrsf     | kjl    |\n\n  | 正大综艺 | 经济半小时 | 第一动画乐园 |\n  | -------- | ---------- | ------------ |\n  | zdzy     | jjbxs      | dydhly       |\n\n  :::tip\n  更多栏目请看 [这里](https://tv.cctv.com/lm)\n  :::",
         "location": "lm.ts"
       },
-      "/xwlb": {
-        "path": "/xwlb",
+      "/:site/:category/:name": {
+        "path": "/:site/:category/:name",
         "categories": [
           "traditional-media"
         ],
-        "example": "/cctv/xwlb",
-        "parameters": {},
+        "example": "/cctv/tv/lm/xwlb",
+        "parameters": {
+          "site": "站点, 可选值如'tv', 既'央视节目'",
+          "category": "分类名, 官网对应分类, 当前可选值'lm', 既'栏目大全'",
+          "name": {
+            "description": "栏目名称, 可在对应栏目页面 URL 中找到, 可选值如'xwlb',既'新闻联播'",
+            "options": [
+              {
+                "value": "xwlb",
+                "label": "新闻联播"
+              }
+            ]
+          }
+        },
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
@@ -29340,6 +29388,35 @@
     "name": "全球主机监控",
     "url": "stock.hostmonit.com"
   },
+  "hottoys": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "shopping"
+        ],
+        "example": "/hottoys",
+        "radar": [
+          {
+            "source": [
+              "hottoys.com.hk/"
+            ]
+          }
+        ],
+        "name": "Toys List",
+        "maintainers": [
+          "jw0903"
+        ],
+        "url": "hottoys.com.hk/",
+        "features": {
+          "requirePuppeteer": true
+        },
+        "location": "index.ts"
+      }
+    },
+    "name": "Hot Toys",
+    "url": "www.hottoys.com.hk"
+  },
   "hotukdeals": {
     "routes": {
       "/hottest": {
@@ -32137,6 +32214,28 @@
   "infzm": {
     "name": "infzm",
     "routes": {
+      "/hot": {
+        "path": "/hot",
+        "parameters": {},
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/infzm/hot",
+        "radar": [
+          {
+            "source": [
+              "infzm.com/"
+            ]
+          }
+        ],
+        "name": "热门文章",
+        "maintainers": [
+          "KarasuShin",
+          "ranpox",
+          "xyqfer"
+        ],
+        "location": "hot.ts"
+      },
       "/:id": {
         "path": "/:id",
         "parameters": {
@@ -34441,6 +34540,140 @@
     },
     "name": "吉林大学",
     "url": "jlu.edu.cn"
+  },
+  "joins": {
+    "routes": {
+      "/chinese/:category?": {
+        "path": "/chinese/:category?",
+        "name": "中央日报中文版",
+        "url": "chinese.joins.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/chinese",
+        "parameters": {
+          "category": "分类，默认为空，可在对应分类页 URL 中找到 `sc_section_code`"
+        },
+        "description": ":::tip\n  若订阅 [财经](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1)，网址为 `https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1`。截取 `sc_section_code` 的值作为参数填入，此时路由为 [`/joins/chinese/S1N1`](https://rsshub.app/joins/chinese/S1N1)。\n  :::\n\n  | 分类                                                                                       | `sc_section_code`                             |\n  | ------------------------------------------------------------------------------------------ | ----------------------------------------------- |\n  | [财经](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1)               | [S1N1](https://rsshub.app/joins/chinese/S1N1)   |\n  | [国际](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N2)               | [S1N2](https://rsshub.app/joins/chinese/S1N2)   |\n  | [北韩](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N3)               | [S1N3](https://rsshub.app/joins/chinese/S1N3)   |\n  | [政治·社会](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N4)          | [S1N4](https://rsshub.app/joins/chinese/S1N4)   |\n  | [中国观察](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N5)           | [S1N5](https://rsshub.app/joins/chinese/S1N5)   |\n  | [社论](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N26)              | [S1N26](https://rsshub.app/joins/chinese/S1N26) |\n  | [专栏·观点](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N11)         | [S1N11](https://rsshub.app/joins/chinese/S1N11) |\n  | [军事·科技](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N6)          | [S1N6](https://rsshub.app/joins/chinese/S1N6)   |\n  | [娱乐体育](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N7)           | [S1N7](https://rsshub.app/joins/chinese/S1N7)   |\n  | [教育](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N8)               | [S1N8](https://rsshub.app/joins/chinese/S1N8)   |\n  | [旅游美食](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N9)           | [S1N9](https://rsshub.app/joins/chinese/S1N9)   |\n  | [时尚](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N10)              | [S1N10](https://rsshub.app/joins/chinese/S1N10) |\n  | [图集](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N12&view_type=tm) | [S1N12](https://rsshub.app/joins/chinese/S1N12) |\n\n  ",
+        "categories": [
+          "traditional-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "chinese.joins.com/news/articleList.html"
+            ]
+          },
+          {
+            "title": "财经",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N1"
+            ],
+            "target": "/chinese/S1N1"
+          },
+          {
+            "title": "国际",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N2"
+            ],
+            "target": "/chinese/S1N2"
+          },
+          {
+            "title": "北韩",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N3"
+            ],
+            "target": "/chinese/S1N3"
+          },
+          {
+            "title": "政治·社会",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N4"
+            ],
+            "target": "/chinese/S1N4"
+          },
+          {
+            "title": "中国观察",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N5"
+            ],
+            "target": "/chinese/S1N5"
+          },
+          {
+            "title": "社论",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N26"
+            ],
+            "target": "/chinese/S1N26"
+          },
+          {
+            "title": "专栏·观点",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N11"
+            ],
+            "target": "/chinese/S1N11"
+          },
+          {
+            "title": "军事·科技",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N6"
+            ],
+            "target": "/chinese/S1N6"
+          },
+          {
+            "title": "娱乐体育",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N7"
+            ],
+            "target": "/chinese/S1N7"
+          },
+          {
+            "title": "教育",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N8"
+            ],
+            "target": "/chinese/S1N8"
+          },
+          {
+            "title": "旅游美食",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N9"
+            ],
+            "target": "/chinese/S1N9"
+          },
+          {
+            "title": "时尚",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N10"
+            ],
+            "target": "/chinese/S1N10"
+          },
+          {
+            "title": "图集",
+            "source": [
+              "chinese.joins.com/news/articleList.html?sc_section_code=S1N12"
+            ],
+            "target": "/chinese/S1N12"
+          }
+        ],
+        "location": "chinese.ts"
+      }
+    },
+    "name": "中央日报",
+    "url": "joins.com",
+    "categories": [
+      "traditional-media"
+    ],
+    "description": ""
   },
   "jornada": {
     "routes": {
@@ -67352,14 +67585,47 @@
             "target": "/user/:user_id/notes"
           }
         ],
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "用户笔记 全文",
+        "maintainers": [
+          "howerhe"
+        ],
+        "example": "/xiaohongshu/user/52d8c541b4c4d60e6c867480/notes/fulltext",
+        "features": {
+          "antiCrawler": true,
+          "requirePuppeteer": true
+        },
+        "parameters": {
+          "user_id": "user id, length 24 characters"
+        },
         "location": "notes.ts"
       },
       "/user/:user_id/:category": {
         "path": "/user/:user_id/:category",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "用户笔记",
+        "maintainers": [
+          "lotosbin"
+        ],
+        "example": "/xiaohongshu/user/593032945e87e77791e03696/notes",
+        "features": {
+          "antiCrawler": true,
+          "requirePuppeteer": true
+        },
+        "parameters": {
+          "user_id": "user id, length 24 characters",
+          "category": {
+            "description": "category, notes or collect",
+            "options": [
+              {
+                "value": "notes",
+                "label": "notes"
+              },
+              {
+                "value": "collect",
+                "label": "collect"
+              }
+            ]
+          }
+        },
         "location": "user.ts"
       }
     },
