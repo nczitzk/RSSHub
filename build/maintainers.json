@@ -2058,6 +2058,9 @@
   "/fjksbm/:category?": [
     "nczitzk"
   ],
+  "/flashcat/blog": [
+    "chesha1"
+  ],
   "/flyert/creditcard/:bank": [
     "nicolaszf"
   ],
@@ -2228,6 +2231,9 @@
   ],
   "/gihyo/list/group/:id": [
     "masakichi"
+  ],
+  "/gisreportsonline/:path{.*}": [
+    "dzx-dzx"
   ],
   "/gitee/commits/:owner/:repo": [
     "TonyRL"
@@ -2441,6 +2447,9 @@
   ],
   "/gov/jinan/healthcommission/medical_exam_notice": [
     "tzjyxb"
+  ],
+  "/gov/lswz/:category{.+}?": [
+    "nczitzk"
   ],
   "/gov/maoming/*": [],
   "/gov/maonan/:category": [
@@ -4118,7 +4127,7 @@
   "/newsmarket/:category?": [
     "nczitzk"
   ],
-  "/newyorker/:category/:subCategory?": [
+  "/newyorker/:category": [
     "EthanWng97"
   ],
   "/newzmz/:id?/:downLinkType?": [
@@ -5045,6 +5054,9 @@
   ],
   "/readwise/list/:routeParams?": [
     "xbot"
+  ],
+  "/rebase/geekdaily": [
+    "gaoyifan"
   ],
   "/remnote/changelog": [
     "TonyRL",
@@ -6049,6 +6061,9 @@
   ],
   "/topys/:keyword?": [
     "nczitzk"
+  ],
+  "/towardsdatascience/latest": [
+    "mintyfrankie"
   ],
   "/tradingview/blog/:category{.+}?": [],
   "/tradingview/desktop": [
