@@ -6024,6 +6024,19 @@
       }
     ]
   },
+  "ftm.eu": {
+    "_name": "Follow The Money",
+    "www": [
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/ftm/"
+      }
+    ]
+  },
   "fuliba2023.net": {
     "_name": "福利吧",
     ".": [
@@ -6078,6 +6091,19 @@
           "/kx"
         ],
         "target": "/fx678/kx"
+      }
+    ]
+  },
+  "galxe.com": {
+    "_name": "Galxe",
+    "app": [
+      {
+        "title": "Quest",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/quest/:alias"
+        ],
+        "target": "/galxe/quest/:alias"
       }
     ]
   },
@@ -7682,6 +7708,19 @@
       }
     ]
   },
+  "gs.com": {
+    "_name": "Goldman Sachs",
+    "developer": [
+      {
+        "title": "Goldman Sachs Developer Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/blog/posts"
+        ],
+        "target": "/gs/developer/blog"
+      }
+    ]
+  },
   "guancha.cn": {
     "_name": "观察者网",
     ".": [
@@ -9079,6 +9118,19 @@
           "/chart/:chart/"
         ],
         "target": "/imdb/chart/:chart?"
+      }
+    ]
+  },
+  "imhcg.cn": {
+    "_name": "imhcg的信息站",
+    "infos": [
+      {
+        "title": "Engineering blogs",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/imhcg/"
       }
     ]
   },
@@ -10505,6 +10557,27 @@
           "/"
         ],
         "target": "/line/today/:edition?/:tab?"
+      }
+    ]
+  },
+  "link3.to": {
+    "_name": "Link3",
+    ".": [
+      {
+        "title": "Link3 Events",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/events"
+        ],
+        "target": "/link3/events"
+      },
+      {
+        "title": "Link3 Profile",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/:handle"
+        ],
+        "target": "/link3/:handle"
       }
     ]
   },
@@ -16147,6 +16220,16 @@
         ],
         "target": "/smzdm/haowen/fenlei/:name"
       }
+    ],
+    "wiki": [
+      {
+        "title": "商品",
+        "docs": "https://docs.rsshub.app/routes/shopping",
+        "source": [
+          "/p/:id"
+        ],
+        "target": "/smzdm/product/:id"
+      }
     ]
   },
   "snowpeak.com": {
@@ -17974,7 +18057,8 @@
         "title": "Engineering",
         "docs": "https://docs.rsshub.app/routes/blog",
         "source": [
-          "/blog/pittsburgh/engineering"
+          "/:language/blog/engineering",
+          "/:language/blog"
         ],
         "target": "/uber/blog"
       }
@@ -18363,6 +18447,16 @@
         "target": "/ustc/math"
       }
     ],
+    "scms": [
+      {
+        "title": "化学与材料科学学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/ustc/scms"
+      }
+    ],
     "sist": [
       {
         "title": "信息科学技术学院",
@@ -18660,6 +18754,19 @@
           "/"
         ],
         "target": "/watasuke/blog"
+      }
+    ]
+  },
+  "wchscu.cn": {
+    "_name": "华西医院",
+    "www": [
+      {
+        "title": "招聘公告",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/public/notice/recruit"
+        ],
+        "target": "/wchscu/recruit"
       }
     ]
   },
@@ -19199,6 +19306,29 @@
           "/:id"
         ],
         "target": "/xiaozhuanlan/column/:id"
+      }
+    ]
+  },
+  "xidian.edu.cn": {
+    "_name": "西安电子科技大学",
+    "cs": [
+      {
+        "title": "计算机科学与技术学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/xidian/cs/:category?"
+      }
+    ],
+    "gr": [
+      {
+        "title": "研究生院/卓越工程师学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/xidian/gr/:category?"
       }
     ]
   },
