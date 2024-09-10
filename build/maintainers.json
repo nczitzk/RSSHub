@@ -625,6 +625,9 @@
   "/bendibao/news/:city": [
     "nczitzk"
   ],
+  "/bestblogs/feeds/:category?": [
+    "zhenlohuang"
+  ],
   "/bgmlist/onair/:lang?": [
     "x2cf"
   ],
@@ -1166,6 +1169,9 @@
   ],
   "/chiculture/topic/:category?": [
     "nczitzk"
+  ],
+  "/chikubi/:category?": [
+    "snowagar25"
   ],
   "/china/finance/:category?": [
     "KingJem"
@@ -2336,6 +2342,9 @@
     "TonyRL"
   ],
   "/globallawreview/": [
+    "nczitzk"
+  ],
+  "/go/mhlw/pdf/:category{.+}?": [
     "nczitzk"
   ],
   "/go/niid/idwr-dl/:year?": [
@@ -3766,6 +3775,9 @@
   ],
   "/lsnu/jiaowc/tzgg/:category?": [
     "nyaShine"
+  ],
+  "/luma/:url": [
+    "cxheng315"
   ],
   "/luogu/contest": [
     "prnake"

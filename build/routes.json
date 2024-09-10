@@ -6711,6 +6711,35 @@
     "name": "本地宝",
     "url": "bendibao.com"
   },
+  "bestblogs": {
+    "routes": {
+      "/feeds/:category?": {
+        "path": "/feeds/:category?",
+        "categories": [
+          "programming"
+        ],
+        "example": "/bestblogs/feeds/featured",
+        "parameters": {
+          "category": "the category of articles. Can be `programming`, `ai`, `product`, `business` or `featured`. Default is `featured`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "文章列表",
+        "maintainers": [
+          "zhenlohuang"
+        ],
+        "location": "feeds.ts"
+      }
+    },
+    "name": "bestblogs.dev",
+    "url": "www.bestblogs.dev"
+  },
   "bgmlist": {
     "routes": {
       "/onair/:lang?": {
@@ -12316,6 +12345,45 @@
     },
     "name": "通識・現代中國",
     "url": "chiculture.org.hk"
+  },
+  "chikubi": {
+    "routes": {
+      "/:category?": {
+        "path": "/:category?",
+        "categories": [
+          "multimedia"
+        ],
+        "example": "/chikubi",
+        "parameters": {
+          "category": "分類，見下表，默認爲最新"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Category",
+        "maintainers": [
+          "snowagar25"
+        ],
+        "description": "| 最新 | 殿堂 | 動畫 | VR | 漫畫 | 音聲 | CG |\n  | ------ | ---- | ----- | -- | ----- | ----- | -- |\n  | (empty) | best | video | vr | comic | voice | cg |",
+        "radar": [
+          {
+            "source": [
+              "chikubi.jp/:category",
+              "chikubi.jp/"
+            ],
+            "target": "/:category"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "乳首ふぇち",
+    "url": "chikubi.jp"
   },
   "china": {
     "routes": {
@@ -24528,6 +24596,39 @@
   },
   "go": {
     "routes": {
+      "/mhlw/pdf/:category{.+}?": {
+        "path": "/mhlw/pdf/:category{.+}?",
+        "name": "PDF",
+        "url": "www.mhlw.go.jp",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/go/mhlw/pdf/stf/seisakunitsuite/bunya/houkokusuunosuii",
+        "parameters": {
+          "category": "Category, `stf/seisakunitsuite/bunya/houkokusuunosuii` as 新型コロナウイルス感染症の定点当たり報告数の推移 by default"
+        },
+        "description": ":::tip\n  Subscribing to this route will give you access to all PDF files on this page.\n\n  If you subscribe to [新型コロナウイルス感染症の定点当たり報告数の推移](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/houkokusuunosuii.html)，where the URL is `https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/houkokusuunosuii.html`, extract the part `https://www.mhlw.go.jp/` to the end, which is `.html`, and use it as the parameter to fill in. Therefore, the route will be [`/go/mhlw/stf/seisakunitsuite/bunya/houkokusuunosuii`](https://rsshub.app/go/mhlw/stf/seisakunitsuite/bunya/houkokusuunosuii).\n  :::\n  ",
+        "categories": [
+          "government"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.mhlw.go.jp"
+            ]
+          }
+        ],
+        "location": "mhlw/pdf.ts"
+      },
       "/niid/idwr-dl/:year?": {
         "path": "/niid/idwr-dl/:year?",
         "name": "感染症発生動向調査週報ダウンロード",
@@ -39124,6 +39225,44 @@
     },
     "name": "乐山师范学院",
     "url": "lsnu.edu.cn"
+  },
+  "luma": {
+    "routes": {
+      "/:url": {
+        "path": "/:url",
+        "name": "Events",
+        "url": "lu.ma",
+        "maintainers": [
+          "cxheng315"
+        ],
+        "example": "/luma/yieldnest",
+        "categories": [
+          "other"
+        ],
+        "parameters": {
+          "url": "LuMa URL"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "lu.ma/:url"
+            ],
+            "target": "/:url"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "LuMa",
+    "url": "lu.ma"
   },
   "luogu": {
     "routes": {
