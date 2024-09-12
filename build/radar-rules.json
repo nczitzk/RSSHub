@@ -1471,6 +1471,14 @@
         "title": "News",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
+          "/"
+        ],
+        "target": "/apnews/api/:tags?"
+      },
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
           "/:rss"
         ],
         "target": "/apnews/rss/:rss"
@@ -5651,6 +5659,19 @@
       }
     ]
   },
+  "easynomad.cn": {
+    "_name": "轻松游牧-远程工作聚集地",
+    ".": [
+      {
+        "title": "远程工作列表",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/"
+        ],
+        "target": "/easynomad/"
+      }
+    ]
+  },
   "ecnu.edu.cn": {
     "_name": "East China Normal University 华东师范大学",
     "acm": [
@@ -6364,6 +6385,19 @@
       }
     ]
   },
+  "follow.is": {
+    "_name": "Follow",
+    "app": [
+      {
+        "title": "User subscriptions",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/profile/:uid"
+        ],
+        "target": "/follow/profile/:uid"
+      }
+    ]
+  },
   "followin.io": {
     "_name": "Followin",
     ".": [
@@ -6744,6 +6778,93 @@
           "/seeyon"
         ],
         "target": "/gdut/oa_news/"
+      }
+    ]
+  },
+  "geekpark.net": {
+    "_name": "极客公园",
+    ".": [
+      {
+        "title": "栏目",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/geekpark/"
+      },
+      {
+        "title": "栏目",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/column/:column"
+        ],
+        "target": "/geekparkparams=>{const column=params.column;return column?`/${column}`:\"\"}"
+      }
+    ],
+    "www": [
+      {
+        "title": "综合报道",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/column/179"
+        ],
+        "target": "/geekpark/179"
+      },
+      {
+        "title": "AI新浪潮观察",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/column/304"
+        ],
+        "target": "/geekpark/304"
+      },
+      {
+        "title": "新造车观察",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/column/305"
+        ],
+        "target": "/geekpark/305"
+      },
+      {
+        "title": "财报解读",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/column/271"
+        ],
+        "target": "/geekpark/271"
+      },
+      {
+        "title": "底稿对话CEO系列",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/column/308"
+        ],
+        "target": "/geekpark/308"
+      },
+      {
+        "title": "Geek Insight 特稿系列",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/column/306"
+        ],
+        "target": "/geekpark/306"
+      },
+      {
+        "title": "心科技",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/column/307"
+        ],
+        "target": "/geekpark/307"
+      },
+      {
+        "title": "行业资讯",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/column/2"
+        ],
+        "target": "/geekpark/2"
       }
     ]
   },
@@ -10827,6 +10948,19 @@
           "/blog/posts"
         ],
         "target": "/kadokawa/blog"
+      }
+    ]
+  },
+  "kakuyomu.jp": {
+    "_name": "カクヨム",
+    ".": [
+      {
+        "title": "投稿",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/works/:id"
+        ],
+        "target": "/kakuyomu/works/:id"
       }
     ]
   },

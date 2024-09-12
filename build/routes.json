@@ -4636,6 +4636,40 @@
   },
   "apnews": {
     "routes": {
+      "/api/:tags?": {
+        "path": "/api/:tags?",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/apnews/api/business",
+        "view": 0,
+        "parameters": {
+          "tags": {
+            "description": "Getting a list of articles from a public API based on tags. See https://github.com/kovidgoyal/calibre/blob/81666219718b5f57d56b149a7ac017cc2a76b931/recipes/ap.recipe#L43-L46",
+            "default": "apf-topnews"
+          }
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "apnews.com/"
+            ]
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "dzx-dzx"
+        ],
+        "location": "api.ts"
+      },
       "/rss/:category?": {
         "path": "/rss/:category?",
         "categories": [
@@ -19616,6 +19650,40 @@
     "name": "东方财富",
     "url": "data.eastmoney.com"
   },
+  "easynomad": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "other"
+        ],
+        "view": 5,
+        "example": "/easynomad",
+        "radar": [
+          {
+            "source": [
+              "easynomad.cn"
+            ]
+          }
+        ],
+        "name": "远程工作列表",
+        "maintainers": [
+          "jiangsong216"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "joblist.ts"
+      }
+    },
+    "name": "轻松游牧-远程工作聚集地",
+    "url": "easynomad.cn"
+  },
   "ecnu": {
     "routes": {
       "/acm/contest/:category?": {
@@ -21817,6 +21885,32 @@
     "name": "Focus Taiwan",
     "url": "focustaiwan.tw"
   },
+  "follow": {
+    "routes": {
+      "/profile/:uid": {
+        "name": "User subscriptions",
+        "path": "/profile/:uid",
+        "example": "/profile/41279032429549568",
+        "radar": [
+          {
+            "source": [
+              "app.follow.is/profile/:uid"
+            ],
+            "target": "/profile/:uid"
+          }
+        ],
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "supportRadar": true
+        },
+        "location": "profile.ts"
+      }
+    },
+    "name": "Follow",
+    "url": "app.follow.is"
+  },
   "followin": {
     "routes": {
       "/:categoryId?/:lang?": {
@@ -23374,6 +23468,111 @@
     },
     "name": "广东工业大学",
     "url": "oas.gdut.edu.cn"
+  },
+  "geekpark": {
+    "routes": {
+      "/:column?": {
+        "path": "/:column?",
+        "name": "栏目",
+        "url": "geekpark.net",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/geekpark",
+        "parameters": {
+          "column": "栏目 id，默认为空，即首页资讯，可在对应栏目页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [综合报道](https://www.geekpark.net/column/179)，网址为 `https://www.geekpark.net/column/179`。截取 `https://www.geekpark.net/column/` 到末尾的部分 `179` 作为参数填入，此时路由为 [`/geekpark/179`](https://rsshub.app/geekpark/179)。\n  :::\n  \n  | 栏目                                                         | ID                                     |\n  | ------------------------------------------------------------ | -------------------------------------- |\n  | [综合报道](https://www.geekpark.net/column/179)              | [179](https://rsshub.app/geekpark/179) |\n  | [AI新浪潮观察](https://www.geekpark.net/column/304)          | [304](https://rsshub.app/geekpark/304) |\n  | [新造车观察](https://www.geekpark.net/column/305)            | [305](https://rsshub.app/geekpark/305) |\n  | [财报解读](https://www.geekpark.net/column/271)              | [271](https://rsshub.app/geekpark/271) |\n  | [底稿对话CEO系列](https://www.geekpark.net/column/308)       | [308](https://rsshub.app/geekpark/308) |\n  | [Geek Insight 特稿系列](https://www.geekpark.net/column/306) | [306](https://rsshub.app/geekpark/306) |\n  | [心科技](https://www.geekpark.net/column/307)                | [307](https://rsshub.app/geekpark/307) |\n  | [行业资讯](https://www.geekpark.net/column/2)                | [2](https://rsshub.app/geekpark/2)     |\n  ",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "geekpark.net"
+            ],
+            "target": "/"
+          },
+          {
+            "source": [
+              "geekpark.net/column/:column?"
+            ]
+          },
+          {
+            "title": "综合报道",
+            "source": [
+              "www.geekpark.net/column/179"
+            ],
+            "target": "/179"
+          },
+          {
+            "title": "AI新浪潮观察",
+            "source": [
+              "www.geekpark.net/column/304"
+            ],
+            "target": "/304"
+          },
+          {
+            "title": "新造车观察",
+            "source": [
+              "www.geekpark.net/column/305"
+            ],
+            "target": "/305"
+          },
+          {
+            "title": "财报解读",
+            "source": [
+              "www.geekpark.net/column/271"
+            ],
+            "target": "/271"
+          },
+          {
+            "title": "底稿对话CEO系列",
+            "source": [
+              "www.geekpark.net/column/308"
+            ],
+            "target": "/308"
+          },
+          {
+            "title": "Geek Insight 特稿系列",
+            "source": [
+              "www.geekpark.net/column/306"
+            ],
+            "target": "/306"
+          },
+          {
+            "title": "心科技",
+            "source": [
+              "www.geekpark.net/column/307"
+            ],
+            "target": "/307"
+          },
+          {
+            "title": "行业资讯",
+            "source": [
+              "www.geekpark.net/column/2"
+            ],
+            "target": "/2"
+          }
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "极客公园",
+    "url": "geekpark.net",
+    "categories": [
+      "new-media"
+    ],
+    "description": ""
   },
   "gelonghui": {
     "routes": {
@@ -36804,6 +37003,38 @@
       "shopping"
     ],
     "description": "TAIWAN KADOKAWA"
+  },
+  "kakuyomu": {
+    "routes": {
+      "/works/:id": {
+        "name": "投稿",
+        "categories": [
+          "reading"
+        ],
+        "path": "/works/:id",
+        "example": "/kakuyomu/works/1177354054894027232",
+        "parameters": {
+          "id": "投稿 ID"
+        },
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "kakuyomu.jp/works/:id"
+            ],
+            "target": "/works/:id"
+          }
+        ],
+        "location": "works.ts"
+      }
+    },
+    "name": "カクヨム",
+    "url": "kakuyomu.jp"
   },
   "kamen-rider-official": {
     "routes": {
@@ -53783,8 +54014,8 @@
   },
   "samd": {
     "routes": {
-      "news/:typeId": {
-        "path": "news/:typeId",
+      "/news/:typeId": {
+        "path": "/news/:typeId",
         "categories": [
           "government"
         ],
