@@ -6933,6 +6933,29 @@
         ],
         "location": "bangumi.ts"
       },
+      "/precious/:disableEmbed?": {
+        "path": "/precious/:disableEmbed?",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/bilibili/precious",
+        "parameters": {
+          "disableEmbed": "默认为开启内嵌视频, 任意值为关闭"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "入站必刷",
+        "maintainers": [
+          "liuyuhe666"
+        ],
+        "location": "bilibili-recommend.ts"
+      },
       "/user/coin/:uid/:disableEmbed?": {
         "path": "/user/coin/:uid/:disableEmbed?",
         "categories": [
@@ -6999,7 +7022,7 @@
         "example": "/bilibili/user/dynamic/2267573",
         "parameters": {
           "uid": "用户 id, 可在 UP 主主页中找到",
-          "routeParams": "\n| 键           | 含义                              | 接受的值       | 默认值 |\n| ------------ | --------------------------------- | -------------- | ------ |\n| showEmoji    | 显示或隐藏表情图片                | 0/1/true/false | false  |\n| disableEmbed | 关闭内嵌视频                      | 0/1/true/false | false  |\n| useAvid      | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n| directLink   | 使用内容直链                      | 0/1/true/false | false  |\n\n用例：`/bilibili/user/dynamic/2267573/showEmoji=1&disableEmbed=1&useAvid=1`"
+          "routeParams": "\n| 键           | 含义                              | 接受的值       | 默认值 |\n| ------------ | --------------------------------- | -------------- | ------ |\n| showEmoji    | 显示或隐藏表情图片                | 0/1/true/false | false  |\n| disableEmbed | 关闭内嵌视频                      | 0/1/true/false | false  |\n| useAvid      | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n| directLink   | 使用内容直链                      | 0/1/true/false | false  |\n| hideGoods    | 隐藏带货动态                      | 0/1/true/false | false  |\n\n用例：`/bilibili/user/dynamic/2267573/showEmoji=1&disableEmbed=1&useAvid=1`"
         },
         "features": {
           "requireConfig": [
@@ -8459,6 +8482,95 @@
     },
     "name": "Bitbucket",
     "url": "bitbucket.com"
+  },
+  "bitget": {
+    "routes": {
+      "/announcement/:type/:lang?": {
+        "path": "/announcement/:type/:lang?",
+        "categories": [
+          "finance"
+        ],
+        "example": "/bitget/announcement/all/zh-CN",
+        "parameters": {
+          "type": {
+            "description": "Bitget 通知类型",
+            "default": "all",
+            "options": [
+              {
+                "value": "all",
+                "label": "全部通知"
+              },
+              {
+                "value": "new-listing",
+                "label": "新币上线"
+              },
+              {
+                "value": "latest-activities",
+                "label": "最新活动"
+              },
+              {
+                "value": "new-announcement",
+                "label": "最新公告"
+              }
+            ]
+          },
+          "lang": {
+            "description": "语言",
+            "default": "zh-CN",
+            "options": [
+              {
+                "value": "zh-CN",
+                "label": "中文"
+              },
+              {
+                "value": "en-US",
+                "label": "English"
+              },
+              {
+                "value": "es-ES",
+                "label": "Español"
+              },
+              {
+                "value": "fr-FR",
+                "label": "Français"
+              },
+              {
+                "value": "de-DE",
+                "label": "Deutsch"
+              },
+              {
+                "value": "ja-JP",
+                "label": "日本語"
+              },
+              {
+                "value": "ru-RU",
+                "label": "Русский"
+              },
+              {
+                "value": "ar-SA",
+                "label": "العربية"
+              }
+            ]
+          }
+        },
+        "radar": [
+          {
+            "source": [
+              "www.bitget.com/:lang/inmail"
+            ],
+            "target": "/announcement/all/:lang"
+          }
+        ],
+        "name": "Announcement",
+        "description": "\ntype:\n| Type | Description |\n| --- | --- |\n| all | 全部通知 |\n| new-listing | 新币上线 |\n| latest-activities | 最新活动 |\n| new-announcement | 最新公告 |\n\nlang:\n| Lang | Description |\n| ---   | ---   |\n| zh-CN | 中文 |\n| en-US | English |\n| es-ES | Español |\n| fr-FR | Français |\n| de-DE | Deutsch |\n| ja-JP | 日本語 |\n| ru-RU | Русский |\n| ar-SA | العربية |\n",
+        "maintainers": [
+          "YukiCoco"
+        ],
+        "location": "announcement.ts"
+      }
+    },
+    "name": "Bitget",
+    "url": "bitget.com"
   },
   "bitmovin": {
     "routes": {
@@ -17221,6 +17333,36 @@
         "description": ":::warning\nIf you opt to enable `fulltext` feature, consider adding `limit` parameter to your query to avoid sending too many request.\n:::",
         "location": "notifications.ts"
       },
+      "/:configId/official/:path{.+}": {
+        "path": "/:configId/official/:path{.+}",
+        "categories": [
+          "bbs"
+        ],
+        "example": "/discourse/0/official/latest",
+        "parameters": {
+          "configId": "Environment variable configuration id, see above",
+          "path": "Discourse RSS path between `domain` and `.rss`. All supported Rss path can be found in [https://meta.discourse.org/t/finding-discourse-rss-feeds/264134](https://meta.discourse.org/t/finding-discourse-rss-feeds/264134). For example: the path of [https://meta.discourse.org/top/all.rss](https://meta.discourse.org/top/all.rss) is `top/all`."
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "DISCOURSE_CONFIG_*",
+              "description": "Configure the Discourse environment variables referring to [https://docs.rsshub.app/deploy/config#discourse](https://docs.rsshub.app/deploy/config#discourse)."
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Official RSS",
+        "maintainers": [
+          "Raikyou",
+          "dzx-dzx"
+        ],
+        "location": "official.ts"
+      },
       "/:configId/posts": {
         "path": "/:configId/posts",
         "categories": [
@@ -21889,8 +22031,14 @@
     "routes": {
       "/profile/:uid": {
         "name": "User subscriptions",
+        "categories": [
+          "social-media"
+        ],
         "path": "/profile/:uid",
-        "example": "/profile/41279032429549568",
+        "example": "/follow/profile/41279032429549568",
+        "parameters": {
+          "uid": "User ID or user handle"
+        },
         "radar": [
           {
             "source": [
@@ -21900,11 +22048,13 @@
           }
         ],
         "maintainers": [
-          "KarasuShin"
+          "KarasuShin",
+          "DIYgod"
         ],
         "features": {
           "supportRadar": true
         },
+        "view": 5,
         "location": "profile.ts"
       }
     },
