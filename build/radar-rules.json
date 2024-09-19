@@ -3558,6 +3558,111 @@
       }
     ]
   },
+  "ccfa.org.cn": {
+    "_name": "中国连锁经营协会",
+    "www": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/xiehui_list.jsp",
+          "/portal/cn/hybz_list.jsp",
+          "/portal/cn/lsbq.jsp",
+          "/portal/cn/hybzs_list.jsp",
+          "/portal/cn/fangyizhuanqu_list.jsp"
+        ],
+        "target": "/ccfa(_,url)=>{url=new URL(url);const type=url.searchParams.get(\"type\");return type?`/${type}`:\"\"}"
+      },
+      {
+        "title": "协会动态",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/xiehui_list.jsp?type=1"
+        ],
+        "target": "/ccfa/1"
+      },
+      {
+        "title": "行业动态",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/xiehui_list.jsp?type=2"
+        ],
+        "target": "/ccfa/2"
+      },
+      {
+        "title": "政策/报告/标准",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/hybz_list.jsp?type=33"
+        ],
+        "target": "/ccfa/33"
+      },
+      {
+        "title": "行业统计",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/lsbq.jsp?type=10003"
+        ],
+        "target": "/ccfa/10003"
+      },
+      {
+        "title": "创新案例",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/hybzs_list.jsp?type=10004"
+        ],
+        "target": "/ccfa/10004"
+      },
+      {
+        "title": "党建工作",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/xiehui_list.jsp?type=7"
+        ],
+        "target": "/ccfa/7"
+      },
+      {
+        "title": "新消费论坛",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/xiehui_list.jsp?type=10005"
+        ],
+        "target": "/ccfa/10005"
+      },
+      {
+        "title": "政策/报告/标准 - 行业报告",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/hybz_list.jsp?type=33"
+        ],
+        "target": "/ccfa/33"
+      },
+      {
+        "title": "政策/报告/标准 - 行业标准",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/hybz_list.jsp?type=34"
+        ],
+        "target": "/ccfa/34"
+      },
+      {
+        "title": "政策/报告/标准 - 行业政策",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/fangyizhuanqu_list.jsp?type=39"
+        ],
+        "target": "/ccfa/39"
+      },
+      {
+        "title": "政策/报告/标准 - 政策权威解读",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/fangyizhuanqu_list.jsp?type=40"
+        ],
+        "target": "/ccfa/40"
+      }
+    ]
+  },
   "91wllm.com": {
     "_name": "华中师范大学",
     "ccnu": [
@@ -5151,6 +5256,19 @@
           "/blog"
         ],
         "target": "/devolverdigital/blog"
+      }
+    ]
+  },
+  "devtrium.com": {
+    "_name": "Devtrium",
+    ".": [
+      {
+        "title": "Official Blogs",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/devtrium/"
       }
     ]
   },
@@ -17196,6 +17314,27 @@
       }
     ]
   },
+  "pixivision.net": {
+    "_name": "pixivision",
+    "www": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/:lang"
+        ],
+        "target": "/pixivision/:lang"
+      },
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/:lang/c/:category"
+        ],
+        "target": "/pixivision/:lang/:category"
+      }
+    ]
+  },
   "piyao.org.cn": {
     "_name": "中国互联网联合辟谣平台",
     ".": [
@@ -17428,7 +17567,7 @@
     "_name": "PornHub",
     ".": [
       {
-        "title": "Verified amateur / Model",
+        "title": "Model",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
           "/model/:username/*"
@@ -17436,7 +17575,7 @@
         "target": "/pornhub/model/:username"
       },
       {
-        "title": "Verified model / Pornstar",
+        "title": "Pornstar",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
           "/pornstar/:username/*"
@@ -19810,6 +19949,19 @@
       }
     ]
   },
+  "soundon.fm": {
+    "_name": "SoundOn",
+    "player": [
+      {
+        "title": "Podcast",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/p/:id"
+        ],
+        "target": "/soundon/p/:id"
+      }
+    ]
+  },
   "spotify.com": {
     "_name": "Spotify",
     "open": [
@@ -21490,6 +21642,16 @@
   },
   "theinitium.com": {
     "_name": "端传媒",
+    "app": [
+      {
+        "title": "App",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/t/latest/:category"
+        ],
+        "target": "/theinitium/app/:category"
+      }
+    ],
     ".": [
       {
         "title": "作者",

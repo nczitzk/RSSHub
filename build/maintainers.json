@@ -1094,6 +1094,9 @@
   "/ccf/tfbd/:caty/:id": [
     "tudou027"
   ],
+  "/ccfa/:type?": [
+    "nczitzk"
+  ],
   "/ccnu/career": [
     "jackyu1996"
   ],
@@ -1600,6 +1603,9 @@
   ],
   "/devolverdigital/blog": [
     "XXY233"
+  ],
+  "/devtrium/": [
+    "Xy2002"
   ],
   "/dewu/declaration/:categoryId?": [
     "blade0910"
@@ -2472,6 +2478,10 @@
     "nczitzk"
   ],
   "/gov/cmse/*": [],
+  "/gov/cn/news/:uid": [
+    "EsuRt",
+    "howfool"
+  ],
   "/gov/cnnic/*": [],
   "/gov/csrc/auditstatus/:apply_id": [
     "hillerliao"
@@ -2583,9 +2593,6 @@
   "/gov/ndrc/xwdt/:category{.+}?": [],
   "/gov/nea/sjzz/ghs": [
     "nczitzk"
-  ],
-  "/gov/news/:uid": [
-    "EsuRt"
   ],
   "/gov/nifdc/:path{.+}?": [],
   "/gov/nmpa/*": [],
@@ -3762,6 +3769,9 @@
   "/lmu/jobs": [
     "StarDxxx"
   ],
+  "/lofter/collection/:collectionID": [
+    "SrakhiuMeow"
+  ],
   "/lofter/tag/:name?/:type?": [
     "hoilc",
     "nczitzk",
@@ -4824,6 +4834,9 @@
   "/pixiv/user/:id": [
     "DIYgod"
   ],
+  "/pixivision/:lang/:category?": [
+    "SnowAgar25"
+  ],
   "/piyao/jrpy": [
     "Fatpandac"
   ],
@@ -5648,6 +5661,9 @@
   "/soundofhope/:channel/:id": [
     "Fatpandac"
   ],
+  "/soundon/p/:id": [
+    "TonyRL"
+  ],
   "/sourceforge/:routeParams?": [
     "JimenezLi"
   ],
@@ -6025,6 +6041,9 @@
   ],
   "/thehindu/topic/:topic": [
     "TonyRL"
+  ],
+  "/theinitium/app/:category?": [
+    "quiniapiezoelectricity"
   ],
   "/theinitium/author/:type/:language?": [
     "AgFlore"
