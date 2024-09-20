@@ -27389,15 +27389,703 @@
       },
       "/ndrc/fggz/:category{.+}?": {
         "path": "/ndrc/fggz/:category{.+}?",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "发展改革工作",
+        "example": "/gov/ndrc/fggz",
+        "parameters": {
+          "category": "分类，见下表，默认为全部"
+        },
+        "maintainers": [
+          "nczitzk"
+        ],
+        "categories": [
+          "government"
+        ],
+        "description": "::: details 全部分类\n\n#### 机关办公\n\n| 业务工作  | 学思践悟  |\n| --------- | --------- |\n| jgbg/ywgz | jgbg/xsjw |\n\n#### 发改政研\n\n| 经济数据概览 | 社会关切回应 | 新媒体解读 |\n| ------------ | ------------ | ---------- |\n| fgzy/jjsjgl  | fgzy/shgqhy  | fgzy/xmtjd |\n\n#### 发展战略和规划\n\n| 国家发展战略和规划 | 国家级专项规划 | 地方发展规划  | 发展规划工作  |\n| ------------------ | -------------- | ------------- | ------------- |\n| fzzlgh/gjfzgh      | fzzlgh/gjjzxgh | fzzlgh/dffzgh | fzzlgh/fzgggz |\n\n#### 发改综合\n\n| 国内经济监测 | 工业经济         | 投资运行         | 市场消费         |\n| ------------ | ---------------- | ---------------- | ---------------- |\n| fgzh/gnjjjc  | fgzh/gnjjjc/gyjj | fgzh/gnjjjc/tzyx | fgzh/gnjjjc/scxf |\n\n| 价格情况         | 财政收支         | 货币金融         | 就业情况         |\n| ---------------- | ---------------- | ---------------- | ---------------- |\n| fgzh/gnjjjc/jgqk | fgzh/gnjjjc/czsz | fgzh/gnjjjc/hbjr | fgzh/gnjjjc/jyqk |\n\n| 地区经济         | 国际经济监测 | 先行指数         | 大宗商品市场情况     |\n| ---------------- | ------------ | ---------------- | -------------------- |\n| fgzh/gnjjjc/dqjj | fgzh/gjjjjc  | fgzh/gjjjjc/xxzs | fgzh/gjjjjc/dzspscqk |\n\n| 国别分析         | 国际组织预测和研究动态 | 国际组织预测            | 国际组织研究动态          |\n| ---------------- | ---------------------- | ----------------------- | ------------------------- |\n| fgzh/gjjjjc/gbfx | fgzh/gjzzychyjdt       | fgzh/gjzzychyjdt/gjzzyc | fgzh/gjzzychyjdt/gjzzyjdt |\n\n#### 经济运行与调节\n\n| 宏观经济运行  | 地方经济运行  | 煤电油气运   | 现代物流    |\n| ------------- | ------------- | ------------ | ----------- |\n| jjyxtj/hgjjyx | jjyxtj/dfjjyx | jjyxtj/mdyqy | jjyxtj/xdwl |\n\n#### 体制改革\n\n| 改革快讯  | 半月改革动态 | 地方改革经验 |\n| --------- | ------------ | ------------ |\n| tzgg/ggkx | tzgg/byggdt  | tzgg/dfggjx  |\n\n#### 固定资产投资\n\n| 投资法规与政策动态 |\n| ------------------ |\n| gdzctz/tzfg        |\n\n#### 利用外资和境外投资\n\n| 境外投资    | 外商投资    | 外债管理    | 政策法规    |\n| ----------- | ----------- | ----------- | ----------- |\n| lywzjw/jwtz | lywzjw/wstz | lywzjw/wzgl | lywzjw/zcfg |\n\n#### 地区经济\n\n| 重大战略  | 四大板块  | 国土海洋流域新区 |\n| --------- | --------- | ---------------- |\n| dqjj/zdzl | dqjj/sdbk | dqjj/qt          |\n\n#### 地区振兴\n\n| 巩固拓展脱贫攻坚成果和欠发达地区振兴发展 | 对口支援与合作 | 革命老区振兴发展 | 生态退化地区治理 |\n| ---------------------------------------- | -------------- | ---------------- | ---------------- |\n| dqzx/tpgjypkfq                           | dqzx/dkzyyhz   | dqzx/gglqzxfz    | dqzx/stthdqzl    |\n\n#### 区域开放\n\n| 信息集萃  |\n| --------- |\n| qykf/xxjc |\n\n#### 农业农村经济\n\n| 重点建设    | 投资指南    | 乡村振兴    | 农经信息    |\n| ----------- | ----------- | ----------- | ----------- |\n| nyncjj/zdjs | nyncjj/tzzn | nyncjj/xczx | nyncjj/njxx |\n\n#### 基础设施发展\n\n| 政策规划    | 城轨监管    | 重大工程    | 问题研究    |\n| ----------- | ----------- | ----------- | ----------- |\n| zcssfz/zcgh | zcssfz/cgjg | zcssfz/zdgc | zcssfz/wtyj |\n\n#### 产业发展\n\n| 制造业发展 | 服务业发展 |\n| ---------- | ---------- |\n| cyfz/zcyfz | cyfz/fwyfz |\n\n#### 创新和高技术发展\n\n| 地方进展      |\n| ------------- |\n| cxhgjsfz/dfjz |\n\n#### 环境与资源\n\n| 碳达峰碳中和 | 生态文明建设 | 节能和能效  | 资源利用和循环经济 |\n| ------------ | ------------ | ----------- | ------------------ |\n| hjyzy/tdftzh | hjyzy/stwmjs | hjyzy/jnhnx | hjyzy/zyzhlyhxhjj  |\n\n#### 就业与收入\n\n| 就业收入社保消费 | 地方经验   |\n| ---------------- | ---------- |\n| jyysr/jysrsbxf   | jyysr/dfjx |\n\n#### 经济贸易\n\n| 重要商品情况 | 对外经贸及政策分析 | 流通业发展 |\n| ------------ | ------------------ | ---------- |\n| jjmy/zyspqk  | jjmy/dwjmjzcfx     | jjmy/ltyfz |\n\n#### 财金信用\n\n| 工作动态    |\n| ----------- |\n| cjxy/gzdt03 |\n\n#### 价格管理\n\n| 地方工作  |\n| --------- |\n| jggl/dfgz |\n\n#### 发改法规\n\n| 地方信息  |\n| --------- |\n| fgfg/dfxx |\n\n#### 国际合作\n\n| 世经动态  |\n| --------- |\n| gjhz/zywj |\n\n#### 干部之家\n\n| 系统风采  | 人才招聘  | 委属工作  | 学习园地  |\n| --------- | --------- | --------- | --------- |\n| gbzj/xtfc | gbzj/rczp | gbzj/wsgz | gbzj/xxyd |\n\n#### 评估督导\n\n| 评督动态  | 评督经验  |\n| --------- | --------- |\n| pgdd/pddt | pgdd/pdjy |\n\n#### 发改党建\n\n| 中央精神  | 机关党建  | 委属党建  | 系统党建  |\n| --------- | --------- | --------- | --------- |\n| fgdj/zydj | fgdj/jgdj | fgdj/wsdj | fgdj/xtdj |\n\n#### 发改金辉\n\n| 党建之窗  | 系统交流  | 学习园地  | 金色夕阳  |\n| --------- | --------- | --------- | --------- |\n| fgjh/djzc | fgjh/zthd | fgjh/yxyd | fgjh/jsxy |\n\n:::",
+        "radar": [
+          {
+            "title": "发展改革工作",
+            "source": [
+              "ndrc.gov.cn/fggz/:category*"
+            ]
+          },
+          {
+            "title": "机关办公 - 业务工作",
+            "source": [
+              "ndrc.gov.cn/fggz/jgbg/ywgz"
+            ],
+            "target": "/ndrc/fggz/jgbg/ywgz"
+          },
+          {
+            "title": "机关办公 - 学思践悟",
+            "source": [
+              "ndrc.gov.cn/fggz/jgbg/xsjw"
+            ],
+            "target": "/ndrc/fggz/jgbg/xsjw"
+          },
+          {
+            "title": "发改政研 - 经济数据概览",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzy/jjsjgl"
+            ],
+            "target": "/ndrc/fggz/fgzy/jjsjgl"
+          },
+          {
+            "title": "发改政研 - 社会关切回应",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzy/shgqhy"
+            ],
+            "target": "/ndrc/fggz/fgzy/shgqhy"
+          },
+          {
+            "title": "发改政研 - 新媒体解读",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzy/xmtjd"
+            ],
+            "target": "/ndrc/fggz/fgzy/xmtjd"
+          },
+          {
+            "title": "发展战略和规划 - 国家发展战略和规划",
+            "source": [
+              "ndrc.gov.cn/fggz/fzzlgh/gjfzgh"
+            ],
+            "target": "/ndrc/fggz/fzzlgh/gjfzgh"
+          },
+          {
+            "title": "发展战略和规划 - 国家级专项规划",
+            "source": [
+              "ndrc.gov.cn/fggz/fzzlgh/gjjzxgh"
+            ],
+            "target": "/ndrc/fggz/fzzlgh/gjjzxgh"
+          },
+          {
+            "title": "发展战略和规划 - 地方发展规划",
+            "source": [
+              "ndrc.gov.cn/fggz/fzzlgh/dffzgh"
+            ],
+            "target": "/ndrc/fggz/fzzlgh/dffzgh"
+          },
+          {
+            "title": "发展战略和规划 - 发展规划工作",
+            "source": [
+              "ndrc.gov.cn/fggz/fzzlgh/fzgggz"
+            ],
+            "target": "/ndrc/fggz/fzzlgh/fzgggz"
+          },
+          {
+            "title": "发改综合 - 国内经济监测",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gnjjjc"
+            ],
+            "target": "/ndrc/fggz/fgzh/gnjjjc"
+          },
+          {
+            "title": "发改综合 - 工业经济",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gnjjjc/gyjj"
+            ],
+            "target": "/ndrc/fggz/fgzh/gnjjjc/gyjj"
+          },
+          {
+            "title": "发改综合 - 投资运行",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gnjjjc/tzyx"
+            ],
+            "target": "/ndrc/fggz/fgzh/gnjjjc/tzyx"
+          },
+          {
+            "title": "发改综合 - 市场消费",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gnjjjc/scxf"
+            ],
+            "target": "/ndrc/fggz/fgzh/gnjjjc/scxf"
+          },
+          {
+            "title": "发改综合 - 价格情况",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gnjjjc/jgqk"
+            ],
+            "target": "/ndrc/fggz/fgzh/gnjjjc/jgqk"
+          },
+          {
+            "title": "发改综合 - 财政收支",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gnjjjc/czsz"
+            ],
+            "target": "/ndrc/fggz/fgzh/gnjjjc/czsz"
+          },
+          {
+            "title": "发改综合 - 货币金融",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gnjjjc/hbjr"
+            ],
+            "target": "/ndrc/fggz/fgzh/gnjjjc/hbjr"
+          },
+          {
+            "title": "发改综合 - 就业情况",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gnjjjc/jyqk"
+            ],
+            "target": "/ndrc/fggz/fgzh/gnjjjc/jyqk"
+          },
+          {
+            "title": "发改综合 - 地区经济",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gnjjjc/dqjj"
+            ],
+            "target": "/ndrc/fggz/fgzh/gnjjjc/dqjj"
+          },
+          {
+            "title": "发改综合 - 国际经济监测",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gjjjjc"
+            ],
+            "target": "/ndrc/fggz/fgzh/gjjjjc"
+          },
+          {
+            "title": "发改综合 - 先行指数",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gjjjjc/xxzs"
+            ],
+            "target": "/ndrc/fggz/fgzh/gjjjjc/xxzs"
+          },
+          {
+            "title": "发改综合 - 大宗商品市场情况",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gjjjjc/dzspscqk"
+            ],
+            "target": "/ndrc/fggz/fgzh/gjjjjc/dzspscqk"
+          },
+          {
+            "title": "发改综合 - 国别分析",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gjjjjc/gbfx"
+            ],
+            "target": "/ndrc/fggz/fgzh/gjjjjc/gbfx"
+          },
+          {
+            "title": "发改综合 - 国际组织预测和研究动态",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gjzzychyjdt"
+            ],
+            "target": "/ndrc/fggz/fgzh/gjzzychyjdt"
+          },
+          {
+            "title": "发改综合 - 国际组织预测",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gjzzychyjdt/gjzzyc"
+            ],
+            "target": "/ndrc/fggz/fgzh/gjzzychyjdt/gjzzyc"
+          },
+          {
+            "title": "发改综合 - 国际组织研究动态",
+            "source": [
+              "ndrc.gov.cn/fggz/fgzh/gjzzychyjdt/gjzzyjdt"
+            ],
+            "target": "/ndrc/fggz/fgzh/gjzzychyjdt/gjzzyjdt"
+          },
+          {
+            "title": "经济运行与调节 - 宏观经济运行",
+            "source": [
+              "ndrc.gov.cn/fggz/jjyxtj/hgjjyx"
+            ],
+            "target": "/ndrc/fggz/jjyxtj/hgjjyx"
+          },
+          {
+            "title": "经济运行与调节 - 地方经济运行",
+            "source": [
+              "ndrc.gov.cn/fggz/jjyxtj/dfjjyx"
+            ],
+            "target": "/ndrc/fggz/jjyxtj/dfjjyx"
+          },
+          {
+            "title": "经济运行与调节 - 煤电油气运",
+            "source": [
+              "ndrc.gov.cn/fggz/jjyxtj/mdyqy"
+            ],
+            "target": "/ndrc/fggz/jjyxtj/mdyqy"
+          },
+          {
+            "title": "经济运行与调节 - 现代物流",
+            "source": [
+              "ndrc.gov.cn/fggz/jjyxtj/xdwl"
+            ],
+            "target": "/ndrc/fggz/jjyxtj/xdwl"
+          },
+          {
+            "title": "经济运行与调节 - 应急管理",
+            "source": [
+              "ndrc.gov.cn/fggz/jjyxtj/yjgl"
+            ],
+            "target": "/ndrc/fggz/jjyxtj/yjgl"
+          },
+          {
+            "title": "体制改革 - 改革快讯",
+            "source": [
+              "ndrc.gov.cn/fggz/tzgg/ggkx"
+            ],
+            "target": "/ndrc/fggz/tzgg/ggkx"
+          },
+          {
+            "title": "体制改革 - 半月改革动态",
+            "source": [
+              "ndrc.gov.cn/fggz/tzgg/byggdt"
+            ],
+            "target": "/ndrc/fggz/tzgg/byggdt"
+          },
+          {
+            "title": "体制改革 - 地方改革经验",
+            "source": [
+              "ndrc.gov.cn/fggz/tzgg/dfggjx"
+            ],
+            "target": "/ndrc/fggz/tzgg/dfggjx"
+          },
+          {
+            "title": "固定资产投资 - 投资法规与政策动态",
+            "source": [
+              "ndrc.gov.cn/fggz/gdzctz/tzfg"
+            ],
+            "target": "/ndrc/fggz/gdzctz/tzfg"
+          },
+          {
+            "title": "利用外资和境外投资 - 境外投资",
+            "source": [
+              "ndrc.gov.cn/fggz/lywzjw/jwtz"
+            ],
+            "target": "/ndrc/fggz/lywzjw/jwtz"
+          },
+          {
+            "title": "利用外资和境外投资 - 外商投资",
+            "source": [
+              "ndrc.gov.cn/fggz/lywzjw/wstz"
+            ],
+            "target": "/ndrc/fggz/lywzjw/wstz"
+          },
+          {
+            "title": "利用外资和境外投资 - 外债管理",
+            "source": [
+              "ndrc.gov.cn/fggz/lywzjw/wzgl"
+            ],
+            "target": "/ndrc/fggz/lywzjw/wzgl"
+          },
+          {
+            "title": "利用外资和境外投资 - 政策法规",
+            "source": [
+              "ndrc.gov.cn/fggz/lywzjw/zcfg"
+            ],
+            "target": "/ndrc/fggz/lywzjw/zcfg"
+          },
+          {
+            "title": "地区经济 - 重大战略",
+            "source": [
+              "ndrc.gov.cn/fggz/dqjj/zdzl"
+            ],
+            "target": "/ndrc/fggz/dqjj/zdzl"
+          },
+          {
+            "title": "地区经济 - 四大板块",
+            "source": [
+              "ndrc.gov.cn/fggz/dqjj/sdbk"
+            ],
+            "target": "/ndrc/fggz/dqjj/sdbk"
+          },
+          {
+            "title": "地区经济 - 国土海洋流域新区",
+            "source": [
+              "ndrc.gov.cn/fggz/dqjj/qt"
+            ],
+            "target": "/ndrc/fggz/dqjj/qt"
+          },
+          {
+            "title": "地区振兴 - 巩固拓展脱贫攻坚成果和欠发达地区振兴发展",
+            "source": [
+              "ndrc.gov.cn/fggz/dqzx/tpgjypkfq"
+            ],
+            "target": "/ndrc/fggz/dqzx/tpgjypkfq"
+          },
+          {
+            "title": "地区振兴 - 对口支援与合作",
+            "source": [
+              "ndrc.gov.cn/fggz/dqzx/dkzyyhz"
+            ],
+            "target": "/ndrc/fggz/dqzx/dkzyyhz"
+          },
+          {
+            "title": "地区振兴 - 革命老区振兴发展",
+            "source": [
+              "ndrc.gov.cn/fggz/dqzx/gglqzxfz"
+            ],
+            "target": "/ndrc/fggz/dqzx/gglqzxfz"
+          },
+          {
+            "title": "地区振兴 - 生态退化地区治理",
+            "source": [
+              "ndrc.gov.cn/fggz/dqzx/stthdqzl"
+            ],
+            "target": "/ndrc/fggz/dqzx/stthdqzl"
+          },
+          {
+            "title": "地区振兴 - 资源型地区转型发展",
+            "source": [
+              "ndrc.gov.cn/fggz/dqzx/zyxdqzxfz"
+            ],
+            "target": "/ndrc/fggz/dqzx/zyxdqzxfz"
+          },
+          {
+            "title": "地区振兴 - 老工业地区振兴发展",
+            "source": [
+              "ndrc.gov.cn/fggz/dqzx/lzydfzxfz"
+            ],
+            "target": "/ndrc/fggz/dqzx/lzydfzxfz"
+          },
+          {
+            "title": "区域开放 - 信息集萃",
+            "source": [
+              "ndrc.gov.cn/fggz/qykf/xxjc"
+            ],
+            "target": "/ndrc/fggz/qykf/xxjc"
+          },
+          {
+            "title": "农业农村经济 - 重点建设",
+            "source": [
+              "ndrc.gov.cn/fggz/nyncjj/zdjs"
+            ],
+            "target": "/ndrc/fggz/nyncjj/zdjs"
+          },
+          {
+            "title": "农业农村经济 - 投资指南",
+            "source": [
+              "ndrc.gov.cn/fggz/nyncjj/tzzn"
+            ],
+            "target": "/ndrc/fggz/nyncjj/tzzn"
+          },
+          {
+            "title": "农业农村经济 - 乡村振兴",
+            "source": [
+              "ndrc.gov.cn/fggz/nyncjj/xczx"
+            ],
+            "target": "/ndrc/fggz/nyncjj/xczx"
+          },
+          {
+            "title": "农业农村经济 - 农经信息",
+            "source": [
+              "ndrc.gov.cn/fggz/nyncjj/njxx"
+            ],
+            "target": "/ndrc/fggz/nyncjj/njxx"
+          },
+          {
+            "title": "基础设施发展 - 政策规划",
+            "source": [
+              "ndrc.gov.cn/fggz/zcssfz/zcgh"
+            ],
+            "target": "/ndrc/fggz/zcssfz/zcgh"
+          },
+          {
+            "title": "基础设施发展 - 城轨监管",
+            "source": [
+              "ndrc.gov.cn/fggz/zcssfz/cgjg"
+            ],
+            "target": "/ndrc/fggz/zcssfz/cgjg"
+          },
+          {
+            "title": "基础设施发展 - 重大工程",
+            "source": [
+              "ndrc.gov.cn/fggz/zcssfz/zdgc"
+            ],
+            "target": "/ndrc/fggz/zcssfz/zdgc"
+          },
+          {
+            "title": "基础设施发展 - 问题研究",
+            "source": [
+              "ndrc.gov.cn/fggz/zcssfz/wtyj"
+            ],
+            "target": "/ndrc/fggz/zcssfz/wtyj"
+          },
+          {
+            "title": "基础设施发展 - 行业数据",
+            "source": [
+              "ndrc.gov.cn/fggz/zcssfz/hysj"
+            ],
+            "target": "/ndrc/fggz/zcssfz/hysj"
+          },
+          {
+            "title": "基础设施发展 - 地方发展",
+            "source": [
+              "ndrc.gov.cn/fggz/zcssfz/dffz"
+            ],
+            "target": "/ndrc/fggz/zcssfz/dffz"
+          },
+          {
+            "title": "产业发展 - 制造业发展",
+            "source": [
+              "ndrc.gov.cn/fggz/cyfz/zcyfz"
+            ],
+            "target": "/ndrc/fggz/cyfz/zcyfz"
+          },
+          {
+            "title": "产业发展 - 服务业发展",
+            "source": [
+              "ndrc.gov.cn/fggz/cyfz/fwyfz"
+            ],
+            "target": "/ndrc/fggz/cyfz/fwyfz"
+          },
+          {
+            "title": "创新和高技术发展 - 地方进展",
+            "source": [
+              "ndrc.gov.cn/fggz/cxhgjsfz/dfjz"
+            ],
+            "target": "/ndrc/fggz/cxhgjsfz/dfjz"
+          },
+          {
+            "title": "环境与资源 - 碳达峰碳中和",
+            "source": [
+              "ndrc.gov.cn/fggz/hjyzy/tdftzh"
+            ],
+            "target": "/ndrc/fggz/hjyzy/tdftzh"
+          },
+          {
+            "title": "环境与资源 - 生态文明建设",
+            "source": [
+              "ndrc.gov.cn/fggz/hjyzy/stwmjs"
+            ],
+            "target": "/ndrc/fggz/hjyzy/stwmjs"
+          },
+          {
+            "title": "环境与资源 - 节能和能效",
+            "source": [
+              "ndrc.gov.cn/fggz/hjyzy/jnhnx"
+            ],
+            "target": "/ndrc/fggz/hjyzy/jnhnx"
+          },
+          {
+            "title": "环境与资源 - 资源利用和循环经济",
+            "source": [
+              "ndrc.gov.cn/fggz/hjyzy/zyzhlyhxhjj"
+            ],
+            "target": "/ndrc/fggz/hjyzy/zyzhlyhxhjj"
+          },
+          {
+            "title": "环境与资源 - 水节约与保护",
+            "source": [
+              "ndrc.gov.cn/fggz/hjyzy/sjyybh"
+            ],
+            "target": "/ndrc/fggz/hjyzy/sjyybh"
+          },
+          {
+            "title": "环境与资源 - 环境与保护",
+            "source": [
+              "ndrc.gov.cn/fggz/hjyzy/hjybh"
+            ],
+            "target": "/ndrc/fggz/hjyzy/hjybh"
+          },
+          {
+            "title": "就业与收入 - 就业收入社保消费",
+            "source": [
+              "ndrc.gov.cn/fggz/jyysr/jysrsbxf"
+            ],
+            "target": "/ndrc/fggz/jyysr/jysrsbxf"
+          },
+          {
+            "title": "就业与收入 - 地方经验",
+            "source": [
+              "ndrc.gov.cn/fggz/jyysr/dfjx"
+            ],
+            "target": "/ndrc/fggz/jyysr/dfjx"
+          },
+          {
+            "title": "经济贸易 - 重要商品情况",
+            "source": [
+              "ndrc.gov.cn/fggz/jjmy/zyspqk"
+            ],
+            "target": "/ndrc/fggz/jjmy/zyspqk"
+          },
+          {
+            "title": "经济贸易 - 对外经贸及政策分析",
+            "source": [
+              "ndrc.gov.cn/fggz/jjmy/dwjmjzcfx"
+            ],
+            "target": "/ndrc/fggz/jjmy/dwjmjzcfx"
+          },
+          {
+            "title": "经济贸易 - 流通业发展",
+            "source": [
+              "ndrc.gov.cn/fggz/jjmy/ltyfz"
+            ],
+            "target": "/ndrc/fggz/jjmy/ltyfz"
+          },
+          {
+            "title": "财金信用 - 工作动态",
+            "source": [
+              "ndrc.gov.cn/fggz/cjxy/gzdt03"
+            ],
+            "target": "/ndrc/fggz/cjxy/gzdt03"
+          },
+          {
+            "title": "价格管理 - 地方工作",
+            "source": [
+              "ndrc.gov.cn/fggz/jggl/dfgz"
+            ],
+            "target": "/ndrc/fggz/jggl/dfgz"
+          },
+          {
+            "title": "发改法规 - 地方信息",
+            "source": [
+              "ndrc.gov.cn/fggz/fgfg/dfxx"
+            ],
+            "target": "/ndrc/fggz/fgfg/dfxx"
+          },
+          {
+            "title": "国际合作 - 世经动态",
+            "source": [
+              "ndrc.gov.cn/fggz/gjhz/zywj"
+            ],
+            "target": "/ndrc/fggz/gjhz/zywj"
+          },
+          {
+            "title": "干部之家 - 系统风采",
+            "source": [
+              "ndrc.gov.cn/fggz/gbzj/xtfc"
+            ],
+            "target": "/ndrc/fggz/gbzj/xtfc"
+          },
+          {
+            "title": "干部之家 - 人才招聘",
+            "source": [
+              "ndrc.gov.cn/fggz/gbzj/rczp"
+            ],
+            "target": "/ndrc/fggz/gbzj/rczp"
+          },
+          {
+            "title": "干部之家 - 委属工作",
+            "source": [
+              "ndrc.gov.cn/fggz/gbzj/wsgz"
+            ],
+            "target": "/ndrc/fggz/gbzj/wsgz"
+          },
+          {
+            "title": "干部之家 - 学习园地",
+            "source": [
+              "ndrc.gov.cn/fggz/gbzj/xxyd"
+            ],
+            "target": "/ndrc/fggz/gbzj/xxyd"
+          },
+          {
+            "title": "评估督导 - 评督动态",
+            "source": [
+              "ndrc.gov.cn/fggz/pgdd/pddt"
+            ],
+            "target": "/ndrc/fggz/pgdd/pddt"
+          },
+          {
+            "title": "评估督导 - 评督经验",
+            "source": [
+              "ndrc.gov.cn/fggz/pgdd/pdjy"
+            ],
+            "target": "/ndrc/fggz/pgdd/pdjy"
+          },
+          {
+            "title": "发改党建 - 中央精神",
+            "source": [
+              "ndrc.gov.cn/fggz/fgdj/zydj"
+            ],
+            "target": "/ndrc/fggz/fgdj/zydj"
+          },
+          {
+            "title": "发改党建 - 机关党建",
+            "source": [
+              "ndrc.gov.cn/fggz/fgdj/jgdj"
+            ],
+            "target": "/ndrc/fggz/fgdj/jgdj"
+          },
+          {
+            "title": "发改党建 - 委属党建",
+            "source": [
+              "ndrc.gov.cn/fggz/fgdj/wsdj"
+            ],
+            "target": "/ndrc/fggz/fgdj/wsdj"
+          },
+          {
+            "title": "发改党建 - 系统党建",
+            "source": [
+              "ndrc.gov.cn/fggz/fgdj/xtdj"
+            ],
+            "target": "/ndrc/fggz/fgdj/xtdj"
+          },
+          {
+            "title": "发改金辉 - 党建之窗",
+            "source": [
+              "ndrc.gov.cn/fggz/fgjh/djzc"
+            ],
+            "target": "/ndrc/fggz/fgjh/djzc"
+          },
+          {
+            "title": "发改金辉 - 系统交流",
+            "source": [
+              "ndrc.gov.cn/fggz/fgjh/zthd"
+            ],
+            "target": "/ndrc/fggz/fgjh/zthd"
+          },
+          {
+            "title": "发改金辉 - 学习园地",
+            "source": [
+              "ndrc.gov.cn/fggz/fgjh/yxyd"
+            ],
+            "target": "/ndrc/fggz/fgjh/yxyd"
+          },
+          {
+            "title": "发改金辉 - 金色夕阳",
+            "source": [
+              "ndrc.gov.cn/fggz/fgjh/jsxy"
+            ],
+            "target": "/ndrc/fggz/fgjh/jsxy"
+          }
+        ],
         "location": "ndrc/fggz.ts"
       },
       "/ndrc/xwdt/:category{.+}?": {
         "path": "/ndrc/xwdt/:category{.+}?",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "新闻动态",
+        "example": "/gov/ndrc/xwdt",
+        "parameters": {
+          "category": "分类，见下表，默认为新闻发布"
+        },
+        "maintainers": [
+          "nczitzk"
+        ],
+        "categories": [
+          "government"
+        ],
+        "radar": [
+          {
+            "title": "中华人民共和国国家发展和改革委员会 - 新闻动态",
+            "source": [
+              "ndrc.gov.cn/xwdt/:category*"
+            ]
+          }
+        ],
+        "description": "| 新闻发布 | 通知通告 | 委领导动态 | 司局动态 | 地方动态 |\n| -------- | -------- | ---------- | -------- | -------- |\n| xwfb     | tzgg     | wlddt      | sjdt     | dfdt     |",
         "location": "ndrc/xwdt.ts"
+      },
+      "/ndrc/zfxxgk/iteminfo": {
+        "path": "/ndrc/zfxxgk/iteminfo",
+        "categories": [
+          "government"
+        ],
+        "example": "/gov/ndrc/zfxxgk/iteminfo",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "国家发展改革委 - 政府信息公开",
+        "maintainers": [
+          "howfool"
+        ],
+        "url": "zfxxgk.ndrc.gov.cn/web/dirlist.jsp",
+        "location": "ndrc/zfxxgk/articles.ts"
       },
       "/nea/sjzz/ghs": {
         "path": "/nea/sjzz/ghs",
@@ -49828,6 +50516,44 @@
     "name": "巨量算数 - 算数指数",
     "url": "trendinsight.oceanengine.com"
   },
+  "oct0pu5": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "blog"
+        ],
+        "example": "/oct0pu5",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "oct0pu5.cn"
+            ],
+            "target": "/"
+          }
+        ],
+        "name": "Oct的小破站",
+        "maintainers": [
+          "octopus058",
+          "wiketool"
+        ],
+        "location": "rss.ts"
+      }
+    },
+    "name": "Oct0pu5 blog",
+    "url": "Oct0pu5.cn",
+    "zh": {
+      "name": "Oct0pu5的小破站"
+    }
+  },
   "odaily": {
     "routes": {
       "/activity": {
@@ -57846,30 +58572,6 @@
         "description": "| 通知公告 | 学院新闻 | 本科生教育 | 研究生教育 | 学术动态 |\n  | -------- | -------- | ---------- | ---------- | -------- |\n  | 0        | 1        | 2          | 3          | 4        |",
         "location": "cmse.ts"
       },
-      "/cs/:type?": {
-        "path": "/cs/:type?",
-        "categories": [
-          "university"
-        ],
-        "example": "/sdu/cs/0",
-        "parameters": {
-          "type": "默认为 `0`"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "计算机科学与技术学院通知",
-        "maintainers": [
-          "Ji4n1ng"
-        ],
-        "description": "| 学院公告 | 学术报告 | 科技简讯 |\n  | -------- | -------- | -------- |\n  | 0        | 1        | 2        |",
-        "location": "cs.ts"
-      },
       "/epe/:type?": {
         "path": "/epe/:type?",
         "categories": [
@@ -57942,6 +58644,64 @@
         "description": "| 通知公告 | 学术动态 | 本科教育 | 研究生教育 |\n  | -------- | -------- | -------- | ---------- |\n  | 0        | 1        | 2        | 3          |",
         "location": "sc.ts"
       },
+      "/cs/index/:type?": {
+        "path": "/cs/index/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/sdu/cs/index/announcement",
+        "parameters": {
+          "type": "默认为 `announcement`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.cs.sdu.edu.cn/",
+              "www.cs.sdu.edu.cn/xygg.htm"
+            ],
+            "target": "/cs/index/announcement"
+          },
+          {
+            "source": [
+              "www.cs.sdu.edu.cn/xsbg.htm"
+            ],
+            "target": "/cs/index/academic"
+          },
+          {
+            "source": [
+              "www.cs.sdu.edu.cn/kjjx.htm"
+            ],
+            "target": "/cs/index/technology"
+          },
+          {
+            "source": [
+              "www.cs.sdu.edu.cn/bkjy.htm"
+            ],
+            "target": "/cs/index/undergraduate"
+          },
+          {
+            "source": [
+              "www.cs.sdu.edu.cn/yjsjy.htm"
+            ],
+            "target": "/cs/index/postgraduate"
+          }
+        ],
+        "name": "计算机科学与技术学院通知",
+        "maintainers": [
+          "Ji4n1ng",
+          "wiketool"
+        ],
+        "description": "| 学院公告 | 学术报告 | 科技简讯 | 本科教育 | 研究生教育 | \n| -------- | -------- | -------- | -------- | -------- |\n| announcement | academic | technology | undergraduate | postgraduate |",
+        "location": "cs/index.ts"
+      },
       "/wh/jwc/:column?": {
         "path": "/wh/jwc/:column?",
         "categories": [
@@ -57991,8 +58751,8 @@
         "location": "wh/news.ts"
       }
     },
-    "name": "山东大学（威海）",
-    "url": "xinwen.wh.sdu.edu.cn"
+    "name": "山东大学",
+    "url": "www.sdu.edu.cn"
   },
   "sdust": {
     "routes": {
@@ -71585,7 +72345,7 @@
             "target": "/user/:uid"
           }
         ],
-        "name": "用户",
+        "name": "绿洲用户",
         "maintainers": [
           "kt286"
         ],
@@ -71630,7 +72390,7 @@
     },
     "name": "微博",
     "url": "weibo.com",
-    "description": ":::warning\n微博会针对请求的来源地区返回不同的结果。一个已知的例子为：部分视频因未知原因仅限中国大陆境内访问 (CDN 域名为 `locallimit.us.sinaimg.cn` 而非 `f.video.weibocdn.com`)。若一条微博含有这种视频且 RSSHub 实例部署在境外，抓取到的微博可能不含视频。将 RSSHub 部署在境内有助于抓取这种视频，但阅读器也必须处于境内网络环境以加载视频。\n:::\n\n对于微博内容，在 `routeParams` 参数中以 query string 格式指定选项，可以控制输出的样式\n\n| 键                         | 含义                                                               | 接受的值       | 默认值                              |\n| -------------------------- | ------------------------------------------------------------------ | -------------- | ----------------------------------- |\n| readable                   | 是否开启细节排版可读性优化                                         | 0/1/true/false | false                               |\n| authorNameBold             | 是否加粗作者名字                                                   | 0/1/true/false | false                               |\n| showAuthorInTitle          | 是否在标题处显示作者                                               | 0/1/true/false | false（`/weibo/keyword/`中为 true） |\n| showAuthorInDesc           | 是否在正文处显示作者                                               | 0/1/true/false | false（`/weibo/keyword/`中为 true） |\n| showAuthorAvatarInDesc     | 是否在正文处显示作者头像（若阅读器会提取正文图片，不建议开启）     | 0/1/true/false | false                               |\n| showEmojiForRetweet        | 显示 “🔁” 取代 “转发” 两个字                                       | 0/1/true/false | false                               |\n| showRetweetTextInTitle     | 在标题出显示转发评论（置为 false 则在标题只显示被转发微博）        | 0/1/true/false | true                                |\n| addLinkForPics             | 为图片添加可点击的链接                                             | 0/1/true/false | false                               |\n| showTimestampInDescription | 在正文处显示被转发微博的时间戳                                     | 0/1/true/false | false                               |\n| widthOfPics                | 微博配图宽（生效取决于阅读器）                                     | 不指定 / 数字  | 不指定                              |\n| heightOfPics               | 微博配图高（生效取决于阅读器）                                     | 不指定 / 数字  | 不指定                              |\n| sizeOfAuthorAvatar         | 作者头像大小                                                       | 数字           | 48                                  |\n| displayVideo               | 是否直接显示微博视频和 Live Photo，只在博主或个人时间线 RSS 中有效 | 0/1/true/false | true                                |\n| displayArticle             | 是否直接显示微博文章，只在博主或个人时间线 RSS 中有效              | 0/1/true/false | false                               |\n| displayComments            | 是否直接显示热门评论，只在博主或个人时间线 RSS 中有效              | 0/1/true/false | false                               |\n| showEmojiInDescription     | 是否展示正文中的微博表情，关闭则替换为 `[表情名]`                  | 0/1/true/false | true                                |\n| showLinkIconInDescription  | 是否展示正文中的链接图标                                           | 0/1/true/false | true                                |\n| preferMobileLink           | 是否使用移动版链接（默认使用 PC 版）                               | 0/1/true/false | false                               |\n\n指定更多与默认值不同的参数选项可以改善 RSS 的可读性，如\n\n[https://rsshub.app/weibo/user/1642909335/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showTimestampInDescription=1&heightOfPics=150](https://rsshub.app/weibo/user/1642909335/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showTimestampInDescription=1&heightOfPics=150)\n\n的效果为\n\n<img loading=\"lazy\" src=\"/img/readable-weibo.png\" alt=\"微博小秘书的可读微博 RSS\" />"
+    "description": ":::warning\n微博会针对请求的来源地区返回不同的结果。一个已知的例子为：部分视频因未知原因仅限中国大陆境内访问 (CDN 域名为 `locallimit.us.sinaimg.cn` 而非 `f.video.weibocdn.com`)。若一条微博含有这种视频且 RSSHub 实例部署在境外，抓取到的微博可能不含视频。将 RSSHub 部署在境内有助于抓取这种视频，但阅读器也必须处于境内网络环境以加载视频。\n:::\n\n对于微博内容，在 `routeParams` 参数中以 query string 格式指定选项，可以控制输出的样式\n\n| 键                         | 含义                                                               | 接受的值       | 默认值                              |\n| -------------------------- | ------------------------------------------------------------------ | -------------- | ----------------------------------- |\n| readable                   | 是否开启细节排版可读性优化                                         | 0/1/true/false | false                               |\n| authorNameBold             | 是否加粗作者名字                                                   | 0/1/true/false | false                               |\n| showAuthorInTitle          | 是否在标题处显示作者                                               | 0/1/true/false | false（`/weibo/keyword/`中为 true） |\n| showAuthorInDesc           | 是否在正文处显示作者                                               | 0/1/true/false | false（`/weibo/keyword/`中为 true） |\n| showAuthorAvatarInDesc     | 是否在正文处显示作者头像（若阅读器会提取正文图片，不建议开启）     | 0/1/true/false | false                               |\n| showEmojiForRetweet        | 显示 “🔁” 取代 “转发” 两个字                                       | 0/1/true/false | false                               |\n| showRetweetTextInTitle     | 在标题出显示转发评论（置为 false 则在标题只显示被转发微博）        | 0/1/true/false | true                                |\n| addLinkForPics             | 为图片添加可点击的链接                                             | 0/1/true/false | false                               |\n| showTimestampInDescription | 在正文处显示被转发微博的时间戳                                     | 0/1/true/false | false                               |\n| widthOfPics                | 微博配图宽（生效取决于阅读器）                                     | 不指定 / 数字  | 不指定                              |\n| heightOfPics               | 微博配图高（生效取决于阅读器）                                     | 不指定 / 数字  | 不指定                              |\n| sizeOfAuthorAvatar         | 作者头像大小                                                       | 数字           | 48                                  |\n| displayVideo               | 是否直接显示微博视频和 Live Photo，只在博主或个人时间线 RSS 中有效 | 0/1/true/false | true                                |\n| displayArticle             | 是否直接显示微博文章，只在博主或个人时间线 RSS 中有效              | 0/1/true/false | false                               |\n| displayComments            | 是否直接显示热门评论，只在博主或个人时间线 RSS 中有效              | 0/1/true/false | false                               |\n| showEmojiInDescription     | 是否展示正文中的微博表情，关闭则替换为 `[表情名]`                  | 0/1/true/false | true                                |\n| showLinkIconInDescription  | 是否展示正文中的链接图标                                           | 0/1/true/false | true                                |\n| preferMobileLink           | 是否使用移动版链接（默认使用 PC 版）                               | 0/1/true/false | false                               |\n| showRetweeted              | 是否显示转发的微博                                                 | 0/1/true/false | true                               |\n\n指定更多与默认值不同的参数选项可以改善 RSS 的可读性，如\n\n[https://rsshub.app/weibo/user/1642909335/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showTimestampInDescription=1&heightOfPics=150](https://rsshub.app/weibo/user/1642909335/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showTimestampInDescription=1&heightOfPics=150)\n\n的效果为\n\n<img loading=\"lazy\" src=\"/img/readable-weibo.png\" alt=\"微博小秘书的可读微博 RSS\" />"
   },
   "wellcee": {
     "routes": {
@@ -72243,6 +73003,33 @@
     },
     "name": "Wise",
     "url": "wise.com"
+  },
+  "withgoogle": {
+    "routes": {
+      "/explorables": {
+        "name": "PAIR - AI Exploreables",
+        "url": "pair.withgoogle.com/explorables",
+        "path": "/explorables",
+        "maintainers": [
+          "cesaryuan"
+        ],
+        "example": "/withgoogle/explorables",
+        "categories": [
+          "blog"
+        ],
+        "radar": [
+          {
+            "source": [
+              "pair.withgoogle.com/explorables"
+            ],
+            "target": ""
+          }
+        ],
+        "location": "explorables.ts"
+      }
+    },
+    "name": "People + AI Research (PAIR)",
+    "url": "pair.withgoogle.com"
   },
   "wizfile": {
     "routes": {
