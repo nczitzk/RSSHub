@@ -185,8 +185,7 @@
     "sddiky"
   ],
   "/51cto/index/recommend": [
-    "cnkmmk",
-    "ovo-tim"
+    "cnkmmk"
   ],
   "/51read/article/:id": [
     "lazwa34"
@@ -411,12 +410,6 @@
   "/android/platform-tools-releases": [
     "nczitzk"
   ],
-  "/anime1anime/:category/:name": [
-    "cxheng315"
-  ],
-  "/anime1search/:keyword": [
-    "cxheng315"
-  ],
   "/annualreviews/:id": [
     "nczitzk"
   ],
@@ -506,7 +499,7 @@
   "/asmr-200/works/:order?/:subtitle?/:sort?": [
     "hualiong"
   ],
-  "/asus/bios/:model/:lang?": [
+  "/asus/bios/:model": [
     "Fatpandac"
   ],
   "/asus/gpu-tweak": [
@@ -1272,9 +1265,6 @@
     "5upernova-heng",
     "nczitzk"
   ],
-  "/cls/subject/:id?": [
-    "nczitzk"
-  ],
   "/cls/telegraph/:category?": [
     "nczitzk"
   ],
@@ -1989,9 +1979,6 @@
   ],
   "/eprice/:region?": [
     "TonyRL"
-  ],
-  "/espn/news/:sport": [
-    "weijianduan0302"
   ],
   "/esquirehk/tag/:id?": [
     "nczitzk"
@@ -4297,9 +4284,6 @@
   "/niaogebiji/today": [
     "KotoriK"
   ],
-  "/nicovideo/user/:id/video/:embed?": [
-    "TonyRL"
-  ],
   "/nifd/research/:categoryGuid?": [
     "Fatpandac"
   ],
@@ -5033,9 +5017,6 @@
   "/qianzhan/analyst/rank/:type?": [
     "moke8"
   ],
-  "/qiche365/recall/:channel": [
-    "huanfe1"
-  ],
   "/qidian/author/:id": [
     "miles170"
   ],
@@ -5393,31 +5374,15 @@
   "/sdu/epe/:type?": [
     "Ji4n1ng"
   ],
-  "/sdu/gjsw/:type?": [
-    "kukeya"
-  ],
   "/sdu/mech/:type?": [
     "Ji4n1ng"
   ],
   "/sdu/sc/:type?": [
     "Ji4n1ng"
   ],
-  "/sdu/ygb/:type?": [
-    "kukeya"
-  ],
   "/sdu/cs/index/:type?": [
     "Ji4n1ng",
     "wiketool"
-  ],
-  "/sdu/cs/yjsgz/:type?": [
-    "kukeya",
-    "wiketool"
-  ],
-  "/sdu/qd/xszxqd/:type?": [
-    "kukeya"
-  ],
-  "/sdu/qd/xyb/:type?": [
-    "kukeya"
   ],
   "/sdu/wh/jwc/:column?": [
     "kxxt"
@@ -5907,9 +5872,6 @@
   ],
   "/swjtu/jtys/yjs": [
     "qizidog"
-  ],
-  "/swjtu/scai/bks": [
-    "AzureG03"
   ],
   "/swpu/bgw/:code": [
     "CYTMWIA"
@@ -7045,12 +7007,6 @@
   ],
   "/yicai/vip/:id?": [
     "nczitzk"
-  ],
-  "/yilinzazhi/": [
-    "g0ngjie"
-  ],
-  "/yilinzazhi/latest": [
-    "g0ngjie"
   ],
   "/ymgal/article/:type?": [
     "SunBK201"
