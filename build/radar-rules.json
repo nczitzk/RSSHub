@@ -1450,6 +1450,19 @@
       }
     ]
   },
+  "anime1.me": {
+    "_name": "Anime1",
+    ".": [
+      {
+        "title": "Anime",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/category/:category/:name"
+        ],
+        "target": "/anime1/anime/:category/:name"
+      }
+    ]
+  },
   "annualreviews.org": {
     "_name": "Annual Reviews",
     ".": [
@@ -1670,21 +1683,26 @@
       }
     ]
   },
-  "asus.com.cn": {
+  "asus.com": {
     "_name": "ASUS",
-    ".": [
+    "www": [
       {
         "title": "BIOS",
         "docs": "https://docs.rsshub.app/routes/program-update",
         "source": [
+          "/displays-desktops/:productLine/:series/:model",
+          "/laptops/:productLine/:series/:model",
+          "/motherboards-components/:productLine/:series/:model",
+          "/networking-iot-servers/:productLine/:series/:model",
+          "/:region/displays-desktops/:productLine/:series/:model",
+          "/:region/laptops/:productLine/:series/:model",
+          "/:region/motherboards-components/:productLine/:series/:model",
+          "/:region/networking-iot-servers/:productLine/:series/:model",
           "/"
         ],
         "target": "/asus/bios/:model"
       }
-    ]
-  },
-  "asus.com": {
-    "_name": "ASUS",
+    ],
     ".": [
       {
         "title": "GPU Tweak",
@@ -4149,6 +4167,16 @@
         ],
         "target": "/cls/telegraph"
       }
+    ],
+    "www": [
+      {
+        "title": "话题",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/subject/:id"
+        ],
+        "target": "/clsparams=>{const id=params.id;return`/subject${id?`/${id}`:\"\"}`}"
+      }
     ]
   },
   "cmpxchg8b.com": {
@@ -6042,6 +6070,19 @@
           "/:locale/free-games"
         ],
         "target": "/epicgames/freegames/:locale"
+      }
+    ]
+  },
+  "espn.com": {
+    "_name": "ESPN",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:sport*"
+        ],
+        "target": "/espn/news/:sport"
       }
     ]
   },
@@ -16703,6 +16744,20 @@
       }
     ]
   },
+  "nicovideo.jp": {
+    "_name": "Niconico",
+    "www": [
+      {
+        "title": "User Videos",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/user/:id",
+          "/user/:id/video"
+        ],
+        "target": "/nicovideo/user/:id/video"
+      }
+    ]
+  },
   "nikkei.com": {
     "_name": "The Nikkei 日本経済新聞",
     "www": [
@@ -21659,6 +21714,16 @@
         ],
         "target": "/swjtu/gsee/yjs"
       }
+    ],
+    "scai": [
+      {
+        "title": "计算机与人工智能学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/swjtu/scai/bks"
+      }
     ]
   },
   "swpu.edu.cn": {
@@ -23978,6 +24043,7 @@
         "source": [
           "/u/:uid",
           "/profile/:uid",
+          "/u/:uid",
           "/u/:uid"
         ],
         "target": "/weibo/user/:uid"
@@ -24764,6 +24830,27 @@
           "/"
         ],
         "target": "/yicai/vip/:id"
+      }
+    ]
+  },
+  "yilinzazhi.com": {
+    "_name": "意林杂志",
+    "www": [
+      {
+        "title": "文章列表",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/"
+        ],
+        "target": "/yilinzazhi/"
+      },
+      {
+        "title": "近期文章汇总",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/"
+        ],
+        "target": "/yilinzazhi/"
       }
     ]
   },

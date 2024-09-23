@@ -1896,7 +1896,8 @@
         ],
         "name": "推荐",
         "maintainers": [
-          "cnkmmk"
+          "cnkmmk",
+          "ovo-tim"
         ],
         "url": "51cto.com/",
         "location": "recommend.ts"
@@ -4480,6 +4481,69 @@
     "name": "Android",
     "url": "developer.android.com"
   },
+  "anime1": {
+    "routes": {
+      "anime/:category/:name": {
+        "path": "anime/:category/:name",
+        "name": "Anime",
+        "url": "anime1.me",
+        "maintainers": [
+          "cxheng315"
+        ],
+        "example": "/anime1/anime/2024年夏季/神之塔-第二季",
+        "categories": [
+          "anime"
+        ],
+        "parameters": {
+          "category": "Anime1 Category",
+          "name": "Anime1 Name"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "anime1.me/category/:category/:name"
+            ],
+            "target": "/anime/:category/:name"
+          }
+        ],
+        "location": "anime.ts"
+      },
+      "search/:keyword": {
+        "path": "search/:keyword",
+        "name": "Search",
+        "url": "anime1.me",
+        "maintainers": [
+          "cxheng315"
+        ],
+        "example": "/anime1/search/神之塔",
+        "categories": [
+          "anime"
+        ],
+        "parameters": {
+          "keyword": "Anime1 Search Keyword"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "search.ts"
+      }
+    },
+    "name": "Anime1",
+    "url": "anime1.me"
+  },
   "annualreviews": {
     "routes": {
       "/:id": {
@@ -5383,14 +5447,28 @@
   },
   "asus": {
     "routes": {
-      "/bios/:model": {
-        "path": "/bios/:model",
+      "/bios/:model/:lang?": {
+        "path": "/bios/:model/:lang?",
         "categories": [
           "program-update"
         ],
-        "example": "/asus/bios/RT-AX88U",
+        "example": "/asus/bios/RT-AX88U/zh",
         "parameters": {
-          "model": "Model, can be found in product page"
+          "model": "Model, can be found in product page",
+          "lang": {
+            "description": "Language, provide access routes for other parts of the world",
+            "options": [
+              {
+                "label": "Chinese",
+                "value": "zh"
+              },
+              {
+                "label": "Global",
+                "value": "en"
+              }
+            ],
+            "default": "en"
+          }
         },
         "features": {
           "requireConfig": false,
@@ -5403,15 +5481,24 @@
         "radar": [
           {
             "source": [
+              "www.asus.com/displays-desktops/:productLine/:series/:model",
+              "www.asus.com/laptops/:productLine/:series/:model",
+              "www.asus.com/motherboards-components/:productLine/:series/:model",
+              "www.asus.com/networking-iot-servers/:productLine/:series/:model",
+              "www.asus.com/:region/displays-desktops/:productLine/:series/:model",
+              "www.asus.com/:region/laptops/:productLine/:series/:model",
+              "www.asus.com/:region/motherboards-components/:productLine/:series/:model",
+              "www.asus.com/:region/networking-iot-servers/:productLine/:series/:model",
               "asus.com.cn/"
-            ]
+            ],
+            "target": "/bios/:model"
           }
         ],
         "name": "BIOS",
         "maintainers": [
           "Fatpandac"
         ],
-        "url": "asus.com.cn/",
+        "url": "www.asus.com",
         "location": "bios.ts"
       },
       "/gpu-tweak": {
@@ -13483,6 +13570,39 @@
         "url": "cls.cn/",
         "location": "hot.ts"
       },
+      "/subject/:id?": {
+        "path": "/subject/:id?",
+        "name": "话题",
+        "url": "www.cls.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/cls/subject/1103",
+        "parameters": {
+          "category": "分类，默认为 1103，即A股盘面直播，可在对应话题页 URL 中找到"
+        },
+        "description": ":::tip\n  若订阅 [有声早报](https://www.cls.cn/subject/1151)，网址为 `https://www.cls.cn/subject/1151`。截取 `https://www.cls.cn/subject/` 到末尾的部分 `1151` 作为参数填入，此时路由为 [`/cls/subject/1151`](https://rsshub.app/cls/subject/1151)。\n  :::\n    ",
+        "categories": [
+          "finance"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.cls.cn/subject/:id"
+            ]
+          }
+        ],
+        "location": "subject.ts"
+      },
       "/telegraph/:category?": {
         "path": "/telegraph/:category?",
         "categories": [
@@ -20760,6 +20880,36 @@
     },
     "name": "ePrice",
     "url": "eprice.com.tw"
+  },
+  "espn": {
+    "routes": {
+      "/news/:sport": {
+        "path": "/news/:sport",
+        "name": "News",
+        "maintainers": [
+          "weijianduan0302"
+        ],
+        "example": "/espn/news/nba",
+        "categories": [
+          "traditional-media"
+        ],
+        "parameters": {
+          "sport": "sport category, can be nba, nfl, mlb, nhl etc."
+        },
+        "description": "Get the news feed of the sport you love on ESPN.\n| Sport                |  sport  |  Sport         |  sport  |\n|----------------------|---------|----------------|---------|\n| 🏀 NBA                | nba     | 🎾 Tennis       | tennis  |\n| 🏀 WNBA               | wnba    | ⛳️ Golf         | golf    |\n| 🏈 NFL                | nfl     | 🏏 Cricket      | cricket |\n| ⚾️ MLB                | mlb     | ⚽️ Soccer       | soccer  |\n| 🏒 NHL                | nhl     | 🏎️ F1           | f1      |\n| ⛹️ College Basketball | ncb      | 🥊 MMA          | mma     |\n| 🏟️️ College Football   | ncf     | 🏈 UFL          | ufl     |\n| 🏉 Rugby              | rugby   | 🃏 Poker        | poker   |",
+        "radar": [
+          {
+            "source": [
+              "espn.com/:sport*"
+            ],
+            "target": "/news/:sport"
+          }
+        ],
+        "location": "news.ts"
+      }
+    },
+    "name": "ESPN",
+    "url": "espn.com"
   },
   "esquirehk": {
     "routes": {
@@ -47716,6 +47866,37 @@
     "name": "鸟哥笔记",
     "url": "niaogebiji.com"
   },
+  "nicovideo": {
+    "routes": {
+      "/user/:id/video/:embed?": {
+        "name": "User Videos",
+        "path": "/user/:id/video/:embed?",
+        "parameters": {
+          "id": "User ID",
+          "embed": "Default to embed the video, set to any value to disable embedding"
+        },
+        "example": "/nicovideo/user/16690815/video",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.nicovideo.jp/user/:id",
+              "www.nicovideo.jp/user/:id/video"
+            ],
+            "target": "/user/:id/video"
+          }
+        ],
+        "location": "video.ts"
+      }
+    },
+    "name": "Niconico",
+    "url": "www.nicovideo.jp",
+    "categories": [
+      "multimedia"
+    ]
+  },
   "nifd": {
     "routes": {
       "/research/:categoryGuid?": {
@@ -55051,6 +55232,29 @@
     "name": "前瞻网",
     "url": "qianzhan.com"
   },
+  "qiche365": {
+    "routes": {
+      "/recall/:channel": {
+        "path": "/recall/:channel",
+        "name": "汽车召回",
+        "example": "/qiche365/recall/1",
+        "parameters": {
+          "channel": "频道，见下表"
+        },
+        "description": "| 国内召回新闻 | 国内召回公告 | 国外召回新闻 | 国外召回公告 |\n  | ------------ | ------------ | ------------ | ------------ |\n  | 1            | 2            | 3            | 4            |",
+        "categories": [
+          "government"
+        ],
+        "maintainers": [
+          "huanfe1"
+        ],
+        "url": "qiche365.org.cn/index/recall/index.html",
+        "location": "recall.ts"
+      }
+    },
+    "name": "汽车召回网",
+    "url": "qiche365.org.cn"
+  },
   "qidian": {
     "routes": {
       "/author/:id": {
@@ -58596,6 +58800,30 @@
         "description": "| 学院动态 | 通知公告 | 学术论坛 |\n  | -------- | -------- | -------- |\n  | 0        | 1        | 2        |",
         "location": "epe.ts"
       },
+      "/gjsw/:type?": {
+        "path": "/gjsw/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/sdu/gjsw/tzgg",
+        "parameters": {
+          "type": "默认为`tzgg`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "国际事务部",
+        "maintainers": [
+          "kukeya"
+        ],
+        "description": "| 通知公告 |  \n  | -------- | \n  | tzgg     |      ",
+        "location": "gjsw.ts"
+      },
       "/mech/:type?": {
         "path": "/mech/:type?",
         "categories": [
@@ -58643,6 +58871,30 @@
         ],
         "description": "| 通知公告 | 学术动态 | 本科教育 | 研究生教育 |\n  | -------- | -------- | -------- | ---------- |\n  | 0        | 1        | 2        | 3          |",
         "location": "sc.ts"
+      },
+      "/ygb/:type?": {
+        "path": "/ygb/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/sdu/ygb/zytz",
+        "parameters": {
+          "type": "默认为`zytz`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "研工部",
+        "maintainers": [
+          "kukeya"
+        ],
+        "description": "| 重要通知 | 管理服务 | 创新实践 | \n  | -------- | -------- |-------- |\n  | zytz     | glfw     | cxsj    | ",
+        "location": "ygb.ts"
       },
       "/cs/index/:type?": {
         "path": "/cs/index/:type?",
@@ -58701,6 +58953,79 @@
         ],
         "description": "| 学院公告 | 学术报告 | 科技简讯 | 本科教育 | 研究生教育 | \n| -------- | -------- | -------- | -------- | -------- |\n| announcement | academic | technology | undergraduate | postgraduate |",
         "location": "cs/index.ts"
+      },
+      "/cs/yjsgz/:type?": {
+        "path": "/cs/yjsgz/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/sdu/cs/yjsgz/zytz",
+        "parameters": {
+          "type": "默认为`zytz`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "计算机科学与技术学院研究生工作网站",
+        "maintainers": [
+          "kukeya",
+          "wiketool"
+        ],
+        "description": "| 重要通知 | 公示栏 |\n| -------- | -------- |\n| zytz      | gsl       |",
+        "location": "cs/yjsgz.ts"
+      },
+      "/qd/xszxqd/:type?": {
+        "path": "/qd/xszxqd/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/sdu/qd/xszxqd/xtyw",
+        "parameters": {
+          "type": "默认为`xtyw`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "学生在线（青岛）",
+        "maintainers": [
+          "kukeya"
+        ],
+        "description": "| 学团通知-研究生 | 学团通知-本科生 | 学团通知-团学 | 学团通知-心理 | 学团要闻\n  | -------- | -------- |-------- |-------- |-------- |\n  | xttz-yjs   | xttz-bks  |  xttz-tx  | xttz-xl  | xtyw  |",
+        "location": "qd/xszxqd.ts"
+      },
+      "/qd/xyb/:type?": {
+        "path": "/qd/xyb/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/sdu/qd/xyb/gztz",
+        "parameters": {
+          "type": "默认为`gztz`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "青岛校区学科建设与研究生教育办公室",
+        "maintainers": [
+          "kukeya"
+        ],
+        "description": "| 工作通知 | \n  | -------- |\n  | gztz     | ",
+        "location": "qd/xyb.ts"
       },
       "/wh/jwc/:column?": {
         "path": "/wh/jwc/:column?",
@@ -64440,6 +64765,35 @@
         ],
         "description": "#### 研究生通知 {#xi-nan-jiao-tong-da-xue-jiao-tong-yun-shu-yu-wu-liu-xue-yuan-yan-jiu-sheng-tong-zhi}",
         "location": "jtys/yjs.ts"
+      },
+      "/scai/bks": {
+        "path": "/scai/bks",
+        "categories": [
+          "university"
+        ],
+        "example": "/swjtu/scai/bks",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "scai.swjtu.edu.cn/"
+            ]
+          }
+        ],
+        "name": "计算机与人工智能学院",
+        "description": "本科生教育",
+        "maintainers": [
+          "AzureG03"
+        ],
+        "location": "scai/bks.ts"
       }
     },
     "name": "西南交通大学",
@@ -72305,6 +72659,7 @@
             "source": [
               "m.weibo.cn/u/:uid",
               "m.weibo.cn/profile/:uid",
+              "weibo.com/u/:uid",
               "www.weibo.com/u/:uid"
             ],
             "target": "/user/:uid"
@@ -72807,8 +73162,16 @@
       },
       "/news/:category{.+}?": {
         "path": "/news/:category{.+}?",
-        "name": "Unknown",
+        "categories": [
+          "university"
+        ],
+        "example": "/whu/news",
+        "parameters": {
+          "category": "新闻栏目，可选"
+        },
+        "name": "新闻网",
         "maintainers": [],
+        "description": "\ncategory 参数可选，范围如下:\n\n| 新闻栏目 | 武大资讯 | 学术动态 | 珞珈影像 | 武大视频 |\n| -------- | -------- | -------- | -------- | -------- |\n| 参数     |  0 或 `wdzx/wdyw`  | 1 或 `kydt` | 2 或 `stkj/ljyx` | 3 或 `stkj/wdsp` |\n\n此外 route 后可以加上 `?limit=n` 的查询参数，表示只获取前 n 条新闻；如果不指定默认为 10。\n",
         "location": "news.ts"
       },
       "/rsgis/:type/:sub?": {
@@ -75896,6 +76259,59 @@
     },
     "name": "第一财经",
     "url": "yicai.com"
+  },
+  "yilinzazhi": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "reading"
+        ],
+        "example": "/yilinzazhi",
+        "radar": [
+          {
+            "source": [
+              "www.yilinzazhi.com"
+            ],
+            "target": "/"
+          }
+        ],
+        "name": "文章列表",
+        "maintainers": [
+          "g0ngjie"
+        ],
+        "url": "www.yilinzazhi.com",
+        "location": "index.ts"
+      },
+      "/latest": {
+        "path": "/latest",
+        "categories": [
+          "reading"
+        ],
+        "example": "/yilinzazhi/latest",
+        "radar": [
+          {
+            "source": [
+              "www.yilinzazhi.com"
+            ],
+            "target": "/"
+          }
+        ],
+        "name": "近期文章汇总",
+        "maintainers": [
+          "g0ngjie"
+        ],
+        "url": "www.yilinzazhi.com",
+        "description": "最近一期的文章汇总",
+        "location": "latest.ts"
+      }
+    },
+    "name": "意林杂志",
+    "url": "www.yilinzazhi.com",
+    "categories": [
+      "reading"
+    ],
+    "description": ""
   },
   "ymgal": {
     "routes": {
