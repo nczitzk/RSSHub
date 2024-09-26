@@ -3966,10 +3966,89 @@
         "title": "Category",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
-          "/:category",
+          "/category/:keyword"
+        ],
+        "target": "/chikubi/category/:keyword"
+      },
+      {
+        "title": "最新記事",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
           "/"
         ],
-        "target": "/chikubi/:category"
+        "target": "/chikubi/"
+      },
+      {
+        "title": "殿堂",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/best-nipple-article"
+        ],
+        "target": "/chikubi/best"
+      },
+      {
+        "title": "動畫",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/nipple-video"
+        ],
+        "target": "/chikubi/video"
+      },
+      {
+        "title": "VR",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/nipple-video-category/cat-nipple-video-vr"
+        ],
+        "target": "/chikubi/vr"
+      },
+      {
+        "title": "漫畫",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/comic"
+        ],
+        "target": "/chikubi/comic"
+      },
+      {
+        "title": "音聲",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/voice"
+        ],
+        "target": "/chikubi/voice"
+      },
+      {
+        "title": "CG・イラスト",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/cg"
+        ],
+        "target": "/chikubi/cg"
+      },
+      {
+        "title": "動画カテゴリー",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/nipple-video-category/:keyword"
+        ],
+        "target": "/chikubi/nipple-video-category/:keyword"
+      },
+      {
+        "title": "AVメーカー",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/nipple-video-maker/:keyword"
+        ],
+        "target": "/chikubi/nipple-video-maker/:keyword"
+      },
+      {
+        "title": "Tag",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/tag/:keyword"
+        ],
+        "target": "/chikubi/tag/:keyword"
       }
     ]
   },
@@ -5782,7 +5861,7 @@
     "cn": [
       {
         "title": "Blog",
-        "docs": "https://docs.rsshub.app/routes/design",
+        "docs": "https://docs.rsshub.app/routes/blog",
         "source": [
           "/blog"
         ],
@@ -6897,6 +6976,14 @@
   "gamer.com.tw": {
     "_name": "巴哈姆特電玩資訊站",
     "ani": [
+      {
+        "title": "動畫瘋 - 動畫",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/"
+        ],
+        "target": "/gamer/anime/:sn"
+      },
       {
         "title": "動畫瘋 - 最後更新",
         "docs": "https://docs.rsshub.app/routes/anime",
@@ -9510,7 +9597,7 @@
     "_name": "Hacker News",
     "news": [
       {
-        "title": "用户",
+        "title": "User",
         "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
           "/:section",
@@ -15909,13 +15996,21 @@
     "_name": "国家地理",
     ".": [
       {
-        "title": "每日一图",
+        "title": "Daily Photo",
         "docs": "https://docs.rsshub.app/routes/picture",
         "source": [
           "/photo-of-the-day/*",
           "/"
         ],
         "target": "/natgeo/dailyphoto"
+      },
+      {
+        "title": "Daily Selection",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/"
+        ],
+        "target": "/natgeo/dailyselection"
       }
     ],
     "www": [
@@ -16354,6 +16449,20 @@
       }
     ]
   },
+  "ncku.edu.tw": {
+    "_name": "National Cheng Kung University",
+    "www.csie": [
+      {
+        "title": "CSIE News",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/zh-hant/news/:catagory?/",
+          "/en/news/:catagory?/"
+        ],
+        "target": "/ncku/zh-hant/:catagory"
+      }
+    ]
+  },
   "ncpssd.cn": {
     "_name": "国家哲学社会科学文献中心",
     ".": [
@@ -16633,7 +16742,7 @@
     "_name": "New Yorker",
     ".": [
       {
-        "title": "The New Yorker",
+        "title": "Articles",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
           "/:category"
@@ -17458,6 +17567,19 @@
           "/"
         ],
         "target": "/nytimes/:lang?"
+      }
+    ]
+  },
+  "obsidian.md": {
+    "_name": "Obsidian",
+    "publish": [
+      {
+        "title": "Publish",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/obsidian/publish/:id"
       }
     ]
   },
@@ -23807,6 +23929,76 @@
           "/"
         ],
         "target": "/vom/featured/:lang"
+      }
+    ]
+  },
+  "voronoiapp.com": {
+    "_name": "Voronoi",
+    "www": [
+      {
+        "title": "Author Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/author/:username"
+        ],
+        "target": "/voronoiapp/author/:username"
+      },
+      {
+        "title": "Editor's Pick Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/posts/editors-pick"
+        ],
+        "target": "/voronoiapp/editors-pick"
+      },
+      {
+        "title": "Home Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/",
+          "/posts/voronoi"
+        ],
+        "target": "/voronoiapp/home"
+      },
+      {
+        "title": "Latest Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/posts/latest"
+        ],
+        "target": "/voronoiapp/latest"
+      },
+      {
+        "title": "Most Liked Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/posts/most-popular"
+        ],
+        "target": "/voronoiapp/popular/most-popular"
+      },
+      {
+        "title": "Most Discussed Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/posts/most-discussed"
+        ],
+        "target": "/voronoiapp/popular/most-discussed"
+      },
+      {
+        "title": "Most Viewed Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/posts/most-viewed"
+        ],
+        "target": "/voronoiapp/popular/most-viewed"
+      },
+      {
+        "title": "Search Keyword Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/explore"
+        ],
+        "target": "/voronoiapp(_,url)=>{const parsedURL=new URL(url);const keyword=parsedURL.searchParams.get(\"search\");return`/voronoiapp/search/${keyword}`}"
       }
     ]
   },
