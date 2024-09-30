@@ -17300,6 +17300,41 @@
           }
         ],
         "location": "homepage.ts"
+      },
+      "/threads/:type?": {
+        "path": "/threads/:type?",
+        "categories": [
+          "bbs"
+        ],
+        "example": "/deepin/threads/latest",
+        "parameters": {
+          "type": {
+            "description": "主题类型",
+            "options": [
+              {
+                "value": "hot",
+                "label": "最热主题"
+              },
+              {
+                "value": "latest",
+                "label": "最新主题"
+              }
+            ]
+          }
+        },
+        "name": "首页主题列表",
+        "maintainers": [
+          "myml"
+        ],
+        "radar": [
+          {
+            "source": [
+              "bbs.deepin.org"
+            ],
+            "target": "/threads/latest"
+          }
+        ],
+        "location": "thread.ts"
       }
     },
     "name": "Deepin",
@@ -39312,6 +39347,37 @@
     "name": "The Korea Institute of Marine Law",
     "url": "kimlaw.or.kr"
   },
+  "konachan": {
+    "routes": {
+      "/post/popular_recent/:period?": {
+        "path": "/post/popular_recent/:period?",
+        "categories": [
+          "picture"
+        ],
+        "example": "/konachan/post/popular_recent/1d",
+        "parameters": {
+          "period": "展示时间"
+        },
+        "radar": [
+          {
+            "source": [
+              "konachan.com/post"
+            ]
+          }
+        ],
+        "name": "Popular Recent Posts",
+        "maintainers": [
+          "magic-akari",
+          "NekoAria"
+        ],
+        "description": "| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n  | ------- | -------- | ------- | -------- |\n  | 1d | 1w | 1m | 1y |",
+        "location": "post.ts"
+      }
+    },
+    "name": "Konachan.com Anime Wallpapers",
+    "url": "konachan.com",
+    "description": "konachan post"
+  },
   "konghq": {
     "routes": {
       "/blog-posts": {
@@ -41139,13 +41205,15 @@
   },
   "lovelive-anime": {
     "routes": {
-      "/news/:option?": {
-        "path": "/news/:option?",
+      "/news/:abbr?/:category?/:option?": {
+        "path": "/news/:abbr?/:category?/:option?",
         "categories": [
           "anime"
         ],
         "example": "/lovelive-anime/news",
         "parameters": {
+          "abbr": "The path to the Love Live series of sub-projects on the official website is detailed in the table below, `abbr` is `detail` when crawling the full text",
+          "category": "The official website lists the Topics category, `category` is `detail` when crawling the full text, other categories see the following table for details",
           "option": "Crawl full text when `option` is `detail`."
         },
         "features": {
@@ -41160,22 +41228,35 @@
           {
             "source": [
               "www.lovelive-anime.jp/",
-              "www.lovelive-anime.jp/news"
+              "www.lovelive-anime.jp/news/"
             ],
             "target": "/news"
           }
         ],
-        "name": "Love Live! Official Website Latest NEWS",
+        "name": "News",
         "maintainers": [
-          "axojhf"
+          "axojhf",
+          "zhaoweizhong"
         ],
         "url": "www.lovelive-anime.jp/",
+        "description": "| Sub-project Name | All Projects | Lovelive!   | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | 蓮ノ空女学院 | 幻日のヨハネ | ラブライブ！スクールアイドルミュージカル |\n  | -------------------------------- | -------------- | ----------- | -------------------- | ------------------------------------------ | --------------------- | ------------ | ------------ | ---------------------------------------- |\n  | `abbr`parameter                  | <u>*No parameter*</u> | lovelive |     sunshine        | nijigasaki                                 | superstar              | hasunosora | yohane       | musical                                  |\n\n  | Category Name       | 全てのニュース        | 音楽商品 | アニメ映像商品 | キャスト映像商品 | 劇場    | アニメ放送 / 配信 | キャスト配信 / ラジオ | ライブ / イベント | ブック | グッズ | ゲーム | メディア | ご当地情報 | キャンペーン | その他 |\n  | ------------------- | --------------------- | -------- | -------------- | ---------------- | ------- | ----------------- | --------------------- | ----------------- | ------ | ------ | ------ | -------- | ---------- | ------ | ------------ |\n  | `category`parameter | <u>*No parameter*</u> | music    | anime_movie   | cast_movie      | theater | onair             | radio                 | event             | books  | goods  | game   | media    | local      | campaign  | other   |",
         "location": "news.ts"
       },
       "/schedules/:serie?/:category?": {
         "path": "/schedules/:serie?/:category?",
-        "name": "Unknown",
-        "maintainers": [],
+        "parameters": {
+          "serie": "Love Live! Series sub-projects abbreviation, see the following table",
+          "category": "The official website lists the categories, see the following table for details"
+        },
+        "name": "Schedule",
+        "example": "/lovelive-anime/schedules",
+        "categories": [
+          "anime"
+        ],
+        "maintainers": [
+          "axojhf"
+        ],
+        "description": "| Sub-project Name (not full name) | 全シリーズ              | Lovelive!  | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | ラブライブ！スクールアイドルミュージカル |\n| -------------------------------- | ----------------------- | ---------- | -------------------- | ------------------------------------------ | --------------------- | ---------------------------------------- |\n| `serie` parameter                | *No parameter* or `all` | `lovelive` | `sunshine`           | `nijigasaki`                               | `superstar`           | `musical`                                |\n\n| Category Name        | 全て                    | ライブ | イベント | 生配信    |\n| -------------------- | ----------------------- | ------ | -------- | --------- |\n| `category` parameter | *No parameter* or `all` | `live` | `event`  | `haishin` |",
         "location": "schedules.ts"
       },
       "/topics/:abbr/:category?/:option?": {
@@ -41197,7 +41278,7 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Love Live Official Website Categories Topics",
+        "name": "Categories Topics",
         "maintainers": [
           "axojhf"
         ],
@@ -41205,7 +41286,7 @@
         "location": "topics.ts"
       }
     },
-    "name": "lovelive-anime",
+    "name": "Love Live! Official Website",
     "url": "www.lovelive-anime.jp"
   },
   "lrepacks": {
@@ -47564,20 +47645,66 @@
         "radar": [
           {
             "source": [
-              "www.csie.ncku.edu.tw/zh-hant/news/:catagory?/",
-              "www.csie.ncku.edu.tw/en/news/:catagory?/"
+              "www.csie.ncku.edu.tw/zh-hant/news/"
             ],
-            "target": "/zh-hant/:catagory"
+            "target": "/csie/_all"
+          },
+          {
+            "source": [
+              "www.csie.ncku.edu.tw/zh-hant/news/:catagory"
+            ],
+            "target": "/csie/:catagory"
           }
         ],
         "maintainers": [
           "simbafs"
         ],
         "location": "csie.ts"
+      },
+      "/phys/:catagory?": {
+        "zh-TW": {
+          "name": "國立成功大學物理系公告"
+        },
+        "name": "Phys News",
+        "description": "| 分類 | catagory |\n| 物理系 | 24 |\n| 獎助學金 | scholarship |\n| 招生與錄取報到 | admission |\n| 助教公告 | course-announcement |\n| 大學部 | bachelor-announcement |\n| 研究所 | master-announcement |\n| 畢業離校 | graduation |\n| 學生手冊與新生入學 | student-guide |\n| 榮譽榜 | honor |\n| 求才公告 | career |\n| 其他 | others |\n| 所有訊息 | _all |\n",
+        "path": "/phys/:catagory?",
+        "parameters": {
+          "catagory": "catagory, default is _all"
+        },
+        "categories": [
+          "university"
+        ],
+        "example": "/ncku/phys/_all",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "phys.ncku.edu.tw/news/"
+            ],
+            "target": "/phys/_all"
+          },
+          {
+            "source": [
+              "phys.ncku.edu.tw/news/:catagory/"
+            ],
+            "target": "/phys/:catagory"
+          }
+        ],
+        "maintainers": [
+          "simbafs"
+        ],
+        "location": "phys.ts"
       }
     },
     "name": "National Cheng Kung University",
-    "url": "ncku.edu.tw"
+    "url": "www.ncku.edu.tw"
   },
   "ncpssd": {
     "routes": {
@@ -66399,6 +66526,56 @@
     "name": "中山大学",
     "url": "cse.sysu.edu.cn"
   },
+  "szftedu": {
+    "routes": {
+      "/dongtai": {
+        "path": "/dongtai",
+        "categories": [
+          "university"
+        ],
+        "example": "/szftedu/dongtai",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "动态",
+        "maintainers": [
+          "valuex"
+        ],
+        "description": "",
+        "location": "dongtai.ts"
+      },
+      "/gonggao": {
+        "path": "/gonggao",
+        "categories": [
+          "university"
+        ],
+        "example": "/szftedu/gonggao",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "公告",
+        "maintainers": [
+          "valuex"
+        ],
+        "description": "",
+        "location": "gonggao.ts"
+      }
+    },
+    "name": "园岭小学",
+    "url": "ylxx.szftedu.cn"
+  },
   "szse": {
     "routes": {
       "/inquire/:category?/:select?/:keyword?": {
@@ -71222,6 +71399,50 @@
         "url": "auto.uestc.edu.cn/",
         "location": "auto.ts"
       },
+      "/bbs/:types?": {
+        "path": "/bbs/:types?",
+        "name": "清水河畔",
+        "maintainers": [
+          "huyyi"
+        ],
+        "categories": [
+          "university"
+        ],
+        "url": "bbs.uestc.edu.cn",
+        "example": "/uestc/bbs/newthread",
+        "parameters": {
+          "types": "选择内容类型(多选`,`分割），可选值：[newreply,newthread,digest,life,hotlist]。默认为所有。"
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "UESTC_BBS_COOKIE",
+              "optional": false,
+              "description": "河畔的cookie"
+            },
+            {
+              "name": "UESTC_BBS_AUTH_KEY",
+              "optional": false,
+              "description": "河畔Header中的authorization字段"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "description": "\n:::tip\n仅支持自建，您需要设置以下配置才能正常使用：\n-   河畔cookie: `UESTC_BBS_COOKIE`\n-   Header中的授权字段: `UESTC_BBS_AUTH_KEY`\n:::\n",
+        "radar": [
+          {
+            "source": [
+              "bbs.uestc.edu.cn/*"
+            ],
+            "target": "/bbs/newthread"
+          }
+        ],
+        "location": "bbs.ts"
+      },
       "/cqe/:type?": {
         "path": "/cqe/:type?",
         "categories": [
@@ -71450,7 +71671,7 @@
       }
     },
     "name": "电子科技大学",
-    "url": "gr.uestc.edu.cn"
+    "url": "www.uestc.edu.cn"
   },
   "uibe": {
     "routes": {
@@ -77722,6 +77943,34 @@
     "name": "Yahoo",
     "url": "hk.news.yahoo.com"
   },
+  "yamap": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "travel"
+        ],
+        "example": "/yamap",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "文章",
+        "maintainers": [
+          "valuex"
+        ],
+        "description": "",
+        "location": "articles.ts"
+      }
+    },
+    "name": "YAMAP",
+    "url": "yamap.com"
+  },
   "yamibo": {
     "routes": {
       "/bbs/forum/:fid/:type?": {
@@ -77796,7 +78045,7 @@
       "/post/popular_recent/:period?": {
         "path": "/post/popular_recent/:period?",
         "categories": [
-          "anime"
+          "picture"
         ],
         "example": "/yande/post/popular_recent/1d",
         "parameters": {
@@ -77805,19 +78054,22 @@
         "radar": [
           {
             "source": [
-              "yande.re/post/"
+              "yande.re/post"
             ]
           }
         ],
-        "name": "posts",
+        "name": "Popular Recent Posts",
         "maintainers": [
-          "fashioncj"
+          "magic-akari",
+          "SettingDust",
+          "fashioncj",
+          "NekoAria"
         ],
-        "description": "| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     | \n  | ------- | -------- | ------- | -------- | \n  | 1d | 1w | 1m ｜1y｜",
+        "description": "| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n  | ------- | -------- | ------- | -------- |\n  | 1d | 1w | 1m | 1y |",
         "location": "post.ts"
       }
     },
-    "name": "yande",
+    "name": "yande.re",
     "url": "yande.re",
     "description": "yande post"
   },

@@ -1619,6 +1619,9 @@
   "/deepin/homepage/:user_id": [
     "tensor-tech"
   ],
+  "/deepin/threads/:type?": [
+    "myml"
+  ],
   "/deeplearning/thebatch": [
     "nczitzk",
     "juvenn"
@@ -3676,6 +3679,10 @@
   "/kimlaw/thesis": [
     "TonyRL"
   ],
+  "/konachan/post/popular_recent/:period?": [
+    "magic-akari",
+    "NekoAria"
+  ],
   "/konghq/blog-posts": [
     "piglei"
   ],
@@ -3858,10 +3865,13 @@
     "ladeng07",
     "3401797899"
   ],
-  "/lovelive-anime/news/:option?": [
+  "/lovelive-anime/news/:abbr?/:category?/:option?": [
+    "axojhf",
+    "zhaoweizhong"
+  ],
+  "/lovelive-anime/schedules/:serie?/:category?": [
     "axojhf"
   ],
-  "/lovelive-anime/schedules/:serie?/:category?": [],
   "/lovelive-anime/topics/:abbr/:category?/:option?": [
     "axojhf"
   ],
@@ -4241,6 +4251,9 @@
     "nilleo"
   ],
   "/ncku/csie/:catagory?": [
+    "simbafs"
+  ],
+  "/ncku/phys/:catagory?": [
     "simbafs"
   ],
   "/ncpssd/newlist": [
@@ -5982,6 +5995,12 @@
   "/sysu/ygafz/:type?": [
     "TonyRL"
   ],
+  "/szftedu/dongtai": [
+    "valuex"
+  ],
+  "/szftedu/gonggao": [
+    "valuex"
+  ],
   "/szse/inquire/:category?/:select?/:keyword?": [
     "Jeason0228",
     "nczitzk"
@@ -6445,6 +6464,9 @@
   "/uestc/auto": [
     "talengu",
     "mobyw"
+  ],
+  "/uestc/bbs/:types?": [
+    "huyyi"
   ],
   "/uestc/cqe/:type?": [
     "truobel",
@@ -7060,6 +7082,9 @@
     "TonyRL",
     "williamgateszhao"
   ],
+  "/yamap/": [
+    "valuex"
+  ],
   "/yamibo/bbs/forum/:fid/:type?": [
     "KarasuShin"
   ],
@@ -7067,7 +7092,10 @@
     "KarasuShin"
   ],
   "/yande/post/popular_recent/:period?": [
-    "fashioncj"
+    "magic-akari",
+    "SettingDust",
+    "fashioncj",
+    "NekoAria"
   ],
   "/yangtzeu/dongke/*": [],
   "/ycwb/:node": [
