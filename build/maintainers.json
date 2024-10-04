@@ -245,8 +245,9 @@
     "nczitzk"
   ],
   "/9to5/:subsite/:tag?": [],
-  "/a9vg/": [
-    "monnerHenster"
+  "/a9vg/:category{.+}?": [
+    "monnerHenster",
+    "nczitzk"
   ],
   "/aamacau/:category?/:id?": [],
   "/abc/:category{.+}?": [
@@ -599,6 +600,9 @@
   ],
   "/bangumi/tv/user/blog/:id": [
     "nczitzk"
+  ],
+  "/bangumi/tv/user/collections/:id/:subjectType/:type": [
+    "youyou-sudo"
   ],
   "/bangumi/tv/user/wish/:id": [
     "honue"
@@ -1157,6 +1161,9 @@
   "/cebbank/quotation/history/:type": [
     "linbuxiao"
   ],
+  "/ceph/blog/:topic?": [
+    "pandada8"
+  ],
   "/cfachina/servicesupport/analygarden/:program?": [
     "TonyRL"
   ],
@@ -1605,6 +1612,12 @@
   ],
   "/deadline/": [
     "TonyRL"
+  ],
+  "/dealstreetasia/home": [
+    "jack2game"
+  ],
+  "/dealstreetasia/section/:section": [
+    "jack2game"
   ],
   "/dedao/:category?": [],
   "/dedao/knowledge/:topic?/:type?": [
@@ -2373,6 +2386,9 @@
   "/github/contributors/:user/:repo/:order?/:anon?": [
     "zoenglinghou"
   ],
+  "/github/discussion/:user/:repo/:state?/:category?": [
+    "waynzh"
+  ],
   "/github/file/:user/:repo/:branch/:filepath{.+}": [
     "zengxs"
   ],
@@ -2533,6 +2549,9 @@
   "/gov/cnnic/*": [],
   "/gov/csrc/auditstatus/:apply_id": [
     "hillerliao"
+  ],
+  "/gov/csrc/zfxxgk_zdgk/:id?": [
+    "nczitzk"
   ],
   "/gov/csrc/news/:suffix{.+}?": [],
   "/gov/customs/list/:gchannel?": [
@@ -3480,6 +3499,12 @@
   "/javlibrary/update/:language?": [],
   "/javlibrary/users/:id/:type/:language?": [],
   "/javlibrary/:type/:id/:language?": [],
+  "/javtiful/actress/:id": [
+    "huanfe1"
+  ],
+  "/javtiful/channel/:id": [
+    "huanfe1"
+  ],
   "/jd/price/:id": [
     "nczitzk"
   ],
@@ -3682,6 +3707,9 @@
   ],
   "/kimlaw/thesis": [
     "TonyRL"
+  ],
+  "/kisskiss/blog/:category?": [
+    "keocheung"
   ],
   "/konachan/post/popular_recent/:period?": [
     "magic-akari",
@@ -4023,7 +4051,8 @@
   ],
   "/metmuseum/exhibitions/:state?": [],
   "/mi/crowdfunding": [
-    "DIYgod"
+    "DIYgod",
+    "nuomi1"
   ],
   "/mi/golden": [
     "nczitzk"
@@ -5273,6 +5302,9 @@
     "amakerlife"
   ],
   "/researchgate/publications/:id": [],
+  "/resonac/products": [
+    "valuex"
+  ],
   "/reuters/:category/:topic?": [
     "LyleLee",
     "HenryQW",
@@ -6919,6 +6951,9 @@
   "/xaut/rsc/:category?": [
     "mocusez",
     "light0926"
+  ],
+  "/xbookcn/:label?": [
+    "Lyunvy"
   ],
   "/xboxfan/news": [
     "XXY233"
