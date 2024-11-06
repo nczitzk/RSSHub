@@ -6704,7 +6704,7 @@
       }
     ]
   },
-  "coomer.party": {
+  "coomer.su": {
     "_name": "Coomer",
     ".": [
       {
@@ -7249,12 +7249,12 @@
   },
   "daily.dev": {
     "_name": "Daily.dev",
-    ".": [
+    "app": [
       {
         "title": "Most Discussed",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
-          "/popular"
+          "/discussed"
         ],
         "target": "/daily/discussed"
       },
@@ -7267,10 +7267,18 @@
         "target": "/daily/"
       },
       {
+        "title": "Source Posts",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/sources/:sourceId"
+        ],
+        "target": "/daily/source/:sourceId"
+      },
+      {
         "title": "Most upvoted",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
-          "/popular"
+          "/upvoted"
         ],
         "target": "/daily/upvoted"
       },
@@ -12599,6 +12607,19 @@
           "/news"
         ],
         "target": "/hakkatv/news"
+      }
+    ]
+  },
+  "hamel.dev": {
+    "_name": "Hamel's Blog",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/hamel/blog"
       }
     ]
   },
@@ -21391,6 +21412,14 @@
           "/"
         ],
         "target": "/nytimes/:lang?"
+      },
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/"
+        ],
+        "target": "/nytimes/rss/:cat?"
       }
     ]
   },
@@ -22094,12 +22123,20 @@
         "target": "/pixiv/user/illustfollows"
       },
       {
-        "title": "User Novels",
+        "title": "User Novels (簡介 Basic info)",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/users/:id/novels"
         ],
         "target": "/pixiv/user/novels/:id"
+      },
+      {
+        "title": "User Novels (全文 Full text)",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/users/:id/novels"
+        ],
+        "target": "/pixiv/user/novels/:id/true"
       },
       {
         "title": "User Activity",
@@ -26768,6 +26805,19 @@
           "/newsflash"
         ],
         "target": "/theblockbeats/newsflash"
+      }
+    ]
+  },
+  "thegradient.pub": {
+    "_name": "The Gradient",
+    ".": [
+      {
+        "title": "Posts",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/thegradient/posts"
       }
     ]
   },

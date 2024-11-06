@@ -8871,7 +8871,7 @@
         "example": "/bilibili/user/dynamic/2267573",
         "parameters": {
           "uid": "用户 id, 可在 UP 主主页中找到",
-          "routeParams": "\n| 键         | 含义                              | 接受的值       | 默认值 |\n| ---------- | --------------------------------- | -------------- | ------ |\n| showEmoji  | 显示或隐藏表情图片                | 0/1/true/false | false  |\n| embed      | 默认开启内嵌视频                  | 任意值         |        |\n| useAvid    | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n| directLink | 使用内容直链                      | 0/1/true/false | false  |\n| hideGoods  | 隐藏带货动态                      | 0/1/true/false | false  |\n\n用例：`/bilibili/user/dynamic/2267573/showEmoji=1&embed=0&useAvid=1`"
+          "routeParams": "\n| 键         | 含义                              | 接受的值       | 默认值 |\n| ---------- | --------------------------------- | -------------- | ------ |\n| showEmoji  | 显示或隐藏表情图片                | 0/1/true/false | false  |\n| embed      | 默认开启内嵌视频                  | 0/1/true/false |  true  |\n| useAvid    | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n| directLink | 使用内容直链                      | 0/1/true/false | false  |\n| hideGoods  | 隐藏带货动态                      | 0/1/true/false | false  |\n\n用例：`/bilibili/user/dynamic/2267573/showEmoji=1&embed=0&useAvid=1`"
         },
         "features": {
           "requireConfig": [
@@ -9004,7 +9004,7 @@
         "example": "/bilibili/followings/dynamic/109937383",
         "parameters": {
           "uid": "用户 id, 可在 UP 主主页中找到",
-          "routeParams": "\n| 键         | 含义                              | 接受的值       | 默认值 |\n| ---------- | --------------------------------- | -------------- | ------ |\n| showEmoji  | 显示或隐藏表情图片                | 0/1/true/false | false  |\n| embed      | 默认开启内嵌视频                  | 任意值         |        |\n| useAvid    | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n| directLink | 使用内容直链                      | 0/1/true/false | false  |\n| hideGoods  | 隐藏带货动态                      | 0/1/true/false | false  |\n\n用例：`/bilibili/followings/dynamic/2267573/showEmoji=1&embed=0&useAvid=1`"
+          "routeParams": "\n| 键         | 含义                              | 接受的值       | 默认值 |\n| ---------- | --------------------------------- | -------------- | ------ |\n| showEmoji  | 显示或隐藏表情图片                | 0/1/true/false | false  |\n| embed      | 默认开启内嵌视频                  | 0/1/true/false |  true  |\n| useAvid    | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n| directLink | 使用内容直链                      | 0/1/true/false | false  |\n| hideGoods  | 隐藏带货动态                      | 0/1/true/false | false  |\n\n用例：`/bilibili/followings/dynamic/2267573/showEmoji=1&embed=0&useAvid=1`"
         },
         "features": {
           "requireConfig": [
@@ -18128,8 +18128,8 @@
         "radar": [
           {
             "source": [
-              "coomer.party/onlyfans/user/:id",
-              "coomer.party/"
+              "coomer.su/onlyfans/user/:id",
+              "coomer.su/"
             ]
           }
         ],
@@ -18157,8 +18157,8 @@
         "radar": [
           {
             "source": [
-              "coomer.party/posts",
-              "coomer.party/"
+              "coomer.su/posts",
+              "coomer.su/"
             ]
           }
         ],
@@ -18166,12 +18166,12 @@
         "maintainers": [
           "nczitzk"
         ],
-        "url": "coomer.party/posts",
+        "url": "coomer.su/posts",
         "location": "posts.ts"
       }
     },
     "name": "Coomer",
-    "url": "coomer.party",
+    "url": "coomer.su",
     "lang": "en"
   },
   "copernicium": {
@@ -19610,7 +19610,7 @@
         "radar": [
           {
             "source": [
-              "daily.dev/popular"
+              "app.daily.dev/discussed"
             ]
           }
         ],
@@ -19618,7 +19618,7 @@
         "maintainers": [
           "Rjnishant530"
         ],
-        "url": "daily.dev/popular",
+        "url": "app.daily.dev/discussed",
         "location": "discussed.ts"
       },
       "/": {
@@ -19627,7 +19627,7 @@
         "radar": [
           {
             "source": [
-              "daily.dev/popular"
+              "app.daily.dev/popular"
             ]
           }
         ],
@@ -19635,8 +19635,28 @@
         "maintainers": [
           "Rjnishant530"
         ],
-        "url": "daily.dev/popular",
+        "url": "app.daily.dev/popular",
         "location": "index.ts"
+      },
+      "/source/:sourceId": {
+        "path": "/source/:sourceId",
+        "example": "/daily/source/hn",
+        "parameters": {
+          "sourceId": "The source id"
+        },
+        "radar": [
+          {
+            "source": [
+              "app.daily.dev/sources/:sourceId"
+            ]
+          }
+        ],
+        "name": "Source Posts",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "app.daily.dev",
+        "location": "source.ts"
       },
       "/upvoted": {
         "path": "/upvoted",
@@ -19644,7 +19664,7 @@
         "radar": [
           {
             "source": [
-              "daily.dev/popular"
+              "app.daily.dev/upvoted"
             ]
           }
         ],
@@ -19652,7 +19672,7 @@
         "maintainers": [
           "Rjnishant530"
         ],
-        "url": "daily.dev/popular",
+        "url": "app.daily.dev/upvoted",
         "location": "upvoted.ts"
       },
       "/user/:userId": {
@@ -19661,8 +19681,8 @@
         "radar": [
           {
             "source": [
-              "daily.dev/:userId/posts",
-              "daily.dev/:userId"
+              "app.daily.dev/:userId/posts",
+              "app.daily.dev/:userId"
             ]
           }
         ],
@@ -19670,12 +19690,12 @@
         "maintainers": [
           "TonyRL"
         ],
-        "url": "daily.dev",
+        "url": "app.daily.dev",
         "location": "user.ts"
       }
     },
     "name": "Daily.dev",
-    "url": "daily.dev",
+    "url": "app.daily.dev",
     "categories": [
       "social-media"
     ],
@@ -35883,6 +35903,34 @@
     "name": "客家電視台",
     "url": "hakkatv.org.tw",
     "lang": "zh-TW"
+  },
+  "hamel": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "categories": [
+          "blog"
+        ],
+        "example": "/hamel/blog",
+        "radar": [
+          {
+            "source": [
+              "hamel.dev/"
+            ]
+          }
+        ],
+        "url": "hamel.dev/",
+        "name": "Blog",
+        "maintainers": [
+          "liyaozhong"
+        ],
+        "description": "Hamel's Blog Posts",
+        "location": "index.ts"
+      }
+    },
+    "name": "Hamel's Blog",
+    "url": "hamel.dev",
+    "lang": "en"
   },
   "hameln": {
     "routes": {
@@ -58345,6 +58393,45 @@
         "url": "nytimes.com/",
         "description": "By extracting the full text of articles, we provide a better reading experience (full text articles) over the official one.",
         "location": "index.ts"
+      },
+      "/rss/:cat?": {
+        "path": "/rss/:cat?",
+        "categories": [
+          "traditional-media",
+          "popular"
+        ],
+        "view": 0,
+        "example": "/nytimes/rss/HomePage",
+        "parameters": {
+          "cat": {
+            "description": "Category name, corresponding to the last segment of [official feed's](https://www.nytimes.com/rss) url."
+          }
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "nytimes.com/"
+            ],
+            "target": ""
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "HenryQW",
+          "pseudoyu",
+          "dzx-dzx"
+        ],
+        "url": "nytimes.com/",
+        "description": "Enhance the official EN RSS feed",
+        "location": "rss.ts"
       }
     },
     "name": "The New York Times",
@@ -59077,6 +59164,23 @@
         "name": "香港餐厅滋讯",
         "description": "\n  | 简体 | 繁體 | EN |\n  | ----- | ------ | ----- |\n  | zh-cn | zh | en |\n  ",
         "location": "promos.ts"
+      },
+      "/:lang/hongkong/voting/top/:categoryKey": {
+        "path": "/:lang/hongkong/voting/top/:categoryKey",
+        "maintainers": [
+          "after9"
+        ],
+        "categories": [
+          "shopping"
+        ],
+        "example": "/openrice/zh/hongkong/voting/top/chinese",
+        "parameters": {
+          "lang": "语言，缺省为 zh",
+          "categoryKey": "类别，缺省为 chinese"
+        },
+        "name": "OpenRice 開飯熱店 - 年度餐廳投票",
+        "description": "\n  lang: 语言，见下方列表\n  | 简体 | 繁體 | EN |\n  | ----- | ------ | ----- |\n  | zh-cn | zh | en |\n\n  categoryKey: 部分类别，见下方列表 (更多的类别可以在页面的link中对照获取)\n  | 中菜館 | 上海菜 | 粵菜 | 川菜 | 港式 | 粥粉麵店 | 廚師發辦 | 韓國菜 | 泰國菜 | 越南菜 |\n  | -------- | -------- | -------- |  -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | chinese | shanghainese | guangdong | sichuan | hkstyle | congee_noodles | omakase | korean | thai | vietnamese |\n  ",
+        "location": "voting.ts"
       }
     },
     "name": "Openrice開飯喇",
@@ -61209,17 +61313,38 @@
         "description": ":::warning\n  Only for self-hosted\n  :::",
         "location": "illustfollow.ts"
       },
-      "/user/novels/:id": {
-        "path": "/user/novels/:id",
+      "/user/novels/:id/:full_content?": {
+        "path": "/user/novels/:id/:full_content?",
         "categories": [
           "social-media"
         ],
+        "view": 0,
         "example": "/pixiv/user/novels/27104704",
         "parameters": {
-          "id": "User id, available in user's homepage URL"
+          "id": "User id, available in user's homepage URL",
+          "full_content": {
+            "description": "Enable or disable the display of full content. ",
+            "options": [
+              {
+                "value": "true",
+                "label": "true"
+              },
+              {
+                "value": "false",
+                "label": "false"
+              }
+            ],
+            "default": "false"
+          }
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "PIXIV_REFRESHTOKEN",
+              "optional": true,
+              "description": "\nPixiv 登錄後的 refresh_token，用於獲取 R18 小說\nrefresh_token after Pixiv login, required for accessing R18 novels\n[https://docs.rsshub.app/deploy/config#pixiv](https://docs.rsshub.app/deploy/config#pixiv)"
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
@@ -61228,15 +61353,26 @@
         },
         "radar": [
           {
+            "title": "User Novels (簡介 Basic info)",
             "source": [
               "www.pixiv.net/users/:id/novels"
-            ]
+            ],
+            "target": "/user/novels/:id"
+          },
+          {
+            "title": "User Novels (全文 Full text)",
+            "source": [
+              "www.pixiv.net/users/:id/novels"
+            ],
+            "target": "/user/novels/:id/true"
           }
         ],
         "name": "User Novels",
         "maintainers": [
-          "TonyRL"
+          "TonyRL",
+          "SnowAgar25"
         ],
+        "description": "\n| 小說類型 Novel Type | full_content | PIXIV_REFRESHTOKEN | 返回內容 Content |\n|-------------------|--------------|-------------------|-----------------|\n| Non R18           | false        | 不需要 Not Required  | 簡介 Basic info |\n| Non R18           | true         | 不需要 Not Required  | 全文 Full text  |\n| R18               | false        | 需要 Required       | 簡介 Basic info |\n| R18               | true         | 需要 Required       | 全文 Full text  |\n\nDefault value for `full_content` is `false` if not specified.\n\nExample:\n- `/pixiv/user/novels/79603797` → 簡介 Basic info\n- `/pixiv/user/novels/79603797/true` → 全文 Full text",
         "location": "novels.ts"
       },
       "/ranking/:mode/:date?": {
@@ -65820,7 +65956,7 @@
           "yinhanyan"
         ],
         "url": "ai.ruc.edu.cn/",
-        "description": ":::tip\n  分类字段处填写的是对应中国人民大学高瓴人工智能学院分类页网址中介于 **`http://ai.ruc.edu.cn/`** 和 **/index.htm** 中间的一段，并将其中的 `/` 修改为 `-`。\n\n  如 [中国人民大学高瓴人工智能学院 - 新闻公告 - 学院新闻](http://ai.ruc.edu.cn/newslist/newsdetail/index.htm) 的网址为 `http://ai.ruc.edu.cn/newslist/newsdetail/index.htm` 其中介于 **`http://ai.ruc.edu.cn/`** 和 **/index.htm** 中间的一段为 `newslist/newsdetail`。随后，并将其中的 `/` 修改为 `-`，可以得到 `newslist-newsdetail`。所以最终我们的路由为 [`/ruc/ai/newslist-newsdetail`](https://rsshub.app/ruc/ai/newslist-newsdetail)\n    :::",
+        "description": ":::tip\n  分类字段处填写的是对应中国人民大学高瓴人工智能学院分类页网址中介于 **`http://ai.ruc.edu.cn/`** 和 **/index.htm** 中间的一段，并将其中的 `/` 修改为 `-`。\n\n  如 [中国人民大学高瓴人工智能学院 - 新闻公告 - 学院新闻](http://ai.ruc.edu.cn/newslist/newsdetail/index.htm) 的网址为 `http://ai.ruc.edu.cn/newslist/newsdetail/index.htm` 其中介于 **`http://ai.ruc.edu.cn/`** 和 **/index.htm** 中间的一段为 `newslist/newsdetail`。随后，并将其中的 `/` 修改为 `-`，可以得到 `newslist-newsdetail`。所以最终我们的路由为 [`/ruc/ai/newslist-newsdetail`](https://rsshub.app/ruc/ai/newslist-newsdetail)\n  :::",
         "location": "ai.ts"
       },
       "/hr/:category?": {
@@ -75539,6 +75675,36 @@
               "name": "TELEGRAM_SESSION",
               "optional": true,
               "description": "Telegram API Authentication"
+            },
+            {
+              "name": "TELEGRAM_API_ID",
+              "optional": true,
+              "description": "Telegram API ID"
+            },
+            {
+              "name": "TELEGRAM_API_HASH",
+              "optional": true,
+              "description": "Telegram API Hash"
+            },
+            {
+              "name": "TELEGRAM_MAX_CONCURRENT_DOWNLOADS",
+              "optional": true,
+              "description": "Telegram Max Concurrent Downloads"
+            },
+            {
+              "name": "TELEGRAM_PROXY_HOST",
+              "optional": true,
+              "description": "Telegram Proxy Host"
+            },
+            {
+              "name": "TELEGRAM_PROXY_PORT",
+              "optional": true,
+              "description": "Telegram Proxy Port"
+            },
+            {
+              "name": "TELEGRAM_PROXY_SECRET",
+              "optional": true,
+              "description": "Telegram Proxy Secret"
             }
           ],
           "requirePuppeteer": false,
@@ -76137,6 +76303,34 @@
     "name": "封面新闻",
     "url": "thecover.cn",
     "lang": "zh-CN"
+  },
+  "thegradient": {
+    "routes": {
+      "/posts": {
+        "path": "/posts",
+        "categories": [
+          "blog"
+        ],
+        "example": "/thegradient/posts",
+        "radar": [
+          {
+            "source": [
+              "thegradient.pub/"
+            ]
+          }
+        ],
+        "url": "thegradient.pub/",
+        "name": "Posts",
+        "maintainers": [
+          "liyaozhong"
+        ],
+        "description": "The Gradient Blog Posts",
+        "location": "index.ts"
+      }
+    },
+    "name": "The Gradient",
+    "url": "thegradient.pub",
+    "lang": "en"
   },
   "thehindu": {
     "routes": {

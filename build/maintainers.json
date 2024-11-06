@@ -1601,6 +1601,9 @@
   "/daily/": [
     "Rjnishant530"
   ],
+  "/daily/source/:sourceId": [
+    "TonyRL"
+  ],
   "/daily/upvoted": [
     "Rjnishant530"
   ],
@@ -3016,6 +3019,9 @@
   "/hafu/news/:type?": [],
   "/hakkatv/news/:type?": [
     "TonyRL"
+  ],
+  "/hamel/blog": [
+    "liyaozhong"
   ],
   "/hameln/chapter/:id": [
     "huangliangshusheng"
@@ -4832,6 +4838,11 @@
     "HenryQW",
     "pseudoyu"
   ],
+  "/nytimes/rss/:cat?": [
+    "HenryQW",
+    "pseudoyu",
+    "dzx-dzx"
+  ],
   "/obsidian/publish/:id": [
     "Xy2002"
   ],
@@ -4915,6 +4926,9 @@
     "after9"
   ],
   "/openrice/:lang/hongkong/promos": [
+    "after9"
+  ],
+  "/openrice/:lang/hongkong/voting/top/:categoryKey": [
     "after9"
   ],
   "/openwrt/releases/:brand/:model": [],
@@ -5108,8 +5122,9 @@
   "/pixiv/user/illustfollows": [
     "ClarkeCheng"
   ],
-  "/pixiv/user/novels/:id": [
-    "TonyRL"
+  "/pixiv/user/novels/:id/:full_content?": [
+    "TonyRL",
+    "SnowAgar25"
   ],
   "/pixiv/ranking/:mode/:date?": [
     "EYHN"
@@ -6416,6 +6431,9 @@
   ],
   "/thecover/channel/:id?": [
     "yuxinliu-alex"
+  ],
+  "/thegradient/posts": [
+    "liyaozhong"
   ],
   "/thehindu/topic/:topic": [
     "TonyRL"
