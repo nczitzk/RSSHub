@@ -71352,7 +71352,7 @@
     },
     "name": "Solidot",
     "url": "www.solidot.org",
-    "lang": "en"
+    "lang": "zh-CN"
   },
   "sony": {
     "routes": {
@@ -74308,7 +74308,7 @@
         "categories": [
           "programming"
         ],
-        "example": "/sycltech/news",
+        "example": "/sycl/news",
         "parameters": {
           "feed": "Feed source, defaults to news, references https://feeds.sycl.tech/"
         },
@@ -77998,6 +77998,38 @@
     },
     "name": "TOPYS",
     "url": "topys.cn",
+    "lang": "zh-CN"
+  },
+  "toutiao": {
+    "routes": {
+      "/user/token/:token": {
+        "path": "/user/token/:token",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/toutiao/user/token/MS4wLjABAAAAEmbqJP2CmC8XXv1BpMvQ3sQHKAxFsq8wHxj8XVIQWja6tMcB-QEbFkzkRNgMl12M",
+        "parameters": {
+          "token": "用户 token，可在用户主页 URL 找到"
+        },
+        "features": {
+          "antiCrawler": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.toutiao.com/c/user/token/:token"
+            ]
+          }
+        ],
+        "name": "头条主页",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "location": "user.ts"
+      }
+    },
+    "name": "今日头条",
+    "url": "www.toutiao.com",
     "lang": "zh-CN"
   },
   "towardsdatascience": {
