@@ -497,7 +497,7 @@
     "HenryQW",
     "kt286"
   ],
-  "/apple/podcast/:id": [
+  "/apple/podcast/:id/:region?": [
     "Acring"
   ],
   "/appleinsider/:category?": [
@@ -1769,6 +1769,9 @@
   "/digitalcameraworld/news": [
     "EthanWng97"
   ],
+  "/dingshao/share/:shortId": [
+    "TonyRL"
+  ],
   "/discord/channel/:channelId": [
     "TonyRL"
   ],
@@ -2204,9 +2207,6 @@
   "/fastbull/news": [
     "nczitzk"
   ],
-  "/fastbull/": [
-    "nczitzk"
-  ],
   "/fda/cdrh/:titleOnly?": [],
   "/fediverse/timeline/:account": [
     "DIYgod",
@@ -2305,6 +2305,9 @@
   ],
   "/followin/topic/:topicId/:lang?": [
     "TonyRL"
+  ],
+  "/foodtalks/": [
+    "Geraldxm"
   ],
   "/foresightnews/article": [
     "nczitzk"
@@ -3157,22 +3160,19 @@
   "/hellobtc/news": [
     "Fatpandac"
   ],
+  "/hellogithub/article/:sort?": [
+    "moke8",
+    "nczitzk",
+    "CaoMeiYouRen"
+  ],
   "/hellogithub/home/:sort?/:id?": [
     "moke8",
-    "nczitzk"
+    "nczitzk",
+    "CaoMeiYouRen"
   ],
   "/hellogithub/ranking/:type?": [
     "moke8",
     "nczitzk"
-  ],
-  "/hellogithub/report/:type?": [
-    "moke8",
-    "nczitzk"
-  ],
-  "/hellogithub/month": [
-    "moke8",
-    "nczitzk",
-    "CaoMeiYouRen"
   ],
   "/hellogithub/volume": [
     "moke8",
@@ -3496,6 +3496,15 @@
   "/ifeng/news/*": [],
   "/ifi-audio/download/:val/:id": [
     "EthanWng97"
+  ],
+  "/ifun/n/category/:id?": [
+    "nczitzk"
+  ],
+  "/ifun/n/search/:keywords": [
+    "nczitzk"
+  ],
+  "/ifun/n/tag/:name": [
+    "nczitzk"
   ],
   "/iguoguo/html5": [
     "yuxinliu-alex"
@@ -3835,6 +3844,9 @@
     "tsurumi-yizhou"
   ],
   "/joins/chinese/:category?": [
+    "nczitzk"
+  ],
+  "/joneslanglasalle/:language?/:category{.+}?": [
     "nczitzk"
   ],
   "/jornada/:date?/:category?": [
@@ -4610,7 +4622,8 @@
     "lessmoe"
   ],
   "/newrank/wechat/:wxid": [
-    "lessmoe"
+    "lessmoe",
+    "pseudoyu"
   ],
   "/news/xhsxw": [
     "nczitzk"
@@ -5174,6 +5187,9 @@
   "/parliament.uk/lordslibrary/type/:topic?": [
     "AntiKnot"
   ],
+  "/parliament.uk/petitions/:state?": [
+    "nczitzk"
+  ],
   "/patagonia/new-arrivals/:category": [],
   "/patreon/:creator": [
     "TonyRL"
@@ -5250,6 +5266,9 @@
   ],
   "/pingwest/user/:uid/:type?/:option?": [
     "sanmmm"
+  ],
+  "/pinterest/user/:username/:type?": [
+    "TonyRL"
   ],
   "/pixabay/search/:q/:order?": [
     "TonyRL"
@@ -5468,11 +5487,13 @@
     "LogicJake"
   ],
   "/qingting/channel/:id": [
-    "nczitzk"
+    "nczitzk",
+    "pseudoyu"
   ],
   "/qingting/podcast/:id": [
     "RookieZoe",
-    "huyyi"
+    "huyyi",
+    "pseudoyu"
   ],
   "/qipamaijia/:cate?": [
     "Fatpandac",
@@ -6481,6 +6502,9 @@
     "cnzgray"
   ],
   "/tableau/viz-of-the-day": [],
+  "/taiwanmobile/rate-plans": [
+    "Tsuyumi25"
+  ],
   "/taiwannews/hot/:lang?": [
     "TonyRL"
   ],
@@ -7423,7 +7447,7 @@
   "/xiaohongshu/board/:board_id": [
     "lotosbin"
   ],
-  "/xiaohongshu/user/:user_id/:category": [
+  "/xiaohongshu/user/:user_id/:category/:routeParams?": [
     "lotosbin",
     "howerhe",
     "rien7",
