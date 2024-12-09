@@ -5961,114 +5961,6 @@
     "url": "m.ajmide.com",
     "lang": "zh-CN"
   },
-  "ali213": {
-    "routes": {
-      "/news/:category?": {
-        "path": "/news/:category?",
-        "name": "资讯",
-        "url": "www.ali213.net",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/ali213/news/new",
-        "parameters": {
-          "category": "分类，默认为 `new`，即最新资讯，可在对应分类页 URL 中找到"
-        },
-        "description": ":::tip\n若订阅 [游戏资讯](https://www.ali213.net/news/game/)，网址为 `https://www.ali213.net/news/game/`，请截取 `https://www.ali213.net/news/` 到末尾 `/` 的部分 `game` 作为 `category` 参数填入，此时目标路由为 [`/ali213/news/game`](https://rsshub.app/ali213/news/game)。\n:::\n\n| 分类名称 | 分类 ID |\n| -------- | ------- |\n| 最新资讯 | new     |\n| 评测     | pingce  |\n| 游戏     | game    |\n| 动漫     | comic   |\n| 影视     | movie   |\n| 科技     | tech    |\n| 电竞     | esports |\n| 娱乐     | amuse   |\n| 手游     | mobile  |\n",
-        "categories": [
-          "game"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.ali213.net/news/:category"
-            ]
-          },
-          {
-            "title": "最新资讯",
-            "source": [
-              "www.ali213.net/news/new"
-            ],
-            "target": "/news/new"
-          },
-          {
-            "title": "评测",
-            "source": [
-              "www.ali213.net/news/pingce"
-            ],
-            "target": "/news/pingce"
-          },
-          {
-            "title": "游戏",
-            "source": [
-              "www.ali213.net/news/game"
-            ],
-            "target": "/news/game"
-          },
-          {
-            "title": "动漫",
-            "source": [
-              "www.ali213.net/news/comic"
-            ],
-            "target": "/news/comic"
-          },
-          {
-            "title": "影视",
-            "source": [
-              "www.ali213.net/news/movie"
-            ],
-            "target": "/news/movie"
-          },
-          {
-            "title": "科技",
-            "source": [
-              "www.ali213.net/news/tech"
-            ],
-            "target": "/news/tech"
-          },
-          {
-            "title": "电竞",
-            "source": [
-              "www.ali213.net/news/esports"
-            ],
-            "target": "/news/esports"
-          },
-          {
-            "title": "娱乐",
-            "source": [
-              "www.ali213.net/news/amuse"
-            ],
-            "target": "/news/amuse"
-          },
-          {
-            "title": "手游",
-            "source": [
-              "www.ali213.net/news/mobile"
-            ],
-            "target": "/news/mobile"
-          }
-        ],
-        "view": 0,
-        "location": "news.ts"
-      }
-    },
-    "name": "游侠网",
-    "url": "ali213.net",
-    "categories": [
-      "game"
-    ],
-    "description": "",
-    "lang": "zh-CN"
-  },
   "alicesoft": {
     "routes": {
       "/information/:category?/:game?": {
@@ -6536,48 +6428,6 @@
     "name": "Amazon",
     "url": "amazon.com",
     "lang": "en"
-  },
-  "amz123": {
-    "routes": {
-      "/kx": {
-        "path": "/kx",
-        "categories": [
-          "new-media"
-        ],
-        "example": "/amz123/kx",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "amz123.com/kx"
-            ],
-            "target": "/kx"
-          }
-        ],
-        "name": "AMZ123 快讯",
-        "maintainers": [
-          "defp"
-        ],
-        "url": "amz123.com/kx",
-        "view": 0,
-        "location": "kx.ts"
-      }
-    },
-    "name": "Amz123",
-    "url": "www.amz123.com",
-    "categories": [
-      "new-media"
-    ],
-    "description": "跨境电商平台",
-    "lang": "zh-CN"
   },
   "android": {
     "routes": {
@@ -9831,8 +9681,7 @@
         "radar": [
           {
             "source": [
-              "www.bilibili.com/",
-              "m.bilibili.com/"
+              "www.bilibili.com/"
             ]
           }
         ],
@@ -11762,8 +11611,7 @@
         ],
         "name": "Authors",
         "maintainers": [
-          "josh",
-          "pseudoyu"
+          "josh"
         ],
         "location": "authors.ts"
       },
@@ -37819,30 +37667,12 @@
       "/topic/:topic?/:type?": {
         "path": "/topic/:topic?/:type?",
         "categories": [
-          "new-media",
-          "popular"
+          "new-media"
         ],
-        "example": "/hbr/topic/Leadership/Popular",
+        "example": "/hbr/topic/leadership",
         "parameters": {
           "topic": "Topic, can be found in URL, Leadership by default",
-          "type": {
-            "description": "Type, see below, Popular by default",
-            "options": [
-              {
-                "value": "Popular",
-                "label": "Popular"
-              },
-              {
-                "value": "From the Store",
-                "label": "From the Store"
-              },
-              {
-                "value": "For You",
-                "label": "For You"
-              }
-            ],
-            "default": "Popular"
-          }
+          "type": "Type, see below, Latest by default"
         },
         "features": {
           "requireConfig": false,
@@ -37862,10 +37692,9 @@
         ],
         "name": "Topic",
         "maintainers": [
-          "nczitzk",
-          "pseudoyu"
+          "nczitzk"
         ],
-        "description": "| POPULAR | FROM THE STORE | FOR YOU |\n  | ------- | -------------- | ------- |\n  | Popular | From the Store | For You |\n\n  :::tip\n  Click here to view [All Topics](https://hbr.org/topics)\n  :::",
+        "description": "| LATEST | POPULAR | FROM THE STORE | FOR YOU |\n  | ------ | ------- | -------------- | ------- |\n  | Latest | Popular | From the Store | For You |\n\n  :::tip\n  Click here to view [All Topics](https://hbr.org/topics)\n  :::",
         "location": "topic.ts"
       }
     },
@@ -46144,15 +45973,14 @@
         "name": "Trends & Insights",
         "url": "joneslanglasalle.com.cn",
         "maintainers": [
-          "nczitzk",
-          "pseudoyu"
+          "nczitzk"
         ],
         "example": "/joneslanglasalle/en/trends-and-insights",
         "parameters": {
           "language": "Language, `zh` by default",
           "category": "Category, `trends-and-insights` by default"
         },
-        "description": ":::tip\nIf you subscribe to [Trends & Insights](https://www.joneslanglasalle.com.cn/en/trends-and-insights)，where the URL is `https://www.joneslanglasalle.com.cn/en/trends-and-insights`, extract the part `https://joneslanglasalle.com.cn/` to the end. Use `zh` and `trends-and-insights` as the parameters to fill in. Therefore, the route will be [`/joneslanglasalle/en/trends-and-insights`](https://rsshub.app/joneslanglasalle/en/trends-and-insights).\n:::\n\n| Category  | ID                            |\n| --------- | ----------------------------- |\n| Latest    | trends-and-insights           |\n| Workplace | trends-and-insights/workplace |\n| Investor  | trends-and-insights/investor  |\n| Cities    | trends-and-insights/cities    |\n| Research  | trends-and-insights/research  |\n",
+        "description": ":::tip\nIf you subscribe to [Trends & Insights](https://www.joneslanglasalle.com.cn/en/trends-and-insights)，where the URL is `https://www.joneslanglasalle.com.cn/en/trends-and-insights`, extract the part `https://joneslanglasalle.com.cn/` to the end. Use `zh` and `trends-and-insights` as the parameters to fill in. Therefore, the route will be [`/joneslanglasalle/trends-and-insights/en/trends-and-insights`](https://rsshub.app/joneslanglasalle/trends-and-insights/en/trends-and-insights).\n:::\n\n| Category  | ID                            |\n| --------- | ----------------------------- |\n| Latest    | trends-and-insights           |\n| Workplace | trends-and-insights/workplace |\n| Investor  | trends-and-insights/investor  |\n| Cities    | trends-and-insights/cities    |\n| Research  | trends-and-insights/research  |\n",
         "categories": [
           "new-media"
         ],
@@ -50032,47 +49860,12 @@
         ],
         "name": "日报",
         "maintainers": [
-          "LogicJake",
-          "prnake",
+          "LogicJake ",
+          "prnake ",
           "nczitzk"
         ],
         "url": "luogu.com.cn/discuss/47327",
         "location": "daily.ts"
-      },
-      "/user/article/:uid": {
-        "path": "/user/article/:uid",
-        "categories": [
-          "programming"
-        ],
-        "example": "/luogu/user/article/1",
-        "parameters": {
-          "name": "用户 UID"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "luogu.com/user/:uid"
-            ]
-          },
-          {
-            "source": [
-              "luogu.com.cn/user/:uid"
-            ]
-          }
-        ],
-        "name": "用户文章",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "location": "user-article.ts"
       },
       "/user/blog/:name": {
         "path": "/user/blog/:name",
@@ -50094,19 +49887,12 @@
         "radar": [
           {
             "source": [
-              "luogu.com/blog/:name"
-            ]
-          },
-          {
-            "source": [
               "luogu.com.cn/blog/:name"
             ]
           }
         ],
         "name": "用户博客",
-        "maintainers": [
-          "ftiasch"
-        ],
+        "maintainers": [],
         "location": "user-blog.ts"
       },
       "/user/feed/:uid": {
@@ -50127,11 +49913,6 @@
           "supportScihub": false
         },
         "radar": [
-          {
-            "source": [
-              "luogu.com/user/:uid"
-            ]
-          },
           {
             "source": [
               "luogu.com.cn/user/:uid"
@@ -67436,7 +67217,7 @@
           "Rein-Ou",
           "la3rence"
         ],
-        "description": "获取订阅近三天天气预报",
+        "description": "需自行注册获取 api 的 key，并在环境变量 HEFENG_KEY 中进行配置，获取订阅近三天天气预报",
         "location": "3days.ts"
       },
       "/now/:location": {
@@ -67444,7 +67225,7 @@
         "categories": [
           "forecast"
         ],
-        "example": "/qweather/now/广州",
+        "example": "/qweather/广州",
         "parameters": {
           "location": "N"
         },
@@ -67452,7 +67233,7 @@
           "requireConfig": [
             {
               "name": "HEFENG_KEY",
-              "description": "访问 `https://www.qweather.com/` 注册开发 API Key。"
+              "description": ""
             }
           ],
           "requirePuppeteer": false,
@@ -67465,6 +67246,7 @@
         "maintainers": [
           "Rein-Ou"
         ],
+        "description": "需自行注册获取 api 的 key，每小时更新一次数据",
         "location": "now.ts"
       }
     },
@@ -72953,7 +72735,7 @@
         "maintainers": [
           "SeanChao"
         ],
-        "description": "| 新闻中心 | 通知通告 | 教学运行  | 注册学务 | 研究办 | 教改办 | 综合办 | 语言文字 | 工会与支部 | 通识教育 | 面向学生的通知 |\n  | -------- | -------- | --------- | -------- | ------ | ------ | ------ | -------- | ---------- | -------- |\n  | news     | notice   | operation | affairs  | yjb    | jgb    | zhb    | language | party      | ge       | students  |",
+        "description": "| 新闻中心 | 通知通告 | 教学运行  | 注册学务 | 研究办 | 教改办 | 综合办 | 语言文字 | 工会与支部 | 通识教育 |\n  | -------- | -------- | --------- | -------- | ------ | ------ | ------ | -------- | ---------- | -------- |\n  | news     | notice   | operation | affairs  | yjb    | jgb    | zhb    | language | party      | ge       |",
         "location": "jwc.ts"
       },
       "/seiee/:path/:catID?/:searchCatCode?": {
@@ -74791,10 +74573,8 @@
       "/show/:id": {
         "path": "/show/:id",
         "categories": [
-          "multimedia",
-          "popular"
+          "multimedia"
         ],
-        "view": 4,
         "example": "/spotify/show/5CfCWKI5pZ28U0uOzXkDHe",
         "parameters": {
           "id": "Show ID"
@@ -74823,10 +74603,9 @@
             ]
           }
         ],
-        "name": "Show/Podcasts",
+        "name": "Show",
         "maintainers": [
-          "caiohsramos",
-          "pseudoyu"
+          "caiohsramos"
         ],
         "location": "show.ts"
       },
@@ -82260,8 +82039,7 @@
         ],
         "name": "News",
         "maintainers": [
-          "EthanWng97",
-          "pseudoyu"
+          "EthanWng97"
         ],
         "description": "| Popular      | Latest | Politics | Technology | Business |\n  | ------------ | ------ | -------- | ---------- | -------- |\n  | most-popular | latest | politics | technology | business |\n\n  More categories (except photo) can be found within the navigation bar at [https://www.theatlantic.com](https://www.theatlantic.com)",
         "location": "news.ts"
@@ -85076,8 +84854,7 @@
           "DIYgod",
           "yindaheng98",
           "Rongronggg9",
-          "CaoMeiYouRen",
-          "pseudoyu"
+          "CaoMeiYouRen"
         ],
         "radar": [
           {
@@ -93226,41 +93003,6 @@
     "name": "月幕 Galgame",
     "url": "ymgal.games",
     "lang": "zh-CN"
-  },
-  "yna": {
-    "routes": {
-      "/:lang?/:channel?": {
-        "path": "/:lang?/:channel?",
-        "categories": [
-          "traditional-media"
-        ],
-        "example": "/yna/en/national",
-        "parameters": {
-          "lang": "Language, see below, `ko` by default",
-          "channel": "RSS Feed Channel, see below, `news` by default"
-        },
-        "features": {
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false,
-          "requireConfig": false
-        },
-        "name": "News",
-        "maintainers": [
-          "quiniapiezoelectricity"
-        ],
-        "description": "\n| Language  | 한국어 | English | 简体中文 | 日本語 | عربي   | Español | Français |\n| --------- | ------ | ------- | -------- | ------ | ------ | ------- | -------- |\n| `:lang` | `ko` | `en`  | `cn`   | `jp` | `ar` | `es`  | `fr`   |\n\nFor a full list of RSS Feed Channels, please refer to the RSS feed page of the corresponding language\n| RSS Feed Page                                             |\n| --------------------------------------------------------- |\n| [한국어](https://www.yna.co.kr/rss/index?site=footer_rss) |\n| [English](https://en.yna.co.kr/channel/index)             |\n| [简体中文](https://cn.yna.co.kr/channel/index)            |\n| [日本語](https://jp.yna.co.kr/channel/index)              |\n| [عربي](https://ar.yna.co.kr/channel/index)                |\n| [Español](https://sp.yna.co.kr/channel/index)             |\n| [Français](https://fr.yna.co.kr/channel/index)            |\n\n:::tip\nFor example, the path for the RSS feed url https://www.yna.co.kr/rss/economy.xml and https://cn.yna.co.kr/RSS/news.xml would be `/ko/economy` and `/cn/news` respectively. \n:::\n",
-        "location": "index.ts"
-      }
-    },
-    "name": "Yonhap News Agency",
-    "url": "yna.co.kr",
-    "lang": "ko",
-    "zh": {
-      "name": "韩联社"
-    }
   },
   "yoasobi-music": {
     "routes": {

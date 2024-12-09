@@ -392,9 +392,6 @@
   "/ajmide/:id": [
     "Fatpandac"
   ],
-  "/ali213/news/:category?": [
-    "nczitzk"
-  ],
   "/alicesoft/information/:category?/:game?": [
     "keocheung"
   ],
@@ -439,9 +436,6 @@
   ],
   "/amazon/kindle/software-updates": [
     "EthanWng97"
-  ],
-  "/amz123/kx": [
-    "defp"
   ],
   "/android/platform-tools-releases": [
     "nczitzk"
@@ -925,8 +919,7 @@
     "fashioncj"
   ],
   "/bloomberg/authors/:id/:slug/:source?": [
-    "josh",
-    "pseudoyu"
+    "josh"
   ],
   "/bloomberg/:site?": [
     "bigfei"
@@ -3146,8 +3139,7 @@
     "keocheung"
   ],
   "/hbr/topic/:topic?/:type?": [
-    "nczitzk",
-    "pseudoyu"
+    "nczitzk"
   ],
   "/hdu/cs": [
     "legr4ndk"
@@ -3855,8 +3847,7 @@
     "nczitzk"
   ],
   "/joneslanglasalle/:language?/:category{.+}?": [
-    "nczitzk",
-    "pseudoyu"
+    "nczitzk"
   ],
   "/jornada/:date?/:category?": [
     "Thealf154"
@@ -4210,16 +4201,11 @@
     "prnake"
   ],
   "/luogu/daily/:id?": [
-    "LogicJake",
-    "prnake",
+    "LogicJake ",
+    "prnake ",
     "nczitzk"
   ],
-  "/luogu/user/article/:uid": [
-    "TonyRL"
-  ],
-  "/luogu/user/blog/:name": [
-    "ftiasch"
-  ],
+  "/luogu/user/blog/:name": [],
   "/luogu/user/feed/:uid": [
     "solstice23"
   ],
@@ -6264,8 +6250,7 @@
     "outloudvi"
   ],
   "/spotify/show/:id": [
-    "caiohsramos",
-    "pseudoyu"
+    "caiohsramos"
   ],
   "/spotify/top/tracks": [
     "outloudvi"
@@ -6643,8 +6628,7 @@
     "nczitzk"
   ],
   "/theatlantic/:category": [
-    "EthanWng97",
-    "pseudoyu"
+    "EthanWng97"
   ],
   "/theblockbeats/:channel?/:original?": [
     "Fatpandac",
@@ -6920,8 +6904,7 @@
     "DIYgod",
     "yindaheng98",
     "Rongronggg9",
-    "CaoMeiYouRen",
-    "pseudoyu"
+    "CaoMeiYouRen"
   ],
   "/twreporter/category/:category": [
     "emdoe"
@@ -7682,9 +7665,6 @@
   ],
   "/ymgal/game/release": [
     "SunBK201"
-  ],
-  "/yna/:lang?/:channel?": [
-    "quiniapiezoelectricity"
   ],
   "/yoasobi-music/info/:category?": [],
   "/yoasobi-music/live": [
