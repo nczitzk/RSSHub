@@ -608,9 +608,6 @@
     "igxlin",
     "nczitzk"
   ],
-  "/baijing/article": [
-    "p3psi-boo"
-  ],
   "/bandcamp/live": [
     "nczitzk"
   ],
@@ -1293,9 +1290,6 @@
   ],
   "/china/news/military": [
     "jiaaoMario"
-  ],
-  "/chinacdc/:category{.+}?": [
-    "nczitzk"
   ],
   "/chinadegrees/:province?": [
     "TonyRL"
@@ -2605,7 +2599,7 @@
   "/github/pulse/:user/:repo/:period?": [
     "jameschensmith"
   ],
-  "/github/repos/:user/:type?/:sort?": [
+  "/github/repos/:user": [
     "DIYgod"
   ],
   "/github/search/:query/:sort?/:order?": [
@@ -3523,9 +3517,6 @@
   "/iguoguo/html5": [
     "yuxinliu-alex"
   ],
-  "/iheima/recommend": [
-    "p3psi-boo"
-  ],
   "/iiilab/": [
     "Joey"
   ],
@@ -4012,9 +4003,6 @@
   ],
   "/kuaidi100/company": [
     "NeverBehave"
-  ],
-  "/kuaishou/profile/:principalId": [
-    "GuoChen-thlg"
   ],
   "/kunchengblog/essay": [
     "nczitzk"
@@ -5199,8 +5187,7 @@
     "nczitzk"
   ],
   "/papers/:category{.+}?": [
-    "nczitzk",
-    "Muyun99"
+    "nczitzk"
   ],
   "/paradigm/writing": [
     "Fatpandac"
@@ -5474,7 +5461,7 @@
     "mintyfrankie"
   ],
   "/qbitai/category/:category": [
-    "FuryMartin, Geraldxm"
+    "FuryMartin"
   ],
   "/qbitai/tag/:tag": [
     "FuryMartin"
@@ -6907,8 +6894,7 @@
   "/twitter/keyword/:keyword/:routeParams?": [
     "DIYgod",
     "yindaheng98",
-    "Rongronggg9",
-    "pseudoyu"
+    "Rongronggg9"
   ],
   "/twitter/likes/:id/:routeParams?": [
     "xyqfer"
