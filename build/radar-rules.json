@@ -6972,6 +6972,19 @@
       }
     ]
   },
+  "chongdiantou.com": {
+    "_name": "充电头网",
+    "www": [
+      {
+        "title": "最新资讯",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/chongdiantou/"
+      }
+    ]
+  },
   "chsi.com.cn": {
     "_name": "中国研究生招生信息网",
     "yz": [
@@ -8339,6 +8352,19 @@
           "/:userId"
         ],
         "target": "/daily/user/:userId"
+      }
+    ]
+  },
+  "daoxuan.cc": {
+    "_name": "道宣的窝",
+    ".": [
+      {
+        "title": "推荐阅读文章",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/daoxuan/"
       }
     ]
   },
@@ -14633,6 +14659,16 @@
           "/homepage/index.do"
         ],
         "target": "/hrbust/jwzx"
+      }
+    ],
+    "news": [
+      {
+        "title": "新闻网",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:category.htm"
+        ],
+        "target": "/hrbust/news/:category?"
       }
     ]
   },
