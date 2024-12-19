@@ -7088,6 +7088,27 @@
     "url": "apnews.com",
     "lang": "en"
   },
+  "apnic": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "categories": [
+          "blog"
+        ],
+        "example": "/apnic/blog",
+        "url": "blog.apnic.net",
+        "name": "Blog",
+        "maintainers": [
+          "p3psi-boo"
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "APNIC",
+    "url": "blog.apnic.net",
+    "description": "Asia-Pacific Network Information Centre",
+    "lang": "en"
+  },
   "app-center": {
     "routes": {
       "/release/:user/:app/:distribution_group": {
@@ -8969,7 +8990,8 @@
         "name": "News",
         "maintainers": [
           "HenryQW",
-          "DIYgod"
+          "DIYgod",
+          "pseudoyu"
         ],
         "example": "/bbc/world-asia",
         "parameters": {
@@ -38746,6 +38768,27 @@
     "url": "hex-rays.com",
     "lang": "en"
   },
+  "hexun": {
+    "routes": {
+      "/pe/news": {
+        "path": "/pe/news",
+        "categories": [
+          "finance"
+        ],
+        "example": "/hexun/pe/news",
+        "url": "pe.hexun.com/news/",
+        "name": "创投行业新闻",
+        "maintainers": [
+          "p3psi-boo"
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "和讯网",
+    "url": "hexun.com",
+    "description": "",
+    "lang": "zh-CN"
+  },
   "hfut": {
     "routes": {
       "/hf/notice/:type?": {
@@ -38904,6 +38947,46 @@
     "name": "Sakamichi Series 坂道系列官网资讯",
     "url": "hinatazaka46.com",
     "lang": "zh-CN"
+  },
+  "hiring.cafe": {
+    "routes": {
+      "/jobs/:keywords": {
+        "path": "/jobs/:keywords",
+        "categories": [
+          "other"
+        ],
+        "example": "/hiring.cafe/jobs/sustainability",
+        "parameters": {
+          "keywords": "Keywords to search for"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "hiring.cafe"
+            ]
+          }
+        ],
+        "name": "Jobs",
+        "maintainers": [
+          "mintyfrankie"
+        ],
+        "location": "jobs.ts"
+      }
+    },
+    "name": "HiringCafe",
+    "url": "hiring.cafe",
+    "description": "HiringCafe is a platform for job seekers to find job opportunities and for employers to post job listings.",
+    "zh": {
+      "name": "HiringCafe"
+    }
   },
   "hit": {
     "routes": {
@@ -48416,7 +48499,7 @@
           "GuoChen-thlg"
         ],
         "url": "kuaishou.com/profile/:principalId",
-        "description": ":::tip\nThe profile page of the user, which contains the user's information, videos, and other information.\n    :::",
+        "description": ":::tip\nThe profile page of the user, which contains the user's information, videos, and other information.\n:::",
         "location": "profile.ts"
       }
     },
@@ -57919,6 +58002,27 @@
     },
     "name": "新华社",
     "url": "news.cn",
+    "lang": "zh-CN"
+  },
+  "newseed": {
+    "routes": {
+      "/latest": {
+        "path": "/latest",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/newseed/latest",
+        "url": "news.newseed.cn",
+        "name": "最新新闻",
+        "maintainers": [
+          "p3psi-boo"
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "新芽",
+    "url": "newseed.cn",
+    "description": "新芽是专注于互联网创业的媒体平台，提供创业资讯、投融资信息、创业活动、创业服务等。",
     "lang": "zh-CN"
   },
   "newsmarket": {
@@ -73010,6 +73114,26 @@
         "description": "| 通知通告 | 新闻 | 政策文件(bug) |\n  | -------- | ---- | -------- |\n  | notice   | news | policy   |",
         "location": "jwb.ts"
       },
+      "/journals/society/current": {
+        "path": "/journals/society/current",
+        "categories": [
+          "journal"
+        ],
+        "example": "/journals/society/current",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "《社会》杂志当期目录",
+        "maintainers": [
+          "CNYoki"
+        ],
+        "location": "society.ts"
+      },
       "/xykd/:type?": {
         "path": "/xykd/:type?",
         "categories": [
@@ -74394,7 +74518,24 @@
         ],
         "example": "/smzdm/haowen/1",
         "parameters": {
-          "day": "以天为时间跨度，默认为 `all`，其余可以选择 `1`，`7`，`30`，`365`"
+          "day": {
+            "description": "以天为时间跨度，默认为 `1`",
+            "options": [
+              {
+                "value": "1",
+                "label": "今日热门"
+              },
+              {
+                "value": "7",
+                "label": "周热门"
+              },
+              {
+                "value": "30",
+                "label": "月热门"
+              }
+            ],
+            "default": "1"
+          }
         },
         "features": {
           "requireConfig": false,
@@ -74406,7 +74547,8 @@
         },
         "name": "好文",
         "maintainers": [
-          "LogicJake"
+          "LogicJake",
+          "pseudoyu"
         ],
         "location": "haowen.ts"
       },
@@ -75264,6 +75406,69 @@
     },
     "name": "SpankBang",
     "url": "spankbang.com",
+    "lang": "en"
+  },
+  "spglobal": {
+    "routes": {
+      "/ratings/:language?": {
+        "path": "/ratings/:language?",
+        "categories": [
+          "finance"
+        ],
+        "view": 5,
+        "example": "/spglobal/ratings/en",
+        "parameters": {
+          "language": {
+            "description": "语言",
+            "options": [
+              {
+                "value": "zh",
+                "label": "中文"
+              },
+              {
+                "value": "en",
+                "label": "English"
+              },
+              {
+                "value": "es",
+                "label": "Español"
+              },
+              {
+                "value": "pt",
+                "label": "Português"
+              },
+              {
+                "value": "jp",
+                "label": "日本語"
+              },
+              {
+                "value": "ru",
+                "label": "Русский"
+              },
+              {
+                "value": "ar",
+                "label": "العربية"
+              }
+            ]
+          }
+        },
+        "radar": [
+          {
+            "source": [
+              "www.spglobal.com/ratings/:language"
+            ]
+          }
+        ],
+        "name": "Ratings",
+        "description": "\n| language | Description |\n| ---   | ---   |\n| zh | 中文 |\n| en | English |\n| es | Español |\n| pt | Português |\n| jp | 日本語 |\n| ru | Русский |\n| ar | العربية |\n    ",
+        "maintainers": [
+          "FYLSen"
+        ],
+        "location": "ratings.ts"
+      }
+    },
+    "name": "S&P Global",
+    "url": "www.spglobal.com",
     "lang": "en"
   },
   "spotify": {
@@ -82285,6 +82490,27 @@
     "name": "TechPowerUp",
     "url": "techpowerup.com",
     "lang": "en"
+  },
+  "techsir": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/techsir",
+        "url": "www.techsir.com",
+        "name": "最新资讯",
+        "maintainers": [
+          "p3psi-boo"
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "TechSir",
+    "url": "techsir.com",
+    "description": "科技先生 TechSir.Com 是新酷科技创新与创业媒体",
+    "lang": "zh-CN"
   },
   "telecompaper": {
     "routes": {
@@ -92667,7 +92893,7 @@
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
-          "antiCrawler": false,
+          "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
@@ -92681,7 +92907,8 @@
         ],
         "name": "用户专栏",
         "maintainers": [
-          "TonyRL"
+          "TonyRL",
+          "pseudoyu"
         ],
         "location": "column.ts"
       },
