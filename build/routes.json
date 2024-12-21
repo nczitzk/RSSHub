@@ -267,14 +267,15 @@
         ],
         "location": "music/artist.ts"
       },
-      "/music/djradio/:id": {
-        "path": "/music/djradio/:id",
+      "/music/djradio/:id/:info?": {
+        "path": "/music/djradio/:id/:info?",
         "categories": [
           "multimedia"
         ],
         "example": "/163/music/djradio/347317067",
         "parameters": {
-          "id": "节目 id, 可在电台节目页 URL 中找到"
+          "id": "节目 id, 可在电台节目页 URL 中找到",
+          "info": "默认在正文尾部显示节目相关信息，任意值为不显示"
         },
         "features": {
           "requireConfig": false,
@@ -33981,6 +33982,19 @@
         "maintainers": [],
         "location": "gz/index.ts"
       },
+      "/hainan/iitb/tzgg": {
+        "path": "/hainan/iitb/tzgg",
+        "categories": [
+          "government"
+        ],
+        "example": "/gov/hainan/iitb/tzgg",
+        "url": "iitb.hainan.gov.cn/iitb/tzgg/list2.shtml",
+        "name": "通知公告",
+        "maintainers": [
+          "p3psi-boo"
+        ],
+        "location": "hainan/iitb/tzgg.ts"
+      },
       "/hebei/czt/xwdt/:category?": {
         "path": "/hebei/czt/xwdt/:category?",
         "categories": [
@@ -44564,6 +44578,179 @@
   },
   "iresearch": {
     "routes": {
+      "/chart/:category?": {
+        "path": "/chart/:category?",
+        "name": "研究图表",
+        "url": "www.iresearch.com.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/iresearch/chart",
+        "parameters": {
+          "category": "分类，见下表"
+        },
+        "description": "\n| 媒体文娱 | 广告营销   | 游戏行业 | 视频媒体  | 消费电商 |\n| -------- | ---------- | -------- | --------- | -------- |\n| 电子商务 | 消费者洞察 | 旅游行业 | 汽车行业  | 教育行业 |\n| 企业服务 | 网络服务   | 应用服务 | AI 大数据 | 人工智能 |\n| 物流行业 | 金融行业   | 支付行业 | 房产行业  | 医疗健康 |\n| 先进制造 | 新能源     | 区块链   | 其他      |          |\n",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "title": "研究图表 - 媒体文娱",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 广告营销",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 游戏行业",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 视频媒体",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 消费电商",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 电子商务",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 消费者洞察",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 旅游行业",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 汽车行业",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 教育行业",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 企业服务",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 网络服务",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 应用服务",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - AI大数据",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 人工智能",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 物流行业",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 金融行业",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 支付行业",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 房产行业",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 医疗健康",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 先进制造",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 新能源",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 区块链",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          },
+          {
+            "title": "研究图表 - 其他",
+            "source": [
+              "https://www.iresearch.com.cn/report.shtml"
+            ]
+          }
+        ],
+        "view": 0,
+        "location": "chart.ts"
+      },
       "/report": {
         "path": "/report",
         "categories": [
@@ -46180,6 +46367,93 @@
     "name": "即刻",
     "url": "m.okjike.com",
     "lang": "zh-CN"
+  },
+  "jimmyspa": {
+    "routes": {
+      "/books/:language": {
+        "path": "/books/:language",
+        "categories": [
+          "design"
+        ],
+        "view": 0,
+        "example": "/jimmyspa/books/tw",
+        "parameters": {
+          "language": {
+            "description": "语言",
+            "options": [
+              {
+                "value": "tw",
+                "label": "臺灣正體"
+              },
+              {
+                "value": "en",
+                "label": "English"
+              },
+              {
+                "value": "jp",
+                "label": "日本語"
+              }
+            ]
+          }
+        },
+        "radar": [
+          {
+            "source": [
+              "www.jimmyspa.com/:language/Books"
+            ]
+          }
+        ],
+        "name": "Books",
+        "description": "\n| language | Description |\n| ---   | ---   |\n| tw | 臺灣正體 |\n| en | English |\n| jp | 日本語 |\n    ",
+        "maintainers": [
+          "FYLSen"
+        ],
+        "location": "books.ts"
+      },
+      "/news/:language": {
+        "path": "/news/:language",
+        "categories": [
+          "design"
+        ],
+        "view": 2,
+        "example": "/jimmyspa/news/tw",
+        "parameters": {
+          "language": {
+            "description": "语言",
+            "options": [
+              {
+                "value": "tw",
+                "label": "臺灣正體"
+              },
+              {
+                "value": "en",
+                "label": "English"
+              },
+              {
+                "value": "jp",
+                "label": "日本語"
+              }
+            ]
+          }
+        },
+        "radar": [
+          {
+            "source": [
+              "www.jimmyspa.com/:language/News"
+            ]
+          }
+        ],
+        "name": "News",
+        "description": "\n| language | Description |\n| ---   | ---   |\n| tw | 臺灣正體 |\n| en | English |\n| jp | 日本語 |\n    ",
+        "maintainers": [
+          "FYLSen"
+        ],
+        "location": "news.ts"
+      }
+    },
+    "name": "幾米 JIMMY S.P.A. Official Website",
+    "url": "www.jimmyspa.com",
+    "lang": "zh-TW"
   },
   "jin10": {
     "routes": {
