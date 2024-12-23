@@ -395,6 +395,9 @@
   "/ali213/news/:category?": [
     "nczitzk"
   ],
+  "/ali213/zl/:category?": [
+    "nczitzk"
+  ],
   "/alicesoft/information/:category?/:game?": [
     "keocheung"
   ],
@@ -457,6 +460,9 @@
   ],
   "/anquanke/:category/:fulltext?": [
     "qwertyuiop6"
+  ],
+  "/anthropic/news": [
+    "etShaw-zh"
   ],
   "/apache/apisix/blog": [
     "aneasystone"
@@ -1523,7 +1529,7 @@
   "/coomer/posts": [
     "nczitzk"
   ],
-  "/copernicium/:category": [
+  "/copernicium/:category?": [
     "dzx-dzx"
   ],
   "/copymanga/comic/:id/:chapterCnt?": [
@@ -2057,6 +2063,9 @@
   ],
   "/dykszx/news/:newsType?": [
     "zytomorrow"
+  ],
+  "/dytt/": [
+    "junfengP"
   ],
   "/e-hentai/:what?/:id?/:needTorrents?/:needImages?": [],
   "/eagle/blog/:cate?/:language?": [
@@ -3296,6 +3305,9 @@
   ],
   "/hnu/careers": [
     "ningyougan"
+  ],
+  "/home-assistant/hacs/repositories": [
+    "DIYgod"
   ],
   "/hongkong/chp/:category?/:language?": [
     "nczitzk"
@@ -5056,6 +5068,9 @@
     "HenryQW",
     "pseudoyu",
     "dzx-dzx"
+  ],
+  "/obsidian/plugins": [
+    "DIYgod"
   ],
   "/obsidian/publish/:id": [
     "Xy2002"

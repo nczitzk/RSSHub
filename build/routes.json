@@ -6060,6 +6060,75 @@
         ],
         "view": 0,
         "location": "news.ts"
+      },
+      "/zl/:category?": {
+        "path": "/zl/:category?",
+        "name": "大侠号",
+        "url": "www.ali213.net",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/ali213/zl",
+        "parameters": {
+          "category": "分类，默认为首页，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n若订阅 [游戏](https://www.ali213.net/news/zl/game/)，网址为 `https://www.ali213.net/news/zl/game/`，请截取 `https://www.ali213.net/news/zl/` 到末尾 `/` 的部分 `game` 作为 `category` 参数填入，此时目标路由为 [`/ali213/zl/game`](https://rsshub.app/ali213/zl/game)。\n:::\n\n| 首页                                     | 游戏                                         | 动漫                                           | 影视                                           | 娱乐                                           |\n| ---------------------------------------- | -------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- |\n| [index](https://www.ali213.net/news/zl/) | [game](https://www.ali213.net/news/zl/game/) | [comic](https://www.ali213.net/news/zl/comic/) | [movie](https://www.ali213.net/news/zl/movie/) | [amuse](https://www.ali213.net/news/zl/amuse/) |\n",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.ali213.net/news/zl/:category"
+            ]
+          },
+          {
+            "title": "首页",
+            "source": [
+              "www.ali213.net/news/zl/"
+            ],
+            "target": "/zl"
+          },
+          {
+            "title": "游戏",
+            "source": [
+              "www.ali213.net/news/zl/game/"
+            ],
+            "target": "/zl/game"
+          },
+          {
+            "title": "动漫",
+            "source": [
+              "www.ali213.net/news/zl/comic/"
+            ],
+            "target": "/zl/comic"
+          },
+          {
+            "title": "影视",
+            "source": [
+              "www.ali213.net/news/zl/movie/"
+            ],
+            "target": "/zl/movie"
+          },
+          {
+            "title": "娱乐",
+            "source": [
+              "www.ali213.net/news/zl/amuse/"
+            ],
+            "target": "/zl/amuse"
+          }
+        ],
+        "view": 0,
+        "location": "zl.ts"
       }
     },
     "name": "游侠网",
@@ -6752,6 +6821,34 @@
     "url": "anquanke.com",
     "description": ":::tip\n官方提供了混合的主页资讯 RSS: [https://api.anquanke.com/data/v1/rss](https://api.anquanke.com/data/v1/rss)\n:::",
     "lang": "zh-CN"
+  },
+  "anthropic": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "categories": [
+          "programming"
+        ],
+        "example": "/anthropic/news",
+        "parameters": {},
+        "radar": [
+          {
+            "source": [
+              "anthropic.com"
+            ]
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "etShaw-zh"
+        ],
+        "url": "anthropic.com/news",
+        "location": "news.ts"
+      }
+    },
+    "name": "Anthropic",
+    "url": "anthropic.com",
+    "lang": "en"
   },
   "apache": {
     "routes": {
@@ -11738,7 +11835,7 @@
         "maintainers": [
           "nczitzk"
         ],
-        "description": "Categories\n\n  | Category               | Slug                |\n  | ---------------------- | ------------------- |\n  | All News               |                     |\n  | Diablo II: Resurrected | diablo2             |\n  | Diablo III             | diablo3             |\n  | Diablo IV              | diablo4             |\n  | Diablo: Immortal       | diablo-immortal     |\n  | Hearthstone            | hearthstone         |\n  | Heroes of the Storm    | heroes-of-the-storm |\n  | Overwatch 2            | overwatch           |\n  | StarCraft: Remastered  | starcraft           |\n  | StarCraft II           | starcraft2          |\n  | World of Warcraft      | world-of-warcraft   |\n  | Warcraft III: Reforged | warcraft3           |\n  | Battle.net             | battlenet           |\n  | BlizzCon               | blizzcon            |\n  | Inside Blizzard        | blizzard            |\n\n  Language codes\n\n  | Language           | Code  |\n  | ------------------ | ----- |\n  | Deutsch            | de-de |\n  | English (US)       | en-us |\n  | English (EU)       | en-gb |\n  | Español (EU)       | es-es |\n  | Español (Latino)   | es-mx |\n  | Français           | fr-fr |\n  | Italiano           | it-it |\n  | Português (Brasil) | pt-br |\n  | Polski             | pl-pl |\n  | Русский            | ru-ru |\n  | 한국어             | ko-kr |\n  | ภาษาไทย            | th-th |\n  | 日本語             | ja-jp |\n  | 繁體中文           | zh-tw |",
+        "description": "Categories\n\n  | Category               | Slug                |\n  | ---------------------- | ------------------- |\n  | All News               |                     |\n  | Diablo II: Resurrected | diablo2             |\n  | Diablo III             | diablo3             |\n  | Diablo IV              | diablo4             |\n  | Diablo Immortal        | diablo-immortal     |\n  | Hearthstone            | hearthstone         |\n  | Heroes of the Storm    | heroes-of-the-storm |\n  | Overwatch 2            | overwatch           |\n  | StarCraft: Remastered  | starcraft           |\n  | StarCraft II           | starcraft2          |\n  | World of Warcraft      | world-of-warcraft   |\n  | Warcraft 3: Reforged   | warcraft3           |\n  | Warcraft Rumble        | warcraft-rumble     |\n  | Battle.net             | battlenet           |\n  | BlizzCon               | blizzcon            |\n  | Inside Blizzard        | blizzard            |\n\n  Language codes\n\n  | Language           | Code  |\n  | ------------------ | ----- |\n  | Deutsch            | de-de |\n  | English (US)       | en-us |\n  | English (EU)       | en-gb |\n  | Español (EU)       | es-es |\n  | Español (Latino)   | es-mx |\n  | Français           | fr-fr |\n  | Italiano           | it-it |\n  | Português (Brasil) | pt-br |\n  | Polski             | pl-pl |\n  | Русский            | ru-ru |\n  | 한국어             | ko-kr |\n  | ภาษาไทย            | th-th |\n  | 日本語             | ja-jp |\n  | 繁體中文           | zh-tw |",
         "location": "news.ts"
       }
     },
@@ -19432,8 +19529,8 @@
   },
   "copernicium": {
     "routes": {
-      "/:category": {
-        "path": "/:category",
+      "/:category?": {
+        "path": "/:category?",
         "categories": [
           "new-media"
         ],
@@ -25185,6 +25282,41 @@
       "government"
     ],
     "description": "德阳人事考试网",
+    "lang": "zh-CN"
+  },
+  "dytt": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "multimedia"
+        ],
+        "example": "/dytt",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": true,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "ygdy8.net/index.html"
+            ]
+          }
+        ],
+        "name": "最新电影",
+        "maintainers": [
+          "junfengP"
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "电影天堂",
+    "url": "www.ygdy8.net",
     "lang": "zh-CN"
   },
   "e-hentai": {
@@ -39682,6 +39814,25 @@
     "name": "湖南大学",
     "url": "scc.hnu.edu.cn",
     "lang": "zh-CN"
+  },
+  "home-assistant": {
+    "routes": {
+      "/hacs/repositories": {
+        "path": "/hacs/repositories",
+        "name": "HACS Repositories",
+        "maintainers": [
+          "DIYgod"
+        ],
+        "categories": [
+          "program-update"
+        ],
+        "example": "/home-assistant/hacs/repositories",
+        "location": "hacs.ts"
+      }
+    },
+    "name": "Home Assistant",
+    "url": "www.home-assistant.io",
+    "lang": "en"
   },
   "hongkong": {
     "routes": {
@@ -61997,6 +62148,18 @@
   },
   "obsidian": {
     "routes": {
+      "/plugins": {
+        "path": "/plugins",
+        "name": "Obsidian Plugins",
+        "maintainers": [
+          "DIYgod"
+        ],
+        "categories": [
+          "program-update"
+        ],
+        "example": "/obsidian/plugins",
+        "location": "plugins.ts"
+      },
       "/publish/:id": {
         "path": "/publish/:id",
         "categories": [
