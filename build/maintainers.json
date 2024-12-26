@@ -1755,6 +1755,9 @@
     "nczitzk",
     "TonyRL"
   ],
+  "/deepseek/news": [
+    "1837634311"
+  ],
   "/dehenglaw/:language?/:category?": [
     "nczitzk"
   ],
@@ -3943,6 +3946,9 @@
   "/jpxgmn/weekly": [
     "Urabartin"
   ],
+  "/jrj/:channelNum": [
+    "p3psi-boo"
+  ],
   "/jseea/news/:type?": [
     "schen1024"
   ],
@@ -5265,8 +5271,11 @@
   "/panewslab/topic/:id": [
     "nczitzk"
   ],
-  "/papers/:category{.+}?": [
+  "/papers/arxiv/:category{.+}?": [
     "nczitzk",
+    "Muyun99"
+  ],
+  "/papers/query/:keyword{.+}?": [
     "Muyun99"
   ],
   "/paradigm/writing": [
