@@ -20634,6 +20634,35 @@
     "url": "curius.app",
     "lang": "en"
   },
+  "cursor": {
+    "routes": {
+      "/changelog": {
+        "path": "/changelog",
+        "categories": [
+          "program-update"
+        ],
+        "example": "/cursor/changelog",
+        "url": "www.cursor.com/changelog",
+        "name": "Changelog",
+        "maintainers": [
+          "p3psi-boo"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.cursor.com/changelog"
+            ],
+            "target": "/cursor/changelog"
+          }
+        ],
+        "location": "changelog.ts"
+      }
+    },
+    "name": "Cursor",
+    "url": "www.cursor.com",
+    "description": "",
+    "lang": "en"
+  },
   "cw": {
     "routes": {
       "/author/:channel": {
@@ -41085,6 +41114,37 @@
         "url": "huggingface.co/blog/zh",
         "location": "blog-zh.ts"
       },
+      "/blog": {
+        "path": "/blog",
+        "categories": [
+          "programming"
+        ],
+        "example": "/huggingface/blog",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "huggingface.co/blog",
+              "huggingface.co/"
+            ]
+          }
+        ],
+        "name": "英文博客",
+        "maintainers": [
+          "cesaryuan",
+          "zcf0508"
+        ],
+        "url": "huggingface.co/blog",
+        "location": "blog.ts"
+      },
       "/daily-papers": {
         "path": "/daily-papers",
         "categories": [
@@ -56839,6 +56899,47 @@
     "name": "华储网",
     "url": "mrm.com.cn",
     "lang": "zh-CN"
+  },
+  "msn": {
+    "routes": {
+      "/:market/:name/:id": {
+        "path": "/:market/:name/:id",
+        "parameters": {
+          "market": "Market code. Find it in MSN url, e.g. zh-tw",
+          "name": "Name of the channel. Find it in MSN url, e.g. Bloomberg",
+          "id": "ID of the channel (always starts with sr-vid). Find it in MSN url, e.g. sr-vid-08gw7ky4u229xjsjvnf4n6n7v67gxm0pjmv9fr4y2x9jjmwcri4s"
+        },
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/zh-tw/Bloomberg/sr-vid-08gw7ky4u229xjsjvnf4n6n7v67gxm0pjmv9fr4y2x9jjmwcri4s",
+        "description": "MSN News",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.msn.com/:market/channel/source/:name/:id"
+            ],
+            "target": "/:market/:name/:id"
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "KTachibanaM"
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "MSN",
+    "url": "msn.com",
+    "zh": {
+      "name": "MSN"
+    }
   },
   "mwm": {
     "routes": {
@@ -84906,6 +85007,41 @@
     "url": "thwiki.cc",
     "lang": "zh-CN"
   },
+  "tiddlywiki": {
+    "routes": {
+      "/releases": {
+        "path": "/releases",
+        "categories": [
+          "program-update"
+        ],
+        "example": "/tiddlywiki/releases",
+        "url": "tiddlywiki.com",
+        "name": "Releases",
+        "maintainers": [
+          "p3psi-boo"
+        ],
+        "radar": [
+          {
+            "source": [
+              "github.com/TiddlyWiki/TiddlyWiki5"
+            ],
+            "target": "/releases"
+          },
+          {
+            "source": [
+              "tiddlywiki.com"
+            ],
+            "target": "/releases"
+          }
+        ],
+        "location": "releases.ts"
+      }
+    },
+    "name": "TiddlyWiki",
+    "url": "tiddlywiki.com",
+    "description": "",
+    "lang": "en"
+  },
   "tiktok": {
     "routes": {
       "/user/:user/:iframe?": {
@@ -90509,6 +90645,42 @@
     "url": "web3caff.com",
     "lang": "en"
   },
+  "webcatalog": {
+    "routes": {
+      "/changelog": {
+        "path": "/changelog",
+        "categories": [
+          "program-update"
+        ],
+        "example": "/webcatalog/changelog",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "desktop.webcatalog.io/:lang/changelog"
+            ]
+          }
+        ],
+        "name": "Changelog",
+        "maintainers": [
+          "Tsuyumi25"
+        ],
+        "url": "desktop.webcatalog.io/en/changelog",
+        "location": "changelog.ts"
+      }
+    },
+    "name": "WebCatalog",
+    "url": "desktop.webcatalog.io",
+    "lang": "en"
+  },
   "wechat": {
     "routes": {
       "/announce": {
@@ -95505,7 +95677,8 @@
         "radar": [
           {
             "source": [
-              "www.youtube.com/user/:username"
+              "www.youtube.com/user/:username",
+              "www.youtube.com/:username"
             ],
             "target": "/user/:username"
           }
