@@ -6647,7 +6647,7 @@
         "target": "/chinacdc/qqgw/wszz"
       },
       {
-        "title": "全球公卫 - 国际交流(港澳台交流)",
+        "title": "全球公卫 - 国际交流 (港澳台交流)",
         "docs": "https://docs.rsshub.app/routes/government",
         "source": [
           "/qqgw/gjjl/"
@@ -16176,6 +16176,27 @@
           "/allnews"
         ],
         "target": "/ielts/"
+      }
+    ]
+  },
+  "ifanr.com": {
+    "_name": "爱范儿",
+    "www": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/category/:name"
+        ],
+        "target": "/ifanr/category/:name"
+      },
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/index"
+        ],
+        "target": "/ifanr/index"
       }
     ]
   },

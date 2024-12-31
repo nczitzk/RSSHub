@@ -3554,6 +3554,12 @@
   "/ielts/": [
     "zenxds"
   ],
+  "/ifanr/category/:name": [
+    "donghongfei"
+  ],
+  "/ifanr/index": [
+    "donghongfei"
+  ],
   "/ifeng/feng/:id/:type": [
     "Jamch"
   ],
@@ -7561,6 +7567,12 @@
   "/xaut/rsc/:category?": [
     "mocusez",
     "light0926"
+  ],
+  "/xbmu/academic": [
+    "PrinOrange"
+  ],
+  "/xbmu/announcement": [
+    "PrinOrange"
   ],
   "/xbookcn/:label?": [
     "Lyunvy"
