@@ -135,8 +135,17 @@
   "/2023game/:category?/:tab?": [
     "xzzpig"
   ],
+  "/21caijing/channel/:name{.+}?": [
+    "nczitzk"
+  ],
   "/2cycd/:fid/:sort?": [
     "shelken"
+  ],
+  "/30secondsofcode/category/:category?/:subCategory?": [
+    "Rjnishant530"
+  ],
+  "/30secondsofcode/latest": [
+    "Rjnishant530"
   ],
   "/36kr/hot-list/:category?": [
     "nczitzk"
@@ -963,6 +972,9 @@
     "Fatpandac"
   ],
   "/bnu/fdy/:path{.+}?": [],
+  "/bnu/fe/:category": [
+    "etShaw-zh"
+  ],
   "/bnu/jwb": [
     "ladeng07"
   ],
@@ -1138,6 +1150,9 @@
   "/cast/:column/:subColumn/:category?": [
     "KarasuShin",
     "TonyRL"
+  ],
+  "/catti/news/:category": [
+    "PrinOrange"
   ],
   "/cau/ele": [
     "shengmaosu"
@@ -1323,6 +1338,9 @@
     "yuxinliu-alex"
   ],
   "/chinania/:category{.+}?": [
+    "nczitzk"
+  ],
+  "/chinaratings/CreditResearch/:category{.+}?": [
     "nczitzk"
   ],
   "/chinathinktanks/:id": [
@@ -1651,19 +1669,22 @@
   "/dahecube/:type?": [
     "linbuxiao"
   ],
-  "/daily/discussed": [
+  "/daily/discussed/:period?/:innerSharedContent?/:dateSort?": [
     "Rjnishant530"
   ],
-  "/daily/": [
+  "/daily/popular/:innerSharedContent?/:dateSort?": [
     "Rjnishant530"
   ],
-  "/daily/source/:sourceId": [
+  "/daily/source/:sourceId/:innerSharedContent?": [
     "TonyRL"
   ],
-  "/daily/upvoted": [
+  "/daily/squads/:squads/:innerSharedContent?": [
     "Rjnishant530"
   ],
-  "/daily/user/:userId": [
+  "/daily/upvoted/:period?/:innerSharedContent?/:dateSort?": [
+    "Rjnishant530"
+  ],
+  "/daily/user/:userId/:innerSharedContent?": [
     "TonyRL"
   ],
   "/damai/activity/:city/:category/:subcategory/:keyword?": [
@@ -2275,10 +2296,10 @@
   "/finology/bullets": [
     "Rjnishant530"
   ],
-  "/finology/:category": [
+  "/finology/category/:category": [
     "Rjnishant530"
   ],
-  "/finology/most-viewed/:time": [
+  "/finology/most-viewed": [
     "Rjnishant530"
   ],
   "/finology/tag/:topic": [
@@ -3189,6 +3210,18 @@
     "nczitzk",
     "pseudoyu"
   ],
+  "/hdu/auto/graduate": [
+    "jalenzz"
+  ],
+  "/hdu/auto": [
+    "jalenzz"
+  ],
+  "/hdu/auto/student": [
+    "jalenzz"
+  ],
+  "/hdu/auto/undergraduate": [
+    "jalenzz"
+  ],
   "/hdu/cs": [
     "legr4ndk"
   ],
@@ -3556,6 +3589,9 @@
   ],
   "/ifanr/category/:name": [
     "donghongfei"
+  ],
+  "/ifanr/digest": [
+    "nczitzk"
   ],
   "/ifanr/index": [
     "donghongfei"
@@ -4078,6 +4114,9 @@
   "/konghq/blog-posts": [
     "piglei"
   ],
+  "/koreaherald/:category{.+}?": [
+    "quiniapiezoelectricity"
+  ],
   "/kpmg/insights/:lang?": [
     "LogicJake"
   ],
@@ -4407,6 +4446,9 @@
   ],
   "/medieval-china/": [
     "artefaritaKuniklo"
+  ],
+  "/medium/feed/:user": [
+    "pseudoyu"
   ],
   "/medium/following/:user": [
     "ImSingee"
@@ -5213,6 +5255,9 @@
   "/oreno3d/tags/:tagid/:sort/:pagelimit?": [
     "xueli_sherryli"
   ],
+  "/oschina/column/:id": [
+    "nczitzk"
+  ],
   "/oschina/news/:category?": [
     "tgly307",
     "zengxs"
@@ -5271,6 +5316,9 @@
   ],
   "/p-articles/section/:section": [
     "Insomnia1437"
+  ],
+  "/pacilution/latest": [
+    "PrinOrange"
   ],
   "/panewslab/author/:id": [
     "nczitzk"
@@ -5838,6 +5886,9 @@
   "/ruancan/": [],
   "/ruancan/search/:keyword?": [],
   "/ruancan/user/:id": [],
+  "/ruankao/news": [
+    "PrinOrange"
+  ],
   "/ruc/ai/:category?": [
     "yinhanyan"
   ],
@@ -6475,6 +6526,10 @@
   "/steam/appcommunityfeed/:appid/:routeParams?": [
     "NyaaaDoge"
   ],
+  "/steam/curator/:id/:routeParams?": [
+    "naremloa",
+    "fenxer"
+  ],
   "/steam/search/:params": [
     "moppman"
   ],
@@ -6518,6 +6573,9 @@
     "nczitzk"
   ],
   "/subhd/:type?/:category?": [],
+  "/substack/subscribe/:user": [
+    "pseudoyu"
+  ],
   "/supchina/": [
     "nczitzk"
   ],
@@ -7160,6 +7218,9 @@
   "/upc/yjs": [
     "shengmaosu"
   ],
+  "/ups/track/:trackingNumber": [
+    "Aquabet"
+  ],
   "/uptimerobot/rss/:id/:routeParams?": [
     "Rongronggg9"
   ],
@@ -7271,6 +7332,12 @@
   ],
   "/vimeo/user/:username/:cat?": [
     "MisteryMonster"
+  ],
+  "/visionias/newsToday/:filter?": [
+    "Rjnishant530"
+  ],
+  "/visionias/weeklyFocus": [
+    "Rjnishant530"
   ],
   "/vocus/publication/:id": [
     "Maecenas"
@@ -7953,6 +8020,9 @@
   ],
   "/zhihu/people/activities/:id": [
     "DIYgod"
+  ],
+  "/zhihu/people/allCollections/:id": [
+    "Healthyyue"
   ],
   "/zhihu/people/answers/:id": [
     "DIYgod",
