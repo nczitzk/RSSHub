@@ -13011,6 +13011,40 @@
   },
   "blizzard": {
     "routes": {
+      "/news-cn/:category?": {
+        "path": "/news-cn/:category?",
+        "categories": [
+          "game"
+        ],
+        "example": "/blizzard/news-cn/ow",
+        "parameters": {
+          "category": "游戏类别, 默认为 ow"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "ow.blizzard.cn",
+              "wow.blizzard.cn",
+              "hs.blizzard.cn"
+            ],
+            "target": "/news-cn/"
+          }
+        ],
+        "name": "暴雪游戏国服新闻",
+        "maintainers": [
+          "zhangpeng2k"
+        ],
+        "description": "\n| 守望先锋 | 炉石传说 | 魔兽世界 |\n|----------|----------|---------|\n| ow       | hs       | wow     |\n",
+        "location": "news-cn.ts"
+      },
       "/news/:language?/:category?": {
         "path": "/news/:language?/:category?",
         "categories": [
@@ -21706,6 +21740,43 @@
     },
     "name": "中南大学",
     "url": "career.csu.edu.cn",
+    "lang": "zh-CN"
+  },
+  "ctbu": {
+    "routes": {
+      "/xxgg": {
+        "path": "/xxgg",
+        "categories": [
+          "university"
+        ],
+        "example": "/ctbu/xxgg",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.ctbu.edu.cn/",
+              "www.ctbu.edu.cn/index/xxgg.htm"
+            ]
+          }
+        ],
+        "name": "学校公告",
+        "maintainers": [
+          "Skylwn"
+        ],
+        "url": "www.ctbu.edu.cn/",
+        "location": "xxgg.ts"
+      }
+    },
+    "name": "重庆工商大学",
+    "url": "www.ctbu.edu.cn/",
     "lang": "zh-CN"
   },
   "cts": {
@@ -32578,6 +32649,49 @@
     "url": "gelonghui.com",
     "lang": "zh-CN"
   },
+  "genossenschaften": {
+    "routes": {
+      "*": {
+        "name": "Immobiliensuche",
+        "path": "*",
+        "maintainers": [
+          "sk22"
+        ],
+        "categories": [
+          "other"
+        ],
+        "description": "\nNote that all parameters are optional and many can be specified multiple times\n(e.g. `district=wien-1-innere-stadt&district=wien-2-leopoldstadt`).\n\nOnly returns the first page of search results, allowing you to keep track of\nnewly added apartments. If you're looking for an apartment, make sure to also\nlook through the other pages on the website.\n\n:::tip\nTo get your query URL, go to https://genossenschaften.immo and apply all\ndesired filters. If you want to filter by (all districts of a) federal state\n(e.g. `/immobilien/regionen/wien/`), please open the district selector and\nde- and re-select any district, so that the region in the URL gets replaced\nwith a number of `district` parameters. Once you've set up all desired\nfilters, copy the part of the URL after the `?`.\n:::\n",
+        "example": "/genossenschaften/district=wien-1-innere-stadt&district=wien-2-leopoldstadt&district=wien-3-landstrasse&district=wien-4-wieden&district=wien-5-margareten&district=wien-6-mariahilf&district=wien-7-neubau&district=wien-8-josefstadt&district=wien-9-alsergrund&district=wien-10-favoriten&district=wien-11-simmering&district=wien-12-meidling&district=wien-13-hietzing&district=wien-14-penzing&district=wien-15-rudolfsheim-fuenfhaus&district=wien-16-ottakring&district=wien-17-hernals&district=wien-18-waehring&district=wien-19-doebling&district=wien-20-brigittenau&district=wien-21-floridsdorf&district=wien-22-donaustadt&district=wien-23-liesing&has_rent=on&has_rent_option=on&status=available&status=construction&cost=1000&room=2&size=50&has_property=off&has_rent=on&has_rent_option=on&status=available&status=construction&status=planned&type=residence&type=project",
+        "parameters": {
+          "cost": "Miete bis (in €, number)",
+          "district": "Bezirk (string, multiple)",
+          "size": "Größe ab (in m², number)",
+          "room": "Zimmer ab (number)",
+          "genossenschaft": "Bauvereinigung (string, multiple)",
+          "own_funds": "Eigenkapital bis",
+          "has_property": "Eigentum (`on` | `off`)",
+          "has_rent": "Miete (`on` | `off`)",
+          "has_rent_option": "Miete mit Kaufoption (`on` | `off`)",
+          "status": "multiple, `available` | `construction` | `planned`",
+          "type": "multiple, `residence` | `project`",
+          "keywords": "Keyword search"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "index.ts"
+      }
+    },
+    "name": "Genossenschaften.immo",
+    "url": "genossenschaften.immo",
+    "description": "Search engine for Genossenschaft housing in Austria",
+    "lang": "de"
+  },
   "geocaching": {
     "routes": {
       "/blogs": {
@@ -34265,7 +34379,8 @@
         "example": "/google/research",
         "name": "Research Blog",
         "maintainers": [
-          "Levix"
+          "Levix",
+          "cscnk52"
         ],
         "radar": [
           {
@@ -40177,44 +40292,15 @@
   },
   "hdu": {
     "routes": {
-      "/auto/graduate": {
-        "path": "/auto/graduate",
-        "categories": [
-          "university"
-        ],
-        "example": "/hdu/auto/graduate",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "自动化学院 - 研究生教育通知",
-        "maintainers": [
-          "jalenzz"
-        ],
-        "description": "杭州电子科技大学自动化学院研究生教育",
-        "radar": [
-          {
-            "source": [
-              "auto.hdu.edu.cn/main.htm",
-              "auto.hdu.edu.cn/3754/list.htm"
-            ],
-            "target": "/auto/graduate"
-          }
-        ],
-        "location": "auto/graduate.ts"
-      },
-      "/auto": {
-        "path": "/auto",
+      "/auto/:type?": {
+        "path": "/auto/:type?",
         "categories": [
           "university"
         ],
         "example": "/hdu/auto",
-        "parameters": {},
+        "parameters": {
+          "type": "分类，见下表，默认为通知公告"
+        },
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
@@ -40223,43 +40309,33 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "自动化学院 - 通知公告",
+        "name": "自动化学院",
         "maintainers": [
           "jalenzz"
         ],
-        "description": "杭州电子科技大学自动化学院通知公告",
+        "description": "| 通知公告  | 研究生教育 |    本科教学    | 学生工作  |\n| -------- | -------- |   --------    | -------- |\n| notice   | graduate | undergraduate | student  |",
         "radar": [
           {
             "source": [
               "auto.hdu.edu.cn/main.htm",
               "auto.hdu.edu.cn/3779/list.htm"
             ],
-            "target": "/auto"
-          }
-        ],
-        "location": "auto/notice.ts"
-      },
-      "/auto/student": {
-        "path": "/auto/student",
-        "categories": [
-          "university"
-        ],
-        "example": "/hdu/auto/student",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "自动化学院 - 学生工作",
-        "maintainers": [
-          "jalenzz"
-        ],
-        "description": "杭州电子科技大学自动化学院学生工作",
-        "radar": [
+            "target": "/auto/notice"
+          },
+          {
+            "source": [
+              "auto.hdu.edu.cn/main.htm",
+              "auto.hdu.edu.cn/3754/list.htm"
+            ],
+            "target": "/auto/graduate"
+          },
+          {
+            "source": [
+              "auto.hdu.edu.cn/main.htm",
+              "auto.hdu.edu.cn/3745/list.htm"
+            ],
+            "target": "/auto/undergraduate"
+          },
           {
             "source": [
               "auto.hdu.edu.cn/main.htm",
@@ -40268,38 +40344,7 @@
             "target": "/auto/student"
           }
         ],
-        "location": "auto/student.ts"
-      },
-      "/auto/undergraduate": {
-        "path": "/auto/undergraduate",
-        "categories": [
-          "university"
-        ],
-        "example": "/hdu/auto/undergraduate",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "自动化学院 - 本科教学",
-        "maintainers": [
-          "jalenzz"
-        ],
-        "description": "杭州电子科技大学自动化学院本科教学",
-        "radar": [
-          {
-            "source": [
-              "auto.hdu.edu.cn/main.htm",
-              "auto.hdu.edu.cn/3745/list.htm"
-            ],
-            "target": "/auto/undergraduate"
-          }
-        ],
-        "location": "auto/undergraduate.ts"
+        "location": "auto/notice.ts"
       },
       "/cs": {
         "path": "/cs",
@@ -42440,7 +42485,7 @@
         "parameters": {
           "category": "栏目标识，默认为理工要闻"
         },
-        "description": "\n| lgyw | xwdd | zhenew | jxky | ycdt | xskc | jlhz | zsjy | djsz | zxbf | lgxb | mtlg | jzlt |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| 理工要闻 | 新闻导读 | 综合新闻 | 教学科研 | 院处动态 | 学术科创 | 交流合作 | 招生就业 | 党建思政 | 在线播放 | 理工校报 | 媒体理工 | 讲座论坛 |\n",
+        "description": "| lgyw | xwdd | zhenew | jxky | ycdt | xskc | jlhz | zsjy | djsz | zxbf | lgxb | mtlg | jzlt |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| 理工要闻 | 新闻导读 | 综合新闻 | 教学科研 | 院处动态 | 学术科创 | 交流合作 | 招生就业 | 党建思政 | 在线播放 | 理工校报 | 媒体理工 | 讲座论坛 |",
         "categories": [
           "university"
         ],
@@ -45413,6 +45458,30 @@
     },
     "name": "IKEA",
     "url": "ikea.com",
+    "lang": "en"
+  },
+  "iknowwhatyoudownload": {
+    "routes": {
+      "/stats/daily/:country": {
+        "path": "/stats/daily/:country",
+        "categories": [
+          "other"
+        ],
+        "example": "/iknowwhatyoudownload/stats/daily/CN",
+        "url": "iknowwhatyoudownload.com",
+        "name": "Daily Torrents Statistics",
+        "maintainers": [
+          "p3psi-boo"
+        ],
+        "parameters": {
+          "country": "the country of the stats. ISO 3166-1 alpha-2 code."
+        },
+        "location": "daily.ts"
+      }
+    },
+    "name": "I Know What You Download",
+    "url": "iknowwhatyoudownload.com",
+    "description": "",
     "lang": "en"
   },
   "imagemagick": {
@@ -51980,6 +52049,93 @@
     },
     "name": "旅法师营地",
     "url": "www.iyingdi.com",
+    "lang": "zh-CN"
+  },
+  "lhratings": {
+    "routes": {
+      "/research/:type?": {
+        "path": "/research/:type?",
+        "name": "研究报告",
+        "url": "www.lhratings.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/lhratings/research/1",
+        "parameters": {
+          "type": "分类，默认为 `1`，即宏观经济，可在对应分类页 URL 中找到"
+        },
+        "description": ":::tip\n若订阅 [宏观经济](https://www.lhratings.com/research.html?type=1)，网址为 `https://www.lhratings.com/research.html?type=1`，请截取 `https://www.lhratings.com/research.html?type=` 到末尾的部分 `1` 作为 `type` 参数填入，此时目标路由为 [`/lhratings/research/1`](https://rsshub.app/lhratings/research/1)。\n:::\n\n| 宏观经济 | 债券市场 | 行业研究 | 评级理论与方法 | 国际债券市场与评级 | 评级表现 |\n| -------- | -------- | -------- | -------------- | ------------------ | -------- |\n| 1        | 2        | 3        | 4              | 5                  | 6        |\n",
+        "categories": [
+          "finance"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.lhratings.com/research.html"
+            ]
+          },
+          {
+            "title": "宏观经济",
+            "source": [
+              "www.lhratings.com/research.html?type=1"
+            ],
+            "target": "/research/1"
+          },
+          {
+            "title": "债券市场",
+            "source": [
+              "www.lhratings.com/research.html?type=2"
+            ],
+            "target": "/research/2"
+          },
+          {
+            "title": "行业研究",
+            "source": [
+              "www.lhratings.com/research.html?type=3"
+            ],
+            "target": "/research/3"
+          },
+          {
+            "title": "评级理论与方法",
+            "source": [
+              "www.lhratings.com/research.html?type=4"
+            ],
+            "target": "/research/4"
+          },
+          {
+            "title": "国际债券市场与评级",
+            "source": [
+              "www.lhratings.com/research.html?type=5"
+            ],
+            "target": "/research/5"
+          },
+          {
+            "title": "评级表现",
+            "source": [
+              "www.lhratings.com/research.html?type=6"
+            ],
+            "target": "/research/6"
+          }
+        ],
+        "view": 0,
+        "location": "research.ts"
+      }
+    },
+    "name": "联合资信评估股份有限公司",
+    "url": "lhratings.com",
+    "categories": [
+      "finance"
+    ],
+    "description": "",
     "lang": "zh-CN"
   },
   "lianxh": {
@@ -65608,6 +65764,41 @@
   },
   "osu": {
     "routes": {
+      "/latest-ranked/:routeParams?": {
+        "path": "/latest-ranked/:routeParams?",
+        "categories": [
+          "game"
+        ],
+        "example": "/osu/latest-ranked/includeMode=osu&difficultyLimit=L3&difficultyLimit=U7",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false,
+          "supportRadar": true
+        },
+        "parameters": {
+          "routeParams": {
+            "description": "Used to pass route parameters in Query String format. Check out route description for more info.",
+            "default": "null"
+          }
+        },
+        "name": "Latest Ranked Beatmap",
+        "description": "\nSubscribe to the new beatmaps on https://osu.ppy.sh/beatmapsets.\n\n#### Parameter Description\n\nParameters allows you to:\n\n- Filter game mode\n- Limit beatmap difficulty\n- Show/hide game mode in feed title\n\nBelow is a table of all allowed parameters passed to `routeParams`\n\n\n| Name              | Default  | Description                                                                                                                                                                                                                                          |\n| ----------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| `includeMode`     | All mode | Could be `osu`, `mania`, `fruits` or `taiko`. Specify included game mode of beatmaps. Including this paramseter multiple times to specify multiple game modes, e.g.: `includeMode=osu&includeMode=mania`. Subscribe to all game modes if not specified |\n| `difficultyLimit` | None     | Lower/upper limit of star rating of the beatmaps in the beatmapset item, e.g.:`difficultyLimit=U6`. Checkout tips in descriptions for detailed explaination and examples.                                                                            |\n| `modeInTitle`     | `true`   | `true` or `false` Add mode info into feed title.\n\n\nThis actual parameters should be passed as `routeParams` in URL Query String format without `?`, e.g.:\n\n    /osu/latest-ranked/modeInTitle=true&includeMode=osu\n\n:::tip\nYou could make use of `difficultyLimit` paramters to create a \"high difficulty/low difficulty only\" only feed.\n\nFor example, if you only wants to play low star rating beatmap like 1 or 2 star, you could subscribe to:\n\n    /osu/latest-ranked/difficultyLimit=U2\n\nThis will filter out all beatmapsets that do not provide at least one beatmap with star rating<=`2.00`.\n\nSimilarly, you could use lower bound to filter out beatmapsets which don't have at least one beatmap\nwith star rating higher than a certain threshold.\n\n    /osu/latest-ranked/difficultyLimit=L6\n\nNow all beatmapsets that don't provided at least one beatmap with star rating higher than `6.00` will be filtered.\n:::\n",
+        "maintainers": [
+          "nfnfgo"
+        ],
+        "radar": [
+          {
+            "source": [
+              "osu.ppy.sh/beatmapsets"
+            ]
+          }
+        ],
+        "location": "beatmaps/latest-ranked.ts"
+      },
       "/packs/:type?": {
         "path": "/packs/:type?",
         "categories": [
@@ -70523,6 +70714,70 @@
         ],
         "location": "kg/user.ts"
       },
+      "/lol/news/:category?": {
+        "path": "/lol/news/:category?",
+        "name": "英雄联盟新闻",
+        "url": "lol.qq.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/qq/lol/news",
+        "parameters": {
+          "category": "分类，默认为 `23`，即综合，见下表"
+        },
+        "description": ":::tip\n若订阅 [英雄联盟首页新闻列表 - 公告](https://lol.qq.com/news/index.shtml)，网址为 `https://lol.qq.com/news/index.shtml`，请选择 `24` 作为 `category` 参数填入，此时目标路由为 [`/qq/lol/news/24`](https://rsshub.app/qq/lol/news/24)。\n:::\n\n| 综合 | 公告 | 赛事 | 攻略 | 社区 |\n| ---- | ---- | ---- | ---- | ---- |\n| 23   | 24   | 25   | 27   | 28   |\n",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "title": "综合",
+            "source": [
+              "lol.qq.com/news/index.shtml"
+            ],
+            "target": "/lol/news/23"
+          },
+          {
+            "title": "公告",
+            "source": [
+              "lol.qq.com/news/index.shtml"
+            ],
+            "target": "/lol/news/24"
+          },
+          {
+            "title": "赛事",
+            "source": [
+              "lol.qq.com/news/index.shtml"
+            ],
+            "target": "/lol/news/25"
+          },
+          {
+            "title": "攻略",
+            "source": [
+              "lol.qq.com/news/index.shtml"
+            ],
+            "target": "/lol/news/27"
+          },
+          {
+            "title": "社区",
+            "source": [
+              "lol.qq.com/news/index.shtml"
+            ],
+            "target": "/lol/news/28"
+          }
+        ],
+        "view": 0,
+        "location": "lol/news.ts"
+      },
       "/pd/guild/:id/:sub?/:sort?": {
         "path": [
           "/pd/guild/:id/:sub?/:sort?"
@@ -72989,6 +73244,30 @@
   },
   "sciencedirect": {
     "routes": {
+      "/call-for-paper/:subject": {
+        "path": "/call-for-paper/:subject",
+        "categories": [
+          "journal"
+        ],
+        "example": "/sciencedirect/call-for-paper/education",
+        "parameters": {
+          "subject": "学科分类，例如“education”"
+        },
+        "radar": [
+          {
+            "source": [
+              "sciencedirect.com"
+            ]
+          }
+        ],
+        "name": "Call for Papers",
+        "maintainers": [
+          "etShaw-zh"
+        ],
+        "url": "sciencedirect.com/browse/calls-for-papers",
+        "description": "`sciencedirect.com/browse/calls-for-papers?subject=education` -> `/sciencedirect/call-for-paper/education`",
+        "location": "call-for-paper.ts"
+      },
       "/journal/:id": {
         "path": "/journal/:id",
         "categories": [
@@ -84939,10 +85218,7 @@
   "taoguba": {
     "routes": {
       "/blog/:id": {
-        "path": [
-          "/blog/:id",
-          "/user/:id"
-        ],
+        "path": "/blog/:id",
         "categories": [
           "finance"
         ],
@@ -84961,8 +85237,8 @@
         "radar": [
           {
             "source": [
-              "taoguba.com.cn/blog/:id",
-              "taoguba.com.cn/"
+              "tgb.cn/blog/:id",
+              "tgb.cn/"
             ]
           }
         ],
@@ -84971,59 +85247,17 @@
           "nczitzk"
         ],
         "location": "blog.ts"
-      },
-      "/user/:id": {
-        "path": [
-          "/blog/:id",
-          "/user/:id"
-        ],
-        "categories": [
-          "finance"
-        ],
-        "example": "/taoguba/blog/252069",
-        "parameters": {
-          "id": "博客 id，可在对应博客页中找到"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "taoguba.com.cn/blog/:id",
-              "taoguba.com.cn/"
-            ]
-          }
-        ],
-        "name": "用户博客",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "location": "blog.ts"
-      },
-      "/index": {
-        "path": [
-          "/index",
-          "/:category?"
-        ],
-        "name": "Unknown",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "description": "| 淘股论坛 | 社区总版 | 精华加油 | 网友点赞 |\n  | -------- | -------- | -------- | -------- |\n  | bbs      | zongban  | jinghua  | dianzan  |",
-        "location": "index.ts"
       },
       "/:category?": {
-        "path": [
-          "/index",
-          "/:category?"
+        "path": "/:category?",
+        "categories": [
+          "finance"
         ],
-        "name": "Unknown",
+        "example": "/taoguba",
+        "parameters": {
+          "id": "分类，见下表，默认为社区总版"
+        },
+        "name": "淘股论坛",
         "maintainers": [
           "nczitzk"
         ],
@@ -85032,7 +85266,7 @@
       }
     },
     "name": "淘股吧",
-    "url": "taoguba.com.cn",
+    "url": "tgb.cn",
     "lang": "zh-CN"
   },
   "taptap": {
@@ -92544,34 +92778,6 @@
     "name": "The Washington Post",
     "url": "www.washingtonpost.com",
     "lang": "en"
-  },
-  "watasuke": {
-    "routes": {
-      "/blog": {
-        "path": "/blog",
-        "example": "/watasuke/blog",
-        "radar": [
-          {
-            "source": [
-              "watasuke.net/blog/",
-              "watasuke.net/"
-            ]
-          }
-        ],
-        "name": "Blog",
-        "maintainers": [
-          "honahuku"
-        ],
-        "url": "watasuke.net/blog/",
-        "location": "blog.ts"
-      }
-    },
-    "name": "Watasuke",
-    "url": "watasuke.net",
-    "categories": [
-      "blog"
-    ],
-    "lang": "ja"
   },
   "wchscu": {
     "routes": {

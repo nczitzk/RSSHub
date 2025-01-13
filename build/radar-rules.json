@@ -5687,6 +5687,21 @@
       }
     ]
   },
+  "blizzard.cn": {
+    "_name": "Blizzard",
+    "ow": [
+      {
+        "title": "暴雪游戏国服新闻",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/",
+          "/",
+          "/"
+        ],
+        "target": "/blizzard/news-cn/"
+      }
+    ]
+  },
   "blogread.cn": {
     "_name": "技术头条",
     ".": [
@@ -9380,6 +9395,20 @@
       }
     ]
   },
+  "ctbu.edu.cn": {
+    "_name": "重庆工商大学",
+    "www": [
+      {
+        "title": "学校公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/",
+          "/index/xxgg.htm"
+        ],
+        "target": "/ctbu/xxgg"
+      }
+    ]
+  },
   "cts.com.tw": {
     "_name": "華視",
     "news": [
@@ -11047,6 +11076,14 @@
       }
     ],
     ".": [
+      {
+        "title": "Call for Papers",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/"
+        ],
+        "target": "/sciencedirect/call-for-paper/:subject"
+      },
       {
         "title": "Journal",
         "docs": "https://docs.rsshub.app/routes/journal",
@@ -15517,7 +15554,16 @@
     "_name": "杭州电子科技大学",
     "auto": [
       {
-        "title": "自动化学院 - 研究生教育通知",
+        "title": "自动化学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/main.htm",
+          "/3779/list.htm"
+        ],
+        "target": "/hdu/auto/notice"
+      },
+      {
+        "title": "自动化学院",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
           "/main.htm",
@@ -15526,31 +15572,22 @@
         "target": "/hdu/auto/graduate"
       },
       {
-        "title": "自动化学院 - 通知公告",
-        "docs": "https://docs.rsshub.app/routes/university",
-        "source": [
-          "/main.htm",
-          "/3779/list.htm"
-        ],
-        "target": "/hdu/auto"
-      },
-      {
-        "title": "自动化学院 - 学生工作",
-        "docs": "https://docs.rsshub.app/routes/university",
-        "source": [
-          "/main.htm",
-          "/3726/list.htm"
-        ],
-        "target": "/hdu/auto/student"
-      },
-      {
-        "title": "自动化学院 - 本科教学",
+        "title": "自动化学院",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
           "/main.htm",
           "/3745/list.htm"
         ],
         "target": "/hdu/auto/undergraduate"
+      },
+      {
+        "title": "自动化学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/main.htm",
+          "/3726/list.htm"
+        ],
+        "target": "/hdu/auto/student"
       }
     ],
     "computer": [
@@ -19430,6 +19467,67 @@
           "/fine/:tagId"
         ],
         "target": "/lfsyd/tag/:tagId"
+      }
+    ]
+  },
+  "lhratings.com": {
+    "_name": "联合资信评估股份有限公司",
+    "www": [
+      {
+        "title": "研究报告",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html"
+        ],
+        "target": "/lhratings(_,url)=>{const urlObj=new URL(url);const type=urlObj.searchParams.get(\"type\")??void 0;return`/lhratings/research/${type?`/${type}`:\"\"}`}"
+      },
+      {
+        "title": "宏观经济",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html?type=1"
+        ],
+        "target": "/lhratings/research/1"
+      },
+      {
+        "title": "债券市场",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html?type=2"
+        ],
+        "target": "/lhratings/research/2"
+      },
+      {
+        "title": "行业研究",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html?type=3"
+        ],
+        "target": "/lhratings/research/3"
+      },
+      {
+        "title": "评级理论与方法",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html?type=4"
+        ],
+        "target": "/lhratings/research/4"
+      },
+      {
+        "title": "国际债券市场与评级",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html?type=5"
+        ],
+        "target": "/lhratings/research/5"
+      },
+      {
+        "title": "评级表现",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html?type=6"
+        ],
+        "target": "/lhratings/research/6"
       }
     ]
   },
@@ -25058,6 +25156,19 @@
       }
     ]
   },
+  "ppy.sh": {
+    "_name": "osu!",
+    "osu": [
+      {
+        "title": "Latest Ranked Beatmap",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/beatmapsets"
+        ],
+        "target": "/osu/latest-ranked/:routeParams?"
+      }
+    ]
+  },
   "otobanana.com": {
     "_name": "OTOBANANA",
     ".": [
@@ -26428,6 +26539,48 @@
           "/"
         ],
         "target": "/qq/fact"
+      }
+    ],
+    "lol": [
+      {
+        "title": "综合",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news/index.shtml"
+        ],
+        "target": "/qq/lol/news/23"
+      },
+      {
+        "title": "公告",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news/index.shtml"
+        ],
+        "target": "/qq/lol/news/24"
+      },
+      {
+        "title": "赛事",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news/index.shtml"
+        ],
+        "target": "/qq/lol/news/25"
+      },
+      {
+        "title": "攻略",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news/index.shtml"
+        ],
+        "target": "/qq/lol/news/27"
+      },
+      {
+        "title": "社区",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news/index.shtml"
+        ],
+        "target": "/qq/lol/news/28"
       }
     ],
     "pd": [
@@ -30641,7 +30794,7 @@
       }
     ]
   },
-  "taoguba.com.cn": {
+  "tgb.cn": {
     "_name": "淘股吧",
     ".": [
       {
@@ -30652,15 +30805,6 @@
           "/"
         ],
         "target": "/taoguba/blog/:id"
-      },
-      {
-        "title": "用户博客",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/blog/:id",
-          "/"
-        ],
-        "target": "/taoguba/user/:id"
       }
     ]
   },
@@ -32571,20 +32715,6 @@
           "/:category"
         ],
         "target": "/washingtonpost/app/:category"
-      }
-    ]
-  },
-  "watasuke.net": {
-    "_name": "Watasuke",
-    ".": [
-      {
-        "title": "Blog",
-        "docs": "https://docs.rsshub.app/routes/blog",
-        "source": [
-          "/blog/",
-          "/"
-        ],
-        "target": "/watasuke/blog"
       }
     ]
   },

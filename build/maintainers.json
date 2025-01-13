@@ -940,6 +940,9 @@
   "/bjx/gf/:type": [
     "Sxuet"
   ],
+  "/blizzard/news-cn/:category?": [
+    "zhangpeng2k"
+  ],
   "/blizzard/news/:language?/:category?": [
     "nczitzk"
   ],
@@ -1614,6 +1617,9 @@
   ],
   "/csu/mail/:type?": [
     "j1g5awi"
+  ],
+  "/ctbu/xxgg": [
+    "Skylwn"
   ],
   "/cts/:category": [
     "miles170"
@@ -2584,6 +2590,9 @@
   "/gelonghui/user/:id": [
     "nczitzk"
   ],
+  "/genossenschaften*": [
+    "sk22"
+  ],
   "/geocaching/blogs": [
     "HankChow"
   ],
@@ -2746,7 +2755,8 @@
     "pseudoyu"
   ],
   "/google/research": [
-    "Levix"
+    "Levix",
+    "cscnk52"
   ],
   "/google/scholar/:query": [
     "HenryQW"
@@ -3210,16 +3220,7 @@
     "nczitzk",
     "pseudoyu"
   ],
-  "/hdu/auto/graduate": [
-    "jalenzz"
-  ],
-  "/hdu/auto": [
-    "jalenzz"
-  ],
-  "/hdu/auto/student": [
-    "jalenzz"
-  ],
-  "/hdu/auto/undergraduate": [
+  "/hdu/auto/:type?": [
     "jalenzz"
   ],
   "/hdu/cs": [
@@ -3635,6 +3636,9 @@
   ],
   "/ikea/gb/offer": [
     "HenryQW"
+  ],
+  "/iknowwhatyoudownload/stats/daily/:country": [
+    "p3psi-boo"
   ],
   "/imagemagick/changelog": [
     "nczitzk"
@@ -4207,6 +4211,9 @@
   ],
   "/lfsyd/user/:id?": [
     "auto-bot-ty"
+  ],
+  "/lhratings/research/:type?": [
+    "nczitzk"
   ],
   "/lianxh/:category?": [
     "nczitzk"
@@ -5270,6 +5277,9 @@
   "/oshwhub/:sortType?": [
     "tylinux"
   ],
+  "/osu/latest-ranked/:routeParams?": [
+    "nfnfgo"
+  ],
   "/osu/packs/:type?": [
     "JimenezLi"
   ],
@@ -5716,6 +5726,9 @@
   "/qq/kg/:userId": [
     "zhangxiang012"
   ],
+  "/qq/lol/news/:category?": [
+    "nczitzk"
+  ],
   "/qq/pd/guild/:id/:sub?/:sort?": [
     "mobyw"
   ],
@@ -5950,6 +5963,9 @@
   "/science/early/:journal?": [
     "y9c",
     "TonyRL"
+  ],
+  "/sciencedirect/call-for-paper/:subject": [
+    "etShaw-zh"
   ],
   "/sciencedirect/journal/:id": [
     "nczitzk"
@@ -6703,12 +6719,6 @@
   "/taoguba/blog/:id": [
     "nczitzk"
   ],
-  "/taoguba/user/:id": [
-    "nczitzk"
-  ],
-  "/taoguba/index": [
-    "nczitzk"
-  ],
   "/taoguba/:category?": [
     "nczitzk"
   ],
@@ -7400,9 +7410,6 @@
   ],
   "/washingtonpost/app/:category{.+}?": [
     "quiniapiezoelectricity"
-  ],
-  "/watasuke/blog": [
-    "honahuku"
   ],
   "/wchscu/recruit": [
     "ViggoC"
