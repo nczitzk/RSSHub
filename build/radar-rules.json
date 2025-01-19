@@ -9298,6 +9298,29 @@
       }
     ]
   },
+  "cpta.com.cn": {
+    "_name": "中国人事考试网",
+    "www": [
+      {
+        "title": "中国人事考试网通知公告",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/notice.html",
+          "/"
+        ],
+        "target": "/cpta/notice"
+      },
+      {
+        "title": "中国人事考试网成绩发布",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/performance.html",
+          "/"
+        ],
+        "target": "/cpta/performance"
+      }
+    ]
+  },
   "cpuid.com": {
     "_name": "CPUID",
     ".": [
@@ -12068,6 +12091,20 @@
           "/"
         ],
         "target": "/gameapps/"
+      }
+    ]
+  },
+  "gamebase.com.tw": {
+    "_name": "遊戲基地 Gamebase",
+    "news": [
+      {
+        "title": "新聞",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news",
+          "/news/:type"
+        ],
+        "target": "/gamebase(params,url)=>{const type=params.type;const urlObj=new URL(url);const category=urlObj.searchParams.get(\"type\")??void 0;return`/gamebase/news${type?`/${type}${category?`/${category}`:\"\"}`:\"\"}`}"
       }
     ]
   },
@@ -16176,7 +16213,15 @@
         "source": [
           "/:category.htm"
         ],
-        "target": "/hrbust/news/:category?"
+        "target": "/hrbust/news/:category"
+      },
+      {
+        "title": "新闻网",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/hrbust/news/"
       }
     ]
   },
@@ -18874,12 +18919,29 @@
         "target": "/juejin/books"
       },
       {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/:category"
+        ],
+        "target": "/juejin/category/:category"
+      },
+      {
         "title": "单个收藏夹",
         "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
           "/collection/:collectionId"
         ],
         "target": "/juejin/collection/:collectionId"
+      },
+      {
+        "title": "收藏集",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/user/:id",
+          "/user/:id/collections"
+        ],
+        "target": "/juejin/collections/:id"
       },
       {
         "title": "专栏",
@@ -18896,15 +18958,6 @@
           "/user/:id"
         ],
         "target": "/juejin/dynamic/:id"
-      },
-      {
-        "title": "收藏集",
-        "docs": "https://docs.rsshub.app/routes/programming",
-        "source": [
-          "/user/:id",
-          "/user/:id/collections"
-        ],
-        "target": "/juejin/collections/:id"
       },
       {
         "title": "用户文章",
@@ -22934,8 +22987,23 @@
       }
     ]
   },
-  "missav.com": {
-    "_name": "MissAV.com",
+  "missav.ws": {
+    "_name": "MissAV",
+    ".": [
+      {
+        "title": "最近更新",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/dm397/new",
+          "/new",
+          "/"
+        ],
+        "target": "/missav/new"
+      }
+    ]
+  },
+  "missav.ai": {
+    "_name": "MissAV",
     ".": [
       {
         "title": "最近更新",
@@ -27169,6 +27237,36 @@
           "/"
         ],
         "target": "/sciencenet/user/:id"
+      }
+    ]
+  },
+  "scientificamerican.com": {
+    "_name": "Scientific American",
+    "www": [
+      {
+        "title": "Podcasts",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/podcasts/",
+          "/podcast/:id"
+        ],
+        "target": "/scientificamericanparams=>{const id=params.id;return`/scientificamerican/podcast${id?`/${id}`:\"\"}`}"
+      },
+      {
+        "title": "Science Quickly",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/podcast/science-quickly/"
+        ],
+        "target": "/scientificamerican/podcast/science-quickly"
+      },
+      {
+        "title": "Uncertain",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/podcast/science-talk/"
+        ],
+        "target": "/scientificamerican/podcast/science-talk"
       }
     ]
   },
@@ -31673,6 +31771,14 @@
     "_name": "清华大学",
     "lib": [
       {
+        "title": "图书馆通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/tzgg/:category"
+        ],
+        "target": "/tsinghua/lib/tzgg/:category"
+      },
+      {
         "title": "图书馆资源动态",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
@@ -33419,6 +33525,19 @@
           "/:id"
         ],
         "target": "/xmnn/epaper/:id"
+      }
+    ]
+  },
+  "xmu.edu.cn": {
+    "_name": "Xiamen University",
+    "soe": [
+      {
+        "title": "科研动态",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/kxyj/kydt.htm"
+        ],
+        "target": "/xmu/kydt"
       }
     ]
   },

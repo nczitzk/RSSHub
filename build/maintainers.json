@@ -1567,6 +1567,9 @@
   "/cpcey/:type?": [
     "Fatpandac"
   ],
+  "/cpta/:category": [
+    "PrinOrange"
+  ],
   "/cpuid/news": [],
   "/cqgas/tqtz": [
     "Mai19930513"
@@ -3427,7 +3430,8 @@
     "Derekmini"
   ],
   "/hrbust/jwzx/:type?/:page?": [
-    "LenaNouzen"
+    "LenaNouzen",
+    "cscnk52"
   ],
   "/hrbust/news/:category?": [
     "cscnk52"
@@ -4027,16 +4031,16 @@
     "DIYgod"
   ],
   "/juejin/collection/:collectionId": [
-    "isQ"
+    "yang131323"
+  ],
+  "/juejin/collections/:userId": [
+    "yang131323"
   ],
   "/juejin/column/:id": [
     "xiangzy1"
   ],
   "/juejin/dynamic/:id": [
     "CaoMeiYouRen"
-  ],
-  "/juejin/collections/:userId": [
-    "isQ"
   ],
   "/juejin/pins/:type?": [
     "xyqfer",
@@ -5386,6 +5390,9 @@
   "/pconline/focus/:category?": [
     "CH563"
   ],
+  "/pencilnews/": [
+    "defp"
+  ],
   "/penguin-random-house/articles": [
     "StevenRCE0"
   ],
@@ -5974,6 +5981,9 @@
     "nczitzk"
   ],
   "/sciencenet/user/:id": [
+    "nczitzk"
+  ],
+  "/scientificamerican/podcast/:id?": [
     "nczitzk"
   ],
   "/scmp/coronavirus": [
@@ -7048,6 +7058,9 @@
   "/tsdm39/bd/:type?": [
     "equt"
   ],
+  "/tsinghua/lib/tzgg/:category": [
+    "linsenwang"
+  ],
   "/tsinghua/lib/zydt/:category?": [
     "nczitzk"
   ],
@@ -7758,6 +7771,9 @@
     "nczitzk"
   ],
   "/xmnn/news/:category{.+}?": [],
+  "/xmu/kydt": [
+    "linsenwang"
+  ],
   "/xmut/jwc/bkjw/:category?": [],
   "/xmut/jwc/yjjw/:category?": [],
   "/xsijishe/forum/:fid": [
