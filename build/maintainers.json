@@ -1185,9 +1185,6 @@
   "/cccfna/:category/:type?": [
     "hualiong"
   ],
-  "/cccmc/:category{.+}?": [
-    "nczitzk"
-  ],
   "/ccf/news/:category?": [
     "nczitzk"
   ],
@@ -2599,9 +2596,8 @@
   "/genossenschaften*": [
     "sk22"
   ],
-  "/geocaching/blogs/:language?": [
-    "HankChow",
-    "Konano"
+  "/geocaching/blogs": [
+    "HankChow"
   ],
   "/getdr/": [
     "nczitzk"
@@ -5273,9 +5269,6 @@
   "/oschina/column/:id": [
     "nczitzk"
   ],
-  "/oschina/event/:category?": [
-    "nczitzk"
-  ],
   "/oschina/news/:category?": [
     "tgly307",
     "zengxs"
@@ -5759,8 +5752,7 @@
     "nczitzk"
   ],
   "/qstheory/magazine/:magazine": [
-    "TonyRL",
-    "cscnk52"
+    "TonyRL"
   ],
   "/questmobile/report/:industry?/:label?": [
     "nczitzk"
