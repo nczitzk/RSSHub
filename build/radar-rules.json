@@ -27227,7 +27227,7 @@
     "_name": "中国计算机职业技术资格考试",
     "www": [
       {
-        "title": "软考新闻动态",
+        "title": "计算机职业技术资格考试（软考）动态",
         "docs": "https://docs.rsshub.app/routes/study",
         "source": [
           "/index/work",
@@ -31807,9 +31807,20 @@
         "target": "/tongji/bks"
       }
     ],
-    "yz": [
+    "gs": [
       {
         "title": "研究生院通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/tzgg.htm",
+          "/"
+        ],
+        "target": "/tongji/gs"
+      }
+    ],
+    "yz": [
+      {
+        "title": "研究生招生网通知公告",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
           "/zsxw/ggtz.htm",
@@ -32104,6 +32115,20 @@
           "/"
         ],
         "target": "/twreporter/newest"
+      }
+    ]
+  },
+  "txks.org.cn": {
+    "_name": "全国通信专业技术人员职业水平考试",
+    "www": [
+      {
+        "title": "全国通信专业技术人员职业水平考试动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/index/work",
+          "/"
+        ],
+        "target": "/txks/news"
       }
     ]
   },

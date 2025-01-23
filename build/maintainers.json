@@ -827,7 +827,8 @@
     "weirongxu"
   ],
   "/bilibili/user/collection/:uid/:sid/:embed?/:sortReverse?/:page?": [
-    "shininome"
+    "shininome",
+    "cscnk52"
   ],
   "/bilibili/user/fav/:uid/:embed?": [
     "DIYgod"
@@ -7007,6 +7008,9 @@
   "/tkww/:column{.+}?": [
     "quiniapiezoelectricity"
   ],
+  "/tmtpost/nictation": [
+    "defp"
+  ],
   "/tokeninsight/blog/:lang?": [
     "fuergaosi233"
   ],
@@ -7015,8 +7019,12 @@
   "/tongji/bks": [
     "shiquda"
   ],
+  "/tongji/gs": [
+    "sitdownkevin"
+  ],
   "/tongji/yjs": [
-    "shengmaosu"
+    "shengmaosu",
+    "sitdownkevin"
   ],
   "/tongji/sem/:type?": [
     "sitdownkevin"
@@ -7136,6 +7144,9 @@
   ],
   "/twreporter/newest": [
     "emdoe"
+  ],
+  "/txks/news": [
+    "PrinOrange"
   ],
   "/txrjy/fornumtopic/:channel?": [
     "Fatpandac"
