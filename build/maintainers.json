@@ -185,6 +185,18 @@
   "/4ksj/:id?": [
     "nczitzk"
   ],
+  "/4kup/category/:category": [
+    "AiraNadih"
+  ],
+  "/4kup/": [
+    "AiraNadih"
+  ],
+  "/4kup/popular/:period": [
+    "AiraNadih"
+  ],
+  "/4kup/tag/:tag": [
+    "AiraNadih"
+  ],
   "/500px/tribe/set/:id": [
     "TonyRL"
   ],
@@ -1248,6 +1260,9 @@
   "/cdzjryb/zw/projectList": [
     "TonyRL"
   ],
+  "/ce/district/:category?": [
+    "cscnk52"
+  ],
   "/cebbank/quotation/all": [
     "linbuxiao"
   ],
@@ -1561,6 +1576,18 @@
     "btdwv",
     "marvolo666",
     "yan12125"
+  ],
+  "/cosplaytele/category/:category": [
+    "AiraNadih"
+  ],
+  "/cosplaytele/": [
+    "AiraNadih"
+  ],
+  "/cosplaytele/popular/:period": [
+    "AiraNadih"
+  ],
+  "/cosplaytele/tag/:tag": [
+    "AiraNadih"
   ],
   "/counter-strike/news/:category?/:language?": [
     "nczitzk"
@@ -2104,8 +2131,9 @@
   "/dykszx/news/:newsType?": [
     "zytomorrow"
   ],
-  "/dytt/": [
-    "junfengP"
+  "/dytt/:category{.+}?": [
+    "junfengP",
+    "nczitzk"
   ],
   "/e-hentai/:what?/:id?/:needTorrents?/:needImages?": [],
   "/eagle/blog/:cate?/:language?": [
@@ -2140,6 +2168,9 @@
   ],
   "/easynomad/": [
     "jiangsong216"
+  ],
+  "/ebc/realtime/:category?": [
+    "quiniapiezoelectricity"
   ],
   "/ecnu/acm/contest/:category?": [
     "a180285"
@@ -3441,6 +3472,9 @@
   "/hrbust/news/:category?": [
     "cscnk52"
   ],
+  "/hrbust/nic/:category?": [
+    "cscnk52"
+  ],
   "/huanqiu/news/:category?": [
     "yuxinliu-alex"
   ],
@@ -4163,6 +4197,9 @@
   "/lala/": [
     "cnkmmk"
   ],
+  "/landiannews/": [
+    "nczitzk"
+  ],
   "/lang/live/room/:id": [
     "MittWillson"
   ],
@@ -4768,7 +4805,7 @@
   "/neea/local/:type": [
     "SunShinenny"
   ],
-  "/neea/global/jlpt": [
+  "/neea/jlpt": [
     "nczitzk"
   ],
   "/nenu/sohac/*": [],
@@ -4840,7 +4877,8 @@
   ],
   "/nhk/news/:lang?": [
     "TonyRL",
-    "pseudoyu"
+    "pseudoyu",
+    "cscnk52"
   ],
   "/niaogebiji/cat/:cat": [
     "cKotoriKat"
@@ -7554,11 +7592,9 @@
   "/wfu/news/:type?": [
     "cccht"
   ],
-  "/whitehouse/briefing-room/:category?": [
-    "nczitzk"
-  ],
-  "/whitehouse/ostp": [
-    "LyleLee"
+  "/whitehouse/news/:category?": [
+    "nczitzk",
+    "hkamran80"
   ],
   "/who/news-room/:category?/:language?": [
     "LogicJake",
