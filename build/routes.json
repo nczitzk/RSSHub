@@ -32884,37 +32884,6 @@
         ],
         "location": "collection.ts"
       },
-      "/news": {
-        "path": "/news",
-        "name": "资讯",
-        "url": "www.gcores.com",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/gcores/news",
-        "categories": [
-          "game"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.gcores.com/news"
-            ],
-            "target": "/gcores/news"
-          }
-        ],
-        "view": 0,
-        "location": "news.ts"
-      },
       "/radios/:category?": {
         "path": "/radios/:category?",
         "categories": [
@@ -32986,8 +32955,7 @@
     },
     "name": "机核网",
     "url": "gcores.com",
-    "lang": "zh-CN",
-    "description": "机核 GCORES"
+    "lang": "zh-CN"
   },
   "gdsrx": {
     "routes": {
