@@ -2586,6 +2586,9 @@
   ],
   "/gamme/:domain/:category?": [],
   "/gamme/:domain/tag/:tag": [],
+  "/gcores/articles": [
+    "nczitzk"
+  ],
   "/gcores/category/:category": [
     "MoguCloud",
     "StevenRCE0"
@@ -7048,6 +7051,9 @@
   ],
   "/tkww/:column{.+}?": [
     "quiniapiezoelectricity"
+  ],
+  "/tmtpost/new": [
+    "nczitzk"
   ],
   "/tmtpost/nictation": [
     "defp"
