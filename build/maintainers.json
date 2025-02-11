@@ -182,6 +182,12 @@
   "/4gamers/topic/:topic": [
     "bestpika"
   ],
+  "/4khd/category/:category": [
+    "AiraNadih"
+  ],
+  "/4khd/": [
+    "AiraNadih"
+  ],
   "/4ksj/:id?": [
     "nczitzk"
   ],
@@ -1053,6 +1059,15 @@
   "/buaa/news/:type": [
     "AlanDecode"
   ],
+  "/buct/cist": [
+    "Epic-Creeper"
+  ],
+  "/buct/gr/:type": [
+    "Epic-Creeper"
+  ],
+  "/buct/jwc": [
+    "Epic-Creeper"
+  ],
   "/bugzilla/bug/:site/:bugId": [
     "FranklinYu"
   ],
@@ -1569,11 +1584,9 @@
   "/coolapk/user/:uid/dynamic": [
     "xizeyoupan"
   ],
-  "/coomer/artist/:id": [
-    "nczitzk"
-  ],
-  "/coomer/posts": [
-    "nczitzk"
+  "/coomer/:source?/:id?": [
+    "nczitzk",
+    "AiraNadih"
   ],
   "/copernicium/:category?": [
     "dzx-dzx"
@@ -4209,8 +4222,15 @@
   "/lala/": [
     "cnkmmk"
   ],
+  "/landiannews/category/:slug": [
+    "cscnk52"
+  ],
   "/landiannews/": [
-    "nczitzk"
+    "nczitzk",
+    "cscnk52"
+  ],
+  "/landiannews/tag/:slug": [
+    "cscnk52"
   ],
   "/lang/live/room/:id": [
     "MittWillson"
@@ -5414,7 +5434,7 @@
   "/panewslab/topic/:id": [
     "nczitzk"
   ],
-  "/papers/arxiv/:category{.+}?": [
+  "/papers/category/:id{.+}?": [
     "nczitzk",
     "Muyun99"
   ],
