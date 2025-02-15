@@ -1690,8 +1690,7 @@
     "Ovler-Young"
   ],
   "/cursor/changelog": [
-    "p3psi-boo",
-    "nczitzk"
+    "p3psi-boo"
   ],
   "/cw/author/:channel": [
     "TonyRL"
@@ -2622,9 +2621,8 @@
   "/gcores/radios/:category?": [
     "eternasuno"
   ],
-  "/gcores/tags/:id/:tab?": [
-    "StevenRCE0",
-    "nczitzk"
+  "/gcores/tag/:tag/:category?": [
+    "StevenRCE0"
   ],
   "/gdsrx/:id?": [],
   "/gdufs/news": [
@@ -3794,15 +3792,8 @@
   "/investor/:category{.+}?": [
     "nczitzk"
   ],
-  "/iplaysoft/category/:slug": [
-    "cscnk52"
-  ],
   "/iplaysoft/": [
-    "williamgateszhao",
-    "cscnk52"
-  ],
-  "/iplaysoft/tag/:slug": [
-    "cscnk52"
+    "williamgateszhao"
   ],
   "/ippa/": [
     "cnkmmk"
