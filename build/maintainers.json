@@ -1690,7 +1690,8 @@
     "Ovler-Young"
   ],
   "/cursor/changelog": [
-    "p3psi-boo"
+    "p3psi-boo",
+    "nczitzk"
   ],
   "/cw/author/:channel": [
     "TonyRL"
@@ -2621,8 +2622,9 @@
   "/gcores/radios/:category?": [
     "eternasuno"
   ],
-  "/gcores/tag/:tag/:category?": [
-    "StevenRCE0"
+  "/gcores/tags/:id/:tab?": [
+    "StevenRCE0",
+    "nczitzk"
   ],
   "/gdsrx/:id?": [],
   "/gdufs/news": [
@@ -3792,8 +3794,15 @@
   "/investor/:category{.+}?": [
     "nczitzk"
   ],
+  "/iplaysoft/category/:slug": [
+    "cscnk52"
+  ],
   "/iplaysoft/": [
-    "williamgateszhao"
+    "williamgateszhao",
+    "cscnk52"
+  ],
+  "/iplaysoft/tag/:slug": [
+    "cscnk52"
   ],
   "/ippa/": [
     "cnkmmk"
@@ -5504,9 +5513,10 @@
   "/pianyuan/indexers/pianyuan/results/search/api": [
     "jerry1119"
   ],
-  "/picnob/user/:id": [
+  "/picnob/user/:id/:type?": [
     "TonyRL",
-    "micheal-death"
+    "micheal-death",
+    "AiraNadih"
   ],
   "/picuki/profile/:id/:type?/:functionalFlag?": [
     "hoilc",

@@ -9878,7 +9878,7 @@
         "source": [
           "/changelog"
         ],
-        "target": "/cursor/cursor/changelog"
+        "target": "/cursor/changelog"
       }
     ]
   },
@@ -12511,6 +12511,54 @@
           "/news"
         ],
         "target": "/gcores/gcores/news"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/tags/:id/originals"
+        ],
+        "target": "/gcores(params,url)=>{const urlObj=new URL(url);const id=params.id;const tab=urlObj.searchParams.get(\"tab\")??void 0;return`/gcores/tags/${id}/${tab?`/${tab}`:\"\"}`}"
+      },
+      {
+        "title": "全部",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/tags/:id/originals"
+        ],
+        "target": "/gcores/gcores/tags/:id"
+      },
+      {
+        "title": "播客",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/tags/:id/originals"
+        ],
+        "target": "/gcores/gcores/tags/:id/radios"
+      },
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/tags/:id/originals"
+        ],
+        "target": "/gcores/gcores/tags/:id/articles"
+      },
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/tags/:id/originals"
+        ],
+        "target": "/gcores/gcores/tags/:id/news"
+      },
+      {
+        "title": "视频",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/tags/:id/originals"
+        ],
+        "target": "/gcores/gcores/tags/:id/videos"
       }
     ],
     ".": [
@@ -12537,15 +12585,6 @@
           "/categories/:category"
         ],
         "target": "/gcores/radios/:category"
-      },
-      {
-        "title": "标签",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/categories/:tag",
-          "/"
-        ],
-        "target": "/gcores/tag/:tag"
       }
     ]
   },
@@ -18415,12 +18454,28 @@
     "_name": "异次元软件世界",
     "www": [
       {
-        "title": "全部文章",
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/category/:slug"
+        ],
+        "target": "/iplaysoft/category/:slug"
+      },
+      {
+        "title": "首页",
         "docs": "https://docs.rsshub.app/routes/program-update",
         "source": [
           "/"
         ],
         "target": "/iplaysoft/"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/tag/:slug"
+        ],
+        "target": "/iplaysoft/tag/:slug"
       }
     ]
   },
@@ -27479,16 +27534,24 @@
       }
     ]
   },
-  "piokok.com": {
+  "pixwox.com": {
     "_name": "Instagram",
     ".": [
       {
         "title": "User Profile - Picnob",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
-          "/profile/:id/*"
+          "/profile/:id"
         ],
         "target": "/picnob/user/:id"
+      },
+      {
+        "title": "User Profile - Picnob",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/profile/:id/tagged"
+        ],
+        "target": "/picnob/user/:id/tagged"
       }
     ]
   },
@@ -30169,7 +30232,7 @@
         "source": [
           "/search"
         ],
-        "target": "/shopify(_params,url)=>{const{searchParams}=new URL(url).searchParams;return searchParams.has(\"q\")?`/shopify/apps/search/${searchParams.get(\"q\")}`:null}"
+        "target": "/shopify(_params,url)=>{const searchParams=new URL(url).searchParams;if(!searchParams.has(\"q\")){return\"\"}return`/shopify/apps/search/${searchParams.get(\"q\")}`}"
       }
     ]
   },
