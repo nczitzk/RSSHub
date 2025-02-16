@@ -4504,6 +4504,9 @@
   "/manyvids/profile/vids/:uid": [
     "TonyRL"
   ],
+  "/mashiro/:lang": [
+    "MuenYu"
+  ],
   "/mastodon/account_id/:site/:account_id/statuses/:only_media?": [
     "notofoe",
     "pseudoyu"
@@ -5286,6 +5289,9 @@
   ],
   "/oilchem/:type?/:category?/:subCategory?": [
     "nczitzk"
+  ],
+  "/okx/:section?": [
+    "lxl66566"
   ],
   "/olevod/vod/:id": [
     "fang63625"
@@ -6766,7 +6772,8 @@
     "qizidog"
   ],
   "/swjtu/scai/bks": [
-    "AzureG03"
+    "AzureG03",
+    "SuperJeason"
   ],
   "/swpu/bgw/:code": [
     "CYTMWIA"

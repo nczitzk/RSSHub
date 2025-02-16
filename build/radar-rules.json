@@ -20731,6 +20731,20 @@
       }
     ]
   },
+  "mashiro.best": {
+    "_name": "Mashiro's Baumkuchen",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/",
+          "/:lang/"
+        ],
+        "target": "/mashiro/:lang"
+      }
+    ]
+  },
   "matters.town": {
     "_name": "Matters",
     ".": [
@@ -25551,6 +25565,19 @@
           "/"
         ],
         "target": "/odaily/user/:id"
+      }
+    ]
+  },
+  "okx.com": {
+    "_name": "欧易 OKX",
+    "www": [
+      {
+        "title": "公告",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/zh-hans/help/section/:section"
+        ],
+        "target": "/okx/:section"
       }
     ]
   },
