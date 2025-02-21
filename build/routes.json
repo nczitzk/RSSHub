@@ -14114,6 +14114,32 @@
   },
   "bsky": {
     "routes": {
+      "/profile/:handle/feed/:space/:routeParams?": {
+        "path": "/profile/:handle/feed/:space/:routeParams?",
+        "categories": [
+          "social-media",
+          "popular"
+        ],
+        "view": 1,
+        "example": "/bsky.app/profile/jaz.bsky.social/feed/cv:cat",
+        "parameters": {
+          "handle": "User handle, can be found in URL",
+          "space": "Space ID, can be found in URL"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Feeds",
+        "maintainers": [
+          "FerrisChi"
+        ],
+        "location": "feeds.ts"
+      },
       "/keyword/:keyword": {
         "path": "/keyword/:keyword",
         "categories": [
@@ -20205,7 +20231,7 @@
         "maintainers": [
           "hujingnb"
         ],
-        "url": "www.cnblogs.com/aggsite/headline",
+        "url": "www.cnblogs.com/pick",
         "description": "在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)",
         "location": "common.ts"
       },
@@ -20241,7 +20267,7 @@
         "maintainers": [
           "hujingnb"
         ],
-        "url": "www.cnblogs.com/aggsite/headline",
+        "url": "www.cnblogs.com/pick",
         "description": "在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)",
         "location": "common.ts"
       },
@@ -20277,7 +20303,7 @@
         "maintainers": [
           "hujingnb"
         ],
-        "url": "www.cnblogs.com/aggsite/headline",
+        "url": "www.cnblogs.com/pick",
         "description": "在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)",
         "location": "common.ts"
       },
@@ -20313,7 +20339,7 @@
         "maintainers": [
           "hujingnb"
         ],
-        "url": "www.cnblogs.com/aggsite/headline",
+        "url": "www.cnblogs.com/pick",
         "description": "在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)",
         "location": "common.ts"
       },
@@ -20349,7 +20375,7 @@
         "maintainers": [
           "hujingnb"
         ],
-        "url": "www.cnblogs.com/aggsite/headline",
+        "url": "www.cnblogs.com/pick",
         "description": "在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)",
         "location": "common.ts"
       }
@@ -22591,7 +22617,8 @@
         "name": "分类",
         "url": "cuilingmag.com",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "maintainers": [
           "nczitzk"
@@ -33277,6 +33304,37 @@
         ],
         "view": 0,
         "location": "tags.ts"
+      },
+      "/videos": {
+        "path": "/videos",
+        "name": "视频",
+        "url": "www.gcores.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/gcores/videos",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.gcores.com/videos"
+            ],
+            "target": "/gcores/videos"
+          }
+        ],
+        "view": 3,
+        "location": "videos.ts"
       }
     },
     "name": "机核网",
@@ -43561,6 +43619,88 @@
   },
   "hrbust": {
     "routes": {
+      "/cs/:category?": {
+        "path": "/cs/:category?",
+        "name": "计算机学院",
+        "url": "cs.hrbust.edu.cn",
+        "maintainers": [
+          "cscnk52"
+        ],
+        "example": "/hrbust/cs",
+        "parameters": {
+          "category": "栏目标识，默认为 3709（学院要闻）"
+        },
+        "description": "| 通知公告 | 学院要闻 | 常用下载 | 博士后流动站 | 学生指导 | 科研动态 | 科技成果 | 党建理论 | 党建学习 | 党建活动 | 党建风采 | 团学组织 | 学生党建 | 学生活动 | 心理健康 | 青春榜样 | 就业工作 | 校友风采 | 校庆专栏 | 专业介绍 | 本科生培养方案 | 硕士生培养方案 | 能力作风建设 | 博士生培养方案 | 省级实验教学示范中心 | 喜迎二十大系列活动 | 学习贯彻省十三次党代会精神 |\n|----------|----------|----------|--------------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------------|----------------|--------------|----------------|----------------------|--------------------|----------------------------|\n| 3708     | 3709     | 3710     | 3725         | 3729     | 3732     | 3733     | 3740     | 3741     | 3742     | 3743     | 3744     | 3745     | 3746     | 3747     | 3748     | 3751     | 3752     | 3753     | 3755     | 3756           | 3759           | nlzfjs       | pyfa           | sjsyjxsfzx           | srxxgcddesdjs      | xxgcssscddhjs              |",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false,
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "cs.hrbust.edu.cn/:category/list.htm"
+            ],
+            "target": "/cs/:category"
+          },
+          {
+            "source": [
+              "cs.hrbust.edu.cn"
+            ],
+            "target": "/cs"
+          }
+        ],
+        "view": 5,
+        "location": "cs.ts"
+      },
+      "/gzc/:category?": {
+        "path": "/gzc/:category?",
+        "name": "国有资产管理处",
+        "url": "gzc.hrbust.edu.cn",
+        "maintainers": [
+          "cscnk52"
+        ],
+        "example": "/hrbust/gzc",
+        "parameters": {
+          "category": "栏目标识，默认为 1305（热点新闻）"
+        },
+        "description": "| 政策规章 | 资料下载 | 处务公开 | 招标信息 | 岗位职责 | 管理办法 | 物资处理 | 工作动态 | 热点新闻 |\n|----------|----------|----------|----------|----------|----------|----------|----------|----------|\n| 1287     | 1288     | 1289     | 1291     | 1300     | 1301     | 1302     | 1304     | 1305     |",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false,
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "gzc.hrbust.edu.cn/:category/list.htm"
+            ],
+            "target": "/gzc/:category"
+          },
+          {
+            "source": [
+              "gzc.hrbust.edu.cn"
+            ],
+            "target": "/gzc"
+          }
+        ],
+        "view": 5,
+        "location": "gzc.ts"
+      },
       "/jwzx/:type?/:page?": {
         "path": "/jwzx/:type?/:page?",
         "name": "教务处",
@@ -43597,6 +43737,47 @@
         ],
         "view": 5,
         "location": "jwzx.ts"
+      },
+      "/lib/:category?": {
+        "path": "/lib/:category?",
+        "name": "图书馆",
+        "url": "lib.hrbust.edu.cn",
+        "maintainers": [
+          "cscnk52"
+        ],
+        "example": "/hrbust/lib",
+        "parameters": {
+          "category": "栏目标识，默认为 3421（公告消息）"
+        },
+        "description": "| 公告消息 | 资源动态 | 参考中心 | 常用工具 | 外借服务 | 报告厅及研讨间服务 | 外文引进数据库 | 外文电子图书 | 外文试用数据库 | 中文引进数据库 | 中文电子图书 | 中文试用数据库 |\n|----------|----------|----------|----------|----------|--------------------|----------------|--------------|----------------|----------------|--------------|----------------|\n| 3421     | 3422     | ckzx     | cygj     | wjfw     | ytjfw              | yw             | yw_3392      | yw_3395        | zw             | zw_3391      | zw_3394        |",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false,
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "lib.hrbust.edu.cn/:category/list.htm"
+            ],
+            "target": "/lib/:category"
+          },
+          {
+            "source": [
+              "lib.hrbust.edu.cn"
+            ],
+            "target": "/lib"
+          }
+        ],
+        "view": 5,
+        "location": "lib.ts"
       },
       "/news/:category?": {
         "path": "/news/:category?",
@@ -50723,6 +50904,109 @@
     "name": "La Jornada",
     "url": "jornada.com.mx",
     "lang": "es"
+  },
+  "joshwcomeau": {
+    "routes": {
+      "/latest/:category?": {
+        "path": "/latest/:category?",
+        "categories": [
+          "programming"
+        ],
+        "example": "/joshwcomeau/latest/css",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "parameters": {
+          "category": {
+            "description": "Category",
+            "options": [
+              {
+                "value": "css",
+                "label": "CSS"
+              },
+              {
+                "value": "react",
+                "label": "React"
+              },
+              {
+                "value": "animation",
+                "label": "Animation"
+              },
+              {
+                "value": "javascript",
+                "label": "JavaScript"
+              },
+              {
+                "value": "career",
+                "label": "Career"
+              },
+              {
+                "value": "blog",
+                "label": "Blog"
+              }
+            ]
+          }
+        },
+        "radar": [
+          {
+            "source": [
+              "joshwcomeau.com/"
+            ],
+            "target": "/latest"
+          },
+          {
+            "source": [
+              "joshwcomeau.com/:category"
+            ],
+            "target": "/latest/:category"
+          }
+        ],
+        "name": "Articles and Tutorials",
+        "maintainers": [
+          "Rjnishant530"
+        ],
+        "location": "latest.ts"
+      },
+      "/popular": {
+        "path": "/popular",
+        "categories": [
+          "programming"
+        ],
+        "example": "/joshwcomeau/popular",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "joshwcomeau.com/"
+            ],
+            "target": "/popular"
+          }
+        ],
+        "name": "Popular Content",
+        "maintainers": [
+          "Rjnishant530"
+        ],
+        "location": "popular.ts"
+      }
+    },
+    "name": "Josh W Comeau",
+    "url": "www.joshwcomeau.com",
+    "categories": [
+      "programming"
+    ],
+    "lang": "en"
   },
   "jou": {
     "routes": {
@@ -58573,7 +58857,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "supportRadar": true
         },
         "radar": [
           {
@@ -58585,7 +58870,8 @@
         "name": "技术团队博客",
         "url": "tech.meituan.com",
         "maintainers": [
-          "ktKongTong"
+          "ktKongTong",
+          "cscnk52"
         ],
         "location": "tech.ts"
       }
@@ -88183,6 +88469,37 @@
           }
         ],
         "location": "rule.ts"
+      },
+      "/disclosure/listed/notice": {
+        "path": "/disclosure/listed/notice",
+        "name": "上市公司公告",
+        "url": "www.szse.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/szse/disclosure/listed/notice",
+        "categories": [
+          "finance"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.szse.cn/disclosure/listed/notice/index.html"
+            ],
+            "target": "/disclosure/listed/notice"
+          }
+        ],
+        "view": 0,
+        "location": "disclosure/listed-notice.ts"
       }
     },
     "name": "深圳证券交易所",
@@ -99682,8 +99999,8 @@
               "description": ""
             }
           ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
+          "requirePuppeteer": true,
+          "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
@@ -101235,6 +101552,45 @@
     },
     "name": "优酷",
     "url": "i.youku.com",
+    "lang": "zh-CN"
+  },
+  "youmemark": {
+    "routes": {
+      "/:userid": {
+        "path": "/:userid",
+        "categories": [
+          "blog"
+        ],
+        "example": "/youmemark/pseudoyu",
+        "parameters": {
+          "userid": "`userid` is the user id of youmemark"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Bookmarks",
+        "maintainers": [
+          "pseudoyu"
+        ],
+        "radar": [
+          {
+            "source": [
+              "youmemark.com/user/:userid"
+            ],
+            "target": "/:userid"
+          }
+        ],
+        "description": "Get user's public bookmarks from YouMeMark\n::: tip\n  Add `?limit=<number>` to the end of the route to limit the number of items. Default is 10.\n:::",
+        "location": "index.ts"
+      }
+    },
+    "name": "YouMeMark",
+    "url": "youmemark.com",
     "lang": "zh-CN"
   },
   "youtube": {

@@ -12559,6 +12559,14 @@
           "/tags/:id/originals"
         ],
         "target": "/gcores/gcores/tags/:id/videos"
+      },
+      {
+        "title": "视频",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/videos"
+        ],
+        "target": "/gcores/gcores/videos"
       }
     ],
     ".": [
@@ -16568,6 +16576,42 @@
   },
   "hrbust.edu.cn": {
     "_name": "哈尔滨理工大学",
+    "cs": [
+      {
+        "title": "计算机学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:category/list.htm"
+        ],
+        "target": "/hrbust/cs/:category"
+      },
+      {
+        "title": "计算机学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/hrbust/cs"
+      }
+    ],
+    "gzc": [
+      {
+        "title": "国有资产管理处",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:category/list.htm"
+        ],
+        "target": "/hrbust/gzc/:category"
+      },
+      {
+        "title": "国有资产管理处",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/hrbust/gzc"
+      }
+    ],
     "jwzx": [
       {
         "title": "教务处",
@@ -16576,6 +16620,24 @@
           "/homepage/index.do"
         ],
         "target": "/hrbust/jwzx"
+      }
+    ],
+    "lib": [
+      {
+        "title": "图书馆",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:category/list.htm"
+        ],
+        "target": "/hrbust/lib/:category"
+      },
+      {
+        "title": "图书馆",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/hrbust/lib"
       }
     ],
     "news": [
@@ -19261,6 +19323,35 @@
           "/zh/trends-and-insights/research"
         ],
         "target": "/joneslanglasalle/zh/trends-and-insights/research"
+      }
+    ]
+  },
+  "joshwcomeau.com": {
+    "_name": "Josh W Comeau",
+    ".": [
+      {
+        "title": "Articles and Tutorials",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/joshwcomeau/latest"
+      },
+      {
+        "title": "Articles and Tutorials",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/:category"
+        ],
+        "target": "/joshwcomeau/latest/:category"
+      },
+      {
+        "title": "Popular Content",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/joshwcomeau/popular"
       }
     ]
   },
@@ -32749,6 +32840,14 @@
           "/www/lawrules/rule/repeal/rules/index.html"
         ],
         "target": "/szse/rule/repeal/rules"
+      },
+      {
+        "title": "上市公司公告",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/disclosure/listed/notice/index.html"
+        ],
+        "target": "/szse/disclosure/listed/notice"
       }
     ]
   },
@@ -35879,6 +35978,19 @@
           "/i/:id"
         ],
         "target": "/youku/channel/:id"
+      }
+    ]
+  },
+  "youmemark.com": {
+    "_name": "YouMeMark",
+    ".": [
+      {
+        "title": "Bookmarks",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/user/:userid"
+        ],
+        "target": "/youmemark/:userid"
       }
     ]
   },
