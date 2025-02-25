@@ -19989,6 +19989,34 @@
     "url": "lock.cmpxchg8b.com",
     "lang": "en"
   },
+  "cmu": {
+    "routes": {
+      "/andypavlo/blog": {
+        "path": "/andypavlo/blog",
+        "categories": [
+          "blog"
+        ],
+        "example": "/cmu/andypavlo/blog",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Andy Pavlo Blog",
+        "maintainers": [
+          "mocusez"
+        ],
+        "location": "andypavlo/blog.ts"
+      }
+    },
+    "name": "Carnegie Mellon University",
+    "url": "www.cmu.edu",
+    "lang": "en"
+  },
   "cn-healthcare": {
     "routes": {
       "/index": {
@@ -37790,6 +37818,99 @@
         "maintainers": [],
         "location": "mmht/mmht.ts"
       },
+      "/moa/gjs/:category{.+}?": {
+        "path": "/moa/gjs/:category{.+}?",
+        "name": "中华人民共和国农业农村部国际合作司",
+        "url": "www.gjs.moa.gov.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/gov/moa/gjs/gzdt",
+        "parameters": {
+          "category": {
+            "description": "分类，默认为 `gzdt`，即工作动态，可在对应分类页 URL 中找到",
+            "options": [
+              {
+                "label": "工作动态",
+                "value": "gzdt"
+              },
+              {
+                "label": "通知公告",
+                "value": "tzgg"
+              },
+              {
+                "label": "“一带一路”合作和农业走出去",
+                "value": "ydylhzhhnyzcq"
+              },
+              {
+                "label": "农业国际贸易监测与展望",
+                "value": "ncpmy"
+              },
+              {
+                "label": "多双边合作",
+                "value": "dsbhz"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\n若订阅 [中华人民共和国农业农村部国际合作司工作动态](https://www.gjs.moa.gov.cn/gzdt/)，网址为 `https://www.gjs.moa.gov.cn/gzdt/`，请截取 `https://www.gjs.moa.gov.cn/` 到末尾 `/` 的部分 `gzdt` 作为 `category` 参数填入，此时目标路由为 [`/gov/moa/gjs/gzdt`](https://rsshub.app/gov/moa/gjs/gzdt)。\n:::\n\n| [工作动态](http://www.gjs.moa.gov.cn/gzdt/) | [通知公告](http://www.gjs.moa.gov.cn/tzgg/) | [“一带一路”合作和农业走出去](http://www.gjs.moa.gov.cn/ydylhzhhnyzcq/) | [农业国际贸易监测与展望](http://www.gjs.moa.gov.cn/ncpmy/) | [多双边合作](http://www.gjs.moa.gov.cn/dsbhz/) |\n| ------------------------------------------- | ------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------- |\n| [gzdt](https://rsshub.app/gov/moa/gjs/gzdt) | [tzgg](https://rsshub.app/gov/moa/gjs/tzgg) | [ydylhzhhnyzcq](https://rsshub.app/gov/moa/gjs/ydylhzhhnyzcq)          | [ncpmy](https://rsshub.app/gov/moa/gjs/ncpmy)              | [dsbhz](https://rsshub.app/gov/moa/gjs/dsbhz)  |\n",
+        "categories": [
+          "government"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.gjs.moa.gov.cn/:category{.+}?"
+            ]
+          },
+          {
+            "title": "工作动态",
+            "source": [
+              "www.gjs.moa.gov.cn/gzdt/"
+            ],
+            "target": "/moa/gjs/gzdt"
+          },
+          {
+            "title": "通知公告",
+            "source": [
+              "www.gjs.moa.gov.cn/tzgg/"
+            ],
+            "target": "/moa/gjs/tzgg"
+          },
+          {
+            "title": "“一带一路”合作和农业走出去",
+            "source": [
+              "www.gjs.moa.gov.cn/ydylhzhhnyzcq/"
+            ],
+            "target": "/moa/gjs/ydylhzhhnyzcq"
+          },
+          {
+            "title": "农业国际贸易监测与展望",
+            "source": [
+              "www.gjs.moa.gov.cn/ncpmy/"
+            ],
+            "target": "/moa/gjs/ncpmy"
+          },
+          {
+            "title": "多双边合作",
+            "source": [
+              "www.gjs.moa.gov.cn/dsbhz/"
+            ],
+            "target": "/moa/gjs/dsbhz"
+          }
+        ],
+        "view": 0,
+        "location": "moa/gjs.ts"
+      },
       "/moa/suburl/:suburl{.+}": {
         "path": "/moa/suburl/:suburl{.+}",
         "categories": [
@@ -39763,6 +39884,55 @@
         "url": "rsj.taiyuan.gov.cn/*",
         "description": "| 工作动态 | 太原新闻 | 通知公告 | 县区动态 | 国内动态 | 图片新闻 |\n| -------- | -------- | -------- | -------- | -------- | -------- |\n| gzdt     | tyxw     | gggs     | xqdt     | gndt     | tpxw     |",
         "location": "taiyuan/rsj.ts"
+      },
+      "/tianjin/tjftz-notice/:channelId": {
+        "path": "/tianjin/tjftz-notice/:channelId",
+        "categories": [
+          "government"
+        ],
+        "example": "/gov/tianjin/tjftz-notice/6302",
+        "parameters": {
+          "channelId": "公告分类id、详细信息点击源网站https://www.tjftz.gov.cn/请求中寻找"
+        },
+        "radar": [
+          {
+            "source": [
+              "tjftz.gov.cn/channels/:channelId.html"
+            ],
+            "target": "/tianjin/tjftz-notice/:channelId"
+          }
+        ],
+        "name": "天津港保税区-公告",
+        "url": "tjftz.gov.cn",
+        "maintainers": [
+          "HaoyuLee"
+        ],
+        "description": "\n| 公告类别         | channelId |\n| ------------ | -- |\n| 首页>新闻>保税区要闻>区域聚焦     | 6302  |\n    ",
+        "location": "tianjin/tjftz.ts"
+      },
+      "/tianjin/tjrcgzw-notice/:cate/:subCate": {
+        "path": "/tianjin/tjrcgzw-notice/:cate/:subCate",
+        "categories": [
+          "government"
+        ],
+        "example": "/gov/tianjin/tjrcgzw-notice/rczc/sjrczc/",
+        "parameters": {
+          "channelId": "公告分类id、详细信息点击源网站https://hrss.tj.gov.cn/ztzl/ztzl1/tjrcgzw/请求中寻找"
+        },
+        "radar": [
+          {
+            "source": [
+              "hrss.tj.gov.cn/ztzl/ztzl1/tjrcgzw/"
+            ],
+            "target": "/tianjin/tjrcgzw-notice/:cate/:subCate"
+          }
+        ],
+        "name": "天津人才工作网-公告",
+        "url": "hrss.tj.gov.cn/ztzl/ztzl1/tjrcgzw/",
+        "maintainers": [
+          "HaoyuLee"
+        ],
+        "location": "tianjin/tjrcgzw.ts"
       },
       "/wuhan/sy/whyw": {
         "path": "/wuhan/sy/whyw",

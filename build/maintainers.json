@@ -1464,6 +1464,9 @@
   "/cmpxchg8b/articles": [
     "yuguorui"
   ],
+  "/cmu/andypavlo/blog": [
+    "mocusez"
+  ],
   "/cn-healthcare/index": [
     "qnloft"
   ],
@@ -2970,6 +2973,9 @@
     "Yoge-Code"
   ],
   "/gov/mmht/*": [],
+  "/gov/moa/gjs/:category{.+}?": [
+    "nczitzk"
+  ],
   "/gov/moa/suburl/:suburl{.+}": [
     "Origami404",
     "lyqluis"
@@ -3112,6 +3118,12 @@
   ],
   "/gov/taiyuan/rsj/:caty/:page?": [
     "2PoL"
+  ],
+  "/gov/tianjin/tjftz-notice/:channelId": [
+    "HaoyuLee"
+  ],
+  "/gov/tianjin/tjrcgzw-notice/:cate/:subCate": [
+    "HaoyuLee"
   ],
   "/gov/wuhan/sy/whyw": [
     "nczitzk"
