@@ -29388,6 +29388,88 @@
     "url": "www.fanbox.cc",
     "lang": "zh-CN"
   },
+  "fangchan": {
+    "routes": {
+      "/list/:id?": {
+        "path": "/list/:id?",
+        "name": "列表",
+        "url": "www.fangchan.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/fangchan/list/datalist",
+        "parameters": {
+          "id": {
+            "description": "分类，默认为 `datalist`，即数据研究，可在对应分类页 URL 中找到",
+            "options": [
+              {
+                "label": "数据研究",
+                "value": "datalist"
+              },
+              {
+                "label": "行业测评",
+                "value": "industrylist"
+              },
+              {
+                "label": "政策法规",
+                "value": "policylist"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\n若订阅 [列表](https://www.fangchan.com/)，网址为 `https://www.fangchan.com/`，请截取 `https://www.fangchan.com/` 到末尾 `.html` 的部分 `datalist` 作为 `id` 参数填入，此时目标路由为 [`/fangchan/datalist`](https://rsshub.app/fangchan/datalist)。\n:::\n\n| [数据研究](https://www.fangchan.com/datalist)         | [行业测评](https://www.fangchan.com/industrylist)             | [政策法规](https://www.fangchan.com/policylist)           |\n| ----------------------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------- |\n| [datalist](https://rsshub.app/fangchan/list/datalist) | [industrylist](https://rsshub.app/fangchan/list/industrylist) | [policylist](https://rsshub.app/fangchan/list/policylist) |\n",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.fangchan.com/:id"
+            ]
+          },
+          {
+            "title": "数据研究",
+            "source": [
+              "www.fangchan.com/datalist"
+            ],
+            "target": "/list/datalist"
+          },
+          {
+            "title": "行业测评",
+            "source": [
+              "www.fangchan.com/industrylist"
+            ],
+            "target": "/list/industrylist"
+          },
+          {
+            "title": "政策法规",
+            "source": [
+              "www.fangchan.com/policylist"
+            ],
+            "target": "/list/policylist"
+          }
+        ],
+        "view": 0,
+        "location": "list.ts"
+      }
+    },
+    "name": "中房网",
+    "url": "fangchan.com",
+    "categories": [
+      "new-media"
+    ],
+    "description": "",
+    "lang": "zh-CN"
+  },
   "fanqienovel": {
     "routes": {
       "/page/:bookId": {
@@ -52674,6 +52756,44 @@
     "url": "www.kisskiss.tv",
     "lang": "ja"
   },
+  "komiic": {
+    "routes": {
+      "/comic/:id": {
+        "path": "/comic/:id",
+        "categories": [
+          "anime"
+        ],
+        "example": "/komiic/comic/533",
+        "parameters": {
+          "id": "漫画 ID"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "komiic.com/comic/:id"
+            ],
+            "target": "/comic/:id"
+          }
+        ],
+        "name": "漫画更新",
+        "maintainers": [
+          "NekoAria"
+        ],
+        "location": "comic.ts"
+      }
+    },
+    "name": "Komiic",
+    "url": "komiic.com",
+    "lang": "zh-CN"
+  },
   "konachan": {
     "routes": {
       "/post/popular_recent/:period?": {
@@ -53575,6 +53695,36 @@
     },
     "name": "Layoffs.fyi",
     "url": "layoffs.fyi",
+    "lang": "en"
+  },
+  "leagueoflegends": {
+    "routes": {
+      "/patch-notes": {
+        "path": "/patch-notes",
+        "categories": [
+          "game"
+        ],
+        "example": "/leagueoflegends/patch-notes",
+        "radar": [
+          {
+            "source": [
+              "www.leagueoflegends.com/en-us/news/tags/patch-notes/",
+              "www.leagueoflegends.com/en-us/news/game-updates/:postSlug"
+            ]
+          }
+        ],
+        "name": "Patch Notes",
+        "maintainers": [
+          "noahm"
+        ],
+        "location": "patch-notes.ts"
+      }
+    },
+    "name": "League of Legends",
+    "url": "leagueoflegends.com",
+    "categories": [
+      "game"
+    ],
     "lang": "en"
   },
   "learnblockchain": {
@@ -84844,6 +84994,67 @@
         "url": "jiuye.swjtu.edu.cn/career",
         "location": "jyzpxx.ts"
       },
+      "/scai/:type": {
+        "path": "/scai/:type",
+        "categories": [
+          "university"
+        ],
+        "example": "/swjtu/scai/bks",
+        "parameters": {
+          "type": "通知类型"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "scai.swjtu.edu.cn/"
+            ]
+          }
+        ],
+        "name": "计算机与人工智能学院",
+        "description": "\n| 分区              | 参数         |\n| ----------------- | ----------- |\n| 本科生教育         | bks         |\n| 研究生教育         | yjs         |\n| 学生工作           | xsgz        |\n",
+        "maintainers": [
+          "AzureG03",
+          "SuperJeason"
+        ],
+        "location": "scai.ts"
+      },
+      "/sports": {
+        "path": "/sports",
+        "categories": [
+          "university"
+        ],
+        "example": "/swjtu/sports",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "sports.swjtu.edu.cn/"
+            ]
+          }
+        ],
+        "name": "体育学院",
+        "description": "新闻资讯",
+        "maintainers": [
+          "AzureG03"
+        ],
+        "location": "sports.ts"
+      },
       "/xg/:code?": {
         "path": "/xg/:code?",
         "categories": [
@@ -84931,40 +85142,10 @@
         ],
         "description": "#### 研究生通知 {#xi-nan-jiao-tong-da-xue-jiao-tong-yun-shu-yu-wu-liu-xue-yuan-yan-jiu-sheng-tong-zhi}",
         "location": "jtys/yjs.ts"
-      },
-      "/scai/bks": {
-        "path": "/scai/bks",
-        "categories": [
-          "university"
-        ],
-        "example": "/swjtu/scai/bks",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "scai.swjtu.edu.cn/"
-            ]
-          }
-        ],
-        "name": "计算机与人工智能学院",
-        "description": "本科生教育",
-        "maintainers": [
-          "AzureG03",
-          "SuperJeason"
-        ],
-        "location": "scai/bks.ts"
       }
     },
     "name": "西南交通大学",
-    "url": "ctt.swjtu.edu.cn",
+    "url": "www.swjtu.edu.cn",
     "lang": "zh-CN"
   },
   "swpu": {
@@ -90908,7 +91089,7 @@
             ]
           }
         ],
-        "name": "The Verge",
+        "name": "Category",
         "maintainers": [
           "HenryQW",
           "vbali"
@@ -96449,6 +96630,144 @@
   },
   "wainao": {
     "routes": {
+      "/topics/:id?": {
+        "path": "/topics/:id?",
+        "name": "主题",
+        "url": "wainao.me",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/wainao/topics/hotspot",
+        "parameters": {
+          "id": {
+            "description": "主题 id，默认为 `hotspot`，即热点，可在对应主题页 URL 中找到",
+            "options": [
+              {
+                "label": "热点",
+                "value": "hotspot"
+              },
+              {
+                "label": "人物",
+                "value": "people"
+              },
+              {
+                "label": "身份",
+                "value": "identity"
+              },
+              {
+                "label": "政治",
+                "value": "politics"
+              },
+              {
+                "label": "社会",
+                "value": "society"
+              },
+              {
+                "label": "文化",
+                "value": "culture"
+              },
+              {
+                "label": "经济",
+                "value": "economics"
+              },
+              {
+                "label": "环境",
+                "value": "environment"
+              },
+              {
+                "label": "FUN",
+                "value": "fun"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\n若订阅 [人物](https://www.wainao.me/topics/people)，网址为 `https://www.wainao.me/topics/people`，请截取 `https://www.wainao.me/topics/` 到末尾的部分 `people` 作为 `id` 参数填入，此时目标路由为 [`/wainao/topics/people`](https://rsshub.app/wainao/topics/people)。\n:::\n\n| [热点](https://www.wainao.me/topics/hotspot)        | [人物](https://www.wainao.me/topics/people)       | [身份](https://www.wainao.me/topics/identity)         | [政治](https://www.wainao.me/topics/politics)         | [社会](https://www.wainao.me/topics/society)        | [文化](https://www.wainao.me/topics/culture)        | [经济](https://www.wainao.me/topics/economics)          | [环境](https://www.wainao.me/topics/environment)            | [FUN](https://www.wainao.me/topics/fun)     |\n| --------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------- |\n| [hotspot](https://rsshub.app/wainao/topics/hotspot) | [people](https://rsshub.app/wainao/topics/people) | [identity](https://rsshub.app/wainao/topics/identity) | [politics](https://rsshub.app/wainao/topics/politics) | [society](https://rsshub.app/wainao/topics/society) | [culture](https://rsshub.app/wainao/topics/culture) | [economics](https://rsshub.app/wainao/topics/economics) | [environment](https://rsshub.app/wainao/topics/environment) | [fun](https://rsshub.app/wainao/topics/fun) |\n",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.wainao.me/topics/:id"
+            ],
+            "target": "/topics/:id"
+          },
+          {
+            "title": "热点",
+            "source": [
+              "www.wainao.me/topics/hotspot"
+            ],
+            "target": "/topics/hotspot"
+          },
+          {
+            "title": "人物",
+            "source": [
+              "www.wainao.me/topics/people"
+            ],
+            "target": "/topics/people"
+          },
+          {
+            "title": "身份",
+            "source": [
+              "www.wainao.me/topics/identity"
+            ],
+            "target": "/topics/identity"
+          },
+          {
+            "title": "政治",
+            "source": [
+              "www.wainao.me/topics/politics"
+            ],
+            "target": "/topics/politics"
+          },
+          {
+            "title": "社会",
+            "source": [
+              "www.wainao.me/topics/society"
+            ],
+            "target": "/topics/society"
+          },
+          {
+            "title": "文化",
+            "source": [
+              "www.wainao.me/topics/culture"
+            ],
+            "target": "/topics/culture"
+          },
+          {
+            "title": "经济",
+            "source": [
+              "www.wainao.me/topics/economics"
+            ],
+            "target": "/topics/economics"
+          },
+          {
+            "title": "环境",
+            "source": [
+              "www.wainao.me/topics/environment"
+            ],
+            "target": "/topics/environment"
+          },
+          {
+            "title": "FUN",
+            "source": [
+              "www.wainao.me/topics/fun"
+            ],
+            "target": "/topics/fun"
+          }
+        ],
+        "view": 0,
+        "location": "topics.ts"
+      },
       "/wainao-reads": {
         "path": "/wainao-reads",
         "categories": [

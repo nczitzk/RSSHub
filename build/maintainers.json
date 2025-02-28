@@ -2297,6 +2297,9 @@
   "/fanbox/:creator": [
     "KarasuShin"
   ],
+  "/fangchan/list/:id?": [
+    "nczitzk"
+  ],
   "/fanqienovel/page/:bookId": [
     "TonyRL"
   ],
@@ -4223,6 +4226,9 @@
   "/kisskiss/blog/:category?": [
     "keocheung"
   ],
+  "/komiic/comic/:id": [
+    "NekoAria"
+  ],
   "/konachan/post/popular_recent/:period?": [
     "magic-akari",
     "NekoAria"
@@ -4302,6 +4308,9 @@
   ],
   "/layoffs/": [
     "BrandNewLifeJackie26"
+  ],
+  "/leagueoflegends/patch-notes": [
+    "noahm"
   ],
   "/learnblockchain/posts/:cid/:sort?": [
     "running-grass"
@@ -6798,6 +6807,13 @@
   "/swjtu/jyzpxx": [
     "qizidog"
   ],
+  "/swjtu/scai/:type": [
+    "AzureG03",
+    "SuperJeason"
+  ],
+  "/swjtu/sports": [
+    "AzureG03"
+  ],
   "/swjtu/xg/:code?": [
     "mobyw"
   ],
@@ -6806,10 +6822,6 @@
   ],
   "/swjtu/jtys/yjs": [
     "qizidog"
-  ],
-  "/swjtu/scai/bks": [
-    "AzureG03",
-    "SuperJeason"
   ],
   "/swpu/bgw/:code": [
     "CYTMWIA"
@@ -7576,6 +7588,9 @@
   ],
   "/wabei/hot-recommend": [
     "p3psi-boo"
+  ],
+  "/wainao/topics/:id?": [
+    "nczitzk"
   ],
   "/wainao/wainao-reads": [
     "lucky13820"
