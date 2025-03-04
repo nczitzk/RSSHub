@@ -5760,19 +5760,6 @@
       }
     ]
   },
-  "blockworks.co": {
-    "_name": "Blockworks",
-    ".": [
-      {
-        "title": "Blockworks News",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/"
-        ],
-        "target": "/blockworks/"
-      }
-    ]
-  },
   "blogread.cn": {
     "_name": "技术头条",
     ".": [
@@ -9295,7 +9282,7 @@
     ]
   },
   "coindesk.com": {
-    "_name": "CoinDesk",
+    "_name": "CoinDesk Consensus Magazine",
     ".": [
       {
         "title": "新闻周刊",
@@ -9304,27 +9291,6 @@
           "/"
         ],
         "target": "/coindesk/consensus-magazine"
-      },
-      {
-        "title": "CoinDesk News",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/"
-        ],
-        "target": "/coindesk/news"
-      }
-    ]
-  },
-  "cointelegraph.com": {
-    "_name": "Cointelegraph",
-    ".": [
-      {
-        "title": "Cointelegraph News",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/"
-        ],
-        "target": "/cointelegraph/"
       }
     ]
   },
@@ -9736,19 +9702,6 @@
           "/*"
         ],
         "target": "/crossbell/notes"
-      }
-    ]
-  },
-  "cryptoslate.com": {
-    "_name": "CryptoSlate",
-    ".": [
-      {
-        "title": "CryptoSlate News",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/"
-        ],
-        "target": "/cryptoslate/"
       }
     ]
   },
@@ -10296,19 +10249,6 @@
           "/"
         ],
         "target": "/dealstreetasia/section/:section"
-      }
-    ]
-  },
-  "decrypt.co": {
-    "_name": "Decrypt",
-    ".": [
-      {
-        "title": "Decrypt News",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/"
-        ],
-        "target": "/decrypt/"
       }
     ]
   },
@@ -12201,19 +12141,6 @@
           "/feeds.html"
         ],
         "target": "/foreverblog/feeds"
-      }
-    ]
-  },
-  "forklog.com": {
-    "_name": "Forklog",
-    ".": [
-      {
-        "title": "Новости",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/news"
-        ],
-        "target": "/forklog/news"
       }
     ]
   },
@@ -15824,91 +15751,6 @@
           "/"
         ],
         "target": "/gq/news"
-      }
-    ]
-  },
-  "grainoil.com.cn": {
-    "_name": "国家粮油信息中心",
-    "load": [
-      {
-        "title": "分类",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/:category/:id"
-        ],
-        "target": "/grainoilparams=>{const category=params.category;const id=params.id;return`/grainoil/${category}/${id}`}"
-      },
-      {
-        "title": "政务信息",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/newsListHome/1430.jspx"
-        ],
-        "target": "/grainoil/newsListHome/1430"
-      },
-      {
-        "title": "要闻动态",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/newsListHome/3.jspx"
-        ],
-        "target": "/grainoil/newsListHome/3"
-      },
-      {
-        "title": "产业经济",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/newsListHome/1469.jspx"
-        ],
-        "target": "/grainoil/newsListHome/1469"
-      },
-      {
-        "title": "产业信息",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/newsListHome/1471.jspx"
-        ],
-        "target": "/grainoil/newsListHome/1471"
-      },
-      {
-        "title": "爱粮节粮",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/newsListHome/1470.jspx"
-        ],
-        "target": "/grainoil/newsListHome/1470"
-      },
-      {
-        "title": "政策法规",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/newsListChannel/18.jspx"
-        ],
-        "target": "/grainoil/newsListChannel/18"
-      },
-      {
-        "title": "生产气象",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/newsListChannel/19.jspx"
-        ],
-        "target": "/grainoil/newsListChannel/19"
-      },
-      {
-        "title": "统计资料",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/newsListChannel/20.jspx"
-        ],
-        "target": "/grainoil/newsListChannel/20"
-      },
-      {
-        "title": "综合信息",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/newsListChannel/21.jspx"
-        ],
-        "target": "/grainoil/newsListChannel/21"
       }
     ]
   },
@@ -33596,19 +33438,6 @@
       }
     ]
   },
-  "theblock.co": {
-    "_name": "TheBlock",
-    ".": [
-      {
-        "title": "Category",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/category/:category"
-        ],
-        "target": "/theblock/category/:category"
-      }
-    ]
-  },
   "theblockbeats.info": {
     "_name": "律动 BlockBeats",
     "www": [
@@ -34102,43 +33931,6 @@
           "/"
         ],
         "target": "/topys/:keyword?"
-      }
-    ]
-  },
-  "toranoana.jp": {
-    "_name": "とらのあな",
-    "news": [
-      {
-        "title": "総合新着記事",
-        "docs": "https://docs.rsshub.app/routes/anime",
-        "source": [
-          "/"
-        ],
-        "target": "/toranoana/news"
-      },
-      {
-        "title": "女性向け",
-        "docs": "https://docs.rsshub.app/routes/anime",
-        "source": [
-          "/joshi"
-        ],
-        "target": "/toranoana/news/joshi"
-      },
-      {
-        "title": "イラスト展",
-        "docs": "https://docs.rsshub.app/routes/anime",
-        "source": [
-          "/exhibitions"
-        ],
-        "target": "/toranoana/news/exhibition"
-      },
-      {
-        "title": "Category",
-        "docs": "https://docs.rsshub.app/routes/anime",
-        "source": [
-          "/category/:category"
-        ],
-        "target": "/toranoana/news/:category"
       }
     ]
   },
