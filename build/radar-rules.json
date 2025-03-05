@@ -4625,11 +4625,12 @@
   },
   "anthropic.com": {
     "_name": "Anthropic",
-    ".": [
+    "www": [
       {
         "title": "News",
         "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
+          "/news",
           "/"
         ],
         "target": "/anthropic/news"
@@ -4834,6 +4835,27 @@
           "/:handle"
         ],
         "target": "/artstation/:handle"
+      }
+    ]
+  },
+  "asianfanfics.com": {
+    "_name": "Asianfanfics",
+    "www": [
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/browse/tag/:tag/:type"
+        ],
+        "target": "/asianfanfics/tag/:tag/:type"
+      },
+      {
+        "title": "关键词",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/browse/text_search?q=:keyword"
+        ],
+        "target": "/asianfanfics/text-search/:keyword"
       }
     ]
   },
@@ -5764,7 +5786,7 @@
     "_name": "Blockworks",
     ".": [
       {
-        "title": "Blockworks News",
+        "title": "News",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
           "/"
@@ -9306,7 +9328,7 @@
         "target": "/coindesk/consensus-magazine"
       },
       {
-        "title": "CoinDesk News",
+        "title": "News",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
           "/"
@@ -9319,7 +9341,7 @@
     "_name": "Cointelegraph",
     ".": [
       {
-        "title": "Cointelegraph News",
+        "title": "News",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
           "/"
@@ -9743,7 +9765,7 @@
     "_name": "CryptoSlate",
     ".": [
       {
-        "title": "CryptoSlate News",
+        "title": "News",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
           "/"
@@ -10303,7 +10325,7 @@
     "_name": "Decrypt",
     ".": [
       {
-        "title": "Decrypt News",
+        "title": "News",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
           "/"
@@ -20543,6 +20565,19 @@
           "/"
         ],
         "target": "/lightnovel/:keywords/:security_key"
+      }
+    ]
+  },
+  "likeshop.me": {
+    "_name": "LikeShop",
+    ".": [
+      {
+        "title": "Posts",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/"
+        ],
+        "target": "/likeshop/:site"
       }
     ]
   },

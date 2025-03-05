@@ -587,6 +587,12 @@
   "/artstation/:handle": [
     "TonyRL"
   ],
+  "/asianfanfics/tag/:tag/:type": [
+    "KazooTTT"
+  ],
+  "/asianfanfics/text-search/:keyword": [
+    "KazooTTT"
+  ],
   "/asiantolick/:category{.+}?": [],
   "/asmr-200/works/:order?/:subtitle?/:sort?": [
     "hualiong"
@@ -2455,6 +2461,9 @@
   ],
   "/foodtalks/": [
     "Geraldxm"
+  ],
+  "/foreignaffairs/rss": [
+    "dzx-dzx"
   ],
   "/foresightnews/article": [
     "nczitzk"
@@ -4374,6 +4383,9 @@
   "/lifeweek/tag/:id": [],
   "/lightnovel/:keywords/:security_key?": [
     "nightmare-mio"
+  ],
+  "/likeshop/:site": [
+    "nickyfoto"
   ],
   "/line/today/:edition/publisher/:id": [
     "TonyRL"

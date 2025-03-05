@@ -8255,7 +8255,8 @@
         "radar": [
           {
             "source": [
-              "anthropic.com"
+              "www.anthropic.com/news",
+              "www.anthropic.com"
             ]
           }
         ],
@@ -8263,7 +8264,7 @@
         "maintainers": [
           "etShaw-zh"
         ],
-        "url": "anthropic.com/news",
+        "url": "www.anthropic.com/news",
         "location": "news.ts"
       }
     },
@@ -9210,6 +9211,62 @@
     },
     "name": "ArtStation",
     "url": "www.artstation.com",
+    "lang": "en"
+  },
+  "asianfanfics": {
+    "routes": {
+      "/tag/:tag/:type": {
+        "path": "/tag/:tag/:type",
+        "categories": [
+          "reading"
+        ],
+        "example": "/asianfanfics/tag/milklove/N",
+        "parameters": {
+          "tag": "标签",
+          "type": "排序类型"
+        },
+        "name": "标签",
+        "maintainers": [
+          "KazooTTT"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.asianfanfics.com/browse/tag/:tag/:type"
+            ],
+            "target": "/tag/:tag/:type"
+          }
+        ],
+        "description": "匹配asianfanfics标签，支持排序类型：\n- L: Latest 最近更新\n- N: Newest 最近发布\n- O: Oldest 最早发布\n- C: Completed 已完成\n- OS: One Shots 短篇\n",
+        "location": "tag.ts"
+      },
+      "/text-search/:keyword": {
+        "path": "/text-search/:keyword",
+        "categories": [
+          "reading"
+        ],
+        "example": "/asianfanfics/text-search/milklove",
+        "parameters": {
+          "keyword": "关键词"
+        },
+        "name": "关键词",
+        "maintainers": [
+          "KazooTTT"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.asianfanfics.com/browse/text_search?q=:keyword"
+            ],
+            "target": "/text-search/:keyword"
+          }
+        ],
+        "description": "匹配asianfanfics搜索关键词",
+        "location": "text-search.ts"
+      }
+    },
+    "name": "Asianfanfics",
+    "url": "asianfanfics.com",
     "lang": "en"
   },
   "asiantolick": {
@@ -13324,7 +13381,7 @@
             "target": "/"
           }
         ],
-        "name": "Blockworks News",
+        "name": "News",
         "maintainers": [
           "pseudoyu"
         ],
@@ -21065,7 +21122,7 @@
           "jameshih"
         ],
         "url": "coindesk.com/",
-        "location": "index.ts"
+        "location": "consensus-magazine.ts"
       },
       "/news": {
         "path": "/news",
@@ -21082,7 +21139,7 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "CoinDesk News",
+        "name": "News",
         "maintainers": [
           "pseudoyu"
         ],
@@ -21120,7 +21177,7 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Cointelegraph News",
+        "name": "News",
         "maintainers": [
           "pseudoyu"
         ],
@@ -22400,7 +22457,7 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "CryptoSlate News",
+        "name": "News",
         "maintainers": [
           "pseudoyu"
         ],
@@ -24311,7 +24368,7 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Decrypt News",
+        "name": "News",
         "maintainers": [
           "pseudoyu"
         ],
@@ -31494,6 +31551,34 @@
     ],
     "lang": "zh-CN",
     "description": "FoodTalks全球食品资讯网是一个提供食品饮料行业新闻、资讯、分析和商业资源的领先在线平台。它涵盖行业趋势、市场动态、产品创新、投融资信息以及企业新闻，连接行业内的专业人士、企业和消费者。"
+  },
+  "foreignaffairs": {
+    "routes": {
+      "/rss": {
+        "path": "/rss",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/foreignaffairs/rss",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "RSS",
+        "maintainers": [
+          "dzx-dzx"
+        ],
+        "location": "rss.ts"
+      }
+    },
+    "name": "Foreign Affairs",
+    "url": "www.foreignaffairs.com",
+    "lang": "en"
   },
   "foresightnews": {
     "routes": {
@@ -54664,6 +54749,44 @@
     "name": "轻之国度",
     "url": "lightNovel.us",
     "lang": "zh-CN"
+  },
+  "likeshop": {
+    "routes": {
+      "/:site": {
+        "path": "/:site",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/likeshop/bloombergpursuits",
+        "parameters": {
+          "site": "the site attached to likeshop.me/"
+        },
+        "radar": [
+          {
+            "source": [
+              "likeshop.me/"
+            ]
+          }
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Posts",
+        "maintainers": [
+          "nickyfoto"
+        ],
+        "description": "LikeShop link in bio takes your audience from Instagram and TikTok to your website in one easy step.",
+        "location": "index.ts"
+      }
+    },
+    "name": "LikeShop",
+    "url": "likeshop.me",
+    "lang": "en"
   },
   "line": {
     "routes": {
@@ -90653,7 +90776,7 @@
         ],
         "example": "/theblock/category/crypto-ecosystems",
         "parameters": {
-          "category": "`category` is the category of theblock"
+          "category": "News category"
         },
         "features": {
           "requireConfig": false,
