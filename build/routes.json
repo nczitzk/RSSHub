@@ -13299,6 +13299,43 @@
     "url": "news.blizzard.com",
     "lang": "en"
   },
+  "blockworks": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "finance"
+        ],
+        "example": "/blockworks",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "blockworks.co/"
+            ],
+            "target": "/"
+          }
+        ],
+        "name": "Blockworks News",
+        "maintainers": [
+          "pseudoyu"
+        ],
+        "description": "Blockworks news with full text support.",
+        "location": "index.ts"
+      }
+    },
+    "name": "Blockworks",
+    "url": "blockworks.co",
+    "lang": "en"
+  },
   "blogread": {
     "routes": {
       "/newest": {
@@ -21029,10 +21066,78 @@
         ],
         "url": "coindesk.com/",
         "location": "index.ts"
+      },
+      "/news": {
+        "path": "/news",
+        "categories": [
+          "finance"
+        ],
+        "example": "/coindesk/news",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "CoinDesk News",
+        "maintainers": [
+          "pseudoyu"
+        ],
+        "radar": [
+          {
+            "source": [
+              "coindesk.com/"
+            ],
+            "target": "/news"
+          }
+        ],
+        "description": "Get latest news from CoinDesk with full text.",
+        "location": "news.ts"
       }
     },
-    "name": "CoinDesk Consensus Magazine",
+    "name": "CoinDesk",
     "url": "coindesk.com",
+    "lang": "en",
+    "description": "CoinDesk is a news site specializing in bitcoin and digital currencies, delivering news, analysis, and information about the blockchain ecosystem."
+  },
+  "cointelegraph": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "finance"
+        ],
+        "example": "/cointelegraph",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Cointelegraph News",
+        "maintainers": [
+          "pseudoyu"
+        ],
+        "radar": [
+          {
+            "source": [
+              "cointelegraph.com/"
+            ],
+            "target": "/"
+          }
+        ],
+        "description": "Get latest news from Cointelegraph with full text.",
+        "location": "index.ts"
+      }
+    },
+    "name": "Cointelegraph",
+    "url": "cointelegraph.com",
     "lang": "en"
   },
   "colamanga": {
@@ -22276,6 +22381,43 @@
     },
     "name": "Crossbell",
     "url": "crossbell.io",
+    "lang": "en"
+  },
+  "cryptoslate": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "finance"
+        ],
+        "example": "/cryptoslate",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "CryptoSlate News",
+        "maintainers": [
+          "pseudoyu"
+        ],
+        "radar": [
+          {
+            "source": [
+              "cryptoslate.com/"
+            ],
+            "target": "/"
+          }
+        ],
+        "description": "Get latest news from CryptoSlate.",
+        "location": "index.ts"
+      }
+    },
+    "name": "CryptoSlate",
+    "url": "cryptoslate.com",
     "lang": "en"
   },
   "cs": {
@@ -24150,6 +24292,43 @@
     },
     "name": "DealStreetAsia",
     "url": "dealstreetasia.com",
+    "lang": "en"
+  },
+  "decrypt": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "finance"
+        ],
+        "example": "/decrypt",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Decrypt News",
+        "maintainers": [
+          "pseudoyu"
+        ],
+        "radar": [
+          {
+            "source": [
+              "decrypt.co/"
+            ],
+            "target": "/"
+          }
+        ],
+        "description": "Get latest news from Decrypt.",
+        "location": "index.ts"
+      }
+    },
+    "name": "Decrypt",
+    "url": "decrypt.co",
     "lang": "en"
   },
   "dedao": {
@@ -31475,6 +31654,34 @@
     "name": "十年之约",
     "url": "www.foreverblog.cn",
     "lang": "zh-CN"
+  },
+  "forklog": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "categories": [
+          "finance"
+        ],
+        "example": "/forklog/news",
+        "radar": [
+          {
+            "source": [
+              "forklog.com/news"
+            ],
+            "target": "/news"
+          }
+        ],
+        "name": "Новости",
+        "maintainers": [
+          "raven428"
+        ],
+        "url": "forklog.com/news",
+        "location": "index.ts"
+      }
+    },
+    "name": "Forklog",
+    "url": "forklog.com",
+    "lang": "ru"
   },
   "fortnite": {
     "routes": {
@@ -40392,6 +40599,129 @@
     "name": "GQ",
     "url": "gq.com",
     "lang": "en"
+  },
+  "grainoil": {
+    "routes": {
+      "/:category/:id": {
+        "path": "/:category/:id",
+        "name": "分类",
+        "url": "load.grainoil.com.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/grainoil/newsListHome/3",
+        "parameters": {
+          "category": {
+            "description": "分类，默认为 `newsListHome`，可在对应分类页 URL 中找到",
+            "options": [
+              {
+                "label": "newsListHome",
+                "value": "newsListHome"
+              },
+              {
+                "label": "newsListChannel",
+                "value": "newsListChannel"
+              }
+            ]
+          },
+          "id": {
+            "description": "分类 ID，可在对应分类页 URL 中找到"
+          }
+        },
+        "description": ":::tip\n若订阅 [政务信息](http://load.grainoil.com.cn/newsListHome/1430.jspx)，网址为 `http://load.grainoil.com.cn/newsListHome/1430.jspx`，请截取 `https://load.grainoil.com.cn/` 到末尾 `.jspx` 的部分 `newsListHome/1430` 作为 `category` 和 `id`参数填入，此时目标路由为 [`/grainoil/newsListHome/1430`](https://rsshub.app/grainoil/newsListHome/1430)。\n\n:::\n\n<details>\n  <summary>更多分类</summary>\n\n| 分类     | ID                 |\n| -------- | ------------------ |\n| 政务信息 | newsListHome/1430  |\n| 要闻动态 | newsListHome/3     |\n| 产业经济 | newsListHome/1469  |\n| 产业信息 | newsListHome/1471  |\n| 爱粮节粮 | newsListHome/1470  |\n| 政策法规 | newsListChannel/18 |\n| 生产气象 | newsListChannel/19 |\n| 统计资料 | newsListChannel/20 |\n| 综合信息 | newsListChannel/21 |\n\n</details>\n",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "load.grainoil.com.cn/:category/:id"
+            ]
+          },
+          {
+            "title": "政务信息",
+            "source": [
+              "load.grainoil.com.cn/newsListHome/1430.jspx"
+            ],
+            "target": "/newsListHome/1430"
+          },
+          {
+            "title": "要闻动态",
+            "source": [
+              "load.grainoil.com.cn/newsListHome/3.jspx"
+            ],
+            "target": "/newsListHome/3"
+          },
+          {
+            "title": "产业经济",
+            "source": [
+              "load.grainoil.com.cn/newsListHome/1469.jspx"
+            ],
+            "target": "/newsListHome/1469"
+          },
+          {
+            "title": "产业信息",
+            "source": [
+              "load.grainoil.com.cn/newsListHome/1471.jspx"
+            ],
+            "target": "/newsListHome/1471"
+          },
+          {
+            "title": "爱粮节粮",
+            "source": [
+              "load.grainoil.com.cn/newsListHome/1470.jspx"
+            ],
+            "target": "/newsListHome/1470"
+          },
+          {
+            "title": "政策法规",
+            "source": [
+              "load.grainoil.com.cn/newsListChannel/18.jspx"
+            ],
+            "target": "/newsListChannel/18"
+          },
+          {
+            "title": "生产气象",
+            "source": [
+              "load.grainoil.com.cn/newsListChannel/19.jspx"
+            ],
+            "target": "/newsListChannel/19"
+          },
+          {
+            "title": "统计资料",
+            "source": [
+              "load.grainoil.com.cn/newsListChannel/20.jspx"
+            ],
+            "target": "/newsListChannel/20"
+          },
+          {
+            "title": "综合信息",
+            "source": [
+              "load.grainoil.com.cn/newsListChannel/21.jspx"
+            ],
+            "target": "/newsListChannel/21"
+          }
+        ],
+        "view": 0,
+        "location": "category.ts"
+      }
+    },
+    "name": "国家粮油信息中心",
+    "url": "load.grainoil.com.cn",
+    "categories": [
+      "new-media"
+    ],
+    "description": "中国粮食信息网",
+    "lang": "zh-CN"
   },
   "greasyfork": {
     "routes": {
@@ -90314,6 +90644,45 @@
     "url": "www.theatlantic.com",
     "lang": "en"
   },
+  "theblock": {
+    "routes": {
+      "/category/:category": {
+        "path": "/category/:category",
+        "categories": [
+          "finance"
+        ],
+        "example": "/theblock/category/crypto-ecosystems",
+        "parameters": {
+          "category": "`category` is the category of theblock"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Category",
+        "maintainers": [
+          "pseudoyu"
+        ],
+        "radar": [
+          {
+            "source": [
+              "theblock.co/category/:category"
+            ],
+            "target": "/category/:category"
+          }
+        ],
+        "description": "Get latest news from TheBlock by category. Note that due to website limitations, only article summaries may be available.",
+        "location": "index.ts"
+      }
+    },
+    "name": "TheBlock",
+    "url": "theblock.co",
+    "lang": "en"
+  },
   "theblockbeats": {
     "routes": {
       "/:channel?/:original?": {
@@ -91172,7 +91541,7 @@
         "parameters": {
           "user": "Username",
           "routeParams": {
-            "description": "Extra parameters, see the table below\nSpecify options (in the format of query string) in parameter `routeParams` to control some extra features for threads\n\n| Key                            | Description                                                                                                                  | Accepts                | Defaults to |\n| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------- |\n| `showAuthorInTitle`            | Show author name in title                                                                                                    | `0`/`1`/`true`/`false` | `true`      |\n| `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                   | `0`/`1`/`true`/`false` | `true`      |\n| `showQuotedAuthorAvatarInDesc` | Show avatar of quoted author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`     |\n| `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)        | `0`/`1`/`true`/`false` | `falseP`    |\n| `showEmojiForQuotesAndReply`   | Use \"🔁\" instead of \"QT\", \"↩️\" instead of \"Re\"                                                                               | `0`/`1`/`true`/`false` | `true`      |\n| `showQuotedInTitle`            | Show quoted tweet in title                                                                                                   | `0`/`1`/`true`/`false` | `true`      |\n| `replies`                      | Show replies                                                                                                                 | `0`/`1`/`true`/`false` | `true`      |\n\nSpecify different option values than default values to improve readability. The URL\n\n```\nhttps://rsshub.app/threads/zuck/showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForQuotesAndReply=1&showQuotedInTitle=1\n```"
+            "description": "Extra parameters, see the table below\nSpecify options (in the format of query string) in parameter `routeParams` to control some extra features for threads\n\n| Key                            | Description                                                                                                                  | Accepts                | Defaults to |\n| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------- |\n| `showAuthorInTitle`            | Show author name in title                                                                                                    | `0`/`1`/`true`/`false` | `true`      |\n| `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                   | `0`/`1`/`true`/`false` | `true`      |\n| `showQuotedAuthorAvatarInDesc` | Show avatar of quoted author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`     |\n| `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)        | `0`/`1`/`true`/`false` | `falseP`    |\n| `showEmojiForQuotesAndReply`   | Use \"🔁\" instead of \"QT\", \"↩️\" instead of \"Re\"                                                                               | `0`/`1`/`true`/`false` | `true`      |\n| `showQuotedInTitle`            | Show quoted tweet in title                                                                                                   | `0`/`1`/`true`/`false` | `true`      |\n| `replies`                      | Show replies                                                                                                                 | `0`/`1`/`true`/`false` | `true`      |"
           }
         },
         "name": "User timeline",
@@ -92314,6 +92683,66 @@
     "name": "TOPYS",
     "url": "topys.cn",
     "lang": "zh-CN"
+  },
+  "toranoana": {
+    "routes": {
+      "/news/:category?": {
+        "path": "/news/:category?",
+        "categories": [
+          "anime"
+        ],
+        "example": "/toranoana/news/toragen",
+        "parameters": {
+          "category": "category"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Category",
+        "maintainers": [
+          "Tsuyumi25"
+        ],
+        "radar": [
+          {
+            "title": "総合新着記事",
+            "source": [
+              "news.toranoana.jp"
+            ],
+            "target": "/news"
+          },
+          {
+            "title": "女性向け",
+            "source": [
+              "news.toranoana.jp/joshi"
+            ],
+            "target": "/news/joshi"
+          },
+          {
+            "title": "イラスト展",
+            "source": [
+              "news.toranoana.jp/exhibitions"
+            ],
+            "target": "/news/exhibition"
+          },
+          {
+            "source": [
+              "news.toranoana.jp/category/:category"
+            ],
+            "target": "/news/:category"
+          }
+        ],
+        "description": "\n::: warning TIP\n[総合新着記事](https://news.toranoana.jp)→`/toranoana/news`  \n[女性向け](https://news.toranoana.jp/joshi)→`/toranoana/news/joshi`  \n[イラスト展](https://news.toranoana.jp/exhibitions)→`/toranoana/news/exhibition`  \n[`https://news.toranoana.jp/category/media`](https://news.toranoana.jp/category/media)→`/toranoana/news/media`\n:::",
+        "location": "news.ts"
+      }
+    },
+    "name": "とらのあな",
+    "url": "toranoana.jp",
+    "lang": "ja"
   },
   "toutiao": {
     "routes": {

@@ -971,6 +971,9 @@
   "/blizzard/news/:language?/:category?": [
     "nczitzk"
   ],
+  "/blockworks/": [
+    "pseudoyu"
+  ],
   "/blogread/newest": [
     "fashioncj"
   ],
@@ -1554,6 +1557,12 @@
   "/coindesk/consensus-magazine": [
     "jameshih"
   ],
+  "/coindesk/news": [
+    "pseudoyu"
+  ],
+  "/cointelegraph/": [
+    "pseudoyu"
+  ],
   "/colamanga/:id": [
     "machsix"
   ],
@@ -1650,6 +1659,9 @@
   ],
   "/crossbell/notes/source/:source": [
     "DIYgod"
+  ],
+  "/cryptoslate/": [
+    "pseudoyu"
   ],
   "/cs/:category{.+}?": [
     "nczitzk"
@@ -1813,6 +1825,9 @@
   ],
   "/dealstreetasia/section/:section": [
     "jack2game"
+  ],
+  "/decrypt/": [
+    "pseudoyu"
   ],
   "/dedao/articles/:id?": [
     "Jacky-Chen-Pro"
@@ -2456,6 +2471,9 @@
   "/foreverblog/feeds": [
     "7Wate",
     "a180285"
+  ],
+  "/forklog/news": [
+    "raven428"
   ],
   "/fortnite/news/:options?": [
     "lyqluis"
@@ -3166,6 +3184,9 @@
   ],
   "/gq/news": [
     "EthanWng97"
+  ],
+  "/grainoil/:category/:id": [
+    "nczitzk"
   ],
   "/greasyfork/scripts/:script/feedback": [
     "miles170"
@@ -7023,6 +7044,9 @@
     "EthanWng97",
     "pseudoyu"
   ],
+  "/theblock/category/:category": [
+    "pseudoyu"
+  ],
   "/theblockbeats/:channel?/:original?": [
     "Fatpandac",
     "jameshih"
@@ -7222,6 +7246,9 @@
   ],
   "/topys/:keyword?": [
     "nczitzk"
+  ],
+  "/toranoana/news/:category?": [
+    "Tsuyumi25"
   ],
   "/toutiao/user/token/:token": [
     "TonyRL"
