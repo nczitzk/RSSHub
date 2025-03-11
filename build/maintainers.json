@@ -1572,6 +1572,15 @@
   "/colamanga/:id": [
     "machsix"
   ],
+  "/collabo-cafe/category/:category": [
+    "cokemine"
+  ],
+  "/collabo-cafe/": [
+    "cokemine"
+  ],
+  "/collabo-cafe/tag/:tag": [
+    "cokemine"
+  ],
   "/comicat/search/:keyword": [
     "Cyang39"
   ],
@@ -4502,6 +4511,9 @@
   "/lsnu/jiaowc/tzgg/:category?": [
     "nyaShine"
   ],
+  "/ltaaa/article": [
+    "nczitzk"
+  ],
   "/luma/:url": [
     "cxheng315"
   ],
@@ -6753,7 +6765,10 @@
   "/stbu/xyxw": [
     "HyperCherry"
   ],
-  "/stcn/:id?": [
+  "/stcn/article/list/:id?": [
+    "nczitzk"
+  ],
+  "/stcn/article/list/kx": [
     "nczitzk"
   ],
   "/stdaily/digitalpaper": [
@@ -7218,6 +7233,9 @@
   ],
   "/tkww/:column{.+}?": [
     "quiniapiezoelectricity"
+  ],
+  "/tmtpost/column/:id": [
+    "nczitzk"
   ],
   "/tmtpost/new": [
     "nczitzk"
