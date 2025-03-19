@@ -3617,6 +3617,51 @@
     "url": "csgo.5eplay.com",
     "lang": "zh-CN"
   },
+  "5music": {
+    "routes": {
+      "/new-releases/:category?": {
+        "path": "/new-releases/:category?",
+        "categories": [
+          "shopping"
+        ],
+        "example": "/5music/new-releases",
+        "parameters": {
+          "category": "Category, see below, defaults to all"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.5music.com.tw/New_releases.asp",
+              "www.5music.com.tw/"
+            ],
+            "target": "/new-releases"
+          }
+        ],
+        "name": "新貨上架",
+        "maintainers": [
+          "gideonsenku"
+        ],
+        "description": "Categories:\n| 華語 | 西洋 | 東洋 | 韓語 | 古典 |\n| ---- | ---- | ---- | ---- | ---- |\n| A | B | F | M | D |",
+        "url": "www.5music.com.tw/New_releases.asp",
+        "location": "index.ts"
+      }
+    },
+    "name": "五大唱片",
+    "url": "5music.com.tw",
+    "lang": "zh-TW",
+    "categories": [
+      "shopping"
+    ],
+    "description": "五大唱片是台湾五大唱片股份有限公司的简称，成立于1990年，是台湾最大的唱片公司之一。"
+  },
   "69shu": {
     "routes": {
       "/article/:id": {
@@ -9212,6 +9257,594 @@
     "name": "ArtStation",
     "url": "www.artstation.com",
     "lang": "en"
+  },
+  "asiafruitchina": {
+    "routes": {
+      "/categories/:category?": {
+        "path": "/categories/:category?",
+        "name": "果蔬品项",
+        "url": "asiafruitchina.net",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/asiafruitchina/categories/all",
+        "parameters": {
+          "category": {
+            "description": "分类，默认为 `all`，即全部，可在对应分类页 URL 中找到",
+            "options": [
+              {
+                "label": "全部",
+                "value": "all"
+              },
+              {
+                "label": "橙",
+                "value": "chengzi"
+              },
+              {
+                "label": "百香果",
+                "value": "baixiangguo"
+              },
+              {
+                "label": "菠萝/凤梨",
+                "value": "boluo"
+              },
+              {
+                "label": "菠萝蜜",
+                "value": "boluomi"
+              },
+              {
+                "label": "草莓",
+                "value": "caomei"
+              },
+              {
+                "label": "番荔枝/释迦",
+                "value": "fanlizhi"
+              },
+              {
+                "label": "番茄",
+                "value": "fanqie"
+              },
+              {
+                "label": "柑橘",
+                "value": "ganju"
+              },
+              {
+                "label": "哈密瓜",
+                "value": "hamigua"
+              },
+              {
+                "label": "核果",
+                "value": "heguo"
+              },
+              {
+                "label": "红毛丹",
+                "value": "hongmaodan"
+              },
+              {
+                "label": "火龙果",
+                "value": "huolongguo"
+              },
+              {
+                "label": "浆果",
+                "value": "jiangguo"
+              },
+              {
+                "label": "桔子",
+                "value": "juzi"
+              },
+              {
+                "label": "蓝莓",
+                "value": "lanmei"
+              },
+              {
+                "label": "梨",
+                "value": "li"
+              },
+              {
+                "label": "荔枝",
+                "value": "lizhi"
+              },
+              {
+                "label": "李子",
+                "value": "lizi"
+              },
+              {
+                "label": "榴莲",
+                "value": "liulian"
+              },
+              {
+                "label": "龙眼",
+                "value": "lognyan"
+              },
+              {
+                "label": "芦笋",
+                "value": "lusun"
+              },
+              {
+                "label": "蔓越莓",
+                "value": "manyuemei"
+              },
+              {
+                "label": "芒果",
+                "value": "mangguo"
+              },
+              {
+                "label": "猕猴桃/奇异果",
+                "value": "mihoutao"
+              },
+              {
+                "label": "柠檬",
+                "value": "ningmeng"
+              },
+              {
+                "label": "牛油果",
+                "value": "niuyouguo"
+              },
+              {
+                "label": "苹果",
+                "value": "pingguo"
+              },
+              {
+                "label": "葡萄/提子",
+                "value": "putao"
+              },
+              {
+                "label": "其他",
+                "value": "qita"
+              },
+              {
+                "label": "奇异莓",
+                "value": "qiyimei"
+              },
+              {
+                "label": "热带水果",
+                "value": "redaishuiguo"
+              },
+              {
+                "label": "山竹",
+                "value": "shanzhu"
+              },
+              {
+                "label": "石榴",
+                "value": "shiliu"
+              },
+              {
+                "label": "蔬菜",
+                "value": "shucai"
+              },
+              {
+                "label": "树莓",
+                "value": "shumei"
+              },
+              {
+                "label": "桃",
+                "value": "tao"
+              },
+              {
+                "label": "甜瓜",
+                "value": "tiangua"
+              },
+              {
+                "label": "甜椒",
+                "value": "tianjiao"
+              },
+              {
+                "label": "甜柿",
+                "value": "tianshi"
+              },
+              {
+                "label": "香蕉",
+                "value": "xiangjiao"
+              },
+              {
+                "label": "西瓜",
+                "value": "xigua"
+              },
+              {
+                "label": "西梅",
+                "value": "ximei"
+              },
+              {
+                "label": "杏",
+                "value": "xing"
+              },
+              {
+                "label": "椰子",
+                "value": "yezi"
+              },
+              {
+                "label": "杨梅",
+                "value": "yangmei"
+              },
+              {
+                "label": "樱桃",
+                "value": "yintao"
+              },
+              {
+                "label": "油桃",
+                "value": "youtao"
+              },
+              {
+                "label": "柚子",
+                "value": "youzi"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\n若订阅 [橙](https://asiafruitchina.net/categories?gspx=chengzi)，网址为 `https://asiafruitchina.net/categories?gspx=chengzi`，请截取 `https://asiafruitchina.net/categories?gspx=` 到末尾的部分 `chengzi` 作为 `category` 参数填入，此时目标路由为 [`/asiafruitchina/categories/chengzi`](https://rsshub.app/asiafruitchina/categories/chengzi)。\n:::\n\n<details>\n  <summary>更多分类</summary>\n\n  | [全部](https://asiafruitchina.net/categories?gspx=all)  | [橙](https://asiafruitchina.net/categories?gspx=chengzi)        | [百香果](https://asiafruitchina.net/categories?gspx=baixiangguo)        | [菠萝/凤梨](https://asiafruitchina.net/categories?gspx=boluo) | [菠萝蜜](https://asiafruitchina.net/categories?gspx=boluomi)    |\n  | ------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------------- |\n  | [all](https://rsshub.app/asiafruitchina/categories/all) | [chengzi](https://rsshub.app/asiafruitchina/categories/chengzi) | [baixiangguo](https://rsshub.app/asiafruitchina/categories/baixiangguo) | [boluo](https://rsshub.app/asiafruitchina/categories/boluo)   | [boluomi](https://rsshub.app/asiafruitchina/categories/boluomi) |\n\n  | [草莓](https://asiafruitchina.net/categories?gspx=caomei)     | [番荔枝/释迦](https://asiafruitchina.net/categories?gspx=fanlizhi) | [番茄](https://asiafruitchina.net/categories?gspx=fanqie)     | [柑橘](https://asiafruitchina.net/categories?gspx=ganju)    | [哈密瓜](https://asiafruitchina.net/categories?gspx=hamigua)    |\n  | ------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------- |\n  | [caomei](https://rsshub.app/asiafruitchina/categories/caomei) | [fanlizhi](https://rsshub.app/asiafruitchina/categories/fanlizhi)  | [fanqie](https://rsshub.app/asiafruitchina/categories/fanqie) | [ganju](https://rsshub.app/asiafruitchina/categories/ganju) | [hamigua](https://rsshub.app/asiafruitchina/categories/hamigua) |\n\n  | [核果](https://asiafruitchina.net/categories?gspx=heguo)    | [红毛丹](https://asiafruitchina.net/categories?gspx=hongmaodan)       | [火龙果](https://asiafruitchina.net/categories?gspx=huolongguo)       | [浆果](https://asiafruitchina.net/categories?gspx=jiangguo)       | [桔子](https://asiafruitchina.net/categories?gspx=juzi)   |\n  | ----------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------- |\n  | [heguo](https://rsshub.app/asiafruitchina/categories/heguo) | [hongmaodan](https://rsshub.app/asiafruitchina/categories/hongmaodan) | [huolongguo](https://rsshub.app/asiafruitchina/categories/huolongguo) | [jiangguo](https://rsshub.app/asiafruitchina/categories/jiangguo) | [juzi](https://rsshub.app/asiafruitchina/categories/juzi) |\n\n  | [蓝莓](https://asiafruitchina.net/categories?gspx=lanmei)     | [梨](https://asiafruitchina.net/categories?gspx=li)   | [荔枝](https://asiafruitchina.net/categories?gspx=lizhi)    | [李子](https://asiafruitchina.net/categories?gspx=lizi)   | [榴莲](https://asiafruitchina.net/categories?gspx=liulian)      |\n  | ------------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------- |\n  | [lanmei](https://rsshub.app/asiafruitchina/categories/lanmei) | [li](https://rsshub.app/asiafruitchina/categories/li) | [lizhi](https://rsshub.app/asiafruitchina/categories/lizhi) | [lizi](https://rsshub.app/asiafruitchina/categories/lizi) | [liulian](https://rsshub.app/asiafruitchina/categories/liulian) |\n\n  | [龙眼](https://asiafruitchina.net/categories?gspx=lognyan)      | [芦笋](https://asiafruitchina.net/categories?gspx=lusun)    | [蔓越莓](https://asiafruitchina.net/categories?gspx=manyuemei)      | [芒果](https://asiafruitchina.net/categories?gspx=mangguo)      | [猕猴桃/奇异果](https://asiafruitchina.net/categories?gspx=mihoutao) |\n  | --------------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------- | -------------------------------------------------------------------- |\n  | [lognyan](https://rsshub.app/asiafruitchina/categories/lognyan) | [lusun](https://rsshub.app/asiafruitchina/categories/lusun) | [manyuemei](https://rsshub.app/asiafruitchina/categories/manyuemei) | [mangguo](https://rsshub.app/asiafruitchina/categories/mangguo) | [mihoutao](https://rsshub.app/asiafruitchina/categories/mihoutao)    |\n\n  | [柠檬](https://asiafruitchina.net/categories?gspx=ningmeng)       | [牛油果](https://asiafruitchina.net/categories?gspx=niuyouguo)      | [苹果](https://asiafruitchina.net/categories?gspx=pingguo)      | [葡萄/提子](https://asiafruitchina.net/categories?gspx=putao) | [其他](https://asiafruitchina.net/categories?gspx=qita)   |\n  | ----------------------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------- |\n  | [ningmeng](https://rsshub.app/asiafruitchina/categories/ningmeng) | [niuyouguo](https://rsshub.app/asiafruitchina/categories/niuyouguo) | [pingguo](https://rsshub.app/asiafruitchina/categories/pingguo) | [putao](https://rsshub.app/asiafruitchina/categories/putao)   | [qita](https://rsshub.app/asiafruitchina/categories/qita) |\n\n  | [奇异莓](https://asiafruitchina.net/categories?gspx=qiyimei)    | [热带水果](https://asiafruitchina.net/categories?gspx=redaishuiguo)       | [山竹](https://asiafruitchina.net/categories?gspx=shanzhu)      | [石榴](https://asiafruitchina.net/categories?gspx=shiliu)     | [蔬菜](https://asiafruitchina.net/categories?gspx=shucai)     |\n  | --------------------------------------------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |\n  | [qiyimei](https://rsshub.app/asiafruitchina/categories/qiyimei) | [redaishuiguo](https://rsshub.app/asiafruitchina/categories/redaishuiguo) | [shanzhu](https://rsshub.app/asiafruitchina/categories/shanzhu) | [shiliu](https://rsshub.app/asiafruitchina/categories/shiliu) | [shucai](https://rsshub.app/asiafruitchina/categories/shucai) |\n\n  | [树莓](https://asiafruitchina.net/categories?gspx=shumei)     | [桃](https://asiafruitchina.net/categories?gspx=tao)    | [甜瓜](https://asiafruitchina.net/categories?gspx=tiangua)      | [甜椒](https://asiafruitchina.net/categories?gspx=tianjiao)       | [甜柿](https://asiafruitchina.net/categories?gspx=tianshi)      |\n  | ------------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------- |\n  | [shumei](https://rsshub.app/asiafruitchina/categories/shumei) | [tao](https://rsshub.app/asiafruitchina/categories/tao) | [tiangua](https://rsshub.app/asiafruitchina/categories/tiangua) | [tianjiao](https://rsshub.app/asiafruitchina/categories/tianjiao) | [tianshi](https://rsshub.app/asiafruitchina/categories/tianshi) |\n\n  | [香蕉](https://asiafruitchina.net/categories?gspx=xiangjiao)        | [西瓜](https://asiafruitchina.net/categories?gspx=xigua)    | [西梅](https://asiafruitchina.net/categories?gspx=ximei)    | [杏](https://asiafruitchina.net/categories?gspx=xing)     | [椰子](https://asiafruitchina.net/categories?gspx=yezi)   |\n  | ------------------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |\n  | [xiangjiao](https://rsshub.app/asiafruitchina/categories/xiangjiao) | [xigua](https://rsshub.app/asiafruitchina/categories/xigua) | [ximei](https://rsshub.app/asiafruitchina/categories/ximei) | [xing](https://rsshub.app/asiafruitchina/categories/xing) | [yezi](https://rsshub.app/asiafruitchina/categories/yezi) |\n\n  | [杨梅](https://asiafruitchina.net/categories?gspx=yangmei)      | [樱桃](https://asiafruitchina.net/categories?gspx=yintao)     | [油桃](https://asiafruitchina.net/categories?gspx=youtao)     | [柚子](https://asiafruitchina.net/categories?gspx=youzi)    |\n  | --------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------- |\n  | [yangmei](https://rsshub.app/asiafruitchina/categories/yangmei) | [yintao](https://rsshub.app/asiafruitchina/categories/yintao) | [youtao](https://rsshub.app/asiafruitchina/categories/youtao) | [youzi](https://rsshub.app/asiafruitchina/categories/youzi) |\n\n</details>\n",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "asiafruitchina.net/categories"
+            ]
+          },
+          {
+            "title": "全部",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/all"
+          },
+          {
+            "title": "橙",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/chengzi"
+          },
+          {
+            "title": "百香果",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/baixiangguo"
+          },
+          {
+            "title": "菠萝/凤梨",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/boluo"
+          },
+          {
+            "title": "菠萝蜜",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/boluomi"
+          },
+          {
+            "title": "草莓",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/caomei"
+          },
+          {
+            "title": "番荔枝/释迦",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/fanlizhi"
+          },
+          {
+            "title": "番茄",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/fanqie"
+          },
+          {
+            "title": "柑橘",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/ganju"
+          },
+          {
+            "title": "哈密瓜",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/hamigua"
+          },
+          {
+            "title": "核果",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/heguo"
+          },
+          {
+            "title": "红毛丹",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/hongmaodan"
+          },
+          {
+            "title": "火龙果",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/huolongguo"
+          },
+          {
+            "title": "浆果",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/jiangguo"
+          },
+          {
+            "title": "桔子",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/juzi"
+          },
+          {
+            "title": "蓝莓",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/lanmei"
+          },
+          {
+            "title": "梨",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/li"
+          },
+          {
+            "title": "荔枝",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/lizhi"
+          },
+          {
+            "title": "李子",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/lizi"
+          },
+          {
+            "title": "榴莲",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/liulian"
+          },
+          {
+            "title": "龙眼",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/lognyan"
+          },
+          {
+            "title": "芦笋",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/lusun"
+          },
+          {
+            "title": "蔓越莓",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/manyuemei"
+          },
+          {
+            "title": "芒果",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/mangguo"
+          },
+          {
+            "title": "猕猴桃/奇异果",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/mihoutao"
+          },
+          {
+            "title": "柠檬",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/ningmeng"
+          },
+          {
+            "title": "牛油果",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/niuyouguo"
+          },
+          {
+            "title": "苹果",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/pingguo"
+          },
+          {
+            "title": "葡萄/提子",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/putao"
+          },
+          {
+            "title": "其他",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/qita"
+          },
+          {
+            "title": "奇异莓",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/qiyimei"
+          },
+          {
+            "title": "热带水果",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/redaishuiguo"
+          },
+          {
+            "title": "山竹",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/shanzhu"
+          },
+          {
+            "title": "石榴",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/shiliu"
+          },
+          {
+            "title": "蔬菜",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/shucai"
+          },
+          {
+            "title": "树莓",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/shumei"
+          },
+          {
+            "title": "桃",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/tao"
+          },
+          {
+            "title": "甜瓜",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/tiangua"
+          },
+          {
+            "title": "甜椒",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/tianjiao"
+          },
+          {
+            "title": "甜柿",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/tianshi"
+          },
+          {
+            "title": "香蕉",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/xiangjiao"
+          },
+          {
+            "title": "西瓜",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/xigua"
+          },
+          {
+            "title": "西梅",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/ximei"
+          },
+          {
+            "title": "杏",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/xing"
+          },
+          {
+            "title": "椰子",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/yezi"
+          },
+          {
+            "title": "杨梅",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/yangmei"
+          },
+          {
+            "title": "樱桃",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/yintao"
+          },
+          {
+            "title": "油桃",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/youtao"
+          },
+          {
+            "title": "柚子",
+            "source": [
+              "asiafruitchina.net/categories"
+            ],
+            "target": "/categories/youzi"
+          }
+        ],
+        "view": 0,
+        "location": "categories.ts"
+      }
+    },
+    "name": "亚洲水果",
+    "url": "asiafruitchina.net",
+    "categories": [
+      "new-media"
+    ],
+    "description": "",
+    "lang": "zh-CN"
   },
   "asianfanfics": {
     "routes": {
@@ -17941,6 +18574,24 @@
     "name": "差评",
     "url": "chaping.cn",
     "lang": "zh-CN"
+  },
+  "cherrytimes": {
+    "routes": {
+      "/market": {
+        "path": "/market",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/cherrytimes/market",
+        "name": "Market",
+        "maintainers": [
+          "canonnizq"
+        ],
+        "location": "market.ts"
+      }
+    },
+    "name": "Cherry Times",
+    "url": "cherrytimes.it"
   },
   "chiculture": {
     "routes": {
@@ -34270,6 +34921,61 @@
     ],
     "description": "",
     "lang": "zh-CN"
+  },
+  "gelbooru": {
+    "routes": {
+      "/post/:tags?/:quality?": {
+        "path": "/post/:tags?/:quality?",
+        "categories": [
+          "picture"
+        ],
+        "view": 2,
+        "example": "/gelbooru/post/1girl rating:general",
+        "parameters": {
+          "tags": "要搜索的标签，多个标签用 ` `（空格）隔开",
+          "quality": {
+            "description": "图片质量，可选值为 `sample`（压缩后的图片，推荐值） 或 `orig`（原图），默认为 `sample`",
+            "default": "sample"
+          }
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "GELBOORU_API_KEY",
+              "description": "Gelbooru 偶尔会开启 API 认证，需配合 `GELBOORU_USER_ID`，从 `https://gelbooru.com/index.php?page=account&s=options` 获取",
+              "optional": true
+            },
+            {
+              "name": "GELBOORU_USER_ID",
+              "description": "参见 `GELBOORU_API_KEY`",
+              "optional": true
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "gelbooru.com/index.php"
+            ]
+          }
+        ],
+        "name": "标签查询",
+        "maintainers": [
+          "magicFeirl"
+        ],
+        "description": "\n- 默认查询: `/gelbooru/post` 功能等同查询 Gelbooru 网站最新的投稿\n- 单标签查询: `/gelbooru/post/1girl` 查询 `1girl` 的最新投稿\n- 多标签查询: `/gelbooru/post/1girl school_uniform rating:general`\n- 指定为原图: `/gelbooru/post/1girl school_uniform rating:general/orig`\n- 更多例子: 请参考 Gelbooru 官方 wiki https://gelbooru.com/index.php?page=wiki&s=&s=view&id=25921\n\n**可选的 URL 参数**\n- limit 页面返回数据量，默认 40，可选 1 ~ 100\n\ne.g.: `/gelbooru/post?limit=20&`\n",
+        "location": "post.ts"
+      }
+    },
+    "name": "Gelbooru",
+    "url": "gelbooru.com",
+    "description": "gelbooru posts"
   },
   "gelonghui": {
     "routes": {
@@ -53572,6 +54278,64 @@
     "zh": {
       "name": "毕马威"
     },
+    "lang": "en"
+  },
+  "kpopping": {
+    "routes": {
+      "/news/:filter{.+}?": {
+        "path": "/news/:filter{.+}?",
+        "name": "News",
+        "url": "kpopping.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/kpopping/news/gender-all/category-all/idol-any/group-any/order",
+        "parameters": {
+          "filter": "Filter"
+        },
+        "description": ":::tip\nIf you subscribe to [All male articles](https://kpopping.com/news/gender-male/category-all/idol-any/group-any/order)，where the URL is `https://kpopping.com/news/gender-male/category-all/idol-any/group-any/order`, extract the part `https://kpopping.com/news` to the end, which is `gender-male/category-all/idol-any/group-any/order`, and use it as the parameter to fill in. Therefore, the route will be [`/kpopping/news/gender-male/category-all/idol-any/group-any/order`](https://rsshub.app/kpopping/news/gender-male/category-all/idol-any/group-any/order).\n:::\n",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "kpopping.com/news/:filter"
+            ]
+          }
+        ],
+        "view": 0,
+        "zh": {
+          "path": "/news/:filter{.+}?",
+          "name": "News",
+          "url": "kpopping.com",
+          "maintainers": [
+            "nczitzk"
+          ],
+          "example": "/kpopping/news/gender-all/category-all/idol-any/group-any/order",
+          "parameters": {
+            "filter": "筛选，可在对应分类页 URL 中找到"
+          },
+          "description": ":::tip\n若订阅 [All male articles](https://kpopping.com/news/gender-male/category-all/idol-any/group-any/order)，网址为 `https://kpopping.com/news/gender-male/category-all/idol-any/group-any/order`，请截取 `https://kpopping.com/news/` 到末尾的部分 `gender-male/category-all/idol-any/group-any/order` 作为 `filter` 参数填入，此时目标路由为 [`/kpopping/news/gender-male/category-all/idol-any/group-any/order`](https://rsshub.app/kpopping/news/gender-male/category-all/idol-any/group-any/order)。\n:::\n"
+        },
+        "location": "news.ts"
+      }
+    },
+    "name": "kpopping",
+    "url": "kpopping.com",
+    "categories": [
+      "new-media"
+    ],
+    "description": "",
     "lang": "en"
   },
   "ktown4u": {
@@ -94387,7 +95151,7 @@
         "example": "/twitter/user/_RSSHub",
         "parameters": {
           "id": "username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`",
-          "routeParams": "extra parameters, see the table above; particularly when `routeParams=exclude_replies`, replies are excluded; `routeParams=exclude_rts` excludes retweets,`routeParams=exclude_rts_replies` exclude replies and retweets; for default include all."
+          "routeParams": "extra parameters, see the table above"
         },
         "features": {
           "requireConfig": [
@@ -94441,7 +95205,7 @@
     },
     "name": "X (Twitter)",
     "url": "x.com",
-    "description": "Specify options (in the format of query string) in parameter `routeParams` to control some extra features for Tweets\n\n| Key                            | Description                                                                                                                          | Accepts                | Defaults to                               |\n| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------- |\n| `readable`                     | Enable readable layout                                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `authorNameBold`               | Display author name in bold                                                                                                          | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorInTitle`            | Show author name in title                                                                                                            | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showAuthorAsTitleOnly`        | Show only author name as title                                                                                                            | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                           | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showQuotedAuthorAvatarInDesc` | Show avatar of quoted Tweet's author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showEmojiForRetweetAndReply`  | Use \"🔁\" instead of \"RT\", \"↩️\" & \"💬\" instead of \"Re\"                                                                                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showSymbolForRetweetAndReply` | Use \" RT \" instead of \"\", \" Re \" instead of \"\"                                                                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `showRetweetTextInTitle`       | Show quote comments in title (if `false`, only the retweeted tweet will be shown in the title)                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `addLinkForPics`               | Add clickable links for Tweet pictures                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `showTimestampInDescription`   | Show timestamp in description                                                                                                        | `0`/`1`/`true`/`false` | `false`                                   |\n| `showQuotedInTitle`            | Show quoted tweet in title                                                                                                           | `0`/`1`/`true`/`false` | `false`                                   |\n| `widthOfPics`                  | Width of Tweet pictures                                                                                                              | Unspecified/Integer    | Unspecified                               |\n| `heightOfPics`                 | Height of Tweet pictures                                                                                                             | Unspecified/Integer    | Unspecified                               |\n| `sizeOfAuthorAvatar`           | Size of author's avatar                                                                                                              | Integer                | `48`                                      |\n| `sizeOfQuotedAuthorAvatar`     | Size of quoted tweet's author's avatar                                                                                               | Integer                | `24`                                      |\n| `excludeReplies`               | Exclude replies, only available in `/twitter/user`                                                                                   | `0`/`1`/`true`/`false` | `false`                                   |\n| `includeRts`                   | Include retweets, only available in `/twitter/user`                                                                                  | `0`/`1`/`true`/`false` | `true`                                    |\n| `forceWebApi`                  | Force using Web API even if Developer API is configured, only available in `/twitter/user` and `/twitter/keyword`                    | `0`/`1`/`true`/`false` | `false`                                   |\n| `count`                        | `count` parameter passed to Twitter API, only available in `/twitter/user`                                                           | Unspecified/Integer    | Unspecified                               |\n| `onlyMedia`                    | Only get tweets with a media                                                                                                             | `0`/`1`/`true`/`false` | `false`                 |\n\nSpecify different option values than default values to improve readability. The URL\n\n```\nhttps://rsshub.app/twitter/user/durov/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweetAndReply=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showQuotedInTitle=1&heightOfPics=150\n```\n\ngenerates\n\n<img loading=\"lazy\" src=\"/img/readable-twitter.png\" alt=\"Readable Twitter RSS of Durov\" />\n\nCurrently supports two authentication methods:\n\n- Using `TWITTER_AUTH_TOKEN` (recommended): Configure a comma-separated list of `auth_token` cookies of logged-in Twitter Web. RSSHub will use this information to directly access Twitter's web API to obtain data.\n\n- Using `TWITTER_USERNAME` `TWITTER_PASSWORD` and `TWITTER_AUTHENTICATION_SECRET`: Configure a comma-separated list of Twitter username and password. RSSHub will use this information to log in to Twitter and obtain data using the mobile API. Please note that if you have not logged in with the current IP address before, it is easy to trigger Twitter's risk control mechanism.\n",
+    "description": "Specify options (in the format of query string) in parameter `routeParams` to control some extra features for Tweets\n\n| Key                            | Description                                                                                                                          | Accepts                | Defaults to                               |\n| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------- |\n| `readable`                     | Enable readable layout                                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `authorNameBold`               | Display author name in bold                                                                                                          | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorInTitle`            | Show author name in title                                                                                                            | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showAuthorAsTitleOnly`        | Show only author name as title                                                                                                            | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                           | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showQuotedAuthorAvatarInDesc` | Show avatar of quoted Tweet's author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showEmojiForRetweetAndReply`  | Use \"🔁\" instead of \"RT\", \"↩️\" & \"💬\" instead of \"Re\"                                                                                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showSymbolForRetweetAndReply` | Use \" RT \" instead of \"\", \" Re \" instead of \"\"                                                                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `showRetweetTextInTitle`       | Show quote comments in title (if `false`, only the retweeted tweet will be shown in the title)                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `addLinkForPics`               | Add clickable links for Tweet pictures                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `showTimestampInDescription`   | Show timestamp in description                                                                                                        | `0`/`1`/`true`/`false` | `false`                                   |\n| `showQuotedInTitle`            | Show quoted tweet in title                                                                                                           | `0`/`1`/`true`/`false` | `false`                                   |\n| `widthOfPics`                  | Width of Tweet pictures                                                                                                              | Unspecified/Integer    | Unspecified                               |\n| `heightOfPics`                 | Height of Tweet pictures                                                                                                             | Unspecified/Integer    | Unspecified                               |\n| `sizeOfAuthorAvatar`           | Size of author's avatar                                                                                                              | Integer                | `48`                                      |\n| `sizeOfQuotedAuthorAvatar`     | Size of quoted tweet's author's avatar                                                                                               | Integer                | `24`                                      |\n| `includeReplies`               | Include replies, only available in `/twitter/user`                                                                                   | `0`/`1`/`true`/`false` | `false`                                   |\n| `includeRts`                   | Include retweets, only available in `/twitter/user`                                                                                  | `0`/`1`/`true`/`false` | `true`                                    |\n| `forceWebApi`                  | Force using Web API even if Developer API is configured, only available in `/twitter/user` and `/twitter/keyword`                    | `0`/`1`/`true`/`false` | `false`                                   |\n| `count`                        | `count` parameter passed to Twitter API, only available in `/twitter/user`                                                           | Unspecified/Integer    | Unspecified                               |\n| `onlyMedia`                    | Only get tweets with a media                                                                                                             | `0`/`1`/`true`/`false` | `false`                 |\n\nSpecify different option values than default values to improve readability. The URL\n\n```\nhttps://rsshub.app/twitter/user/durov/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweetAndReply=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showQuotedInTitle=1&heightOfPics=150\n```\n\ngenerates\n\n<img loading=\"lazy\" src=\"/img/readable-twitter.png\" alt=\"Readable Twitter RSS of Durov\" />\n\nCurrently supports two authentication methods:\n\n- Using `TWITTER_AUTH_TOKEN` (recommended): Configure a comma-separated list of `auth_token` cookies of logged-in Twitter Web. RSSHub will use this information to directly access Twitter's web API to obtain data.\n\n- Using `TWITTER_USERNAME` `TWITTER_PASSWORD` and `TWITTER_AUTHENTICATION_SECRET`: Configure a comma-separated list of Twitter username and password. RSSHub will use this information to log in to Twitter and obtain data using the mobile API. Please note that if you have not logged in with the current IP address before, it is easy to trigger Twitter's risk control mechanism.\n",
     "lang": "en"
   },
   "twreporter": {

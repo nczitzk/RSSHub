@@ -231,6 +231,9 @@
   "/5eplay/article": [
     "Dlouxgit"
   ],
+  "/5music/new-releases/:category?": [
+    "gideonsenku"
+  ],
   "/69shu/article/:id": [
     "eternasuno"
   ],
@@ -586,6 +589,9 @@
   ],
   "/artstation/:handle": [
     "TonyRL"
+  ],
+  "/asiafruitchina/categories/:category?": [
+    "nczitzk"
   ],
   "/asianfanfics/tag/:tag/:type": [
     "KazooTTT"
@@ -1340,6 +1346,9 @@
   ],
   "/chaping/newsflash": [
     "Fatpandac"
+  ],
+  "/cherrytimes/market": [
+    "canonnizq"
   ],
   "/chiculture/topic/:category?": [
     "nczitzk"
@@ -2694,6 +2703,9 @@
   ],
   "/geekpark/:column?": [
     "nczitzk"
+  ],
+  "/gelbooru/post/:tags?/:quality?": [
+    "magicFeirl"
   ],
   "/gelonghui/home/:tag?": [
     "TonyRL"
@@ -4286,6 +4298,9 @@
   ],
   "/kpmg/insights/:lang?": [
     "LogicJake"
+  ],
+  "/kpopping/news/:filter{.+}?": [
+    "nczitzk"
   ],
   "/ktown4u/artistBrandlist/:grpNo/:grpNo2?": [
     "JamesWDGu"
