@@ -593,6 +593,9 @@
   "/asiafruitchina/categories/:category?": [
     "nczitzk"
   ],
+  "/asiafruitchina/news": [
+    "nczitzk"
+  ],
   "/asianfanfics/tag/:tag/:type": [
     "KazooTTT"
   ],
@@ -3482,6 +3485,9 @@
   ],
   "/hko/weather": [
     "calpa"
+  ],
+  "/hkushop/vinyl/:cat?": [
+    "gideonsenku"
   ],
   "/hljucm/yjsy/:category?": [
     "nczitzk"

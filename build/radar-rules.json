@@ -5254,6 +5254,14 @@
           "/categories"
         ],
         "target": "/asiafruitchina/categories/youzi"
+      },
+      {
+        "title": "行业资讯",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/category/news"
+        ],
+        "target": "/asiafruitchina/asiafruitchina/news"
       }
     ]
   },
@@ -17200,6 +17208,20 @@
           "/en/wxinfo/currwx/current.htm"
         ],
         "target": "/hko/weather"
+      }
+    ]
+  },
+  "hkushop.com": {
+    "_name": "環球唱片(香港)官方網上商店",
+    ".": [
+      {
+        "title": "HKU Shop 黑胶专区",
+        "docs": "https://docs.rsshub.app/routes/shopping",
+        "source": [
+          "/vinyl-or-picture-lp.html",
+          "/"
+        ],
+        "target": "/hkushop/vinyl"
       }
     ]
   },
