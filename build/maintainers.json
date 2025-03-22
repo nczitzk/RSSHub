@@ -1635,8 +1635,7 @@
   ],
   "/copymanga/comic/:id/:chapterCnt?": [
     "btdwv",
-    "marvolo666",
-    "yan12125"
+    "marvolo666"
   ],
   "/cosplaytele/category/:category": [
     "AiraNadih"
@@ -4853,6 +4852,9 @@
   ],
   "/my-formosa/": [
     "dzx-dzx"
+  ],
+  "/mycard520/category/:category?": [
+    "nczitzk"
   ],
   "/mydrivers/cid/:id?": [],
   "/mydrivers/zhibo": [],
