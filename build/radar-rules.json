@@ -7041,7 +7041,7 @@
         "source": [
           "/:id"
         ],
-        "target": "/gov(_,url)=>{url=new URL(url);const id=url.searchParams.get(\"itemId\");return`/gov/cbirc${id?`/${id}`:\"\"}`}"
+        "target": "/gov(_,url)=>{const urlObj=new URL(url.toString());const id=urlObj.searchParams.get(\"itemId\");return`/gov/cbirc${id?`/${id}`:\"\"}`}"
       },
       {
         "title": "首页 - 弹出公告",
@@ -7236,7 +7236,7 @@
         "target": "/gov/cbirc/950"
       },
       {
-        "title": "互动交流 - 国务院办公厅开通“国家政务服务投诉与建议”小程序",
+        "title": "互动交流 - 国务院办公厅开通\"国家政务服务投诉与建议\"小程序",
         "docs": "https://docs.rsshub.app/routes/government",
         "source": [
           "/cn/view/pages/ItemList.html"
@@ -9128,6 +9128,27 @@
           "/nice"
         ],
         "target": "/chuanliu/nice"
+      }
+    ]
+  },
+  "chuapp.com": {
+    "_name": "触乐",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/category/:category"
+        ],
+        "target": "/chuapp/:category"
+      },
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/tag/index/id/20369.html"
+        ],
+        "target": "/chuapp/night"
       }
     ]
   },
@@ -11932,6 +11953,15 @@
         "target": "/sciencedirect/call-for-paper/:subject"
       },
       {
+        "title": "Current Issue",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/journal/:id",
+          "/"
+        ],
+        "target": "/sciencedirect/journal/:id/current"
+      },
+      {
         "title": "Journal",
         "docs": "https://docs.rsshub.app/routes/journal",
         "source": [
@@ -12165,6 +12195,19 @@
           "/lastest"
         ],
         "target": "/fanxinzhui/"
+      }
+    ]
+  },
+  "warpcast.com": {
+    "_name": "Farcaster",
+    ".": [
+      {
+        "title": "Farcaster User",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/:username"
+        ],
+        "target": "/farcaster/user/:username"
       }
     ]
   },
@@ -17374,6 +17417,16 @@
   },
   "hrbeu.edu.cn": {
     "_name": "哈尔滨工程大学",
+    "cec": [
+      {
+        "title": "航天与建筑工程学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/hrbeu/cec/:id"
+      }
+    ],
     "job": [
       {
         "title": "大型招聘会",
@@ -20602,6 +20655,14 @@
     "_name": "kpopping",
     ".": [
       {
+        "title": "Pics",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/kpics/:filter"
+        ],
+        "target": "/kpoppingparams=>{const filter=params.filter;return`/kpopping/kpics${filter?`/${filter}`:\"\"}`}"
+      },
+      {
         "title": "News",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
@@ -20915,6 +20976,19 @@
           "/"
         ],
         "target": "/leiphone/newsflash"
+      }
+    ]
+  },
+  "hey.xyz": {
+    "_name": "Lens",
+    ".": [
+      {
+        "title": "Lens Profile",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/u/:handle"
+        ],
+        "target": "/lens/profile/:handle"
       }
     ]
   },
@@ -32786,6 +32860,114 @@
           "/article/list/kx.html"
         ],
         "target": "/stcn/article/list/kx"
+      },
+      {
+        "title": "热榜",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/list.html",
+          "/article/list/:id"
+        ],
+        "target": "/stcn(params,url)=>{const urlObj=new URL(url);const id=urlObj.searchParams.get(\"type\")??params.id;return`/stcn/article/rank${id?`/${id}`:\"\"}`}"
+      },
+      {
+        "title": "要闻",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/list.html",
+          "/article/list/yw.html"
+        ],
+        "target": "/stcn/article/rank/yw"
+      },
+      {
+        "title": "股市",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/list.html",
+          "/article/list/gs.html"
+        ],
+        "target": "/stcn/article/rank/gs"
+      },
+      {
+        "title": "公司",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/list.html",
+          "/article/list/company.html"
+        ],
+        "target": "/stcn/article/rank/company"
+      },
+      {
+        "title": "基金",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/list.html",
+          "/article/list/fund.html"
+        ],
+        "target": "/stcn/article/rank/fund"
+      },
+      {
+        "title": "金融",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/list.html",
+          "/article/list/finance.html"
+        ],
+        "target": "/stcn/article/rank/finance"
+      },
+      {
+        "title": "评论",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/list.html",
+          "/article/list/comment.html"
+        ],
+        "target": "/stcn/article/rank/comment"
+      },
+      {
+        "title": "产经",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/list.html",
+          "/article/list/cj.html"
+        ],
+        "target": "/stcn/article/rank/cj"
+      },
+      {
+        "title": "科创板",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/list.html",
+          "/article/list/kcb.html"
+        ],
+        "target": "/stcn/article/rank/kcb"
+      },
+      {
+        "title": "新三板",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/list.html",
+          "/article/list/xsb.html"
+        ],
+        "target": "/stcn/article/rank/xsb"
+      },
+      {
+        "title": "ESG",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/list.html",
+          "/article/list/zk.html"
+        ],
+        "target": "/stcn/article/rank/zk"
+      },
+      {
+        "title": "滚动",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/article/list.html",
+          "/article/list/gd.html"
+        ],
+        "target": "/stcn/article/rank/gd"
       }
     ]
   },

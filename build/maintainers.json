@@ -299,7 +299,8 @@
     "zhenhappy"
   ],
   "/academia/topic/:interest": [
-    "K33k0"
+    "K33k0",
+    "cscnk52"
   ],
   "/accessbriefing/:category{.+}?": [
     "nczitzk"
@@ -1435,6 +1436,9 @@
   "/chuanliu/nice": [
     "nczitzk"
   ],
+  "/chuapp/:category?": [
+    "dousha"
+  ],
   "/chub/characters": [
     "flameleaf"
   ],
@@ -2358,6 +2362,9 @@
   ],
   "/fanxinzhui/": [
     "nczitzk"
+  ],
+  "/farcaster/user/:username": [
+    "DIYgod"
   ],
   "/farmatters/exclusive/:locale?": [
     "nczitzk"
@@ -3556,6 +3563,9 @@
   "/hpoi/items/work/:id/:order?": [
     "DIYgod"
   ],
+  "/hrbeu/cec/:id": [
+    "tsinglinrain"
+  ],
   "/hrbeu/gx/card/:column/:id?": [],
   "/hrbeu/gx/list/:column/:id?": [],
   "/hrbeu/job/bigemploy": [
@@ -3893,7 +3903,8 @@
   ],
   "/iplaysoft/": [
     "williamgateszhao",
-    "cscnk52"
+    "cscnk52",
+    "LokHsu"
   ],
   "/iplaysoft/tag/:slug": [
     "cscnk52"
@@ -4304,6 +4315,9 @@
   "/kpmg/insights/:lang?": [
     "LogicJake"
   ],
+  "/kpopping/kpics/:filter{.+}?": [
+    "nczitzk"
+  ],
   "/kpopping/news/:filter{.+}?": [
     "nczitzk"
   ],
@@ -4395,6 +4409,9 @@
   "/lemmy/:community/:sort?": [
     "wb14123",
     "pseudoyu"
+  ],
+  "/lens/profile/:handle": [
+    "DIYgod"
   ],
   "/lfsyd/home": [
     "auto-bot-ty"
@@ -4683,6 +4700,9 @@
   "/meituan/tech": [
     "ktKongTong",
     "cscnk52"
+  ],
+  "/mercari/:sort/:order/:status/:keyword": [
+    "yana9i"
   ],
   "/metacritic/:type?/:sort?/:filter?": [],
   "/meteor/boards": [
@@ -6225,6 +6245,9 @@
   "/sciencedirect/call-for-paper/:subject": [
     "etShaw-zh"
   ],
+  "/sciencedirect/journal/:id/current": [
+    "TonyRL"
+  ],
   "/sciencedirect/journal/:id": [
     "nczitzk"
   ],
@@ -6798,6 +6821,9 @@
     "nczitzk"
   ],
   "/stcn/article/list/kx": [
+    "nczitzk"
+  ],
+  "/stcn/article/rank/:id?": [
     "nczitzk"
   ],
   "/stdaily/digitalpaper": [
