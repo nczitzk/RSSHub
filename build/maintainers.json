@@ -1096,6 +1096,9 @@
   "/bulianglin/": [
     "cnkmmk"
   ],
+  "/bullionvault/gold-news/:category?": [
+    "nczitzk"
+  ],
   "/bupt/jwc/:type": [
     "Yoruet"
   ],
@@ -1298,6 +1301,9 @@
     "nczitzk"
   ],
   "/cdu/jwgg": [
+    "uuwor"
+  ],
+  "/cdu/tzggcdunews": [
     "uuwor"
   ],
   "/cdzjryb/zw/projectList": [
@@ -2634,6 +2640,9 @@
   ],
   "/gamegene/news": [
     "lone1y-51"
+  ],
+  "/gamekee/news": [
+    "ueiu"
   ],
   "/gamer/gnn/:category?": [
     "Arracc",
@@ -6088,6 +6097,9 @@
   "/rarehistoricalphotos/": [
     "TonyRL"
   ],
+  "/raspberrypi/magazine": [
+    "nczitzk"
+  ],
   "/rattibha/user/:user": [
     "yshalsager"
   ],
@@ -7349,6 +7361,9 @@
   "/transcriptforest/:channel?": [
     "nczitzk"
   ],
+  "/transformer-circuits/": [
+    "shinmohuang"
+  ],
   "/trending/:keywords/:numberOfDays?": [
     "Jkker"
   ],
@@ -7529,6 +7544,9 @@
     "Fatpandac"
   ],
   "/ulapia/research/latest": [],
+  "/unipd/ilbolive/news": [
+    "Gexi0619"
+  ],
   "/uniqlo/new/:country/:category": [
     "DIYgod"
   ],

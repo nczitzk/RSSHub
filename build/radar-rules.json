@@ -6610,6 +6610,75 @@
       }
     ]
   },
+  "bullionvault.com": {
+    "_name": "BullionVault",
+    ".": [
+      {
+        "title": "Gold News",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/gold-news/:category"
+        ],
+        "target": "/bullionvaultparams=>{const category=params.category;return`/bullionvault/gold-news${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "Gold market analysis & gold investment research",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/gold-news"
+        ],
+        "target": "/bullionvault/gold-news"
+      },
+      {
+        "title": "Opinion & Analysis",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/gold-news/opinion-analysis"
+        ],
+        "target": "/bullionvault/gold-news/opinion-analysis"
+      },
+      {
+        "title": "Gold Price News",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/gold-news/gold-price-news"
+        ],
+        "target": "/bullionvault/gold-news/gold-price-news"
+      },
+      {
+        "title": "Investment News",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/gold-news/news"
+        ],
+        "target": "/bullionvault/gold-news/news"
+      },
+      {
+        "title": "Gold Investor Index",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/gold-news/gold-investor-index"
+        ],
+        "target": "/bullionvault/gold-news/gold-investor-index"
+      },
+      {
+        "title": "Gold Infographics",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/gold-news/infographics"
+        ],
+        "target": "/bullionvault/gold-news/infographics"
+      },
+      {
+        "title": "Market Fundamentals",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/gold-news/market-fundamentals"
+        ],
+        "target": "/bullionvault/gold-news/market-fundamentals"
+      }
+    ]
+  },
   "bupt.edu.cn": {
     "_name": "北京邮电大学",
     "jwc": [
@@ -8115,6 +8184,16 @@
           "/"
         ],
         "target": "/cdu/jwgg"
+      }
+    ],
+    "news": [
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/cdu/tzggcdunews"
       }
     ]
   },
@@ -13035,6 +13114,20 @@
           "/news"
         ],
         "target": "/gamegene/news"
+      }
+    ]
+  },
+  "gamekee.com": {
+    "_name": "GameKee | 游戏百科攻略",
+    ".": [
+      {
+        "title": "游戏情报",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/",
+          "/news"
+        ],
+        "target": "/gamekee/news"
       }
     ]
   },
@@ -29877,6 +29970,19 @@
       }
     ]
   },
+  "raspberrypi.com": {
+    "_name": "Raspberry Pi",
+    "magazine": [
+      {
+        "title": "Official Magazine",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/raspberrypi/raspberrypi/magazine"
+      }
+    ]
+  },
   "rattibha.com": {
     "_name": "Rattibha",
     ".": [
@@ -35305,6 +35411,19 @@
       }
     ]
   },
+  "transformer-circuits.pub": {
+    "_name": "Transformer Circuits",
+    ".": [
+      {
+        "title": "Articles",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/transformer-circuits/"
+      }
+    ]
+  },
   "tribalfootball.com": {
     "_name": "Tribal Football",
     ".": [
@@ -35776,6 +35895,19 @@
           "/"
         ],
         "target": "/ulapia/research/latest"
+      }
+    ]
+  },
+  "unipd.it": {
+    "_name": "Università di Padova",
+    "ilbolive": [
+      {
+        "title": "Il Bo Live - News",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/it/news"
+        ],
+        "target": "/unipd/ilbolive/news"
       }
     ]
   },

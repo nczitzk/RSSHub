@@ -15365,6 +15365,132 @@
     "url": "bulianglin.com",
     "lang": "zh-CN"
   },
+  "bullionvault": {
+    "routes": {
+      "/gold-news/:category?": {
+        "path": "/gold-news/:category?",
+        "name": "Gold News",
+        "url": "bullionvault.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/bullionvault/gold-news",
+        "parameters": {
+          "category": {
+            "description": "Category",
+            "options": [
+              {
+                "label": "Gold market analysis & gold investment research",
+                "value": ""
+              },
+              {
+                "label": "Opinion & Analysis",
+                "value": "opinion-analysis"
+              },
+              {
+                "label": "Gold Price News",
+                "value": "gold-price-news"
+              },
+              {
+                "label": "Investment News",
+                "value": "news"
+              },
+              {
+                "label": "Gold Investor Index",
+                "value": "gold-investor-index"
+              },
+              {
+                "label": "Gold Infographics",
+                "value": "infographics"
+              },
+              {
+                "label": "Market Fundamentals",
+                "value": "market-fundamentals"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\nIf you subscribe to [Gold Price News](https://www.bullionvault.com/gold-news/gold-price-news)，where the URL is `https://www.bullionvault.com/gold-news/gold-price-news`, extract the part `https://www.bullionvault.com/gold-news/` to the end, and use it as the parameter to fill in. Therefore, the route will be [`/bullionvault/gold-news/gold-price-news`](https://rsshub.app/bullionvault/gold-news/gold-price-news).\n:::\n\n| Category                                                                          | ID                                                                                   |\n| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |\n| [Opinion & Analysis](https://www.bullionvault.com/gold-news/opinion-analysis)     | [opinion-analysis](https://rsshub.app/bullionvault/gold-news/opinion-analysis)       |\n| [Gold Price News](https://www.bullionvault.com/gold-news/gold-price-news)         | [gold-price-news](https://rsshub.app/bullionvault/gold-news/gold-price-news)         |\n| [Investment News](https://www.bullionvault.com/gold-news/news)                    | [news](https://rsshub.app/bullionvault/gold-news/news)                               |\n| [Gold Investor Index](https://www.bullionvault.com/gold-news/gold-investor-index) | [gold-investor-index](https://rsshub.app/bullionvault/gold-news/gold-investor-index) |\n| [Gold Infographics](https://www.bullionvault.com/gold-news/infographics)          | [infographics](https://rsshub.app/bullionvault/gold-news/infographics)               |\n| [Market Fundamentals](https://www.bullionvault.com/gold-news/market-fundamentals) | [market-fundamentals](https://rsshub.app/bullionvault/gold-news/market-fundamentals) |\n",
+        "categories": [
+          "finance"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "bullionvault.com/gold-news/:category"
+            ]
+          },
+          {
+            "title": "Gold market analysis & gold investment research",
+            "source": [
+              "bullionvault.com/gold-news"
+            ],
+            "target": "/gold-news"
+          },
+          {
+            "title": "Opinion & Analysis",
+            "source": [
+              "bullionvault.com/gold-news/opinion-analysis"
+            ],
+            "target": "/gold-news/opinion-analysis"
+          },
+          {
+            "title": "Gold Price News",
+            "source": [
+              "bullionvault.com/gold-news/gold-price-news"
+            ],
+            "target": "/gold-news/gold-price-news"
+          },
+          {
+            "title": "Investment News",
+            "source": [
+              "bullionvault.com/gold-news/news"
+            ],
+            "target": "/gold-news/news"
+          },
+          {
+            "title": "Gold Investor Index",
+            "source": [
+              "bullionvault.com/gold-news/gold-investor-index"
+            ],
+            "target": "/gold-news/gold-investor-index"
+          },
+          {
+            "title": "Gold Infographics",
+            "source": [
+              "bullionvault.com/gold-news/infographics"
+            ],
+            "target": "/gold-news/infographics"
+          },
+          {
+            "title": "Market Fundamentals",
+            "source": [
+              "bullionvault.com/gold-news/market-fundamentals"
+            ],
+            "target": "/gold-news/market-fundamentals"
+          }
+        ],
+        "view": 0,
+        "location": "gold-news.ts"
+      }
+    },
+    "name": "BullionVault",
+    "url": "bullionvault.com",
+    "categories": [
+      "finance"
+    ],
+    "description": "",
+    "lang": "en"
+  },
   "bupt": {
     "routes": {
       "/jwc/:type": {
@@ -18023,6 +18149,35 @@
         ],
         "url": "jw.cdu.edu.cn/",
         "location": "jwgg.ts"
+      },
+      "/tzggcdunews": {
+        "path": "/tzggcdunews",
+        "categories": [
+          "university"
+        ],
+        "example": "/cdu/tzggcdunews",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "news.cdu.edu.cn/"
+            ]
+          }
+        ],
+        "name": "通知公告",
+        "maintainers": [
+          "uuwor"
+        ],
+        "url": "news.cdu.edu.cn/",
+        "location": "tzggcdunews.ts"
       }
     },
     "name": "成都大学",
@@ -33895,6 +34050,34 @@
     "name": "游戏基因",
     "url": "news.gamegene.cn",
     "lang": "zh-CN"
+  },
+  "gamekee": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "categories": [
+          "game"
+        ],
+        "example": "/gamekee/news",
+        "radar": [
+          {
+            "source": [
+              "gamekee.com",
+              "gamekee.com/news"
+            ],
+            "target": "/news"
+          }
+        ],
+        "name": "游戏情报",
+        "maintainers": [
+          "ueiu"
+        ],
+        "url": "gamekee.com/news",
+        "location": "news.ts"
+      }
+    },
+    "name": "GameKee | 游戏百科攻略",
+    "url": "www.gamekee.com"
   },
   "gamer": {
     "routes": {
@@ -77398,6 +77581,48 @@
     "url": "rarehistoricalphotos.com",
     "lang": "en"
   },
+  "raspberrypi": {
+    "routes": {
+      "/magazine": {
+        "path": "/magazine",
+        "name": "Official Magazine",
+        "url": "magazine.raspberrypi.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/raspberrypi/magazine",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "magazine.raspberrypi.com"
+            ],
+            "target": "/raspberrypi/magazine"
+          }
+        ],
+        "view": 0,
+        "location": "magazine.ts"
+      }
+    },
+    "name": "Raspberry Pi",
+    "url": "raspberrypi.com",
+    "categories": [
+      "programming"
+    ],
+    "description": "",
+    "lang": "en"
+  },
   "rattibha": {
     "routes": {
       "/user/:user": {
@@ -95071,6 +95296,34 @@
     "url": "www.transcriptforest.com",
     "lang": "en"
   },
+  "transformer-circuits": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "programming"
+        ],
+        "example": "/transformer-circuits",
+        "parameters": {},
+        "radar": [
+          {
+            "source": [
+              "transformer-circuits.pub/"
+            ],
+            "target": "/"
+          }
+        ],
+        "name": "Articles",
+        "maintainers": [
+          "shinmohuang"
+        ],
+        "location": "index.ts"
+      }
+    },
+    "name": "Transformer Circuits",
+    "url": "transformer-circuits.pub",
+    "lang": "en"
+  },
   "trending": {
     "routes": {
       "/:keywords/:numberOfDays?": {
@@ -96952,6 +97205,45 @@
     "name": "乌拉邦",
     "url": "www.ulapia.com",
     "lang": "zh-CN"
+  },
+  "unipd": {
+    "routes": {
+      "/ilbolive/news": {
+        "path": "/ilbolive/news",
+        "name": "Il Bo Live - News",
+        "url": "ilbolive.unipd.it/it/news",
+        "maintainers": [
+          "Gexi0619"
+        ],
+        "example": "/unipd/ilbolive/news",
+        "parameters": {},
+        "description": "Il Bo Live - News",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "ilbolive.unipd.it/it/news"
+            ],
+            "target": "/ilbolive/news"
+          }
+        ],
+        "location": "ilbolive/news.ts"
+      }
+    },
+    "name": "Università di Padova",
+    "url": "unipd.it",
+    "lang": "it"
   },
   "uniqlo": {
     "routes": {
