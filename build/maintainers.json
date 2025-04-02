@@ -1737,9 +1737,6 @@
   "/cuilingmag/:category?": [
     "nczitzk"
   ],
-  "/cupl/jwc": [
-    "Fgju"
-  ],
   "/curiouscat/user/:id": [
     "lucasew"
   ],
@@ -2990,9 +2987,6 @@
   "/gov/gz/:channel/:category": [],
   "/gov/hainan/iitb/tzgg": [
     "p3psi-boo"
-  ],
-  "/gov/hangzhou/zwfw": [
-    "flynncao"
   ],
   "/gov/hebei/czt/xwdt/:category?": [
     "nczitzk"
@@ -8327,8 +8321,7 @@
     "bao1991213"
   ],
   "/yystv/category/:category": [
-    "betta-cyber",
-    "dousha"
+    "LightStrawberry"
   ],
   "/yystv/docs": [
     "HaitianLiu",
