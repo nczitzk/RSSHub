@@ -10439,6 +10439,20 @@
       }
     ]
   },
+  "cupl.edu.cn": {
+    "_name": "CUPL",
+    "jwc": [
+      {
+        "title": "教务处通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/index/tzgg.htm",
+          "/"
+        ],
+        "target": "/cupl/jwc"
+      }
+    ]
+  },
   "curiouscat.live": {
     "_name": "CuriousCat",
     ".": [
@@ -14806,6 +14820,19 @@
           "/gz/weatherAlarm/suddenWeather/"
         ],
         "target": "/gov/guangdong/tqyb/tfxtq"
+      }
+    ]
+  },
+  "hangzhou.gov.cn": {
+    "_name": "上海市人民政府",
+    ".": [
+      {
+        "title": "政务服务公开",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/col/col1256349/index.html"
+        ],
+        "target": "/gov/hangzhou/zwfw"
       }
     ]
   },

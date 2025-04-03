@@ -23890,6 +23890,56 @@
     "description": "",
     "lang": "zh-CN"
   },
+  "cupl": {
+    "routes": {
+      "/jwc": {
+        "path": "/jwc",
+        "url": "jwc.cupl.edu.cn/index/tzgg.htm",
+        "categories": [
+          "university"
+        ],
+        "example": "/cupl/jwc",
+        "description": "中国政法大学教务处通知公告",
+        "name": "教务处通知公告",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "jwc.cupl.edu.cn/index/tzgg.htm",
+              "jwc.cupl.edu.cn/"
+            ],
+            "target": "/jwc"
+          }
+        ],
+        "maintainers": [
+          "Fgju"
+        ],
+        "location": "jwc.ts"
+      }
+    },
+    "name": "CUPL",
+    "url": "jwc.cupl.edu.cn/index/tzgg.htm",
+    "description": "China University of Political Science and Law Academic Affairs Office Notices",
+    "zh": {
+      "name": "中国政法大学",
+      "description": "中国政法大学教务处通知公告"
+    },
+    "zh-TW": {
+      "name": "中國政法大學",
+      "description": "中國政法大學教務處通知公告"
+    },
+    "ja": {
+      "name": "中国政法大学",
+      "description": "中国政法大学教務処通知公告"
+    }
+  },
   "curiouscat": {
     "routes": {
       "/user/:id": {
@@ -38695,6 +38745,34 @@
         ],
         "location": "hainan/iitb/tzgg.ts"
       },
+      "/hangzhou/zwfw": {
+        "path": "/hangzhou/zwfw",
+        "categories": [
+          "government"
+        ],
+        "example": "/gov/hangzhou/zwfw",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "hangzhou.gov.cn/col/col1256349/index.html"
+            ]
+          }
+        ],
+        "name": "政务服务公开",
+        "maintainers": [
+          "flynncao"
+        ],
+        "url": "hangzhou.gov.cn/col/col1256349/index.html",
+        "location": "hangzhou/zwfw.ts"
+      },
       "/hebei/czt/xwdt/:category?": {
         "path": "/hebei/czt/xwdt/:category?",
         "categories": [
@@ -41818,7 +41896,10 @@
       "government"
     ],
     "description": "",
-    "lang": "zh-CN"
+    "lang": "zh-CN",
+    "zh": {
+      "name": "杭州市人民政府"
+    }
   },
   "gq": {
     "routes": {
@@ -105790,9 +105871,10 @@
         },
         "name": "游研社 - 分类文章",
         "maintainers": [
-          "LightStrawberry"
+          "betta-cyber",
+          "dousha"
         ],
-        "description": "| 推游      | 游戏史  | 大事件 | 文化    | 趣闻 | 经典回顾 |\n| --------- | ------- | ------ | ------- | ---- | -------- |\n| recommend | history | big    | culture | news | retro    |",
+        "description": "| 推游      | 游戏史  | 大事件 | 文化    | 趣闻 | 经典回顾 | 业界     |\n| --------- | ------- | ------ | ------- | ---- | -------- | -------- |\n| recommend | history | big    | culture | news | retro    | industry |",
         "location": "category.ts"
       },
       "/docs": {
