@@ -5586,6 +5586,35 @@
       }
     ]
   },
+  "baobua.com": {
+    "_name": "BaoBua",
+    ".": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/cat/:category"
+        ],
+        "target": "/baobua/category/:category"
+      },
+      {
+        "title": "Latest",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/"
+        ],
+        "target": "/baobua/"
+      },
+      {
+        "title": "Search",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/search"
+        ],
+        "target": "/baobua/search/:keyword"
+      }
+    ]
+  },
   "baoyu.io": {
     "_name": "宝玉",
     ".": [
@@ -11233,6 +11262,19 @@
       }
     ]
   },
+  "diariofruticola.cl": {
+    "_name": "Diario Frutícola",
+    ".": [
+      {
+        "title": "Filtro",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/filtro/:filter"
+        ],
+        "target": "/diariofruticolaparams=>{const filter=params.filter;return`/diariofruticola/filtro${filter?`/${filter}`:\"\"}`}"
+      }
+    ]
+  },
   "diershoubing.com": {
     "_name": "二柄 APP",
     ".": [
@@ -13670,6 +13712,20 @@
           "/"
         ],
         "target": "/gisreportsonline/:path{.*}"
+      }
+    ]
+  },
+  "gitcode.com": {
+    "_name": "GitCode",
+    ".": [
+      {
+        "title": "仓库提交",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/:owner/:repo/commits",
+          "/:owner/:repo/commits/:branch"
+        ],
+        "target": "/gitcodeparams=>`/gitcode/commits/${params.owner}/${params.repo}${params.branch?`/${params.branch}`:\"\"}`"
       }
     ]
   },
@@ -26707,6 +26763,39 @@
       }
     ]
   },
+  "nwnu.edu.cn": {
+    "_name": "西北师范大学",
+    "jsj": [
+      {
+        "title": "计算机科学与工程学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:column/list"
+        ],
+        "target": "/nwnu/college/csse/:column"
+      }
+    ],
+    "jwc": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:column/list.htm"
+        ],
+        "target": "/nwnu/department/academic-affairs/:column"
+      }
+    ],
+    "yjsy": [
+      {
+        "title": "研究生院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:column/list.htm"
+        ],
+        "target": "/nwnu/department/postgraduate/:column"
+      }
+    ]
+  },
   "nymity.ch": {
     "_name": "nymity",
     "censorbib": [
@@ -29338,6 +29427,54 @@
           "/en-sg/ps-plus/whats-new"
         ],
         "target": "/ps/monthly-games"
+      }
+    ]
+  },
+  "psnine.com": {
+    "_name": "PSN 中文站",
+    ".": [
+      {
+        "title": "游戏",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/psngame",
+          "/"
+        ],
+        "target": "/psnine/game"
+      },
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/"
+        ],
+        "target": "/psnine/"
+      },
+      {
+        "title": "节点",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/node/:id"
+        ],
+        "target": "/psnine/node/:id?/:order?"
+      },
+      {
+        "title": "数折",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/dd",
+          "/"
+        ],
+        "target": "/psnine/shuzhe"
+      },
+      {
+        "title": "闲游",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/trade",
+          "/"
+        ],
+        "target": "/psnine/trade"
       }
     ]
   },

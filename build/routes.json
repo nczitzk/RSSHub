@@ -11105,6 +11105,108 @@
     "url": "bangumi.tv",
     "lang": "zh-CN"
   },
+  "baobua": {
+    "routes": {
+      "/category/:category": {
+        "path": "/category/:category",
+        "categories": [
+          "picture"
+        ],
+        "example": "/baobua/category/network",
+        "parameters": {
+          "category": "Category"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "baobua.com/cat/:category"
+            ],
+            "target": "/category/:category"
+          }
+        ],
+        "name": "Category",
+        "maintainers": [
+          "AiraNadih"
+        ],
+        "url": "baobua.com/",
+        "location": "category.ts"
+      },
+      "/": {
+        "path": "/",
+        "categories": [
+          "picture"
+        ],
+        "example": "/baobua",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "baobua.com/"
+            ],
+            "target": ""
+          }
+        ],
+        "name": "Latest",
+        "maintainers": [
+          "AiraNadih"
+        ],
+        "url": "baobua.com/",
+        "location": "latest.ts"
+      },
+      "/search/:keyword": {
+        "path": "/search/:keyword",
+        "categories": [
+          "picture"
+        ],
+        "example": "/baobua/search/cos",
+        "parameters": {
+          "keyword": "Keyword"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "baobua.com/search"
+            ],
+            "target": "/search/:keyword"
+          }
+        ],
+        "name": "Search",
+        "maintainers": [
+          "AiraNadih"
+        ],
+        "url": "baobua.com/",
+        "location": "search.ts"
+      }
+    },
+    "name": "BaoBua",
+    "url": "baobua.com",
+    "description": "BaoBua.Com - Hot beauty girl pics, girls photos, free watch online hd photo sets",
+    "lang": "en"
+  },
   "baoyu": {
     "routes": {
       "/blog": {
@@ -26298,6 +26400,53 @@
     "url": "dianping.com",
     "lang": "zh-CN"
   },
+  "diariofruticola": {
+    "routes": {
+      "/filtro/:filter{.+}": {
+        "path": "/filtro/:filter{.+}",
+        "name": "Filtro",
+        "url": "diariofruticola.cl",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/diariofruticola/filtro/cerezas/71",
+        "parameters": {
+          "filter": {
+            "description": "Filter"
+          }
+        },
+        "description": ":::tip\nIf you subscribe to [Cerezas](https://www.diariofruticola.cl/filtro/cerezas/71/)，where the URL is `https://www.diariofruticola.cl/filtro/cerezas/71/`, extract the part `https://diariofruticola.cl/filtro` to the end, which is `/`, and use it as the parameter to fill in. Therefore, the route will be [`/diariofruticola/filtro/cerezas/71`](https://rsshub.app/diariofruticola/filtro/cerezas/71).\n:::\n",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "diariofruticola.cl/filtro/:filter"
+            ]
+          }
+        ],
+        "view": 0,
+        "location": "filtro.ts"
+      }
+    },
+    "name": "Diario Frutícola",
+    "url": "diariofruticola.cl",
+    "categories": [
+      "new-media"
+    ],
+    "description": "",
+    "lang": "es"
+  },
   "diershoubing": {
     "routes": {
       "/news": {
@@ -35843,6 +35992,46 @@
     "url": "www.gisreportsonline.com",
     "lang": "en"
   },
+  "gitcode": {
+    "routes": {
+      "/commits/:owner/:repo/:branch?": {
+        "path": "/commits/:owner/:repo/:branch?",
+        "categories": [
+          "programming"
+        ],
+        "example": "/gitcode/commits/openharmony-sig/flutter_flutter",
+        "parameters": {
+          "owner": "用户名/组织名",
+          "repo": "仓库名",
+          "branch": "分支名，可选，默认为主分支"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "gitcode.com/:owner/:repo/commits",
+              "gitcode.com/:owner/:repo/commits/:branch"
+            ]
+          }
+        ],
+        "name": "仓库提交",
+        "maintainers": [
+          "JiZhi-Error"
+        ],
+        "location": "repos/commits.ts"
+      }
+    },
+    "name": "GitCode",
+    "url": "gitcode.com",
+    "lang": "zh-CN"
+  },
   "gitee": {
     "routes": {
       "/commits/:owner/:repo": {
@@ -41393,9 +41582,10 @@
         ],
         "maintainers": [
           "bigfei",
-          "nczitzk"
+          "nczitzk",
+          "reply2future"
         ],
-        "example": "/stats/sj/zxfb",
+        "example": "/gov/stats/sj/zxfb",
         "radar": [
           {
             "title": "国家统计局 通用",
@@ -61324,6 +61514,41 @@
     "url": "meituan.com",
     "lang": "zh-CN"
   },
+  "melonbooks": {
+    "routes": {
+      "/search/:query?": {
+        "path": "/search/:query?",
+        "categories": [
+          "anime"
+        ],
+        "example": "/melonbooks/search/name=けいおん",
+        "parameters": {
+          "category": "链接参数，对应网址问号后的内容，不携带问号"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "搜索结果",
+        "maintainers": [
+          "cokemine"
+        ],
+        "description": "::: tip\n如果你期望获取限制级内容，可以添加`&adult_view=1`参数\n:::",
+        "location": "search.ts"
+      }
+    },
+    "name": "メロンブックス",
+    "url": "www.melonbooks.co.jp",
+    "description": "サイン本の同人誌、同人ゲーム、同人音楽、同人グッズの通販は国内最大級、業界最速の萌えいっぱいの総合書店メロンブックスで。同人作品、同人委託の特典付商品も多数あり。直営店舗数も同人業界で最大級。",
+    "lang": "ja",
+    "categories": [
+      "anime"
+    ]
+  },
   "mercari": {
     "routes": {
       "/:sort/:order/:status/:keyword": {
@@ -68592,6 +68817,102 @@
     "url": "nwafu.edu.cn",
     "lang": "zh-CN"
   },
+  "nwnu": {
+    "routes": {
+      "/college/csse/:column": {
+        "path": "/college/csse/:column",
+        "name": "计算机科学与工程学院",
+        "maintainers": [
+          "PrinOrange"
+        ],
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "example": "/college/csse/2435",
+        "radar": [
+          {
+            "source": [
+              "jsj.nwnu.edu.cn/:column/list"
+            ],
+            "target": "/college/csse/:column"
+          }
+        ],
+        "description": "\n| column | 标题       | 描述                                          |\n| ------ | ---------- | --------------------------------------------- |\n| 2435   | 学院新闻   | 计算机科学与工程 学院新闻                     |\n| 2436   | 通知公告   | 计算机科学与工程 通知公告                     |\n| 2437   | 学术动态   | 计算机科学与工程 学术动态                     |\n| 2446   | 研究生招生 | 计算机科学与工程学院 研究生招生动态及相关新闻 |\n| 8411   | 评估动态   | 计算机科学与工程学院 院系学科评估动态         |",
+        "location": "routes/college/csse.ts"
+      },
+      "/department/academic-affairs/:column": {
+        "path": "/department/academic-affairs/:column",
+        "name": "教务处",
+        "maintainers": [
+          "PrinOrange"
+        ],
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportRadar": true,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "example": "/department/academic-affairs/tzgg",
+        "radar": [
+          {
+            "source": [
+              "jwc.nwnu.edu.cn/:column/list.htm"
+            ],
+            "target": "/department/academic-affairs/:column"
+          }
+        ],
+        "description": "\n| column | 标题     | 描述                     |\n| ------ | -------- | ------------------------ |\n| tzgg   | 通知公告 | 西北师范大学教务通知公告 |\n| jwkx   | 教务快讯 | 西北师范大学教务快讯     |",
+        "location": "routes/department/academic-affairs.ts"
+      },
+      "/department/postgraduate/:column": {
+        "path": "/department/postgraduate/:column",
+        "name": "研究生院",
+        "maintainers": [
+          "PrinOrange"
+        ],
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportRadar": true,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "example": "/department/postgraduate/2701",
+        "radar": [
+          {
+            "source": [
+              "yjsy.nwnu.edu.cn/:column/list.htm"
+            ],
+            "target": "/department/postgraduate/:column"
+          }
+        ],
+        "description": "\n| column | 标题                           | 描述                                               |\n| ------ | ------------------------------ | -------------------------------------------------- |\n| 2701   | 招生工作（包括硕士、博士招生） | 研究生院招生信息（包含硕士招生和博士招生两个栏目） |\n| 2712   | 博士招生                       | 研究生院博士研究生招生信息                         |\n| 2713   | 硕士招生                       | 研究生院硕士研究生招生信息                         |\n| 2702   | 培养工作                       | 培养工作栏目信息汇总                               |\n| 2703   | 学科建设                       | 研究生院学科建设信息汇总                           |\n| 2704   | 学位工作                       | 研究生院学位工作栏目信息汇总                       |",
+        "location": "routes/department/postgraduate.ts"
+      }
+    },
+    "name": "西北师范大学",
+    "url": "www.nwnu.edu.cn",
+    "lang": "zh-CN"
+  },
   "nyaa": {
     "routes": {
       "/search/:query?": {
@@ -75169,6 +75490,119 @@
     "name": "PlayStation Store",
     "url": "www.playstation.com",
     "lang": "en"
+  },
+  "psnine": {
+    "routes": {
+      "/game": {
+        "path": "/game",
+        "categories": [
+          "game"
+        ],
+        "example": "/psnine/game",
+        "name": "游戏",
+        "maintainers": [
+          "betta-cyber"
+        ],
+        "radar": [
+          {
+            "source": [
+              "psnine.com/psngame",
+              "psnine.com"
+            ]
+          }
+        ],
+        "location": "game.ts"
+      },
+      "/": {
+        "path": "/",
+        "categories": [
+          "game"
+        ],
+        "example": "/psnine",
+        "name": "首页",
+        "maintainers": [
+          "betta-cyber"
+        ],
+        "radar": [
+          {
+            "source": [
+              "psnine.com"
+            ]
+          }
+        ],
+        "location": "index.ts"
+      },
+      "/node/:id?/:order?": {
+        "path": "/node/:id?/:order?",
+        "parameters": {
+          "id": "节点 id，见下表，默认为 news",
+          "order": "排序，`date` 即最新，默认为 `obdate` 即综合排序"
+        },
+        "categories": [
+          "game"
+        ],
+        "example": "/psnine/node/news",
+        "name": "节点",
+        "maintainers": [
+          "betta-cyber",
+          "nczitzk"
+        ],
+        "radar": [
+          {
+            "source": [
+              "psnine.com/node/:id"
+            ]
+          }
+        ],
+        "location": "node.ts"
+      },
+      "/shuzhe": {
+        "path": "/shuzhe",
+        "categories": [
+          "game"
+        ],
+        "example": "/psnine/shuzhe",
+        "name": "数折",
+        "maintainers": [
+          "betta-cyber"
+        ],
+        "radar": [
+          {
+            "source": [
+              "psnine.com/dd",
+              "psnine.com"
+            ]
+          }
+        ],
+        "location": "shuzhe.ts"
+      },
+      "/trade": {
+        "path": "/trade",
+        "categories": [
+          "game"
+        ],
+        "example": "/psnine/trade",
+        "name": "闲游",
+        "maintainers": [
+          "betta-cyber"
+        ],
+        "radar": [
+          {
+            "source": [
+              "psnine.com/trade",
+              "psnine.com"
+            ]
+          }
+        ],
+        "location": "trade.ts"
+      }
+    },
+    "name": "PSN 中文站",
+    "url": "psnine.com",
+    "lang": "zh-CN",
+    "categories": [
+      "game"
+    ]
   },
   "psyche": {
     "routes": {
