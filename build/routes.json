@@ -8593,72 +8593,17 @@
   },
   "apnews": {
     "routes": {
-      "/api/:tags?": {
-        "path": "/api/:tags?",
+      "/mobile/:path{.+}?": {
+        "path": "/mobile/:path{.+}?",
         "categories": [
-          "traditional-media",
-          "popular"
+          "traditional-media"
         ],
-        "example": "/apnews/api/apf-topnews",
+        "example": "/apnews/mobile/ap-top-news",
         "view": 0,
         "parameters": {
-          "tags": {
-            "description": "Getting a list of articles from a public API based on tags.",
-            "options": [
-              {
-                "value": "apf-topnews",
-                "label": "Top News"
-              },
-              {
-                "value": "apf-sports",
-                "label": "Sports"
-              },
-              {
-                "value": "apf-politics",
-                "label": "Politics"
-              },
-              {
-                "value": "apf-entertainment",
-                "label": "Entertainment"
-              },
-              {
-                "value": "apf-usnews",
-                "label": "US News"
-              },
-              {
-                "value": "apf-oddities",
-                "label": "Oddities"
-              },
-              {
-                "value": "apf-Travel",
-                "label": "Travel"
-              },
-              {
-                "value": "apf-technology",
-                "label": "Technology"
-              },
-              {
-                "value": "apf-lifestyle",
-                "label": "Lifestyle"
-              },
-              {
-                "value": "apf-business",
-                "label": "Business"
-              },
-              {
-                "value": "apf-Health",
-                "label": "Health"
-              },
-              {
-                "value": "apf-science",
-                "label": "Science"
-              },
-              {
-                "value": "apf-intlnews",
-                "label": "International News"
-              }
-            ],
-            "default": "apf-topnews"
+          "path": {
+            "description": "Corresponding path from AP News website",
+            "default": "ap-top-news"
           }
         },
         "features": {
@@ -8676,11 +8621,11 @@
             ]
           }
         ],
-        "name": "News",
+        "name": "News (from mobile client API)",
         "maintainers": [
           "dzx-dzx"
         ],
-        "location": "api.ts"
+        "location": "mobile-api.ts"
       },
       "/rss/:category?": {
         "path": "/rss/:category?",
@@ -35147,6 +35092,37 @@
         "view": 0,
         "location": "news.ts"
       },
+      "/radios/preview": {
+        "path": "/radios/preview",
+        "name": "预告",
+        "url": "www.gcores.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/gcores/radios/preview",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.gcores.com/radios/preview"
+            ],
+            "target": "/gcores/radios/preview"
+          }
+        ],
+        "view": 5,
+        "location": "program-previews.ts"
+      },
       "/radios/:category?": {
         "path": "/radios/:category?",
         "categories": [
@@ -40144,6 +40120,38 @@
         "description": "#### 政府债券管理\n\n| 国债管理工作动态 | 记账式国债 (含特别国债) 发行 | 储蓄国债发行 | 地方政府债券管理      |\n| ---------------- | ---------------------------- | ------------ | --------------------- |\n| gzfxgzdt         | gzfxzjs                      | gzfxdzs      | difangzhengfuzhaiquan |",
         "location": "mof/bond.ts"
       },
+      "/mof/gss/:category?": {
+        "path": "/mof/gss/:category?",
+        "categories": [
+          "government"
+        ],
+        "example": "/gov/mof/gss",
+        "parameters": {
+          "category": "列表标签，默认为政策发布"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "关税政策文件",
+        "maintainers": [
+          "la3rence"
+        ],
+        "description": "#### 关税文件发布\n\n| 政策发布 | 政策解读 |\n| ------------- | -------------- |\n| zhengcefabu   | zhengcejiedu   |",
+        "radar": [
+          {
+            "source": [
+              "gss.mof.gov.cn/gzdt/:category/"
+            ],
+            "target": "/mof/gss/:category"
+          }
+        ],
+        "location": "mof/gss.ts"
+      },
       "/mofcom/article/:suffix{.+}": {
         "path": "/mofcom/article/:suffix{.+}",
         "name": "Unknown",
@@ -43751,6 +43759,46 @@
     "name": "hameln",
     "url": "syosetu.org",
     "lang": "ja"
+  },
+  "hanime1": {
+    "routes": {
+      "/previews/:date": {
+        "path": "/previews/:date",
+        "name": "新番预告",
+        "maintainers": [
+          "kjasn"
+        ],
+        "example": "/hanime1/previews/202504",
+        "categories": [
+          "anime"
+        ],
+        "parameters": {
+          "date": {
+            "description": "Date in YYYYMM format"
+          }
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "hanime1.me/previews/:date"
+            ],
+            "target": "/previews/:date"
+          }
+        ],
+        "location": "previews.ts"
+      }
+    },
+    "name": "Hanime1",
+    "url": "hanime1.me",
+    "description": "NSFW WARNING!!! It contains adult content. Hanime1 provides adult anime"
   },
   "harvard": {
     "routes": {
@@ -56854,6 +56902,31 @@
         ],
         "description": "#### `job_types` list\n\n| Full Time | Part Time | Contractor | All |\n| --------- | --------- | ---------- | --- |\n| F         | P         | C          | all |\n\n#### `exp_levels` list\n\n| Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n| --------- | ----------- | --------- | ---------------- | -------- | --- |\n| 1         | 2           | 3         | 4                | 5        | all |\n\n#### `routeParams` additional query parameters\n\n##### `f_WT` list\n\n| Onsite | Remote | Hybrid |\n| ------ | ------- | ------ |\n|    1   |    2    |   3    |\n\n##### `geoId`\n\n  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.\n\n  For example:\n  91000012 is the ID of East Asia.\n\n##### `f_TPR`\n\n  Time posted range. Here are some possible values:\n\n  *   `r86400`: Past 24 hours\n  *   `r604800`: Past week\n  *   `r2592000`: Past month\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**",
         "location": "jobs.ts"
+      },
+      "/company/:company_id/posts": {
+        "path": "/company/:company_id/posts",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/linkedin/company/google/posts",
+        "parameters": {
+          "company_id": "Company's LinkedIn profile ID"
+        },
+        "description": "Get company's LinkedIn posts by company ID",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Company Posts",
+        "maintainers": [
+          "saifazmi"
+        ],
+        "location": "posts.ts"
       },
       "/cn/jobs/:keywords?": {
         "path": "/cn/jobs/:keywords?",
@@ -103989,6 +104062,64 @@
         ],
         "description": "栏目类型\n\n| 招生动态 | 通知公告 | 政策法规 | 招生统计 | 历年复试线 | 博士招生 | 硕士招生 | 推免生 | 其他招生 |\n| -------- | -------- | -------- | -------- | ---------- | -------- | -------- | ------ | -------- |\n| zsdt     | tzgg     | zcfg     | zstj     | lnfsx      | bszs     | sszs     | tms    | qtzs     |",
         "location": "yz.ts"
+      },
+      "/zs/:category{.+}?": {
+        "path": "/zs/:category{.+}?",
+        "name": "本科招生网",
+        "url": "zs.xjtu.edu.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/xjtu/zs/zsxx1/zskx",
+        "parameters": {
+          "category": {
+            "description": "分类，默认为 zsxx1/zskx，可在对应分类页 URL 中找到",
+            "options": [
+              {
+                "label": "招生快讯",
+                "value": "zsxx1/zskx"
+              },
+              {
+                "label": "招生政策",
+                "value": "zsxx1/zszc"
+              },
+              {
+                "label": "招生计划",
+                "value": "zsxx1/zsjh"
+              },
+              {
+                "label": "阳光公告",
+                "value": "zsxx1/yggg"
+              },
+              {
+                "label": "历年录取",
+                "value": "zsxx1/lnlq"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\n若订阅 [招生快讯](https://zs.xjtu.edu.cn/zsxx1/zskx.htm)，网址为 `https://zs.xjtu.edu.cn/zsxx1/zskx.htm`，请截取 `https://zs.xjtu.edu.cn/` 到末尾 `.htm` 的部分 `zsxx1/zskx` 作为 `category` 参数填入，此时目标路由为 [`/xjtu/zs/zsxx1/zskx`](https://rsshub.app/xjtu/zs/zsxx1/zskx)。\n:::\n\n| [招生快讯](https://zs.xjtu.edu.cn/zsxx1/zskx.htm)   | [招生政策](https://zs.xjtu.edu.cn/zsxx1/zszc.htm)   | [招生计划](https://zs.xjtu.edu.cn/zsxx1/zsjh.htm)   | [阳光公告](https://zs.xjtu.edu.cn/zsxx1/yggg.htm)   | [历年录取](https://zs.xjtu.edu.cn/zsxx1/lnlq.htm)   |\n| --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- |\n| [zsxx1/zskx](https://rsshub.app/xjtu/zs/zsxx1/zskx) | [zsxx1/zszc](https://rsshub.app/xjtu/zs/zsxx1/zszc) | [zsxx1/zsjh](https://rsshub.app/xjtu/zs/zsxx1/zsjh) | [zsxx1/yggg](https://rsshub.app/xjtu/zs/zsxx1/yggg) | [zsxx1/lnlq](https://rsshub.app/xjtu/zs/zsxx1/lnlq) |\n",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "zs.xjtu.edu.cn/:category"
+            ]
+          }
+        ],
+        "view": 0,
+        "location": "zs.ts"
       },
       "/2yuan/news/:id?": {
         "path": "/2yuan/news/:id?",
