@@ -326,9 +326,6 @@
   "/acs/journal/:id": [
     "nczitzk"
   ],
-  "/adquan/": [
-    "nczitzk"
-  ],
   "/aeaweb/:id": [
     "nczitzk"
   ],
@@ -4153,9 +4150,6 @@
   ],
   "/jimmyspa/news/:language": [
     "FYLSen"
-  ],
-  "/jin10/category/:id": [
-    "laampui"
   ],
   "/jin10/:important?": [
     "laampui"

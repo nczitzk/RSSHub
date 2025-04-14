@@ -2905,19 +2905,6 @@
       }
     ]
   },
-  "adquan.com": {
-    "_name": "广告门",
-    "www": [
-      {
-        "title": "最新文章",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/"
-        ],
-        "target": "/adquan/"
-      }
-    ]
-  },
   "aeaweb.org": {
     "_name": "American Economic Association",
     ".": [
@@ -20204,14 +20191,6 @@
   "jin10.com": {
     "_name": "金十数据",
     ".": [
-      {
-        "title": "外汇",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/"
-        ],
-        "target": "/jin10/category/:id"
-      },
       {
         "title": "市场快讯",
         "docs": "https://docs.rsshub.app/routes/finance",
