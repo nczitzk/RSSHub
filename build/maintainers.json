@@ -3127,7 +3127,8 @@
     "nczitzk"
   ],
   "/gov/nea/sjzz/ghs": [
-    "nczitzk"
+    "nczitzk",
+    "pseudoyu"
   ],
   "/gov/nifdc/:path{.+}?": [],
   "/gov/nmpa/*": [],
@@ -4388,7 +4389,8 @@
   "/kunchengblog/essay": [
     "nczitzk"
   ],
-  "/kurogames/wutheringwaves/news": [
+  "/kurogames/wutheringwaves/news/:language?": [
+    "goestav",
     "enpitsulin"
   ],
   "/kuwaitlocal/:category?": [
@@ -7867,7 +7869,8 @@
     "MisteryMonster"
   ],
   "/wechat/sogou/:id": [
-    "EthanWng97"
+    "EthanWng97",
+    "pseudoyu"
   ],
   "/wechat/tgchannel/:id/:mpName?/:searchQueryType?": [
     "LogicJake",
@@ -8345,8 +8348,9 @@
   "/youmemark/:userid": [
     "pseudoyu"
   ],
-  "/youtube/channel/:id/:embed?": [
-    "DIYgod"
+  "/youtube/channel/:id/:routeParams?": [
+    "DIYgod",
+    "pseudoyu"
   ],
   "/youtube/charts/:category?/:country?/:embed?": [
     "TonyRL"
@@ -8366,8 +8370,9 @@
   "/youtube/subscriptions/:embed?": [
     "TonyRL"
   ],
-  "/youtube/user/:username/:embed?": [
-    "DIYgod"
+  "/youtube/user/:username/:routeParams?": [
+    "DIYgod",
+    "pseudoyu"
   ],
   "/youzhiyouxing/materials/:id?": [
     "broven",

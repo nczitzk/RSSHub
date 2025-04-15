@@ -40992,14 +40992,16 @@
           {
             "source": [
               "nea.gov.cn/sjzz/ghs/"
-            ]
+            ],
+            "target": "/nea/sjzz/ghs"
           }
         ],
         "name": "发展规划司",
         "maintainers": [
-          "nczitzk"
+          "nczitzk",
+          "pseudoyu"
         ],
-        "url": "nea.gov.cn/sjzz/ghs/",
+        "url": "www.nea.gov.cn/sjzz/ghs/",
         "location": "nea/ghs.ts"
       },
       "/nifdc/:path{.+}?": {
@@ -55540,12 +55542,15 @@
   },
   "kurogames": {
     "routes": {
-      "/wutheringwaves/news": {
-        "path": "/wutheringwaves/news",
+      "/wutheringwaves/news/:language?": {
+        "path": "/wutheringwaves/news/:language?",
         "categories": [
           "game"
         ],
         "example": "/kurogames/wutheringwaves/news",
+        "parameters": {
+          "language": "The language to use for the content. Default: `zh`."
+        },
         "name": "鸣潮 — 游戏公告、新闻与活动",
         "radar": [
           {
@@ -55553,16 +55558,24 @@
               "mc.kurogames.com/m/main/news",
               "mc.kurogames.com/main"
             ]
+          },
+          {
+            "title": "Wuthering Waves — Game announcements, news and events",
+            "source": [
+              "wutheringwaves.kurogames.com/en/main/news",
+              "wutheringwaves.kurogames.com/en/main"
+            ]
           }
         ],
         "maintainers": [
+          "goestav",
           "enpitsulin"
         ],
-        "description": "",
+        "description": "\nLanguage codes for the `language` parameter:\n\n| Language | Code         |\n|----------|--------------|\n| English  | en           |\n| 日本語    | jp           |\n| 한국어     | kr           |\n| 简体中文   | zh (default) |\n| 繁體中文   | zh-tw        |\n| Español  | es           |\n| Français | fr           |\n| Deutsch  | de           |\n    ",
         "location": "wutheringwaves/news.ts"
       }
     },
-    "name": "库洛游戏",
+    "name": "库洛游戏 | Kuro Games",
     "url": "www.kurogames.com",
     "categories": [
       "game"
@@ -81745,7 +81758,7 @@
           "/:subforumid?",
           ""
         ],
-        "name": "Unknown",
+        "name": "Forum",
         "maintainers": [
           "qiwihui",
           "junfengP",
@@ -81765,7 +81778,7 @@
           "/:subforumid?",
           ""
         ],
-        "name": "Unknown",
+        "name": "Forum",
         "maintainers": [
           "qiwihui",
           "junfengP",
@@ -81785,7 +81798,7 @@
           "/:subforumid?",
           ""
         ],
-        "name": "Unknown",
+        "name": "Forum",
         "maintainers": [
           "qiwihui",
           "junfengP",
@@ -81805,7 +81818,7 @@
           "/:subforumid?",
           ""
         ],
-        "name": "Unknown",
+        "name": "Forum",
         "maintainers": [
           "qiwihui",
           "junfengP",
@@ -81825,7 +81838,7 @@
           "/:subforumid?",
           ""
         ],
-        "name": "Unknown",
+        "name": "Forum",
         "maintainers": [
           "qiwihui",
           "junfengP",
@@ -101281,14 +101294,15 @@
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
-          "antiCrawler": false,
+          "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
         },
         "name": "公众号（搜狗来源）",
         "maintainers": [
-          "EthanWng97"
+          "EthanWng97",
+          "pseudoyu"
         ],
         "location": "sogou.ts"
       },
@@ -106093,16 +106107,30 @@
   },
   "youtube": {
     "routes": {
-      "/channel/:id/:embed?": {
-        "path": "/channel/:id/:embed?",
+      "/channel/:id/:routeParams?": {
+        "path": "/channel/:id/:routeParams?",
         "categories": [
           "social-media"
         ],
         "example": "/youtube/channel/UCDwDMPOZfxVV0x_dz0eQ8KQ",
         "parameters": {
           "id": "YouTube channel id",
-          "embed": "Default to embed the video, set to any value to disable embedding"
+          "routeParams": "Extra parameters, see the table below"
         },
+        "radar": [
+          {
+            "source": [
+              "www.youtube.com/channel/:id"
+            ],
+            "target": "/channel/:id"
+          }
+        ],
+        "name": "Channel with id",
+        "maintainers": [
+          "DIYgod",
+          "pseudoyu"
+        ],
+        "description": ":::tip Parameter\n| Name       | Description                                                                         | Default |\n| ---------- | ----------------------------------------------------------------------------------- | ------- |\n| embed      | Whether to embed the video, fill in any value to disable embedding                  | embed   |\n| filterShorts | Whether to filter out shorts from the feed, fill in any falsy value to show shorts | true    |\n:::\n\n::: tip\nYouTube provides official RSS feeds for channels, for instance [https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ](https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ).\n:::",
         "features": {
           "requireConfig": [
             {
@@ -106116,19 +106144,6 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "radar": [
-          {
-            "source": [
-              "www.youtube.com/channel/:id"
-            ],
-            "target": "/channel/:id"
-          }
-        ],
-        "name": "Channel with id",
-        "maintainers": [
-          "DIYgod"
-        ],
-        "description": "::: tip\nYouTube provides official RSS feeds for channels, for instance [https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ](https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ).\n:::",
         "location": "channel.ts"
       },
       "/charts/:category?/:country?/:embed?": {
@@ -106306,8 +106321,8 @@
         "url": "www.youtube.com/feed/subscriptions",
         "location": "subscriptions.ts"
       },
-      "/user/:username/:embed?": {
-        "path": "/user/:username/:embed?",
+      "/user/:username/:routeParams?": {
+        "path": "/user/:username/:routeParams?",
         "categories": [
           "social-media",
           "popular"
@@ -106316,8 +106331,9 @@
         "example": "/youtube/user/@JFlaMusic",
         "parameters": {
           "username": "YouTuber handle with @",
-          "embed": "Default to embed the video, set to any value to disable embedding"
+          "routeParams": "Extra parameters, see the table below"
         },
+        "description": ":::tip Parameter\n| Name       | Description                                                                         | Default |\n| ---------- | ----------------------------------------------------------------------------------- | ------- |\n| embed      | Whether to embed the video, fill in any value to disable embedding                  | embed   |\n| filterShorts | Whether to filter out shorts from the feed, fill in any falsy value to show shorts | true    |\n:::",
         "features": {
           "requireConfig": [
             {
@@ -106342,7 +106358,8 @@
         ],
         "name": "Channel with user handle",
         "maintainers": [
-          "DIYgod"
+          "DIYgod",
+          "pseudoyu"
         ],
         "location": "user.ts"
       }
