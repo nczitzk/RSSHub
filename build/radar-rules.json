@@ -2909,6 +2909,14 @@
     "_name": "广告门",
     "www": [
       {
+        "title": "案例库",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/case_library/index"
+        ],
+        "target": "/adquan/case_library"
+      },
+      {
         "title": "最新文章",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
@@ -10097,6 +10105,19 @@
       }
     ]
   },
+  "coolpc.com.tw": {
+    "_name": "原價屋",
+    "www": [
+      {
+        "title": "促銷&開箱",
+        "docs": "https://docs.rsshub.app/routes/shopping",
+        "source": [
+          "/"
+        ],
+        "target": "/coolpc/news"
+      }
+    ]
+  },
   "coomer.su": {
     "_name": "Coomer",
     ".": [
@@ -11582,9 +11603,9 @@
       }
     ]
   },
-  "domp4.cc": {
+  "xlmp4.com": {
     "_name": "DoMP4 影视",
-    ".": [
+    "www": [
       {
         "title": "剧集订阅",
         "docs": "https://docs.rsshub.app/routes/multimedia",
@@ -19964,6 +19985,27 @@
           "/"
         ],
         "target": "/j-test/news"
+      }
+    ]
+  },
+  "jandan.net": {
+    "_name": "煎蛋",
+    "i": [
+      {
+        "title": "Feed",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/"
+        ],
+        "target": "/jandan/jandan"
+      },
+      {
+        "title": "Section",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/:category"
+        ],
+        "target": "/jandan/jandan/:category?"
       }
     ]
   },
