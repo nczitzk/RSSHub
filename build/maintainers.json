@@ -78,9 +78,6 @@
   "/0x80/blog": [
     "xnum"
   ],
-  "/10000link/info/:category?/:id?": [
-    "nczitzk"
-  ],
   "/10jqka/realtimenews/:tag?": [
     "nczitzk"
   ],
@@ -349,9 +346,6 @@
   ],
   "/afdian/explore/:type/:category?": [
     "sanmmm"
-  ],
-  "/aflcio/blog": [
-    "nczitzk"
   ],
   "/afr/latest": [
     "TonyRL"
@@ -1499,9 +1493,6 @@
   "/clickme/:site/:grouping/:name": [
     "hoilc"
   ],
-  "/cline/blog": [
-    "yeshan333"
-  ],
   "/cloudnative/blog": [
     "aneasystone"
   ],
@@ -1710,9 +1701,6 @@
   ],
   "/cqwu/news/:type?": [
     "Fatpandac"
-  ],
-  "/crac/exam": [
-    "admxj"
   ],
   "/crac/:type?": [
     "Misaka13514"
@@ -7226,10 +7214,10 @@
     "DIYgod",
     "NeverBehave"
   ],
-  "/tfc-taiwan/category/:category": [
+  "/tfc-taiwan/:type?": [
     "TonyRL"
   ],
-  "/tfc-taiwan/": [
+  "/tfc-taiwan/:type/:id{.+}": [
     "TonyRL"
   ],
   "/tgbus/list/:category": [
