@@ -3536,7 +3536,7 @@ export default {
       }
     },
     "name": "4KHD",
-    "url": "www.4khd.net",
+    "url": "www.4khd.com",
     "description": "4KHD - HD Beautiful Girls",
     "lang": "en"
   },
@@ -23613,18 +23613,30 @@ export default {
     "routes": {
       "/:id?/:type?/:keyword?": {
         "path": "/:id?/:type?/:keyword?",
+        "url": "cool18.com",
+        "example": "cool18.com/bbs4",
+        "parameters": {
+          "id": "the name of the bbs",
+          "type": "the type of the post. Can be `home`, `gold` or `threadsearch`. Default: `home`",
+          "keyword": "the keyword to search.",
+          "pageSize": "the number of posts to fetch. If the type is not in search, you can type any words. Default: 10"
+        },
+        "categories": [
+          "bbs"
+        ],
         "radar": [
           {
             "source": [
-              "cool18.com/"
-            ]
+              "cool18.com/:id/"
+            ],
+            "target": "/:id/:type?/:keyword?"
           }
         ],
-        "name": "Unknown",
+        "name": "禁忌书屋",
         "maintainers": [
-          "nczitzk"
+          "nczitzk",
+          "Gabrlie"
         ],
-        "url": "cool18.com/",
         "location": "index.ts",
         "module": () => import('@/routes/cool18/index.ts')
       }
@@ -45407,9 +45419,9 @@ export default {
   },
   "hanime1": {
     "routes": {
-      "/previews/:date": {
-        "path": "/previews/:date",
-        "name": "新番预告",
+      "/previews/:date?": {
+        "path": "/previews/:date?",
+        "name": "每月新番",
         "maintainers": [
           "kjasn"
         ],
@@ -45419,7 +45431,7 @@ export default {
         ],
         "parameters": {
           "date": {
-            "description": "Date in YYYYMM format"
+            "description": "日期格式为 `YYYYMM`，默认值当月"
           }
         },
         "features": {
@@ -45433,13 +45445,40 @@ export default {
         "radar": [
           {
             "source": [
-              "hanime1.me/previews/:date"
+              "hanime1.me/previews/:date",
+              "hanime1.me/previews"
             ],
             "target": "/previews/:date"
           }
         ],
         "location": "previews.ts",
         "module": () => import('@/routes/hanime1/previews.ts')
+      },
+      "/search/:params": {
+        "path": "/search/:params",
+        "name": "搜索结果",
+        "maintainers": [
+          "kjasn"
+        ],
+        "example": "/hanime1/search/tags%5B%5D=%E7%B4%94%E6%84%9B&",
+        "categories": [
+          "anime"
+        ],
+        "parameters": {
+          "params": {
+            "description": "\n| 参数                | 说明                              | 示例或可选值                                                                                                          |\n| ------------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------- |\n| `query`           | 搜索框输入的内容                  | 任意值都可以，例如：`辣妹`                                                                                          |\n| `genre`           | 番剧类型，默认为`全部`          | 可选值有：`全部` / `裏番` / `泡麵番` / `Motion+Anime` / `3D動畫` / `同人作品` / `MMD` / `Cosplay`     |\n| `tags[]`          | 标签                              | 可选值过多，不一一列举，详细请查看原网址。例如：`tags[]=純愛&tags[]=中文字幕`                                       |\n| `broad`           | 标签模糊匹配，默认为 `off`      | `on`（模糊匹配，包含任一标签） / `off`（精确匹配，包含全部标签）                                                  |\n| `sort`            | 搜索结果排序，默认 `最新上市`   | `最新上市` / `最新上傳` / `本日排行` / `本週排行` / `本月排行` / `觀看次數` / `讚好比例` / `他們在看` |\n| `year`, `month` | 筛选发布时间，默认为 `全部时间` | 例如：`year=2025&month=5`                                                                                           |\n\n**Tips**: 如果你不确定标签或类型的具体名字，可以直接去原网址选好筛选条件后，把网址中的参数复制过来使用。例如： `https://hanime1.me/search?query=&genre=裏番&broad=on&sort=最新上市&tags[]=純愛&tags[]=中文字幕`，`/search?`后面的部分就是参数了,最后得到类似这样的路由 `https://rsshub.app/hanime1/search/query=&genre=裏番&broad=on&sort=最新上市&tags[]=純愛&tags[]=中文字幕`\n"
+          }
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "search.ts",
+        "module": () => import('@/routes/hanime1/search.ts')
       }
     },
     "name": "Hanime1",
@@ -47498,29 +47537,57 @@ export default {
         "location": "character.ts",
         "module": () => import('@/routes/hpoi/character.ts')
       },
-      "/info/:type?": {
-        "path": "/info/:type?",
+      "/info/:type?/:catType?": {
+        "path": "/info/:type?/:catType?",
         "categories": [
           "anime"
         ],
-        "example": "/hpoi/info/all",
+        "example": "/hpoi/info/all/hobby|model",
         "parameters": {
           "type": {
-            "description": "分类",
+            "description": "情报类型",
             "options": [
               {
                 "value": "all",
                 "label": "全部"
               },
               {
+                "value": "confirm",
+                "label": "制作"
+              },
+              {
+                "value": "official_pic",
+                "label": "官图更新"
+              },
+              {
+                "value": "preorder",
+                "label": "开订"
+              },
+              {
+                "value": "delay",
+                "label": "延期"
+              },
+              {
+                "value": "release",
+                "label": "出荷"
+              },
+              {
+                "value": "reorder",
+                "label": "再版"
+              },
+              {
                 "value": "hobby",
-                "label": "手办"
+                "label": "手办(拟废弃, 无效果)"
               },
               {
                 "value": "model",
-                "label": "模型"
+                "label": "动漫模型(拟废弃, 无效果)"
               }
             ],
+            "default": "all"
+          },
+          "catType": {
+            "description": "手办分类过滤, 使用|分割, 支持的分类见下表",
             "default": "all"
           }
         },
@@ -47536,6 +47603,7 @@ export default {
         "maintainers": [
           "sanmmm DIYgod"
         ],
+        "description": "::: tip\n  情报类型中的*手办*、*模型*只是为了兼容, 实际效果等同于**全部**, 如果只需要**手办**类型的情报, 可以使用参数*catType*, e.g. /hpoi/info/all/hobby\n:::\n\n|  手办   | 动漫模型 | 真实模型 | 毛绒布偶 | doll娃娃 | GK/其他 |\n| ------ | ------- | ------- | ------- | ------- | ------ |\n| hobby  |  model  |  real   | moppet  |  doll   | gkdiy  |",
         "location": "info.ts",
         "module": () => import('@/routes/hpoi/info.ts')
       },
@@ -51356,7 +51424,8 @@ export default {
         ],
         "name": "Engineering blogs",
         "maintainers": [
-          "ZiHao256"
+          "ZiHao256",
+          "qzydustin"
         ],
         "url": "infos.imhcg.cn",
         "location": "blog.ts",
@@ -55851,7 +55920,7 @@ export default {
         "radar": [
           {
             "source": [
-              "www.12356782.xyz/:tab"
+              "mei5.vip/:tab"
             ],
             "target": "/:tab"
           }
@@ -55872,7 +55941,7 @@ export default {
         "radar": [
           {
             "source": [
-              "www.12356782.xyz/"
+              "mei5.vip/"
             ],
             "target": "/weekly"
           }
@@ -56447,6 +56516,49 @@ export default {
     },
     "name": "掘金",
     "url": "juejin.cn",
+    "lang": "zh-CN"
+  },
+  "jumeili": {
+    "routes": {
+      "/home/:column?": {
+        "path": "/home/:column?",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/jumeili/home",
+        "parameters": {
+          "column": "内容栏, 默认为 `0`（最新）。其他可选：`-1`（头条）、`62073`（精选）、`13243`（年度大会）等。详细可以在开发者工具 Network 面板中找到，如：`https://www.jumeili.cn/ws/AjaxService.ashx?act=index_article&page=1&pageSize=20&column=0`最后的 `column=0` 即为`column` 参数"
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "JUMEILI_COOKIE",
+              "optional": true,
+              "description": "用户登录后，可以从浏览器开发者工具 Network 面板中的 jumeili 页面请求获取 Cookie，如：`ASP.NET_SessionId=xxx;jmlweb4=xxx`全部复制并设置为环境变量"
+            }
+          ],
+          "antiCrawler": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.jumeili.cn/",
+              "jumeili.cn/"
+            ],
+            "target": "/home/:column?"
+          }
+        ],
+        "name": "首页资讯",
+        "maintainers": [
+          "kjasn"
+        ],
+        "description": ":::Warning\n未登录用户无法获取完整文章内容，只能看到预览内容。想要获取完整文章内容，需要设置`JUMEILI_COOKIE`环境变量。\n:::",
+        "location": "home.ts",
+        "module": () => import('@/routes/jumeili/home.ts')
+      }
+    },
+    "name": "聚美丽",
+    "url": "jumeili.cn",
     "lang": "zh-CN"
   },
   "jump": {
@@ -76133,8 +76245,12 @@ export default {
     "routes": {
       "/:site?/:category{.+}?": {
         "path": "/:site?/:category{.+}?",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "首页头条",
+        "maintainers": [
+          "nczitzk",
+          "pseudoyu"
+        ],
+        "example": "/people",
         "location": "index.ts",
         "module": () => import('@/routes/people/index.ts')
       },
@@ -76405,13 +76521,13 @@ export default {
         "radar": [
           {
             "source": [
-              "pixwox.com/profile/:id"
+              "www.pixnoy.com/profile/:id"
             ],
             "target": "/user/:id"
           },
           {
             "source": [
-              "pixwox.com/profile/:id/tagged"
+              "www.pixnoy.com/profile/:id/tagged"
             ],
             "target": "/user/:id/tagged"
           }
@@ -84064,7 +84180,7 @@ export default {
           "Ji4n1ng",
           "wiketool"
         ],
-        "description": "| 学院公告 | 学术报告 | 科技简讯 | 本科教育 | 研究生教育 | \n| -------- | -------- | -------- | -------- | -------- |\n| announcement | academic | technology | undergraduate | postgraduate |",
+        "description": "| 学院公告 | 学术报告 | 科技简讯 | 本科教育 | 研究生教育 |\n| -------- | -------- | -------- | -------- | -------- |\n| announcement | academic | technology | undergraduate | postgraduate |",
         "location": "cs/index.ts",
         "module": () => import('@/routes/sdu/cs/index.ts')
       },
@@ -88114,6 +88230,37 @@ export default {
   },
   "sohu": {
     "routes": {
+      "/mobile": {
+        "path": "/mobile",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/sohu/mobile",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "m.sohu.com/limit"
+            ],
+            "target": "/mobile"
+          }
+        ],
+        "name": "首页新闻",
+        "maintainers": [
+          "asqwe1"
+        ],
+        "description": "订阅手机搜狐网的首页新闻",
+        "location": "mobile.ts",
+        "module": () => import('@/routes/sohu/mobile.ts')
+      },
       "/mp/:xpt": {
         "path": "/mp/:xpt",
         "categories": [
@@ -109546,7 +109693,8 @@ export default {
       "/community/:handle": {
         "path": "/community/:handle",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/youtube/community/@JFlaMusic",
         "parameters": {
