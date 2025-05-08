@@ -10236,12 +10236,12 @@
     "_name": "禁忌书屋",
     ".": [
       {
-        "title": "禁忌书屋",
-        "docs": "https://docs.rsshub.app/routes/bbs",
+        "title": "Unknown",
+        "docs": "https://docs.rsshub.app/routes/other",
         "source": [
-          "/:id/"
+          "/"
         ],
-        "target": "/cool18/:id/:type?/:keyword?"
+        "target": "/cool18/:id?/:type?/:keyword?"
       }
     ]
   },
@@ -17289,11 +17289,10 @@
     "_name": "Hanime1",
     ".": [
       {
-        "title": "每月新番",
+        "title": "新番预告",
         "docs": "https://docs.rsshub.app/routes/anime",
         "source": [
-          "/previews/:date",
-          "/previews"
+          "/previews/:date"
         ],
         "target": "/hanime1/previews/:date"
       }
@@ -20831,9 +20830,9 @@
       }
     ]
   },
-  "mei5.vip": {
+  "12356782.xyz": {
     "_name": "极品性感美女",
-    ".": [
+    "www": [
       {
         "title": "分类",
         "docs": "https://docs.rsshub.app/routes/picture",
@@ -20933,20 +20932,6 @@
           "/tag/:tag"
         ],
         "target": "/juejin/tag/:tag"
-      }
-    ]
-  },
-  "jumeili.cn": {
-    "_name": "聚美丽",
-    "www": [
-      {
-        "title": "首页资讯",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/",
-          "/"
-        ],
-        "target": "/jumeili/home/:column?"
       }
     ]
   },
@@ -29317,9 +29302,9 @@
       }
     ]
   },
-  "pixnoy.com": {
+  "pixwox.com": {
     "_name": "Instagram",
-    "www": [
+    ".": [
       {
         "title": "User Profile - Picnob",
         "docs": "https://docs.rsshub.app/routes/social-media",
@@ -32665,16 +32650,6 @@
   },
   "sohu.com": {
     "_name": "搜狐号",
-    "m": [
-      {
-        "title": "首页新闻",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/limit"
-        ],
-        "target": "/sohu/mobile"
-      }
-    ],
     "mp": [
       {
         "title": "最新",
