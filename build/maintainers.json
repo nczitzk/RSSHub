@@ -1652,7 +1652,8 @@
     "TonyRL"
   ],
   "/cool18/:id?/:type?/:keyword?": [
-    "nczitzk"
+    "nczitzk",
+    "Gabrlie"
   ],
   "/coolapk/dyh/:dyhId": [
     "xizeyoupan"
@@ -3433,7 +3434,10 @@
   "/hameln/chapter/:id": [
     "huangliangshusheng"
   ],
-  "/hanime1/previews/:date": [
+  "/hanime1/previews/:date?": [
+    "kjasn"
+  ],
+  "/hanime1/search/:params": [
     "kjasn"
   ],
   "/harvard/health/blog": [
@@ -3627,7 +3631,7 @@
   "/hpoi/items/character/:id/:order?": [
     "DIYgod"
   ],
-  "/hpoi/info/:type?": [
+  "/hpoi/info/:type?/:catType?": [
     "sanmmm DIYgod"
   ],
   "/hpoi/user/:user_id/:caty": [
@@ -3895,7 +3899,8 @@
     "TonyRL"
   ],
   "/imhcg/": [
-    "ZiHao256"
+    "ZiHao256",
+    "qzydustin"
   ],
   "/imiker/ask/jinghua": [
     "nczitzk"
@@ -4336,6 +4341,9 @@
   ],
   "/juejin/trending/:category/:type": [
     "moaix"
+  ],
+  "/jumeili/home/:column?": [
+    "kjasn"
   ],
   "/jump/discount/:platform/:filter?/:countries?": [
     "zytomorrow"
@@ -5757,7 +5765,10 @@
   "/penguin-random-house/the-read-down": [
     "StevenRCE0"
   ],
-  "/people/:site?/:category{.+}?": [],
+  "/people/:site?/:category{.+}?": [
+    "nczitzk",
+    "pseudoyu"
+  ],
   "/people/liuyan/:id/:state?": [
     "nczitzk"
   ],
@@ -6816,6 +6827,9 @@
   ],
   "/sogou/search/:keyword": [
     "CaoMeiYouRen"
+  ],
+  "/sohu/mobile": [
+    "asqwe1"
   ],
   "/sohu/mp/:xpt": [
     "HenryQW"
