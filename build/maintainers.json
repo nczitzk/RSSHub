@@ -489,6 +489,9 @@
   "/alternativeto/software/:name/:routeParams?": [
     "JimenezLi"
   ],
+  "/amazfitwatchfaces/:device/:sort/:searchParams?": [
+    "nczitzk"
+  ],
   "/amazon/awsblogs/:locale?": [
     "HankChow"
   ],
@@ -512,6 +515,9 @@
   ],
   "/anquanke/:category/:fulltext?": [
     "qwertyuiop6"
+  ],
+  "/anthropic/engineering": [
+    "TonyRL"
   ],
   "/anthropic/news": [
     "etShaw-zh"
@@ -1460,6 +1466,9 @@
   "/chlinlearn/daily-blog": [
     "huyyi"
   ],
+  "/chongbuluo/newthread": [
+    "qiye45"
+  ],
   "/chongdiantou/": [
     "Geraldxm"
   ],
@@ -2262,6 +2271,9 @@
     "nczitzk"
   ],
   "/e-hentai/:what?/:id?/:needTorrents?/:needImages?": [],
+  "/ea/apex-news/:lang?/:type?": [
+    "IceChestnut"
+  ],
   "/eagle/blog/:cate?/:language?": [
     "Fatpandac"
   ],
@@ -3692,6 +3704,9 @@
   ],
   "/hubu/zhxy/:category{.+}?": [
     "nczitzk"
+  ],
+  "/huggingface/blog-community/:sort?": [
+    "yuguorui"
   ],
   "/huggingface/blog-zh": [
     "zcf0508"
@@ -6292,7 +6307,9 @@
   "/rfa/:language?/:channel?/:subChannel?": [
     "zphw"
   ],
-  "/rfi/:path{.+}?": [],
+  "/rfi/:path{.+}?": [
+    "nczitzk"
+  ],
   "/right/forum/:id?": [
     "nczitzk"
   ],
@@ -8473,6 +8490,9 @@
   ],
   "/zagg/new-arrivals/:query?": [
     "EthanWng97"
+  ],
+  "/zaimanhua/update": [
+    "kjasn"
   ],
   "/zaker/channel/:id?": [
     "LogicJake",

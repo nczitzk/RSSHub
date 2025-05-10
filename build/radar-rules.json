@@ -4747,6 +4747,179 @@
       }
     ]
   },
+  "amazfitwatchfaces.com": {
+    "_name": "Amazfitwatchfaces",
+    ".": [
+      {
+        "title": "Watch Faces",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/:device/:sort"
+        ],
+        "target": "/amazfitwatchfacesparams=>{const device=params.device;const sort=params.sort;return`/amazfitwatchfaces${device?`/${device}${sort?`/${sort}`:\"\"}`:\"\"}`}"
+      },
+      {
+        "title": "Fresh watch faces for Amazfit X",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/amazfit-x/fresh"
+        ],
+        "target": "/amazfitwatchfaces/amazfit-x/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Amazfit Band",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/amazfit-band/fresh"
+        ],
+        "target": "/amazfitwatchfaces/amazfit-band/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Amazfit Bip",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/bip/fresh"
+        ],
+        "target": "/amazfitwatchfaces/bip/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Amazfit Active",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/active/fresh"
+        ],
+        "target": "/amazfitwatchfaces/active/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Amazfit Balance",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/balance/fresh"
+        ],
+        "target": "/amazfitwatchfaces/balance/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Amazfit Cheetah",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/cheetah/fresh"
+        ],
+        "target": "/amazfitwatchfaces/cheetah/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Amazfit Falcon",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/falcon/fresh"
+        ],
+        "target": "/amazfitwatchfaces/falcon/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Amazfit GTR",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/gtr/fresh"
+        ],
+        "target": "/amazfitwatchfaces/gtr/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Amazfit GTS",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/gts/fresh"
+        ],
+        "target": "/amazfitwatchfaces/gts/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Amazfit T-Rex",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/t-rex/fresh"
+        ],
+        "target": "/amazfitwatchfaces/t-rex/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Amazfit Stratos",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/pace/fresh"
+        ],
+        "target": "/amazfitwatchfaces/pace/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Amazfit Verge Lite",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/verge-lite/fresh"
+        ],
+        "target": "/amazfitwatchfaces/verge-lite/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Haylou Watches",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/haylou/fresh"
+        ],
+        "target": "/amazfitwatchfaces/haylou/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Huawei Watches",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/huawei-watch-gt/fresh"
+        ],
+        "target": "/amazfitwatchfaces/huawei-watch-gt/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Xiaomi Mi Band 4",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/mi-band-4/fresh"
+        ],
+        "target": "/amazfitwatchfaces/mi-band-4/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Xiaomi Mi Band 5",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/mi-band-5/fresh"
+        ],
+        "target": "/amazfitwatchfaces/mi-band-5/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Xiaomi Mi Band 6",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/mi-band-6/fresh"
+        ],
+        "target": "/amazfitwatchfaces/mi-band-6/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Xiaomi Mi Band 7",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/mi-band-7/fresh"
+        ],
+        "target": "/amazfitwatchfaces/mi-band-7/fresh"
+      },
+      {
+        "title": "Fresh watch faces for Xiaomi Smart Band 8",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/mi-band/fresh"
+        ],
+        "target": "/amazfitwatchfaces/mi-band/fresh/compatible=Smart_Band_8"
+      },
+      {
+        "title": "Fresh watch faces for Xiaomi Smart Band 9",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/mi-band/fresh"
+        ],
+        "target": "/amazfitwatchfaces/mi-band/fresh/compatible=Smart_Band_9"
+      }
+    ]
+  },
   "amz123.com": {
     "_name": "Amz123",
     ".": [
@@ -4804,6 +4977,15 @@
   "anthropic.com": {
     "_name": "Anthropic",
     "www": [
+      {
+        "title": "Engineering",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/engineering",
+          "/"
+        ],
+        "target": "/anthropic/engineering"
+      },
       {
         "title": "News",
         "docs": "https://docs.rsshub.app/routes/programming",
@@ -9470,6 +9652,19 @@
       }
     ]
   },
+  "chongbuluo.com": {
+    "_name": "虫部落",
+    "www": [
+      {
+        "title": "最新发表",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/"
+        ],
+        "target": "/chongbuluo/newthread"
+      }
+    ]
+  },
   "chongdiantou.com": {
     "_name": "充电头网",
     "www": [
@@ -10558,6 +10753,27 @@
           "/"
         ],
         "target": "/cqgas/tqtz"
+      }
+    ]
+  },
+  "crac.org.cn": {
+    "_name": "中国无线电协会业余无线电分会",
+    "www": [
+      {
+        "title": "考试信息",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/*"
+        ],
+        "target": "/crac/exam"
+      },
+      {
+        "title": "最新资讯",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/News/*"
+        ],
+        "target": "/crac/:type?"
       }
     ]
   },
@@ -12964,7 +13180,7 @@
       }
     ]
   },
-  "flyert.com": {
+  "flyert.com.cn": {
     "_name": "飞客茶馆",
     ".": [
       {
@@ -12974,19 +13190,8 @@
           "/"
         ],
         "target": "/flyert/creditcard/:bank"
-      },
-      {
-        "title": "优惠信息",
-        "docs": "https://docs.rsshub.app/routes/travel",
-        "source": [
-          "/"
-        ],
-        "target": "/flyert/preferential"
       }
-    ]
-  },
-  "flyert.com.cn": {
-    "_name": "飞客茶馆",
+    ],
     "www": [
       {
         "title": "会员说",
@@ -12995,6 +13200,19 @@
           "/forum.php"
         ],
         "target": "/flyert(_,url)=>{const params=[...url.searchParams.entries()].map(([key,value])=>key+\"=\"+value).join(\"&\");return`/forum${params?`/${encodeURIComponent(params)}`:\"\"}`}"
+      }
+    ]
+  },
+  "flyert.com": {
+    "_name": "飞客茶馆",
+    ".": [
+      {
+        "title": "优惠信息",
+        "docs": "https://docs.rsshub.app/routes/travel",
+        "source": [
+          "/"
+        ],
+        "target": "/flyert/preferential"
       }
     ]
   },
@@ -18269,6 +18487,15 @@
   "huggingface.co": {
     "_name": "Huggingface",
     ".": [
+      {
+        "title": "Community Articles",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/community",
+          "/"
+        ],
+        "target": "/huggingface/blog-community/:sort?"
+      },
       {
         "title": "中文博客",
         "docs": "https://docs.rsshub.app/routes/programming",
@@ -30672,10 +30899,10 @@
     ]
   },
   "rfi.fr": {
-    "_name": "Radio France Internationale 法国国际广播电台",
+    "_name": "Radio France Internationale",
     ".": [
       {
-        "title": "Unknown",
+        "title": "Generic News",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
           "/*path"
@@ -38474,6 +38701,19 @@
           "/docs"
         ],
         "target": "/yystv/docs"
+      }
+    ]
+  },
+  "zaimanhua.com": {
+    "_name": "再漫画",
+    "manhua": [
+      {
+        "title": "最近更新",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/update"
+        ],
+        "target": "/zaimanhua/update"
       }
     ]
   },
