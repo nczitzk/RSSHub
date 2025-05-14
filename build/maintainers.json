@@ -759,6 +759,9 @@
     "DIYgod",
     "pseudoyu"
   ],
+  "/bbc/learningenglish/:channel?": [
+    "Blank0120"
+  ],
   "/bbcnewslabs/news": [
     "elxy"
   ],
@@ -1465,6 +1468,12 @@
   "/chinawriter/:id{.+}?": [],
   "/chlinlearn/daily-blog": [
     "huyyi"
+  ],
+  "/chnmuseum/zx/xingnew": [
+    "ShabbyWhineYear"
+  ],
+  "/chnmuseum/zx/xwzt": [
+    "ShabbyWhineYear"
   ],
   "/chongbuluo/newthread": [
     "qiye45"
@@ -8490,6 +8499,9 @@
   ],
   "/zagg/new-arrivals/:query?": [
     "EthanWng97"
+  ],
+  "/zaimanhua/comic/:id": [
+    "kjasn"
   ],
   "/zaimanhua/update": [
     "kjasn"
