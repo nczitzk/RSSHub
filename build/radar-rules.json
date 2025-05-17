@@ -5069,6 +5069,75 @@
       }
     ]
   },
+  "app-sales.net": {
+    "_name": "AppSales",
+    ".": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/:category"
+        ],
+        "target": "/app-salesparams=>{const category=params.category;return`/app-sales${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "Highlights",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/highlights"
+        ],
+        "target": "/app-sales/highlights"
+      },
+      {
+        "title": "Active Sales",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/activesales"
+        ],
+        "target": "/app-sales/activesales"
+      },
+      {
+        "title": "Now Free",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/nowfree"
+        ],
+        "target": "/app-sales/nowfree"
+      },
+      {
+        "title": "Watchlist Charts",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/mostwanted"
+        ],
+        "target": "/app-sales/mostwanted"
+      },
+      {
+        "title": "Watchlist Charts - Last 24h",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/mostwanted"
+        ],
+        "target": "/app-sales/mostwanted/24h"
+      },
+      {
+        "title": "Watchlist Charts - Last Week",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/mostwanted"
+        ],
+        "target": "/app-sales/mostwanted/week"
+      },
+      {
+        "title": "Watchlist Charts - All Time",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/mostwanted"
+        ],
+        "target": "/app-sales/mostwanted/alltime"
+      }
+    ]
+  },
   "apple.com": {
     "_name": "Apple",
     "apps": [
@@ -9772,6 +9841,19 @@
           "/"
         ],
         "target": "/cib/whpj"
+      }
+    ]
+  },
+  "cih-index.com": {
+    "_name": "中指研究院",
+    "www": [
+      {
+        "title": "报告",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/report/list/:report"
+        ],
+        "target": "/cih-index/report/list/:report?"
       }
     ]
   },
@@ -36754,7 +36836,7 @@
     "_name": "Unusual Whales",
     ".": [
       {
-        "title": "News Flow",
+        "title": "News Feed",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
           "/news",

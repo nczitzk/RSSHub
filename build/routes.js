@@ -9614,6 +9614,292 @@ export default {
     "url": "install.appcenter.ms",
     "lang": "en"
   },
+  "app-sales": {
+    "routes": {
+      "/:category?/:country?": {
+        "path": "/:category?/:country?",
+        "name": "Category",
+        "url": "app-sales.net",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/app-sales/highlights",
+        "parameters": {
+          "category": {
+            "description": "Category, `highlights` as Highlights by default",
+            "options": [
+              {
+                "label": "Highlights",
+                "value": "highlights"
+              },
+              {
+                "label": "Active Sales",
+                "value": "activesales"
+              },
+              {
+                "label": "Now Free",
+                "value": "nowfree"
+              }
+            ]
+          },
+          "country": {
+            "description": "Country ID, `us` as United States by default",
+            "options": [
+              {
+                "label": "United States",
+                "value": "us"
+              },
+              {
+                "label": "Austria",
+                "value": "at"
+              },
+              {
+                "label": "Australia",
+                "value": "au"
+              },
+              {
+                "label": "Brazil",
+                "value": "br"
+              },
+              {
+                "label": "Canada",
+                "value": "ca"
+              },
+              {
+                "label": "France",
+                "value": "fr"
+              },
+              {
+                "label": "Germany",
+                "value": "de"
+              },
+              {
+                "label": "India",
+                "value": "in"
+              },
+              {
+                "label": "Italy",
+                "value": "it"
+              },
+              {
+                "label": "Netherlands",
+                "value": "nl"
+              },
+              {
+                "label": "Poland",
+                "value": "pl"
+              },
+              {
+                "label": "Russia",
+                "value": "ru"
+              },
+              {
+                "label": "Spain",
+                "value": "es"
+              },
+              {
+                "label": "Sweden",
+                "value": "se"
+              },
+              {
+                "label": "Great Britain",
+                "value": "gb"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\nTo subscribe to [Highlights](https://www.app-sales.net/highlights/), where the source URL is `https://www.app-sales.net/highlights/`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/app-sales/highlights`](https://rsshub.app/app-sales/highlights).\n:::\n\n| Highlights | Active Sales | Now Free |\n| ---------- | ------------ | -------- |\n| highlights | activesales  | nowfree  |\n\n<details>\n  <summary>More countries</summary>\n\n| Currency | Country       | ID  |\n| -------- | ------------- | --- |\n| USD      | United States | us  |\n| EUR      | Austria       | at  |\n| AUD      | Australia     | au  |\n| BRL      | Brazil        | br  |\n| CAD      | Canada        | ca  |\n| EUR      | France        | fr  |\n| EUR      | Germany       | de  |\n| INR      | India         | in  |\n| EUR      | Italy         | it  |\n| EUR      | Netherlands   | nl  |\n| PLN      | Poland        | pl  |\n| RUB      | Russia        | ru  |\n| EUR      | Spain         | es  |\n| SEK      | Sweden        | se  |\n| GBP      | Great Britain | gb  |\n\n</details>\n",
+        "categories": [
+          "program-update"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "app-sales.net/:category"
+            ]
+          },
+          {
+            "title": "Highlights",
+            "source": [
+              "app-sales.net/highlights"
+            ],
+            "target": "/highlights"
+          },
+          {
+            "title": "Active Sales",
+            "source": [
+              "app-sales.net/activesales"
+            ],
+            "target": "/activesales"
+          },
+          {
+            "title": "Now Free",
+            "source": [
+              "app-sales.net/nowfree"
+            ],
+            "target": "/nowfree"
+          }
+        ],
+        "view": 0,
+        "location": "index.ts",
+        "module": () => import('@/routes/app-sales/index.ts')
+      },
+      "/mostwanted/:time?/:country?": {
+        "path": "/mostwanted/:time?/:country?",
+        "name": "Watchlist Charts",
+        "url": "app-sales.net",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/app-sales/mostwanted",
+        "parameters": {
+          "time": {
+            "description": "Time, `24h` as Last 24h by default",
+            "options": [
+              {
+                "label": "Last 24h",
+                "value": "24h"
+              },
+              {
+                "label": "Last Week",
+                "value": "week"
+              },
+              {
+                "label": "All Time",
+                "value": "alltime"
+              }
+            ]
+          },
+          "country": {
+            "description": "Country ID, `us` as United States by default",
+            "options": [
+              {
+                "label": "United States",
+                "value": "us"
+              },
+              {
+                "label": "Austria",
+                "value": "at"
+              },
+              {
+                "label": "Australia",
+                "value": "au"
+              },
+              {
+                "label": "Brazil",
+                "value": "br"
+              },
+              {
+                "label": "Canada",
+                "value": "ca"
+              },
+              {
+                "label": "France",
+                "value": "fr"
+              },
+              {
+                "label": "Germany",
+                "value": "de"
+              },
+              {
+                "label": "India",
+                "value": "in"
+              },
+              {
+                "label": "Italy",
+                "value": "it"
+              },
+              {
+                "label": "Netherlands",
+                "value": "nl"
+              },
+              {
+                "label": "Poland",
+                "value": "pl"
+              },
+              {
+                "label": "Russia",
+                "value": "ru"
+              },
+              {
+                "label": "Spain",
+                "value": "es"
+              },
+              {
+                "label": "Sweden",
+                "value": "se"
+              },
+              {
+                "label": "Great Britain",
+                "value": "gb"
+              }
+            ]
+          }
+        },
+        "description": "\n| Last 24h | Last Week | All Time |\n| -------- | --------- | -------- |\n| 24h      | week      | alltime  |\n\n<details>\n  <summary>More countries</summary>\n\n| Currency | Country       | ID  |\n| -------- | ------------- | --- |\n| USD      | United States | us  |\n| EUR      | Austria       | at  |\n| AUD      | Australia     | au  |\n| BRL      | Brazil        | br  |\n| CAD      | Canada        | ca  |\n| EUR      | France        | fr  |\n| EUR      | Germany       | de  |\n| INR      | India         | in  |\n| EUR      | Italy         | it  |\n| EUR      | Netherlands   | nl  |\n| PLN      | Poland        | pl  |\n| RUB      | Russia        | ru  |\n| EUR      | Spain         | es  |\n| SEK      | Sweden        | se  |\n| GBP      | Great Britain | gb  |\n\n</details>\n",
+        "categories": [
+          "program-update"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "app-sales.net/mostwanted"
+            ],
+            "target": "/mostwanted"
+          },
+          {
+            "title": "Watchlist Charts - Last 24h",
+            "source": [
+              "app-sales.net/mostwanted"
+            ],
+            "target": "/mostwanted/24h"
+          },
+          {
+            "title": "Watchlist Charts - Last Week",
+            "source": [
+              "app-sales.net/mostwanted"
+            ],
+            "target": "/mostwanted/week"
+          },
+          {
+            "title": "Watchlist Charts - All Time",
+            "source": [
+              "app-sales.net/mostwanted"
+            ],
+            "target": "/mostwanted/alltime"
+          }
+        ],
+        "view": 0,
+        "location": "mostwanted.ts",
+        "module": () => import('@/routes/app-sales/mostwanted.ts')
+      }
+    },
+    "name": "AppSales",
+    "url": "app-sales.net",
+    "categories": [
+      "program-update"
+    ],
+    "description": "Most recent discounted and temporarily free Android apps and games on Google Play",
+    "lang": "en"
+  },
   "apple": {
     "routes": {
       "/apps/update/:country/:id/:platform?": {
@@ -21942,6 +22228,45 @@ export default {
     },
     "name": "中国兴业银行",
     "url": "cib.com.cn",
+    "lang": "zh-CN"
+  },
+  "cih-index": {
+    "routes": {
+      "/report/list/:report?": {
+        "path": "/report/list/:report?",
+        "categories": [
+          "finance"
+        ],
+        "example": "/cih-index/report/list/p1-oaddtime-ddesc",
+        "parameters": {
+          "report": "报告 id，可在 URL 中找到，留空为 `p1-oaddtime-ddesc`"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "报告",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "www.cih-index.com/report/list/p1-oaddtime-ddesc",
+        "radar": [
+          {
+            "source": [
+              "www.cih-index.com/report/list/:report"
+            ]
+          }
+        ],
+        "location": "report.ts",
+        "module": () => import('@/routes/cih-index/report.ts')
+      }
+    },
+    "name": "中指研究院",
+    "url": "www.cih-index.com",
     "lang": "zh-CN"
   },
   "ciidbnu": {
@@ -102088,7 +102413,7 @@ export default {
             ]
           }
         ],
-        "name": "News Flow",
+        "name": "News Feed",
         "maintainers": [
           "TonyRL"
         ],
@@ -103170,7 +103495,8 @@ export default {
         "path": "/xna",
         "categories": [
           "bbs",
-          "blog"
+          "blog",
+          "popular"
         ],
         "view": 0,
         "example": "/v2ex/xna",
@@ -110230,7 +110556,8 @@ export default {
           "requireConfig": [
             {
               "name": "YOUTUBE_KEY",
-              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"
+              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)",
+              "optional": true
             }
           ],
           "requirePuppeteer": false,
@@ -110441,7 +110768,8 @@ export default {
           "requireConfig": [
             {
               "name": "YOUTUBE_KEY",
-              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"
+              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)",
+              "optional": true
             }
           ],
           "requirePuppeteer": false,
