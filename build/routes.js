@@ -58561,15 +58561,16 @@ export default {
   },
   "kemono": {
     "routes": {
-      "/:source?/:id?": {
-        "path": "/:source?/:id?",
+      "/:source?/:id?/:type?": {
+        "path": "/:source?/:id?/:type?",
         "categories": [
           "anime"
         ],
         "example": "/kemono",
         "parameters": {
           "source": "Source, see below, Posts by default",
-          "id": "User id, can be found in URL"
+          "id": "User id, can be found in URL",
+          "type": "Content type: announcements or fancards"
         },
         "features": {
           "requireConfig": false,
@@ -58582,16 +58583,35 @@ export default {
         "radar": [
           {
             "source": [
-              "kemono.su/:source/user/:id",
               "kemono.su/"
-            ]
+            ],
+            "target": "/kemono"
+          },
+          {
+            "source": [
+              "kemono.su/:source/user/:id"
+            ],
+            "target": "/kemono/:source/:id"
+          },
+          {
+            "source": [
+              "kemono.su/:source/user/:id/announcements"
+            ],
+            "target": "/kemono/:source/:id/announcements"
+          },
+          {
+            "source": [
+              "kemono.su/:source/user/:id/fancards"
+            ],
+            "target": "/kemono/:source/:id/fancards"
           }
         ],
         "name": "Posts",
         "maintainers": [
-          "nczitzk"
+          "nczitzk",
+          "AiraNadih"
         ],
-        "description": "Sources\n\n| Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |\n| ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |\n| posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |\n\n::: tip\n  When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.\n  There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.\n:::",
+        "description": "Sources\n\n| Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |\n| ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |\n| posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |\n\n::: tip\n  When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.\n  There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.\n  \n  Support for announcements and fancards:\n  - Use `/:source/:id/announcements` to get announcements\n  - Use `/:source/:id/fancards` to get fancards\n:::",
         "location": "index.ts",
         "module": () => import('@/routes/kemono/index.ts')
       }
@@ -78260,15 +78280,41 @@ export default {
         "categories": [
           "social-media"
         ],
-        "example": "/picuki/profile/stefaniejoosten",
+        "example": "/picuki/profile/linustech",
         "parameters": {
-          "id": "Instagram user id",
-          "type": "Type of profile page (profile or tagged)",
-          "functionalFlag": "functional flag, see the table below\n| functionalFlag | Video embedding                         | Fetching Instagram Stories |\n| -------------- | --------------------------------------- | -------------------------- |\n| 0              | off, only show video poster as an image | off                        |\n| 1 (default)    | on                                      | off                        |\n| 10             | on                                      | on                         |\n"
+          "id": "Tiktok user id (without @)",
+          "type": {
+            "description": "Type of profile page",
+            "options": [
+              {
+                "value": "profile",
+                "label": "Profile Page"
+              },
+              {
+                "value": "story",
+                "label": "Story Page"
+              }
+            ],
+            "default": "profile"
+          },
+          "functionalFlag": {
+            "description": "Functional flag for video embedding",
+            "options": [
+              {
+                "value": "0",
+                "label": "Off, only show video poster as an image"
+              },
+              {
+                "value": "1",
+                "label": "On"
+              }
+            ],
+            "default": "1"
+          }
         },
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -78283,9 +78329,9 @@ export default {
           },
           {
             "source": [
-              "www.picuki.com/profile-tagged/:id"
+              "www.picuki.com/story/:id"
             ],
-            "target": "/profile/:id/tagged"
+            "target": "/profile/:id/story"
           }
         ],
         "name": "User Profile - Picuki",
@@ -78295,13 +78341,12 @@ export default {
           "devinmugen",
           "NekoAria"
         ],
-        "description": "\n::: warning\n  Instagram Stories do not have a reliable guid. It is possible that your RSS reader show the same story more than once.\n  Though, every Story expires after 24 hours, so it may be not so serious.\n:::",
         "location": "profile.ts",
         "module": () => import('@/routes/picuki/profile.ts')
       }
     },
-    "name": "Instagram",
-    "url": "www.instagram.com",
+    "name": "TikTok",
+    "url": "tiktok.com",
     "lang": "en"
   },
   "pikabu": {
@@ -113290,7 +113335,12 @@ export default {
           "id": "作者 id，可在用户主页 URL 中找到"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "ZHIHU_COOKIES",
+              "description": ""
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -113354,7 +113404,12 @@ export default {
           "getAll": "获取全部收藏内容，任意值为打开"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "ZHIHU_COOKIES",
+              "description": ""
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -113629,7 +113684,12 @@ export default {
           "isTop": "仅精华，默认为否，其他值为是"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "ZHIHU_COOKIES",
+              "description": ""
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -113691,7 +113751,12 @@ export default {
           "id": "专栏 id，可在专栏主页 URL 中找到"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "ZHIHU_COOKIES",
+              "description": ""
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -114044,7 +114109,17 @@ export default {
       }
     },
     "name": "知乎",
-    "apiRoutes": {},
+    "apiRoutes": {
+      "/check-cookie": {
+        "path": "/check-cookie",
+        "description": "检查 zhihu cookie 是否有效",
+        "maintainers": [
+          "DIYgod"
+        ],
+        "location": "check-cookie.ts",
+        "module": () => import('@/routes/zhihu/check-cookie.ts')
+      }
+    },
     "url": "www.zhihu.com",
     "description": "::: tip\n自2024年7月，未登录状态下大部分路由[无法获取全文](https://github.com/DIYgod/RSSHub/issues/16260)。若有需要请在登陆知乎后寻找并添加包含`z_c0`的Cookies至环境变量`ZHIHU_COOKIES`。\n:::",
     "lang": "zh-CN"
