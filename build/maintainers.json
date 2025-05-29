@@ -8624,7 +8624,8 @@
   ],
   "/zhihu/hot/:category?": [
     "nczitzk",
-    "pseudoyu"
+    "pseudoyu",
+    "DIYgod"
   ],
   "/zhihu/posts/:usertype/:id": [
     "whtsky",
@@ -8750,6 +8751,9 @@
   ],
   "/zodgame/forum/:fid?": [
     "FeCCC"
+  ],
+  "/zongheng/detail/:id": [
+    "TonyRL"
   ],
   "/zotero/versions": [
     "jasongzy"

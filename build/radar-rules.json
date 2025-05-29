@@ -38811,7 +38811,8 @@
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/user/:username",
-          "/:username"
+          "/:username",
+          "/:username/videos"
         ],
         "target": "/youtube/user/:username"
       }
@@ -39419,6 +39420,19 @@
           "/:type/list.htm"
         ],
         "target": "/zjut/www/:type"
+      }
+    ]
+  },
+  "zongheng.org": {
+    "_name": "纵横中文网",
+    "www": [
+      {
+        "title": "章节更新",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/detail/:id"
+        ],
+        "target": "/zongheng/detail/:id"
       }
     ]
   },
