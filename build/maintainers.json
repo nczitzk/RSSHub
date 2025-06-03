@@ -714,6 +714,9 @@
   "/bandcamp/weekly": [
     "nczitzk"
   ],
+  "/bandisoft/history/:id?/:language?": [
+    "nczitzk"
+  ],
   "/bangumi.moe/*": [
     "nczitzk"
   ],
@@ -3502,6 +3505,10 @@
     "iamqiz",
     "nczitzk"
   ],
+  "/hedwig/posts/:site": [
+    "zwithz",
+    "GetToSet"
+  ],
   "/hellobtc/information/:channel?": [
     "Fatpandac"
   ],
@@ -4859,6 +4866,9 @@
   ],
   "/mercari/:sort/:order/:status/:keyword": [
     "yana9i"
+  ],
+  "/meta/ai/blog": [
+    "TonyRL"
   ],
   "/metacritic/:type?/:sort?/:filter?": [],
   "/meteor/boards": [
@@ -7046,7 +7056,9 @@
   "/steam/workshopsearch/:appid?/:routeParams?": [
     "NyaaaDoge"
   ],
-  "/stheadline/std/realtime/:category{.+}?": [],
+  "/stheadline/std/:category{.+}?": [
+    "TonyRL"
+  ],
   "/stockedge/daily-updates/news": [
     "Rjnishant530"
   ],
@@ -7428,6 +7440,9 @@
   ],
   "/thwiki/calendar/:before?/:after?": [
     "aether17"
+  ],
+  "/thzt/blog": [
+    "jihuayu"
   ],
   "/tiddlywiki/releases": [
     "p3psi-boo"
