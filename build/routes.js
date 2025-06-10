@@ -32822,7 +32822,8 @@ export default {
       "/:endpoint": {
         "path": "/:endpoint",
         "categories": [
-          "traditional-media"
+          "traditional-media",
+          "popular"
         ],
         "view": 0,
         "example": "/economist/latest",
