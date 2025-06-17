@@ -1063,8 +1063,7 @@ export default {
       "/:type/:keyword{.*}?": {
         "path": "/:type/:keyword{.*}?",
         "categories": [
-          "multimedia",
-          "popular"
+          "multimedia"
         ],
         "name": "通用",
         "maintainers": [
@@ -3123,8 +3122,7 @@ export default {
       "/news/:category?": {
         "path": "/news/:category?",
         "categories": [
-          "game",
-          "popular"
+          "game"
         ],
         "example": "/3dmgame/news",
         "parameters": {
@@ -18173,7 +18171,8 @@ export default {
       "/latest": {
         "path": "/latest",
         "categories": [
-          "traditional-media"
+          "traditional-media",
+          "popular"
         ],
         "view": 0,
         "example": "/caixin/latest",
@@ -113112,7 +113111,8 @@ export default {
       "/realtime/:section?": {
         "path": "/realtime/:section?",
         "categories": [
-          "traditional-media"
+          "traditional-media",
+          "popular"
         ],
         "example": "/zaobao/realtime/china",
         "parameters": {
