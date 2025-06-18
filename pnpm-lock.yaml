@@ -48,10 +48,10 @@ importers:
         version: 4.2.0(patch_hash=45t5oyykiv4ibbpruba4shbkca)
       '@hono/node-server':
         specifier: 1.14.4
-        version: 1.14.4(hono@4.7.11)
+        version: 1.14.4(hono@4.8.0)
       '@hono/zod-openapi':
         specifier: 0.19.8
-        version: 0.19.8(hono@4.7.11)(zod@3.25.67)
+        version: 0.19.8(hono@4.8.0)(zod@3.25.67)
       '@notionhq/client':
         specifier: 3.1.3
         version: 3.1.3
@@ -84,7 +84,7 @@ importers:
         version: 0.0.25
       '@scalar/hono-api-reference':
         specifier: 0.9.2
-        version: 0.9.2(hono@4.7.11)
+        version: 0.9.2(hono@4.8.0)
       '@sentry/node':
         specifier: 9.24.0
         version: 9.24.0
@@ -140,8 +140,8 @@ importers:
         specifier: 149.0.0
         version: 149.0.0
       hono:
-        specifier: 4.7.11
-        version: 4.7.11
+        specifier: 4.8.0
+        version: 4.8.0
       html-to-text:
         specifier: 9.0.5
         version: 9.0.5
@@ -3905,8 +3905,8 @@ packages:
   hmacsha1@1.0.0:
     resolution: {integrity: sha512-4FP6J0oI8jqb6gLLl9tSwVdosWJ/AKSGJ+HwYf6Ixe4MUcEkst4uWzpVQrNOCin0fzTRQbXV8ePheU8WiiDYBw==}
 
-  hono@4.7.11:
-    resolution: {integrity: sha512-rv0JMwC0KALbbmwJDEnxvQCeJh+xbS3KEWW5PC9cMJ08Ur9xgatI0HmtgYZfOdOSOeYsp5LO2cOhdI8cLEbDEQ==}
+  hono@4.8.0:
+    resolution: {integrity: sha512-NoiHrqJxoe1MYXqW+/0/Q4NCizKj2Ivm4KmX8mOSBtw9UJ7KYaOGKkO7csIwO5UlZpfvVRdcgiMb0GGyjEjtcw==}
     engines: {node: '>=16.9.0'}
 
   hookable@5.5.3:
@@ -7313,20 +7313,20 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@hono/node-server@1.14.4(hono@4.7.11)':
+  '@hono/node-server@1.14.4(hono@4.8.0)':
     dependencies:
-      hono: 4.7.11
+      hono: 4.8.0
 
-  '@hono/zod-openapi@0.19.8(hono@4.7.11)(zod@3.25.67)':
+  '@hono/zod-openapi@0.19.8(hono@4.8.0)(zod@3.25.67)':
     dependencies:
       '@asteasolutions/zod-to-openapi': 7.3.2(zod@3.25.67)
-      '@hono/zod-validator': 0.7.0(hono@4.7.11)(zod@3.25.67)
-      hono: 4.7.11
+      '@hono/zod-validator': 0.7.0(hono@4.8.0)(zod@3.25.67)
+      hono: 4.8.0
       zod: 3.25.67
 
-  '@hono/zod-validator@0.7.0(hono@4.7.11)(zod@3.25.67)':
+  '@hono/zod-validator@0.7.0(hono@4.8.0)(zod@3.25.67)':
     dependencies:
-      hono: 4.7.11
+      hono: 4.8.0
       zod: 3.25.67
 
   '@humanfs/core@0.19.1': {}
@@ -8072,10 +8072,10 @@ snapshots:
     dependencies:
       '@scalar/types': 0.2.1
 
-  '@scalar/hono-api-reference@0.9.2(hono@4.7.11)':
+  '@scalar/hono-api-reference@0.9.2(hono@4.8.0)':
     dependencies:
       '@scalar/core': 0.3.1
-      hono: 4.7.11
+      hono: 4.8.0
 
   '@scalar/openapi-types@0.3.1':
     dependencies:
@@ -10089,7 +10089,7 @@ snapshots:
 
   hmacsha1@1.0.0: {}
 
-  hono@4.7.11: {}
+  hono@4.8.0: {}
 
   hookable@5.5.3: {}
 
