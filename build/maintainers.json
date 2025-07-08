@@ -673,6 +673,9 @@
   "/autocentre/": [
     "driversti"
   ],
+  "/azul/downloads": [
+    "nczitzk"
+  ],
   "/baai/hub/events": [
     "TonyRL"
   ],
@@ -2509,6 +2512,9 @@
   ],
   "/fantia/user/:id": [
     "nczitzk"
+  ],
+  "/fantube/r18/creator/:identifier": [
+    "TonyRL"
   ],
   "/fanxinzhui/": [
     "nczitzk"
@@ -4676,6 +4682,9 @@
   "/line/today/:edition?/:tab?": [
     "nczitzk"
   ],
+  "/lineageos/changes": [
+    "nczitzk"
+  ],
   "/link3/events": [
     "cxheng315"
   ],
@@ -5086,6 +5095,9 @@
   "/mixcloud/:username/:type?": [
     "Misaka13514"
   ],
+  "/mixcloud/:username/playlists/:playlist": [
+    "Misaka13514"
+  ],
   "/mixi2/community/:id/:media?": [
     "KarasuShin"
   ],
@@ -5143,6 +5155,12 @@
   ],
   "/msn/:market/:name/:id": [
     "KTachibanaM"
+  ],
+  "/musify/:language?": [
+    "nczitzk"
+  ],
+  "/musikguru/news": [
+    "nczitzk"
   ],
   "/mwm/:category?": [
     "nczitzk"
@@ -5911,15 +5929,18 @@
   ],
   "/paulgraham/articles": [
     "Maecenas",
-    "nczitzk"
+    "nczitzk",
+    "dvorak0"
   ],
   "/paulgraham/essays": [
     "Maecenas",
-    "nczitzk"
+    "nczitzk",
+    "dvorak0"
   ],
   "/paulgraham/": [
     "Maecenas",
-    "nczitzk"
+    "nczitzk",
+    "dvorak0"
   ],
   "/pconline/focus/:category?": [
     "CH563"
@@ -6780,6 +6801,9 @@
   "/seu/cse/:type?": [
     "LogicJake"
   ],
+  "/seu/cyber/tzgg": [
+    "shrugginG"
+  ],
   "/seu/radio/academic": [
     "HenryQW"
   ],
@@ -7151,6 +7175,9 @@
   ],
   "/sspu/pe/:id?": [
     "nczitzk"
+  ],
+  "/stanford/hazyresearch/blog": [
+    "dvorak0"
   ],
   "/startuplatte/:category?": [
     "nczitzk"

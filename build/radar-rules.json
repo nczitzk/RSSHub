@@ -5834,6 +5834,19 @@
       }
     ]
   },
+  "azul.com": {
+    "_name": "Azul",
+    "www": [
+      {
+        "title": "Downloads",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/downloads"
+        ],
+        "target": "/azul/downloads"
+      }
+    ]
+  },
   "baai.ac.cn": {
     "_name": "北京智源人工智能研究院",
     "hub": [
@@ -13386,6 +13399,19 @@
           "/fanclubs/:id"
         ],
         "target": "/fantia/user/:id"
+      }
+    ]
+  },
+  "fantube.tokyo": {
+    "_name": "FANTUBE",
+    "www": [
+      {
+        "title": "User Posts",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/r18/creator/:identifier"
+        ],
+        "target": "/fantube/r18/creator/:identifier"
       }
     ]
   },
@@ -22654,6 +22680,19 @@
       }
     ]
   },
+  "lineageos.org": {
+    "_name": "LineageOS",
+    "download": [
+      {
+        "title": "Changes",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/changes"
+        ],
+        "target": "/lineageos/changes"
+      }
+    ]
+  },
   "link3.to": {
     "_name": "Link3",
     ".": [
@@ -22705,7 +22744,7 @@
     "_name": "Liquipedia",
     ".": [
       {
-        "title": "Unknown",
+        "title": "Counter-Strike Team Match Results",
         "docs": "https://docs.rsshub.app/routes/game",
         "source": [
           "/counterstrike/:id/Matches",
@@ -26215,6 +26254,14 @@
           "/:username/:type"
         ],
         "target": "/mixcloud/:username/:type?"
+      },
+      {
+        "title": "Playlist",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/:username/playlists/:playlist"
+        ],
+        "target": "/mixcloud/:username/playlists/:playlist"
       }
     ],
     "www": [
@@ -26225,6 +26272,14 @@
           "/:username/:type"
         ],
         "target": "/mixcloud/:username/:type?"
+      },
+      {
+        "title": "Playlist",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/:username/playlists/:playlist"
+        ],
+        "target": "/mixcloud/:username/playlists/:playlist"
       }
     ]
   },
@@ -26422,6 +26477,48 @@
           "/:market/channel/source/:name/:id"
         ],
         "target": "/msn/:market/:name/:id"
+      }
+    ]
+  },
+  "musify.club": {
+    "_name": "musify",
+    ".": [
+      {
+        "title": "Latest",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/:language"
+        ],
+        "target": "/musify/:language"
+      },
+      {
+        "title": "Latest",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/en"
+        ],
+        "target": "/musify/en"
+      },
+      {
+        "title": "​​Последняя",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/"
+        ],
+        "target": "/musify/"
+      }
+    ]
+  },
+  "musikguru.de": {
+    "_name": "MusikGuru",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/news"
+        ],
+        "target": "/musikgurunews"
       }
     ]
   },
@@ -32395,6 +32492,17 @@
         "target": "/seu/cse/:type?"
       }
     ],
+    "cyber": [
+      {
+        "title": "网络空间安全学院 - 通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/tzgg/list.htm",
+          "/"
+        ],
+        "target": "/seu/cyber/tzgg"
+      }
+    ],
     "radio": [
       {
         "title": "信息科学与工程学院学术活动",
@@ -34503,6 +34611,19 @@
           "/:id/list.htm"
         ],
         "target": "/sspu/pe/:id"
+      }
+    ]
+  },
+  "stanford.edu": {
+    "_name": "Stanford",
+    "hazyresearch": [
+      {
+        "title": "Hazy Research Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/blog"
+        ],
+        "target": "/stanford/hazyresearch/blog"
       }
     ]
   },
