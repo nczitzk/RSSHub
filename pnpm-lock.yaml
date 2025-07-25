@@ -49,10 +49,10 @@ importers:
         version: 4.2.0(patch_hash=2dfb8d9be036009fcc315551cb39b08f478c9a279511267cf570a3486073d39b)
       '@hono/node-server':
         specifier: 1.15.0
-        version: 1.15.0(hono@4.8.5)
+        version: 1.15.0(hono@4.8.7)
       '@hono/zod-openapi':
         specifier: 0.19.10
-        version: 0.19.10(hono@4.8.5)(zod@3.25.76)
+        version: 0.19.10(hono@4.8.7)(zod@3.25.76)
       '@notionhq/client':
         specifier: 4.0.1
         version: 4.0.1
@@ -85,7 +85,7 @@ importers:
         version: 0.0.25
       '@scalar/hono-api-reference':
         specifier: 0.9.11
-        version: 0.9.11(hono@4.8.5)
+        version: 0.9.11(hono@4.8.7)
       '@sentry/node':
         specifier: 9.38.0
         version: 9.38.0
@@ -141,8 +141,8 @@ importers:
         specifier: 152.0.0
         version: 152.0.0
       hono:
-        specifier: 4.8.5
-        version: 4.8.5
+        specifier: 4.8.7
+        version: 4.8.7
       html-to-text:
         specifier: 9.0.5
         version: 9.0.5
@@ -591,8 +591,8 @@ packages:
     resolution: {integrity: sha512-NFJK2sHUvrjo8wAU/nQTWU890/zB2jj0qBcCbZbbf+005cAsv6tMjXz31fBign6M5ov1o0Bllu+9nbqkfsjjJQ==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/helpers@7.27.6':
-    resolution: {integrity: sha512-muE8Tt8M22638HU31A3CgfSUciwz1fhATfoVai05aPXGor//CdWDCbnlY1yvBPo07njuVOCNGCSp/GTt12lIug==}
+  '@babel/helpers@7.28.2':
+    resolution: {integrity: sha512-/V9771t+EgXz62aCcyofnQhGM8DQACbRhvzKFsXKC9QM+5MadF8ZmIm0crDMaz3+o0h0zXfJnd4EhbYbxsrcFw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/highlight@7.25.9':
@@ -1015,8 +1015,8 @@ packages:
     resolution: {integrity: sha512-jYnje+JyZG5YThjHiF28oT4SIZLnYOcSBb6+SDaFIyzDVSkXQmQQYclJ2R+YxcdmK0AX6x1E5OQNtuh3jHDrUg==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/types@7.28.1':
-    resolution: {integrity: sha512-x0LvFTekgSX+83TI28Y9wYPUfzrnl2aT5+5QLnO6v7mSJYtEEevuDRN0F0uSHRk1G1IWZC43o00Y0xDDrpBGPQ==}
+  '@babel/types@7.28.2':
+    resolution: {integrity: sha512-ruv7Ae4J5dUYULmeXw1gmb7rYRz57OWCPM57pHojnLq/3Z1CK2lNSLTCVjxVk1F/TZHwOZZrOWi0ur95BbLxNQ==}
     engines: {node: '>=6.9.0'}
 
   '@bbob/core@4.2.0':
@@ -3873,8 +3873,8 @@ packages:
   hmacsha1@1.0.0:
     resolution: {integrity: sha512-4FP6J0oI8jqb6gLLl9tSwVdosWJ/AKSGJ+HwYf6Ixe4MUcEkst4uWzpVQrNOCin0fzTRQbXV8ePheU8WiiDYBw==}
 
-  hono@4.8.5:
-    resolution: {integrity: sha512-Up2cQbtNz1s111qpnnECdTGqSIUIhZJMLikdKkshebQSEBcoUKq6XJayLGqSZWidiH0zfHRCJqFu062Mz5UuRA==}
+  hono@4.8.7:
+    resolution: {integrity: sha512-gS/IyUw6MzcdnOyVRcRshn9hc/EygYc75glsnI3iESod3kGg9Mz194Y9NWJN8O/4qybIoonyIq6E4agc/t0i/g==}
     engines: {node: '>=16.9.0'}
 
   hookable@5.5.3:
@@ -6207,11 +6207,11 @@ snapshots:
       '@babel/generator': 7.28.0
       '@babel/helper-compilation-targets': 7.27.2
       '@babel/helper-module-transforms': 7.27.3(@babel/core@7.28.0)
-      '@babel/helpers': 7.27.6
+      '@babel/helpers': 7.28.2
       '@babel/parser': 7.28.0
       '@babel/template': 7.27.2
       '@babel/traverse': 7.28.0
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
       convert-source-map: 2.0.0
       debug: 4.4.1
       gensync: 1.0.0-beta.2
@@ -6341,10 +6341,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/helpers@7.27.6':
+  '@babel/helpers@7.28.2':
     dependencies:
       '@babel/template': 7.27.2
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
 
   '@babel/highlight@7.25.9':
     dependencies:
@@ -6887,7 +6887,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@babel/types@7.28.1':
+  '@babel/types@7.28.2':
     dependencies:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
@@ -7213,21 +7213,21 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@hono/node-server@1.15.0(hono@4.8.5)':
+  '@hono/node-server@1.15.0(hono@4.8.7)':
     dependencies:
-      hono: 4.8.5
+      hono: 4.8.7
 
-  '@hono/zod-openapi@0.19.10(hono@4.8.5)(zod@3.25.76)':
+  '@hono/zod-openapi@0.19.10(hono@4.8.7)(zod@3.25.76)':
     dependencies:
       '@asteasolutions/zod-to-openapi': 7.3.4(zod@3.25.76)
-      '@hono/zod-validator': 0.7.1(hono@4.8.5)(zod@3.25.76)
-      hono: 4.8.5
+      '@hono/zod-validator': 0.7.1(hono@4.8.7)(zod@3.25.76)
+      hono: 4.8.7
       openapi3-ts: 4.5.0
       zod: 3.25.76
 
-  '@hono/zod-validator@0.7.1(hono@4.8.5)(zod@3.25.76)':
+  '@hono/zod-validator@0.7.1(hono@4.8.7)(zod@3.25.76)':
     dependencies:
-      hono: 4.8.5
+      hono: 4.8.7
       zod: 3.25.76
 
   '@humanfs/core@0.19.1': {}
@@ -7971,10 +7971,10 @@ snapshots:
     dependencies:
       '@scalar/types': 0.2.9
 
-  '@scalar/hono-api-reference@0.9.11(hono@4.8.5)':
+  '@scalar/hono-api-reference@0.9.11(hono@4.8.7)':
     dependencies:
       '@scalar/core': 0.3.9
-      hono: 4.8.5
+      hono: 4.8.7
 
   '@scalar/openapi-types@0.3.6':
     dependencies:
@@ -9934,7 +9934,7 @@ snapshots:
 
   hmacsha1@1.0.0: {}
 
-  hono@4.8.5: {}
+  hono@4.8.7: {}
 
   hookable@5.5.3: {}
 
