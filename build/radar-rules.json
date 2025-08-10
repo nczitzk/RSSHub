@@ -12,6 +12,20 @@
       }
     ]
   },
+  "121.com.cn": {
+    "_name": "深圳台风网",
+    "tf": [
+      {
+        "title": "深圳天气直播",
+        "docs": "https://docs.rsshub.app/routes/forecast",
+        "source": [
+          "/",
+          "/web/weatherLive"
+        ],
+        "target": "/121/weatherLive"
+      }
+    ]
+  },
   "163.com": {
     "_name": "网易公开课",
     "ds": [
@@ -4704,6 +4718,14 @@
           "/"
         ],
         "target": "/aliyun/database_month"
+      },
+      {
+        "title": "数据库内核月报",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/monthly/"
+        ],
+        "target": "/taobao/mysql/monthly"
       }
     ]
   },
@@ -6100,6 +6122,443 @@
           "/anime/list/:id/wish"
         ],
         "target": "/bangumi.tv/bangumi.tv/user/collections/:id/2/1"
+      }
+    ]
+  },
+  "banshujiang.cn": {
+    "_name": "搬书匠",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/:category"
+        ],
+        "target": "/banshujiangparams=>{const category=params.category;return`/banshujiang${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "ActionScript",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/ActionScript/page/1"
+        ],
+        "target": "/banshujiang/programming_language/ActionScript"
+      },
+      {
+        "title": "ASP.net",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/ASP.net/page/1"
+        ],
+        "target": "/banshujiang/programming_language/ASP.net"
+      },
+      {
+        "title": "C",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/C"
+        ],
+        "target": "/banshujiang/programming_language/C"
+      },
+      {
+        "title": "C#",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/C%23"
+        ],
+        "target": "/banshujiang/programming_language/C%23"
+      },
+      {
+        "title": "C++",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/C++"
+        ],
+        "target": "/banshujiang/programming_language/C++"
+      },
+      {
+        "title": "CoffeeScript",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/CoffeeScript"
+        ],
+        "target": "/banshujiang/programming_language/CoffeeScript"
+      },
+      {
+        "title": "CSS",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/CSS"
+        ],
+        "target": "/banshujiang/programming_language/CSS"
+      },
+      {
+        "title": "Dart",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Dart"
+        ],
+        "target": "/banshujiang/programming_language/Dart"
+      },
+      {
+        "title": "Elixir",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Elixir"
+        ],
+        "target": "/banshujiang/programming_language/Elixir"
+      },
+      {
+        "title": "Erlang",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Erlang"
+        ],
+        "target": "/banshujiang/programming_language/Erlang"
+      },
+      {
+        "title": "F#",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/F%23"
+        ],
+        "target": "/banshujiang/programming_language/F%23"
+      },
+      {
+        "title": "Go",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Go"
+        ],
+        "target": "/banshujiang/programming_language/Go"
+      },
+      {
+        "title": "Groovy",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Groovy"
+        ],
+        "target": "/banshujiang/programming_language/Groovy"
+      },
+      {
+        "title": "Haskell",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Haskell"
+        ],
+        "target": "/banshujiang/programming_language/Haskell"
+      },
+      {
+        "title": "HTML5",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/HTML5"
+        ],
+        "target": "/banshujiang/programming_language/HTML5"
+      },
+      {
+        "title": "Java",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Java"
+        ],
+        "target": "/banshujiang/programming_language/Java"
+      },
+      {
+        "title": "JavaScript",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/JavaScript"
+        ],
+        "target": "/banshujiang/programming_language/JavaScript"
+      },
+      {
+        "title": "Kotlin",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Kotlin"
+        ],
+        "target": "/banshujiang/programming_language/Kotlin"
+      },
+      {
+        "title": "Lua",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Lua"
+        ],
+        "target": "/banshujiang/programming_language/Lua"
+      },
+      {
+        "title": "Objective-C",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Objective-C"
+        ],
+        "target": "/banshujiang/programming_language/Objective-C"
+      },
+      {
+        "title": "Perl",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Perl"
+        ],
+        "target": "/banshujiang/programming_language/Perl"
+      },
+      {
+        "title": "PHP",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/PHP"
+        ],
+        "target": "/banshujiang/programming_language/PHP"
+      },
+      {
+        "title": "PowerShell",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/PowerShell"
+        ],
+        "target": "/banshujiang/programming_language/PowerShell"
+      },
+      {
+        "title": "Python",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Python"
+        ],
+        "target": "/banshujiang/programming_language/Python"
+      },
+      {
+        "title": "R",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/R/page/1"
+        ],
+        "target": "/banshujiang/programming_language/R"
+      },
+      {
+        "title": "Ruby",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Ruby/page/1"
+        ],
+        "target": "/banshujiang/programming_language/Ruby"
+      },
+      {
+        "title": "Rust",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Rust/page/1"
+        ],
+        "target": "/banshujiang/programming_language/Rust"
+      },
+      {
+        "title": "Scala",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Scala/page/1"
+        ],
+        "target": "/banshujiang/programming_language/Scala"
+      },
+      {
+        "title": "Shell Script",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Shell%20Script/page/1"
+        ],
+        "target": "/banshujiang/programming_language/Shell%20Script"
+      },
+      {
+        "title": "SQL",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/SQL/page/1"
+        ],
+        "target": "/banshujiang/programming_language/SQL"
+      },
+      {
+        "title": "Swift",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/Swift/page/1"
+        ],
+        "target": "/banshujiang/programming_language/Swift"
+      },
+      {
+        "title": "TypeScript",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/programming_language/TypeScript/page/1"
+        ],
+        "target": "/banshujiang/programming_language/TypeScript"
+      },
+      {
+        "title": "Android",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/mobile_development/Android/page/1"
+        ],
+        "target": "/banshujiang/mobile_development/Android"
+      },
+      {
+        "title": "iOS",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/mobile_development/iOS/page/1"
+        ],
+        "target": "/banshujiang/mobile_development/iOS"
+      },
+      {
+        "title": "Linux",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/operation_system/Linux/page/1"
+        ],
+        "target": "/banshujiang/operation_system/Linux"
+      },
+      {
+        "title": "Mac OS X",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/operation_system/Mac%20OS%20X/page/1"
+        ],
+        "target": "/banshujiang/operation_system/Mac%20OS%20X"
+      },
+      {
+        "title": "Unix",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/operation_system/Unix/page/1"
+        ],
+        "target": "/banshujiang/operation_system/Unix"
+      },
+      {
+        "title": "Windows",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/operation_system/Windows/page/1"
+        ],
+        "target": "/banshujiang/operation_system/Windows"
+      },
+      {
+        "title": "DB2",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/database/DB2/page/1"
+        ],
+        "target": "/banshujiang/database/DB2"
+      },
+      {
+        "title": "MongoDB",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/database/MongoDB/page/1"
+        ],
+        "target": "/banshujiang/database/MongoDB"
+      },
+      {
+        "title": "MySQL",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/database/MySQL/page/1"
+        ],
+        "target": "/banshujiang/database/MySQL"
+      },
+      {
+        "title": "Oracle",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/database/Oracle/page/1"
+        ],
+        "target": "/banshujiang/database/Oracle"
+      },
+      {
+        "title": "PostgreSQL",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/database/PostgreSQL/page/1"
+        ],
+        "target": "/banshujiang/database/PostgreSQL"
+      },
+      {
+        "title": "SQL Server",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/database/SQL%20Server/page/1"
+        ],
+        "target": "/banshujiang/database/SQL%20Server"
+      },
+      {
+        "title": "SQLite",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/database/SQLite/page/1"
+        ],
+        "target": "/banshujiang/database/SQLite"
+      },
+      {
+        "title": "Apache 项目",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/open_source/Apache%E9%A1%B9%E7%9B%AE/page/1"
+        ],
+        "target": "/banshujiang/open_source/Apache 项目"
+      },
+      {
+        "title": "Web 开发",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/open_source/Web%E5%BC%80%E5%8F%91/page/1"
+        ],
+        "target": "/banshujiang/open_source/Web 开发"
+      },
+      {
+        "title": "区块链",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/open_source/%E5%8C%BA%E5%9D%97%E9%93%BE/page/1"
+        ],
+        "target": "/banshujiang/open_source/区块链"
+      },
+      {
+        "title": "程序开发",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/open_source/%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/page/1"
+        ],
+        "target": "/banshujiang/open_source/程序开发"
+      },
+      {
+        "title": "人工智能",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/other/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/page/1"
+        ],
+        "target": "/banshujiang/other/人工智能"
+      },
+      {
+        "title": "容器技术",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/other/%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF/page/1"
+        ],
+        "target": "/banshujiang/other/容器技术"
+      },
+      {
+        "title": "中文",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/language/%E4%B8%AD%E6%96%87/page/1"
+        ],
+        "target": "/banshujiang/language/中文"
+      },
+      {
+        "title": "英文",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/language/%E8%8B%B1%E6%96%87/page/1"
+        ],
+        "target": "/banshujiang/language/英文"
       }
     ]
   },
@@ -7547,6 +8006,27 @@
           "/"
         ],
         "target": "/camchina/:id?"
+      }
+    ]
+  },
+  "capitalmind.in": {
+    "_name": "Capitalmind",
+    ".": [
+      {
+        "title": "Insights",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/insights"
+        ],
+        "target": "/capitalmind/insights"
+      },
+      {
+        "title": "Podcasts",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/podcasts"
+        ],
+        "target": "/capitalmind/podcasts"
       }
     ]
   },
@@ -10765,17 +11245,24 @@
       }
     ]
   },
-  "coomer.su": {
+  "coomer.st": {
     "_name": "Coomer",
     ".": [
       {
         "title": "Posts",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
-          "/:source/user/:id",
           "/"
         ],
         "target": "/coomer/:source?/:id?"
+      },
+      {
+        "title": "Posts",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/:source/user/:id"
+        ],
+        "target": "/coomer/:source/:id"
       }
     ]
   },
@@ -11353,7 +11840,7 @@
   },
   "cursor.com": {
     "_name": "Cursor",
-    "www": [
+    ".": [
       {
         "title": "Changelog",
         "docs": "https://docs.rsshub.app/routes/program-update",
@@ -12275,6 +12762,27 @@
           "/blog"
         ],
         "target": "/deltaio/blog"
+      }
+    ]
+  },
+  "dev.to": {
+    "_name": "DEV Community",
+    ".": [
+      {
+        "title": "Trending Guides",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/dev.to/guides"
+      },
+      {
+        "title": "Top Posts",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/top/:period"
+        ],
+        "target": "/dev.to/top/:period"
       }
     ]
   },
@@ -13317,6 +13825,115 @@
           "/tag/:tag"
         ],
         "target": "/everia/tag/:tag"
+      }
+    ]
+  },
+  "expats.cz": {
+    "_name": "Expats.cz",
+    "www": [
+      {
+        "title": "Czech News",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/:category"
+        ],
+        "target": "/expatsparams=>{const category=params.category;return`/expats/czech-news${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "Daily News",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/daily-news"
+        ],
+        "target": "/expats/expats/czech-news/daily-news"
+      },
+      {
+        "title": "Prague Guide",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/prague-guide"
+        ],
+        "target": "/expats/expats/czech-news/prague-guide"
+      },
+      {
+        "title": "Culture & Events",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/culture-events"
+        ],
+        "target": "/expats/expats/czech-news/culture-events"
+      },
+      {
+        "title": "Food & Drink",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/food-drink"
+        ],
+        "target": "/expats/expats/czech-news/food-drink"
+      },
+      {
+        "title": "Expat Life",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/expat-life"
+        ],
+        "target": "/expats/expats/czech-news/expat-life"
+      },
+      {
+        "title": "Housing",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/housing"
+        ],
+        "target": "/expats/expats/czech-news/housing"
+      },
+      {
+        "title": "Education",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/education"
+        ],
+        "target": "/expats/expats/czech-news/education"
+      },
+      {
+        "title": "Health",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/health"
+        ],
+        "target": "/expats/expats/czech-news/health"
+      },
+      {
+        "title": "Work",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/work"
+        ],
+        "target": "/expats/expats/czech-news/work"
+      },
+      {
+        "title": "Travel",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/travel"
+        ],
+        "target": "/expats/expats/czech-news/travel"
+      },
+      {
+        "title": "Economy",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/economy"
+        ],
+        "target": "/expats/expats/czech-news/economy"
+      },
+      {
+        "title": "Language",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/czech-news/language"
+        ],
+        "target": "/expats/expats/czech-news/language"
       }
     ]
   },
@@ -14370,6 +14987,19 @@
       }
     ]
   },
+  "gaoyu.me": {
+    "_name": "Yu Gao",
+    "www": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/blog"
+        ],
+        "target": "/gaoyu/blog"
+      }
+    ]
+  },
   "gcores.com": {
     "_name": "机核网",
     "www": [
@@ -15292,7 +15922,7 @@
     ]
   },
   "ah.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "kjt": [
       {
         "title": "安徽省科学技术厅",
@@ -15433,7 +16063,7 @@
     ]
   },
   "bjedu.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "gh": [
       {
         "title": "通用",
@@ -15447,7 +16077,7 @@
     ]
   },
   "beijing.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "jw": [
       {
         "title": "通知公告",
@@ -15460,7 +16090,7 @@
     ]
   },
   "caac.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "公众留言",
@@ -15473,7 +16103,7 @@
     ]
   },
   "chinatax.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "最新文件",
@@ -15486,7 +16116,7 @@
     ]
   },
   "cq.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "rlsbj": [
       {
         "title": "重庆市人民政府 人力社保局 - 人事考试通知",
@@ -15507,7 +16137,7 @@
     ]
   },
   "cmse.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "飞行任务",
@@ -15520,7 +16150,7 @@
     ]
   },
   "csrc.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "政府信息公开",
@@ -16037,7 +16667,7 @@
     ]
   },
   "customs.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "拍卖信息 / 海关法规 / 最新文件",
@@ -16050,7 +16680,7 @@
     ]
   },
   "tqyb.com.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "广东省内城市预警信号",
@@ -16071,7 +16701,7 @@
     ]
   },
   "hangzhou.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "政务服务公开",
@@ -16084,7 +16714,7 @@
     ]
   },
   "changsha.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "wlwz": [
       {
         "title": "长沙市人民政府",
@@ -16097,7 +16727,7 @@
     ]
   },
   "jgjcndrc.org.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "中华人民共和国国家发展和改革委员会价格监测中心",
@@ -16110,7 +16740,7 @@
     ]
   },
   "jiangsu.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "wlt": [
       {
         "title": "江苏文旅局审批公告",
@@ -16123,7 +16753,7 @@
     ]
   },
   "jinan.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "jnmhc": [
       {
         "title": "获取国家医师资格考试通知",
@@ -16136,7 +16766,7 @@
     ]
   },
   "lswz.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "国家粮食和物资储备局",
@@ -16357,7 +16987,7 @@
     ]
   },
   "mee.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "要闻动态",
@@ -16370,7 +17000,7 @@
     ]
   },
   "mem.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "事故及灾害查处",
@@ -16383,7 +17013,7 @@
     ]
   },
   "miit.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "文件发布",
@@ -16404,7 +17034,7 @@
     ]
   },
   "moa.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www.gjs": [
       {
         "title": "中华人民共和国农业农村部国际合作司",
@@ -16527,7 +17157,7 @@
     ]
   },
   "moe.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "司局通知",
@@ -16541,7 +17171,7 @@
     ]
   },
   "mof.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "gss": [
       {
         "title": "关税政策文件",
@@ -16554,7 +17184,7 @@
     ]
   },
   "moj.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "立法意见征集",
@@ -16568,7 +17198,7 @@
     ]
   },
   "ndrc.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "发展改革工作",
@@ -17319,7 +17949,7 @@
     ]
   },
   "nea.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "发展规划司",
@@ -17332,7 +17962,7 @@
     ]
   },
   "npc.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "通用",
@@ -17345,7 +17975,7 @@
     ]
   },
   "pbc.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "沟通交流",
@@ -17374,7 +18004,7 @@
     ]
   },
   "pudong.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "政务公开-浦东新区",
@@ -17387,7 +18017,7 @@
     ]
   },
   "samr.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "xgzlyhd": [
       {
         "title": "留言咨询",
@@ -17400,7 +18030,7 @@
     ]
   },
   "sh.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "fgw": [
       {
         "title": "上海市发展和改革委员会",
@@ -17507,7 +18137,7 @@
     ]
   },
   "sz.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "xxgk": [
       {
         "title": "深圳市考试院",
@@ -17539,8 +18169,21 @@
       }
     ]
   },
+  "szlh.gov.cn": {
+    "_name": "深圳市罗湖区人民政府",
+    ".": [
+      {
+        "title": "深圳市罗湖区人民政府",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/zwfw/zffw/:caty"
+        ],
+        "target": "/gov/shenzhen/szlh/zwfw/zffw/:caty"
+      }
+    ]
+  },
   "mztoday.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "今日绵竹",
@@ -17553,7 +18196,7 @@
     ]
   },
   "stats.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "国家统计局 通用",
@@ -17566,7 +18209,7 @@
     ]
   },
   "suzhou.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "www": [
       {
         "title": "政府信息公开文件",
@@ -17588,7 +18231,7 @@
     ]
   },
   "taiyuan.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "rsj": [
       {
         "title": "太原市人力资源和社会保障局政府公开信息",
@@ -17601,7 +18244,7 @@
     ]
   },
   "tjftz.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "天津港保税区-公告",
@@ -17614,7 +18257,7 @@
     ]
   },
   "tj.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "hrss": [
       {
         "title": "天津人才工作网-公告",
@@ -17627,7 +18270,7 @@
     ]
   },
   "wuhan.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "武汉要闻",
@@ -17642,7 +18285,7 @@
     ]
   },
   "zjks.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "通知",
@@ -17657,7 +18300,7 @@
     ]
   },
   "www.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     ".": [
       {
         "title": "信息稿件",
@@ -17696,7 +18339,7 @@
     ]
   },
   "ningbo.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "gzw": [
       {
         "title": "宁波市国资委-公告",
@@ -17719,7 +18362,7 @@
     ]
   },
   "zj.gov.cn": {
-    "_name": "上海市人民政府",
+    "_name": "深圳市罗湖区人民政府",
     "search": [
       {
         "title": "浙江省人民政府-全省政府网站统一搜索",
@@ -18415,12 +19058,77 @@
     "_name": "哈尔滨工业大学",
     "hitgs": [
       {
-        "title": "研究生院通知公告",
+        "title": "研究生院",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
-          "/*"
+          "/",
+          "/:id/list.htm"
         ],
-        "target": "/hit/hitgs"
+        "target": "/hitparams=>{const id=params.id;return`/hit/hitgs${id?`/${id}`:\"\"}`}"
+      },
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/tzgg/list.htm"
+        ],
+        "target": "/hit/hitgs/tzgg"
+      },
+      {
+        "title": "综合新闻",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/zhxw/list.htm"
+        ],
+        "target": "/hit/hitgs/zhxw"
+      },
+      {
+        "title": "高水平课程与学术交流",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/gspkcyxsjl/list.htm"
+        ],
+        "target": "/hit/hitgs/gspkcyxsjl"
+      },
+      {
+        "title": "国家政策",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/gjzc/list.htm"
+        ],
+        "target": "/hit/hitgs/gjzc"
+      },
+      {
+        "title": "规章制度",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/17546/list.htm"
+        ],
+        "target": "/hit/hitgs/17546"
+      },
+      {
+        "title": "办事流程",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/17547/list.htm"
+        ],
+        "target": "/hit/hitgs/17547"
+      },
+      {
+        "title": "常见问题",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/17548/list.htm"
+        ],
+        "target": "/hit/hitgs/17548"
+      },
+      {
+        "title": "常见下载",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/17549/list.htm"
+        ],
+        "target": "/hit/hitgs/17549"
       }
     ],
     "jwc": [
@@ -18659,6 +19367,20 @@
           "/"
         ],
         "target": "/hkushop/vinyl"
+      }
+    ]
+  },
+  "hlju.edu.cn": {
+    "_name": "黑龙江大学",
+    "hdxw": [
+      {
+        "title": "新闻网",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:category.htm",
+          "/"
+        ],
+        "target": "/hlju/news/:category"
       }
     ]
   },
@@ -21048,6 +21770,43 @@
       }
     ]
   },
+  "jamesclear.com": {
+    "_name": "James Clear",
+    ".": [
+      {
+        "title": "Book Summaries",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/book-summaries"
+        ],
+        "target": "/jamesclear/book-summaries"
+      },
+      {
+        "title": "Great Speeches",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/great-speeches"
+        ],
+        "target": "/jamesclear/great-speeches"
+      },
+      {
+        "title": "Quotes",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/quotes"
+        ],
+        "target": "/jamesclear/quotes"
+      },
+      {
+        "title": "3-2-1 Newsletter",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/3-2-1"
+        ],
+        "target": "/jamesclear/3-2-1"
+      }
+    ]
+  },
   "jandan.net": {
     "_name": "煎蛋",
     "i": [
@@ -21208,6 +21967,19 @@
           "/studios/:category"
         ],
         "target": "/javtrailers/studios/:studio"
+      }
+    ]
+  },
+  "jetbrains.com": {
+    "_name": "JetBrains",
+    "youtrack": [
+      {
+        "title": "YouTrack Issue Comments",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/issue/:issueId"
+        ],
+        "target": "/jetbrains/youtrack/comments/:issueId"
       }
     ]
   },
@@ -21996,7 +22768,7 @@
       }
     ]
   },
-  "kemono.su": {
+  "kemono.cr": {
     "_name": "Kemono",
     ".": [
       {
@@ -22005,7 +22777,7 @@
         "source": [
           "/"
         ],
-        "target": "/kemono/kemono"
+        "target": "/kemono/:source?/:id?/:type?"
       },
       {
         "title": "Posts",
@@ -22013,7 +22785,7 @@
         "source": [
           "/:source/user/:id"
         ],
-        "target": "/kemono/kemono/:source/:id"
+        "target": "/kemono/:source/:id"
       },
       {
         "title": "Posts",
@@ -22021,7 +22793,7 @@
         "source": [
           "/:source/user/:id/announcements"
         ],
-        "target": "/kemono/kemono/:source/:id/announcements"
+        "target": "/kemono/:source/:id/announcements"
       },
       {
         "title": "Posts",
@@ -22029,7 +22801,7 @@
         "source": [
           "/:source/user/:id/fancards"
         ],
-        "target": "/kemono/kemono/:source/:id/fancards"
+        "target": "/kemono/:source/:id/fancards"
       }
     ]
   },
@@ -22070,6 +22842,29 @@
           "/"
         ],
         "target": "/kimlaw/thesis"
+      }
+    ]
+  },
+  "kiro.dev": {
+    "_name": "Kiro",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/",
+          "/blog/"
+        ],
+        "target": "/kiro/blog"
+      },
+      {
+        "title": "Changelog",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/",
+          "/changelog/"
+        ],
+        "target": "/kiro/changelog"
       }
     ]
   },
@@ -22145,6 +22940,19 @@
           "/:category"
         ],
         "target": "/koreaherald/:category"
+      }
+    ]
+  },
+  "kovidgoyal.net": {
+    "_name": "Kovid's software projects",
+    "sw": [
+      {
+        "title": "Changelog",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/kitty/changelog/"
+        ],
+        "target": "/kovidgoyal/kitty/changelog"
       }
     ]
   },
@@ -23413,6 +24221,19 @@
           "/user/book/shelf"
         ],
         "target": "/manhuagui/subscribe"
+      }
+    ]
+  },
+  "manus.im": {
+    "_name": "Manus",
+    "www": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/manus/blog"
       }
     ]
   },
@@ -26412,6 +27233,16 @@
         ],
         "target": "/modelscope/studios"
       }
+    ],
+    "www": [
+      {
+        "title": "研习社",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/learn"
+        ],
+        "target": "/modelscope/learn"
+      }
     ]
   },
   "modian.com": {
@@ -26735,6 +27566,38 @@
   },
   "nankai.edu.cn": {
     "_name": "南开大学",
+    "cc": [
+      {
+        "title": "计算机学院",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/",
+          "/:type/list.htm"
+        ],
+        "target": "/nankai/cc/:type?"
+      }
+    ],
+    "jwc": [
+      {
+        "title": "教务处通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/tzgg/list.htm"
+        ],
+        "target": "/nankai/jwc"
+      }
+    ],
+    "www": [
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/",
+          "/157/list.htm"
+        ],
+        "target": "/nankai/notice"
+      }
+    ],
     "yzb": [
       {
         "title": "研究生招生网",
@@ -27513,6 +28376,16 @@
         ],
         "target": "/neu/news/:type"
       }
+    ],
+    "yz": [
+      {
+        "title": "研究生招生信息网",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:type/list.htm"
+        ],
+        "target": "/neu/yz/:type"
+      }
     ]
   },
   "news.cn": {
@@ -27624,6 +28497,20 @@
           "/"
         ],
         "target": "/newsmarket/:category?"
+      }
+    ]
+  },
+  "newswav.com": {
+    "_name": "Newswav",
+    ".": [
+      {
+        "title": "Latest",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/latest",
+          "/"
+        ],
+        "target": "/newswav/"
       }
     ]
   },
@@ -30719,7 +31606,8 @@
         "title": "User Bookmark",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
-          "/users/:id/bookmarks/artworks"
+          "/users/:id/bookmarks/artworks",
+          "/en/users/:id/bookmarks/artworks"
         ],
         "target": "/pixiv/user/bookmarks/:id"
       },
@@ -30744,7 +31632,9 @@
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/users/:id/novels",
-          "/users/:id"
+          "/users/:id",
+          "/en/users/:id/novels",
+          "/en/users/:id"
         ],
         "target": "/pixiv/user/novels/:id"
       },
@@ -30753,7 +31643,9 @@
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/users/:id/novels",
-          "/users/:id"
+          "/users/:id",
+          "/en/users/:id/novels",
+          "/en/users/:id"
         ],
         "target": "/pixiv/user/novels/:id/true"
       },
@@ -30761,7 +31653,8 @@
         "title": "User Activity",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
-          "/users/:id"
+          "/users/:id",
+          "/en/users/:id"
         ],
         "target": "/pixiv/user/:id"
       }
@@ -31972,6 +32865,19 @@
           "/*path"
         ],
         "target": "/rfi/:path"
+      }
+    ]
+  },
+  "rockthejvm.com": {
+    "_name": "Rock the JVM",
+    ".": [
+      {
+        "title": "Article",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/articles"
+        ],
+        "target": "/rockthejvm/articles"
       }
     ]
   },
@@ -34072,6 +34978,19 @@
           "/"
         ],
         "target": "/sorrycc/"
+      }
+    ]
+  },
+  "sotwe.com": {
+    "_name": "X (Twitter)",
+    "www": [
+      {
+        "title": "User timeline - Sotwe",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/:id"
+        ],
+        "target": "/sotwe/user/:id"
       }
     ]
   },
@@ -36813,6 +37732,27 @@
       }
     ]
   },
+  "thewirehindi.com": {
+    "_name": "The Wire Hindi",
+    ".": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/category/*"
+        ],
+        "target": "/thewirehindi/category/:category"
+      },
+      {
+        "title": "Latest News",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/thewirehindi/"
+      }
+    ]
+  },
   "thoughtworks.com": {
     "_name": "ThoughtWorks",
     "www": [
@@ -36837,6 +37777,76 @@
           "/%E6%97%A5%E7%A8%8B%E8%A1%A8"
         ],
         "target": "/thwiki/calendar"
+      }
+    ]
+  },
+  "tidb.net": {
+    "_name": "TiDB 社区",
+    ".": [
+      {
+        "title": "专栏分类",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog",
+          "/blog/c/:category"
+        ],
+        "target": "/tidbparams=>{const category=params.category;return`/tidb/blog/c${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "全部文章",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog"
+        ],
+        "target": "/tidb/blog/c/latest"
+      },
+      {
+        "title": "管理与运维",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/c/management-and-operation"
+        ],
+        "target": "/tidb/blog/c/management-and-operation"
+      },
+      {
+        "title": "实践案例",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/c/practical-case"
+        ],
+        "target": "/tidb/blog/c/practical-case"
+      },
+      {
+        "title": "架构选型",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/c/architecture-selection"
+        ],
+        "target": "/tidb/blog/c/architecture-selection"
+      },
+      {
+        "title": "原理解读",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/c/principle-interpretation"
+        ],
+        "target": "/tidb/blog/c/principle-interpretation"
+      },
+      {
+        "title": "应用开发",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/c/application-development"
+        ],
+        "target": "/tidb/blog/c/application-development"
+      },
+      {
+        "title": "社区动态",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/c/community-feeds"
+        ],
+        "target": "/tidb/blog/c/community-feeds"
       }
     ]
   },
@@ -37942,7 +38952,7 @@
     "_name": "中国石油大学（华东）",
     "jwc": [
       {
-        "title": "教务处通知公告",
+        "title": "教务处",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
           "/",
@@ -40657,6 +41667,19 @@
           "/:author"
         ],
         "target": "/zhiy/posts/:author"
+      }
+    ]
+  },
+  "zhizhuan100.com.cn": {
+    "_name": "智篆商业",
+    "www": [
+      {
+        "title": "analytic",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/analysis"
+        ],
+        "target": "/zhizhuan100/analytic"
       }
     ]
   },
