@@ -457,8 +457,8 @@ importers:
         specifier: 7.1.4
         version: 7.1.4
       tsdown:
-        specifier: 0.13.4
-        version: 0.13.4(typescript@5.9.2)
+        specifier: 0.14.0
+        version: 0.14.0(typescript@5.9.2)
       typescript:
         specifier: 5.9.2
         version: 5.9.2
@@ -1570,8 +1570,8 @@ packages:
     resolution: {integrity: sha512-3rDakgJZ77+RiQUuSK69t1F0m8BQKA8Vh5DCS5V0DWvNY67zob2JhhQrhCO0AKLGINTRSFd1tBaHcJTkhefoSw==}
     engines: {node: '>=18'}
 
-  '@napi-rs/wasm-runtime@1.0.2':
-    resolution: {integrity: sha512-4pSAVWEyZMgE9q+SYkHK+UhYRo4o7P+NYZSsuuhU0wKNzV09ujaxerrbzgv6zyLoWIggJb8ql/KRzv0H9WuAZQ==}
+  '@napi-rs/wasm-runtime@1.0.3':
+    resolution: {integrity: sha512-rZxtMsLwjdXkMUGC3WwsPwLNVqVqnTJT6MNIB6e+5fhMcSCPP0AOsNWuMQ5mdCq6HNjs/ZeWAEchpqeprqBD2Q==}
 
   '@noble/hashes@1.8.0':
     resolution: {integrity: sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==}
@@ -5660,8 +5660,8 @@ packages:
       typescript:
         optional: true
 
-  tsdown@0.13.4:
-    resolution: {integrity: sha512-2uf0Xo170gmxwJEOgfb7V9y3k+Uq/dQJx4xfXYova7pqqTw9ZjxSvEeq7Y6l+Ys54GlBrRKvxKoEyNhuUcoCTg==}
+  tsdown@0.14.0:
+    resolution: {integrity: sha512-3zBEDUC1XPnVE5rwfsm1y8REh58CJsDT319hkRwBgIpN9eMClE30dqF4HkK8zPKoczNNqFrQ2cKGrjE50WprIw==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -7305,7 +7305,7 @@ snapshots:
       outvariant: 1.4.3
       strict-event-emitter: 0.5.1
 
-  '@napi-rs/wasm-runtime@1.0.2':
+  '@napi-rs/wasm-runtime@1.0.3':
     dependencies:
       '@emnapi/core': 1.4.5
       '@emnapi/runtime': 1.4.5
@@ -7807,7 +7807,7 @@ snapshots:
 
   '@rolldown/binding-wasm32-wasi@1.0.0-beta.31':
     dependencies:
-      '@napi-rs/wasm-runtime': 1.0.2
+      '@napi-rs/wasm-runtime': 1.0.3
     optional: true
 
   '@rolldown/binding-win32-arm64-msvc@1.0.0-beta.31':
@@ -11878,7 +11878,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.2
 
-  tsdown@0.13.4(typescript@5.9.2):
+  tsdown@0.14.0(typescript@5.9.2):
     dependencies:
       ansis: 4.1.0
       cac: 6.7.14
