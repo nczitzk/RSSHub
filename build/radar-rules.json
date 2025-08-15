@@ -12812,6 +12812,19 @@
       }
     ]
   },
+  "dgut.edu.cn": {
+    "_name": "东莞理工学院",
+    "jwb": [
+      {
+        "title": "教务部通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/tzgg/"
+        ],
+        "target": "/dgut/jwb/:type?"
+      }
+    ]
+  },
   "dhu.edu.cn": {
     "_name": "东华大学",
     "news": [
@@ -12888,6 +12901,19 @@
           "/"
         ],
         "target": "/digitalcameraworld/news"
+      }
+    ]
+  },
+  "digitalpolicyalert.org": {
+    "_name": "Digital Policy Alert",
+    ".": [
+      {
+        "title": "Activity Tracker",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/"
+        ],
+        "target": "/digitalpolicyalert(_,url)=>{const urlObj=new URL(url);const filters=createSearchParams(urlObj.searchParams.toString()).toString();return`/digitalpolicyalert/activity-tracker${filters?`/${filters}`:\"\"}`}"
       }
     ]
   },
@@ -13694,6 +13720,19 @@
           "/"
         ],
         "target": "/sciencedirect/journal/:id"
+      }
+    ]
+  },
+  "englishhome.org": {
+    "_name": "英語之家",
+    ".": [
+      {
+        "title": "首頁",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/englishhome/"
       }
     ]
   },
@@ -27089,6 +27128,19 @@
       }
     ]
   },
+  "mit.edu": {
+    "_name": "Massachusetts Institute of Technology",
+    "hanlab": [
+      {
+        "title": "HAN Lab Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/blog"
+        ],
+        "target": "/mit/hanlab/blog"
+      }
+    ]
+  },
   "miui.com": {
     "_name": "MIUI",
     "web.vip": [
@@ -31911,11 +31963,12 @@
   },
   "pornhub.com": {
     "_name": "PornHub",
-    ".": [
+    "www": [
       {
         "title": "Model",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
+          "/model/:username",
           "/model/:username/*"
         ],
         "target": "/pornhub/model/:username"
@@ -31924,6 +31977,7 @@
         "title": "Pornstar",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
+          "/pornstar/:username",
           "/pornstar/:username/*"
         ],
         "target": "/pornhub/pornstar/:username"
@@ -31932,9 +31986,329 @@
         "title": "Users",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
+          "/users/:username",
           "/users/:username/*"
         ],
         "target": "/pornhub/users/:username"
+      }
+    ],
+    "de": [
+      {
+        "title": "Model",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/model/:username",
+          "/model/:username/*"
+        ],
+        "target": "/pornhub/model/:username/de"
+      },
+      {
+        "title": "Pornstar",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/pornstar/:username",
+          "/pornstar/:username/*"
+        ],
+        "target": "/pornhub/pornstar/:username/de"
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/users/:username",
+          "/users/:username/*"
+        ],
+        "target": "/pornhub/users/:username/de"
+      }
+    ],
+    "fr": [
+      {
+        "title": "Model",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/model/:username",
+          "/model/:username/*"
+        ],
+        "target": "/pornhub/model/:username/fr"
+      },
+      {
+        "title": "Pornstar",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/pornstar/:username",
+          "/pornstar/:username/*"
+        ],
+        "target": "/pornhub/pornstar/:username/fr"
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/users/:username",
+          "/users/:username/*"
+        ],
+        "target": "/pornhub/users/:username/fr"
+      }
+    ],
+    "es": [
+      {
+        "title": "Model",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/model/:username",
+          "/model/:username/*"
+        ],
+        "target": "/pornhub/model/:username/es"
+      },
+      {
+        "title": "Pornstar",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/pornstar/:username",
+          "/pornstar/:username/*"
+        ],
+        "target": "/pornhub/pornstar/:username/es"
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/users/:username",
+          "/users/:username/*"
+        ],
+        "target": "/pornhub/users/:username/es"
+      }
+    ],
+    "it": [
+      {
+        "title": "Model",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/model/:username",
+          "/model/:username/*"
+        ],
+        "target": "/pornhub/model/:username/it"
+      },
+      {
+        "title": "Pornstar",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/pornstar/:username",
+          "/pornstar/:username/*"
+        ],
+        "target": "/pornhub/pornstar/:username/it"
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/users/:username",
+          "/users/:username/*"
+        ],
+        "target": "/pornhub/users/:username/it"
+      }
+    ],
+    "pt": [
+      {
+        "title": "Model",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/model/:username",
+          "/model/:username/*"
+        ],
+        "target": "/pornhub/model/:username/pt"
+      },
+      {
+        "title": "Pornstar",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/pornstar/:username",
+          "/pornstar/:username/*"
+        ],
+        "target": "/pornhub/pornstar/:username/pt"
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/users/:username",
+          "/users/:username/*"
+        ],
+        "target": "/pornhub/users/:username/pt"
+      }
+    ],
+    "pl": [
+      {
+        "title": "Model",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/model/:username",
+          "/model/:username/*"
+        ],
+        "target": "/pornhub/model/:username/pl"
+      },
+      {
+        "title": "Pornstar",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/pornstar/:username",
+          "/pornstar/:username/*"
+        ],
+        "target": "/pornhub/pornstar/:username/pl"
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/users/:username",
+          "/users/:username/*"
+        ],
+        "target": "/pornhub/users/:username/pl"
+      }
+    ],
+    "rt": [
+      {
+        "title": "Model",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/model/:username",
+          "/model/:username/*"
+        ],
+        "target": "/pornhub/model/:username/rt"
+      },
+      {
+        "title": "Pornstar",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/pornstar/:username",
+          "/pornstar/:username/*"
+        ],
+        "target": "/pornhub/pornstar/:username/rt"
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/users/:username",
+          "/users/:username/*"
+        ],
+        "target": "/pornhub/users/:username/rt"
+      }
+    ],
+    "jp": [
+      {
+        "title": "Model",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/model/:username",
+          "/model/:username/*"
+        ],
+        "target": "/pornhub/model/:username/jp"
+      },
+      {
+        "title": "Pornstar",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/pornstar/:username",
+          "/pornstar/:username/*"
+        ],
+        "target": "/pornhub/pornstar/:username/jp"
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/users/:username",
+          "/users/:username/*"
+        ],
+        "target": "/pornhub/users/:username/jp"
+      }
+    ],
+    "nl": [
+      {
+        "title": "Model",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/model/:username",
+          "/model/:username/*"
+        ],
+        "target": "/pornhub/model/:username/nl"
+      },
+      {
+        "title": "Pornstar",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/pornstar/:username",
+          "/pornstar/:username/*"
+        ],
+        "target": "/pornhub/pornstar/:username/nl"
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/users/:username",
+          "/users/:username/*"
+        ],
+        "target": "/pornhub/users/:username/nl"
+      }
+    ],
+    "cz": [
+      {
+        "title": "Model",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/model/:username",
+          "/model/:username/*"
+        ],
+        "target": "/pornhub/model/:username/cz"
+      },
+      {
+        "title": "Pornstar",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/pornstar/:username",
+          "/pornstar/:username/*"
+        ],
+        "target": "/pornhub/pornstar/:username/cz"
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/users/:username",
+          "/users/:username/*"
+        ],
+        "target": "/pornhub/users/:username/cz"
+      }
+    ],
+    "cn": [
+      {
+        "title": "Model",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/model/:username",
+          "/model/:username/*"
+        ],
+        "target": "/pornhub/model/:username/cn"
+      },
+      {
+        "title": "Pornstar",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/pornstar/:username",
+          "/pornstar/:username/*"
+        ],
+        "target": "/pornhub/pornstar/:username/cn"
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/users/:username",
+          "/users/:username/*"
+        ],
+        "target": "/pornhub/users/:username/cn"
       }
     ]
   },
@@ -33308,6 +33682,19 @@
           "/"
         ],
         "target": "/scoop(_,url)=>{const urlObj=new URL(url);const query=urlObj.searchParams.toString()??void 0;return`/scoop/apps${query?`/${query}`:\"\"}`}"
+      }
+    ]
+  },
+  "scpta.com.cn": {
+    "_name": "四川省人力资源和社会保障厅人事考试专栏",
+    "www": [
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/front/News/List"
+        ],
+        "target": "/scpta/news"
       }
     ]
   },
@@ -40841,6 +41228,60 @@
           "/blog"
         ],
         "target": "/xunhupay/blog"
+      }
+    ]
+  },
+  "xwenming.com": {
+    "_name": "未知文明",
+    "www": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/",
+          "/index.php/category/:category"
+        ],
+        "target": "/xwenming/:category"
+      },
+      {
+        "title": "全部",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/xwenming/"
+      },
+      {
+        "title": "科技前沿",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/index.php/category/news"
+        ],
+        "target": "/xwenming/news"
+      },
+      {
+        "title": "疑难杂症",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/index.php/category/solve"
+        ],
+        "target": "/xwenming/solve"
+      },
+      {
+        "title": "通知专栏",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/index.php/category/notice"
+        ],
+        "target": "/xwenming/notice"
+      },
+      {
+        "title": "未分类",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/index.php/category/uncategorized"
+        ],
+        "target": "/xwenming/uncategorized"
       }
     ]
   },
