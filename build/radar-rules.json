@@ -11206,6 +11206,19 @@
       }
     ]
   },
+  "commonhealth.com.tw": {
+    "_name": "康健",
+    "www": [
+      {
+        "title": "最新內容",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/"
+        ],
+        "target": "/commonhealth/"
+      }
+    ]
+  },
   "consumer.org.hk": {
     "_name": "消费者委员会",
     ".": [
@@ -15782,6 +15795,43 @@
           "/"
         ],
         "target": "/gitpod/changelog"
+      }
+    ]
+  },
+  "gitstar-ranking.com": {
+    "_name": "Gitstar Ranking",
+    ".": [
+      {
+        "title": "Ranking",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/:category"
+        ],
+        "target": "/gitstar-ranking/:category"
+      },
+      {
+        "title": "Users",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/users"
+        ],
+        "target": "/gitstar-ranking/users"
+      },
+      {
+        "title": "Organizations",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/organizations"
+        ],
+        "target": "/gitstar-ranking/organizations"
+      },
+      {
+        "title": "Repositories",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/repositories"
+        ],
+        "target": "/gitstar-ranking/repositories"
       }
     ]
   },
@@ -26935,6 +26985,16 @@
           "/news"
         ],
         "target": "/mihoyo/sr"
+      }
+    ],
+    "zzz": [
+      {
+        "title": "绝区零",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news"
+        ],
+        "target": "/mihoyo/zzz"
       }
     ]
   },
