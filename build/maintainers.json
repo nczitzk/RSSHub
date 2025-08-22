@@ -254,6 +254,9 @@
     "nczitzk",
     "cscnk52"
   ],
+  "/6v123/:category{.+}?": [
+    "nczitzk"
+  ],
   "/6v123/latestMovies": [
     "tc9011"
   ],
@@ -4091,6 +4094,9 @@
   "/imiker/ask/jinghua": [
     "nczitzk"
   ],
+  "/immich/cursed-knowledge": [
+    "TonyRL"
+  ],
   "/imop/tianshu": [
     "zhkgo"
   ],
@@ -7046,6 +7052,9 @@
   ],
   "/shu/journals/society/current": [
     "CNYoki"
+  ],
+  "/shu/xxgk/:type?": [
+    "GhhG123"
   ],
   "/shu/xykd/:type?": [
     "GhhG123"
