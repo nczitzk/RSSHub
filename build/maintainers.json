@@ -297,6 +297,9 @@
     "monnerHenster",
     "nczitzk"
   ],
+  "/aa1/60s/:category?": [
+    "nczitzk"
+  ],
   "/aamacau/:category?/:id?": [],
   "/abc/:category{.+}?": [
     "nczitzk",
@@ -2474,6 +2477,12 @@
   "/elasticsearch-cn/:params?": [
     "nczitzk"
   ],
+  "/elecfans/article/:atype": [
+    "tian051011"
+  ],
+  "/elecfans/soft/:atype": [
+    "tian051011"
+  ],
   "/eleduck/jobs": [
     "sfyumi"
   ],
@@ -3876,6 +3885,9 @@
   "/hubu/zhxy/:category{.+}?": [
     "nczitzk"
   ],
+  "/hudsonrivertrading/blog/:section?": [
+    "johan456789"
+  ],
   "/huggingface/blog-community/:sort?": [
     "yuguorui"
   ],
@@ -3886,8 +3898,9 @@
     "cesaryuan",
     "zcf0508"
   ],
-  "/huggingface/daily-papers": [
-    "zeyugao"
+  "/huggingface/daily-papers/:cycle?/:voteFliter?": [
+    "zeyugao",
+    "ovo-tim"
   ],
   "/hunanpea/rsks/:guid": [
     "TonyRL"
