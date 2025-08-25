@@ -8832,6 +8832,59 @@
       }
     ]
   },
+  "cbndata.com": {
+    "_name": "CBNData",
+    "www": [
+      {
+        "title": "看点",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/information"
+        ],
+        "target": "/cbndata(params,url)=>{const urlObj=new URL(url);const id=urlObj.searchParams.get(\"tag_id\")??void 0;return`/information${id?`/${id}`:\"\"}`}"
+      },
+      {
+        "title": "全部",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/information"
+        ],
+        "target": "/cbndata/information/all"
+      },
+      {
+        "title": "美妆个护",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/information"
+        ],
+        "target": "/cbndata/information/1"
+      },
+      {
+        "title": "服饰鞋包",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/information"
+        ],
+        "target": "/cbndata/information/2559"
+      },
+      {
+        "title": "宠物",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/information"
+        ],
+        "target": "/cbndata/information/2419"
+      },
+      {
+        "title": "营销",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/information"
+        ],
+        "target": "/cbndata/information/2484"
+      }
+    ]
+  },
   "cbnweek.com": {
     "_name": "第一财经杂志",
     ".": [
@@ -34227,6 +34280,19 @@
       }
     ]
   },
+  "secretsanfrancisco.com": {
+    "_name": "Secret San francisco",
+    ".": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:category"
+        ],
+        "target": "/secretsanfrancisco/:category"
+      }
+    ]
+  },
   "seekingalpha.com": {
     "_name": "Seeking Alpha",
     ".": [
@@ -38375,6 +38441,19 @@
           "/newsflash"
         ],
         "target": "/theblockbeats/newsflash"
+      }
+    ]
+  },
+  "thegadgetflow.com": {
+    "_name": "Gadget Flow",
+    ".": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/shopping",
+        "source": [
+          "/categories/:category"
+        ],
+        "target": "/thegadgetflow/:category"
       }
     ]
   },
