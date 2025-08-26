@@ -9539,6 +9539,35 @@
       }
     ]
   },
+  "ccg.org.cn": {
+    "_name": "全球化智库",
+    "www": [
+      {
+        "title": "动态",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/category"
+        ],
+        "target": "/ccg/:category"
+      },
+      {
+        "title": "新闻动态",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news"
+        ],
+        "target": "/ccg/news"
+      },
+      {
+        "title": "媒体报道",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/mtbd"
+        ],
+        "target": "/ccg/mtbd"
+      }
+    ]
+  },
   "91wllm.com": {
     "_name": "华中师范大学",
     "ccnu": [
@@ -14138,6 +14167,19 @@
       }
     ]
   },
+  "engineering.fyi": {
+    "_name": "Engineering.fyi",
+    ".": [
+      {
+        "title": "Tag",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/tag/:tag"
+        ],
+        "target": "/engineering/tag/:tag"
+      }
+    ]
+  },
   "englishhome.org": {
     "_name": "英語之家",
     ".": [
@@ -14247,6 +14289,7 @@
         "title": "声优活动及演唱会",
         "docs": "https://docs.rsshub.app/routes/anime",
         "source": [
+          "/actors/:name/:id",
           "/actors/:name/:id/events"
         ],
         "target": "/eventernote/actors/:name/:id"

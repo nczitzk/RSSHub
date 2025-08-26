@@ -1362,6 +1362,9 @@
   "/ccfa/:type?": [
     "nczitzk"
   ],
+  "/ccg/:category?": [
+    "nczitzk"
+  ],
   "/ccnu/career": [
     "jackyu1996"
   ],
@@ -2498,6 +2501,9 @@
   "/elsevier/:journal": [],
   "/embassy/:country/:city?": [
     "HenryQW"
+  ],
+  "/engineering/tag/:tag": [
+    "suhang-only"
   ],
   "/englishhome/": [
     "johan456789"
