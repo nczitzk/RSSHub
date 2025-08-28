@@ -76,7 +76,7 @@
         "cross-env": "10.0.0",
         "crypto-js": "4.2.0",
         "currency-symbol-map": "5.1.0",
-        "dayjs": "1.11.8",
+        "dayjs": "1.11.15",
         "destr": "2.0.5",
         "directory-import": "3.3.2",
         "dotenv": "17.2.1",
