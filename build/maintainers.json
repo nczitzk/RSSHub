@@ -1102,6 +1102,9 @@
   "/bmkg/news": [
     "Shinanory"
   ],
+  "/bnext/": [
+    "johan456789"
+  ],
   "/bnu/bs/:category?": [
     "nczitzk"
   ],
@@ -2536,6 +2539,9 @@
   ],
   "/europechinese/latest": [
     "emdoe"
+  ],
+  "/eventbrite/:region/:eventType?/:includePromoted?": [
+    "elibroftw"
   ],
   "/eventernote/actors/:name/:id": [
     "KTachibanaM"
@@ -7951,6 +7957,9 @@
   ],
   "/transformer-circuits/": [
     "shinmohuang"
+  ],
+  "/trendforce/news": [
+    "nczitzk"
   ],
   "/trendingpapers/papers/:category?/:time?/:cited?": [
     "CookiePieWw"
