@@ -7693,19 +7693,6 @@
       }
     ]
   },
-  "bnext.com.tw": {
-    "_name": "數位時代 BusinessNext",
-    "www": [
-      {
-        "title": "最新文章",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/"
-        ],
-        "target": "/bnext/bnext"
-      }
-    ]
-  },
   "bnu.edu.cn": {
     "_name": "北京师范大学",
     "bs": [
@@ -11206,20 +11193,6 @@
       }
     ]
   },
-  "cline.bot": {
-    "_name": "cline",
-    ".": [
-      {
-        "title": "Blog",
-        "docs": "https://docs.rsshub.app/routes/blog",
-        "source": [
-          "/blog/archive",
-          "/blog"
-        ],
-        "target": "/cline/blog"
-      }
-    ]
-  },
   "cls.cn": {
     "_name": "财联社",
     ".": [
@@ -14319,32 +14292,6 @@
           "/"
         ],
         "target": "/ygkkk/"
-      }
-    ]
-  },
-  "eventbrite.com": {
-    "_name": "Eventbrite",
-    ".": [
-      {
-        "title": "Events",
-        "docs": "https://docs.rsshub.app/routes/other",
-        "source": [
-          "/d/:region/:eventType"
-        ],
-        "target": "/eventbrite/:region/:eventType"
-      }
-    ]
-  },
-  "eventbrite.ca": {
-    "_name": "Eventbrite",
-    ".": [
-      {
-        "title": "Events",
-        "docs": "https://docs.rsshub.app/routes/other",
-        "source": [
-          "/d/:region/:eventType"
-        ],
-        "target": "/eventbrite/:region/:eventType"
       }
     ]
   },
@@ -23428,14 +23375,6 @@
           "/:source/user/:id/fancards"
         ],
         "target": "/kemono/:source/:id/fancards"
-      },
-      {
-        "title": "Posts",
-        "docs": "https://docs.rsshub.app/routes/anime",
-        "source": [
-          "/discord/server/:id"
-        ],
-        "target": "/kemono/discord/:id"
       }
     ]
   },
@@ -38330,7 +38269,7 @@
     "_name": "TechPowerUp",
     ".": [
       {
-        "title": "Latest Content",
+        "title": "Unknown",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
           "/"
@@ -38341,8 +38280,7 @@
         "title": "Reviews",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
-          "/review/search",
-          "/review"
+          "/"
         ],
         "target": "/techpowerup/review/:keyword?"
       }
@@ -39448,19 +39386,6 @@
           "/"
         ],
         "target": "/transformer-circuits/"
-      }
-    ]
-  },
-  "trendforce.com": {
-    "_name": "TrendForce",
-    "www": [
-      {
-        "title": "News",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/news/"
-        ],
-        "target": "/trendforce/news"
       }
     ]
   },
