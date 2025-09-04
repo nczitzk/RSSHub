@@ -3277,6 +3277,9 @@
   "/gov/mem/gk/sgcc/:category?": [
     "nczitzk"
   ],
+  "/gov/mem/gk/zfxxgkpt/fdzdgknr": [
+    "skeaven"
+  ],
   "/gov/fmprc/:category?": [
     "nicolaszf",
     "nczitzk"
@@ -4672,6 +4675,9 @@
   "/kovidgoyal/kitty/changelog": [
     "xbot"
   ],
+  "/koyso/:category?/:sort?": [
+    "nczitzk"
+  ],
   "/kpmg/insights/:lang?": [
     "LogicJake"
   ],
@@ -5558,6 +5564,9 @@
   ],
   "/niaogebiji/today": [
     "KotoriK"
+  ],
+  "/nicovideo/mylist/:id": [
+    "esperecyan"
   ],
   "/nicovideo/user/:id/video/:embed?": [
     "TonyRL"
