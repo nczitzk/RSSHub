@@ -332,6 +332,9 @@
   "/acg17/post/all": [
     "SunBK201"
   ],
+  "/acgvinyl/news": [
+    "williamgateszhao"
+  ],
   "/acpaa/:id?/:name?": [
     "nczitzk"
   ],
@@ -4565,6 +4568,9 @@
   "/jsu/notice": [
     "wenjia03"
   ],
+  "/juejin/aicoding/:tag?/:sort?": [
+    "TonyRL"
+  ],
   "/juejin/books": [
     "xyqfer"
   ],
@@ -6765,6 +6771,9 @@
   "/samd/news/:typeId": [
     "hualiong"
   ],
+  "/samrdprc/:id{.+}?": [
+    "nczitzk"
+  ],
   "/samrdprc/news/:type1/:type2": [
     "a180285"
   ],
@@ -8126,7 +8135,7 @@
   "/u9a9/search/:keyword/:preview?": [
     "TonyRL"
   ],
-  "/uber/blog/:maxPage?": [
+  "/uber/blog/:compat?": [
     "hulb"
   ],
   "/ucas/ai": [
@@ -8734,9 +8743,6 @@
     "lengthmin",
     "jjeejj",
     "prnake"
-  ],
-  "/xinhuanet/app": [
-    "nczitzk"
   ],
   "/xinpianchang/discover/:params?": [
     "nczitzk"
