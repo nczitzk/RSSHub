@@ -804,6 +804,9 @@
   "/barronschina/:id?": [
     "nczitzk"
   ],
+  "/baselang/blog/:category?": [
+    "johan456789"
+  ],
   "/bast*": [],
   "/bbc/:site?/:channel?": [
     "HenryQW",
@@ -1922,6 +1925,9 @@
   "/curius/links/:name": [
     "Ovler-Young"
   ],
+  "/cursor/blog/:topic?": [
+    "johan456789"
+  ],
   "/cursor/changelog": [
     "p3psi-boo",
     "nczitzk"
@@ -2007,6 +2013,9 @@
     "nczitzk"
   ],
   "/dayanzai/:category/:fulltext?": [],
+  "/dbaplus/news/:id?": [
+    "nczitzk"
+  ],
   "/dbaplus/": [
     "cnkmmk"
   ],
@@ -2482,6 +2491,9 @@
   ],
   "/ecust/jwc/:category?": [
     "lxl66566"
+  ],
+  "/eeo/kuaixun": [
+    "nczitzk"
   ],
   "/egsea/flash": [
     "hillerliao"
@@ -5422,6 +5434,9 @@
   "/nationalgeographic/latest-stories": [
     "miles170"
   ],
+  "/naturalism/": [
+    "TonyRL"
+  ],
   "/nature/cover": [
     "y9c",
     "pseudoyu"
@@ -7421,7 +7436,8 @@
     "LogicJake"
   ],
   "/sspai/index": [
-    "HenryQW"
+    "HenryQW",
+    "cscnk52"
   ],
   "/sspai/matrix": [
     "feigaoxyz"
@@ -9236,6 +9252,9 @@
   ],
   "/zju/career/:type": [
     "Caicailiushui"
+  ],
+  "/zju/cse/:category?": [
+    "Rabbits-sys"
   ],
   "/zju/cst/custom/:id": [
     "zwithz"
