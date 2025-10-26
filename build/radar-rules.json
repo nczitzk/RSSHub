@@ -3060,7 +3060,7 @@
     ]
   },
   "abc.net.au": {
-    "_name": "ABC News",
+    "_name": "ABC News (Australian Broadcasting Corporation)",
     ".": [
       {
         "title": "Channel & Topic",
@@ -14234,6 +14234,108 @@
   },
   "eastmoney.com": {
     "_name": "东方财富",
+    "guba": [
+      {
+        "title": "个人中心长文",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/"
+        ],
+        "target": "/eastmoney/gerenzhongxin/cfh/:uid"
+      },
+      {
+        "title": "个人中心所有活动",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/"
+        ],
+        "target": "/eastmoney/gerenzhongxin/gather/:uid"
+      },
+      {
+        "title": "个人中心帖子",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/"
+        ],
+        "target": "/eastmoney/gerenzhongxin/guba/:uid"
+      },
+      {
+        "title": "个人中心评论",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/"
+        ],
+        "target": "/eastmoney/gerenzhongxin/trpl/:uid"
+      }
+    ],
+    "caifuhao": [
+      {
+        "title": "个人中心长文",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/"
+        ],
+        "target": "/eastmoney/gerenzhongxin/cfh/:uid"
+      },
+      {
+        "title": "个人中心所有活动",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/"
+        ],
+        "target": "/eastmoney/gerenzhongxin/gather/:uid"
+      },
+      {
+        "title": "个人中心帖子",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/"
+        ],
+        "target": "/eastmoney/gerenzhongxin/guba/:uid"
+      },
+      {
+        "title": "个人中心评论",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/"
+        ],
+        "target": "/eastmoney/gerenzhongxin/trpl/:uid"
+      }
+    ],
+    "i": [
+      {
+        "title": "个人中心长文",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/:uid"
+        ],
+        "target": "/eastmoney/gerenzhongxin/cfh/:uid"
+      },
+      {
+        "title": "个人中心所有活动",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/:uid"
+        ],
+        "target": "/eastmoney/gerenzhongxin/gather/:uid"
+      },
+      {
+        "title": "个人中心帖子",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/:uid"
+        ],
+        "target": "/eastmoney/gerenzhongxin/guba/:uid"
+      },
+      {
+        "title": "个人中心评论",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/:uid"
+        ],
+        "target": "/eastmoney/gerenzhongxin/trpl/:uid"
+      }
+    ],
     "data": [
       {
         "title": "研究报告",
@@ -16550,6 +16652,14 @@
         "target": "/github/notifications"
       },
       {
+        "title": "Organization Event",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/orgs/:org"
+        ],
+        "target": "/github/org_event/:org"
+      },
+      {
         "title": "User's Feed",
         "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
@@ -16575,6 +16685,14 @@
           "/:user/:repo/pulse/:period"
         ],
         "target": "/github/pulse/:user/:repo/:period?"
+      },
+      {
+        "title": "Repository Event",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/:owner/:repo"
+        ],
+        "target": "/github/repo_event/:owner/:repo"
       },
       {
         "title": "User Repo",
@@ -16616,6 +16734,14 @@
           "/trending"
         ],
         "target": "/github/trending/:since"
+      },
+      {
+        "title": "User Event",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/:username"
+        ],
+        "target": "/github/user_event/:username"
       },
       {
         "title": "Wiki History",
@@ -21978,7 +22104,7 @@
     "_name": "鹰角网络",
     "aneot": [
       {
-        "title": "期刊",
+        "title": "回归线",
         "docs": "https://docs.rsshub.app/routes/game",
         "source": [
           "/"
@@ -30864,6 +30990,19 @@
           "/:language/:id"
         ],
         "target": "/ntdtv/:language/:id"
+      }
+    ]
+  },
+  "ntrblog.com": {
+    "_name": "NTR BLOG（寝取られブログ）",
+    ".": [
+      {
+        "title": "Articles",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/"
+        ],
+        "target": "/ntrblog/articles"
       }
     ]
   },
