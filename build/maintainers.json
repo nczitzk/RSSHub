@@ -401,6 +401,9 @@
   "/ahjzu/news": [
     "Yuk-0v0"
   ],
+  "/aiaa/journal/:journalID": [
+    "HappyZhu99"
+  ],
   "/aibase/daily": [
     "3tuuu"
   ],
@@ -697,6 +700,9 @@
   ],
   "/azul/downloads": [
     "nczitzk"
+  ],
+  "/azurlane/news/:server/:type?": [
+    "AnitsuriW"
   ],
   "/baai/hub/events": [
     "TonyRL"
@@ -2135,6 +2141,9 @@
     "blade0910"
   ],
   "/dgjyw*": [],
+  "/dgtle/news/:id?": [
+    "nczitzk"
+  ],
   "/dgut/jwb/:type?": [
     "1200522928"
   ],
@@ -3343,6 +3352,9 @@
   "/gov/maoming/*": [],
   "/gov/maonan/:category": [
     "ShuiHuo"
+  ],
+  "/gov/mee/nnsa/:category{.+}?": [
+    "nczitzk"
   ],
   "/gov/mee/ywdt/:category?": [
     "liuxsdev"
