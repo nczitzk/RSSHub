@@ -959,7 +959,7 @@
   "/bilibili/popular/all/:embed?": [
     "ziminliu"
   ],
-  "/bilibili/ranking/:rid_index?/:embed?/:redirect1?/:redirect2?": [
+  "/bilibili/ranking/:rid?/:embed?/:redirect1?/:redirect2?": [
     "DIYgod",
     "hyoban"
   ],
@@ -1731,7 +1731,9 @@
     "Derekmini",
     "pseudoyu"
   ],
-  "/cnljxh/:category?/:id?": [],
+  "/cnljxh/news/:id?": [
+    "nczitzk"
+  ],
   "/cntheory/paper/:id?": [
     "nczitzk"
   ],
@@ -1858,6 +1860,9 @@
   "/cqgas/tqtz": [
     "Mai19930513"
   ],
+  "/cqu/jwc/:path{.+}?": [
+    "AhsokaTano26"
+  ],
   "/cqwu/news/:type?": [
     "Fatpandac"
   ],
@@ -1931,6 +1936,9 @@
   ],
   "/ctbu/xxgg": [
     "Skylwn"
+  ],
+  "/ctinews/topic/:topic?": [
+    "TonyRL"
   ],
   "/cts/:category": [
     "miles170"
@@ -4586,6 +4594,9 @@
     "nczitzk"
   ],
   "/jjwxc/book/:id?": [
+    "nczitzk"
+  ],
+  "/jl1mall/forum/:type?/:key?": [
     "nczitzk"
   ],
   "/jlu/jwc": [
