@@ -4793,6 +4793,19 @@
       }
     ]
   },
+  "pages.dev": {
+    "_name": "AI 博客",
+    "aiblog-2xv": [
+      {
+        "title": "归档-全部文章",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/archives"
+        ],
+        "target": "/aiblog-2xv/archives"
+      }
+    ]
+  },
   "ainvest.com": {
     "_name": "AInvest",
     ".": [
@@ -9348,6 +9361,99 @@
       }
     ]
   },
+  "ccagm.org.cn": {
+    "_name": "中国百货商业协会",
+    "www": [
+      {
+        "title": "栏目",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/category"
+        ],
+        "target": "/ccagm/:category"
+      },
+      {
+        "title": "协会动态",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/association-news.html"
+        ],
+        "target": "/ccagm/association-news"
+      },
+      {
+        "title": "会议活动",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/xh-activity/activities-huiyi.html"
+        ],
+        "target": "/ccagm/xh-activity/activities-huiyi"
+      },
+      {
+        "title": "调研与报告",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/xh-activity/bg-yj.html"
+        ],
+        "target": "/ccagm/xh-activity/bg-yj"
+      },
+      {
+        "title": "协会党建",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/xie-hui-dang-jian.html"
+        ],
+        "target": "/ccagm/xie-hui-dang-jian"
+      },
+      {
+        "title": "行业新闻",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/members-info.html"
+        ],
+        "target": "/ccagm/members-info"
+      },
+      {
+        "title": "行业研究",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/bg-yj.html"
+        ],
+        "target": "/ccagm/bg-yj"
+      },
+      {
+        "title": "行业标准",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/industry-policy/industry-standard.html"
+        ],
+        "target": "/ccagm/industry-policy/industry-standard"
+      },
+      {
+        "title": "法律法规",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/industry-policy/policies-regulations.html"
+        ],
+        "target": "/ccagm/industry-policy/policies-regulations"
+      },
+      {
+        "title": "资料下载",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/download.html"
+        ],
+        "target": "/ccagm/download"
+      },
+      {
+        "title": "工作总结与计划",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/about-association/gong-zuo-zong-jie-yu-ji-hua.html"
+        ],
+        "target": "/ccagm/about-association/gong-zuo-zong-jie-yu-ji-hua"
+      }
+    ]
+  },
   "cccfna.org.cn": {
     "_name": "中国食品土畜进出口商会",
     "www": [
@@ -11309,6 +11415,19 @@
       }
     ]
   },
+  "cloudflarestatus.com": {
+    "_name": "Cloudflare Status",
+    "www": [
+      {
+        "title": "Status",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/cloudflarestatus/"
+      }
+    ]
+  },
   "cls.cn": {
     "_name": "财联社",
     ".": [
@@ -11641,9 +11760,9 @@
         "title": "栏目",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
-          "/news"
+          "/:category"
         ],
-        "target": "/cnljxh(_,url)=>{const urlObj=new URL(url);const id=urlObj.searchParams.get(\"classid\")??void 0;return`/cnljxh/news${id?`/${id}`:\"\"}`}"
+        "target": "/cnljxh(params,url)=>{const urlObj=new URL(url);const category=params.category;const id=urlObj.searchParams.get(\"classid\")??void 0;return`/cnljxh${category?`/${category}${id?`/${id}`:\"\"}`:\"\"}`}"
       },
       {
         "title": "协会专区 - 协会简介",
@@ -11795,7 +11914,7 @@
         "source": [
           "/price/?classid=299"
         ],
-        "target": "/cnljxh/news/299"
+        "target": "/cnljxh/price/299"
       },
       {
         "title": "市场价格 - 双焦运费",
@@ -11803,7 +11922,7 @@
         "source": [
           "/price/?classid=2143"
         ],
-        "target": "/cnljxh/news/2143"
+        "target": "/cnljxh/price/2143"
       },
       {
         "title": "市场价格 - 价格汇总",
@@ -11811,7 +11930,7 @@
         "source": [
           "/collect/?classid=10039"
         ],
-        "target": "/cnljxh/news/10039"
+        "target": "/cnljxh/price/10039"
       },
       {
         "title": "分析数据 - 市场分析",
@@ -11819,7 +11938,7 @@
         "source": [
           "/info/?classid=575"
         ],
-        "target": "/cnljxh/news/575"
+        "target": "/cnljxh/info/575"
       },
       {
         "title": "分析数据 - 一周评述",
@@ -11827,7 +11946,7 @@
         "source": [
           "/info/?classid=5573"
         ],
-        "target": "/cnljxh/news/5573"
+        "target": "/cnljxh/info/5573"
       },
       {
         "title": "分析数据 - 核心数据",
@@ -11835,7 +11954,7 @@
         "source": [
           "/info/?classid=5417"
         ],
-        "target": "/cnljxh/news/5417"
+        "target": "/cnljxh/info/5417"
       },
       {
         "title": "价格指数 - 焦炭指数(MyCpic)",
@@ -11843,7 +11962,7 @@
         "source": [
           "/date/?classid=5575"
         ],
-        "target": "/cnljxh/news/5575"
+        "target": "/cnljxh/date/5575"
       },
       {
         "title": "价格指数 - 炼焦煤指数(MyCpic)",
@@ -11851,7 +11970,7 @@
         "source": [
           "/date/?classid=5907"
         ],
-        "target": "/cnljxh/news/5907"
+        "target": "/cnljxh/date/5907"
       },
       {
         "title": "价格指数 - 山西焦炭价格指数（SCSPI）",
@@ -14156,6 +14275,14 @@
         "target": "/dgtle/article/400"
       },
       {
+        "title": "兴趣",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/feed"
+        ],
+        "target": "/dgtle/feed"
+      },
+      {
         "title": "鲸闻",
         "docs": "https://docs.rsshub.app/routes/new-media",
         "source": [
@@ -14194,6 +14321,14 @@
           "/news"
         ],
         "target": "/dgtle/news/388"
+      },
+      {
+        "title": "视频",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/video"
+        ],
+        "target": "/dgtle/video"
       }
     ]
   },
@@ -14985,6 +15120,26 @@
   },
   "ecnu.edu.cn": {
     "_name": "East China Normal University 华东师范大学",
+    "bksy": [
+      {
+        "title": "本科生院通知",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/bksy"
+      }
+    ],
+    "cee": [
+      {
+        "title": "通信与电子工程学院通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/cee"
+      }
+    ],
     "acm": [
       {
         "title": "ACM Online-Judge contests list",
@@ -14994,6 +15149,86 @@
           "/"
         ],
         "target": "/ecnu/acm/contest/"
+      }
+    ],
+    "cs": [
+      {
+        "title": "计算机科学与技术学院通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/cs"
+      }
+    ],
+    "dase": [
+      {
+        "title": "数据科学与工程学院通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/dase"
+      }
+    ],
+    "dx": [
+      {
+        "title": "大夏书院通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/dx"
+      }
+    ],
+    "dxb": [
+      {
+        "title": "地球科学学部通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/dxb"
+      }
+    ],
+    "ed": [
+      {
+        "title": "教育学部通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/ed"
+      }
+    ],
+    "geoai": [
+      {
+        "title": "空间人工智能学院通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/geoai"
+      }
+    ],
+    "www.ghcollege": [
+      {
+        "title": "光华书院通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/ghcollege"
+      }
+    ],
+    "history": [
+      {
+        "title": "历史学系通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/history"
       }
     ],
     "www.jwc": [
@@ -15014,6 +15249,36 @@
           "/"
         ],
         "target": "/ecnu/tzgg"
+      }
+    ],
+    "mxcsy": [
+      {
+        "title": "孟宪承书院通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/mxcsy"
+      }
+    ],
+    "www.philo": [
+      {
+        "title": "哲学系通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/philo"
+      }
+    ],
+    "sei": [
+      {
+        "title": "软件工程学院通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/ecnu/sei"
       }
     ]
   },
@@ -16450,6 +16715,71 @@
       }
     ]
   },
+  "futunn.com": {
+    "_name": "Futubull 富途牛牛",
+    "news": [
+      {
+        "title": "快讯",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/main/live"
+        ],
+        "target": "/futunn/live"
+      },
+      {
+        "title": "快讯",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/hk/main/live"
+        ],
+        "target": "/futunn/live/Cantonese"
+      },
+      {
+        "title": "快讯",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/en/main/live"
+        ],
+        "target": "/futunn/live/English"
+      },
+      {
+        "title": "要闻",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/main",
+          "/:lang/main"
+        ],
+        "target": "/futunn/main"
+      },
+      {
+        "title": "要闻",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/main",
+          "/:lang/main"
+        ],
+        "target": "/futunn/main"
+      },
+      {
+        "title": "专题",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/news-topics/:id/*",
+          "/:lang/news-topics/:id/*"
+        ],
+        "target": "/futunn/topic/:id"
+      },
+      {
+        "title": "视频",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/main/video-list",
+          "/:lang/main/video-list"
+        ],
+        "target": "/futunn/video"
+      }
+    ]
+  },
   "fx678.com": {
     "_name": "汇通网",
     ".": [
@@ -17606,6 +17936,16 @@
           "/detail/:name/:id"
         ],
         "target": "/google/chrome/extension/:id"
+      }
+    ],
+    "play": [
+      {
+        "title": "Play Store Update",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/store/apps/details?id=:id"
+        ],
+        "target": "/google/play/:id/:lang?"
       }
     ]
   },
@@ -23767,15 +24107,327 @@
     ]
   },
   "iresearch.com.cn": {
-    "_name": "艾瑞",
+    "_name": "艾瑞咨询",
     "www": [
       {
-        "title": "产业研究报告",
+        "title": "研究报告",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
           "/report.shtml"
         ],
-        "target": "/iresearch/report"
+        "target": "/iresearch(_,url)=>{const urlObj=new URL(url);const type=urlObj.searchParams.get(\"type\")??void 0;const id=urlObj.searchParams.get(\"classId\")??urlObj.searchParams.get(\"channelId\")??urlObj.searchParams.get(\"cid\")??void 0;return`/iresearch/report${type?`/${type}${id?`/${id}`:\"\"}`:\"\"}`}"
+      },
+      {
+        "title": "最新报告",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch(_,url)=>{const urlObj=new URL(url);const id=urlObj.searchParams.get(\"classId\")??urlObj.searchParams.get(\"channelId\")??urlObj.searchParams.get(\"cid\")??void 0;return`/iresearch/report/1${id?`/${id}`:\"\"}`}"
+      },
+      {
+        "title": "研究图表",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch(_,url)=>{const urlObj=new URL(url);const id=urlObj.searchParams.get(\"classId\")??urlObj.searchParams.get(\"channelId\")??urlObj.searchParams.get(\"cid\")??void 0;return`/iresearch/report/4${id?`/${id}`:\"\"}`}"
+      },
+      {
+        "title": "周度市场观察",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch(_,url)=>{const urlObj=new URL(url);const id=urlObj.searchParams.get(\"classId\")??urlObj.searchParams.get(\"channelId\")??urlObj.searchParams.get(\"cid\")??void 0;return`/iresearch/report/3${id?`/${id}`:\"\"}`}"
+      },
+      {
+        "title": "热门报告",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch(_,url)=>{const urlObj=new URL(url);const id=urlObj.searchParams.get(\"classId\")??urlObj.searchParams.get(\"channelId\")??urlObj.searchParams.get(\"cid\")??void 0;return`/iresearch/report/2${id?`/${id}`:\"\"}`}"
+      },
+      {
+        "title": "周度市场观察 - 家电行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/3/1"
+      },
+      {
+        "title": "周度市场观察 - 服装行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/3/2"
+      },
+      {
+        "title": "周度市场观察 - 美妆行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/3/3"
+      },
+      {
+        "title": "周度市场观察 - 食品饮料行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/3/4"
+      },
+      {
+        "title": "周度市场观察 - 酒行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/3/5"
+      },
+      {
+        "title": "最新报告 - 媒体文娱",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/59"
+      },
+      {
+        "title": "最新报告 - 广告营销",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/89"
+      },
+      {
+        "title": "最新报告 - 游戏行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/90"
+      },
+      {
+        "title": "最新报告 - 视频媒体",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/91"
+      },
+      {
+        "title": "最新报告 - 消费电商",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/69"
+      },
+      {
+        "title": "最新报告 - 电子商务",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/86"
+      },
+      {
+        "title": "最新报告 - 消费者洞察",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/87"
+      },
+      {
+        "title": "最新报告 - 旅游行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/88"
+      },
+      {
+        "title": "最新报告 - 汽车行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/80"
+      },
+      {
+        "title": "最新报告 - 教育行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/63"
+      },
+      {
+        "title": "最新报告 - 企业服务",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/60"
+      },
+      {
+        "title": "最新报告 - 网络服务",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/84"
+      },
+      {
+        "title": "最新报告 - 应用服务",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/85"
+      },
+      {
+        "title": "最新报告 - AI 大数据",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/65"
+      },
+      {
+        "title": "最新报告 - 人工智能",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/83"
+      },
+      {
+        "title": "最新报告 - 物流行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/75"
+      },
+      {
+        "title": "最新报告 - 金融行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/70"
+      },
+      {
+        "title": "最新报告 - 支付行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/82"
+      },
+      {
+        "title": "最新报告 - 房产行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/68"
+      },
+      {
+        "title": "最新报告 - 医疗健康",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/62"
+      },
+      {
+        "title": "最新报告 - 先进制造",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/61"
+      },
+      {
+        "title": "最新报告 - 能源环保",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/77"
+      },
+      {
+        "title": "最新报告 - 区块链",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/76"
+      },
+      {
+        "title": "最新报告 - 其他",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/report/1/81"
+      },
+      {
+        "title": "周度市场观察",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch(_,url)=>{const urlObj=new URL(url);const id=urlObj.searchParams.get(\"classId\")??urlObj.searchParams.get(\"channelId\")??urlObj.searchParams.get(\"cid\")??void 0;return`/iresearch/weekly${id?`/${id}`:\"\"}`}"
+      },
+      {
+        "title": "家电行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/weekly/1"
+      },
+      {
+        "title": "服装行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/weekly/2"
+      },
+      {
+        "title": "美妆行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/weekly/3"
+      },
+      {
+        "title": "食品饮料行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/weekly/4"
+      },
+      {
+        "title": "酒行业",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/report.shtml"
+        ],
+        "target": "/iresearch/weekly/5"
       }
     ]
   },
@@ -23855,12 +24507,13 @@
   },
   "iwara.tv": {
     "_name": "iwara",
-    "ecchi": [
+    "www": [
       {
         "title": "User Subscriptions",
         "docs": "https://docs.rsshub.app/routes/anime",
         "source": [
-          "/"
+          "/subscriptions/videos",
+          "/subscriptions/images"
         ],
         "target": "/iwara/subscriptions"
       }
@@ -31923,6 +32576,31 @@
       }
     ]
   },
+  "netflix.com": {
+    "_name": "Netflix",
+    "about": [
+      {
+        "title": "Newsroom",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:region/newsroom",
+          "/"
+        ],
+        "target": "/netflix/newsroom/:category?/:region?"
+      }
+    ],
+    "research": [
+      {
+        "title": "Research",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archive",
+          "/"
+        ],
+        "target": "/netflix/research"
+      }
+    ]
+  },
   "neu.edu.cn": {
     "_name": "东北大学",
     "neunews": [
@@ -35730,7 +36408,7 @@
     "_name": "Instagram",
     "www": [
       {
-        "title": "User Profile - Picnob",
+        "title": "User Profile - Pixnoy",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/profile/:id"
@@ -35738,7 +36416,7 @@
         "target": "/picnob/user/:id"
       },
       {
-        "title": "User Profile - Picnob",
+        "title": "User Profile - Pixnoy",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/profile/:id/tagged"
@@ -46145,6 +46823,19 @@
           "/"
         ],
         "target": "/ymgal/game/release"
+      }
+    ]
+  },
+  "ynet.com": {
+    "_name": "北青网",
+    ".": [
+      {
+        "title": "列表",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/ynet(_,url)=>{const urlObj=new URL(url);const domainParts=urlObj.hostname.split(\".\");let category=\"\";if(domainParts.length>2){const subdomains=domainParts.slice(0,-2).filter(part=>part!==\"www\");if(subdomains.length>0){category=subdomains[0]}}const idMatch=urlObj.pathname.match(/\\/list\\/(.+)\\.html/);const id=idMatch?idMatch[1]:\"\";return`/ynet/list${category?`/${category}`:\"\"}${id?`/${id}`:\"\"}`}"
       }
     ]
   },
