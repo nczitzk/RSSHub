@@ -371,6 +371,7 @@ export type RoutePath =
   | `/bmkg/earthquake`
   | `/bmkg/news`
   | `/bnext/`
+  | `/bntnews/:category?`
   | `/bnu/bs/:category?`
   | `/bnu/dwxgb/:category/:type`
   | `/bnu/fdy/:path{.+}?`
@@ -405,6 +406,7 @@ export type RoutePath =
   | `/bupt/jwc/:type`
   | `/bupt/rczp`
   | `/bupt/scss/tzgg`
+  | `/bwsg*`
   | `/byau/news/:type_id`
   | `/byteclicks/`
   | `/byteclicks/tag/:tag`
@@ -848,8 +850,12 @@ export type RoutePath =
   | `/easynomad/`
   | `/ebc/realtime/:category?`
   | `/ecnu/acm/contest/:category?`
+  | `/ecnu/art`
   | `/ecnu/bksy`
   | `/ecnu/cee`
+  | `/ecnu/chem`
+  | `/ecnu/chinese`
+  | `/ecnu/comm`
   | `/ecnu/cs`
   | `/ecnu/dase`
   | `/ecnu/dx`
@@ -859,9 +865,17 @@ export type RoutePath =
   | `/ecnu/ghcollege`
   | `/ecnu/history`
   | `/ecnu/jwc`
+  | `/ecnu/mks`
   | `/ecnu/mxcsy`
+  | `/ecnu/pharm`
   | `/ecnu/philo`
+  | `/ecnu/phy`
+  | `/ecnu/psy`
+  | `/ecnu/sees`
   | `/ecnu/sei`
+  | `/ecnu/spm`
+  | `/ecnu/stat`
+  | `/ecnu/tyxx`
   | `/ecnu/yjs`
   | `/economist/:endpoint`
   | `/economist/espresso`
@@ -1367,6 +1381,7 @@ export type RoutePath =
   | `/huggingface/blog-community/:sort?`
   | `/huggingface/blog-zh`
   | `/huggingface/daily-papers/:cycle?/:voteFliter?`
+  | `/huggingface/models/:group`
   | `/huijin-inv/news`
   | `/hunanpea/rsks/:guid`
   | `/hunau/gfxy/:category?/:page?`
@@ -1379,6 +1394,7 @@ export type RoutePath =
   | `/hupu/bbs/:id?/:order?`
   | `/hupu/bxj/:id?/:order?`
   | `/hupu/dept/:category?`
+  | `/hupu/news/:team`
   | `/hust/aia/news`
   | `/hust/aia/notice/:type?`
   | `/hust/auto/news`
@@ -2039,6 +2055,7 @@ export type RoutePath =
   | `/oeeee/app/reporter/:id`
   | `/oeeee/web/:channel`
   | `/oesw*`
+  | `/oevw/:json?`
   | `/oilchem/:type?/:category?/:subCategory?`
   | `/okx/:section?`
   | `/olevod/vod/:id`
@@ -2176,6 +2193,7 @@ export type RoutePath =
   | `/pornhub/users/:username/:language?`
   | `/postman/release-notes`
   | `/priconne-redive/news/:server?`
+  | `/producereport/:category{.+}?`
   | `/producthunt/today`
   | `/ps/monthly-games`
   | `/ps/trophy/:id`
@@ -2552,6 +2570,7 @@ export type RoutePath =
   | `/substack/subscribe/:user`
   | `/supchina/`
   | `/supchina/podcasts`
+  | `/supercell/:game/blog/:locale?`
   | `/surfshark/blog/:category{.+}?`
   | `/sustainabilitymag/articles`
   | `/sustech/bidding`
@@ -2722,6 +2741,7 @@ export type RoutePath =
   | `/tsinghua/news/:category?`
   | `/ttv/:category?`
   | `/tumblr/posts/:blog`
+  | `/tumblr/tagged/:tag`
   | `/tvb/news/:category?/:language?`
   | `/tver/series/:id`
   | `/tvtropes/featured/:category?`
