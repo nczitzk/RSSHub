@@ -2104,6 +2104,12 @@
   "/daily/user/:userId/:innerSharedContent?": [
     "TonyRL"
   ],
+  "/dailypush/:sort?": [
+    "TheGeeKing"
+  ],
+  "/dailypush/tag/:tag/:sort?": [
+    "TheGeeKing"
+  ],
   "/damai/activity/:city/:category/:subcategory/:keyword?": [
     "hoilc",
     "Konano"
