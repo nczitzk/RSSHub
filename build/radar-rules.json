@@ -13401,6 +13401,30 @@
       }
     ]
   },
+  "dailypush.dev": {
+    "_name": "DailyPush",
+    ".": [
+      {
+        "title": "All",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/",
+          "/latest"
+        ],
+        "target": "/dailypush/"
+      },
+      {
+        "title": "Tag",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/:tag/trending",
+          "/:tag/latest",
+          "/:tag"
+        ],
+        "target": "/dailypush/tag/:tag/:sort?"
+      }
+    ]
+  },
   "daoxuan.cc": {
     "_name": "道宣的窝",
     ".": [
