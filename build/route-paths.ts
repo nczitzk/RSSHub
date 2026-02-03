@@ -1120,6 +1120,7 @@ export type RoutePath =
   | `/github/user/followers/:user`
   | `/github/user_event/:username/:types?`
   | `/github/wiki/:user/:repo/:page?`
+  | `/gitkraken/release-note`
   | `/gitpod/blog`
   | `/gitpod/changelog`
   | `/gitstar-ranking/:category?`
@@ -1219,7 +1220,7 @@ export type RoutePath =
   | `/gov/ndrc/fggz/:category{.+}?`
   | `/gov/ndrc/xwdt/:category{.+}?`
   | `/gov/ndrc/zfxxgk`
-  | `/gov/nea/sjzz/ghs`
+  | `/gov/nea/sjzz/:bureau`
   | `/gov/nifdc/:path{.+}?`
   | `/gov/nmpa/*`
   | `/gov/nopss/*`
@@ -1855,6 +1856,8 @@ export type RoutePath =
   | `/misskon/tag/:tag`
   | `/misskon/top/:k`
   | `/mit/hanlab/blog`
+  | `/mit/scratch/user-comments/:username`
+  | `/mit/scratch/user-projects/:username`
   | `/mittrchina/:type?`
   | `/miui/community/user/:uid`
   | `/miui/firmware/:device/:type?/:region?`
@@ -2112,6 +2115,7 @@ export type RoutePath =
   | `/openai/cookbook`
   | `/openai/news`
   | `/openai/research`
+  | `/openalex/:journals/:type?/:ids?`
   | `/openrice/:lang/hongkong/explore/chart/:category`
   | `/openrice/:lang/hongkong/offers`
   | `/openrice/:lang/hongkong/promos`
@@ -2129,7 +2133,6 @@ export type RoutePath =
   | `/oschina/news/:category?`
   | `/oschina/topic/:topic`
   | `/oschina/u/:uid`
-  | `/oschina/user/:id`
   | `/oshwhub/explore/:type?/:origin?/:projectTag{.+}?`
   | `/osu/latest-ranked/:routeParams?`
   | `/osu/packs/:type?`
@@ -2308,6 +2311,7 @@ export type RoutePath =
   | `/qqorw/:category?`
   | `/qstheory/:category?`
   | `/qstheory/magazine/:magazine`
+  | `/quantamagazine/archive`
   | `/questmobile/report/:industry?/:label?`
   | `/questn/community/:communityUrl`
   | `/questn/events/:filter?`
@@ -2734,6 +2738,7 @@ export type RoutePath =
   | `/thzt/blog`
   | `/tidb/blog/c/:category?`
   | `/tiddlywiki/releases`
+  | `/tiktok/live/:user`
   | `/tiktok/user/:user/:iframe?`
   | `/timednews/news/:type?`
   | `/tingshuitz/changsha/:channelId?`

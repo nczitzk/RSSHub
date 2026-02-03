@@ -3455,6 +3455,9 @@
   "/github/wiki/:user/:repo/:page?": [
     "TonyRL"
   ],
+  "/gitkraken/release-note": [
+    "TonyRL"
+  ],
   "/gitpod/blog": [
     "TonyRL"
   ],
@@ -3736,7 +3739,7 @@
     "howfool",
     "nczitzk"
   ],
-  "/gov/nea/sjzz/ghs": [
+  "/gov/nea/sjzz/:bureau": [
     "nczitzk",
     "pseudoyu"
   ],
@@ -5650,6 +5653,12 @@
   "/mit/hanlab/blog": [
     "johan456789"
   ],
+  "/mit/scratch/user-comments/:username": [
+    "Skota11"
+  ],
+  "/mit/scratch/user-projects/:username": [
+    "Skota11"
+  ],
   "/mittrchina/:type?": [
     "EsuRt",
     "queensferryme"
@@ -6267,7 +6276,8 @@
     "Blank0120"
   ],
   "/nuist/bulletin/:category?": [
-    "gylidian"
+    "gylidian",
+    "QianYu-u"
   ],
   "/nuist/cas/:category?": [
     "gylidian"
@@ -6445,7 +6455,9 @@
   "/openai/chatgpt-atlas/release-notes": [
     "xbot"
   ],
-  "/openai/chatgpt/release-notes": [],
+  "/openai/chatgpt/release-notes": [
+    "xbot"
+  ],
   "/openai/cookbook": [
     "liyaozhong"
   ],
@@ -6456,6 +6468,9 @@
   ],
   "/openai/research": [
     "yuguorui"
+  ],
+  "/openalex/:journals/:type?/:ids?": [
+    "emdoe"
   ],
   "/openrice/:lang/hongkong/explore/chart/:category": [
     "after9"
@@ -6504,8 +6519,9 @@
   "/oschina/topic/:topic": [
     "loveely7"
   ],
-  "/oschina/u/:uid": [],
-  "/oschina/user/:id": [],
+  "/oschina/u/:uid": [
+    "dxmpalb"
+  ],
   "/oshwhub/explore/:type?/:origin?/:projectTag{.+}?": [
     "tylinux",
     "nczitzk"
@@ -7054,6 +7070,9 @@
   "/qstheory/magazine/:magazine": [
     "TonyRL",
     "cscnk52"
+  ],
+  "/quantamagazine/archive": [
+    "emdoe"
   ],
   "/questmobile/report/:industry?/:label?": [
     "nczitzk"
@@ -8400,6 +8419,9 @@
   ],
   "/tiddlywiki/releases": [
     "p3psi-boo"
+  ],
+  "/tiktok/live/:user": [
+    "TonyRL"
   ],
   "/tiktok/user/:user/:iframe?": [
     "TonyRL"

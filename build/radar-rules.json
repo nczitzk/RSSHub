@@ -18391,6 +18391,29 @@
       }
     ]
   },
+  "gitkraken.com": {
+    "_name": "GitKraken",
+    "help": [
+      {
+        "title": "Release Notes",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/gitkraken-desktop/current/"
+        ],
+        "target": "/gitkraken/release-note"
+      }
+    ],
+    "www": [
+      {
+        "title": "Release Notes",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/"
+        ],
+        "target": "/gitkraken/release-note"
+      }
+    ]
+  },
   "gitpod.io": {
     "_name": "Gitpod",
     ".": [
@@ -20888,12 +20911,12 @@
     "_name": "深圳市罗湖区人民政府",
     ".": [
       {
-        "title": "发展规划司",
+        "title": "司工作进展",
         "docs": "https://docs.rsshub.app/routes/government",
         "source": [
-          "/sjzz/ghs/"
+          "/sjzz/:bureau/index.htm"
         ],
-        "target": "/gov/nea/sjzz/ghs"
+        "target": "/gov/nea/sjzz/:bureau"
       }
     ]
   },
@@ -31990,6 +32013,24 @@
         ],
         "target": "/mit/hanlab/blog"
       }
+    ],
+    "scratch": [
+      {
+        "title": "Scratch User Comments",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/users/:username/"
+        ],
+        "target": "/mit/scratch/user-comments/:username"
+      },
+      {
+        "title": "Scratch User Projects",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/users/:username/projects/"
+        ],
+        "target": "/mit/scratch/user-projects/:username"
+      }
     ]
   },
   "miui.com": {
@@ -34912,9 +34953,9 @@
         "title": "南信大信息公告栏",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
-          "/:category/list.htm"
+          "/:filename"
         ],
-        "target": "/nuist/bulletin/:category"
+        "target": "/nuistparams=>{const filename=params.filename.replace(/\\.htm$/i,\"\");return`/nuist${filename===\"index\"?\"/bulletin\":`/bulletin/${filename}`}`}"
       }
     ],
     "lib": [
@@ -35204,6 +35245,19 @@
       }
     ]
   },
+  "openalex.org": {
+    "_name": "OpenAlex",
+    ".": [
+      {
+        "title": "Works",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/works"
+        ],
+        "target": "/openalex/:journals/:type?/:ids?"
+      }
+    ]
+  },
   "openwrt.org": {
     "_name": "OpenWrt",
     ".": [
@@ -35271,9 +35325,9 @@
         "title": "资讯",
         "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
-          "/news/:category"
+          "/"
         ],
-        "target": "/oschina/news/:category"
+        "target": "/oschina/news"
       },
       {
         "title": "问答主题",
@@ -35286,20 +35340,13 @@
     ],
     "my": [
       {
-        "title": "数字型账号用户博客",
+        "title": "用户博客",
         "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
-          "/u/:uid"
+          "/u/:uid",
+          "/:uid"
         ],
         "target": "/oschina/u/:uid"
-      },
-      {
-        "title": "数字型账号用户博客",
-        "docs": "https://docs.rsshub.app/routes/programming",
-        "source": [
-          "/u/:uid"
-        ],
-        "target": "/oschina/user/:id"
       }
     ]
   },
@@ -39421,6 +39468,19 @@
           "/:magazine/mulu.htm"
         ],
         "target": "/qstheory/magazine/:magazine"
+      }
+    ]
+  },
+  "quantamagazine.org": {
+    "_name": "Quanta Magazine",
+    ".": [
+      {
+        "title": "Archive",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/quantamagazine/archive"
       }
     ]
   },
@@ -45052,7 +45112,15 @@
   },
   "tiktok.com": {
     "_name": "TikTok",
-    ".": [
+    "www": [
+      {
+        "title": "Live",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/:user/live"
+        ],
+        "target": "/tiktok/live/:user"
+      },
       {
         "title": "User",
         "docs": "https://docs.rsshub.app/routes/social-media",
