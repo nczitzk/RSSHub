@@ -479,6 +479,7 @@ export type RoutePath =
   | `/ccf/tfbd/:caty/:id`
   | `/ccfa/:type?`
   | `/ccg/:category?`
+  | `/ccmn/price-adjustment/:category`
   | `/ccnu/career`
   | `/ccnu/cs`
   | `/ccnu/wu`
@@ -942,6 +943,8 @@ export type RoutePath =
   | `/everia/tag/:tag`
   | `/expats/czech-news/:category?`
   | `/f-droid/apprelease/:app`
+  | `/f95zone/post/:thread/:postId`
+  | `/f95zone/thread/:thread`
   | `/famitsu/category/:category?`
   | `/fanbox/:creator`
   | `/fangchan/list/:id?`
@@ -1416,6 +1419,7 @@ export type RoutePath =
   | `/huggingface/daily-papers/:cycle?/:voteFliter?`
   | `/huggingface/models/:group`
   | `/huijin-inv/news`
+  | `/huitun/xiaohongshu/:user_id`
   | `/hunanpea/rsks/:guid`
   | `/hunau/gfxy/:category?/:page?`
   | `/hunau/ied/:type?/:category?/:page?`
