@@ -2544,6 +2544,9 @@ export type RoutePath =
   | `/smzdm/keyword/:keyword`
   | `/smzdm/product/:id`
   | `/smzdm/ranking/:rank_type/:rank_id/:hour`
+  | `/snnu/`
+  | `/snnu/ccs/:type?`
+  | `/snnu/yjs`
   | `/snowpeak/us/new-arrivals`
   | `/sobooks/:category?`
   | `/sobooks/date/:date?`
@@ -2676,6 +2679,7 @@ export type RoutePath =
   | `/taptap/review/:id/:order?/:lang?`
   | `/taptap/topic/:id/:type?/:sort?/:lang?`
   | `/tass/:category?`
+  | `/tctmd/conference-news`
   | `/techcrunch/category/:categoryId`
   | `/techcrunch/news`
   | `/techflowpost/`
