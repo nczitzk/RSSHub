@@ -336,8 +336,8 @@ importers:
         specifier: 1.0.4
         version: 1.0.4
       '@types/jsrsasign':
-        specifier: 10.5.13
-        version: 10.5.13
+        specifier: 10.5.15
+        version: 10.5.15
       '@types/mailparser':
         specifier: 3.4.6
         version: 3.4.6
@@ -2119,8 +2119,8 @@ packages:
   '@types/jsonfile@6.1.4':
     resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
 
-  '@types/jsrsasign@10.5.13':
-    resolution: {integrity: sha512-vvVHLrXxoUZgBWTcJnTMSC4FAQcG2loK7N1Uy20I3nr/aUhetbGdfuwSzXkrMoll2RoYKW0IcMIN0I0bwMwVMQ==}
+  '@types/jsrsasign@10.5.15':
+    resolution: {integrity: sha512-3stUTaSRtN09PPzVWR6aySD9gNnuymz+WviNHoTb85dKu+BjaV4uBbWWGykBBJkfwPtcNZVfTn2lbX00U+yhpQ==}
 
   '@types/linkify-it@5.0.0':
     resolution: {integrity: sha512-sVDA58zAw4eWAffKOaQH5/5j3XeayukzDk+ewSsnv3p4yJEZHCCzMDiZM8e0OUrRvmpGZ85jf4yDHkHsgBNr9Q==}
@@ -7324,7 +7324,7 @@ snapshots:
     dependencies:
       '@types/node': 25.2.3
 
-  '@types/jsrsasign@10.5.13': {}
+  '@types/jsrsasign@10.5.15': {}
 
   '@types/linkify-it@5.0.0': {}
 
