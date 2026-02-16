@@ -279,9 +279,6 @@ export type RoutePath =
   | `/bast*`
   | `/bbc/:site?/:channel?`
   | `/bbc/learningenglish/:channel?`
-  | `/bbc/sport/:sport`
-  | `/bbc/topics/:topic`
-  | `/bbc/zhongwen/topics/:topic/:variant?`
   | `/bbcnewslabs/news`
   | `/bc3ts/post/list/:sort?`
   | `/bdys/:caty?/:type?/:area?/:year?/:order?`
@@ -919,7 +916,6 @@ export type RoutePath =
   | `/ehentai/search/:params?/:page?/:routeParams?`
   | `/ehentai/tag/:tag/:page?/:routeParams?`
   | `/ekantipur/:channel?`
-  | `/elamigos/games`
   | `/elasticsearch-cn/:params?`
   | `/elecfans/article/:atype`
   | `/elecfans/soft/:atype`
@@ -2514,7 +2510,6 @@ export type RoutePath =
   | `/sina/csj`
   | `/sina/discovery/:type`
   | `/sina/finance/china/:lid?`
-  | `/sina/finance/rollnews/:lid?`
   | `/sina/finance/stock/usstock/:cids?`
   | `/sina/rollnews/:lid?`
   | `/sina/sports/:type?`
@@ -2737,7 +2732,6 @@ export type RoutePath =
   | `/thepaper/channel/:id`
   | `/thepaper/factpaper/:status?`
   | `/thepaper/featured`
-  | `/thepaper/gov/:pphId`
   | `/thepaper/list/:id`
   | `/thepaper/sidebar/:sec?`
   | `/thepaper/user/:pphId`

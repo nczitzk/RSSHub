@@ -4833,13 +4833,12 @@
   },
   "ainvest.com": {
     "_name": "AInvest",
-    "www": [
+    ".": [
       {
         "title": "Latest Article",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
-          "/news/articles-latest/",
-          "/"
+          "/news"
         ],
         "target": "/ainvest/article"
       },
@@ -4847,7 +4846,7 @@
         "title": "Latest News",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
-          "/news/"
+          "/news"
         ],
         "target": "/ainvest/news"
       }
@@ -7132,35 +7131,6 @@
           "/blog/:category"
         ],
         "target": "/baselang/blog/:category"
-      }
-    ]
-  },
-  "bbc.com": {
-    "_name": "BBC",
-    "www": [
-      {
-        "title": "Sport",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/sport/:sport"
-        ],
-        "target": "/bbc/sport/:sport"
-      },
-      {
-        "title": "Topics - BBC News 中文",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/zhongwen/topics/:topic/:variant"
-        ],
-        "target": "/bbc/zhongwen/topics/:topic/:variant?"
-      },
-      {
-        "title": "Topics",
-        "docs": "https://docs.rsshub.app/routes/traditional-media",
-        "source": [
-          "/news/topics/:topic"
-        ],
-        "target": "/bbc/topics/:topic"
       }
     ]
   },
@@ -16120,20 +16090,6 @@
           "/:channel"
         ],
         "target": "/ekantipur/:channel"
-      }
-    ]
-  },
-  "elamigos.site": {
-    "_name": "ElAmigos",
-    ".": [
-      {
-        "title": "Releases",
-        "docs": "https://docs.rsshub.app/routes/game",
-        "source": [
-          "/",
-          "/index.html"
-        ],
-        "target": "/elamigos/games"
       }
     ]
   },
@@ -41692,15 +41648,6 @@
           "/"
         ],
         "target": "/sina/finance/china"
-      },
-      {
-        "title": "财经－滚动新闻",
-        "docs": "https://docs.rsshub.app/routes/new-media",
-        "source": [
-          "/roll",
-          "/"
-        ],
-        "target": "/sina/finance/rollnews"
       },
       {
         "title": "美股",
