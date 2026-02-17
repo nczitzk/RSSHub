@@ -844,6 +844,15 @@
   "/bbc/learningenglish/:channel?": [
     "Blank0120"
   ],
+  "/bbc/sport/:sport": [
+    "TonyRL"
+  ],
+  "/bbc/zhongwen/topics/:topic/:variant?": [
+    "TonyRL"
+  ],
+  "/bbc/topics/:topic": [
+    "TonyRL"
+  ],
   "/bbcnewslabs/news": [
     "elxy"
   ],
@@ -2813,6 +2822,9 @@
   ],
   "/ekantipur/:channel?": [
     "maniche04"
+  ],
+  "/elamigos/games": [
+    "Kylon92"
   ],
   "/elasticsearch-cn/:params?": [
     "nczitzk"
@@ -7703,6 +7715,9 @@
   "/sina/finance/china/:lid?": [
     "yubinbai"
   ],
+  "/sina/finance/rollnews/:lid?": [
+    "betterandbetterii"
+  ],
   "/sina/finance/stock/usstock/:cids?": [
     "TonyRL"
   ],
@@ -8397,6 +8412,9 @@
     "HenryQW",
     "nczitzk",
     "bigfei"
+  ],
+  "/thepaper/gov/:pphId": [
+    "occam-7"
   ],
   "/thepaper/list/:id": [
     "nczitzk",
