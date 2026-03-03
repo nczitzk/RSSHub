@@ -1931,6 +1931,19 @@
       }
     ]
   },
+  "4chan.org": {
+    "_name": "4chan",
+    "boards": [
+      {
+        "title": "Board's catalog",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/:board/"
+        ],
+        "target": "/4chan/:board/catalog"
+      }
+    ]
+  },
   "4gamers.com.tw": {
     "_name": "4Gamers",
     "www": [
@@ -2832,12 +2845,13 @@
     "_name": "8KCosplay",
     ".": [
       {
-        "title": "Unknown",
+        "title": "分类",
         "docs": "https://docs.rsshub.app/routes/picture",
         "source": [
-          "/"
+          "/category/:mainCategory/:cat/",
+          "/category/:cat/"
         ],
-        "target": "/8kcos/cat/:cat{.+}?"
+        "target": "/8kcos/cat/:cat"
       },
       {
         "title": "最新",
@@ -12526,6 +12540,27 @@
           "/:id/"
         ],
         "target": "/colamanga/:id"
+      }
+    ]
+  },
+  "comic-fuz.com": {
+    "_name": "COMIC FUZ",
+    ".": [
+      {
+        "title": "杂志详情",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/magazine/:id"
+        ],
+        "target": "/comic-fuz/magazine/:id"
+      },
+      {
+        "title": "漫画详情",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/manga/:id"
+        ],
+        "target": "/comic-fuz/manga/:id"
       }
     ]
   },
@@ -25339,6 +25374,15 @@
     "_name": "iwara",
     "www": [
       {
+        "title": "Ranking",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/videos",
+          "/images"
+        ],
+        "target": "/iwara(params,url)=>{const searchParams=new URL(url).searchParams;const type=url.includes(\"/videos\")?\"video\":\"image\";const sort=searchParams.get(\"sort\")||\"date\";const rating=searchParams.get(\"rating\")||\"ecchi\";return`/iwara/ranking/${type}/${sort}/${rating}`}"
+      },
+      {
         "title": "User Subscriptions",
         "docs": "https://docs.rsshub.app/routes/anime",
         "source": [
@@ -28309,6 +28353,19 @@
           "/u/:handle"
         ],
         "target": "/lens/profile/:handle"
+      }
+    ]
+  },
+  "lephoceen.fr": {
+    "_name": "Le Phocéen",
+    ".": [
+      {
+        "title": "Fil Info Le Phocéen (Chrono)",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/chrono"
+        ],
+        "target": "/lephoceen/chrono"
       }
     ]
   },
