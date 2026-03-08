@@ -223,6 +223,7 @@ export type RoutePath =
   | `/arcteryx/outlet/:country/:gender`
   | `/arcteryx/regear/new-arrivals`
   | `/artstation/:handle`
+  | `/aschmelyun/blog`
   | `/asiafruitchina/categories/:category?`
   | `/asiafruitchina/news`
   | `/asianfanfics/tag/:tag/:type`
@@ -1064,6 +1065,7 @@ export type RoutePath =
   | `/gamersky/ent/:category?`
   | `/gamersky/news/:type?`
   | `/gamersky/review/:type?`
+  | `/gamersky/user/:userId/:detail?`
   | `/gamme/:domain/:category?`
   | `/gamme/:domain/tag/:tag`
   | `/ganjingworld/channel/articles/:id`
@@ -1081,6 +1083,8 @@ export type RoutePath =
   | `/gcores/tags/:id/:tab?`
   | `/gcores/topics/:id/recommend`
   | `/gcores/topics/recommend`
+  | `/gcores/users/:id/radios`
+  | `/gcores/users/:id/talks`
   | `/gcores/videos`
   | `/gdsrx/:id?`
   | `/gdufs/news`
@@ -1834,6 +1838,7 @@ export type RoutePath =
   | `/melonbooks/search/:query?`
   | `/mercari/:sort/:order/:status/:keyword`
   | `/mercari/search/:query`
+  | `/meritalk/articles`
   | `/meta/ai/blog`
   | `/metacritic/:type?/:sort?/:filter?`
   | `/meteoblue/weathernews`
