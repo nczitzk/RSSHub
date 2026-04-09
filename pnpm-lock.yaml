@@ -215,8 +215,8 @@ importers:
         specifier: 9.1.1
         version: 9.1.1
       re2js:
-        specifier: 1.2.3
-        version: 1.2.3
+        specifier: 2.0.1
+        version: 2.0.1
       rebrowser-puppeteer:
         specifier: 24.8.1
         version: 24.8.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@5.0.10)
@@ -2824,6 +2824,7 @@ packages:
   basic-ftp@5.2.0:
     resolution: {integrity: sha512-VoMINM2rqJwJgfdHq6RiUudKt2BV+FY5ZFezP/ypmwayk68+NzzAQy4XXLlqsGD4MCzq3DrmNFD/uUmBJuGoXw==}
     engines: {node: '>=10.0.0'}
+    deprecated: Security vulnerability fixed in 5.2.1, please upgrade
 
   bcrypt-pbkdf@1.0.2:
     resolution: {integrity: sha512-qeFIXtP4MSoi6NLqO12WfqARWWuCKi2Rn/9hJLEmtB5yTNr9DqFWkJRCf2qShWzPeAMRnOgCrq0sg/KLv5ES9w==}
@@ -4986,8 +4987,8 @@ packages:
   rate-limiter-flexible@9.1.1:
     resolution: {integrity: sha512-imxFjzPCmvDLMe7d2tsgiSQvs5EI2fI9SNymmslAfOqznZhsZ+PqbIjIYKpuSbd3pKovR1aMG47qfCLIO/adVg==}
 
-  re2js@1.2.3:
-    resolution: {integrity: sha512-M2/7k8LkP+LmB/muGZXvAHiwhgwqq0Ign2UHCZkea39nHOakeixyMSfb7rql7N/6u5PTS+IpP2MKfRLJ4fed0g==}
+  re2js@2.0.1:
+    resolution: {integrity: sha512-X59sWAF3UaMKfsVZT5/kJk1kBK10artA4jxScW4dPYtIuyDAWITcTDgkgEf9GPaqCKMVPgL2oEJGib9jN4WnkQ==}
 
   readable-stream@3.6.2:
     resolution: {integrity: sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==}
@@ -10675,7 +10676,7 @@ snapshots:
 
   rate-limiter-flexible@9.1.1: {}
 
-  re2js@1.2.3: {}
+  re2js@2.0.1: {}
 
   readable-stream@3.6.2:
     dependencies:
