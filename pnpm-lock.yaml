@@ -86,8 +86,8 @@ importers:
         specifier: 1.2.0
         version: 1.2.0
       city-timezones:
-        specifier: 1.3.3
-        version: 1.3.3
+        specifier: 1.3.4
+        version: 1.3.4
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -2984,8 +2984,8 @@ packages:
     resolution: {integrity: sha512-77PSwercCZU2Fc4sX94eF8k8Pxte6JAwL4/ICZLFjJLqegs7kCuAsqqj/70NQF6TvDpgFjkubQB2FW2ZZddvQg==}
     engines: {node: '>=8'}
 
-  city-timezones@1.3.3:
-    resolution: {integrity: sha512-tyH1Tje3mee1mWkjerhx/8CLOfTJn6A5L6swAqLRceoToj9bvKNkfcKESoxG9rApXBKxKeZQUQbbzYcoRSJbZw==}
+  city-timezones@1.3.4:
+    resolution: {integrity: sha512-yLmtCxU4y5HLAw9XGIMcGEXO+R2KH1sb595wEQC/E9BxSDpazCD7v9ZQRySO7367IXWsWqt3z2xFVh3OkZdgEQ==}
 
   cjs-module-lexer@2.2.0:
     resolution: {integrity: sha512-4bHTS2YuzUvtoLjdy+98ykbNB5jS0+07EvFNXerqZQJ89F7DI6ET7OQo/HJuW6K0aVsKA9hj9/RVb2kQVOrPDQ==}
@@ -8374,7 +8374,7 @@ snapshots:
 
   ci-info@4.4.0: {}
 
-  city-timezones@1.3.3: {}
+  city-timezones@1.3.4: {}
 
   cjs-module-lexer@2.2.0: {}
 
