@@ -91,7 +91,7 @@
         "header-generator": "2.1.82",
         "hono": "4.12.16",
         "html-to-text": "9.0.5",
-        "http-cookie-agent": "7.0.3",
+        "http-cookie-agent": "8.0.0",
         "https-proxy-agent": "7.0.6",
         "iconv-lite": "0.7.2",
         "imapflow": "1.2.18",
