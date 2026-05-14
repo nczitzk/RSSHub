@@ -215,8 +215,8 @@ importers:
         specifier: 9.1.1
         version: 9.1.1
       re2js:
-        specifier: 1.2.3
-        version: 1.2.3
+        specifier: 2.8.0
+        version: 2.8.0
       rebrowser-puppeteer:
         specifier: 24.8.1
         version: 24.8.1(bufferutil@4.1.0)(typescript@5.9.3)(utf-8-validate@5.0.10)
@@ -4988,8 +4988,8 @@ packages:
   rate-limiter-flexible@9.1.1:
     resolution: {integrity: sha512-imxFjzPCmvDLMe7d2tsgiSQvs5EI2fI9SNymmslAfOqznZhsZ+PqbIjIYKpuSbd3pKovR1aMG47qfCLIO/adVg==}
 
-  re2js@1.2.3:
-    resolution: {integrity: sha512-M2/7k8LkP+LmB/muGZXvAHiwhgwqq0Ign2UHCZkea39nHOakeixyMSfb7rql7N/6u5PTS+IpP2MKfRLJ4fed0g==}
+  re2js@2.8.0:
+    resolution: {integrity: sha512-HCjH9S3vdPyoYqv6++dZGa0RtG9xr7cAV00I0ymNHaKgiYOISsfTOMAj2UAP9miRWP+786AO/a4bIvtzTFOI1Q==}
 
   readable-stream@3.6.2:
     resolution: {integrity: sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==}
@@ -5962,6 +5962,18 @@ packages:
 
   ws@8.20.0:
     resolution: {integrity: sha512-sAt8BhgNbzCtgGbt2OxmpuryO63ZoDk/sqaB/znQm94T4fCEsy/yV+7CdC1kJhOU9lboAEU7R3kquuycDoibVA==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
+  ws@8.20.1:
+    resolution: {integrity: sha512-It4dO0K5v//JtTXuPkfEOaI3uUN87iYPnqo/ZzqCoG3g8uhA66QUMs/SrM0YK7/NAu+r4LMh/9dq2A7k+rHs+w==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -10675,7 +10687,7 @@ snapshots:
 
   rate-limiter-flexible@9.1.1: {}
 
-  re2js@1.2.3: {}
+  re2js@2.8.0: {}
 
   readable-stream@3.6.2:
     dependencies:
@@ -10710,7 +10722,7 @@ snapshots:
       debug: 4.4.3
       devtools-protocol: 0.0.1439962
       typed-query-selector: 2.12.0
-      ws: 8.20.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      ws: 8.20.1(bufferutil@4.1.0)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
       - bare-abort-controller
       - bare-buffer
@@ -11780,6 +11792,11 @@ snapshots:
       utf-8-validate: 5.0.10
 
   ws@8.20.0(bufferutil@4.1.0)(utf-8-validate@5.0.10):
+    optionalDependencies:
+      bufferutil: 4.1.0
+      utf-8-validate: 5.0.10
+
+  ws@8.20.1(bufferutil@4.1.0)(utf-8-validate@5.0.10):
     optionalDependencies:
       bufferutil: 4.1.0
       utf-8-validate: 5.0.10
