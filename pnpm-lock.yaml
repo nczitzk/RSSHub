@@ -39,10 +39,10 @@ importers:
         version: 4.3.1
       '@hono/node-server':
         specifier: 1.19.14
-        version: 1.19.14(hono@4.12.16)
+        version: 1.19.14(hono@4.12.19)
       '@hono/zod-openapi':
         specifier: 1.2.4
-        version: 1.2.4(hono@4.12.16)(zod@4.3.6)
+        version: 1.2.4(hono@4.12.19)(zod@4.3.6)
       '@jocmp/mercury-parser':
         specifier: 3.0.8
         version: 3.0.8
@@ -75,7 +75,7 @@ importers:
         version: 0.0.25
       '@scalar/hono-api-reference':
         specifier: 0.10.14
-        version: 0.10.14(hono@4.12.16)
+        version: 0.10.14(hono@4.12.19)
       '@sentry/node':
         specifier: 10.42.0
         version: 10.42.0
@@ -128,8 +128,8 @@ importers:
         specifier: 2.1.82
         version: 2.1.82
       hono:
-        specifier: 4.12.16
-        version: 4.12.16
+        specifier: 4.12.19
+        version: 4.12.19
       html-to-text:
         specifier: 9.0.5
         version: 9.0.5
@@ -3866,8 +3866,8 @@ packages:
   hmacsha1@1.0.0:
     resolution: {integrity: sha512-4FP6J0oI8jqb6gLLl9tSwVdosWJ/AKSGJ+HwYf6Ixe4MUcEkst4uWzpVQrNOCin0fzTRQbXV8ePheU8WiiDYBw==}
 
-  hono@4.12.16:
-    resolution: {integrity: sha512-jN0ZewiNAWSe5khM3EyCmBb250+b40wWbwNILNfEvq84VREWwOIkuUsFONk/3i3nqkz7Oe1PcpM2mwQEK2L9Kg==}
+  hono@4.12.19:
+    resolution: {integrity: sha512-xa3eYXYXx68XTT4hZ7dRzsXBhaq85ToSrlUJNoR0gwz/1Ap/CNwX47wfvV7pc/xWhjKVVkLT7zBJy8chhNguqQ==}
     engines: {node: '>=16.9.0'}
 
   hookable@6.1.0:
@@ -5972,6 +5972,18 @@ packages:
       utf-8-validate:
         optional: true
 
+  ws@8.20.1:
+    resolution: {integrity: sha512-It4dO0K5v//JtTXuPkfEOaI3uUN87iYPnqo/ZzqCoG3g8uhA66QUMs/SrM0YK7/NAu+r4LMh/9dq2A7k+rHs+w==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
   wuzzy@0.1.8:
     resolution: {integrity: sha512-FUzKQepFSTnANsDYwxpIzGJ/dIJaqxuMre6tzzbvWwFAiUHPsI1nVQVCLK4Xqr67KO7oYAK0kaCcI/+WYj/7JA==}
 
@@ -6437,21 +6449,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@hono/node-server@1.19.14(hono@4.12.16)':
+  '@hono/node-server@1.19.14(hono@4.12.19)':
     dependencies:
-      hono: 4.12.16
+      hono: 4.12.19
 
-  '@hono/zod-openapi@1.2.4(hono@4.12.16)(zod@4.3.6)':
+  '@hono/zod-openapi@1.2.4(hono@4.12.19)(zod@4.3.6)':
     dependencies:
       '@asteasolutions/zod-to-openapi': 8.5.0(zod@4.3.6)
-      '@hono/zod-validator': 0.7.6(hono@4.12.16)(zod@4.3.6)
-      hono: 4.12.16
+      '@hono/zod-validator': 0.7.6(hono@4.12.19)(zod@4.3.6)
+      hono: 4.12.19
       openapi3-ts: 4.5.0
       zod: 4.3.6
 
-  '@hono/zod-validator@0.7.6(hono@4.12.16)(zod@4.3.6)':
+  '@hono/zod-validator@0.7.6(hono@4.12.19)(zod@4.3.6)':
     dependencies:
-      hono: 4.12.16
+      hono: 4.12.19
       zod: 4.3.6
 
   '@humanfs/core@0.19.1': {}
@@ -7530,10 +7542,10 @@ snapshots:
 
   '@scalar/helpers@0.6.0': {}
 
-  '@scalar/hono-api-reference@0.10.14(hono@4.12.16)':
+  '@scalar/hono-api-reference@0.10.14(hono@4.12.19)':
     dependencies:
       '@scalar/client-side-rendering': 0.1.7
-      hono: 4.12.16
+      hono: 4.12.19
 
   '@scalar/types@0.9.6':
     dependencies:
@@ -9349,7 +9361,7 @@ snapshots:
 
   hmacsha1@1.0.0: {}
 
-  hono@4.12.16: {}
+  hono@4.12.19: {}
 
   hookable@6.1.0: {}
 
@@ -10710,7 +10722,7 @@ snapshots:
       debug: 4.4.3
       devtools-protocol: 0.0.1439962
       typed-query-selector: 2.12.0
-      ws: 8.20.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      ws: 8.20.1(bufferutil@4.1.0)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
       - bare-abort-controller
       - bare-buffer
@@ -11780,6 +11792,11 @@ snapshots:
       utf-8-validate: 5.0.10
 
   ws@8.20.0(bufferutil@4.1.0)(utf-8-validate@5.0.10):
+    optionalDependencies:
+      bufferutil: 4.1.0
+      utf-8-validate: 5.0.10
+
+  ws@8.20.1(bufferutil@4.1.0)(utf-8-validate@5.0.10):
     optionalDependencies:
       bufferutil: 4.1.0
       utf-8-validate: 5.0.10
