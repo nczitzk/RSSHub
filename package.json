@@ -114,7 +114,7 @@
         "otplib": "13.3.0",
         "p-map": "7.0.4",
         "pac-proxy-agent": "7.2.0",
-        "proxy-chain": "2.7.1",
+        "proxy-chain": "3.0.0",
         "puppeteer-real-browser": "1.4.4",
         "query-string": "9.3.1",
         "rate-limiter-flexible": "9.1.1",
