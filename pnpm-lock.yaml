@@ -135,7 +135,7 @@ importers:
         version: 9.0.5
       http-cookie-agent:
         specifier: 7.0.3
-        version: 7.0.3(tough-cookie@6.0.1)(undici@7.22.0)
+        version: 7.0.3(tough-cookie@6.0.2)(undici@7.22.0)
       https-proxy-agent:
         specifier: 7.0.6
         version: 7.0.6
@@ -251,8 +251,8 @@ importers:
         specifier: 2.0.0-alpha.3
         version: 2.0.0-alpha.3
       tough-cookie:
-        specifier: 6.0.1
-        version: 6.0.1
+        specifier: 6.0.2
+        version: 6.0.2
       tsx:
         specifier: 4.21.0
         version: 4.21.0
@@ -1830,8 +1830,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@pkgr/core@0.2.9':
-    resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
+  '@pkgr/core@0.2.10':
+    resolution: {integrity: sha512-x6fFWCeak8aCGfqZfe6CXYt5xVjxe9Os1cIPmVRcToInKLjhJkRVXvJ/L3/1KxFkjDQdbZV/YsuLKqa8t/xKpA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
   '@poppinss/colors@4.1.6':
@@ -5484,8 +5484,8 @@ packages:
     resolution: {integrity: sha512-Loo5UUvLD9ScZ6jh8beX1T6sO1w2/MpCRpEP7V280GKMVUQ0Jzar2U3UJPsrdbziLEMMhu3Ujnq//rhiFuIeag==}
     engines: {node: '>=6'}
 
-  tough-cookie@6.0.1:
-    resolution: {integrity: sha512-LktZQb3IeoUWB9lqR5EWTHgW/VTITCXg4D21M+lvybRVdylLrRMnqaIONLVb5mav8vM19m44HIcGq4qASeu2Qw==}
+  tough-cookie@6.0.2:
+    resolution: {integrity: sha512-exgYmnmL/sJpR3upZfXG5PoatXQii55xAiXGXzY+sROLZ/Y+SLcp9PgJNI9Vz37HpQ74WvDcLT8eqm+kV3FzrA==}
     engines: {node: '>=16'}
 
   tr46@0.0.3:
@@ -5535,6 +5535,7 @@ packages:
   tsconfck@3.1.6:
     resolution: {integrity: sha512-ks6Vjr/jEw0P1gmOVwutM3B7fWxoWBL2KRDb1JfqGVawBmO5UsvmWOQFGHBPl5yxYz4eERr19E6L7NMv+Fej4w==}
     engines: {node: ^18 || >=20}
+    deprecated: unmaintained
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
@@ -5962,6 +5963,18 @@ packages:
 
   ws@8.20.0:
     resolution: {integrity: sha512-sAt8BhgNbzCtgGbt2OxmpuryO63ZoDk/sqaB/znQm94T4fCEsy/yV+7CdC1kJhOU9lboAEU7R3kquuycDoibVA==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
+  ws@8.21.0:
+    resolution: {integrity: sha512-Vsp28b7DRcimFQvrqu2Wek3z1iYxDCWqHYB8Qsnk/S4RfaCQzPGPyBNuVjJV3cd6UiKtUtp6sNM77gWvzcCH+g==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -7262,7 +7275,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@pkgr/core@0.2.9':
+  '@pkgr/core@0.2.10':
     optional: true
 
   '@poppinss/colors@4.1.6':
@@ -9278,7 +9291,7 @@ snapshots:
       got: 14.6.6
       memoizee: 0.4.17
       ramda: 0.32.0
-      tough-cookie: 6.0.1
+      tough-cookie: 6.0.2
     transitivePeerDependencies:
       - supports-color
 
@@ -9390,10 +9403,10 @@ snapshots:
 
   http-cache-semantics@4.2.0: {}
 
-  http-cookie-agent@7.0.3(tough-cookie@6.0.1)(undici@7.22.0):
+  http-cookie-agent@7.0.3(tough-cookie@6.0.2)(undici@7.22.0):
     dependencies:
       agent-base: 7.1.4
-      tough-cookie: 6.0.1
+      tough-cookie: 6.0.2
     optionalDependencies:
       undici: 7.22.0
 
@@ -9661,7 +9674,7 @@ snapshots:
       rrweb-cssom: 0.8.0
       saxes: 6.0.0
       symbol-tree: 3.2.4
-      tough-cookie: 6.0.1
+      tough-cookie: 6.0.2
       w3c-xmlserializer: 5.0.0
       webidl-conversions: 8.0.1
       whatwg-encoding: 3.1.1
@@ -10710,7 +10723,7 @@ snapshots:
       debug: 4.4.3
       devtools-protocol: 0.0.1439962
       typed-query-selector: 2.12.0
-      ws: 8.20.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      ws: 8.21.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
       - bare-abort-controller
       - bare-buffer
@@ -11167,7 +11180,7 @@ snapshots:
 
   synckit@0.11.12:
     dependencies:
-      '@pkgr/core': 0.2.9
+      '@pkgr/core': 0.2.10
     optional: true
 
   system-architecture@0.1.0: {}
@@ -11320,7 +11333,7 @@ snapshots:
       universalify: 0.2.0
       url-parse: 1.5.10
 
-  tough-cookie@6.0.1:
+  tough-cookie@6.0.2:
     dependencies:
       tldts: 7.0.30
 
@@ -11780,6 +11793,11 @@ snapshots:
       utf-8-validate: 5.0.10
 
   ws@8.20.0(bufferutil@4.1.0)(utf-8-validate@5.0.10):
+    optionalDependencies:
+      bufferutil: 4.1.0
+      utf-8-validate: 5.0.10
+
+  ws@8.21.0(bufferutil@4.1.0)(utf-8-validate@5.0.10):
     optionalDependencies:
       bufferutil: 4.1.0
       utf-8-validate: 5.0.10
