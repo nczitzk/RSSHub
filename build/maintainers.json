@@ -1278,6 +1278,9 @@
   "/rattibha/user/:user": [
     "yshalsager"
   ],
+  "/scmuseum/exhibition/:type?": [
+    "magazian"
+  ],
   "/sctv/programme/:id?/:limit?/:isFull?": [
     "nczitzk"
   ],
@@ -1898,6 +1901,9 @@
   "/3dmgame/news/:category?": [
     "zhboner",
     "lyqluis"
+  ],
+  "/3gmuseum/tempexhibition": [
+    "magazian"
   ],
   "/3kns/:filters?/:order?": [
     "xzzpig"
@@ -2598,6 +2604,12 @@
   "/canada.ca/news/:lang/:department?": [
     "elibroftw"
   ],
+  "/capitalmuseum/exhibition/:type?": [
+    "magazian"
+  ],
+  "/capitalmuseum/news/:type?": [
+    "magazian"
+  ],
   "/cartoonmad/comic/:id": [
     "KellyHwong"
   ],
@@ -2797,6 +2809,9 @@
   ],
   "/chinaratings/CreditResearch/:category{.+}?": [
     "nczitzk"
+  ],
+  "/chinasilkmuseum/zz": [
+    "magazian"
   ],
   "/chinathinktanks/:id": [
     "Aeliu"
@@ -3123,6 +3138,12 @@
   ],
   "/csu/mail/:type?": [
     "j1g5awi"
+  ],
+  "/csust/tggs": [
+    "powerfullz"
+  ],
+  "/csust/xkxs": [
+    "powerfullz"
   ],
   "/ctbu/xxgg": [
     "Skylwn"
@@ -6995,6 +7016,9 @@
   "/szftedu/gonggao": [
     "valuex"
   ],
+  "/szmuseum/temporary": [
+    "magazian"
+  ],
   "/szse/inquire/:category?/:select?/:keyword?": [
     "Jeason0228",
     "nczitzk"
@@ -7205,6 +7229,12 @@
   ],
   "/tisi/latest": [
     "Fatpandac"
+  ],
+  "/tjbwg/exhibition": [
+    "magazian"
+  ],
+  "/tjbwg/news": [
+    "magazian"
   ],
   "/tju/cic/:type?": [
     "AlanZeng423",
@@ -7992,6 +8022,9 @@
   "/zju/list/:type": [
     "Jeason0228"
   ],
+  "/zju/math/:type": [
+    "Alex222222222222"
+  ],
   "/zju/physics/:type": [
     "Caicailiushui"
   ],
@@ -8522,12 +8555,6 @@
   ],
   "/css-tricks/popular": [
     "Rjnishant530"
-  ],
-  "/csust/tggs": [
-    "powerfullz"
-  ],
-  "/csust/xkxs": [
-    "powerfullz"
   ],
   "/cw/author/:channel": [
     "TonyRL"

@@ -38,6 +38,56 @@
         "target": "/163/ds/:id"
       }
     ],
+    "music": [
+      {
+        "title": "电台节目",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/djradio"
+        ],
+        "target": "/163/music/djradio/:id"
+      },
+      {
+        "title": "用户动态",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/user/event"
+        ],
+        "target": "/163/music/user/events/:id"
+      },
+      {
+        "title": "用户歌单",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/user/home"
+        ],
+        "target": "/163/music/user/playlist/:id"
+      },
+      {
+        "title": "歌手歌曲",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/artist"
+        ],
+        "target": "/163/music/artist/songs/:id"
+      },
+      {
+        "title": "歌手专辑",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/artist/album"
+        ],
+        "target": "/163/music/artist/:id"
+      },
+      {
+        "title": "歌单歌曲",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/playlist"
+        ],
+        "target": "/163/music/playlist/:id"
+      }
+    ],
     "3g": [
       {
         "title": "栏目",
@@ -4968,6 +5018,19 @@
       }
     ]
   },
+  "scmuseum.cn": {
+    "_name": "Sichuan Museum",
+    "www": [
+      {
+        "title": "Exhibition",
+        "docs": "https://docs.rsshub.app/routes/travel",
+        "source": [
+          "/Visit/Exhibition"
+        ],
+        "target": "/scmuseum/exhibition"
+      }
+    ]
+  },
   "seekingalpha.com": {
     "_name": "Seeking Alpha",
     ".": [
@@ -8237,6 +8300,19 @@
           "/news"
         ],
         "target": "/3dmgame/news/:category?"
+      }
+    ]
+  },
+  "3gmuseum.cn": {
+    "_name": "Chongqing China Three Gorges Museum",
+    "www": [
+      {
+        "title": "Temporary Exhibition",
+        "docs": "https://docs.rsshub.app/routes/travel",
+        "source": [
+          "/web/column/col5009287.html"
+        ],
+        "target": "/3gmuseum/tempexhibition"
       }
     ]
   },
@@ -13805,6 +13881,27 @@
       }
     ]
   },
+  "capitalmuseum.org.cn": {
+    "_name": "Capital Museum",
+    "www": [
+      {
+        "title": "Exhibitions",
+        "docs": "https://docs.rsshub.app/routes/travel",
+        "source": [
+          "/exhibition"
+        ],
+        "target": "/capitalmuseum/exhibition"
+      },
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/travel",
+        "source": [
+          "/news"
+        ],
+        "target": "/capitalmuseum/news"
+      }
+    ]
+  },
   "cartoonmad.com": {
     "_name": "動漫狂",
     ".": [
@@ -15872,6 +15969,19 @@
       }
     ]
   },
+  "chinasilkmuseum.com": {
+    "_name": "China National Silk Museum",
+    "www": [
+      {
+        "title": "Exhibition",
+        "docs": "https://docs.rsshub.app/routes/travel",
+        "source": [
+          "/zz/list_17.aspx"
+        ],
+        "target": "/chinasilkmuseum/zz"
+      }
+    ]
+  },
   "chinatimes.com": {
     "_name": "中時新聞網",
     "www": [
@@ -17552,6 +17662,29 @@
           "/"
         ],
         "target": "/csu/career"
+      }
+    ]
+  },
+  "csust.edu.cn": {
+    "_name": "长沙理工大学",
+    "www": [
+      {
+        "title": "通告公示",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/tggs.htm",
+          "/"
+        ],
+        "target": "/csust/tggs"
+      },
+      {
+        "title": "学科学术",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/xkxs.htm",
+          "/"
+        ],
+        "target": "/csust/xkxs"
       }
     ]
   },
@@ -39191,6 +39324,19 @@
       }
     ]
   },
+  "szmuseum.com": {
+    "_name": "Suzhou Museum",
+    "www": [
+      {
+        "title": "Special Exhibition",
+        "docs": "https://docs.rsshub.app/routes/travel",
+        "source": [
+          "/Exhibition/Temporary"
+        ],
+        "target": "/szmuseum/temporary"
+      }
+    ]
+  },
   "szse.cn": {
     "_name": "深圳证券交易所",
     ".": [
@@ -40268,6 +40414,27 @@
           "/"
         ],
         "target": "/tingshuitz/yangjiang"
+      }
+    ]
+  },
+  "tjbwg.cn": {
+    "_name": "Tianjin Museum",
+    "www": [
+      {
+        "title": "Temporary Exhibition",
+        "docs": "https://docs.rsshub.app/routes/travel",
+        "source": [
+          "/cn/ExhibitionList.aspx"
+        ],
+        "target": "/tjbwg/exhibition"
+      },
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/travel",
+        "source": [
+          "/cn/NewsList.aspx"
+        ],
+        "target": "/tjbwg/news"
       }
     ]
   },
@@ -44016,29 +44183,6 @@
           "/"
         ],
         "target": "/css-tricks/popular"
-      }
-    ]
-  },
-  "csust.edu.cn": {
-    "_name": "长沙理工大学",
-    "www": [
-      {
-        "title": "通告公示",
-        "docs": "https://docs.rsshub.app/routes/university",
-        "source": [
-          "/tggs.htm",
-          "/"
-        ],
-        "target": "/csust/tggs"
-      },
-      {
-        "title": "学科学术",
-        "docs": "https://docs.rsshub.app/routes/university",
-        "source": [
-          "/xkxs.htm",
-          "/"
-        ],
-        "target": "/csust/xkxs"
       }
     ]
   },
