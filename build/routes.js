@@ -3222,6 +3222,36 @@ export default {
     "description": "全面的找书、学习资源导航平台，它整合了电子书和科研文档的搜索功能，方便用户进行学习资料的检索和分享，为用户提供一站式的读书学习体验。",
     "lang": "zh-CN"
   },
+  "immich": {
+    "routes": {
+      "/cursed-knowledge": {
+        "path": "/cursed-knowledge",
+        "categories": [
+          "blog"
+        ],
+        "example": "/immich/cursed-knowledge",
+        "radar": [
+          {
+            "source": [
+              "immich.app/cursed-knowledge",
+              "immich.app"
+            ],
+            "target": "/cursed-knowledge"
+          }
+        ],
+        "name": "Cursed Knowledge",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "location": "cursed-knowledge.ts",
+        "module": () => import('@/routes/immich/cursed-knowledge.ts')
+      }
+    },
+    "apiRoutes": {},
+    "name": "Immich",
+    "url": "immich.app",
+    "lang": "en-us"
+  },
   "isct": {
     "routes": {
       "/news/:lang": {
@@ -7688,64 +7718,6 @@ export default {
     "url": "bse.cn",
     "lang": "zh-CN"
   },
-  "byteclicks": {
-    "routes": {
-      "/": {
-        "path": "/",
-        "radar": [
-          {
-            "source": [
-              "byteclicks.com/"
-            ],
-            "target": ""
-          }
-        ],
-        "name": "Unknown",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "url": "byteclicks.com/",
-        "location": "index.ts",
-        "module": () => import('@/routes/byteclicks/index.ts')
-      },
-      "/tag/:tag": {
-        "path": "/tag/:tag",
-        "categories": [
-          "new-media"
-        ],
-        "example": "/byteclicks/tag/人工智能",
-        "parameters": {
-          "tag": "标签，可在URL中找到"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "byteclicks.com/tag/:tag"
-            ]
-          }
-        ],
-        "name": "标签",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "url": "byteclicks.com/",
-        "location": "tag.ts",
-        "module": () => import('@/routes/byteclicks/tag.ts')
-      }
-    },
-    "apiRoutes": {},
-    "name": "字节点击",
-    "url": "byteclicks.com",
-    "lang": "zh-CN"
-  },
   "cbnweek": {
     "routes": {
       "/": {
@@ -9786,8 +9758,8 @@ export default {
         ],
         "url": "hakkatv.org.tw/news",
         "description": "| 客家焦點 | 政經要聞  | 民生醫療 | 地方風采 | 國際萬象      |\n| -------- | --------- | -------- | -------- | ------------- |\n| hakka    | political | medical  | local    | international |",
-        "location": "type.ts",
-        "module": () => import('@/routes/hakkatv/type.ts')
+        "location": "news.ts",
+        "module": () => import('@/routes/hakkatv/news.ts')
       }
     },
     "apiRoutes": {},
@@ -31170,7 +31142,7 @@ export default {
         "radar": [
           {
             "source": [
-              "www.alwayscontrol.com.cn/zh-CN/news/list"
+              "www.alwayscontrol.com.cn/zh-CN/about/news"
             ],
             "target": "/news"
           }
@@ -38385,6 +38357,59 @@ export default {
     "url": "byau.edu.cn",
     "lang": "zh-CN"
   },
+  "byteclicks": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/byteclicks",
+        "radar": [
+          {
+            "source": [
+              "byteclicks.com/"
+            ]
+          }
+        ],
+        "name": "首页",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "byteclicks.com/",
+        "location": "index.ts",
+        "module": () => import('@/routes/byteclicks/index.ts')
+      },
+      "/tag/:tag": {
+        "path": "/tag/:tag",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/byteclicks/tag/人工智能",
+        "parameters": {
+          "tag": "标签，可在URL中找到"
+        },
+        "radar": [
+          {
+            "source": [
+              "byteclicks.com/tag/:tag"
+            ]
+          }
+        ],
+        "name": "标签",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "byteclicks.com/",
+        "location": "tag.ts",
+        "module": () => import('@/routes/byteclicks/tag.ts')
+      }
+    },
+    "apiRoutes": {},
+    "name": "字节点击",
+    "url": "byteclicks.com",
+    "lang": "zh-CN"
+  },
   "bytes": {
     "routes": {
       "/": {
@@ -44140,7 +44165,7 @@ export default {
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
-          "antiCrawler": false,
+          "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
@@ -45559,10 +45584,10 @@ export default {
   "cognition": {
     "name": "cognition",
     "routes": {
-      "/blog/:category?": {
-        "path": "/blog/:category?",
+      "/blog": {
+        "path": "/blog",
         "name": "Blog",
-        "url": "cognition.ai/blog",
+        "url": "cognition.com/blog",
         "maintainers": [
           "Loongphy",
           "ttttmr"
@@ -45583,16 +45608,11 @@ export default {
         "radar": [
           {
             "source": [
-              "cognition.ai/blog/1",
-              "cognition.ai/blog/:category/1"
-            ],
-            "target": "/blog/:category?"
+              "cognition.com/blog"
+            ]
           }
         ],
         "view": 0,
-        "parameters": {
-          "category": "Category name, e.g., Research, Tutorials"
-        },
         "location": "blog.ts",
         "module": () => import('@/routes/cognition/blog.ts')
       }
@@ -52445,7 +52465,7 @@ export default {
         "radar": [
           {
             "source": [
-              "www.dykszx.com/"
+              "www.dykszx.cn/"
             ],
             "target": "/news/all"
           }
@@ -52454,7 +52474,7 @@ export default {
         "maintainers": [
           "zytomorrow"
         ],
-        "url": "www.dykszx.com",
+        "url": "www.dykszx.cn",
         "description": "| 新闻中心 | 公务员考试 | 事业单位 | （职）业资格、职称考试 |  其他 |\n| :------: | :--------: | :------: | :--------------------: | :---: |\n|    all   |     gwy    |   sydw   |          zyzc          | other |",
         "location": "news.ts",
         "module": () => import('@/routes/dykszx/news.ts')
@@ -53249,7 +53269,7 @@ export default {
         "radar": [
           {
             "source": [
-              "cee.ecnu.edu.cn"
+              "ieeic.ecnu.edu.cn"
             ],
             "target": "/cee"
           }
@@ -61977,8 +61997,8 @@ export default {
         "radar": [
           {
             "source": [
-              "hitwh.edu.cn/1024/list.htm",
-              "hitwh.edu.cn/"
+              "today.hitwh.edu.cn/1024/list.htm",
+              "today.hitwh.edu.cn/"
             ]
           }
         ],
@@ -61986,7 +62006,7 @@ export default {
         "maintainers": [
           "raptazure"
         ],
-        "url": "hitwh.edu.cn/1024/list.htm",
+        "url": "today.hitwh.edu.cn/1024/list.htm",
         "location": "today.ts",
         "module": () => import('@/routes/hitwh/today.ts')
       }
@@ -65812,36 +65832,6 @@ export default {
     "url": "imiker.com",
     "lang": "zh-CN"
   },
-  "immich": {
-    "routes": {
-      "/cursed-knowledge": {
-        "path": "/cursed-knowledge",
-        "categories": [
-          "blog"
-        ],
-        "example": "/immich/cursed-knowledge",
-        "radar": [
-          {
-            "source": [
-              "immich.app/cursed-knowledge",
-              "immich.app"
-            ],
-            "target": "/cursed-knowledge"
-          }
-        ],
-        "name": "Cursed Knowledge",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "location": "cursed-knowledge.ts",
-        "module": () => import('@/routes/immich/cursed-knowledge.ts')
-      }
-    },
-    "apiRoutes": {},
-    "name": "Immich",
-    "url": "immich.app",
-    "lang": "en-us"
-  },
   "imop": {
     "routes": {
       "/tianshu": {
@@ -66096,9 +66086,37 @@ export default {
         "location": "column.ts",
         "module": () => import('@/routes/indienova/column.ts')
       },
-      "/gamedb/recent": {
-        "path": "/gamedb/recent",
-        "name": "Unknown",
+      "/gamedb/recent/:platform?": {
+        "name": "GameDB 游戏库",
+        "path": "/gamedb/recent/:platform?",
+        "example": "/indienova/gamedb/recent",
+        "categories": [
+          "game"
+        ],
+        "parameters": {
+          "platform": {
+            "description": "平台，留空为 `all`",
+            "options": [
+              {
+                "value": "all",
+                "label": "全部"
+              },
+              {
+                "value": "ps4",
+                "label": "PS4"
+              },
+              {
+                "value": "xboxone",
+                "label": "XBOX One"
+              },
+              {
+                "value": "nintendo-switch",
+                "label": "Nintendo Switch"
+              }
+            ],
+            "default": "all"
+          }
+        },
         "maintainers": [
           "TonyRL"
         ],
@@ -69596,18 +69614,22 @@ export default {
         "radar": [
           {
             "source": [
-              "www.kcna.kp/:lang",
-              "www.kcna.kp/:lang/category/articles/q/1ee9bdb7186944f765208f34ecfb5407.kcmsf",
-              "www.kcna.kp/:lang/category/articles.kcmsf"
+              "www.kcna.kp/:lang"
             ],
             "target": "/:lang"
+          },
+          {
+            "source": [
+              "www.kcna.kp/:lang/article/list/:category"
+            ],
+            "target": "/:lang/:category"
           }
         ],
         "name": "News",
         "maintainers": [
           "Rongronggg9"
         ],
-        "description": "| Language | 조선어 | English | 中国语 | Русский | Español | 日本語 |\n| -------- | ------ | ------- | ------ | ------- | ------- | ------ |\n| `:lang`  | `kp`   | `en`    | `cn`   | `ru`    | `es`    | `jp`   |\n\n| Category                                                         | `:category`                        |\n| ---------------------------------------------------------------- | ---------------------------------- |\n| WPK General Secretary **Kim Jong Un**'s Revolutionary Activities | `54c0ca4ca013a92cc9cf95bd4004c61a` |\n| Latest News (default)                                            | `1ee9bdb7186944f765208f34ecfb5407` |\n| Top News                                                         | `5394b80bdae203fadef02522cfb578c0` |\n| Home News                                                        | `b2b3bcc1b0a4406ab0c36e45d5db58db` |\n| Documents                                                        | `a8754921399857ebdbb97a98a1e741f5` |\n| World                                                            | `593143484cf15d48ce85c26139582395` |\n| Society-Life                                                     | `93102e5a735d03979bc58a3a7aefb75a` |\n| External                                                         | `0f98b4623a3ef82aeea78df45c423fd0` |\n| News Commentary                                                  | `12c03a49f7dbe829bceea8ac77088c21` |",
+        "description": "| Language | 조선어 | English | 中国语 | Русский | Español | 日本語 |\n| -------- | ------ | ------- | ------ | ------- | ------- | ------ |\n| `:lang`  | `kp`   | `en`    | `cn`   | `ru`    | `es`    | `jp`   |\n\n| Category                                                         | `:category`                        |\n| ---------------------------------------------------------------- | ---------------------------------- |\n| WPK General Secretary **Kim Jong Un**'s Revolutionary Activities | `b0721b9f23054ddc7fe56c2811a12715` |\n| Latest News (default)                                            | `a666dda1282180e0ee1b4427b0574ae7` |\n| Top News                                                         | `6a47505ba5268fd7749c0fe11e4b24b4` |\n| Home News                                                        | `2f7d854121ccbbfbe6feae9fdcc3556e` |\n| Documents                                                        | `1afa96195f9b303902490a126ab7285f` |\n| World                                                            | `ecc14533d88be93068af4178946b1b05` |\n| Social Life                                                      | `680e40b40899891bbe75a7072e3285e7` |\n| External                                                         | `e2f336db98b5e69c75e0da264e037e8d` |\n| Revolutionary Anecdote                                           | `503e9b606704f9b1c625fa5755928cd3` |\n| Always in Memory of People                                       | `7bc083f00425be6aadfb828fba1cb5a7` |",
         "location": "news.tsx",
         "module": () => import('@/routes/kcna/news.tsx')
       }
@@ -76908,22 +76930,22 @@ export default {
         "radar": [
           {
             "source": [
-              "my-formosa.com/"
+              "m.my-formosa.com.tw/"
             ]
           }
         ],
-        "name": "首页",
+        "name": "首頁",
         "maintainers": [
           "dzx-dzx"
         ],
-        "url": "my-formosa.com",
+        "url": "m.my-formosa.com.tw",
         "location": "index.ts",
         "module": () => import('@/routes/my-formosa/index.ts')
       }
     },
     "apiRoutes": {},
     "name": "美麗島電子報",
-    "url": "my-formosa.com",
+    "url": "my-formosa.com.tw",
     "lang": "zh-TW"
   },
   "mycard520": {
@@ -77287,7 +77309,7 @@ export default {
         "maintainers": [
           "ladeng07"
         ],
-        "description": "| 最新动态 | 综合信息 | 招生工作 | 培养管理 | 国际交流 | 学科建设 | 学位管理 |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n| zxdt     | 82       | 83       | 84       | 85       | 86       | 87       |",
+        "description": "| 最新动态 | 综合信息 | 招生工作 | 培养管理 | 国际交流 | 学科建设 | 学位管理 |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n| zxdt     | 82       | 83       | 72       | 73       | xkjs     | xwgl     |",
         "url": "graduate.nankai.edu.cn",
         "location": "graduate-notice.ts",
         "module": () => import('@/routes/nankai/graduate-notice.ts')
@@ -80214,7 +80236,7 @@ export default {
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "南京工程学院教务处",
+        "name": "教务处",
         "maintainers": [
           "zefengdaguo"
         ],
@@ -80244,7 +80266,7 @@ export default {
             ]
           }
         ],
-        "name": "南京工程学院通知公告",
+        "name": "通知公告",
         "maintainers": [
           "zefengdaguo"
         ],
@@ -88533,7 +88555,7 @@ export default {
         "radar": [
           {
             "source": [
-              "www.perplexity.ai/hub"
+              "www.perplexity.ai/hub/blog"
             ],
             "target": "/blog"
           }
@@ -107092,15 +107114,12 @@ export default {
   },
   "verfghbw": {
     "routes": {
-      "/press/:keyword?": {
-        "path": "/press/:keyword?",
+      "/press": {
+        "path": "/press",
         "categories": [
           "government"
         ],
         "example": "/verfghbw/press",
-        "parameters": {
-          "keyword": "Keyword"
-        },
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
@@ -107112,7 +107131,7 @@ export default {
         "radar": [
           {
             "source": [
-              "verfgh.baden-wuerttemberg.de/de/presse-und-service/pressemitteilungen/"
+              "verfgh.baden-wuerttemberg.de/presse-und-service/pressemitteilungen/"
             ],
             "target": "/press"
           }
@@ -107121,7 +107140,7 @@ export default {
         "maintainers": [
           "quinn-dev"
         ],
-        "url": "verfgh.baden-wuerttemberg.de/de/presse-und-service/pressemitteilungen/",
+        "url": "verfgh.baden-wuerttemberg.de/presse-und-service/pressemitteilungen/",
         "location": "press.ts",
         "module": () => import('@/routes/verfghbw/press.ts')
       }
@@ -130043,6 +130062,7 @@ export default {
         "example": "/jandan",
         "name": "Feed",
         "maintainers": [
+          "lonelykid",
           "nczitzk",
           "bigfei",
           "pseudoyu"
@@ -130072,6 +130092,10 @@ export default {
         "example": "/jandan/top",
         "name": "Section",
         "maintainers": [
+          "kobemtl",
+          "Xuanwo",
+          "xyqfer",
+          "9uanhuo",
           "nczitzk",
           "pseudoyu"
         ],
@@ -130094,6 +130118,10 @@ export default {
               {
                 "label": "随手拍",
                 "value": "ooxx"
+              },
+              {
+                "label": "女装",
+                "value": "beauty"
               },
               {
                 "label": "无聊图",
@@ -130865,21 +130893,6 @@ export default {
   },
   "jiemian": {
     "routes": {
-      "/account/main/1": {
-        "path": "/account/main/1",
-        "parameters": {
-          "id": "分类 id，见下表，可在对应分类页 URL 中找到"
-        },
-        "name": "界面号",
-        "example": "/jiemian/account/main/1",
-        "maintainers": [
-          "nczitzk",
-          "pseudoyu"
-        ],
-        "description": "| [财经号](https://www.jiemian.com/account/main/1.html) | [城市号](https://www.jiemian.com/account/main/2.html) | [媒体号](https://www.jiemian.com/account/main/3.html) |\n| ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |\n| 1                                                     | 2                                                     | 3                                                     |",
-        "location": "account.ts",
-        "module": () => import('@/routes/jiemian/account.ts')
-      },
       "/lists/:id": {
         "path": "/lists/:id",
         "parameters": {
@@ -130896,22 +130909,8 @@ export default {
         "location": "lists.ts",
         "module": () => import('@/routes/jiemian/lists.ts')
       },
-      "/special/1192": {
-        "path": "/special/1192",
-        "parameters": {
-          "id": "分类 id，见下表，可在对应分类页 URL 中找到"
-        },
-        "name": "专题",
-        "example": "/jiemian/special/1192",
-        "maintainers": [
-          "nczitzk",
-          "pseudoyu"
-        ],
-        "location": "special.ts",
-        "module": () => import('@/routes/jiemian/special.ts')
-      },
-      "/video/lists/258_1": {
-        "path": "/video/lists/258_1",
+      "/video/lists/:id": {
+        "path": "/video/lists/:id",
         "parameters": {
           "id": "分类 id，见下表，可在对应分类页 URL 中找到"
         },
@@ -130921,12 +130920,12 @@ export default {
           "nczitzk",
           "pseudoyu"
         ],
-        "description": "| [界面 Vnews](https://www.jiemian.com/video/lists/258_1.html) | [直播](https://www.jiemian.com/videoLive/lists_1.html) | [箭厂](https://www.jiemian.com/video/lists/195_1.html) | [面谈](https://www.jiemian.com/video/lists/111_1.html) | [品牌创酷](https://www.jiemian.com/video/lists/226_1.html) | [番 茄社](https://www.jiemian.com/video/lists/567_1.html) |\n| ------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------- |\n| 258\\_1                                                       | videoLive/lists\\_1                                     | 195\\_1                                                 | 111\\_1                                                 | 226\\_1                                                     | 567\\_1                                                    |\n\n| [商业微史记](https://www.jiemian.com/video/lists/882_1.html) |\n| ------------------------------------------------------------ |\n| 882\\_1                                                       |",
+        "description": "| [界面 Vnews](https://www.jiemian.com/video/lists/258_1.html) | [直播](https://www.jiemian.com/videoLive/lists_1.html) | [箭厂](https://www.jiemian.com/video/lists/195_1.html) | [面谈](https://www.jiemian.com/video/lists/111_1.html) | [品牌创酷](https://www.jiemian.com/video/lists/226_1.html) | [番 茄社](https://www.jiemian.com/video/lists/567_1.html) |\n| ------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------- |\n| 258\\_1                                                       | videoLive                                              | 195\\_1                                                 | 111\\_1                                                 | 226\\_1                                                     | 567\\_1                                                    |\n\n| [商业微史记](https://www.jiemian.com/video/lists/882_1.html) |\n| ------------------------------------------------------------ |\n| 882\\_1                                                       |",
         "location": "video.ts",
         "module": () => import('@/routes/jiemian/video.ts')
       },
-      "/pro/lists/12": {
-        "path": "/pro/lists/12",
+      "/pro/lists/:id": {
+        "path": "/pro/lists/:id",
         "parameters": {
           "id": "分类 id，见下表，可在对应分类页 URL 中找到"
         },
@@ -130939,6 +130938,35 @@ export default {
         "description": "| [投资早晚报](https://www.jiemian.com/pro/lists/12.html) | [宏观晚 6 点](https://www.jiemian.com/pro/lists/20.html) | [打新早报](https://www.jiemian.com/pro/lists/21.html) | [盘前机会前瞻](https://www.jiemian.com/pro/lists/13.html) | [公告快评](https://www.jiemian.com/pro/lists/14.html) | [盘中必读](https://www.jiemian.com/pro/lists/15.html) |\n| ------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |\n| 12                                                      | 20                                                       | 21                                                    | 13                                                        | 14                                                    | 15                                                    |\n\n| [金股挖掘](https://www.jiemian.com/pro/lists/16.html) | [调研早知道](https://www.jiemian.com/pro/lists/17.html) | [研报新知](https://www.jiemian.com/pro/lists/18.html) | [大势侦察](https://www.jiemian.com/pro/lists/1.html) | [市场风向标](https://www.jiemian.com/pro/lists/19.html) |\n| ----------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------- |\n| 16                                                    | 17                                                      | 18                                                    | 1                                                    | 19                                                      |",
         "location": "vip.ts",
         "module": () => import('@/routes/jiemian/vip.ts')
+      },
+      "/account/main/:id": {
+        "path": "/account/main/:id",
+        "parameters": {
+          "id": "分类 id，见下表，可在对应分类页 URL 中找到"
+        },
+        "name": "界面号",
+        "example": "/jiemian/account/main/1",
+        "maintainers": [
+          "nczitzk",
+          "pseudoyu"
+        ],
+        "description": "| [财经号](https://www.jiemian.com/account/main/1.html) | [城市号](https://www.jiemian.com/account/main/2.html) | [媒体号](https://www.jiemian.com/account/main/3.html) |\n| ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |\n| 1                                                     | 2                                                     | 3                                                     |",
+        "location": "account.ts",
+        "module": () => import('@/routes/jiemian/account.ts')
+      },
+      "/special/:id": {
+        "path": "/special/:id",
+        "parameters": {
+          "id": "分类 id，可在对应分类页 URL 中找到"
+        },
+        "name": "专题",
+        "example": "/jiemian/special/1192",
+        "maintainers": [
+          "nczitzk",
+          "pseudoyu"
+        ],
+        "location": "special.ts",
+        "module": () => import('@/routes/jiemian/special.ts')
       }
     },
     "apiRoutes": {},
@@ -133510,10 +133538,12 @@ export default {
       },
       "/eecs/:type?": {
         "path": "/eecs/:type?",
-        "name": "Unknown",
+        "name": "信科公告通知",
+        "example": "/pku/eecs/0",
         "maintainers": [
           "Ir1d"
         ],
+        "description": "| 全部 | 学院通知 | 人事通知 | 教务通知 | 学工通知 | 工会通知 | 院友通知 |\n| ---- | -------- | -------- | -------- | -------- | -------- | -------- |\n| 0    | 1        | 2        | 6        | 8        | 3        | 4        |",
         "location": "eecs.ts",
         "module": () => import('@/routes/pku/eecs.ts')
       },
