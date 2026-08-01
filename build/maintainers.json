@@ -308,6 +308,9 @@
   "/nio/nioradio/:albumid": [
     "marcosteam"
   ],
+  "/omegascans/series/:id": [
+    "ereneroglum"
+  ],
   "/polymarket/event/:slug": [
     "heqi201255"
   ],
@@ -416,7 +419,7 @@
   "/wikipedia/current-events/:includeToday?": [
     "aavanian"
   ],
-  "/ximalaya/:type/:id/:all/:shownote?": [
+  "/ximalaya/:type/:id/:all?/:shownote?": [
     "lengthmin",
     "jjeejj",
     "prnake"

@@ -5358,6 +5358,40 @@
       "name": "蔚来"
     }
   },
+  "omegascans": {
+    "routes": {
+      "/series/:id": {
+        "path": "/series/:id",
+        "name": "Series Chapters",
+        "url": "omegascans.org",
+        "maintainers": [
+          "ereneroglum"
+        ],
+        "example": "/omegascans/series/632",
+        "parameters": {
+          "id": "Series ID, can be found in API get request on series page"
+        },
+        "categories": [
+          "anime"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "series.ts",
+        "module": "() => import('@/routes/omegascans/series.ts')"
+      }
+    },
+    "apiRoutes": {},
+    "name": "Omega Scans",
+    "url": "omegascans.org",
+    "description": "::: tip\nOmega Scans is a localization team working tirelessly to provide readers with high-quality Comics and Novels to read.\n:::"
+  },
   "polymarket": {
     "routes": {
       "/event/:slug": {
@@ -6802,8 +6836,8 @@
   },
   "ximalaya": {
     "routes": {
-      "/:type/:id/:all/:shownote?": {
-        "path": "/:type/:id/:all/:shownote?",
+      "/:type/:id/:all?/:shownote?": {
+        "path": "/:type/:id/:all?/:shownote?",
         "categories": [
           "multimedia"
         ],
@@ -6811,7 +6845,8 @@
         "parameters": {
           "type": "专辑类型, 通常可以使用 `album`，可在对应专辑页面的 URL 中找到",
           "id": "专辑 id, 可在对应专辑页面的 URL 中找到",
-          "all": "是否需要获取全部节目，填入 `1`、`true`、`all` 视为获取所有节目，填入其他则不获取。"
+          "all": "是否需要获取全部节目，填入 `1`、`true`、`all` 视为获取所有节目，填入其他则不获取。",
+          "shownote": "是否需要获取节目的 ShowNote，填入 `1`、`true`,`shownote` 视为获取，填入其他则不获取。"
         },
         "features": {
           "requireConfig": [
