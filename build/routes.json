@@ -837,6 +837,47 @@
     "url": "www.instagram.com",
     "lang": "en"
   },
+  "freebuf": {
+    "routes": {
+      "/articles/:type": {
+        "path": "/articles/:type",
+        "categories": [
+          "blog"
+        ],
+        "example": "/freebuf/articles/web",
+        "parameters": {
+          "type": "文章类别"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "freebuf.com/articles/:type/*.html",
+              "freebuf.com/articles/:type"
+            ]
+          }
+        ],
+        "name": "文章",
+        "maintainers": [
+          "trganda"
+        ],
+        "description": "::: tip\nFreebuf 的文章页面带有反爬虫机制，所以目前无法获取文章的完整内容。\n\n站点位于阿里云 WAF 之后，请求频繁的 IP 可能触发 405 JS 质询，此时路由会自动计算 `acw_sc__v2` Cookie 并重试。\n:::",
+        "location": "index.ts",
+        "module": "() => import('@/routes/freebuf/index.ts')"
+      }
+    },
+    "apiRoutes": {},
+    "name": "FreeBuf",
+    "url": "freebuf.com",
+    "lang": "zh-CN"
+  },
   "alipan": {
     "routes": {
       "/files/:share_id/:parent_file_id?": {
@@ -2349,47 +2390,6 @@
     "name": "Forward Future",
     "url": "forwardfuture.com",
     "lang": "en"
-  },
-  "freebuf": {
-    "routes": {
-      "/articles/:type": {
-        "path": "/articles/:type",
-        "categories": [
-          "blog"
-        ],
-        "example": "/freebuf/articles/web",
-        "parameters": {
-          "type": "文章类别"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "freebuf.com/articles/:type/*.html",
-              "freebuf.com/articles/:type"
-            ]
-          }
-        ],
-        "name": "文章",
-        "maintainers": [
-          "trganda"
-        ],
-        "description": "::: tip\nFreebuf 的文章页面带有反爬虫机制，所以目前无法获取文章的完整内容。\n:::",
-        "location": "index.ts",
-        "module": "() => import('@/routes/freebuf/index.ts')"
-      }
-    },
-    "apiRoutes": {},
-    "name": "FreeBuf",
-    "url": "freebuf.com",
-    "lang": "zh-CN"
   },
   "furaffinity": {
     "routes": {
@@ -20207,7 +20207,7 @@
         "parameters": {},
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -20239,7 +20239,7 @@
         },
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -20275,6 +20275,14 @@
             "target": ""
           }
         ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
         "name": "精选资讯",
         "maintainers": [
           "nczitzk"
@@ -20292,7 +20300,7 @@
         "parameters": {},
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -65683,24 +65691,6 @@
         "url": "ak.arknights.jp/news",
         "location": "arknights/japan.ts",
         "module": "() => import('@/routes/hypergryph/arknights/japan.ts')"
-      },
-      "/arknights/announce/:platform?/:group?": {
-        "path": "/arknights/announce/:platform?/:group?",
-        "categories": [
-          "game"
-        ],
-        "example": "/hypergryph/arknights/announce",
-        "parameters": {
-          "platform": "平台，默认为 Android",
-          "group": "分组，默认为 ALL"
-        },
-        "name": "明日方舟 - 游戏内公告",
-        "maintainers": [
-          "swwind"
-        ],
-        "description": "平台\n\n|  安卓服 | iOS 服 |   B 服   |\n| :-----: | :----: | :------: |\n| Android |   IOS  | Bilibili |\n\n分组\n\n| 全部 | 系统公告 | 活动公告 |\n| :--: | :------: | :------: |\n|  ALL |  SYSTEM  | ACTIVITY |",
-        "location": "arknights/announce.ts",
-        "module": "() => import('@/routes/hypergryph/arknights/announce.ts')"
       },
       "/arknights/arktca": {
         "path": "/arknights/arktca",
@@ -119598,7 +119588,7 @@
           "finance"
         ],
         "view": 0,
-        "example": "/bloomberg/bbiz",
+        "example": "/bloomberg/business",
         "parameters": {
           "site": {
             "description": "Site ID, can be found below",
@@ -119608,11 +119598,11 @@
                 "label": "News"
               },
               {
-                "value": "bpol",
+                "value": "politics",
                 "label": "Politics"
               },
               {
-                "value": "bbiz",
+                "value": "business",
                 "label": "Business"
               },
               {
@@ -119624,32 +119614,28 @@
                 "label": "Technology"
               },
               {
-                "value": "green",
-                "label": "Green"
-              },
-              {
                 "value": "wealth",
                 "label": "Wealth"
-              },
-              {
-                "value": "pursuits",
-                "label": "Pursuits"
               },
               {
                 "value": "bview",
                 "label": "Opinion"
               },
               {
-                "value": "equality",
-                "label": "Equality"
-              },
-              {
                 "value": "businessweek",
                 "label": "Businessweek"
               },
               {
-                "value": "citylab",
-                "label": "CityLab"
+                "value": "economics",
+                "label": "Economics"
+              },
+              {
+                "value": "industries",
+                "label": "Industries"
+              },
+              {
+                "value": "crypto",
+                "label": "Crypto"
               }
             ]
           }
@@ -119666,7 +119652,7 @@
         "maintainers": [
           "bigfei"
         ],
-        "description": "| Site ID      | Title        |\n| ------------ | ------------ |\n| /            | News         |\n| bpol         | Politics     |\n| bbiz         | Business     |\n| markets      | Markets      |\n| technology   | Technology   |\n| green        | Green        |\n| wealth       | Wealth       |\n| pursuits     | Pursuits     |\n| bview        | Opinion      |\n| equality     | Equality     |\n| businessweek | Businessweek |\n| citylab      | CityLab      |",
+        "description": "| Site ID      | Title        |\n| ------------ | ------------ |\n| /            | News         |\n| politics     | Politics     |\n| business     | Business     |\n| markets      | Markets      |\n| technology   | Technology   |\n| wealth       | Wealth       |\n| bview        | Opinion      |\n| businessweek | Businessweek |\n| economics    | Economics    |\n| industries   | Industries   |\n| crypto       | Crypto       |\n\nLegacy site IDs `bpol` and `bbiz` still work as aliases of `politics` and `business`.",
         "location": "index.ts",
         "module": "() => import('@/routes/bloomberg/index.ts')"
       }
@@ -130102,7 +130088,7 @@
           "ciaranchen"
         ],
         "url": "www.gov.cn/",
-        "description": "|               选项              |                       意义                       |              备注              |\n| :-----------------------------: | :----------------------------------------------: | :----------------------------: |\n|              orpro              |             包含以下任意一个关键词。             |          用空格分隔。          |\n|              allpro             |                包含以下全部关键词                |                                |\n|              notpro             |                 不包含以下关键词                 |                                |\n|              inpro              |                完整不拆分的关键词                |                                |\n|           searchfield           | title: 搜索词在标题中；content: 搜索词在正文中。 |  默认为空，即网页的任意位置。  |\n| pubmintimeYear, pubmintimeMonth |                    从某年某月                    | 单独使用月份参数无法只筛选月份 |\n| pubmaxtimeYear, pubmaxtimeMonth |                    到某年某月                    | 单独使用月份参数无法只筛选月份 |\n|              colid              |                       栏目                       |      比较复杂，不建议使用      |",
+        "description": "|               选项              |                       意义                       |                    备注                    |\n| :-----------------------------: | :----------------------------------------------: | :----------------------------------------: |\n|              orpro              |             包含以下任意一个关键词。             |                用空格分隔。                |\n|              allpro             |                包含以下全部关键词                |                                            |\n|              notpro             |                 不包含以下关键词                 |                                            |\n|              inpro              |                完整不拆分的关键词                |                                            |\n|           searchfield           | title: 搜索词在标题中；content: 搜索词在正文中。 | 上游已不支持仅正文，content 将搜索全部位置 |\n| pubmintimeYear, pubmintimeMonth |                    从某年某月                    |       单独使用月份参数无法只筛选月份       |\n| pubmaxtimeYear, pubmaxtimeMonth |                    到某年某月                    |       单独使用月份参数无法只筛选月份       |\n|              colid              |                       栏目                       |            上游新接口已不再支持            |",
         "location": "govall.ts",
         "module": "() => import('@/routes/gov/zhengce/govall.ts')"
       },
