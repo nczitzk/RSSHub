@@ -50,8 +50,8 @@ importers:
         specifier: 6.16.0
         version: 6.16.0
       '@hono/node-server':
-        specifier: 2.0.12
-        version: 2.0.12(hono@4.12.34)
+        specifier: 2.1.0
+        version: 2.1.0(hono@4.12.34)
       '@hono/zod-openapi':
         specifier: 1.5.2
         version: 1.5.2(hono@4.12.34)(zod@4.4.3)
@@ -1249,8 +1249,8 @@ packages:
       fastify-plugin:
         optional: true
 
-  '@hono/node-server@2.0.12':
-    resolution: {integrity: sha512-eWpQYr67tqJLeaSUl0Q+TquuYfUdTibpOJlUMV2FfUP7+KqCC5TufnwnlXL6mobZBJbGAYRd7ZvEBDCbLInjhg==}
+  '@hono/node-server@2.1.0':
+    resolution: {integrity: sha512-XovyyCCnBzW+zKu+z/zq8hwNs4KOR5rEMAOxo2f40Q5xoOI37IMm6MIg2COOUtUApo0i6850MTBKH2u4QLGIqg==}
     engines: {node: '>=20'}
     peerDependencies:
       hono: ^4
@@ -3221,9 +3221,6 @@ packages:
   '@yuku-toolchain/types@0.7.4':
     resolution: {integrity: sha512-iUFXr+UnUJjzVLNI6GIv07poi9NwcG5hTBJSheJh3SdpkYpIjCl9kAGe7dbJMHn5sXeceCL4H12pKa0b6pkouQ==}
 
-  '@zone-eu/mailsplit@5.4.14':
-    resolution: {integrity: sha512-rz0FQOhN3Vq1XrSeSSa9+dPcaFbBxmQPjiZm6zS9oxdVHV7rOWIAYX3yP2YAUf0qBncY8CI+NogzPCmMVrMXcw==}
-
   '@zone-eu/mailsplit@5.4.15':
     resolution: {integrity: sha512-c7ZpxauvF4AEkDJlKDYO7iMUtMuqJMBnDWNff1cyx+d7zaBVR3iFEmXhNHOVoMmVyVF3pTZLsLIJsEFKDldOAA==}
 
@@ -3749,7 +3746,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
 
   difflib@https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
+    resolution: {tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
     version: 0.2.6
 
   discord-api-types@0.38.53:
@@ -4685,9 +4682,6 @@ packages:
 
   libbase64@1.3.0:
     resolution: {integrity: sha512-GgOXd0Eo6phYgh0DJtjQ2tO8dc0IVINtZJeARPeiIJqge+HdsWSuaDTe8ztQ7j/cONByDZ3zeB325AHiv5O0dg==}
-
-  libmime@5.4.1:
-    resolution: {integrity: sha512-0wHGhsofo9IdQPenr3BBHXuxcwMq4atFUTsZ9Ogc1OvI5h4rUdDIrBQEN9JHjCXfDMrE59LUMJWsTD82wTYk8A==}
 
   libmime@5.4.2:
     resolution: {integrity: sha512-+IQnCOdPiufGBkOii+Ze8F7iniyBzOwvWDbn1DyExBpc9pT2B3IEMQi7GUc/PpqhNUh/sr1SG9UXDITQoR0VIA==}
@@ -7089,7 +7083,7 @@ snapshots:
       '@types/aws-lambda': 8.10.162
       '@types/express': 5.0.6
 
-  '@hono/node-server@2.0.12(hono@4.12.34)':
+  '@hono/node-server@2.1.0(hono@4.12.34)':
     dependencies:
       hono: 4.12.34
 
@@ -8626,12 +8620,6 @@ snapshots:
     optional: true
 
   '@yuku-toolchain/types@0.7.4': {}
-
-  '@zone-eu/mailsplit@5.4.14':
-    dependencies:
-      libbase64: 1.3.0
-      libmime: 5.4.1
-      libqp: 2.1.1
 
   '@zone-eu/mailsplit@5.4.15':
     dependencies:
@@ -10202,13 +10190,6 @@ snapshots:
       type-check: 0.4.0
 
   libbase64@1.3.0: {}
-
-  libmime@5.4.1:
-    dependencies:
-      encoding-japanese: 2.2.0
-      iconv-lite: 0.7.3
-      libbase64: 1.3.0
-      libqp: 2.1.1
 
   libmime@5.4.2:
     dependencies:
