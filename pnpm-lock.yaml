@@ -56,8 +56,8 @@ importers:
         specifier: 1.5.2
         version: 1.5.2(hono@4.12.34)(zod@4.4.3)
       '@jocmp/mercury-parser':
-        specifier: 3.0.9
-        version: 3.0.9
+        specifier: 3.1.0
+        version: 3.1.0
       '@notionhq/client':
         specifier: 5.23.3
         version: 5.23.3
@@ -1549,8 +1549,8 @@ packages:
     resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
     engines: {node: '>=18.0.0'}
 
-  '@jocmp/mercury-parser@3.0.9':
-    resolution: {integrity: sha512-DoGbAarmvEzGBh+CThPD+cKFiXBugH0M//v8HM8EczqITyLSdijRgTyS8pnWszB9wINeAn1EuBeuIpL/HFXTPA==}
+  '@jocmp/mercury-parser@3.1.0':
+    resolution: {integrity: sha512-ide0l75g2HwEbC6dNW/D+jNZX7/ISgzQ/QJuIenLzQNR7am/VuwS1vsYDDb+88EkhqoLgcbe4VegunDQIm3bvg==}
     engines: {node: '>=22'}
     hasBin: true
     bundledDependencies:
@@ -3221,9 +3221,6 @@ packages:
   '@yuku-toolchain/types@0.7.4':
     resolution: {integrity: sha512-iUFXr+UnUJjzVLNI6GIv07poi9NwcG5hTBJSheJh3SdpkYpIjCl9kAGe7dbJMHn5sXeceCL4H12pKa0b6pkouQ==}
 
-  '@zone-eu/mailsplit@5.4.14':
-    resolution: {integrity: sha512-rz0FQOhN3Vq1XrSeSSa9+dPcaFbBxmQPjiZm6zS9oxdVHV7rOWIAYX3yP2YAUf0qBncY8CI+NogzPCmMVrMXcw==}
-
   '@zone-eu/mailsplit@5.4.15':
     resolution: {integrity: sha512-c7ZpxauvF4AEkDJlKDYO7iMUtMuqJMBnDWNff1cyx+d7zaBVR3iFEmXhNHOVoMmVyVF3pTZLsLIJsEFKDldOAA==}
 
@@ -3749,7 +3746,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
 
   difflib@https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
+    resolution: {tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
     version: 0.2.6
 
   discord-api-types@0.38.53:
@@ -4686,9 +4683,6 @@ packages:
   libbase64@1.3.0:
     resolution: {integrity: sha512-GgOXd0Eo6phYgh0DJtjQ2tO8dc0IVINtZJeARPeiIJqge+HdsWSuaDTe8ztQ7j/cONByDZ3zeB325AHiv5O0dg==}
 
-  libmime@5.4.1:
-    resolution: {integrity: sha512-0wHGhsofo9IdQPenr3BBHXuxcwMq4atFUTsZ9Ogc1OvI5h4rUdDIrBQEN9JHjCXfDMrE59LUMJWsTD82wTYk8A==}
-
   libmime@5.4.2:
     resolution: {integrity: sha512-+IQnCOdPiufGBkOii+Ze8F7iniyBzOwvWDbn1DyExBpc9pT2B3IEMQi7GUc/PpqhNUh/sr1SG9UXDITQoR0VIA==}
 
@@ -5401,8 +5395,8 @@ packages:
     resolution: {integrity: sha512-u82N74LFzG8ca+dD8puPnplTXoGH4fTPpVGuIbt36G3qvNlkvfD0lEAZSxaly3KX8TS/L1A1gsCEmvKmBcVbkQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postman-request@2.88.1-postman.48:
-    resolution: {integrity: sha512-E32FGh8ig2KDvzo4Byi7Ibr+wK2gNKPSqXoNsvjdCHgDBxSK4sCUwv+aa3zOBUwfiibPImHMy0WdlDSSCTqTuw==}
+  postman-request@2.88.1-postman.49:
+    resolution: {integrity: sha512-Vcjtjyy1KQQ7u08PQg6i1Yd6GyNhyToGriudVruouXwLvAenyouHZaABYfJ2niJF3ajpMsvfHjyIYNei1zdekw==}
     engines: {node: '>= 16'}
 
   prelude-ls@1.2.1:
@@ -7318,14 +7312,14 @@ snapshots:
     dependencies:
       minipass: 7.1.3
 
-  '@jocmp/mercury-parser@3.0.9':
+  '@jocmp/mercury-parser@3.1.0':
     dependencies:
       '@babel/runtime-corejs2': 7.29.7
       cheerio: 1.2.0
       dayjs: 1.11.21
       difflib: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed
       iconv-lite: 0.7.2
-      postman-request: 2.88.1-postman.48
+      postman-request: 2.88.1-postman.49
       string-direction: 0.1.2
       turndown: 7.2.4
       wuzzy: 0.1.8
@@ -8626,12 +8620,6 @@ snapshots:
     optional: true
 
   '@yuku-toolchain/types@0.7.4': {}
-
-  '@zone-eu/mailsplit@5.4.14':
-    dependencies:
-      libbase64: 1.3.0
-      libmime: 5.4.1
-      libqp: 2.1.1
 
   '@zone-eu/mailsplit@5.4.15':
     dependencies:
@@ -10203,13 +10191,6 @@ snapshots:
 
   libbase64@1.3.0: {}
 
-  libmime@5.4.1:
-    dependencies:
-      encoding-japanese: 2.2.0
-      iconv-lite: 0.7.3
-      libbase64: 1.3.0
-      libqp: 2.1.1
-
   libmime@5.4.2:
     dependencies:
       encoding-japanese: 2.2.0
@@ -11159,7 +11140,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postman-request@2.88.1-postman.48:
+  postman-request@2.88.1-postman.49:
     dependencies:
       '@postman/form-data': 3.1.1
       '@postman/tough-cookie': 4.1.3-postman.1
