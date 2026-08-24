@@ -51,10 +51,10 @@ importers:
         version: 6.16.1
       '@hono/node-server':
         specifier: 2.0.12
-        version: 2.0.12(hono@4.12.34)
+        version: 2.0.12(hono@4.13.3)
       '@hono/zod-openapi':
         specifier: 1.5.2
-        version: 1.5.2(hono@4.12.34)(zod@4.4.3)
+        version: 1.5.2(hono@4.13.3)(zod@4.4.3)
       '@jocmp/mercury-parser':
         specifier: 3.0.9
         version: 3.0.9
@@ -87,7 +87,7 @@ importers:
         version: 0.0.25
       '@scalar/hono-api-reference':
         specifier: 0.11.16
-        version: 0.11.16(hono@4.12.34)
+        version: 0.11.16(hono@4.13.3)
       '@sentry/node':
         specifier: 10.69.0
         version: 10.69.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.221.0(@opentelemetry/api@1.9.1))
@@ -131,8 +131,8 @@ importers:
         specifier: 2.1.88
         version: 2.1.88
       hono:
-        specifier: 4.12.34
-        version: 4.12.34
+        specifier: 4.13.3
+        version: 4.13.3
       html-to-text:
         specifier: 10.0.1
         version: 10.0.1
@@ -3750,7 +3750,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
 
   difflib@https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
+    resolution: {tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
     version: 0.2.6
 
   discord-api-types@0.38.53:
@@ -4308,8 +4308,8 @@ packages:
   hmacsha1@1.0.0:
     resolution: {integrity: sha512-4FP6J0oI8jqb6gLLl9tSwVdosWJ/AKSGJ+HwYf6Ixe4MUcEkst4uWzpVQrNOCin0fzTRQbXV8ePheU8WiiDYBw==}
 
-  hono@4.12.34:
-    resolution: {integrity: sha512-GqXJqY/xJkJmuloTrnV1ZEXG3fqte+VjkUqoRNZXcrUidiUOP4fMSIHHY4tsqZBK++kVyWmt/AAfSUuy57/eSA==}
+  hono@4.13.3:
+    resolution: {integrity: sha512-r8AO2mYHoLxSHkgafNeC/BXyb2vWRxD3jem4Ts+ptav8oTG5FIRifAjuJEmZI4bSvvc2ns0GxmIYiZnHqN3mMw==}
     engines: {node: '>=16.9.0'}
 
   hookable@6.1.1:
@@ -7083,21 +7083,21 @@ snapshots:
       '@types/aws-lambda': 8.10.162
       '@types/express': 5.0.6
 
-  '@hono/node-server@2.0.12(hono@4.12.34)':
+  '@hono/node-server@2.0.12(hono@4.13.3)':
     dependencies:
-      hono: 4.12.34
+      hono: 4.13.3
 
-  '@hono/zod-openapi@1.5.2(hono@4.12.34)(zod@4.4.3)':
+  '@hono/zod-openapi@1.5.2(hono@4.13.3)(zod@4.4.3)':
     dependencies:
       '@asteasolutions/zod-to-openapi': 8.5.0(zod@4.4.3)
-      '@hono/zod-validator': 0.9.0(hono@4.12.34)(zod@4.4.3)
-      hono: 4.12.34
+      '@hono/zod-validator': 0.9.0(hono@4.13.3)(zod@4.4.3)
+      hono: 4.13.3
       openapi3-ts: 4.6.1
       zod: 4.4.3
 
-  '@hono/zod-validator@0.9.0(hono@4.12.34)(zod@4.4.3)':
+  '@hono/zod-validator@0.9.0(hono@4.13.3)(zod@4.4.3)':
     dependencies:
-      hono: 4.12.34
+      hono: 4.13.3
       zod: 4.4.3
 
   '@humanfs/core@0.19.2':
@@ -8065,10 +8065,10 @@ snapshots:
 
   '@scalar/helpers@0.11.1': {}
 
-  '@scalar/hono-api-reference@0.11.16(hono@4.12.34)':
+  '@scalar/hono-api-reference@0.11.16(hono@4.13.3)':
     dependencies:
       '@scalar/client-side-rendering': 0.3.9
-      hono: 4.12.34
+      hono: 4.13.3
 
   '@scalar/schemas@0.8.3':
     dependencies:
@@ -9788,7 +9788,7 @@ snapshots:
 
   hmacsha1@1.0.0: {}
 
-  hono@4.12.34: {}
+  hono@4.13.3: {}
 
   hookable@6.1.1: {}
 
