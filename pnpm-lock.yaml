@@ -50,8 +50,8 @@ importers:
         specifier: 6.16.1
         version: 6.16.1
       '@hono/node-server':
-        specifier: 2.0.12
-        version: 2.0.12(hono@4.12.34)
+        specifier: 2.1.1
+        version: 2.1.1(hono@4.12.34)
       '@hono/zod-openapi':
         specifier: 1.5.2
         version: 1.5.2(hono@4.12.34)(zod@4.4.3)
@@ -1249,8 +1249,8 @@ packages:
       fastify-plugin:
         optional: true
 
-  '@hono/node-server@2.0.12':
-    resolution: {integrity: sha512-eWpQYr67tqJLeaSUl0Q+TquuYfUdTibpOJlUMV2FfUP7+KqCC5TufnwnlXL6mobZBJbGAYRd7ZvEBDCbLInjhg==}
+  '@hono/node-server@2.1.1':
+    resolution: {integrity: sha512-ELuehkj5VCBdgEw9zs+ivkKwyzzUCSQuE96YmiPvn1ECBoZCczbFXJLeEGMTYjphP6gydh4pHMqEYPVMYUVgQg==}
     engines: {node: '>=20'}
     peerDependencies:
       hono: ^4
@@ -3750,7 +3750,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
 
   difflib@https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
+    resolution: {tarball: https://codeload.github.com/postlight/difflib.js/tar.gz/32e8e38c7fcd935241b9baab71bb432fd9b166ed}
     version: 0.2.6
 
   discord-api-types@0.38.53:
@@ -7083,7 +7083,7 @@ snapshots:
       '@types/aws-lambda': 8.10.162
       '@types/express': 5.0.6
 
-  '@hono/node-server@2.0.12(hono@4.12.34)':
+  '@hono/node-server@2.1.1(hono@4.12.34)':
     dependencies:
       hono: 4.12.34
 
