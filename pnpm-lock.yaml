@@ -206,8 +206,8 @@ importers:
         specifier: 9.1.0
         version: 9.1.0
       patchright:
-        specifier: 1.61.1
-        version: 1.61.1
+        specifier: 1.62.2
+        version: 1.62.2
       query-string:
         specifier: 9.4.1
         version: 9.4.1
@@ -5331,14 +5331,14 @@ packages:
   parseley@0.13.1:
     resolution: {integrity: sha512-uNBJZzmb60l6p6VWLTmevizNAGnE0xoSf1n0B4q3ntegDNzcS68NRCcBDZTcyXHxt2XhBChsCuqj4M+nChvE/A==}
 
-  patchright-core@1.61.1:
-    resolution: {integrity: sha512-d6Ju67DE6OzqlEX3WPvUX2SLEs6iMY1WERit//mpsrT98VHcztaUo0CBw2Lpxq25VdufVEiWEdcc0HnLwdiq6A==}
-    engines: {node: '>=18'}
+  patchright-core@1.62.2:
+    resolution: {integrity: sha512-XDl3HB/Kjm9ZBFn4ygD5mxdsqK4aIWNGXdea46XAGd0hvHuJJ84w1M83JqofpXIbD2aJfQ2Rtz4YcqPVrxjSzw==}
+    engines: {node: '>=20'}
     hasBin: true
 
-  patchright@1.61.1:
-    resolution: {integrity: sha512-kZWNZ2tunsBMTBWtARFVWaNvB739GOybTlIPLT91eyx0YERjtUjESawomwO0hnOh6jt1L3Sru0PK62ylYOfqQw==}
-    engines: {node: '>=18'}
+  patchright@1.62.2:
+    resolution: {integrity: sha512-IAj57p3NhXWJH3SlOCooDa/OoRveulUW1n/H6SY79S0j0sRd/0LLfBH9VMYDkDw5LUOlF0tCp3vkWMfOTiHsXQ==}
+    engines: {node: '>=20'}
     hasBin: true
 
   path-exists@4.0.0:
@@ -11079,11 +11079,11 @@ snapshots:
       leac: 0.7.0
       peberminta: 0.10.0
 
-  patchright-core@1.61.1: {}
+  patchright-core@1.62.2: {}
 
-  patchright@1.61.1:
+  patchright@1.62.2:
     dependencies:
-      patchright-core: 1.61.1
+      patchright-core: 1.62.2
     optionalDependencies:
       fsevents: 2.3.2
 
