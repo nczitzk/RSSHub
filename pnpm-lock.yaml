@@ -176,8 +176,8 @@ importers:
         specifier: 1.5.0
         version: 1.5.0
       mailparser:
-        specifier: 3.9.22
-        version: 3.9.22
+        specifier: 3.9.23
+        version: 3.9.23
       markdown-it:
         specifier: 15.0.1
         version: 15.0.1
@@ -4844,8 +4844,8 @@ packages:
   magicast@0.5.4:
     resolution: {integrity: sha512-llBEhWm1SacoRwgHUoQJYtwp4PBLF4faQi5TCpIGyGs9n4y5+juI0tDgyKIfpqxckRHaHzouUEph3THklWh03w==}
 
-  mailparser@3.9.22:
-    resolution: {integrity: sha512-+c/vp1ewxXoaE/6Nj0W40xOYBsSslfa2PPJSoGJLurtS+gXPRPufRbAzJ6i4PfxX71U+cSHmy9bzbMKA/0+Kzg==}
+  mailparser@3.9.23:
+    resolution: {integrity: sha512-5jpsKltHt9oudhMu6mXxiwWMWV/CILfly+m9xhKiKW6cdmfOVvcAZ/NCuChV6QlADJqx1e5E2hwDAkP7lTP+Lg==}
     engines: {node: '>=20.0.0'}
 
   make-asynchronous@1.1.0:
@@ -5154,8 +5154,8 @@ packages:
     resolution: {integrity: sha512-D9UOmYG3UH1V+ENW56t5QXBwJw1YEY18ruVeus89Rw+SyIgjPkCO84bRzO3uNIYosJbNwiabWVn48o3uJLjxFQ==}
     engines: {node: '>=18'}
 
-  nodemailer@10.0.0:
-    resolution: {integrity: sha512-wdv+hXBg0iIPIOf108FaZyTxqjQpCvQeAJt9pHHTooPy/y3vQtI9eiImM9AIVKR3e/0FeMA1oueNfBjFJcaK+Q==}
+  nodemailer@10.0.1:
+    resolution: {integrity: sha512-c+gU9cL9HLDax3vjxL88kW+6NOgdtEUWaZ+AUtxdJR6LLhf0kGdCLExof7yiKW7zdO9EfXCSIgmhGyFmUM0mYQ==}
     engines: {node: '>=20.0.0'}
 
   nopt@10.0.1:
@@ -10352,7 +10352,7 @@ snapshots:
       '@babel/types': 7.29.8
       source-map-js: 1.2.1
 
-  mailparser@3.9.22:
+  mailparser@3.9.23:
     dependencies:
       '@zone-eu/mailsplit': 5.4.16
       encoding-japanese: 2.3.0
@@ -10361,7 +10361,7 @@ snapshots:
       iconv-lite: 0.7.3
       libmime: 5.4.3
       linkify-it: 5.0.2
-      nodemailer: 10.0.0
+      nodemailer: 10.0.1
       punycode.js: 2.3.1
       tlds: 1.261.0
 
@@ -10839,7 +10839,7 @@ snapshots:
 
   node-releases@2.0.53: {}
 
-  nodemailer@10.0.0: {}
+  nodemailer@10.0.1: {}
 
   nopt@10.0.1:
     dependencies:
