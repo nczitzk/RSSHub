@@ -104,7 +104,7 @@
         "json-bigint": "1.0.0",
         "jsonpath-plus": "10.4.0",
         "jsrsasign": "11.1.5",
-        "lru-cache": "11.5.2",
+        "lru-cache": "11.5.3",
         "lz-string": "1.5.0",
         "mailparser": "3.9.28",
         "markdown-it": "15.0.2",
