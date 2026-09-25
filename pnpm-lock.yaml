@@ -53,8 +53,8 @@ importers:
         specifier: 2.0.12
         version: 2.0.12(hono@4.12.34)
       '@hono/zod-openapi':
-        specifier: 1.5.2
-        version: 1.5.2(hono@4.12.34)(zod@4.4.3)
+        specifier: 1.6.3
+        version: 1.6.3(hono@4.12.34)(zod@4.4.3)
       '@jocmp/mercury-parser':
         specifier: 3.0.9
         version: 3.0.9
@@ -466,10 +466,10 @@ importers:
         version: 0.3.1
       vite-tsconfig-paths:
         specifier: 7.0.0-alpha.3
-        version: 7.0.0-alpha.3(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.0))
+        version: 7.0.0-alpha.3(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1))
       vitest:
         specifier: 4.1.11
-        version: 4.1.11(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@vitest/coverage-v8@4.1.11)(jsdom@30.0.1(@noble/hashes@2.2.0))(msw@2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2))(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.0))
+        version: 4.1.11(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@vitest/coverage-v8@4.1.11)(jsdom@30.0.1(@noble/hashes@2.2.0))(msw@2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2))(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1))
       wrangler:
         specifier: 4.118.0
         version: 4.118.0(@cloudflare/workers-types@5.20260801.1)(bufferutil@4.1.0)(utf-8-validate@5.0.10)
@@ -516,8 +516,8 @@ packages:
     resolution: {integrity: sha512-UJLfKXBhrc8i1vH2eJXuYQMwlsLKWFw3O+CPqXSuVEiikeAim3UgrfWX0k4tA/X8cRFM8iZ7OaqBokFGbYusdg==}
     engines: {node: ^22.13.0 || >=24.0.0}
 
-  '@asteasolutions/zod-to-openapi@8.5.0':
-    resolution: {integrity: sha512-SABbKiObg5dLRiTFnqiW1WWwGcg1BJfmHtT2asIBnBHg6Smy/Ms2KHc650+JI4Hw7lSkdiNebEGXpwoxfben8Q==}
+  '@asteasolutions/zod-to-openapi@9.1.0':
+    resolution: {integrity: sha512-pLMeRgRYS7/vZIgAAkOe2P6+XGTifR1MT9pqDoxZ11EmcJJ+DPmdPqLN8ZZF4U8R9KHCCQCS9c2wtuE8wSrfkw==}
     peerDependencies:
       zod: ^4.0.0
 
@@ -1255,15 +1255,15 @@ packages:
     peerDependencies:
       hono: ^4
 
-  '@hono/zod-openapi@1.5.2':
-    resolution: {integrity: sha512-FPlspM6+qObGoMfux+0SSE0of0tGO+BVo3havhKzZMxRyz/ql89kuCd/7POd70aW3T4kz/aVL6gNZ6sVd0ItUQ==}
+  '@hono/zod-openapi@1.6.3':
+    resolution: {integrity: sha512-VYR82Y60plu8g3pN60OUXMVKpmxh3R04Qs++3DY9vtwZ9/sA/BRY0PcRIR+Z37/3itWtM7pYwT9bKiH9JhqV6Q==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       hono: '>=4.10.0'
       zod: ^4.0.0
 
-  '@hono/zod-validator@0.9.0':
-    resolution: {integrity: sha512-n0ZSXmCiHVIp4Y5wlOOyZCeTd/rsawA/qW1cipB8QOYKZ9N8Tk0nZUZCXho9cu374AN4JpDNKioNKBJ/W+LBug==}
+  '@hono/zod-validator@0.9.1':
+    resolution: {integrity: sha512-iiv6w0qrIc0arfvCtUqBWsvl4fXjzaTcQcCJTTtCnkawF9HHGE+KjEl0ox3gQJ6rKZEgE3mLExlQCF72M+mNuw==}
     peerDependencies:
       hono: '>=4.11.2'
       zod: ^3.25.0 || ^4.0.0
@@ -6494,6 +6494,11 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
+  yaml@2.9.1:
+    resolution: {integrity: sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
   yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
@@ -6618,7 +6623,7 @@ snapshots:
       is-potential-custom-element-name: 1.0.1
       lru-cache: 11.5.3
 
-  '@asteasolutions/zod-to-openapi@8.5.0(zod@4.4.3)':
+  '@asteasolutions/zod-to-openapi@9.1.0(zod@4.4.3)':
     dependencies:
       openapi3-ts: 4.6.1
       zod: 4.4.3
@@ -6707,7 +6712,7 @@ snapshots:
       cjs-module-lexer: 1.2.3
       esbuild: 0.28.1
       miniflare: 5.20260730.0-alpha(bufferutil@4.1.0)(utf-8-validate@5.0.10)
-      vitest: 4.1.11(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@vitest/coverage-v8@4.1.11)(jsdom@30.0.1(@noble/hashes@2.2.0))(msw@2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2))(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.0))
+      vitest: 4.1.11(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@vitest/coverage-v8@4.1.11)(jsdom@30.0.1(@noble/hashes@2.2.0))(msw@2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2))(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1))
       wrangler: 4.118.0(@cloudflare/workers-types@5.20260801.1)(bufferutil@4.1.0)(utf-8-validate@5.0.10)
       zod: 4.4.3
     transitivePeerDependencies:
@@ -7103,15 +7108,15 @@ snapshots:
     dependencies:
       hono: 4.12.34
 
-  '@hono/zod-openapi@1.5.2(hono@4.12.34)(zod@4.4.3)':
+  '@hono/zod-openapi@1.6.3(hono@4.12.34)(zod@4.4.3)':
     dependencies:
-      '@asteasolutions/zod-to-openapi': 8.5.0(zod@4.4.3)
-      '@hono/zod-validator': 0.9.0(hono@4.12.34)(zod@4.4.3)
+      '@asteasolutions/zod-to-openapi': 9.1.0(zod@4.4.3)
+      '@hono/zod-validator': 0.9.1(hono@4.12.34)(zod@4.4.3)
       hono: 4.12.34
       openapi3-ts: 4.6.1
       zod: 4.4.3
 
-  '@hono/zod-validator@0.9.0(hono@4.12.34)(zod@4.4.3)':
+  '@hono/zod-validator@0.9.1(hono@4.12.34)(zod@4.4.3)':
     dependencies:
       hono: 4.12.34
       zod: 4.4.3
@@ -8532,7 +8537,7 @@ snapshots:
       obug: 2.1.4
       std-env: 4.2.0
       tinyrainbow: 3.1.1
-      vitest: 4.1.11(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@vitest/coverage-v8@4.1.11)(jsdom@30.0.1(@noble/hashes@2.2.0))(msw@2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2))(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.0))
+      vitest: 4.1.11(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@vitest/coverage-v8@4.1.11)(jsdom@30.0.1(@noble/hashes@2.2.0))(msw@2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2))(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1))
 
   '@vitest/expect@4.1.11':
     dependencies:
@@ -8543,14 +8548,14 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.1
 
-  '@vitest/mocker@4.1.11(msw@2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2))(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.0))':
+  '@vitest/mocker@4.1.11(msw@2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2))(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1))':
     dependencies:
       '@vitest/spy': 4.1.11
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
       msw: 2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2)
-      vite: 7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.0)
+      vite: 7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1)
 
   '@vitest/pretty-format@4.1.11':
     dependencies:
@@ -10909,7 +10914,7 @@ snapshots:
 
   openapi3-ts@4.6.1:
     dependencies:
-      yaml: 2.9.0
+      yaml: 2.9.1
 
   optionator@0.9.4:
     dependencies:
@@ -12060,16 +12065,16 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite-tsconfig-paths@7.0.0-alpha.3(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.0)):
+  vite-tsconfig-paths@7.0.0-alpha.3(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1)):
     dependencies:
       debug: 4.4.3
       get-tsconfig: 5.0.0-beta.6
       oxc-resolver: 11.24.2
-      vite: 7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.0)
+      vite: 7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1)
     transitivePeerDependencies:
       - supports-color
 
-  vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.0):
+  vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1):
     dependencies:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.7)
@@ -12082,12 +12087,12 @@ snapshots:
       fsevents: 2.3.3
       lightningcss: 1.32.0
       tsx: 4.23.15
-      yaml: 2.9.0
+      yaml: 2.9.1
 
-  vitest@4.1.11(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@vitest/coverage-v8@4.1.11)(jsdom@30.0.1(@noble/hashes@2.2.0))(msw@2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2))(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.0)):
+  vitest@4.1.11(@opentelemetry/api@1.9.1)(@types/node@26.1.2)(@vitest/coverage-v8@4.1.11)(jsdom@30.0.1(@noble/hashes@2.2.0))(msw@2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2))(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1)):
     dependencies:
       '@vitest/expect': 4.1.11
-      '@vitest/mocker': 4.1.11(msw@2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2))(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.0))
+      '@vitest/mocker': 4.1.11(msw@2.15.0(@types/node@26.1.2)(@typescript/typescript6@6.0.2))(vite@7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1))
       '@vitest/pretty-format': 4.1.11
       '@vitest/runner': 4.1.11
       '@vitest/snapshot': 4.1.11
@@ -12104,7 +12109,7 @@ snapshots:
       tinyexec: 1.3.0
       tinyglobby: 0.2.17
       tinyrainbow: 3.1.1
-      vite: 7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.0)
+      vite: 7.3.1(@types/node@26.1.2)(lightningcss@1.32.0)(tsx@4.23.15)(yaml@2.9.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@opentelemetry/api': 1.9.1
@@ -12280,6 +12285,8 @@ snapshots:
       yaml: 2.9.0
 
   yaml@2.9.0: {}
+
+  yaml@2.9.1: {}
 
   yargs-parser@21.1.1: {}
 
