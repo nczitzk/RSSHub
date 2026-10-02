@@ -164,8 +164,8 @@ importers:
         specifier: 1.0.0
         version: 1.0.0
       jsonpath-plus:
-        specifier: 10.4.0
-        version: 10.4.0
+        specifier: 11.1.0
+        version: 11.1.0
       jsrsasign:
         specifier: 11.1.5
         version: 11.1.5
@@ -4653,9 +4653,9 @@ packages:
   jsonfile@6.2.1:
     resolution: {integrity: sha512-zwOTdL3rFQ/lRdBnntKVOX6k5cKJwEc1HdilT71BWEu7J41gXIB2MRp+vxduPSwZJPWBxEzv4yH1wYLJGUHX4Q==}
 
-  jsonpath-plus@10.4.0:
-    resolution: {integrity: sha512-T92WWatJXmhBbKsgH/0hl+jxjdXrifi5IKeMY02DWggRxX0UElcbVzPlmgLTbvsPeW1PasQ6xE2Q75stkhGbsA==}
-    engines: {node: '>=18.0.0'}
+  jsonpath-plus@11.1.0:
+    resolution: {integrity: sha512-AKyLWRC9kE75CC0Z3GmXfaAauXPqs8/2RkwRkZmJ+i1ePWuD9ns3ckWwDJhLPZ/2ELwWvDE+aZoaGHCmmBXA0w==}
+    engines: {node: '>=22.0.0'}
     hasBin: true
 
   jsprim@1.4.2:
@@ -10172,7 +10172,7 @@ snapshots:
     optionalDependencies:
       graceful-fs: 4.2.11
 
-  jsonpath-plus@10.4.0:
+  jsonpath-plus@11.1.0:
     dependencies:
       '@jsep-plugin/assignment': 1.3.0(jsep@1.4.0)
       '@jsep-plugin/regex': 1.0.4(jsep@1.4.0)
